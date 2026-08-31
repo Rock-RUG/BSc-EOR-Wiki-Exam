@@ -1,0 +1,18 @@
+\documentclass[tikz,border=2pt]{standalone}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\begin{document}
+	
+	\begin{tikzpicture}[scale=2]
+		\draw[thick,-latex] (-0.5,0) -- (1.5,0);
+		\draw[thick,-latex] (0,-0.5) -- (0,1.5);
+		
+		\foreach \n in {1,2,...,80} {  % Drawing more lines to make it visually clearer.
+			\draw (0,0) -- (1,1/\n);
+		}
+		\filldraw[red] (1,0) circle (1pt);
+	\end{tikzpicture}
+	
+\end{document}

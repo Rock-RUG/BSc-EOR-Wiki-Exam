@@ -1,0 +1,1 @@
+window.AIMCQ_CONFIG=Object.assign(window.AIMCQ_CONFIG||{},{reportEndpoint:window.__mkExamMode===true?"":"https://aiq-report.eor-wiki.workers.dev.",reportAdminEndpoint:window.__mkExamMode===true?"":"https://aiq-report.eor-wiki.workers.dev.",reportAdminParam:"aiq_report_admin",reportAdminTokenKey:"ai_mqc_report_admin_token_v1"});

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 250" width="460" height="250" font-family="Inter, Helvetica, Arial, sans-serif" role="img" aria-label="Two sequences: (-1)^n/n is Cauchy, (-1)^n is not">
+<title>Cauchy and non-Cauchy sequences</title>
+<line x1="44.0" y1="192.0" x2="328.0" y2="192.0" stroke="#E2E4E7" stroke-width="1"/>
+<text x="37.0" y="196.0" font-size="11" fill="#58595B" text-anchor="end">-1</text>
+<line x1="44.0" y1="120.0" x2="328.0" y2="120.0" stroke="#58595B" stroke-width="1"/>
+<text x="37.0" y="124.0" font-size="11" fill="#58595B" text-anchor="end">0</text>
+<line x1="44.0" y1="48.0" x2="328.0" y2="48.0" stroke="#E2E4E7" stroke-width="1"/>
+<text x="37.0" y="52.0" font-size="11" fill="#58595B" text-anchor="end">1</text>
+<line x1="44.0" y1="210.0" x2="44.0" y2="214.0" stroke="#58595B" stroke-width="1"/>
+<text x="44.0" y="227.0" font-size="11" fill="#58595B" text-anchor="middle">1</text>
+<line x1="103.8" y1="210.0" x2="103.8" y2="214.0" stroke="#58595B" stroke-width="1"/>
+<text x="103.8" y="227.0" font-size="11" fill="#58595B" text-anchor="middle">5</text>
+<line x1="178.5" y1="210.0" x2="178.5" y2="214.0" stroke="#58595B" stroke-width="1"/>
+<text x="178.5" y="227.0" font-size="11" fill="#58595B" text-anchor="middle">10</text>
+<line x1="253.3" y1="210.0" x2="253.3" y2="214.0" stroke="#58595B" stroke-width="1"/>
+<text x="253.3" y="227.0" font-size="11" fill="#58595B" text-anchor="middle">15</text>
+<line x1="328.0" y1="210.0" x2="328.0" y2="214.0" stroke="#58595B" stroke-width="1"/>
+<text x="328.0" y="227.0" font-size="11" fill="#58595B" text-anchor="middle">20</text>
+<line x1="44.0" y1="210.0" x2="328.0" y2="210.0" stroke="#58595B" stroke-width="1.2"/>
+<line x1="44.0" y1="30.0" x2="44.0" y2="210.0" stroke="#58595B" stroke-width="1.2"/>
+<text x="186.0" y="244.0" font-size="12" fill="#58595B" text-anchor="middle" font-style="italic">n</text>
+<circle cx="44.0" cy="192.0" r="3" fill="#CC0000"/>
+<circle cx="58.9" cy="48.0" r="3" fill="#CC0000"/>
+<circle cx="73.9" cy="192.0" r="3" fill="#CC0000"/>
+<circle cx="88.8" cy="48.0" r="3" fill="#CC0000"/>
+<circle cx="103.8" cy="192.0" r="3" fill="#CC0000"/>
+<circle cx="118.7" cy="48.0" r="3" fill="#CC0000"/>
+<circle cx="133.7" cy="192.0" r="3" fill="#CC0000"/>
+<circle cx="148.6" cy="48.0" r="3" fill="#CC0000"/>
+<circle cx="163.6" cy="192.0" r="3" fill="#CC0000"/>
+<circle cx="178.5" cy="48.0" r="3" fill="#CC0000"/>
+<circle cx="193.5" cy="192.0" r="3" fill="#CC0000"/>
+<circle cx="208.4" cy="48.0" r="3" fill="#CC0000"/>
+<circle cx="223.4" cy="192.0" r="3" fill="#CC0000"/>
+<circle cx="238.3" cy="48.0" r="3" fill="#CC0000"/>
+<circle cx="253.3" cy="192.0" r="3" fill="#CC0000"/>
+<circle cx="268.2" cy="48.0" r="3" fill="#CC0000"/>
+<circle cx="283.2" cy="192.0" r="3" fill="#CC0000"/>
+<circle cx="298.1" cy="48.0" r="3" fill="#CC0000"/>
+<circle cx="313.1" cy="192.0" r="3" fill="#CC0000"/>
+<circle cx="328.0" cy="48.0" r="3" fill="#CC0000"/>
+<circle cx="44.0" cy="192.0" r="3" fill="#0072B2"/>
+<circle cx="58.9" cy="84.0" r="3" fill="#0072B2"/>
+<circle cx="73.9" cy="144.0" r="3" fill="#0072B2"/>
+<circle cx="88.8" cy="102.0" r="3" fill="#0072B2"/>
+<circle cx="103.8" cy="134.4" r="3" fill="#0072B2"/>
+<circle cx="118.7" cy="108.0" r="3" fill="#0072B2"/>
+<circle cx="133.7" cy="130.3" r="3" fill="#0072B2"/>
+<circle cx="148.6" cy="111.0" r="3" fill="#0072B2"/>
+<circle cx="163.6" cy="128.0" r="3" fill="#0072B2"/>
+<circle cx="178.5" cy="112.8" r="3" fill="#0072B2"/>
+<circle cx="193.5" cy="126.5" r="3" fill="#0072B2"/>
+<circle cx="208.4" cy="114.0" r="3" fill="#0072B2"/>
+<circle cx="223.4" cy="125.5" r="3" fill="#0072B2"/>
+<circle cx="238.3" cy="114.9" r="3" fill="#0072B2"/>
+<circle cx="253.3" cy="124.8" r="3" fill="#0072B2"/>
+<circle cx="268.2" cy="115.5" r="3" fill="#0072B2"/>
+<circle cx="283.2" cy="124.2" r="3" fill="#0072B2"/>
+<circle cx="298.1" cy="116.0" r="3" fill="#0072B2"/>
+<circle cx="313.1" cy="123.8" r="3" fill="#0072B2"/>
+<circle cx="328.0" cy="116.4" r="3" fill="#0072B2"/>
+<circle cx="344.0" cy="64.0" r="3.5" fill="#0072B2"/>
+<text x="354.0" y="68.0" font-size="11.5" fill="#58595B">a<tspan font-size="8" dy="3">n</tspan><tspan dy="-3"> = (−1)</tspan><tspan font-size="8" dy="-4">n</tspan><tspan dy="4">/n</tspan></text>
+<text x="354.0" y="83.0" font-size="10.5" fill="#0072B2">Cauchy</text>
+<circle cx="344.0" cy="108.0" r="3.5" fill="#CC0000"/>
+<text x="354.0" y="112.0" font-size="11.5" fill="#58595B">b<tspan font-size="8" dy="3">n</tspan><tspan dy="-3"> = (−1)</tspan><tspan font-size="8" dy="-4">n</tspan></text>
+<text x="354.0" y="127.0" font-size="10.5" fill="#CC0000">not Cauchy</text>
+</svg>
