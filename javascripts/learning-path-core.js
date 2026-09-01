@@ -49,7 +49,7 @@ const st=document.createElement('style');st.id='lp-3d-map-style-v3';st.textConte
       }
       #lp-map-modal.lp-map-3d a.lp-node{
         transform:translate(-50%,-50%) translateZ(var(--lp-3d-z, 0px)) scale(var(--lp-3d-node-scale, 1)) !important;
-        transition:transform .14s ease, filter .14s ease, opacity .14s ease !important;
+        transition:none !important;
       }
       #lp-map-modal.lp-map-3d a.lp-node:hover,
       #lp-map-modal.lp-map-3d a.lp-node:focus-visible{
@@ -389,8 +389,13 @@ function lpWebgl3dEnsureStyles(){if(document.getElementById('lp-webgl-3d-style-v
       #lp-map-modal.lp-webgl3d a.lp-node,
       #lp-h1sg-modal.lp-webgl3d .lp-node{
         transform:translate(-50%, -50%) scale(calc(var(--lp-webgl-label-scale, 1) * var(--lp-webgl-hover-scale, 1))) !important;
-        transition:filter .12s ease, opacity .12s ease, transform .12s ease !important;
         will-change:left, top, transform, opacity;
+      }
+      #lp-map-modal.lp-webgl3d a.lp-node{
+        transition:none !important;
+      }
+      #lp-h1sg-modal.lp-webgl3d .lp-node{
+        transition:filter .12s ease, opacity .12s ease, transform .12s ease !important;
       }
       #lp-map-modal.lp-webgl3d a.lp-node:hover,
       #lp-map-modal.lp-webgl3d a.lp-node:focus-visible,
