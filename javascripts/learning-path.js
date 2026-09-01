@@ -5620,6 +5620,11 @@ try{window.MkLearningPathUI=Object.assign(window.MkLearningPathUI||{},{isMobileM
         white-space:nowrap !important;
         overflow:visible !important;
       }
+      @media (min-width:901px){
+        #lp-side-panel .lp-head .lp-title{
+          font-size:clamp(.90rem, 1vw, 1.02rem) !important;
+        }
+      }
       #lp-map-modal .lp-mbox > .lp-mzoom,
       #lp-h1sg-modal .lp-mbox > .lp-mzoom{
         left:50% !important;
