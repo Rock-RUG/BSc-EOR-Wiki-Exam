@@ -50,7 +50,7 @@ function srMasteryBucketForDoc(doc){const rec=srFindMasteryRecord(doc&&doc.locat
 if(visited||explicitUnrated)return"unrated";return"unvisited";}
 function srHitPassesMasteryFilter(hit){const f=state.masteryFilter||srDefaultMasteryFilter();const bucket=srMasteryBucketForDoc(hit&&hit.doc);return f[bucket]!==false;}
 function srFilteredHits(hits){const src=Array.isArray(hits)?hits:[];return src.filter(srHitPassesMasteryFilter);}
-function srRenderMasteryFilterHtml(){const f=state.masteryFilter||srDefaultMasteryFilter();const items=[["mastered","Mastered"],["clear","Clear"],["fuzzy","Fuzzy"],["unknown","Unknown"],["unrated","Unrated"],["unvisited","Unvisited"],];return`
+function srRenderMasteryFilterHtml(){const f=state.masteryFilter||srDefaultMasteryFilter();const items=[["mastered","Mastered"],["clear","Clear"],["fuzzy","Unclear"],["unknown","Unknown"],["unrated","Unrated"],["unvisited","Unvisited"],];return`
     <div class="csr-mastery-filter" aria-label="Filter by mastery level">
       ${items.map(([key, label]) => `<label class="csr-mf"><input type="checkbox"data-mastery-filter="${key}"${f[key]!==false?"checked":""}><span>${label}</span></label>`.trim()).join("")}
     </div>
