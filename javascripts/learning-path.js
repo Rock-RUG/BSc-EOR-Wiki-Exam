@@ -3146,6 +3146,7 @@ if(__lpRelDashRaf){cancelAnimationFrame(__lpRelDashRaf);__lpRelDashRaf=0;}}
 function __lpStartRelDash(path){if(__lpReduceMotion())return;if(!path||__lpRelDash.has(path))return;try{path.classList.add('lp-rel-anim');path.style.strokeDasharray='6 6';path.style.willChange='stroke-dashoffset';}catch(_){}
 __lpRelDash.set(path,{t0:performance.now()});if(__lpRelDashRaf)return;const step=(now)=>{if(st2.__lpRenderId!==renderId){__lpStopAllFlows();return;}
 if(__lpRelDash.size===0){__lpRelDashRaf=0;return;}
+if(lpMapGestureActive()){__lpRelDashRaf=requestAnimationFrame(step);return;}
 for(const[p,st]of Array.from(__lpRelDash.entries())){if(!p||!p.isConnected){__lpRelDash.delete(p);continue;}
 try{const phase=(((now-(Number(st&&st.t0)||now))/1200)%1+1)%1;p.style.strokeDashoffset=String(-24*phase);}catch(_){}}
 __lpRelDashRaf=requestAnimationFrame(step);};__lpRelDashRaf=requestAnimationFrame(step);}
@@ -3160,6 +3161,7 @@ try{arrow.setAttribute("fill",__lpFill);arrow.setAttribute("fill-opacity","1");}
 const travel=Math.max(0.5,total-__LP_FLOW_TAIL_TO_TIP);const fadeDist=Math.min(__LP_FLOW_FADE_MAX_PX,Math.max(__LP_FLOW_FADE_MIN_PX,travel*__LP_FLOW_FADE_FRAC));const st={arrow,total,travel,fadeDist,pts,n,fill:__lpFill,fillOpacity:1,t0:performance.now()-(__LP_FLOW_MS*__LP_FLOW_START_PHASE)};__lpFlow.set(path,st);try{const now0=performance.now();const phase0=((((now0-st.t0)/__LP_FLOW_MS)%1)+1)%1;__lpPaintFlow(st,phase0*st.travel);}catch(_){}
 if(__lpFlowRaf)return;const flowMinFrameMs=isDesktopSmoothPreview?0:(useSmoothFlow?(1000/30):0);let lastFlowPaint=0;const step=(now)=>{if(st2.__lpRenderId!==renderId){__lpStopAllFlows();return;}
 if(__lpFlow.size===0){__lpFlowRaf=0;return;}
+if(lpMapGestureActive()){__lpFlowRaf=requestAnimationFrame(step);return;}
 if(!flowMinFrameMs||!lastFlowPaint||(now-lastFlowPaint)>=flowMinFrameMs){lastFlowPaint=now;for(const[p,st]of __lpFlow){if(!p.isConnected){try{st.arrow&&st.arrow.remove();}catch(_){}
 __lpFlow.delete(p);continue;}
 const phase=((((now-st.t0)/__LP_FLOW_MS)%1)+1)%1;__lpPaintFlow(st,phase*st.travel);}}
@@ -8291,6 +8293,61 @@ try{window.setTimeout(applyNow,600);}catch(_){}})();(function(){"use strict";con
 }
 #lp-h1sg-modal .lp-node.lp-pan-culled{
   display:none !important;
+}
+/* The floating map chrome (tab bar, Map tips, helper text, zoom dock, close)
+   uses backdrop-filter: blur(). Those chips sit ON TOP of the world that the
+   gesture is moving, so their backdrop changes every single frame and the
+   compositor has to re-read and re-blur it each time — work that is invisible
+   to the main thread, which is why the JS profile of a stuttering drag looks
+   completely clean. The Opera-mobile and iPad fallbacks already dropped these
+   during gestures; every other browser kept paying for them. Scoped to the
+   gesture classes, so the frosted look returns the moment the pointer is up. */
+#lp-map-modal.lp-map-dragging .lp-map-tabs,
+#lp-map-modal.lp-map-dragging .lp-map-tipbtn,
+#lp-map-modal.lp-map-dragging .lp-map-helper,
+#lp-map-modal.lp-map-dragging .lp-mctrl,
+#lp-map-modal.lp-map-dragging .lp-mzoom,
+#lp-map-modal.lp-map-dragging .lp-mbox,
+#lp-map-modal.lp-map-dragging .lp-close,
+#lp-map-modal.lp-slider-zooming .lp-map-tabs,
+#lp-map-modal.lp-slider-zooming .lp-map-tipbtn,
+#lp-map-modal.lp-slider-zooming .lp-map-helper,
+#lp-map-modal.lp-slider-zooming .lp-mctrl,
+#lp-map-modal.lp-slider-zooming .lp-mzoom,
+#lp-map-modal.lp-slider-zooming .lp-mbox,
+#lp-map-modal.lp-slider-zooming .lp-close,
+#lp-map-modal.lp-mobile-gesturing .lp-map-tabs,
+#lp-map-modal.lp-mobile-gesturing .lp-map-tipbtn,
+#lp-map-modal.lp-mobile-gesturing .lp-map-helper,
+#lp-map-modal.lp-mobile-gesturing .lp-mctrl,
+#lp-map-modal.lp-mobile-gesturing .lp-mzoom,
+#lp-map-modal.lp-mobile-gesturing .lp-mbox,
+#lp-map-modal.lp-mobile-gesturing .lp-close,
+#lp-map-modal.lp-webgl3d-dragging .lp-map-tabs,
+#lp-map-modal.lp-webgl3d-dragging .lp-map-tipbtn,
+#lp-map-modal.lp-webgl3d-dragging .lp-map-helper,
+#lp-map-modal.lp-webgl3d-dragging .lp-mctrl,
+#lp-map-modal.lp-webgl3d-dragging .lp-mzoom,
+#lp-map-modal.lp-webgl3d-dragging .lp-mbox,
+#lp-map-modal.lp-webgl3d-dragging .lp-close,
+#lp-h1sg-modal.lp-map-dragging .lp-map-tabs,
+#lp-h1sg-modal.lp-map-dragging .lp-map-tipbtn,
+#lp-h1sg-modal.lp-map-dragging .lp-map-helper,
+#lp-h1sg-modal.lp-map-dragging .lp-mctrl,
+#lp-h1sg-modal.lp-map-dragging .lp-mzoom,
+#lp-h1sg-modal.lp-map-dragging .lp-mbox,
+#lp-h1sg-modal.lp-map-dragging .lp-close{
+  backdrop-filter:none !important;
+  -webkit-backdrop-filter:none !important;
+}
+/* Same reason for the slider-zoom case on the world itself: a scale change
+   re-rasters every filtered surface, and each masked node is its own. The
+   title text is already replaced with the mask characters in the DOM, so
+   dropping the decorative blur for the duration of the gesture reveals
+   nothing. */
+#lp-map-modal.lp-slider-zooming .lp-mapviewport a.lp-node{
+  filter:none !important;
+  -webkit-filter:none !important;
 }
 `;(document.head||document.documentElement).appendChild(st);}
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",install,{once:true});else install();})();(function(){try{if(document.getElementById('lp-h1-route-currentcolor-v28'))return;const st=document.createElement('style');st.id='lp-h1-route-currentcolor-v28';st.textContent=`
