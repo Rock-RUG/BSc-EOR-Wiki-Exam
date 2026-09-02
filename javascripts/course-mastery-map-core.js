@@ -32,7 +32,7 @@ function lectureRiskToneByScore(score){const s=Number(score)||0;if(s>=75)return'
 function cmmVisitorId(){try{if(window.MkHotTrack&&typeof window.MkHotTrack.getVisitorId==='function')return window.MkHotTrack.getVisitorId();const key='mk_hot_visitor_id_v1';let id=localStorage.getItem(key);if(!id){id=(crypto&&crypto.randomUUID)?crypto.randomUUID():`v_${Date.now()}_${Math.random().toString(16).slice(2)}`;localStorage.setItem(key,id);}
 return id;}catch(_){return'anonymous';}}
 function publicScoreAvgLabel(type,value,count){const n=Number(value);const label=type==='mastery'?'public mastery average':'public prerequisite average';if(!Number.isFinite(n))return`No ${label} yet`;const c=Math.max(0,Math.floor(Number(count)||0));return`${Math.round(n * 10) / 10}% ${label}${c ? `from ${c}public user${c===1?'':'s'}` : ''}`;}
-function todayKeyLocal(){const d=new Date();const y=d.getFullYear();const m=String(d.getMonth()+1).padStart(2,'0');const day=String(d.getDate()).padStart(2,'0');return`${y}-${m}-${day}`;}
+function todayKeyLocal(){const d=new Date();const y=d.getUTCFullYear();const m=String(d.getUTCMonth()+1).padStart(2,'0');const day=String(d.getUTCDate()).padStart(2,'0');return`${y}-${m}-${day}`;}
 function shortDateLabel(dateKey){const s=String(dateKey||'');const m=s.match(/^(\d{4})-(\d{2})-(\d{2})$/);if(!m)return s||'today';const monthNames=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];const monthIdx=Math.max(0,Math.min(11,Number(m[2])-1));const day=String(Number(m[3])||m[3]);return`${monthNames[monthIdx]} ${day}`;}
 function mapSvg(){return`
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">

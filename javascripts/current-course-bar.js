@@ -8,7 +8,7 @@ function directNavLink(item){if(!item||!item.querySelector)return null;return it
 function chevronSvg(className){const cls=className?` ${className}`:"";return`<svg class="ccb-chevron${cls}" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5"></path></svg>`;}
 function ensureStyleInjected(){if(document.getElementById(STYLE_ID))return;const style=document.createElement("style");style.id=STYLE_ID;style.textContent=`
 #current-course-bar{
-  --ccb-line: color-mix(in srgb, var(--md-default-fg-color) 14%, transparent);
+  --ccb-line: transparent;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -25,6 +25,11 @@ function ensureStyleInjected(){if(document.getElementById(STYLE_ID))return;const
   will-change: transform;
   contain: paint;
   isolation: isolate;
+}
+@supports (color: color-mix(in srgb, black, white)){
+#current-course-bar{
+  --ccb-line: color-mix(in srgb, var(--md-default-fg-color) 14%, transparent);
+}
 }
 html[data-md-color-scheme="slate"] #current-course-bar{
   --ccb-line: rgba(255,255,255,.10);

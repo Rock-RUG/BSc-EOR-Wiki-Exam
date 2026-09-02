@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /
+
+# This is the offline Exam mirror of the BSc EOR Wiki, published for exam-room
+# networks. The public wiki at https://rock-rug.github.io/BSc-EOR-Wiki/ is the
+# copy that should be indexed.

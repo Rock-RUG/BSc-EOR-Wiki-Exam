@@ -634,7 +634,12 @@ function lpEnsureMapRedesignPatchStyles(){if(document.getElementById("lp-redesig
         display:inline-block;
       }
       #lp-map-modal{
-        z-index:2147483300 !important;
+        /* LP_MAP_MODAL_Z. All four maps share one layer: above the page and the
+           quiz/self-check modals, below the celebration and level-up overlays
+           that are meant to play over a map. The old 2147483300 tied with
+           #aiq-modal, so whichever was appended to <body> first ended up
+           underneath — that is how a quiz could open behind an open map. */
+        z-index:2147483400 !important;
       }
       html.lp-modal-open #mw-mastery,
       html.lp-modal-open #mw-mastery *,
@@ -1098,11 +1103,14 @@ catch(_){return 0;}}
 function lpMapDocClamp(value,min,max){return Math.min(max,Math.max(min,value));}
 function lpMapDocSafeBottomPx(){try{let probe=document.getElementById("lp-map-doc-safe-probe");if(!probe){probe=document.createElement("div");probe.id="lp-map-doc-safe-probe";probe.style.cssText="position:fixed;left:0;bottom:0;visibility:hidden;pointer-events:none;height:0;padding-bottom:constant(safe-area-inset-bottom);padding-bottom:env(safe-area-inset-bottom,0px);";(document.body||document.documentElement).appendChild(probe);}
 const cs=window.getComputedStyle?window.getComputedStyle(probe):null;return Math.max(0,Math.ceil(parseFloat(cs&&cs.paddingBottom)||0));}catch(_){return 0;}}
-function lpEnsureMapDocumentSurfaceStyle(){if(document.getElementById("lp-map-document-surface-style-v8"))return;const st=document.createElement("style");st.id="lp-map-document-surface-style-v8";st.textContent=`
+function lpEnsureMapDocumentSurfaceStyle(){if(document.getElementById("lp-map-document-surface-style-v9"))return;const st=document.createElement("style");st.id="lp-map-document-surface-style-v9";st.textContent=`
 @media (pointer: coarse), (max-width: 900px), (hover: none){
   #lp-map-modal.lp-doc-surface,
   #lp-map-modal.lp-doc-surface.lp-open,
-  #lp-map-modal.lp-doc-surface.lp-full{
+  #lp-map-modal.lp-doc-surface.lp-full,
+  #lp-h1sg-modal.lp-doc-surface,
+  #lp-h1sg-modal.lp-doc-surface.lp-open,
+  #lp-h1sg-modal.lp-doc-surface.lp-full{
     position:absolute !important;
     left:var(--lp-map-doc-left, 0px) !important;
     top:var(--lp-map-doc-top, 0px) !important;
@@ -1124,7 +1132,9 @@ function lpEnsureMapDocumentSurfaceStyle(){if(document.getElementById("lp-map-do
     overscroll-behavior:contain !important;
   }
   #lp-map-modal.lp-doc-surface .lp-mbox,
-  #lp-map-modal.lp-doc-surface.lp-full .lp-mbox{
+  #lp-map-modal.lp-doc-surface.lp-full .lp-mbox,
+  #lp-h1sg-modal.lp-doc-surface .lp-mbox,
+  #lp-h1sg-modal.lp-doc-surface.lp-full .lp-mbox{
     position:absolute !important;
     left:0 !important;
     top:0 !important;
@@ -1146,23 +1156,35 @@ function lpEnsureMapDocumentSurfaceStyle(){if(document.getElementById("lp-map-do
   #lp-map-modal.lp-doc-surface .lp-mapstage,
   #lp-map-modal.lp-doc-surface .lp-mapviewport,
   #lp-map-modal.lp-doc-surface.lp-full .lp-mbody,
-  #lp-map-modal.lp-doc-surface.lp-full .lp-mapstage{
+  #lp-map-modal.lp-doc-surface.lp-full .lp-mapstage,
+  #lp-h1sg-modal.lp-doc-surface .lp-mbody,
+  #lp-h1sg-modal.lp-doc-surface .lp-mapstage,
+  #lp-h1sg-modal.lp-doc-surface .lp-mapviewport,
+  #lp-h1sg-modal.lp-doc-surface.lp-full .lp-mbody,
+  #lp-h1sg-modal.lp-doc-surface.lp-full .lp-mapstage{
     min-height:100% !important;
   }
   #lp-map-modal.lp-doc-surface .lp-mbody,
-  #lp-map-modal.lp-doc-surface .lp-mapstage{
+  #lp-map-modal.lp-doc-surface .lp-mapstage,
+  #lp-h1sg-modal.lp-doc-surface .lp-mbody,
+  #lp-h1sg-modal.lp-doc-surface .lp-mapstage{
     height:var(--lp-map-doc-height, 100vh) !important;
   }
   #lp-map-modal.lp-doc-surface .lp-mctrl{
     top:calc(env(safe-area-inset-top, 0px) + 16px) !important;
   }
   #lp-map-modal.lp-doc-surface .lp-close,
-  #lp-map-modal.lp-doc-surface .lp-full{
+  #lp-map-modal.lp-doc-surface .lp-full,
+  #lp-h1sg-modal.lp-doc-surface .lp-close,
+  #lp-h1sg-modal.lp-doc-surface .lp-full{
     top:calc(env(safe-area-inset-top, 0px) + 16px) !important;
   }
   #lp-map-modal.lp-doc-surface .lp-mbox > .lp-mzoom,
   #lp-map-modal.lp-doc-surface .lp-mbox > .lp-mzoom[data-lp-zoom-dock="outer"],
-  #lp-map-modal.lp-doc-surface .lp-mzoom{
+  #lp-map-modal.lp-doc-surface .lp-mzoom,
+  #lp-h1sg-modal.lp-doc-surface .lp-mbox > .lp-mzoom,
+  #lp-h1sg-modal.lp-doc-surface .lp-mbox > .lp-mzoom[data-lp-zoom-dock="outer"],
+  #lp-h1sg-modal.lp-doc-surface .lp-mzoom{
     /* Keep the zoom dock anchored to the visible viewport, not to the
        over-extended document-layer surface. The map surface may continue
        below iOS Safari's bottom toolbar, but this control must remain above
@@ -1179,10 +1201,21 @@ function lpEnsureMapDocumentSurfaceStyle(){if(document.getElementById("lp-map-do
     opacity:1 !important;
     pointer-events:none !important;
   }
-  #lp-map-modal.lp-doc-surface .lp-mzoom [data-ctrl-zoom]{
+  #lp-map-modal.lp-doc-surface .lp-mzoom [data-ctrl-zoom],
+  #lp-h1sg-modal.lp-doc-surface .lp-mzoom .lp-ctrl-group{
     pointer-events:auto !important;
   }
-  #lp-map-modal.lp-touch-compositor .lp-mapviewport{
+  /* The guided-study CTA sits directly above the dock, so it has to ride the
+     same visible-viewport anchor instead of the taller document surface. */
+  #lp-h1sg-modal.lp-doc-surface .lp-h1sg-docklaunch{
+    /* bottom only: left/transform/hover-lift stay with the existing rules so the
+       press and hover transforms are not overwritten. */
+    top:auto !important;
+    bottom:calc(var(--lp-map-zoom-bottom, calc(env(safe-area-inset-bottom, 0px) + 22px)) + 68px) !important;
+    z-index:2147483404 !important;
+  }
+  #lp-map-modal.lp-touch-compositor .lp-mapviewport,
+  #lp-h1sg-modal.lp-touch-compositor .lp-mapviewport{
     -webkit-transform:translate3d(0,0,0);
     transform:translate3d(0,0,0);
     will-change:transform;

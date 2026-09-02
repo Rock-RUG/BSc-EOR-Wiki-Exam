@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1788314724935,
+  "generatedAt": 1788382907682,
   "nodes": {
     "about.html": {
       "title": "About this wiki",
@@ -185,14 +185,14 @@
       "aiMcq": true
     },
     "custom-random.html": {
-      "title": "Concept Finder",
+      "title": "Redirect to Concept Finder",
       "courseName": "",
       "coursePath": "",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "find.html": {
-      "title": "find",
+      "title": "Concept Finder",
       "courseName": "",
       "coursePath": "",
       "curriculumStatus": "current",
@@ -206,7 +206,7 @@
       "aiMcq": true
     },
     "random.html": {
-      "title": "random",
+      "title": "Random",
       "courseName": "",
       "coursePath": "",
       "curriculumStatus": "current",
@@ -570,7 +570,7 @@
       "aiMcq": false
     },
     "Year-1/1a-Math-I-Calculus/geometric-series.html": {
-      "title": "Geometric Series",
+      "title": "Geometric Series (Math I: Calculus)",
       "courseName": "1a-Math-I-Calculus",
       "coursePath": "Year-1/1a-Math-I-Calculus",
       "curriculumStatus": "current",
@@ -906,7 +906,7 @@
       "aiMcq": true
     },
     "Year-1/1a-Math-I-Calculus/n-th-root.html": {
-      "title": "$n$-th Root",
+      "title": "n-th Root",
       "courseName": "1a-Math-I-Calculus",
       "coursePath": "Year-1/1a-Math-I-Calculus",
       "curriculumStatus": "current",
@@ -948,14 +948,14 @@
       "aiMcq": true
     },
     "Year-1/1a-Math-I-Calculus/p-series.html": {
-      "title": "$p$-series",
+      "title": "p-series",
       "courseName": "1a-Math-I-Calculus",
       "coursePath": "Year-1/1a-Math-I-Calculus",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/1a-Math-I-Calculus/p-test.html": {
-      "title": "$p$-test",
+      "title": "p-test",
       "courseName": "1a-Math-I-Calculus",
       "coursePath": "Year-1/1a-Math-I-Calculus",
       "curriculumStatus": "current",
@@ -1333,7 +1333,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Math-II-Linear-Algebra/cauchy-schwarz-inequality.html": {
-      "title": "Cauchy-Schwarz Inequality",
+      "title": "Cauchy-Schwarz Inequality (Math II: Linear Algebra)",
       "courseName": "1b-Math-II-Linear-Algebra",
       "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
       "curriculumStatus": "current",
@@ -1641,7 +1641,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Math-II-Linear-Algebra/euclidean-space.html": {
-      "title": "Euclidean Space",
+      "title": "Euclidean Space (Math II: Linear Algebra)",
       "courseName": "1b-Math-II-Linear-Algebra",
       "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
       "curriculumStatus": "current",
@@ -1718,7 +1718,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html": {
-      "title": "Hyperplane",
+      "title": "Hyperplane (Math II: Linear Algebra)",
       "courseName": "1b-Math-II-Linear-Algebra",
       "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
       "curriculumStatus": "current",
@@ -1928,7 +1928,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Math-II-Linear-Algebra/permutation.html": {
-      "title": "Permutation",
+      "title": "Permutation (Math II: Linear Algebra)",
       "courseName": "1b-Math-II-Linear-Algebra",
       "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
       "curriculumStatus": "current",
@@ -1991,7 +1991,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html": {
-      "title": "Quadratic Form",
+      "title": "Quadratic Form (Math II: Linear Algebra)",
       "courseName": "1b-Math-II-Linear-Algebra",
       "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
       "curriculumStatus": "current",
@@ -2201,7 +2201,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/bernoulli-distribution.html": {
-      "title": "Bernoulli Distribution",
+      "title": "Bernoulli Distribution (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2215,7 +2215,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/binomial-distribution.html": {
-      "title": "Binomial Distribution",
+      "title": "Binomial Distribution (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2236,7 +2236,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/chebyshev-inequality.html": {
-      "title": "Chebyshev Inequality",
+      "title": "Chebyshev Inequality (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2271,28 +2271,28 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html": {
-      "title": "Conditional Probability",
+      "title": "Conditional Probability (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/conditional-variance.html": {
-      "title": "Conditional Variance",
+      "title": "Conditional Variance (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/continuous-random-variable.html": {
-      "title": "Continuous Random Variable",
+      "title": "Continuous Random Variable (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/convergence-in-probability.html": {
-      "title": "Convergence in Probability",
+      "title": "Convergence in Probability (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2306,7 +2306,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html": {
-      "title": "Cumulative Distribution Function",
+      "title": "Cumulative Distribution Function (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2320,14 +2320,14 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/discrete-random-variable.html": {
-      "title": "Discrete Random Variable",
+      "title": "Discrete Random Variable (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/discrete-uniform-distribution.html": {
-      "title": "Discrete Uniform Distribution",
+      "title": "Discrete Uniform Distribution (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2362,7 +2362,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/exponential-distribution.html": {
-      "title": "Exponential Distribution",
+      "title": "Exponential Distribution (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2383,7 +2383,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/fundamental-bridge.html": {
-      "title": "Fundamental Bridge",
+      "title": "Fundamental Bridge (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2397,7 +2397,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/geometric-distribution.html": {
-      "title": "Geometric Distribution",
+      "title": "Geometric Distribution (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2453,28 +2453,28 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/index.html": {
-      "title": "Probability Theory For EOR",
+      "title": "Probability Theory for EOR",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/indicator-random-variable.html": {
-      "title": "Indicator Random Variable",
+      "title": "Indicator Random Variable (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/law-of-total-probability.html": {
-      "title": "Law of Total Probability",
+      "title": "Law of Total Probability (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/linearity-of-expectation.html": {
-      "title": "Linearity of Expectation",
+      "title": "Linearity of Expectation (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2502,7 +2502,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/memoryless-property.html": {
-      "title": "Memoryless Property",
+      "title": "Memoryless Property (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2572,7 +2572,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/order-statistic.html": {
-      "title": "Order Statistic",
+      "title": "Order Statistic (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2586,21 +2586,21 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/partition.html": {
-      "title": "Partition",
+      "title": "Partition (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/permutation.html": {
-      "title": "Permutation",
+      "title": "Permutation (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html": {
-      "title": "Poisson Distribution",
+      "title": "Poisson Distribution (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2614,7 +2614,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html": {
-      "title": "Probability Density Function",
+      "title": "Probability Density Function (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2628,7 +2628,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html": {
-      "title": "Probability Mass Function",
+      "title": "Probability Mass Function (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2775,7 +2775,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/support-of-a-random-variable.html": {
-      "title": "Support of a Random Variable",
+      "title": "Support of a Random Variable (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2796,7 +2796,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/uniform-distribution.html": {
-      "title": "Uniform Distribution",
+      "title": "Uniform Distribution (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2831,7 +2831,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/weak-law-of-large-numbers.html": {
-      "title": "Weak Law of Large Numbers",
+      "title": "Weak Law of Large Numbers (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2873,7 +2873,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/big-o-and-little-o-notations.html": {
-      "title": "Big-$O$ and Little-$o$ Notations",
+      "title": "Big-O and Little-o Notations",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -2992,7 +2992,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/euclidean-space.html": {
-      "title": "Euclidean Space",
+      "title": "Euclidean Space (Math III: Analysis)",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -3055,7 +3055,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/hyperplane.html": {
-      "title": "Hyperplane",
+      "title": "Hyperplane (Math III: Analysis)",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -3139,7 +3139,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/monomial-on-rn.html": {
-      "title": "Monomial on $\\mathbb R^n$",
+      "title": "Monomial on R^n",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -3174,7 +3174,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/p-norm-and-p-metric.html": {
-      "title": "$p$-norm and $p$-metric",
+      "title": "p-norm and p-metric",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -3209,7 +3209,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/polynomial-on-rn.html": {
-      "title": "Polynomial on $\\mathbb R^n$",
+      "title": "Polynomial on R^n",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -3223,7 +3223,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/quadratic-form.html": {
-      "title": "Quadratic Form",
+      "title": "Quadratic Form (Math III: Analysis)",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -3293,7 +3293,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/taylor-series.html": {
-      "title": "Taylor Series",
+      "title": "Taylor Series (Math III: Analysis)",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -3384,7 +3384,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/weierstrass-m-test.html": {
-      "title": "Weierstrass $M$-test",
+      "title": "Weierstrass M-test",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -3433,14 +3433,14 @@
       "aiMcq": true
     },
     "Year-1/2b-Math-IV-Multivariate-Calculus/convex-and-concave-functions-on-rn.html": {
-      "title": "Convex and Concave Functions on $\\mathbb R^n$",
+      "title": "Convex and Concave Functions on R^n",
       "courseName": "2b-Math-IV-Multivariate-Calculus",
       "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html": {
-      "title": "Convex Set in $\\mathbb R^n$",
+      "title": "Convex Set in R^n",
       "courseName": "2b-Math-IV-Multivariate-Calculus",
       "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
       "curriculumStatus": "current",
@@ -3734,7 +3734,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Math-IV-Multivariate-Calculus/twice-continuous-differentiability-on-rn.html": {
-      "title": "Twice Continuous Differentiability on $\\mathbb R^n$",
+      "title": "Twice Continuous Differentiability on R^n",
       "courseName": "2b-Math-IV-Multivariate-Calculus",
       "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
       "curriculumStatus": "current",
@@ -3804,14 +3804,14 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/bernoulli-distribution.html": {
-      "title": "Bernoulli Distribution",
+      "title": "Bernoulli Distribution (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/binomial-distribution.html": {
-      "title": "Binomial Distribution",
+      "title": "Binomial Distribution (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -3825,7 +3825,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/cauchy-schwarz-inequality.html": {
-      "title": "Cauchy-Schwarz Inequality",
+      "title": "Cauchy-Schwarz Inequality (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -3853,7 +3853,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/chebyshev-inequality.html": {
-      "title": "Chebyshev's Inequality",
+      "title": "Chebyshev's Inequality (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -3923,14 +3923,14 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/conditional-probability.html": {
-      "title": "Conditional Probability",
+      "title": "Conditional Probability (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/conditional-variance.html": {
-      "title": "Conditional Variance",
+      "title": "Conditional Variance (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -3965,7 +3965,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/continuous-random-variable.html": {
-      "title": "Continuous Random Variable",
+      "title": "Continuous Random Variable (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -3979,7 +3979,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/convergence-in-probability.html": {
-      "title": "Convergence in Probability",
+      "title": "Convergence in Probability (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -4007,21 +4007,21 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/cumulative-distribution-function.html": {
-      "title": "Cumulative Distribution Function",
+      "title": "Cumulative Distribution Function (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/discrete-random-variable.html": {
-      "title": "Discrete Random Variable",
+      "title": "Discrete Random Variable (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/discrete-uniform-distribution.html": {
-      "title": "Discrete Uniform Distribution",
+      "title": "Discrete Uniform Distribution (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -4049,7 +4049,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/exponential-distribution.html": {
-      "title": "Exponential Distribution",
+      "title": "Exponential Distribution (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -4070,7 +4070,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/fundamental-bridge.html": {
-      "title": "Fundamental Bridge",
+      "title": "Fundamental Bridge (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -4084,14 +4084,14 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/geometric-distribution.html": {
-      "title": "Geometric Distribution",
+      "title": "Geometric Distribution (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/geometric-series.html": {
-      "title": "Geometric Series",
+      "title": "Geometric Series (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -4126,7 +4126,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/indicator-random-variable.html": {
-      "title": "Indicator Random Variable",
+      "title": "Indicator Random Variable (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -4189,14 +4189,14 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/law-of-total-probability.html": {
-      "title": "Law of Total Probability",
+      "title": "Law of Total Probability (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/linearity-of-expectation.html": {
-      "title": "Linearity of Expectation",
+      "title": "Linearity of Expectation (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -4238,7 +4238,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/memoryless-property.html": {
-      "title": "Memoryless Property",
+      "title": "Memoryless Property (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -4294,21 +4294,21 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/order-statistic.html": {
-      "title": "Order Statistic",
+      "title": "Order Statistic (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/partition.html": {
-      "title": "Partition",
+      "title": "Partition (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/poisson-distribution.html": {
-      "title": "Poisson Distribution",
+      "title": "Poisson Distribution (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -4329,14 +4329,14 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/probability-density-function.html": {
-      "title": "Probability Density Function",
+      "title": "Probability Density Function (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/probability-mass-function.html": {
-      "title": "Probability Mass Function",
+      "title": "Probability Mass Function (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -4357,7 +4357,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/support-of-a-random-variable.html": {
-      "title": "Support of a Random Variable",
+      "title": "Support of a Random Variable (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -4378,14 +4378,14 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/taylor-series.html": {
-      "title": "Taylor Series",
+      "title": "Taylor Series (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/uniform-distribution.html": {
-      "title": "Uniform Distribution",
+      "title": "Uniform Distribution (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -4399,7 +4399,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Probability-Distributions/weak-law-of-large-numbers.html": {
-      "title": "Weak Law of Large Numbers",
+      "title": "Weak Law of Large Numbers (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
       "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
@@ -4504,7 +4504,7 @@
       "aiMcq": true
     },
     "Year-2/index.html": {
-      "title": "index",
+      "title": "Year 2",
       "courseName": "Year-2",
       "coursePath": "Year-2",
       "curriculumStatus": "current",
@@ -5157,8 +5157,7 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/complex-exponential-function.html": [
       "Year-1/1b-Math-II-Linear-Algebra/complex-number.html",
-      "Year-1/1a-Math-I-Calculus/exponential-function.html",
-      "Year-1/2a-Math-III-Analysis/taylor-series.html"
+      "Year-1/1a-Math-I-Calculus/exponential-function.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/complex-exponentiation.html": [
       "Year-1/1b-Math-II-Linear-Algebra/complex-logarithm.html",
@@ -5201,8 +5200,7 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/complex-trigonometric-functions.html": [
       "Year-1/1b-Math-II-Linear-Algebra/complex-number.html",
-      "Year-1/1a-Math-I-Calculus/trigonometric-functions.html",
-      "Year-1/2a-Math-III-Analysis/taylor-series.html"
+      "Year-1/1a-Math-I-Calculus/trigonometric-functions.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/composition-of-linear-maps.html": [
       "Year-1/1b-Math-II-Linear-Algebra/linear-map.html"
@@ -5478,7 +5476,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/plane.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/polar-coordinate-system.html": [
-      "Year-1/2a-Math-III-Analysis/real-coordinate-space.html"
+      "Year-1/1a-Math-I-Calculus/trigonometric-functions.html",
+      "Year-1/1b-Math-II-Linear-Algebra/cartesian-product.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/polynomial-greatest-common-divisor.html": [
       "Year-1/1b-Math-II-Linear-Algebra/polynomial-long-division.html"
@@ -5657,8 +5656,7 @@
     ],
     "Year-1/1b-Probability-Theory-for-EOR/continuous-random-variable.html": [
       "Year-1/1b-Probability-Theory-for-EOR/random-variable.html",
-      "Year-1/1a-Math-I-Calculus/definite-integral.html",
-      "Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html"
+      "Year-1/1a-Math-I-Calculus/definite-integral.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/convergence-in-probability.html": [
       "Year-1/1b-Probability-Theory-for-EOR/random-variable.html",
@@ -5833,7 +5831,6 @@
       "Year-1/1b-Probability-Theory-for-EOR/random-variable.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/outcome.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/sample-space.html",
       "Year-1/1a-Math-I-Calculus/set.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/partition.html": [
@@ -6611,7 +6608,11 @@
       "Year-1/2b-Probability-Distributions/indicator-random-variable.html",
       "Year-1/2b-Probability-Distributions/expectation-discrete.html"
     ],
-    "Year-1/2b-Probability-Distributions/gamma-distribution.html": [],
+    "Year-1/2b-Probability-Distributions/gamma-distribution.html": [
+      "Year-1/1a-Math-I-Calculus/gamma-function.html",
+      "Year-1/2b-Probability-Distributions/probability-density-function.html",
+      "Year-1/2b-Probability-Distributions/exponential-distribution.html"
+    ],
     "Year-1/2b-Probability-Distributions/geometric-distribution.html": [
       "Year-1/2b-Probability-Distributions/bernoulli-distribution.html",
       "Year-1/2b-Probability-Distributions/geometric-series.html"
@@ -6969,7 +6970,9 @@
     ],
     "Year-1/1a-Math-I-Calculus/fundamental-theorem-of-calculus-part-1.html": [],
     "Year-1/1a-Math-I-Calculus/fundamental-theorem-of-calculus-part-2.html": [],
-    "Year-1/1a-Math-I-Calculus/gamma-function.html": [],
+    "Year-1/1a-Math-I-Calculus/gamma-function.html": [
+      "Year-1/2b-Probability-Distributions/gamma-distribution.html"
+    ],
     "Year-1/1a-Math-I-Calculus/geometric-series.html": [],
     "Year-1/1a-Math-I-Calculus/global-extremum.html": [
       "Year-1/1a-Math-I-Calculus/extreme-value-theorem.html",
@@ -7318,6 +7321,7 @@
     "Year-1/1a-Math-I-Calculus/trigonometric-functions.html": [
       "Year-1/1a-Math-I-Calculus/inverse-trigonometric-functions.html",
       "Year-1/1b-Math-II-Linear-Algebra/complex-trigonometric-functions.html",
+      "Year-1/1b-Math-II-Linear-Algebra/polar-coordinate-system.html",
       "Year-1/2a-Math-III-Analysis/weierstrass-function.html"
     ],
     "Year-1/1a-Math-I-Calculus/union-of-sets.html": [
@@ -7381,6 +7385,7 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/cartesian-product.html": [
       "Year-1/1b-Math-II-Linear-Algebra/binary-operation.html",
+      "Year-1/1b-Math-II-Linear-Algebra/polar-coordinate-system.html",
       "Year-1/1b-Probability-Theory-for-EOR/multiplication-rule.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/cauchy-schwarz-inequality.html": [
@@ -8069,7 +8074,6 @@
       "Year-1/1b-Probability-Theory-for-EOR/arrival-rate.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/continuous-random-variable.html",
       "Year-1/1b-Probability-Theory-for-EOR/exponential-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/mode.html",
       "Year-1/1b-Probability-Theory-for-EOR/normal-distribution.html",
@@ -8130,7 +8134,6 @@
       "Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html",
       "Year-1/1b-Probability-Theory-for-EOR/event.html",
       "Year-1/1b-Probability-Theory-for-EOR/naive-probability.html",
-      "Year-1/1b-Probability-Theory-for-EOR/outcome.html",
       "Year-1/1b-Probability-Theory-for-EOR/probability-function.html",
       "Year-1/1b-Probability-Theory-for-EOR/random-variable.html"
     ],
@@ -8368,7 +8371,6 @@
       "Year-1/2a-Math-III-Analysis/taylor-series.html"
     ],
     "Year-1/2a-Math-III-Analysis/real-coordinate-space.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/polar-coordinate-system.html",
       "Year-1/2a-Math-III-Analysis/discrete-metric.html",
       "Year-1/2a-Math-III-Analysis/maximum-norm.html",
       "Year-1/2a-Math-III-Analysis/taxicab-metric.html",
@@ -8383,8 +8385,6 @@
     "Year-1/2a-Math-III-Analysis/taxicab-metric.html": [],
     "Year-1/2a-Math-III-Analysis/taylor-polynomial.html": [],
     "Year-1/2a-Math-III-Analysis/taylor-series.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/complex-exponential-function.html",
-      "Year-1/1b-Math-II-Linear-Algebra/complex-trigonometric-functions.html",
       "Year-1/2a-Math-III-Analysis/taylors-theorem.html"
     ],
     "Year-1/2a-Math-III-Analysis/taylors-theorem.html": [
@@ -8605,7 +8605,9 @@
       "Year-1/2b-Probability-Distributions/linearity-of-expectation.html",
       "Year-1/2b-Probability-Distributions/variance.html"
     ],
-    "Year-1/2b-Probability-Distributions/exponential-distribution.html": [],
+    "Year-1/2b-Probability-Distributions/exponential-distribution.html": [
+      "Year-1/2b-Probability-Distributions/gamma-distribution.html"
+    ],
     "Year-1/2b-Probability-Distributions/exponential-limit.html": [
       "Year-1/2b-Probability-Distributions/poisson-distribution.html"
     ],
@@ -8658,6 +8660,7 @@
     "Year-1/2b-Probability-Distributions/poisson-splitting.html": [],
     "Year-1/2b-Probability-Distributions/probability-density-function.html": [
       "Year-1/2b-Probability-Distributions/expectation-continuous.html",
+      "Year-1/2b-Probability-Distributions/gamma-distribution.html",
       "Year-1/2b-Probability-Distributions/support-of-a-random-variable.html"
     ],
     "Year-1/2b-Probability-Distributions/probability-mass-function.html": [

@@ -490,7 +490,7 @@ return null;}
 function escapeHtml(s){return String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;");}
 function stripHtml(s){if(!s)return"";const div=document.createElement("div");div.innerHTML=s;return div.textContent||div.innerText||"";}
 function normaliseText(s){return String(s||"").replace(/\s+/g," ").trim();}
-function normaliseForSearch(s){return String(s||"").toLowerCase().replace(/[^a-z0-9]+/g," ").replace(/\s+/g," ").trim();}
+function normaliseForSearch(s){const spelled=typeof window.__mkSymbolsToWords==="function"?window.__mkSymbolsToWords(s):s;return String(spelled||"").toLowerCase().replace(/[^a-z0-9]+/g," ").replace(/\s+/g," ").trim();}
 function tokeniseQuery(q){return normaliseForSearch(q).split(" ").filter(Boolean);}
 function stripPluralS(tok){tok=String(tok||"");if(tok.length<=3)return tok;if(!tok.endsWith("s"))return tok;if(tok.endsWith("ss")||tok.endsWith("us")||tok.endsWith("is")||tok.endsWith("as"))return tok;return tok.slice(0,-1);}
 function pluralS(tok){tok=String(tok||"");if(tok.length<=2)return"";if(tok.endsWith("s"))return"";return tok+"s";}

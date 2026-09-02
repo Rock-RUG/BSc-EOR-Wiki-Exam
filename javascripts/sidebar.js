@@ -133,7 +133,7 @@ function ensureStyles(){if(document.getElementById(IDS.style))return;const style
    sorter so sticky offsets, mobile clone headers, and course-collapse state all
    update from one source of truth. */
 #current-course-bar{
-  --ccb-line: color-mix(in srgb, var(--md-default-fg-color) 14%, transparent);
+  --ccb-line: transparent;
   position:-webkit-sticky;
   position:sticky;
   top:0;
@@ -150,6 +150,11 @@ function ensureStyles(){if(document.getElementById(IDS.style))return;const style
   contain:layout style;
   overflow:visible;
   isolation:isolate;
+}
+@supports (color: color-mix(in srgb, black, white)){
+#current-course-bar{
+  --ccb-line: color-mix(in srgb, var(--md-default-fg-color) 14%, transparent);
+}
 }
 /* Own-compositing-layer hints for smooth sticky scrolling, applied ONLY after the
    first-paint window.  During boot the sidebar is visibility:hidden; a hidden
@@ -436,16 +441,31 @@ html[data-md-color-scheme="slate"] #current-course-bar{
 }
 
 html.mk-sidebar-sort-ready .md-sidebar--primary {
+  --msb-card-border: transparent;
+  --msb-card-border-strong: var(--msb-card-border);
+  --msb-card-bg: var(--md-default-bg-color);
+  --msb-card-bg-hover: var(--md-default-bg-color);
+}
+@supports (color: color-mix(in srgb, black, white)){
+html.mk-sidebar-sort-ready .md-sidebar--primary{
   --msb-card-border: color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
   --msb-card-border-strong: color-mix(in srgb, var(--md-accent-fg-color) 24%, var(--msb-card-border));
   --msb-card-bg: color-mix(in srgb, var(--md-default-bg-color) 94%, var(--md-default-fg-color) 6%);
   --msb-card-bg-hover: color-mix(in srgb, var(--md-default-bg-color) 90%, var(--md-accent-fg-color) 10%);
 }
+}
 html[data-md-color-scheme="slate"].mk-sidebar-sort-ready .md-sidebar--primary {
   --msb-card-border: rgba(255,255,255,.10);
+  --msb-card-border-strong: rgba(255,255,255,.12);
+  --msb-card-bg: var(--md-default-bg-color);
+  --msb-card-bg-hover: var(--md-default-bg-color);
+}
+@supports (color: color-mix(in srgb, black, white)){
+html[data-md-color-scheme="slate"].mk-sidebar-sort-ready .md-sidebar--primary{
   --msb-card-border-strong: color-mix(in srgb, var(--md-accent-fg-color) 30%, rgba(255,255,255,.12));
   --msb-card-bg: color-mix(in srgb, var(--md-default-bg-color) 90%, rgba(255,255,255,.05) 10%);
   --msb-card-bg-hover: color-mix(in srgb, var(--md-default-bg-color) 84%, var(--md-accent-fg-color) 16%);
+}
 }
 
 html.mk-sidebar-sort-ready .md-sidebar--primary .msb-group-head__btn{
@@ -584,14 +604,20 @@ html.mk-sidebar-sort-ready{
   --msb-scrollbar-w: 9px;
   --msb-scrollbar-green: #00bfa5;
   --msb-scrollbar-green-hover: #00cdb4;
-  --msb-scrollbar-thumb: color-mix(in srgb, var(--md-default-fg-color) 44%, transparent);
+  --msb-scrollbar-thumb: transparent;
   --msb-scrollbar-thumb-hover: var(--msb-scrollbar-green);
-  --msb-scrollbar-arrow: color-mix(in srgb, var(--md-default-fg-color) 52%, transparent);
+  --msb-scrollbar-arrow: var(--md-default-fg-color);
   --msb-scrollbar-arrow-hover: var(--msb-scrollbar-green);
   --msb-scrollbar-accent: var(--msb-scrollbar-thumb);
   --msb-scrollbar-accent-hover: var(--msb-scrollbar-green-hover);
   scrollbar-width: thin;
   scrollbar-color: var(--msb-scrollbar-thumb) transparent;
+}
+@supports (color: color-mix(in srgb, black, white)){
+html.mk-sidebar-sort-ready{
+  --msb-scrollbar-thumb: color-mix(in srgb, var(--md-default-fg-color) 44%, transparent);
+  --msb-scrollbar-arrow: color-mix(in srgb, var(--md-default-fg-color) 52%, transparent);
+}
 }
 html.mk-sidebar-sort-ready[data-md-color-scheme="slate"]{
   --msb-scrollbar-thumb: rgba(255,255,255,.34);
@@ -2121,10 +2147,10 @@ function ensureDrawerGapPatchStyles(){const STYLE_ID="mk-sidebar-drawer-gap-patc
   will-change:left,top,width,height;
 }
 #mk-sidebar-drawer-ghost-floor{
-  --msb-card-border: color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
-  --msb-card-border-strong: color-mix(in srgb, var(--md-accent-fg-color) 24%, var(--msb-card-border));
-  --msb-card-bg: color-mix(in srgb, var(--md-default-bg-color) 94%, var(--md-default-fg-color) 6%);
-  --msb-card-bg-hover: color-mix(in srgb, var(--md-default-bg-color) 90%, var(--md-accent-fg-color) 10%);
+  --msb-card-border: transparent;
+  --msb-card-border-strong: var(--msb-card-border);
+  --msb-card-bg: var(--md-default-bg-color);
+  --msb-card-bg-hover: var(--md-default-bg-color);
   --msb-sidebar-page-bg:var(--mk-active-page-bg, var(--mk-theme-page-bg, var(--md-default-bg-color)));
   --msb-sidebar-page-background:var(--mk-page-pattern-image, none), var(--msb-sidebar-page-bg, var(--md-default-bg-color));
   --msb-sidebar-page-bg-size:var(--mk-page-pattern-size, auto), auto;
@@ -2152,11 +2178,26 @@ function ensureDrawerGapPatchStyles(){const STYLE_ID="mk-sidebar-drawer-gap-patc
      This prevents the bottom safe-area strip from losing the drawer's inner
      left/right spacing. */
 }
+@supports (color: color-mix(in srgb, black, white)){
+#mk-sidebar-drawer-ghost-floor{
+  --msb-card-border: color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
+  --msb-card-border-strong: color-mix(in srgb, var(--md-accent-fg-color) 24%, var(--msb-card-border));
+  --msb-card-bg: color-mix(in srgb, var(--md-default-bg-color) 94%, var(--md-default-fg-color) 6%);
+  --msb-card-bg-hover: color-mix(in srgb, var(--md-default-bg-color) 90%, var(--md-accent-fg-color) 10%);
+}
+}
 html[data-md-color-scheme="slate"] #mk-sidebar-drawer-ghost-floor{
   --msb-card-border: rgba(255,255,255,.10);
+  --msb-card-border-strong: rgba(255,255,255,.12);
+  --msb-card-bg: var(--md-default-bg-color);
+  --msb-card-bg-hover: var(--md-default-bg-color);
+}
+@supports (color: color-mix(in srgb, black, white)){
+html[data-md-color-scheme="slate"] #mk-sidebar-drawer-ghost-floor{
   --msb-card-border-strong: color-mix(in srgb, var(--md-accent-fg-color) 30%, rgba(255,255,255,.12));
   --msb-card-bg: color-mix(in srgb, var(--md-default-bg-color) 90%, rgba(255,255,255,.05) 10%);
   --msb-card-bg-hover: color-mix(in srgb, var(--md-default-bg-color) 84%, var(--md-accent-fg-color) 16%);
+}
 }
 #mk-sidebar-drawer-ghost-floor .msb-ghost-scrollwrap{
   position:absolute !important;
