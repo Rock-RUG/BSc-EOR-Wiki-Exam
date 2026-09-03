@@ -70,7 +70,7 @@ if(t.k==="RP"){bal--;if(bal<0)return{ok:false,msg:"Unmatched ')'."};expect="OP";
 if(t.k==="TERM")return{ok:false,msg:`Missing operator between ${label(prev)} and ${label(t)}.`};if(t.k==="LP")return{ok:false,msg:`Missing operator before '(' (between ${label(prev)} and '(').`};}}
 if(bal!==0)return{ok:false,msg:"Unclosed '('."};if(expect!=="OP"){const last=tokens[tokens.length-1];if(last&&last.k==="OP")return{ok:false,msg:`Missing token after ${label(last)}.`};if(last&&last.k==="LP")return{ok:false,msg:"Unclosed '('."};return{ok:false,msg:"Expression cannot end here: add a token."};}
 return{ok:true,msg:""};}
-function tokensToExprText(tokens){const out=[];for(const t of(tokens||[])){if(!t)continue;if(t.k==="TERM"){const term=String(t.v||"").trim().replace(/\s+/g," ");const parts=term.split(/\s+/).filter(Boolean);if(parts.length<=1){if(parts[0])out.push(parts[0]);}else{out.push("(");for(let i=0;i<parts.length;i++){out.push(parts[i]);if(i<parts.length-1)out.push("AND");}
+function tokensToExprText(tokens){const out=[];for(const t of(tokens||[])){if(!t)continue;if(t.k==="TERM"){const term=String(t.v||"").trim().replace(/\s+/g," ");const parts=term.split(/\s+/).filter(Boolean).map((part)=>/^(AND|OR)$/i.test(part)||/[()"]/.test(part)?JSON.stringify(part):part);if(parts.length<=1){if(parts[0])out.push(parts[0]);}else{out.push("(");for(let i=0;i<parts.length;i++){out.push(parts[i]);if(i<parts.length-1)out.push("AND");}
 out.push(")");}
 continue;}
 out.push(String(t.v||"").trim());}

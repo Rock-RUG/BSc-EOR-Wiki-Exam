@@ -1,172 +1,18 @@
 {
   "version": 1,
-  "generatedAt": 1788388551425,
+  "generatedAt": 1788447282001,
   "nodes": {
-    "about.html": {
-      "title": "About this wiki",
+    "index.html": {
+      "title": "BSc EOR Wiki",
       "courseName": "",
       "coursePath": "",
       "curriculumStatus": "current",
       "aiMcq": true
     },
-    "assets/bgm/LICENSE.html": {
-      "title": "Music licences",
-      "courseName": "bgm",
-      "coursePath": "assets/bgm",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/cursor-candidates/README.html": {
-      "title": "Cursor candidates",
-      "courseName": "cursor-candidates",
-      "coursePath": "assets/cursor-candidates",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/ancient-ruins/README.html": {
-      "title": "Ancient Ruins",
-      "courseName": "ancient-ruins",
-      "coursePath": "assets/themes/ancient-ruins",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/aurora/README.html": {
-      "title": "Aurora",
-      "courseName": "aurora",
-      "coursePath": "assets/themes/aurora",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/autumn/README.html": {
-      "title": "Autumn",
-      "courseName": "autumn",
-      "coursePath": "assets/themes/autumn",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/cherry-blossom/README.html": {
-      "title": "Cherry Blossom",
-      "courseName": "cherry-blossom",
-      "coursePath": "assets/themes/cherry-blossom",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/coral-reef/README.html": {
-      "title": "Coral Reef",
-      "courseName": "coral-reef",
-      "coursePath": "assets/themes/coral-reef",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/crystal-cave/README.html": {
-      "title": "Crystal Cave",
-      "courseName": "crystal-cave",
-      "coursePath": "assets/themes/crystal-cave",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/cyber-city/README.html": {
-      "title": "Cyber City",
-      "courseName": "cyber-city",
-      "coursePath": "assets/themes/cyber-city",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/deep-sea/README.html": {
-      "title": "Deep Sea",
-      "courseName": "deep-sea",
-      "coursePath": "assets/themes/deep-sea",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/desert/README.html": {
-      "title": "Desert",
-      "courseName": "desert",
-      "coursePath": "assets/themes/desert",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/forest/README.html": {
-      "title": "Forest",
-      "courseName": "forest",
-      "coursePath": "assets/themes/forest",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/galaxy/README.html": {
-      "title": "Galaxy",
-      "courseName": "galaxy",
-      "coursePath": "assets/themes/galaxy",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/glacier/README.html": {
-      "title": "Glacier",
-      "courseName": "glacier",
-      "coursePath": "assets/themes/glacier",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/magic-academy/README.html": {
-      "title": "Magic Academy",
-      "courseName": "magic-academy",
-      "coursePath": "assets/themes/magic-academy",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/moonlight/README.html": {
-      "title": "Moonlight",
-      "courseName": "moonlight",
-      "coursePath": "assets/themes/moonlight",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/neon-glow/README.html": {
-      "title": "Neon Glow",
-      "courseName": "neon-glow",
-      "coursePath": "assets/themes/neon-glow",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/prompt.html": {
-      "title": "prompt",
-      "courseName": "themes",
-      "coursePath": "assets/themes",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/rainy-day/README.html": {
-      "title": "Rainy Day",
-      "courseName": "rainy-day",
-      "coursePath": "assets/themes/rainy-day",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/starry-night/README.html": {
-      "title": "Starry Night",
-      "courseName": "starry-night",
-      "coursePath": "assets/themes/starry-night",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/sunset/README.html": {
-      "title": "Sunset",
-      "courseName": "sunset",
-      "coursePath": "assets/themes/sunset",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/volcano/README.html": {
-      "title": "Volcano",
-      "courseName": "volcano",
-      "coursePath": "assets/themes/volcano",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "assets/themes/winter/README.html": {
-      "title": "Winter",
-      "courseName": "winter",
-      "coursePath": "assets/themes/winter",
+    "about.html": {
+      "title": "About this wiki",
+      "courseName": "",
+      "coursePath": "",
       "curriculumStatus": "current",
       "aiMcq": true
     },
@@ -198,13 +44,6 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
-    "index.html": {
-      "title": "BSc EOR Wiki",
-      "courseName": "",
-      "coursePath": "",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
     "random.html": {
       "title": "Random",
       "courseName": "",
@@ -219,10 +58,24 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-1/index.html": {
+      "title": "Year 1",
+      "courseName": "Year-1",
+      "coursePath": "Year-1",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
     "Year-1/1a-Introduction-to-Data-Analytics/index.html": {
       "title": "Introduction to Data Analytics",
       "courseName": "1a-Introduction-to-Data-Analytics",
       "coursePath": "Year-1/1a-Introduction-to-Data-Analytics",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-Math-I-Calculus/index.html": {
+      "title": "Math I: Calculus",
+      "courseName": "1a-Math-I-Calculus",
+      "coursePath": "Year-1/1a-Math-I-Calculus",
       "curriculumStatus": "current",
       "aiMcq": true
     },
@@ -634,13 +487,6 @@
     },
     "Year-1/1a-Math-I-Calculus/indeterminate-form.html": {
       "title": "Indeterminate Form",
-      "courseName": "1a-Math-I-Calculus",
-      "coursePath": "Year-1/1a-Math-I-Calculus",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/1a-Math-I-Calculus/index.html": {
-      "title": "Math I: Calculus",
       "courseName": "1a-Math-I-Calculus",
       "coursePath": "Year-1/1a-Math-I-Calculus",
       "curriculumStatus": "current",
@@ -1199,6 +1045,13 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-1/1b-Math-II-Linear-Algebra/index.html": {
+      "title": "Math II: Linear Algebra",
+      "courseName": "1b-Math-II-Linear-Algebra",
+      "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
     "Year-1/1b-Math-II-Linear-Algebra/2-argument-arctangent.html": {
       "title": "2-argument Arctangent",
       "courseName": "1b-Math-II-Linear-Algebra",
@@ -1752,13 +1605,6 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
-    "Year-1/1b-Math-II-Linear-Algebra/index.html": {
-      "title": "Math II: Linear Algebra",
-      "courseName": "1b-Math-II-Linear-Algebra",
-      "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
     "Year-1/1b-Math-II-Linear-Algebra/inner-product.html": {
       "title": "Inner Product",
       "courseName": "1b-Math-II-Linear-Algebra",
@@ -2179,6 +2025,13 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-1/1b-Probability-Theory-for-EOR/index.html": {
+      "title": "Probability Theory for EOR",
+      "courseName": "1b-Probability-Theory-for-EOR",
+      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
     "Year-1/1b-Probability-Theory-for-EOR/arrival-rate.html": {
       "title": "Arrival Rate",
       "courseName": "1b-Probability-Theory-for-EOR",
@@ -2447,13 +2300,6 @@
     },
     "Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html": {
       "title": "Independent Random Variables",
-      "courseName": "1b-Probability-Theory-for-EOR",
-      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/1b-Probability-Theory-for-EOR/index.html": {
-      "title": "Probability Theory for EOR",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -2851,6 +2697,13 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-1/2a-Math-III-Analysis/index.html": {
+      "title": "Math III: Analysis",
+      "courseName": "2a-Math-III-Analysis",
+      "coursePath": "Year-1/2a-Math-III-Analysis",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
     "Year-1/2a-Math-III-Analysis/accumulation-point.html": {
       "title": "Accumulation Point",
       "courseName": "2a-Math-III-Analysis",
@@ -3063,13 +2916,6 @@
     },
     "Year-1/2a-Math-III-Analysis/image-and-preimage.html": {
       "title": "Image and Preimage",
-      "courseName": "2a-Math-III-Analysis",
-      "coursePath": "Year-1/2a-Math-III-Analysis",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/2a-Math-III-Analysis/index.html": {
-      "title": "Math III: Analysis",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -3397,6 +3243,13 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-1/2b-Math-IV-Multivariate-Calculus/index.html": {
+      "title": "Math IV: Multivariate Calculus",
+      "courseName": "2b-Math-IV-Multivariate-Calculus",
+      "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
     "Year-1/2b-Math-IV-Multivariate-Calculus/binding-and-nonbinding-constraints.html": {
       "title": "Binding and Nonbinding Constraints",
       "courseName": "2b-Math-IV-Multivariate-Calculus",
@@ -3511,13 +3364,6 @@
     },
     "Year-1/2b-Math-IV-Multivariate-Calculus/independent-linear-constraint-system.html": {
       "title": "Independent Linear Constraint System",
-      "courseName": "2b-Math-IV-Multivariate-Calculus",
-      "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/2b-Math-IV-Multivariate-Calculus/index.html": {
-      "title": "Math IV: Multivariate Calculus",
       "courseName": "2b-Math-IV-Multivariate-Calculus",
       "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
       "curriculumStatus": "current",
@@ -3758,6 +3604,13 @@
       "title": "Velocity Vector of a Curve",
       "courseName": "2b-Math-IV-Multivariate-Calculus",
       "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/2b-Probability-Distributions/index.html": {
+      "title": "Probability Distributions",
+      "courseName": "2b-Probability-Distributions",
+      "coursePath": "Year-1/2b-Probability-Distributions",
       "curriculumStatus": "current",
       "aiMcq": true
     },
@@ -4118,13 +3971,6 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
-    "Year-1/2b-Probability-Distributions/index.html": {
-      "title": "Probability Distributions",
-      "courseName": "2b-Probability-Distributions",
-      "coursePath": "Year-1/2b-Probability-Distributions",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
     "Year-1/2b-Probability-Distributions/indicator-random-variable.html": {
       "title": "Indicator Random Variable (Probability Distributions)",
       "courseName": "2b-Probability-Distributions",
@@ -4412,10 +4258,10 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
-    "Year-1/index.html": {
-      "title": "Year 1",
-      "courseName": "Year-1",
-      "coursePath": "Year-1",
+    "Year-2/index.html": {
+      "title": "Year 2",
+      "courseName": "Year-2",
+      "coursePath": "Year-2",
       "curriculumStatus": "current",
       "aiMcq": true
     },
@@ -4502,48 +4348,20 @@
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
       "aiMcq": true
-    },
-    "Year-2/index.html": {
-      "title": "Year 2",
-      "courseName": "Year-2",
-      "coursePath": "Year-2",
-      "curriculumStatus": "current",
-      "aiMcq": true
     }
   },
   "prereqOf": {
+    "index.html": [],
     "about.html": [],
-    "assets/bgm/LICENSE.html": [],
-    "assets/cursor-candidates/README.html": [],
-    "assets/themes/ancient-ruins/README.html": [],
-    "assets/themes/aurora/README.html": [],
-    "assets/themes/autumn/README.html": [],
-    "assets/themes/cherry-blossom/README.html": [],
-    "assets/themes/coral-reef/README.html": [],
-    "assets/themes/crystal-cave/README.html": [],
-    "assets/themes/cyber-city/README.html": [],
-    "assets/themes/deep-sea/README.html": [],
-    "assets/themes/desert/README.html": [],
-    "assets/themes/forest/README.html": [],
-    "assets/themes/galaxy/README.html": [],
-    "assets/themes/glacier/README.html": [],
-    "assets/themes/magic-academy/README.html": [],
-    "assets/themes/moonlight/README.html": [],
-    "assets/themes/neon-glow/README.html": [],
-    "assets/themes/prompt.html": [],
-    "assets/themes/rainy-day/README.html": [],
-    "assets/themes/starry-night/README.html": [],
-    "assets/themes/sunset/README.html": [],
-    "assets/themes/volcano/README.html": [],
-    "assets/themes/winter/README.html": [],
     "bgm-credits.html": [],
     "contributors.html": [],
     "custom-random.html": [],
     "find.html": [],
-    "index.html": [],
     "random.html": [],
     "trending.html": [],
+    "Year-1/index.html": [],
     "Year-1/1a-Introduction-to-Data-Analytics/index.html": [],
+    "Year-1/1a-Math-I-Calculus/index.html": [],
     "Year-1/1a-Math-I-Calculus/absolute-value.html": [],
     "Year-1/1a-Math-I-Calculus/addition-and-sum.html": [
       "Year-1/1a-Math-I-Calculus/natural-number.html"
@@ -4757,7 +4575,6 @@
       "Year-1/1a-Math-I-Calculus/limit-laws-for-functions.html",
       "Year-1/1a-Math-I-Calculus/limit-at-infinity.html"
     ],
-    "Year-1/1a-Math-I-Calculus/index.html": [],
     "Year-1/1a-Math-I-Calculus/indicator-function.html": [
       "Year-1/1a-Math-I-Calculus/function.html"
     ],
@@ -5044,6 +4861,7 @@
       "Year-1/1a-Math-I-Calculus/function.html"
     ],
     "Year-1/1a-OR-Modelling/index.html": [],
+    "Year-1/1b-Math-II-Linear-Algebra/index.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/2-argument-arctangent.html": [
       "Year-1/1a-Math-I-Calculus/inverse-trigonometric-functions.html",
       "Year-1/1b-Math-II-Linear-Algebra/complex-number.html"
@@ -5364,7 +5182,6 @@
     "Year-1/1b-Math-II-Linear-Algebra/imaginary-unit.html": [
       "Year-1/1a-Math-I-Calculus/exponentiation-and-power.html"
     ],
-    "Year-1/1b-Math-II-Linear-Algebra/index.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/inner-product.html": [
       "Year-1/1b-Math-II-Linear-Algebra/vector.html"
     ],
@@ -5593,6 +5410,7 @@
       "Year-1/1b-Math-II-Linear-Algebra/vector-space.html",
       "Year-1/1b-Math-II-Linear-Algebra/vector-addition.html"
     ],
+    "Year-1/1b-Probability-Theory-for-EOR/index.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/arrival-rate.html": [
       "Year-1/1b-Probability-Theory-for-EOR/poisson-process.html"
     ],
@@ -5756,7 +5574,6 @@
       "Year-1/1b-Probability-Theory-for-EOR/independent-events.html",
       "Year-1/1b-Probability-Theory-for-EOR/distribution.html"
     ],
-    "Year-1/1b-Probability-Theory-for-EOR/index.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/indicator-random-variable.html": [
       "Year-1/1b-Probability-Theory-for-EOR/event.html",
       "Year-1/1b-Probability-Theory-for-EOR/random-variable.html"
@@ -5980,6 +5797,7 @@
     ],
     "Year-1/1b-Programming-for-EOR/index.html": [],
     "Year-1/2a-Finance-for-EOR/index.html": [],
+    "Year-1/2a-Math-III-Analysis/index.html": [],
     "Year-1/2a-Math-III-Analysis/accumulation-point.html": [
       "Year-1/2a-Math-III-Analysis/open-metric-ball.html"
     ],
@@ -6119,7 +5937,6 @@
       "Year-1/1a-Math-I-Calculus/domain.html",
       "Year-1/1a-Math-I-Calculus/codomain.html"
     ],
-    "Year-1/2a-Math-III-Analysis/index.html": [],
     "Year-1/2a-Math-III-Analysis/infinite-series-of-functions.html": [
       "Year-1/1a-Math-I-Calculus/infinite-series.html",
       "Year-1/2a-Math-III-Analysis/pointwise-convergence.html",
@@ -6320,6 +6137,7 @@
       "Year-1/2a-Math-III-Analysis/infinite-series-of-functions.html"
     ],
     "Year-1/2a-Microeconomics-for-EOR/index.html": [],
+    "Year-1/2b-Math-IV-Multivariate-Calculus/index.html": [],
     "Year-1/2b-Math-IV-Multivariate-Calculus/binding-and-nonbinding-constraints.html": [
       "Year-1/1a-Math-I-Calculus/inequality.html",
       "Year-1/1a-Math-I-Calculus/function.html"
@@ -6397,7 +6215,6 @@
       "Year-1/2a-Math-III-Analysis/gradient.html",
       "Year-1/1b-Math-II-Linear-Algebra/matrix.html"
     ],
-    "Year-1/2b-Math-IV-Multivariate-Calculus/index.html": [],
     "Year-1/2b-Math-IV-Multivariate-Calculus/jacobian-rank-local-behavior-theorem.html": [
       "Year-1/2a-Math-III-Analysis/jacobian-matrix.html",
       "Year-1/1b-Math-II-Linear-Algebra/rank.html",
@@ -6542,6 +6359,7 @@
       "Year-1/2a-Math-III-Analysis/path.html",
       "Year-1/1b-Math-II-Linear-Algebra/vector.html"
     ],
+    "Year-1/2b-Probability-Distributions/index.html": [],
     "Year-1/2b-Probability-Distributions/2d-lotus-continuous.html": [],
     "Year-1/2b-Probability-Distributions/2d-lotus-discrete.html": [],
     "Year-1/2b-Probability-Distributions/adams-law-with-extra-conditioning.html": [],
@@ -6623,7 +6441,6 @@
     "Year-1/2b-Probability-Distributions/independence-of-events.html": [
       "Year-1/2b-Probability-Distributions/conditional-probability.html"
     ],
-    "Year-1/2b-Probability-Distributions/index.html": [],
     "Year-1/2b-Probability-Distributions/indicator-random-variable.html": [],
     "Year-1/2b-Probability-Distributions/inverse-cdf.html": [],
     "Year-1/2b-Probability-Distributions/jensens-inequality.html": [],
@@ -6685,7 +6502,7 @@
     ],
     "Year-1/2b-Probability-Distributions/weak-law-of-large-numbers.html": [],
     "Year-1/2b-Statistical-Modelling-for-EOR/index.html": [],
-    "Year-1/index.html": [],
+    "Year-2/index.html": [],
     "Year-2/1a-Macroeconomics-for-EOR/index.html": [],
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/index.html": [],
     "Year-2/1a-Statistical-Inference/index.html": [],
@@ -6697,42 +6514,20 @@
     "Year-2/2a-Life-Insurance/index.html": [],
     "Year-2/2b-Dynamic-Econometrics/index.html": [],
     "Year-2/2b-Game-Theory/index.html": [],
-    "Year-2/2b-Risk-Insurance/index.html": [],
-    "Year-2/index.html": []
+    "Year-2/2b-Risk-Insurance/index.html": []
   },
   "dependents": {
+    "index.html": [],
     "about.html": [],
-    "assets/bgm/LICENSE.html": [],
-    "assets/cursor-candidates/README.html": [],
-    "assets/themes/ancient-ruins/README.html": [],
-    "assets/themes/aurora/README.html": [],
-    "assets/themes/autumn/README.html": [],
-    "assets/themes/cherry-blossom/README.html": [],
-    "assets/themes/coral-reef/README.html": [],
-    "assets/themes/crystal-cave/README.html": [],
-    "assets/themes/cyber-city/README.html": [],
-    "assets/themes/deep-sea/README.html": [],
-    "assets/themes/desert/README.html": [],
-    "assets/themes/forest/README.html": [],
-    "assets/themes/galaxy/README.html": [],
-    "assets/themes/glacier/README.html": [],
-    "assets/themes/magic-academy/README.html": [],
-    "assets/themes/moonlight/README.html": [],
-    "assets/themes/neon-glow/README.html": [],
-    "assets/themes/prompt.html": [],
-    "assets/themes/rainy-day/README.html": [],
-    "assets/themes/starry-night/README.html": [],
-    "assets/themes/sunset/README.html": [],
-    "assets/themes/volcano/README.html": [],
-    "assets/themes/winter/README.html": [],
     "bgm-credits.html": [],
     "contributors.html": [],
     "custom-random.html": [],
     "find.html": [],
-    "index.html": [],
     "random.html": [],
     "trending.html": [],
+    "Year-1/index.html": [],
     "Year-1/1a-Introduction-to-Data-Analytics/index.html": [],
+    "Year-1/1a-Math-I-Calculus/index.html": [],
     "Year-1/1a-Math-I-Calculus/absolute-value.html": [
       "Year-1/1a-Math-I-Calculus/bounded-sequence.html",
       "Year-1/1a-Math-I-Calculus/cauchy-sequence.html",
@@ -7007,7 +6802,6 @@
     "Year-1/1a-Math-I-Calculus/indeterminate-form.html": [
       "Year-1/1a-Math-I-Calculus/lhopitals-rule.html"
     ],
-    "Year-1/1a-Math-I-Calculus/index.html": [],
     "Year-1/1a-Math-I-Calculus/indicator-function.html": [
       "Year-1/1a-Math-I-Calculus/dirichlet-function.html"
     ],
@@ -7341,6 +7135,7 @@
       "Year-1/1b-Math-II-Linear-Algebra/root-of-a-polynomial.html"
     ],
     "Year-1/1a-OR-Modelling/index.html": [],
+    "Year-1/1b-Math-II-Linear-Algebra/index.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/2-argument-arctangent.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/abelian-group.html": [
       "Year-1/1b-Math-II-Linear-Algebra/field.html",
@@ -7585,7 +7380,6 @@
     "Year-1/1b-Math-II-Linear-Algebra/imaginary-unit.html": [
       "Year-1/1b-Math-II-Linear-Algebra/complex-number.html"
     ],
-    "Year-1/1b-Math-II-Linear-Algebra/index.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/inner-product.html": [
       "Year-1/1b-Math-II-Linear-Algebra/angle-between-vectors.html",
       "Year-1/1b-Math-II-Linear-Algebra/cauchy-schwarz-inequality.html",
@@ -7881,6 +7675,7 @@
       "Year-1/1b-Math-II-Linear-Algebra/origin.html",
       "Year-1/1b-Math-II-Linear-Algebra/subspace.html"
     ],
+    "Year-1/1b-Probability-Theory-for-EOR/index.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/arrival-rate.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/axioms-of-probability.html": [
       "Year-1/1b-Probability-Theory-for-EOR/probability-function.html"
@@ -8024,7 +7819,6 @@
       "Year-1/1b-Probability-Theory-for-EOR/poisson-process.html",
       "Year-1/1b-Probability-Theory-for-EOR/sum-of-independent-random-variables.html"
     ],
-    "Year-1/1b-Probability-Theory-for-EOR/index.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/indicator-random-variable.html": [
       "Year-1/1b-Probability-Theory-for-EOR/fundamental-bridge.html"
     ],
@@ -8178,6 +7972,7 @@
     "Year-1/1b-Probability-Theory-for-EOR/weak-law-of-large-numbers.html": [],
     "Year-1/1b-Programming-for-EOR/index.html": [],
     "Year-1/2a-Finance-for-EOR/index.html": [],
+    "Year-1/2a-Math-III-Analysis/index.html": [],
     "Year-1/2a-Math-III-Analysis/accumulation-point.html": [],
     "Year-1/2a-Math-III-Analysis/adherent-point-and-closure-of-a-set.html": [],
     "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html": [
@@ -8265,7 +8060,6 @@
       "Year-1/2a-Math-III-Analysis/equivalent-formulation-of-continuity.html",
       "Year-1/2a-Math-III-Analysis/level-set-and-level-curve.html"
     ],
-    "Year-1/2a-Math-III-Analysis/index.html": [],
     "Year-1/2a-Math-III-Analysis/infinite-series-of-functions.html": [
       "Year-1/2a-Math-III-Analysis/normal-convergence.html",
       "Year-1/2a-Math-III-Analysis/power-series.html",
@@ -8417,6 +8211,7 @@
     "Year-1/2a-Math-III-Analysis/weierstrass-function.html": [],
     "Year-1/2a-Math-III-Analysis/weierstrass-m-test.html": [],
     "Year-1/2a-Microeconomics-for-EOR/index.html": [],
+    "Year-1/2b-Math-IV-Multivariate-Calculus/index.html": [],
     "Year-1/2b-Math-IV-Multivariate-Calculus/binding-and-nonbinding-constraints.html": [
       "Year-1/2b-Math-IV-Multivariate-Calculus/complementary-slackness.html"
     ],
@@ -8456,7 +8251,6 @@
     "Year-1/2b-Math-IV-Multivariate-Calculus/independent-linear-constraint-system.html": [
       "Year-1/2b-Math-IV-Multivariate-Calculus/quadratic-form-on-a-constraint-set.html"
     ],
-    "Year-1/2b-Math-IV-Multivariate-Calculus/index.html": [],
     "Year-1/2b-Math-IV-Multivariate-Calculus/jacobian-rank-local-behavior-theorem.html": [],
     "Year-1/2b-Math-IV-Multivariate-Calculus/kuhn-tucker-conditions-with-nonnegativity-constraints.html": [],
     "Year-1/2b-Math-IV-Multivariate-Calculus/kuhn-tucker-lagrangian.html": [],
@@ -8541,6 +8335,7 @@
       "Year-1/2b-Math-IV-Multivariate-Calculus/shadow-price.html"
     ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/velocity-vector-of-a-curve.html": [],
+    "Year-1/2b-Probability-Distributions/index.html": [],
     "Year-1/2b-Probability-Distributions/2d-lotus-continuous.html": [],
     "Year-1/2b-Probability-Distributions/2d-lotus-discrete.html": [],
     "Year-1/2b-Probability-Distributions/adams-law-with-extra-conditioning.html": [],
@@ -8625,7 +8420,6 @@
     "Year-1/2b-Probability-Distributions/independence-of-events.html": [
       "Year-1/2b-Probability-Distributions/binomial-distribution.html"
     ],
-    "Year-1/2b-Probability-Distributions/index.html": [],
     "Year-1/2b-Probability-Distributions/indicator-random-variable.html": [
       "Year-1/2b-Probability-Distributions/fundamental-bridge.html",
       "Year-1/2b-Probability-Distributions/linearity-of-expectation.html"
@@ -8682,7 +8476,7 @@
     "Year-1/2b-Probability-Distributions/variance.html": [],
     "Year-1/2b-Probability-Distributions/weak-law-of-large-numbers.html": [],
     "Year-1/2b-Statistical-Modelling-for-EOR/index.html": [],
-    "Year-1/index.html": [],
+    "Year-2/index.html": [],
     "Year-2/1a-Macroeconomics-for-EOR/index.html": [],
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/index.html": [],
     "Year-2/1a-Statistical-Inference/index.html": [],
@@ -8694,7 +8488,6 @@
     "Year-2/2a-Life-Insurance/index.html": [],
     "Year-2/2b-Dynamic-Econometrics/index.html": [],
     "Year-2/2b-Game-Theory/index.html": [],
-    "Year-2/2b-Risk-Insurance/index.html": [],
-    "Year-2/index.html": []
+    "Year-2/2b-Risk-Insurance/index.html": []
   }
 }

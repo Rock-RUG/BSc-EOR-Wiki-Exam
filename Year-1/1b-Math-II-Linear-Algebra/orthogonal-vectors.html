@@ -17,9 +17,9 @@
 <link href="../../stylesheets/fonts-vendor.css?h=6f3b200e55fb" rel="stylesheet"/>
 <link href="../../stylesheets/katex-vendor.css?h=810f682352aa" rel="stylesheet"/>
 <link href="../../stylesheets/katex-fast.css?h=29ac38851d7d" rel="stylesheet"/>
-<link href="../../stylesheets/extra.css?h=3737825ac91c" rel="stylesheet"/>
-<link href="../../stylesheets/mastery-widget.css?h=972b0e10ca57" rel="stylesheet"/>
-<link href="../../stylesheets/find-builder.css?h=2a3f643174b9" rel="stylesheet"/>
+<link href="../../stylesheets/extra.css?h=7ec496cd5a3e" rel="stylesheet"/>
+<link href="../../stylesheets/mastery-widget.css?h=ac9184281879" rel="stylesheet"/>
+<link href="../../stylesheets/find-builder.css?h=bca0e09e4d4b" rel="stylesheet"/>
 <link href="../../stylesheets/course-search.css?h=0e431d40c86d" rel="stylesheet"/>
 <link href="../../stylesheets/course-status.css?h=752ab978d445" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -70,6 +70,22 @@
 <meta content="#3f51b5" name="theme-color"/>
 <script id="mk-startup-prefs-early-v1">
 (function(){
+  // Material removes q when its header search closes. Preserve the explicit
+  // Learning Path handoff before the deferred Finder scripts read the URL.
+  function preserveLpFindToken(){
+    try{
+      var url=new URL(location.href),params=url.searchParams;
+      if(!/\/find(?:\.html|\/(?:index\.html)?)?$/i.test(url.pathname)||params.get("lp_token"))return;
+      var direct=String(params.get("lp_direct")||params.get("fb_direct")||"").trim().toLowerCase();
+      var src=String(params.get("src")||"").trim().toLowerCase();
+      var q=String(params.get("q")||"").trim();
+      if(!q||(direct!=="1"&&direct!=="true"&&src!=="lp_direct"&&src!=="learning_path"))return;
+      params.set("lp_token",q);
+      history.replaceState(history.state,"",url.toString());
+    }catch(_){}
+  }
+  preserveLpFindToken();
+  document.addEventListener("DOMContentSwitch",preserveLpFindToken,true);
   var KEY="mk_startup_features_v1";
   var DEFAULTS={account:true,learningPath:true,mastery:true,aiQuiz:true,sidebarSort:true};
   function kebab(k){return String(k||"").replace(/[A-Z]/g,function(m){return "-"+m.toLowerCase();});}
@@ -2616,24 +2632,24 @@ Aliases: orthogonality, perpendicular vectors
 <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="../../javascripts/exam-mode.js?h=d89710d31520"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
-<script src="../../javascripts/startup-preferences.js?h=7b56ff0a01df"></script>
+<script src="../../javascripts/startup-preferences.js?h=a1bc3f76b61d"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
-<script src="../../javascripts/style-shortcuts.js?h=a975c228e982"></script>
-<script src="../../javascripts/ui-guard.js?h=4b04eac1f919"></script>
-<script src="../../javascripts/a11y-landmarks.js?h=4cfb50fbb52d"></script>
-<script src="../../javascripts/sync-status-indicator.js?h=af597bfda690"></script>
+<script src="../../javascripts/style-shortcuts.js?h=86f8be5c857c"></script>
+<script src="../../javascripts/ui-guard.js?h=d12ed10a371d"></script>
+<script src="../../javascripts/a11y-landmarks.js?h=89016260de57"></script>
+<script src="../../javascripts/sync-status-indicator.js?h=5a99867d99dc"></script>
 <script src="../../javascripts/fuzzy-core.js?h=2104d6f6309d"></script>
-<script src="../../javascripts/search-suggestions.js?h=28db10397db0"></script>
-<script src="../../javascripts/search-history.js?h=f9edba8a96e1"></script>
+<script src="../../javascripts/search-suggestions.js?h=638074b7c76a"></script>
+<script src="../../javascripts/search-history.js?h=8afc9a8bc51d"></script>
 <script src="../../javascripts/header-search-stabilizer.js?h=cdd630b06fd3"></script>
 <script src="../../javascripts/concept-hover-preview.js?h=8347ef71799d"></script>
-<script src="../../javascripts/mathjax.js?h=3334c98aa782"></script>
+<script src="../../javascripts/mathjax.js?h=c15e6455b642"></script>
 <script src="../../javascripts/preload-guard.js?h=8780e35ce892"></script>
-<script src="../../javascripts/random.js?h=85090e6ef5a6"></script>
-<script src="../../javascripts/random-tabs.js?h=515b90d3f52e"></script>
-<script src="../../javascripts/search-enter.js?h=2f0576b4bc13"></script>
-<script src="../../javascripts/concept-fold.js?h=399e938cbf61"></script>
-<script src="../../javascripts/tag-search-links.js?h=d32bcd3c635e"></script>
-<script src="../../javascripts/logo-lightbox.js?h=0b2fec0eb764"></script>
+<script src="../../javascripts/random.js?h=916d85556f64"></script>
+<script src="../../javascripts/random-tabs.js?h=712db72f627c"></script>
+<script src="../../javascripts/search-enter.js?h=edd2c4895362"></script>
+<script src="../../javascripts/concept-fold.js?h=229ab05b9afd"></script>
+<script src="../../javascripts/tag-search-links.js?h=84cb5c2dd87f"></script>
+<script src="../../javascripts/logo-lightbox.js?h=fda4850b9a41"></script>
 </body>
 </html>

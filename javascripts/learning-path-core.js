@@ -303,7 +303,8 @@ const st=document.createElement('style');st.id='lp-3d-map-style-v3';st.textConte
       }
     `;(document.head||document.documentElement).appendChild(st);}
 function lp3dClearModal3D(modal){if(!modal)return;try{modal.classList.remove('lp-map-3d','lp-route-3d','lp-webgl3d','lp-webgl3d-dragging');}catch(_){}
-try{const eng=modal.__lpWebgl3dEngine;if(eng&&eng.__animRaf)cancelAnimationFrame(eng.__animRaf);if(eng&&eng.__mo)eng.__mo.disconnect();modal.__lpWebgl3dEngine=null;}catch(_){}
+try{const eng=modal.__lpWebgl3dEngine;if(eng&&typeof eng.__disposeLifecycle==='function')eng.__disposeLifecycle();else{if(eng&&eng.__animRaf)cancelAnimationFrame(eng.__animRaf);if(eng&&eng.__mo)eng.__mo.disconnect();}
+modal.__lpWebgl3dEngine=null;}catch(_){}
 try{Array.from(modal.querySelectorAll('canvas.lp-webgl3d-canvas')).forEach((c)=>c.remove());}catch(_){}
 try{Array.from(modal.querySelectorAll('svg.lp-webgl3d-overlay')).forEach((c)=>c.remove());}catch(_){}
 try{Array.from(modal.querySelectorAll('.lp-3d-rotctl')).forEach((c)=>c.remove());}catch(_){}
