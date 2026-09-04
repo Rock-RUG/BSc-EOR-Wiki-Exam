@@ -429,13 +429,13 @@ body[data-md-color-scheme="slate"] .mk-trending-h1-hot svg *{
 .trending-metric-btn:hover,
 .trending-metric-btn:focus-visible{
   border-color:var(--md-accent-fg-color);
-  color:var(--md-accent-fg-color);
+  color:var(--md-default-fg-color);
   outline:0;
 }
 .trending-metric-btn.is-active{
   border-color:var(--md-accent-fg-color);
   background:color-mix(in srgb, var(--md-accent-fg-color) 14%, var(--md-default-bg-color) 86%);
-  color:var(--md-accent-fg-color);
+  color:var(--md-default-fg-color);
 }
 .trending-unified .trending-grid{
   display:block;

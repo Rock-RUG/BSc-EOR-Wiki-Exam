@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1788552002639,
+  "generatedAt": 1788555964319,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -1245,8 +1245,8 @@
       "title": "OR Modelling Coverage Report",
       "courseName": "1a-OR-Modelling",
       "coursePath": "Year-1/1a-OR-Modelling",
-      "curriculumStatus": "current",
-      "aiMcq": true
+      "curriculumStatus": "enrichment",
+      "aiMcq": false
     },
     "Year-1/1a-OR-Modelling/critical-ratio.html": {
       "title": "Critical Ratio",
@@ -1697,7 +1697,7 @@
       "aiMcq": true
     },
     "Year-1/1a-OR-Modelling/nonnegativity-constraint.html": {
-      "title": "Nonnegativity Constraint",
+      "title": "Nonnegativity Constraint (OR Modelling)",
       "courseName": "1a-OR-Modelling",
       "coursePath": "Year-1/1a-OR-Modelling",
       "curriculumStatus": "current",
@@ -1788,7 +1788,7 @@
       "aiMcq": true
     },
     "Year-1/1a-OR-Modelling/path.html": {
-      "title": "Path",
+      "title": "Path (OR Modelling)",
       "courseName": "1a-OR-Modelling",
       "coursePath": "Year-1/1a-OR-Modelling",
       "curriculumStatus": "current",
@@ -1893,7 +1893,7 @@
       "aiMcq": true
     },
     "Year-1/1a-OR-Modelling/shadow-price.html": {
-      "title": "Shadow Price",
+      "title": "Shadow Price (OR Modelling)",
       "courseName": "1a-OR-Modelling",
       "coursePath": "Year-1/1a-OR-Modelling",
       "curriculumStatus": "current",
@@ -1977,7 +1977,7 @@
       "aiMcq": true
     },
     "Year-1/1a-OR-Modelling/standard-normal-distribution.html": {
-      "title": "Standard Normal Distribution",
+      "title": "Standard Normal Distribution (OR Modelling)",
       "courseName": "1a-OR-Modelling",
       "coursePath": "Year-1/1a-OR-Modelling",
       "curriculumStatus": "current",
@@ -3615,7 +3615,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/standard-normal-distribution.html": {
-      "title": "Standard Normal Distribution",
+      "title": "Standard Normal Distribution (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -4084,7 +4084,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/path.html": {
-      "title": "Path",
+      "title": "Path (Math III: Analysis)",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -4525,7 +4525,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Math-IV-Multivariate-Calculus/nonnegativity-constraint.html": {
-      "title": "Nonnegativity Constraint",
+      "title": "Nonnegativity Constraint (Math IV: Multivariate Calculus)",
       "courseName": "2b-Math-IV-Multivariate-Calculus",
       "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
       "curriculumStatus": "current",
@@ -4588,7 +4588,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Math-IV-Multivariate-Calculus/shadow-price.html": {
-      "title": "Shadow Price",
+      "title": "Shadow Price (Math IV: Multivariate Calculus)",
       "courseName": "2b-Math-IV-Multivariate-Calculus",
       "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
       "curriculumStatus": "current",
