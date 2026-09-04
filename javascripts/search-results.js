@@ -553,7 +553,8 @@ if(!entry.title&&d.title)entry.title=String(d.title);for(const tg of getTagsFrom
 const anchor=locFull.includes("#")?(locFull.split("#")[1]||"").toLowerCase():"";const isNoisySection=anchor==="prerequisites"||anchor.startsWith("prerequisites-")||anchor==="related-concepts"||anchor.startsWith("related-concepts-");if(!isNoisySection&&d.text){entry.text+=" "+normaliseText(stripHtml(d.text));}}
 for(const e of pageMap.values()){if(!e.title){const file=e.location.split("/").pop()||"Untitled";e.title=file.replace(/\.html$/i,"").replace(/-/g," ");}}
 return Array.from(pageMap.values()).map(e=>({location:e.location,title:e.title,text:e.text,tags:Array.from(e.tags),aliases:Array.from(e.aliases),rawAliases:Array.from(e.rawAliases||[]),}));}
-function matchTerm(pageDoc,term){const toks=tokeniseQuery(term);if(!toks.length)return false;const loc=String(pageDoc.location||"");const title=String(pageDoc.title||"");const text=String(pageDoc.text||"");const fileBase=fileBaseFromLocation(loc);const tags=Array.isArray(pageDoc.tags)?pageDoc.tags.join(" "):"";const aliases=Array.isArray(pageDoc.aliases)?pageDoc.aliases.join(" "):"";const hay=normaliseForSearch(`${fileBase} ${title} ${tags} ${aliases} ${text} ${loc}`);for(const t of toks){if(!hay.includes(t))return false;}
+function matchCourseToken(pageDoc,term){const token=String(term||"").trim().toLowerCase();const unit=token.match(/^([a-z][a-z0-9]*)-(week|lecture)(\d{1,3})$/);const code=unit?unit[1]:token;if(!Object.prototype.hasOwnProperty.call(COURSE_MAP,code))return null;const tags=Array.isArray(pageDoc.tags)?pageDoc.tags:[];return tags.some((raw)=>{const tag=String(raw||"").trim().toLowerCase();if(!unit)return tag===code||tag.startsWith(`${code}-`);const actual=tag.match(/^([a-z][a-z0-9]*)-(week|lecture)(\d{1,3})$/);return!!actual&&actual[1]===code&&actual[2]===unit[2]&&Number(actual[3])===Number(unit[3]);});}
+function matchTerm(pageDoc,term){const courseMatch=matchCourseToken(pageDoc,term);if(courseMatch!==null)return courseMatch;const toks=tokeniseQuery(term);if(!toks.length)return false;const loc=String(pageDoc.location||"");const title=String(pageDoc.title||"");const text=String(pageDoc.text||"");const fileBase=fileBaseFromLocation(loc);const tags=Array.isArray(pageDoc.tags)?pageDoc.tags.join(" "):"";const aliases=Array.isArray(pageDoc.aliases)?pageDoc.aliases.join(" "):"";const hay=normaliseForSearch(`${fileBase} ${title} ${tags} ${aliases} ${text} ${loc}`);for(const t of toks){if(!hay.includes(t))return false;}
 return true;}
 function tokenizeExpr(exprText){const raw=String(exprText||"").trim();if(!raw)return[];const parts=raw.match(/"(?:\\.|[^"\\])*"(?=\s|[()]|$)|[()]|[^\s()]+/g)||[];const toks=[];for(const p of parts){if(p.startsWith('"')&&p.endsWith('"')){try{toks.push({k:"TERM",v:JSON.parse(p)});continue;}catch(_){}}
 const up=p.toUpperCase();if(p==="(")toks.push({k:"LP",v:"("});else if(p===")")toks.push({k:"RP",v:")"});else if(up==="AND"||up==="OR")toks.push({k:"OP",v:up});else toks.push({k:"TERM",v:p});}
@@ -602,13 +603,13 @@ function srBuildResultRowHtml(x,root){const d=(x&&x.doc)||{};const href=new URL(
       </div>
     </div>
   `;}
-function srBuildPagerHtml(totalPages,curPage){return buildPageButtons(totalPages,curPage).map(x=>{if(x==="…")return`<span class="csr-page-ellipsis">…</span>`;const n=x;const active=n===curPage?"is-active":"";return`<button type="button" class="csr-page ${active}" data-page="${n}">${n}</button>`;}).join("");}
+function srBuildPagerHtml(totalPages,curPage){return buildPageButtons(totalPages,curPage).map(x=>{if(x==="…")return`<span class="csr-page-ellipsis">…</span>`;const n=x;const active=n===curPage?"is-active":"";return`<button type="button" class="csr-page ${active}" data-page="${n}"${active ? ' aria-current="page"' : ''}>${n}</button>`;}).join("");}
 function srBuildFooterHtml(total,start,end,totalPages,pagerBtns){return`
     <div class="csr-foot">
       <div class="csr-showing">Showing ${total ? (start + 1) : 0}-${end} of ${total}</div>
 
       <div class="csr-pager">
-        <button type="button" class="md-button csr-prev" ${state.page <= 1 ? "disabled" : ""}>
+        <button type="button" class="md-button csr-prev" aria-label="Previous page" ${state.page <= 1 ? "disabled" : ""}>
           <span class="csr-pagerbtn__ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="18" height="18" focusable="false">
               <path d="M14.5 5.5 8 12l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -617,7 +618,7 @@ function srBuildFooterHtml(total,start,end,totalPages,pagerBtns){return`
           <span class="csr-pagerbtn__txt">Prev</span>
         </button>
         <div class="csr-pages">${pagerBtns}</div>
-        <button type="button" class="md-button csr-next" ${state.page >= totalPages ? "disabled" : ""}>
+        <button type="button" class="md-button csr-next" aria-label="Next page" ${state.page >= totalPages ? "disabled" : ""}>
           <span class="csr-pagerbtn__txt">Next</span>
           <span class="csr-pagerbtn__ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="18" height="18" focusable="false">
@@ -672,7 +673,7 @@ function renderResults(container){srCancelRandomNavigation();srEnsureMasteryFilt
       </div>
       <div class="sr-empty" role="status"><p>No results found.</p></div>
     `;typesetMath(container);srMaybeScrollToResultsFromLearningPath(container);return;}
-const filteredHits=srFilteredHits(state.hits);const total=filteredHits.length;const pageSize=state.pageSize||10;const totalPages=Math.max(1,Math.ceil(total/pageSize));state.page=Math.min(Math.max(1,state.page),totalPages);const sorted=getSortedHits(filteredHits);const start=(state.page-1)*pageSize;const end=Math.min(total,start+pageSize);const pageHits=sorted.slice(start,start+pageSize);const titleActive=(state.sortKey||"title")==="title";const lectureActive=state.sortKey==="lecture";const dir=state.sortDir||"asc";const pagerBtns=buildPageButtons(totalPages,state.page).map(x=>{if(x==="…")return`<span class="csr-page-ellipsis">…</span>`;const n=x;const active=n===state.page?"is-active":"";return`<button type="button" class="csr-page ${active}" data-page="${n}">${n}</button>`;}).join("");const root=new URL(document.baseURI);const headerHtml=`
+const filteredHits=srFilteredHits(state.hits);const total=filteredHits.length;const pageSize=state.pageSize||10;const totalPages=Math.max(1,Math.ceil(total/pageSize));state.page=Math.min(Math.max(1,state.page),totalPages);const sorted=getSortedHits(filteredHits);const start=(state.page-1)*pageSize;const end=Math.min(total,start+pageSize);const pageHits=sorted.slice(start,start+pageSize);const titleActive=(state.sortKey||"title")==="title";const lectureActive=state.sortKey==="lecture";const dir=state.sortDir||"asc";const pagerBtns=buildPageButtons(totalPages,state.page).map(x=>{if(x==="…")return`<span class="csr-page-ellipsis">…</span>`;const n=x;const active=n===state.page?"is-active":"";return`<button type="button" class="csr-page ${active}" data-page="${n}"${active ? ' aria-current="page"' : ''}>${n}</button>`;}).join("");const root=new URL(document.baseURI);const headerHtml=`
   <div class="csr-cols csr-colheads">
     <div class="csr-colhead">Title</div>
     <div class="csr-colhead csr-colhead--right">Course · Lecture/Week</div>
@@ -725,7 +726,7 @@ const filteredHits=srFilteredHits(state.hits);const total=filteredHits.length;co
       <div class="csr-showing">Showing ${total ? (start + 1) : 0}-${end} of ${total}</div>
 
       <div class="csr-pager">
-        <button type="button" class="md-button csr-prev" ${state.page <= 1 ? "disabled" : ""}>
+        <button type="button" class="md-button csr-prev" aria-label="Previous page" ${state.page <= 1 ? "disabled" : ""}>
           <span class="csr-pagerbtn__ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="18" height="18" focusable="false">
               <path d="M14.5 5.5 8 12l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -734,7 +735,7 @@ const filteredHits=srFilteredHits(state.hits);const total=filteredHits.length;co
           <span class="csr-pagerbtn__txt">Prev</span>
         </button>
         <div class="csr-pages">${pagerBtns}</div>
-        <button type="button" class="md-button csr-next" ${state.page >= totalPages ? "disabled" : ""}>
+        <button type="button" class="md-button csr-next" aria-label="Next page" ${state.page >= totalPages ? "disabled" : ""}>
           <span class="csr-pagerbtn__txt">Next</span>
           <span class="csr-pagerbtn__ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="18" height="18" focusable="false">
@@ -770,7 +771,7 @@ try{const arrivalId=String(Date.now())+"_"+Math.random().toString(16).slice(2);s
 try{writeLastFace(face);}catch(_){}
 committed=srNavigateToTarget(targetUrl,request);}finally{if(!committed&&__srRandomNavigation===request)srCancelRandomNavigation();}});}
 srEnsureSortDropdownStylesOnce();srEnsureSortDropdownBinding(container);const prev=container.querySelector(".csr-prev");if(prev)prev.addEventListener("click",()=>{if(state.page>1)state.page-=1;renderResults(container);});const next=container.querySelector(".csr-next");if(next)next.addEventListener("click",()=>{state.page=Math.min(totalPages,state.page+1);renderResults(container);});container.querySelectorAll(".csr-page").forEach(btn=>{btn.addEventListener("click",()=>{const n=parseInt(btn.getAttribute("data-page"),10);if(!Number.isFinite(n))return;state.page=n;renderResults(container);});});container.querySelectorAll('input[type="checkbox"][data-loc]').forEach(cb=>{cb.addEventListener("change",()=>{const loc=cb.getAttribute("data-loc");if(!loc)return;state.selectedMap=state.selectedMap||{};state.selectedMap[loc]=cb.checked;});});typesetMath(container);srMaybeScrollToResultsFromLearningPath(container);}
-function exposeApi(container,context){window.__findSearchV2=window.__findSearchV2||{};window.__findSearchV2.clearEmptyResults=()=>{if(context&&!srSearchContextCurrent(context))return false;if(!container.querySelector(".sr-empty"))return false;if(context){context.queryVersion+=1;context.pendingExpr="";}
+function exposeApi(container,context){window.__findSearchV2=window.__findSearchV2||{};window.__findSearchV2.matchCourseToken=matchCourseToken;window.__findSearchV2.clearEmptyResults=()=>{if(context&&!srSearchContextCurrent(context))return false;if(!container.querySelector(".sr-empty"))return false;if(context){context.queryVersion+=1;context.pendingExpr="";}
 state.currentExpr="";state.hits=[];state.selectedMap={};container.innerHTML="";return true;};window.__findSearchV2.runLogicExpr=(exprText)=>{if(context&&!srSearchContextCurrent(context))return false;const raw=String(exprText||"").trim();if(context){context.queryVersion+=1;if(!context.ready){context.pendingExpr=raw;if(context.failed)main(context).catch(e=>console.warn("search-results:",e));return true;}}
 state.currentExpr=raw;state.hint="";state.page=1;const toks=tokenizeExpr(raw);const v=validateTokens(toks);if(!v.ok){state.hits=[];state.selectedMap={};renderResults(container);return;}
 const rpn=toRpn(toks);const ast=rpn?rpnToAst(rpn):null;if(!ast){state.hits=[];state.selectedMap={};renderResults(container);return;}
@@ -781,13 +782,15 @@ state.hits=hit;state.selectedMap={};for(const x of hit)state.selectedMap[x.doc.l
 async function main(retryContext){if(retryContext&&!srSearchContextCurrent(retryContext))return;const generation=++__srMainGeneration;if(!isOnFindPage())return;const container=document.getElementById("search-results");if(!container)return;const context={generation,container,path:window.location.pathname,ready:false,failed:false,queryVersion:0,pendingExpr:retryContext?retryContext.pendingExpr:null,};__srActiveContext=context;exposeApi(container,context);hardUnlockScroll();const unlockIfCurrent=()=>{if(srSearchContextCurrent(context))hardUnlockScroll();};requestAnimationFrame(unlockIfCurrent);setTimeout(unlockIfCurrent,60);container.innerHTML=`<div class="sr-loading">Loading search index…</div>`;if(window.renderMathInElement){window.renderMathInElement(container,{delimiters:[{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false},{left:"\\(",right:"\\)",display:false},{left:"\\[",right:"\\]",display:true},],throwOnError:false,});}else if(window.MathJax&&window.MathJax.typesetPromise){window.MathJax.typesetPromise([container]).catch(()=>{});}
 let indexJson;try{indexJson=await loadIndex();}catch(_){if(srSearchContextCurrent(context)){context.failed=true;srRenderIndexError(container,context);}
 return;}
-if(!srSearchContextCurrent(context))return;const docs=indexJson&&Array.isArray(indexJson.docs)?indexJson.docs:[];state.pageDocs=aggregateDocsToPages(docs);state.selfTestMode=loadSelfTestMode();state.aiTestMode=loadAiTestMode();if(state.aiTestMode)state.selfTestMode=false;state.masteryFilter=srReadMasteryFilter();context.ready=true;state.hits=[];state.selectedMap={};state.currentExpr="";state.viewsError="";if(context.pendingExpr!==null)window.__findSearchV2.runLogicExpr(context.pendingExpr);else renderResults(container);function autoRunFromPendingToken(){const KEY_V2="find_pending_token_v2";const KEY_V1="find_pending_token_v1";let q="";try{const raw2=(sessionStorage.getItem(KEY_V2)||"").trim();if(raw2){try{const obj=JSON.parse(raw2);if(obj&&typeof obj.q==="string"&&obj.q.trim())q=obj.q.trim();else q=raw2;}catch(_){q=raw2;}}}catch(_){}
+if(!srSearchContextCurrent(context))return;const docs=indexJson&&Array.isArray(indexJson.docs)?indexJson.docs:[];state.pageDocs=aggregateDocsToPages(docs);state.selfTestMode=loadSelfTestMode();state.aiTestMode=loadAiTestMode();if(state.aiTestMode)state.selfTestMode=false;state.masteryFilter=srReadMasteryFilter();context.ready=true;state.hits=[];state.selectedMap={};state.currentExpr="";state.viewsError="";if(context.pendingExpr!==null)window.__findSearchV2.runLogicExpr(context.pendingExpr);else renderResults(container);function autoRunFromPendingToken(){const KEY_V2="find_pending_token_v2";const KEY_V1="find_pending_token_v1";let q="";let headerUrl=null;try{const url=new URL(window.location.href);if(url.searchParams.get("src")==="header_search_done")return;if(url.searchParams.get("src")==="header_search"){headerUrl=url;q=(url.searchParams.get("q")||"").trim();if(!q)return;}}catch(_){}
+try{const raw2=(sessionStorage.getItem(KEY_V2)||"").trim();if(!q&&raw2){try{const obj=JSON.parse(raw2);if(obj&&typeof obj.q==="string"&&obj.q.trim())q=obj.q.trim();else q=raw2;}catch(_){q=raw2;}}}catch(_){}
 if(!q){try{q=(sessionStorage.getItem(KEY_V1)||"").trim();}catch(_){}}
 if(!q)return;try{sessionStorage.removeItem(KEY_V2);}catch(_){}
 try{sessionStorage.removeItem(KEY_V1);}catch(_){}
-if(context.pendingExpr!==null)return;const fire=()=>{if(!srSearchContextCurrent(context)||context.queryVersion!==handoffQueryVersion)return false;try{window.dispatchEvent(new CustomEvent("find:autofill",{detail:{token:q}}));return true;}catch(_){}
+const consumeHeaderUrl=()=>{if(!headerUrl)return;try{headerUrl.searchParams.delete("q");headerUrl.searchParams.set("src","header_search_done");window.history.replaceState(window.history.state,"",headerUrl.toString());}catch(_){}};if(context.pendingExpr!==null){consumeHeaderUrl();return;}
+const fire=()=>{if(!srSearchContextCurrent(context)||context.queryVersion!==handoffQueryVersion)return false;try{consumeHeaderUrl();window.dispatchEvent(new CustomEvent("find:autofill",{detail:{token:q}}));return true;}catch(_){}
 return false;};const handoffQueryVersion=context.queryVersion;if(window.__fbReadyV1){fire();return;}
-let done=false;const onReady=()=>{if(done)return;done=true;try{window.removeEventListener("fb:ready",onReady);}catch(_){}
+let done=false;const onReady=()=>{if(done||!window.__fbReadyV1)return;done=true;try{window.removeEventListener("fb:ready",onReady);}catch(_){}
 fire();};try{window.addEventListener("fb:ready",onReady,{once:true});}catch(_){}
 setTimeout(()=>{if(!done)onReady();},800);}
 autoRunFromPendingToken();}

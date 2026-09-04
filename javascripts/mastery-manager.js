@@ -11,8 +11,7 @@ function unitNounFromType(type){return String(type||"lecture").toLowerCase()==="
 function deriveLectureLabel(loc){const segs=String(loc||"").split("/").filter(Boolean);const candidates=segs.slice(0,-1);for(let i=candidates.length-1;i>=0;i-=1){const m=String(candidates[i]||"").match(/^(lecture|week)[-_ ]*0*(\d+)$/i);if(m)return`${unitNounFromType(m[1])} ${Number(m[2])}`;}
 return"";}
 function getSiteRootUrl(){const script=document.querySelector('script[src*="assets/javascripts/bundle"]');const link=document.querySelector('link[href*="assets/stylesheets/main"]')||document.querySelector('link[href*="assets/stylesheets"]')||document.querySelector('script[src*="assets/javascripts"]');const attr=script?script.getAttribute("src"):(link?(link.getAttribute("href")||link.getAttribute("src")):null);const assetUrl=attr?new URL(attr,document.baseURI):new URL(document.baseURI);const p=assetUrl.pathname||"/";const idx=p.indexOf("/assets/");if(idx>=0)return assetUrl.origin+p.slice(0,idx+1);const base=new URL(document.baseURI);if(!base.pathname.endsWith("/"))base.pathname+="/";return base.origin+base.pathname;}
-function hrefForLoc(loc){try{return new URL(String(loc||""),getSiteRootUrl()).href;}
-catch(_){return String(loc||"#");}}
+function hrefForLoc(loc){try{const root=new URL(getSiteRootUrl());const target=new URL(String(loc||""),root);if(!/^https?:$/.test(target.protocol)||target.origin!==root.origin||target.username||target.password)return"#";return target.href;}catch(_){return"#";}}
 function typesetMathIn(el){if(!el)return;try{if(typeof window.__mkRenderDynamicMath==="function"){const out=window.__mkRenderDynamicMath(el);if(out&&typeof out.catch==="function")out.catch(()=>{});return;}
 if(typeof window.__mkRenderDynamicMathSoon==="function")window.__mkRenderDynamicMathSoon(el);if(window.MathJax&&typeof window.MathJax.typesetPromise==="function"){window.MathJax.typesetPromise([el]).catch(()=>{});}}catch(_){}}
 function mmAccountContext(){if(window.__mkExamMode)return"exam-local";try{const profile=JSON.parse(localStorage.getItem("mk_comment_profile_v1")||"{}");const key=String(profile&&(profile.accountKey||profile.account_key||profile.nameKey||profile.name_key)||"").replace(/^user:/i,"").trim().toLowerCase();const profileOwner=key?`account:${key}`:"guest";const workspaces=window.MkAccountWorkspaces;const owner=workspaces&&typeof workspaces.activeOwner==="function"?workspaces.activeOwner():localStorage.getItem("mk_account_workspace_active_owner_v1")||profileOwner;if(owner!==profileOwner)return null;return JSON.stringify([owner,localStorage.getItem("mk_hot_visitor_id_v1")||""]);}catch(_){return null;}}
@@ -224,7 +223,7 @@ if(document.getElementById(STYLE_ID))return;const style=document.createElement("
       .mm-card{ position:relative; background:var(--md-default-bg-color,#fff); border:1px solid rgba(100, 116, 139, 0.1);
  border:1px solid color-mix(in srgb,var(--md-default-fg-color) 10%,transparent); border-radius:18px; padding:9px 11px; box-shadow:0 8px 22px rgba(0,0,0,.04); margin:0 0 9px; }
       .mm-card.is-popover-open{ z-index:40; }
-      .mm-card-line{ display:grid; grid-template-columns:minmax(150px,210px) minmax(320px,1fr) 128px max-content; gap:10px; align-items:center; }
+      .mm-card-line{ display:grid; grid-template-columns:minmax(120px,.6fr) minmax(0,1fr) 128px; gap:10px; align-items:center; }
       .mm-card-course{ min-width:0; color:var(--md-default-fg-color--light); font-size:12px; line-height:1.28; }
       .mm-card-course span{ display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
       .mm-card-course span:first-child{ color:var(--md-default-fg-color); font-weight:750; }
@@ -239,7 +238,7 @@ if(document.getElementById(STYLE_ID))return;const style=document.createElement("
  color:color-mix(in srgb,var(--md-default-fg-color) 28%,transparent); font-weight:700; }
       .mm-compact-metric strong{ font-weight:850; font-size:14px; line-height:1; color:var(--md-default-fg-color); }
       .mm-compact-metric span{ color:var(--md-default-fg-color--light); font-size:12px; font-weight:650; }
-      .mm-inline-actions{ position:relative; display:flex; align-items:center; justify-content:flex-end; gap:7px; white-space:nowrap; min-width:0; }
+      .mm-inline-actions{ grid-column:1 / -1; position:relative; display:flex; flex-wrap:wrap; align-items:center; justify-content:flex-start; gap:7px; white-space:nowrap; min-width:0; }
       .mm-inline-actions .mm-compact-stats{ flex:0 1 auto; min-width:0; margin-right:2px; }
       .mm-pill-btn{ appearance:none; min-height:36px; border-radius:999px; border:1px solid var(--md-primary-fg-color);
  border:1px solid color-mix(in srgb,var(--md-primary-fg-color) 28%,var(--md-default-fg-color) 12%); background:var(--md-default-bg-color);
@@ -539,8 +538,8 @@ if(document.getElementById(STYLE_ID))return;const style=document.createElement("
 
 
       /* v13 mobile: keep browser safe areas visually transparent/blurry like the
-         learning-path mobile sheet, and compress each concept record into one
-         action line. */
+         learning-path mobile sheet. Wrap record actions so the history popover
+         is not clipped by a horizontal scroll container. */
       @media (max-width: 640px), (pointer: coarse){
         #mm-modal{
           background:transparent !important;
@@ -581,15 +580,11 @@ if(document.getElementById(STYLE_ID))return;const style=document.createElement("
           display:flex !important;
           align-items:center !important;
           justify-content:flex-start !important;
-          flex-wrap:nowrap !important;
+          flex-wrap:wrap !important;
           gap:4px !important;
-          overflow-x:auto !important;
-          overflow-y:visible !important;
-          -webkit-overflow-scrolling:touch !important;
-          scrollbar-width:none !important;
+          overflow:visible !important;
           padding-bottom:1px !important;
         }
-        .mm-inline-actions::-webkit-scrollbar{ display:none !important; }
         .mm-inline-actions .mm-compact-stats{
           flex:0 0 auto !important;
           display:flex !important;
@@ -813,7 +808,7 @@ if(!writeAll({})){managerWriteFailed();return;}
 try{localStorage.removeItem(LS_KEY);if(!window.__mkExamMode){localStorage.removeItem(AIQ_KEY);if(localStorage.getItem(AIQ_KEY)!=null)throw new Error("Quiz clearing was not saved");}}catch(_){managerWriteFailed();return;}
 try{window.dispatchEvent(new CustomEvent("conceptMasteryChanged",{detail:{source:"mastery-manager-clear"}}));}catch(_){}
 try{window.dispatchEvent(new CustomEvent("mk-ai-quiz-sessions-changed",{detail:{source:"mastery-manager-clear"}}));}catch(_){}
-if(typeof mmRender==="function")mmRender();})(document.getElementById("mm-clear")));document.addEventListener("keydown",(e)=>{const modal=document.getElementById("mm-modal");if(!modal||modal.style.display!=="block")return;if(e.key==="Escape"){e.preventDefault();closeModal();}else if(e.key==="Tab"){const panel=document.getElementById("mm-panel");const controls=Array.from(panel.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')).filter((el)=>el.getClientRects().length&&window.getComputedStyle(el).visibility!=="hidden");const first=controls[0]||panel;const last=controls[controls.length-1]||panel;if(!panel.contains(document.activeElement)||(e.shiftKey?document.activeElement===first:document.activeElement===last)){e.preventDefault();(e.shiftKey?last:first).focus();}}},true);if(!window.__mmCloudStorageEventsBoundV2){window.__mmCloudStorageEventsBoundV2=true;const refreshOpenManager=()=>{const modal=document.getElementById("mm-modal");if(!modal||modal.style.display!=="block")return;if(typeof mmRender==="function")mmRender();};window.addEventListener("conceptMasteryChanged",refreshOpenManager);window.addEventListener("mk-ai-quiz-sessions-changed",refreshOpenManager);window.addEventListener("mk-local-activity-change",refreshOpenManager);window.addEventListener("mk-account-workspace-changed",()=>{refreshOpenManager();window.setTimeout(refreshOpenManager,0);});window.addEventListener("mk-account-login-change",refreshOpenManager);window.addEventListener("storage",(event)=>{if(!event||event.key==null||[LS_KEY,AIQ_KEY,"mk_account_workspace_active_owner_v1","mk_comment_profile_v1","mk_hot_visitor_id_v1"].includes(event.key))refreshOpenManager();});}
+if(typeof mmRender==="function")mmRender();})(document.getElementById("mm-clear")));document.addEventListener("keydown",(e)=>{if(e.isComposing||e.keyCode===229)return;const modal=document.getElementById("mm-modal");if(!modal||modal.style.display!=="block")return;if(e.key==="Escape"){e.preventDefault();closeModal();}else if(e.key==="Tab"){const panel=document.getElementById("mm-panel");const controls=Array.from(panel.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')).filter((el)=>el.getClientRects().length&&window.getComputedStyle(el).visibility!=="hidden");const first=controls[0]||panel;const last=controls[controls.length-1]||panel;if(!panel.contains(document.activeElement)||(e.shiftKey?document.activeElement===first:document.activeElement===last)){e.preventDefault();(e.shiftKey?last:first).focus();}}},true);if(!window.__mmCloudStorageEventsBoundV2){window.__mmCloudStorageEventsBoundV2=true;const refreshOpenManager=()=>{const modal=document.getElementById("mm-modal");if(!modal||modal.style.display!=="block")return;if(typeof mmRender==="function")mmRender();};window.addEventListener("conceptMasteryChanged",refreshOpenManager);window.addEventListener("mk-ai-quiz-sessions-changed",refreshOpenManager);window.addEventListener("mk-local-activity-change",refreshOpenManager);window.addEventListener("mk-account-workspace-changed",()=>{refreshOpenManager();window.setTimeout(refreshOpenManager,0);});window.addEventListener("mk-account-login-change",refreshOpenManager);window.addEventListener("storage",(event)=>{if(!event||event.key==null||[LS_KEY,AIQ_KEY,"mk_account_workspace_active_owner_v1","mk_comment_profile_v1","mk_hot_visitor_id_v1"].includes(event.key))refreshOpenManager();});}
 mmRender();}
 function syncFromCloudOnOpen(attempt){try{const api=window.MkLocalActivity;const n=Number(attempt||0);if(!api){if(n<12)window.setTimeout(()=>syncFromCloudOnOpen(n+1),250);return;}
 const profile=typeof api.getProfile==="function"?api.getProfile():null;if(!profile||!(profile.accountKey||profile.name))return;const rerender=()=>{if(typeof mmRender==="function")mmRender();};if(window.MkAccountData&&typeof window.MkAccountData.refreshCloudStatus==="function"){const p=window.MkAccountData.refreshCloudStatus({reason:"mastery-manager-open-metadata",timeoutMs:30000,writeDisplaySummary:false,lightStatus:true,cloudCountOnly:true});if(p&&typeof p.then==="function")p.then(rerender).catch(()=>{});}}catch(_){}}

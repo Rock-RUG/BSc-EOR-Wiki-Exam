@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1788555964319,
+  "generatedAt": 1788565251051,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -1240,13 +1240,6 @@
       "coursePath": "Year-1/1a-OR-Modelling",
       "curriculumStatus": "current",
       "aiMcq": true
-    },
-    "Year-1/1a-OR-Modelling/coverage.html": {
-      "title": "OR Modelling Coverage Report",
-      "courseName": "1a-OR-Modelling",
-      "coursePath": "Year-1/1a-OR-Modelling",
-      "curriculumStatus": "enrichment",
-      "aiMcq": false
     },
     "Year-1/1a-OR-Modelling/critical-ratio.html": {
       "title": "Critical Ratio",
@@ -6008,7 +6001,6 @@
       "Year-1/1a-OR-Modelling/constraint.html",
       "Year-1/1a-OR-Modelling/feasible-region.html"
     ],
-    "Year-1/1a-OR-Modelling/coverage.html": [],
     "Year-1/1a-OR-Modelling/critical-ratio.html": [
       "Year-1/1a-OR-Modelling/overage-cost.html",
       "Year-1/1a-OR-Modelling/underage-cost.html"
@@ -8823,7 +8815,6 @@
     "Year-1/1a-OR-Modelling/corner-point.html": [
       "Year-1/1a-OR-Modelling/corner-point-optimality.html"
     ],
-    "Year-1/1a-OR-Modelling/coverage.html": [],
     "Year-1/1a-OR-Modelling/critical-ratio.html": [
       "Year-1/1a-OR-Modelling/continuous-newsvendor-rule.html",
       "Year-1/1a-OR-Modelling/discrete-newsvendor-rule.html"
