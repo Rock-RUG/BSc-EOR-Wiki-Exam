@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1788447282001,
+  "generatedAt": 1788552002639,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -1040,6 +1040,1049 @@
     },
     "Year-1/1a-OR-Modelling/index.html": {
       "title": "OR Modelling",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/algorithm.html": {
+      "title": "Algorithm",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/ambulance-location-model.html": {
+      "title": "Ambulance Location Model",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/artificial-variable.html": {
+      "title": "Artificial Variable",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/assignment-cost-transformation.html": {
+      "title": "Assignment Cost Transformation",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/assignment-problem.html": {
+      "title": "Assignment Problem",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/augmented-form.html": {
+      "title": "Augmented Form",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/augmenting-path-algorithm.html": {
+      "title": "Augmenting Path Algorithm",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/augmenting-path.html": {
+      "title": "Augmenting Path",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/basic-feasible-solution.html": {
+      "title": "Basic Feasible Solution",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/basic-solution.html": {
+      "title": "Basic Solution",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/basic-variable.html": {
+      "title": "Basic Variable",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/bin-packing-problem.html": {
+      "title": "Bin Packing Problem",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/binary-integer-program.html": {
+      "title": "Binary Integer Program",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/binary-variable.html": {
+      "title": "Binary Variable",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/bipartite-matching.html": {
+      "title": "Bipartite Matching",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/branch-and-bound-pruning.html": {
+      "title": "Branch-and-Bound Pruning",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/branch-and-bound.html": {
+      "title": "Branch-and-Bound",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/bus-scheduling-model.html": {
+      "title": "Bus Scheduling Model",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/capacity-expansion-model.html": {
+      "title": "Capacity Expansion Model",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/chinese-postman-problem.html": {
+      "title": "Chinese Postman Problem",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/classical-eoq-model.html": {
+      "title": "Classical EOQ Model",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/connected-network.html": {
+      "title": "Connected Network",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/constraint.html": {
+      "title": "Constraint",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/contingent-decisions.html": {
+      "title": "Contingent Decisions",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/continuous-newsvendor-rule.html": {
+      "title": "Continuous Newsvendor Rule",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/convex-combination-of-optimal-solutions.html": {
+      "title": "Convex Combination of Optimal Solutions",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/corner-point-optimality.html": {
+      "title": "Corner Point Optimality",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/corner-point.html": {
+      "title": "Corner Point",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/coverage.html": {
+      "title": "OR Modelling Coverage Report",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/critical-ratio.html": {
+      "title": "Critical Ratio",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/cycle.html": {
+      "title": "Cycle",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/decision-variable.html": {
+      "title": "Decision Variable",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/degeneracy.html": {
+      "title": "Degeneracy",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/diet-problem.html": {
+      "title": "Diet Problem",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/dijkstra-prim-method.html": {
+      "title": "Dijkstra-Prim Method",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/directed-network.html": {
+      "title": "Directed Network",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/discrete-newsvendor-rule.html": {
+      "title": "Discrete Newsvendor Rule",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/dummy-assignment.html": {
+      "title": "Dummy Assignment",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/dynamic-lot-size-model.html": {
+      "title": "Dynamic Lot-Size Model",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/dynamic-programming.html": {
+      "title": "Dynamic Programming",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/economic-order-quantity.html": {
+      "title": "Economic Order Quantity",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/effective-lead-time.html": {
+      "title": "Effective Lead Time",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/either-or-constraints.html": {
+      "title": "Either-Or Constraints",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/entering-variable-rule.html": {
+      "title": "Entering Variable Rule",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/eoq-with-lead-times.html": {
+      "title": "EOQ with Lead Times",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/eoq-with-planned-shortages.html": {
+      "title": "EOQ with Planned Shortages",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/eoq-with-price-breaks.html": {
+      "title": "EOQ with Price Breaks",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/euclidean-network.html": {
+      "title": "Euclidean Network",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/euler-network-characterization.html": {
+      "title": "Euler Network Characterization",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/euler-tour-algorithm.html": {
+      "title": "Euler Tour Algorithm",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/euler-tour.html": {
+      "title": "Euler Tour",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/excel-sensitivity-report.html": {
+      "title": "Excel Sensitivity Report",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/excel-solver-for-linear-programming.html": {
+      "title": "Excel Solver for Linear Programming",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/feasible-region.html": {
+      "title": "Feasible Region",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/feasible-solution.html": {
+      "title": "Feasible Solution",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/finite-value-constraint.html": {
+      "title": "Finite-Value Constraint",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/first-fit-heuristic.html": {
+      "title": "First-Fit Heuristic",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/forbidden-assignment.html": {
+      "title": "Forbidden Assignment",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/giapetto-production-model.html": {
+      "title": "Giapetto Production Model",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/graphical-integer-programming.html": {
+      "title": "Graphical Integer Programming",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/graphical-method.html": {
+      "title": "Graphical Method",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/heuristic.html": {
+      "title": "Heuristic",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/holding-cost.html": {
+      "title": "Holding Cost",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/hungarian-algorithm.html": {
+      "title": "Hungarian Algorithm",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/incumbent-solution.html": {
+      "title": "Incumbent Solution",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/infeasible-linear-program.html": {
+      "title": "Infeasible Linear Program",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/integer-linear-programming.html": {
+      "title": "Integer Linear Programming",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/inventory-policy.html": {
+      "title": "Inventory Policy",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/job-sequencing-model.html": {
+      "title": "Job Sequencing Model",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/k-out-of-n-constraints.html": {
+      "title": "K-Out-of-N Constraints",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/konigsberg-bridge-problem.html": {
+      "title": "Königsberg Bridge Problem",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/kruskal-method.html": {
+      "title": "Kruskal Method",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/linear-program-formulation.html": {
+      "title": "Linear Program Formulation",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/linear-programming.html": {
+      "title": "Linear Programming",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/lot-size-bellman-recursion.html": {
+      "title": "Lot-Size Bellman Recursion",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/lp-relaxation.html": {
+      "title": "LP Relaxation",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/maximum-flow-linear-program.html": {
+      "title": "Maximum Flow Linear Program",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/maximum-flow-problem.html": {
+      "title": "Maximum Flow Problem",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/minimization-to-maximization.html": {
+      "title": "Minimization-to-Maximization Transformation",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/minimum-ratio-test.html": {
+      "title": "Minimum-Ratio Test",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/minimum-spanning-tree.html": {
+      "title": "Minimum Spanning Tree",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/minimum-weight-perfect-matching.html": {
+      "title": "Minimum-Weight Perfect Matching",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/minimum-zero-cover.html": {
+      "title": "Minimum Zero Cover",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/mixed-integer-program.html": {
+      "title": "Mixed Integer Program",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/model-parameter.html": {
+      "title": "Model Parameter",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/multiple-optimal-solutions.html": {
+      "title": "Multiple Optimal Solutions",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/mutually-exclusive-decisions.html": {
+      "title": "Mutually Exclusive Decisions",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/negative-rhs-transformation.html": {
+      "title": "Negative RHS Transformation",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/network.html": {
+      "title": "Network",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/newsvendor-model.html": {
+      "title": "Newsvendor Model",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/newsvendor-price-sensitivity.html": {
+      "title": "Newsvendor Price Sensitivity",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/nonbasic-variable.html": {
+      "title": "Nonbasic Variable",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/nonconvex-region-modelling.html": {
+      "title": "Nonconvex Region Modelling",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/nonnegativity-constraint.html": {
+      "title": "Nonnegativity Constraint",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/normal-demand-distribution.html": {
+      "title": "Normal Demand Distribution",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/objective-coefficient-range.html": {
+      "title": "Objective Coefficient Range",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/objective-function.html": {
+      "title": "Objective Function",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/objective-line.html": {
+      "title": "Objective Line",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/operations-research.html": {
+      "title": "Operations Research",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/optimal-solution.html": {
+      "title": "Optimal Solution",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/optimization-bounds.html": {
+      "title": "Optimization Bounds",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/optimization-model.html": {
+      "title": "Optimization Model",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/or-study-cycle.html": {
+      "title": "OR Study Cycle",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/ordering-cycle.html": {
+      "title": "Ordering Cycle",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/overage-cost.html": {
+      "title": "Overage Cost",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/parity-constraint.html": {
+      "title": "Parity Constraint",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/path.html": {
+      "title": "Path",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/positive-part.html": {
+      "title": "Positive Part",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/price-break-indifference-quantity.html": {
+      "title": "Price-Break Indifference Quantity",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/production-inventory-model.html": {
+      "title": "Production-Inventory Model",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/project-longest-path-model.html": {
+      "title": "Project Longest Path Model",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/project-selection-model.html": {
+      "title": "Project Selection Model",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/purchasing-cost.html": {
+      "title": "Purchasing Cost",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/pure-integer-program.html": {
+      "title": "Pure Integer Program",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/reduced-cost.html": {
+      "title": "Reduced Cost",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/relaxation.html": {
+      "title": "Relaxation",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/residual-network.html": {
+      "title": "Residual Network",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/rhs-sensitivity-range.html": {
+      "title": "RHS Sensitivity Range",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/rounding-heuristic.html": {
+      "title": "Rounding Heuristic",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/sensitivity-analysis.html": {
+      "title": "Sensitivity Analysis",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/setup-cost.html": {
+      "title": "Setup Cost",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/shadow-price.html": {
+      "title": "Shadow Price",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/shortage-cost.html": {
+      "title": "Shortage Cost",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/shortest-path-algorithm.html": {
+      "title": "Shortest Path Algorithm",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/shortest-path-binary-formulation.html": {
+      "title": "Shortest Path Binary Formulation",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/shortest-path-problem.html": {
+      "title": "Shortest Path Problem",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/silver-meal-heuristic.html": {
+      "title": "Silver-Meal Heuristic",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/simplex-method.html": {
+      "title": "Simplex Method",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/simplex-optimality-test.html": {
+      "title": "Simplex Optimality Test",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/simplex-pivot.html": {
+      "title": "Simplex Pivot",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/simplex-tableau.html": {
+      "title": "Simplex Tableau",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/slack-variable.html": {
+      "title": "Slack Variable",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/spanning-tree.html": {
+      "title": "Spanning Tree",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/standard-normal-distribution.html": {
+      "title": "Standard Normal Distribution",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/surplus-variable.html": {
+      "title": "Surplus Variable",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/task-quota-assignment.html": {
+      "title": "Task Quota Assignment",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/transportation-problem.html": {
+      "title": "Transportation Problem",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/tree.html": {
+      "title": "Tree",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/two-phase-method.html": {
+      "title": "Two-Phase Method",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/unbounded-linear-program.html": {
+      "title": "Unbounded Linear Program",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/underage-cost.html": {
+      "title": "Underage Cost",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/undirected-network.html": {
+      "title": "Undirected Network",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/uniform-demand-distribution.html": {
+      "title": "Uniform Demand Distribution",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/unrestricted-variable-transformation.html": {
+      "title": "Unrestricted Variable Transformation",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/vehicle-routing-problem.html": {
+      "title": "Vehicle Routing Problem",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/vertex-degree.html": {
+      "title": "Vertex Degree",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/weibull-demand-distribution.html": {
+      "title": "Weibull Demand Distribution",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/zero-cost-matching-via-maximum-flow.html": {
+      "title": "Zero-Cost Matching via Maximum Flow",
+      "courseName": "1a-OR-Modelling",
+      "coursePath": "Year-1/1a-OR-Modelling",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-OR-Modelling/zero-inventory-ordering-property.html": {
+      "title": "Zero-Inventory Ordering Property",
       "courseName": "1a-OR-Modelling",
       "coursePath": "Year-1/1a-OR-Modelling",
       "curriculumStatus": "current",
@@ -4861,6 +5904,547 @@
       "Year-1/1a-Math-I-Calculus/function.html"
     ],
     "Year-1/1a-OR-Modelling/index.html": [],
+    "Year-1/1a-OR-Modelling/algorithm.html": [
+      "Year-1/1a-OR-Modelling/optimization-model.html"
+    ],
+    "Year-1/1a-OR-Modelling/ambulance-location-model.html": [
+      "Year-1/1a-OR-Modelling/binary-integer-program.html"
+    ],
+    "Year-1/1a-OR-Modelling/artificial-variable.html": [
+      "Year-1/1a-OR-Modelling/augmented-form.html",
+      "Year-1/1a-OR-Modelling/surplus-variable.html"
+    ],
+    "Year-1/1a-OR-Modelling/assignment-cost-transformation.html": [
+      "Year-1/1a-OR-Modelling/assignment-problem.html"
+    ],
+    "Year-1/1a-OR-Modelling/assignment-problem.html": [
+      "Year-1/1a-OR-Modelling/binary-integer-program.html"
+    ],
+    "Year-1/1a-OR-Modelling/augmented-form.html": [
+      "Year-1/1a-OR-Modelling/slack-variable.html",
+      "Year-1/1a-OR-Modelling/linear-programming.html"
+    ],
+    "Year-1/1a-OR-Modelling/augmenting-path-algorithm.html": [
+      "Year-1/1a-OR-Modelling/augmenting-path.html",
+      "Year-1/1a-OR-Modelling/residual-network.html"
+    ],
+    "Year-1/1a-OR-Modelling/augmenting-path.html": [
+      "Year-1/1a-OR-Modelling/residual-network.html",
+      "Year-1/1a-OR-Modelling/path.html"
+    ],
+    "Year-1/1a-OR-Modelling/basic-feasible-solution.html": [
+      "Year-1/1a-OR-Modelling/basic-solution.html",
+      "Year-1/1a-OR-Modelling/feasible-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/basic-solution.html": [
+      "Year-1/1a-OR-Modelling/augmented-form.html"
+    ],
+    "Year-1/1a-OR-Modelling/basic-variable.html": [
+      "Year-1/1a-OR-Modelling/basic-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/bin-packing-problem.html": [
+      "Year-1/1a-OR-Modelling/feasible-solution.html",
+      "Year-1/1a-OR-Modelling/heuristic.html"
+    ],
+    "Year-1/1a-OR-Modelling/binary-integer-program.html": [
+      "Year-1/1a-OR-Modelling/binary-variable.html",
+      "Year-1/1a-OR-Modelling/integer-linear-programming.html"
+    ],
+    "Year-1/1a-OR-Modelling/binary-variable.html": [
+      "Year-1/1a-OR-Modelling/decision-variable.html"
+    ],
+    "Year-1/1a-OR-Modelling/bipartite-matching.html": [
+      "Year-1/1a-OR-Modelling/network.html"
+    ],
+    "Year-1/1a-OR-Modelling/branch-and-bound-pruning.html": [
+      "Year-1/1a-OR-Modelling/branch-and-bound.html",
+      "Year-1/1a-OR-Modelling/incumbent-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/branch-and-bound.html": [
+      "Year-1/1a-OR-Modelling/lp-relaxation.html",
+      "Year-1/1a-OR-Modelling/optimization-bounds.html"
+    ],
+    "Year-1/1a-OR-Modelling/bus-scheduling-model.html": [
+      "Year-1/1a-OR-Modelling/pure-integer-program.html",
+      "Year-1/1a-OR-Modelling/linear-program-formulation.html"
+    ],
+    "Year-1/1a-OR-Modelling/capacity-expansion-model.html": [
+      "Year-1/1a-OR-Modelling/binary-variable.html",
+      "Year-1/1a-OR-Modelling/constraint.html"
+    ],
+    "Year-1/1a-OR-Modelling/chinese-postman-problem.html": [
+      "Year-1/1a-OR-Modelling/euler-tour.html",
+      "Year-1/1a-OR-Modelling/vertex-degree.html",
+      "Year-1/1a-OR-Modelling/shortest-path-problem.html",
+      "Year-1/1a-OR-Modelling/minimum-weight-perfect-matching.html"
+    ],
+    "Year-1/1a-OR-Modelling/classical-eoq-model.html": [
+      "Year-1/1a-OR-Modelling/setup-cost.html",
+      "Year-1/1a-OR-Modelling/holding-cost.html",
+      "Year-1/1a-OR-Modelling/ordering-cycle.html"
+    ],
+    "Year-1/1a-OR-Modelling/connected-network.html": [
+      "Year-1/1a-OR-Modelling/undirected-network.html",
+      "Year-1/1a-OR-Modelling/path.html"
+    ],
+    "Year-1/1a-OR-Modelling/constraint.html": [
+      "Year-1/1a-OR-Modelling/decision-variable.html"
+    ],
+    "Year-1/1a-OR-Modelling/contingent-decisions.html": [
+      "Year-1/1a-OR-Modelling/binary-variable.html"
+    ],
+    "Year-1/1a-OR-Modelling/continuous-newsvendor-rule.html": [
+      "Year-1/1a-OR-Modelling/critical-ratio.html"
+    ],
+    "Year-1/1a-OR-Modelling/convex-combination-of-optimal-solutions.html": [
+      "Year-1/1a-OR-Modelling/multiple-optimal-solutions.html"
+    ],
+    "Year-1/1a-OR-Modelling/corner-point-optimality.html": [
+      "Year-1/1a-OR-Modelling/linear-programming.html",
+      "Year-1/1a-OR-Modelling/corner-point.html",
+      "Year-1/1a-OR-Modelling/optimal-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/corner-point.html": [
+      "Year-1/1a-OR-Modelling/constraint.html",
+      "Year-1/1a-OR-Modelling/feasible-region.html"
+    ],
+    "Year-1/1a-OR-Modelling/coverage.html": [],
+    "Year-1/1a-OR-Modelling/critical-ratio.html": [
+      "Year-1/1a-OR-Modelling/overage-cost.html",
+      "Year-1/1a-OR-Modelling/underage-cost.html"
+    ],
+    "Year-1/1a-OR-Modelling/cycle.html": [
+      "Year-1/1a-OR-Modelling/path.html"
+    ],
+    "Year-1/1a-OR-Modelling/decision-variable.html": [],
+    "Year-1/1a-OR-Modelling/degeneracy.html": [
+      "Year-1/1a-OR-Modelling/basic-variable.html",
+      "Year-1/1a-OR-Modelling/minimum-ratio-test.html",
+      "Year-1/1a-OR-Modelling/simplex-pivot.html"
+    ],
+    "Year-1/1a-OR-Modelling/diet-problem.html": [
+      "Year-1/1a-OR-Modelling/linear-program-formulation.html",
+      "Year-1/1a-OR-Modelling/graphical-method.html"
+    ],
+    "Year-1/1a-OR-Modelling/dijkstra-prim-method.html": [
+      "Year-1/1a-OR-Modelling/minimum-spanning-tree.html"
+    ],
+    "Year-1/1a-OR-Modelling/directed-network.html": [
+      "Year-1/1a-OR-Modelling/network.html"
+    ],
+    "Year-1/1a-OR-Modelling/discrete-newsvendor-rule.html": [
+      "Year-1/1a-OR-Modelling/critical-ratio.html",
+      "Year-1/1a-OR-Modelling/positive-part.html"
+    ],
+    "Year-1/1a-OR-Modelling/dummy-assignment.html": [
+      "Year-1/1a-OR-Modelling/assignment-problem.html"
+    ],
+    "Year-1/1a-OR-Modelling/dynamic-lot-size-model.html": [
+      "Year-1/1a-OR-Modelling/inventory-policy.html",
+      "Year-1/1a-OR-Modelling/production-inventory-model.html",
+      "Year-1/1a-OR-Modelling/setup-cost.html",
+      "Year-1/1a-OR-Modelling/holding-cost.html"
+    ],
+    "Year-1/1a-OR-Modelling/dynamic-programming.html": [
+      "Year-1/1a-OR-Modelling/optimization-model.html",
+      "Year-1/1a-OR-Modelling/algorithm.html"
+    ],
+    "Year-1/1a-OR-Modelling/economic-order-quantity.html": [
+      "Year-1/1a-OR-Modelling/classical-eoq-model.html"
+    ],
+    "Year-1/1a-OR-Modelling/effective-lead-time.html": [
+      "Year-1/1a-OR-Modelling/ordering-cycle.html",
+      "Year-1/1a-OR-Modelling/economic-order-quantity.html"
+    ],
+    "Year-1/1a-OR-Modelling/either-or-constraints.html": [
+      "Year-1/1a-OR-Modelling/binary-variable.html",
+      "Year-1/1a-OR-Modelling/constraint.html"
+    ],
+    "Year-1/1a-OR-Modelling/entering-variable-rule.html": [
+      "Year-1/1a-OR-Modelling/simplex-tableau.html",
+      "Year-1/1a-OR-Modelling/nonbasic-variable.html"
+    ],
+    "Year-1/1a-OR-Modelling/eoq-with-lead-times.html": [
+      "Year-1/1a-OR-Modelling/economic-order-quantity.html",
+      "Year-1/1a-OR-Modelling/effective-lead-time.html"
+    ],
+    "Year-1/1a-OR-Modelling/eoq-with-planned-shortages.html": [
+      "Year-1/1a-OR-Modelling/classical-eoq-model.html",
+      "Year-1/1a-OR-Modelling/shortage-cost.html"
+    ],
+    "Year-1/1a-OR-Modelling/eoq-with-price-breaks.html": [
+      "Year-1/1a-OR-Modelling/purchasing-cost.html",
+      "Year-1/1a-OR-Modelling/economic-order-quantity.html"
+    ],
+    "Year-1/1a-OR-Modelling/euclidean-network.html": [
+      "Year-1/1a-OR-Modelling/undirected-network.html"
+    ],
+    "Year-1/1a-OR-Modelling/euler-network-characterization.html": [
+      "Year-1/1a-OR-Modelling/connected-network.html",
+      "Year-1/1a-OR-Modelling/euler-tour.html",
+      "Year-1/1a-OR-Modelling/vertex-degree.html"
+    ],
+    "Year-1/1a-OR-Modelling/euler-tour-algorithm.html": [
+      "Year-1/1a-OR-Modelling/euler-network-characterization.html",
+      "Year-1/1a-OR-Modelling/cycle.html"
+    ],
+    "Year-1/1a-OR-Modelling/euler-tour.html": [
+      "Year-1/1a-OR-Modelling/cycle.html",
+      "Year-1/1a-OR-Modelling/vertex-degree.html"
+    ],
+    "Year-1/1a-OR-Modelling/excel-sensitivity-report.html": [
+      "Year-1/1a-OR-Modelling/excel-solver-for-linear-programming.html",
+      "Year-1/1a-OR-Modelling/sensitivity-analysis.html"
+    ],
+    "Year-1/1a-OR-Modelling/excel-solver-for-linear-programming.html": [
+      "Year-1/1a-OR-Modelling/linear-program-formulation.html"
+    ],
+    "Year-1/1a-OR-Modelling/feasible-region.html": [
+      "Year-1/1a-OR-Modelling/feasible-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/feasible-solution.html": [
+      "Year-1/1a-OR-Modelling/constraint.html"
+    ],
+    "Year-1/1a-OR-Modelling/finite-value-constraint.html": [
+      "Year-1/1a-OR-Modelling/binary-variable.html",
+      "Year-1/1a-OR-Modelling/mutually-exclusive-decisions.html"
+    ],
+    "Year-1/1a-OR-Modelling/first-fit-heuristic.html": [
+      "Year-1/1a-OR-Modelling/bin-packing-problem.html"
+    ],
+    "Year-1/1a-OR-Modelling/forbidden-assignment.html": [
+      "Year-1/1a-OR-Modelling/assignment-problem.html"
+    ],
+    "Year-1/1a-OR-Modelling/giapetto-production-model.html": [
+      "Year-1/1a-OR-Modelling/linear-programming.html",
+      "Year-1/1a-OR-Modelling/linear-program-formulation.html"
+    ],
+    "Year-1/1a-OR-Modelling/graphical-integer-programming.html": [
+      "Year-1/1a-OR-Modelling/integer-linear-programming.html",
+      "Year-1/1a-OR-Modelling/graphical-method.html"
+    ],
+    "Year-1/1a-OR-Modelling/graphical-method.html": [
+      "Year-1/1a-OR-Modelling/linear-programming.html",
+      "Year-1/1a-OR-Modelling/feasible-region.html",
+      "Year-1/1a-OR-Modelling/objective-line.html"
+    ],
+    "Year-1/1a-OR-Modelling/heuristic.html": [
+      "Year-1/1a-OR-Modelling/feasible-solution.html",
+      "Year-1/1a-OR-Modelling/optimal-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/holding-cost.html": [
+      "Year-1/1a-OR-Modelling/inventory-policy.html"
+    ],
+    "Year-1/1a-OR-Modelling/hungarian-algorithm.html": [
+      "Year-1/1a-OR-Modelling/assignment-problem.html",
+      "Year-1/1a-OR-Modelling/assignment-cost-transformation.html"
+    ],
+    "Year-1/1a-OR-Modelling/incumbent-solution.html": [
+      "Year-1/1a-OR-Modelling/branch-and-bound.html",
+      "Year-1/1a-OR-Modelling/feasible-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/infeasible-linear-program.html": [
+      "Year-1/1a-OR-Modelling/feasible-region.html",
+      "Year-1/1a-OR-Modelling/two-phase-method.html"
+    ],
+    "Year-1/1a-OR-Modelling/integer-linear-programming.html": [
+      "Year-1/1a-OR-Modelling/linear-programming.html"
+    ],
+    "Year-1/1a-OR-Modelling/inventory-policy.html": [
+      "Year-1/1a-OR-Modelling/optimization-model.html"
+    ],
+    "Year-1/1a-OR-Modelling/job-sequencing-model.html": [
+      "Year-1/1a-OR-Modelling/either-or-constraints.html",
+      "Year-1/1a-OR-Modelling/mixed-integer-program.html"
+    ],
+    "Year-1/1a-OR-Modelling/k-out-of-n-constraints.html": [
+      "Year-1/1a-OR-Modelling/either-or-constraints.html"
+    ],
+    "Year-1/1a-OR-Modelling/konigsberg-bridge-problem.html": [
+      "Year-1/1a-OR-Modelling/network.html",
+      "Year-1/1a-OR-Modelling/vertex-degree.html"
+    ],
+    "Year-1/1a-OR-Modelling/kruskal-method.html": [
+      "Year-1/1a-OR-Modelling/minimum-spanning-tree.html",
+      "Year-1/1a-OR-Modelling/cycle.html"
+    ],
+    "Year-1/1a-OR-Modelling/linear-program-formulation.html": [
+      "Year-1/1a-OR-Modelling/linear-programming.html",
+      "Year-1/1a-OR-Modelling/decision-variable.html",
+      "Year-1/1a-OR-Modelling/model-parameter.html"
+    ],
+    "Year-1/1a-OR-Modelling/linear-programming.html": [
+      "Year-1/1a-OR-Modelling/objective-function.html",
+      "Year-1/1a-OR-Modelling/constraint.html"
+    ],
+    "Year-1/1a-OR-Modelling/lot-size-bellman-recursion.html": [
+      "Year-1/1a-OR-Modelling/dynamic-programming.html",
+      "Year-1/1a-OR-Modelling/dynamic-lot-size-model.html"
+    ],
+    "Year-1/1a-OR-Modelling/lp-relaxation.html": [
+      "Year-1/1a-OR-Modelling/integer-linear-programming.html",
+      "Year-1/1a-OR-Modelling/relaxation.html"
+    ],
+    "Year-1/1a-OR-Modelling/maximum-flow-linear-program.html": [
+      "Year-1/1a-OR-Modelling/maximum-flow-problem.html",
+      "Year-1/1a-OR-Modelling/linear-programming.html"
+    ],
+    "Year-1/1a-OR-Modelling/maximum-flow-problem.html": [
+      "Year-1/1a-OR-Modelling/directed-network.html",
+      "Year-1/1a-OR-Modelling/constraint.html"
+    ],
+    "Year-1/1a-OR-Modelling/minimization-to-maximization.html": [
+      "Year-1/1a-OR-Modelling/objective-function.html",
+      "Year-1/1a-OR-Modelling/optimal-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/minimum-ratio-test.html": [
+      "Year-1/1a-OR-Modelling/entering-variable-rule.html",
+      "Year-1/1a-OR-Modelling/basic-feasible-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/minimum-spanning-tree.html": [
+      "Year-1/1a-OR-Modelling/spanning-tree.html"
+    ],
+    "Year-1/1a-OR-Modelling/minimum-weight-perfect-matching.html": [
+      "Year-1/1a-OR-Modelling/binary-integer-program.html",
+      "Year-1/1a-OR-Modelling/vertex-degree.html",
+      "Year-1/1a-OR-Modelling/shortest-path-problem.html"
+    ],
+    "Year-1/1a-OR-Modelling/minimum-zero-cover.html": [
+      "Year-1/1a-OR-Modelling/hungarian-algorithm.html",
+      "Year-1/1a-OR-Modelling/zero-cost-matching-via-maximum-flow.html"
+    ],
+    "Year-1/1a-OR-Modelling/mixed-integer-program.html": [
+      "Year-1/1a-OR-Modelling/integer-linear-programming.html",
+      "Year-1/1a-OR-Modelling/binary-variable.html"
+    ],
+    "Year-1/1a-OR-Modelling/model-parameter.html": [
+      "Year-1/1a-OR-Modelling/objective-function.html",
+      "Year-1/1a-OR-Modelling/constraint.html"
+    ],
+    "Year-1/1a-OR-Modelling/multiple-optimal-solutions.html": [
+      "Year-1/1a-OR-Modelling/optimal-solution.html",
+      "Year-1/1a-OR-Modelling/linear-programming.html"
+    ],
+    "Year-1/1a-OR-Modelling/mutually-exclusive-decisions.html": [
+      "Year-1/1a-OR-Modelling/binary-variable.html"
+    ],
+    "Year-1/1a-OR-Modelling/negative-rhs-transformation.html": [
+      "Year-1/1a-OR-Modelling/constraint.html"
+    ],
+    "Year-1/1a-OR-Modelling/network.html": [],
+    "Year-1/1a-OR-Modelling/newsvendor-model.html": [
+      "Year-1/1a-OR-Modelling/inventory-policy.html",
+      "Year-1/1a-OR-Modelling/positive-part.html"
+    ],
+    "Year-1/1a-OR-Modelling/newsvendor-price-sensitivity.html": [
+      "Year-1/1a-OR-Modelling/discrete-newsvendor-rule.html"
+    ],
+    "Year-1/1a-OR-Modelling/nonbasic-variable.html": [
+      "Year-1/1a-OR-Modelling/basic-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/nonconvex-region-modelling.html": [
+      "Year-1/1a-OR-Modelling/feasible-region.html",
+      "Year-1/1a-OR-Modelling/either-or-constraints.html",
+      "Year-1/1a-OR-Modelling/mutually-exclusive-decisions.html"
+    ],
+    "Year-1/1a-OR-Modelling/nonnegativity-constraint.html": [
+      "Year-1/1a-OR-Modelling/decision-variable.html",
+      "Year-1/1a-OR-Modelling/constraint.html"
+    ],
+    "Year-1/1a-OR-Modelling/normal-demand-distribution.html": [
+      "Year-1/1a-OR-Modelling/continuous-newsvendor-rule.html",
+      "Year-1/1a-OR-Modelling/standard-normal-distribution.html"
+    ],
+    "Year-1/1a-OR-Modelling/objective-coefficient-range.html": [
+      "Year-1/1a-OR-Modelling/sensitivity-analysis.html",
+      "Year-1/1a-OR-Modelling/objective-function.html"
+    ],
+    "Year-1/1a-OR-Modelling/objective-function.html": [
+      "Year-1/1a-OR-Modelling/decision-variable.html"
+    ],
+    "Year-1/1a-OR-Modelling/objective-line.html": [
+      "Year-1/1a-OR-Modelling/objective-function.html"
+    ],
+    "Year-1/1a-OR-Modelling/operations-research.html": [],
+    "Year-1/1a-OR-Modelling/optimal-solution.html": [
+      "Year-1/1a-OR-Modelling/feasible-solution.html",
+      "Year-1/1a-OR-Modelling/objective-function.html"
+    ],
+    "Year-1/1a-OR-Modelling/optimization-bounds.html": [
+      "Year-1/1a-OR-Modelling/heuristic.html",
+      "Year-1/1a-OR-Modelling/relaxation.html"
+    ],
+    "Year-1/1a-OR-Modelling/optimization-model.html": [],
+    "Year-1/1a-OR-Modelling/or-study-cycle.html": [
+      "Year-1/1a-OR-Modelling/operations-research.html",
+      "Year-1/1a-OR-Modelling/optimization-model.html"
+    ],
+    "Year-1/1a-OR-Modelling/ordering-cycle.html": [
+      "Year-1/1a-OR-Modelling/inventory-policy.html"
+    ],
+    "Year-1/1a-OR-Modelling/overage-cost.html": [
+      "Year-1/1a-OR-Modelling/newsvendor-model.html",
+      "Year-1/1a-OR-Modelling/positive-part.html"
+    ],
+    "Year-1/1a-OR-Modelling/parity-constraint.html": [
+      "Year-1/1a-OR-Modelling/binary-variable.html"
+    ],
+    "Year-1/1a-OR-Modelling/path.html": [
+      "Year-1/1a-OR-Modelling/network.html"
+    ],
+    "Year-1/1a-OR-Modelling/positive-part.html": [],
+    "Year-1/1a-OR-Modelling/price-break-indifference-quantity.html": [
+      "Year-1/1a-OR-Modelling/eoq-with-price-breaks.html"
+    ],
+    "Year-1/1a-OR-Modelling/production-inventory-model.html": [
+      "Year-1/1a-OR-Modelling/linear-program-formulation.html"
+    ],
+    "Year-1/1a-OR-Modelling/project-longest-path-model.html": [
+      "Year-1/1a-OR-Modelling/directed-network.html",
+      "Year-1/1a-OR-Modelling/shortest-path-binary-formulation.html"
+    ],
+    "Year-1/1a-OR-Modelling/project-selection-model.html": [
+      "Year-1/1a-OR-Modelling/binary-integer-program.html"
+    ],
+    "Year-1/1a-OR-Modelling/purchasing-cost.html": [
+      "Year-1/1a-OR-Modelling/inventory-policy.html"
+    ],
+    "Year-1/1a-OR-Modelling/pure-integer-program.html": [
+      "Year-1/1a-OR-Modelling/integer-linear-programming.html"
+    ],
+    "Year-1/1a-OR-Modelling/reduced-cost.html": [
+      "Year-1/1a-OR-Modelling/simplex-tableau.html",
+      "Year-1/1a-OR-Modelling/sensitivity-analysis.html"
+    ],
+    "Year-1/1a-OR-Modelling/relaxation.html": [
+      "Year-1/1a-OR-Modelling/optimization-model.html",
+      "Year-1/1a-OR-Modelling/feasible-region.html",
+      "Year-1/1a-OR-Modelling/optimal-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/residual-network.html": [
+      "Year-1/1a-OR-Modelling/maximum-flow-problem.html"
+    ],
+    "Year-1/1a-OR-Modelling/rhs-sensitivity-range.html": [
+      "Year-1/1a-OR-Modelling/shadow-price.html",
+      "Year-1/1a-OR-Modelling/sensitivity-analysis.html"
+    ],
+    "Year-1/1a-OR-Modelling/rounding-heuristic.html": [
+      "Year-1/1a-OR-Modelling/lp-relaxation.html",
+      "Year-1/1a-OR-Modelling/heuristic.html"
+    ],
+    "Year-1/1a-OR-Modelling/sensitivity-analysis.html": [
+      "Year-1/1a-OR-Modelling/model-parameter.html",
+      "Year-1/1a-OR-Modelling/optimal-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/setup-cost.html": [
+      "Year-1/1a-OR-Modelling/inventory-policy.html",
+      "Year-1/1a-OR-Modelling/ordering-cycle.html"
+    ],
+    "Year-1/1a-OR-Modelling/shadow-price.html": [
+      "Year-1/1a-OR-Modelling/sensitivity-analysis.html",
+      "Year-1/1a-OR-Modelling/slack-variable.html",
+      "Year-1/1a-OR-Modelling/simplex-tableau.html"
+    ],
+    "Year-1/1a-OR-Modelling/shortage-cost.html": [
+      "Year-1/1a-OR-Modelling/inventory-policy.html",
+      "Year-1/1a-OR-Modelling/holding-cost.html"
+    ],
+    "Year-1/1a-OR-Modelling/shortest-path-algorithm.html": [
+      "Year-1/1a-OR-Modelling/shortest-path-problem.html"
+    ],
+    "Year-1/1a-OR-Modelling/shortest-path-binary-formulation.html": [
+      "Year-1/1a-OR-Modelling/shortest-path-problem.html",
+      "Year-1/1a-OR-Modelling/binary-integer-program.html"
+    ],
+    "Year-1/1a-OR-Modelling/shortest-path-problem.html": [
+      "Year-1/1a-OR-Modelling/path.html",
+      "Year-1/1a-OR-Modelling/undirected-network.html"
+    ],
+    "Year-1/1a-OR-Modelling/silver-meal-heuristic.html": [
+      "Year-1/1a-OR-Modelling/dynamic-lot-size-model.html",
+      "Year-1/1a-OR-Modelling/heuristic.html",
+      "Year-1/1a-OR-Modelling/holding-cost.html"
+    ],
+    "Year-1/1a-OR-Modelling/simplex-method.html": [
+      "Year-1/1a-OR-Modelling/linear-programming.html",
+      "Year-1/1a-OR-Modelling/basic-feasible-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/simplex-optimality-test.html": [
+      "Year-1/1a-OR-Modelling/simplex-tableau.html",
+      "Year-1/1a-OR-Modelling/basic-feasible-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/simplex-pivot.html": [
+      "Year-1/1a-OR-Modelling/minimum-ratio-test.html",
+      "Year-1/1a-OR-Modelling/simplex-tableau.html"
+    ],
+    "Year-1/1a-OR-Modelling/simplex-tableau.html": [
+      "Year-1/1a-OR-Modelling/basic-variable.html",
+      "Year-1/1a-OR-Modelling/nonbasic-variable.html"
+    ],
+    "Year-1/1a-OR-Modelling/slack-variable.html": [
+      "Year-1/1a-OR-Modelling/constraint.html",
+      "Year-1/1a-OR-Modelling/nonnegativity-constraint.html"
+    ],
+    "Year-1/1a-OR-Modelling/spanning-tree.html": [
+      "Year-1/1a-OR-Modelling/tree.html"
+    ],
+    "Year-1/1a-OR-Modelling/standard-normal-distribution.html": [],
+    "Year-1/1a-OR-Modelling/surplus-variable.html": [
+      "Year-1/1a-OR-Modelling/constraint.html",
+      "Year-1/1a-OR-Modelling/nonnegativity-constraint.html"
+    ],
+    "Year-1/1a-OR-Modelling/task-quota-assignment.html": [
+      "Year-1/1a-OR-Modelling/binary-integer-program.html"
+    ],
+    "Year-1/1a-OR-Modelling/transportation-problem.html": [
+      "Year-1/1a-OR-Modelling/linear-program-formulation.html"
+    ],
+    "Year-1/1a-OR-Modelling/tree.html": [
+      "Year-1/1a-OR-Modelling/connected-network.html",
+      "Year-1/1a-OR-Modelling/cycle.html"
+    ],
+    "Year-1/1a-OR-Modelling/two-phase-method.html": [
+      "Year-1/1a-OR-Modelling/artificial-variable.html",
+      "Year-1/1a-OR-Modelling/simplex-method.html",
+      "Year-1/1a-OR-Modelling/simplex-tableau.html"
+    ],
+    "Year-1/1a-OR-Modelling/unbounded-linear-program.html": [
+      "Year-1/1a-OR-Modelling/linear-programming.html",
+      "Year-1/1a-OR-Modelling/minimum-ratio-test.html"
+    ],
+    "Year-1/1a-OR-Modelling/underage-cost.html": [
+      "Year-1/1a-OR-Modelling/newsvendor-model.html",
+      "Year-1/1a-OR-Modelling/positive-part.html"
+    ],
+    "Year-1/1a-OR-Modelling/undirected-network.html": [
+      "Year-1/1a-OR-Modelling/network.html"
+    ],
+    "Year-1/1a-OR-Modelling/uniform-demand-distribution.html": [
+      "Year-1/1a-OR-Modelling/continuous-newsvendor-rule.html"
+    ],
+    "Year-1/1a-OR-Modelling/unrestricted-variable-transformation.html": [
+      "Year-1/1a-OR-Modelling/nonnegativity-constraint.html",
+      "Year-1/1a-OR-Modelling/linear-programming.html"
+    ],
+    "Year-1/1a-OR-Modelling/vehicle-routing-problem.html": [
+      "Year-1/1a-OR-Modelling/optimization-model.html",
+      "Year-1/1a-OR-Modelling/heuristic.html",
+      "Year-1/1a-OR-Modelling/relaxation.html"
+    ],
+    "Year-1/1a-OR-Modelling/vertex-degree.html": [
+      "Year-1/1a-OR-Modelling/undirected-network.html"
+    ],
+    "Year-1/1a-OR-Modelling/weibull-demand-distribution.html": [
+      "Year-1/1a-OR-Modelling/continuous-newsvendor-rule.html"
+    ],
+    "Year-1/1a-OR-Modelling/zero-cost-matching-via-maximum-flow.html": [
+      "Year-1/1a-OR-Modelling/bipartite-matching.html",
+      "Year-1/1a-OR-Modelling/augmenting-path-algorithm.html"
+    ],
+    "Year-1/1a-OR-Modelling/zero-inventory-ordering-property.html": [
+      "Year-1/1a-OR-Modelling/dynamic-lot-size-model.html",
+      "Year-1/1a-OR-Modelling/lot-size-bellman-recursion.html"
+    ],
     "Year-1/1b-Math-II-Linear-Algebra/index.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/2-argument-arctangent.html": [
       "Year-1/1a-Math-I-Calculus/inverse-trigonometric-functions.html",
@@ -7135,6 +8719,499 @@
       "Year-1/1b-Math-II-Linear-Algebra/root-of-a-polynomial.html"
     ],
     "Year-1/1a-OR-Modelling/index.html": [],
+    "Year-1/1a-OR-Modelling/algorithm.html": [
+      "Year-1/1a-OR-Modelling/dynamic-programming.html"
+    ],
+    "Year-1/1a-OR-Modelling/ambulance-location-model.html": [],
+    "Year-1/1a-OR-Modelling/artificial-variable.html": [
+      "Year-1/1a-OR-Modelling/two-phase-method.html"
+    ],
+    "Year-1/1a-OR-Modelling/assignment-cost-transformation.html": [
+      "Year-1/1a-OR-Modelling/hungarian-algorithm.html"
+    ],
+    "Year-1/1a-OR-Modelling/assignment-problem.html": [
+      "Year-1/1a-OR-Modelling/assignment-cost-transformation.html",
+      "Year-1/1a-OR-Modelling/dummy-assignment.html",
+      "Year-1/1a-OR-Modelling/forbidden-assignment.html",
+      "Year-1/1a-OR-Modelling/hungarian-algorithm.html"
+    ],
+    "Year-1/1a-OR-Modelling/augmented-form.html": [
+      "Year-1/1a-OR-Modelling/artificial-variable.html",
+      "Year-1/1a-OR-Modelling/basic-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/augmenting-path-algorithm.html": [
+      "Year-1/1a-OR-Modelling/zero-cost-matching-via-maximum-flow.html"
+    ],
+    "Year-1/1a-OR-Modelling/augmenting-path.html": [
+      "Year-1/1a-OR-Modelling/augmenting-path-algorithm.html"
+    ],
+    "Year-1/1a-OR-Modelling/basic-feasible-solution.html": [
+      "Year-1/1a-OR-Modelling/minimum-ratio-test.html",
+      "Year-1/1a-OR-Modelling/simplex-method.html",
+      "Year-1/1a-OR-Modelling/simplex-optimality-test.html"
+    ],
+    "Year-1/1a-OR-Modelling/basic-solution.html": [
+      "Year-1/1a-OR-Modelling/basic-feasible-solution.html",
+      "Year-1/1a-OR-Modelling/basic-variable.html",
+      "Year-1/1a-OR-Modelling/nonbasic-variable.html"
+    ],
+    "Year-1/1a-OR-Modelling/basic-variable.html": [
+      "Year-1/1a-OR-Modelling/degeneracy.html",
+      "Year-1/1a-OR-Modelling/simplex-tableau.html"
+    ],
+    "Year-1/1a-OR-Modelling/bin-packing-problem.html": [
+      "Year-1/1a-OR-Modelling/first-fit-heuristic.html"
+    ],
+    "Year-1/1a-OR-Modelling/binary-integer-program.html": [
+      "Year-1/1a-OR-Modelling/ambulance-location-model.html",
+      "Year-1/1a-OR-Modelling/assignment-problem.html",
+      "Year-1/1a-OR-Modelling/minimum-weight-perfect-matching.html",
+      "Year-1/1a-OR-Modelling/project-selection-model.html",
+      "Year-1/1a-OR-Modelling/shortest-path-binary-formulation.html",
+      "Year-1/1a-OR-Modelling/task-quota-assignment.html"
+    ],
+    "Year-1/1a-OR-Modelling/binary-variable.html": [
+      "Year-1/1a-OR-Modelling/binary-integer-program.html",
+      "Year-1/1a-OR-Modelling/capacity-expansion-model.html",
+      "Year-1/1a-OR-Modelling/contingent-decisions.html",
+      "Year-1/1a-OR-Modelling/either-or-constraints.html",
+      "Year-1/1a-OR-Modelling/finite-value-constraint.html",
+      "Year-1/1a-OR-Modelling/mixed-integer-program.html",
+      "Year-1/1a-OR-Modelling/mutually-exclusive-decisions.html",
+      "Year-1/1a-OR-Modelling/parity-constraint.html"
+    ],
+    "Year-1/1a-OR-Modelling/bipartite-matching.html": [
+      "Year-1/1a-OR-Modelling/zero-cost-matching-via-maximum-flow.html"
+    ],
+    "Year-1/1a-OR-Modelling/branch-and-bound-pruning.html": [],
+    "Year-1/1a-OR-Modelling/branch-and-bound.html": [
+      "Year-1/1a-OR-Modelling/branch-and-bound-pruning.html",
+      "Year-1/1a-OR-Modelling/incumbent-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/bus-scheduling-model.html": [],
+    "Year-1/1a-OR-Modelling/capacity-expansion-model.html": [],
+    "Year-1/1a-OR-Modelling/chinese-postman-problem.html": [],
+    "Year-1/1a-OR-Modelling/classical-eoq-model.html": [
+      "Year-1/1a-OR-Modelling/economic-order-quantity.html",
+      "Year-1/1a-OR-Modelling/eoq-with-planned-shortages.html"
+    ],
+    "Year-1/1a-OR-Modelling/connected-network.html": [
+      "Year-1/1a-OR-Modelling/euler-network-characterization.html",
+      "Year-1/1a-OR-Modelling/tree.html"
+    ],
+    "Year-1/1a-OR-Modelling/constraint.html": [
+      "Year-1/1a-OR-Modelling/capacity-expansion-model.html",
+      "Year-1/1a-OR-Modelling/corner-point.html",
+      "Year-1/1a-OR-Modelling/either-or-constraints.html",
+      "Year-1/1a-OR-Modelling/feasible-solution.html",
+      "Year-1/1a-OR-Modelling/linear-programming.html",
+      "Year-1/1a-OR-Modelling/maximum-flow-problem.html",
+      "Year-1/1a-OR-Modelling/model-parameter.html",
+      "Year-1/1a-OR-Modelling/negative-rhs-transformation.html",
+      "Year-1/1a-OR-Modelling/nonnegativity-constraint.html",
+      "Year-1/1a-OR-Modelling/slack-variable.html",
+      "Year-1/1a-OR-Modelling/surplus-variable.html"
+    ],
+    "Year-1/1a-OR-Modelling/contingent-decisions.html": [],
+    "Year-1/1a-OR-Modelling/continuous-newsvendor-rule.html": [
+      "Year-1/1a-OR-Modelling/normal-demand-distribution.html",
+      "Year-1/1a-OR-Modelling/uniform-demand-distribution.html",
+      "Year-1/1a-OR-Modelling/weibull-demand-distribution.html"
+    ],
+    "Year-1/1a-OR-Modelling/convex-combination-of-optimal-solutions.html": [],
+    "Year-1/1a-OR-Modelling/corner-point-optimality.html": [],
+    "Year-1/1a-OR-Modelling/corner-point.html": [
+      "Year-1/1a-OR-Modelling/corner-point-optimality.html"
+    ],
+    "Year-1/1a-OR-Modelling/coverage.html": [],
+    "Year-1/1a-OR-Modelling/critical-ratio.html": [
+      "Year-1/1a-OR-Modelling/continuous-newsvendor-rule.html",
+      "Year-1/1a-OR-Modelling/discrete-newsvendor-rule.html"
+    ],
+    "Year-1/1a-OR-Modelling/cycle.html": [
+      "Year-1/1a-OR-Modelling/euler-tour-algorithm.html",
+      "Year-1/1a-OR-Modelling/euler-tour.html",
+      "Year-1/1a-OR-Modelling/kruskal-method.html",
+      "Year-1/1a-OR-Modelling/tree.html"
+    ],
+    "Year-1/1a-OR-Modelling/decision-variable.html": [
+      "Year-1/1a-OR-Modelling/binary-variable.html",
+      "Year-1/1a-OR-Modelling/constraint.html",
+      "Year-1/1a-OR-Modelling/linear-program-formulation.html",
+      "Year-1/1a-OR-Modelling/nonnegativity-constraint.html",
+      "Year-1/1a-OR-Modelling/objective-function.html"
+    ],
+    "Year-1/1a-OR-Modelling/degeneracy.html": [],
+    "Year-1/1a-OR-Modelling/diet-problem.html": [],
+    "Year-1/1a-OR-Modelling/dijkstra-prim-method.html": [],
+    "Year-1/1a-OR-Modelling/directed-network.html": [
+      "Year-1/1a-OR-Modelling/maximum-flow-problem.html",
+      "Year-1/1a-OR-Modelling/project-longest-path-model.html"
+    ],
+    "Year-1/1a-OR-Modelling/discrete-newsvendor-rule.html": [
+      "Year-1/1a-OR-Modelling/newsvendor-price-sensitivity.html"
+    ],
+    "Year-1/1a-OR-Modelling/dummy-assignment.html": [],
+    "Year-1/1a-OR-Modelling/dynamic-lot-size-model.html": [
+      "Year-1/1a-OR-Modelling/lot-size-bellman-recursion.html",
+      "Year-1/1a-OR-Modelling/silver-meal-heuristic.html",
+      "Year-1/1a-OR-Modelling/zero-inventory-ordering-property.html"
+    ],
+    "Year-1/1a-OR-Modelling/dynamic-programming.html": [
+      "Year-1/1a-OR-Modelling/lot-size-bellman-recursion.html"
+    ],
+    "Year-1/1a-OR-Modelling/economic-order-quantity.html": [
+      "Year-1/1a-OR-Modelling/effective-lead-time.html",
+      "Year-1/1a-OR-Modelling/eoq-with-lead-times.html",
+      "Year-1/1a-OR-Modelling/eoq-with-price-breaks.html"
+    ],
+    "Year-1/1a-OR-Modelling/effective-lead-time.html": [
+      "Year-1/1a-OR-Modelling/eoq-with-lead-times.html"
+    ],
+    "Year-1/1a-OR-Modelling/either-or-constraints.html": [
+      "Year-1/1a-OR-Modelling/job-sequencing-model.html",
+      "Year-1/1a-OR-Modelling/k-out-of-n-constraints.html",
+      "Year-1/1a-OR-Modelling/nonconvex-region-modelling.html"
+    ],
+    "Year-1/1a-OR-Modelling/entering-variable-rule.html": [
+      "Year-1/1a-OR-Modelling/minimum-ratio-test.html"
+    ],
+    "Year-1/1a-OR-Modelling/eoq-with-lead-times.html": [],
+    "Year-1/1a-OR-Modelling/eoq-with-planned-shortages.html": [],
+    "Year-1/1a-OR-Modelling/eoq-with-price-breaks.html": [
+      "Year-1/1a-OR-Modelling/price-break-indifference-quantity.html"
+    ],
+    "Year-1/1a-OR-Modelling/euclidean-network.html": [],
+    "Year-1/1a-OR-Modelling/euler-network-characterization.html": [
+      "Year-1/1a-OR-Modelling/euler-tour-algorithm.html"
+    ],
+    "Year-1/1a-OR-Modelling/euler-tour-algorithm.html": [],
+    "Year-1/1a-OR-Modelling/euler-tour.html": [
+      "Year-1/1a-OR-Modelling/chinese-postman-problem.html",
+      "Year-1/1a-OR-Modelling/euler-network-characterization.html"
+    ],
+    "Year-1/1a-OR-Modelling/excel-sensitivity-report.html": [],
+    "Year-1/1a-OR-Modelling/excel-solver-for-linear-programming.html": [
+      "Year-1/1a-OR-Modelling/excel-sensitivity-report.html"
+    ],
+    "Year-1/1a-OR-Modelling/feasible-region.html": [
+      "Year-1/1a-OR-Modelling/corner-point.html",
+      "Year-1/1a-OR-Modelling/graphical-method.html",
+      "Year-1/1a-OR-Modelling/infeasible-linear-program.html",
+      "Year-1/1a-OR-Modelling/nonconvex-region-modelling.html",
+      "Year-1/1a-OR-Modelling/relaxation.html"
+    ],
+    "Year-1/1a-OR-Modelling/feasible-solution.html": [
+      "Year-1/1a-OR-Modelling/basic-feasible-solution.html",
+      "Year-1/1a-OR-Modelling/bin-packing-problem.html",
+      "Year-1/1a-OR-Modelling/feasible-region.html",
+      "Year-1/1a-OR-Modelling/heuristic.html",
+      "Year-1/1a-OR-Modelling/incumbent-solution.html",
+      "Year-1/1a-OR-Modelling/optimal-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/finite-value-constraint.html": [],
+    "Year-1/1a-OR-Modelling/first-fit-heuristic.html": [],
+    "Year-1/1a-OR-Modelling/forbidden-assignment.html": [],
+    "Year-1/1a-OR-Modelling/giapetto-production-model.html": [],
+    "Year-1/1a-OR-Modelling/graphical-integer-programming.html": [],
+    "Year-1/1a-OR-Modelling/graphical-method.html": [
+      "Year-1/1a-OR-Modelling/diet-problem.html",
+      "Year-1/1a-OR-Modelling/graphical-integer-programming.html"
+    ],
+    "Year-1/1a-OR-Modelling/heuristic.html": [
+      "Year-1/1a-OR-Modelling/bin-packing-problem.html",
+      "Year-1/1a-OR-Modelling/optimization-bounds.html",
+      "Year-1/1a-OR-Modelling/rounding-heuristic.html",
+      "Year-1/1a-OR-Modelling/silver-meal-heuristic.html",
+      "Year-1/1a-OR-Modelling/vehicle-routing-problem.html"
+    ],
+    "Year-1/1a-OR-Modelling/holding-cost.html": [
+      "Year-1/1a-OR-Modelling/classical-eoq-model.html",
+      "Year-1/1a-OR-Modelling/dynamic-lot-size-model.html",
+      "Year-1/1a-OR-Modelling/shortage-cost.html",
+      "Year-1/1a-OR-Modelling/silver-meal-heuristic.html"
+    ],
+    "Year-1/1a-OR-Modelling/hungarian-algorithm.html": [
+      "Year-1/1a-OR-Modelling/minimum-zero-cover.html"
+    ],
+    "Year-1/1a-OR-Modelling/incumbent-solution.html": [
+      "Year-1/1a-OR-Modelling/branch-and-bound-pruning.html"
+    ],
+    "Year-1/1a-OR-Modelling/infeasible-linear-program.html": [],
+    "Year-1/1a-OR-Modelling/integer-linear-programming.html": [
+      "Year-1/1a-OR-Modelling/binary-integer-program.html",
+      "Year-1/1a-OR-Modelling/graphical-integer-programming.html",
+      "Year-1/1a-OR-Modelling/lp-relaxation.html",
+      "Year-1/1a-OR-Modelling/mixed-integer-program.html",
+      "Year-1/1a-OR-Modelling/pure-integer-program.html"
+    ],
+    "Year-1/1a-OR-Modelling/inventory-policy.html": [
+      "Year-1/1a-OR-Modelling/dynamic-lot-size-model.html",
+      "Year-1/1a-OR-Modelling/holding-cost.html",
+      "Year-1/1a-OR-Modelling/newsvendor-model.html",
+      "Year-1/1a-OR-Modelling/ordering-cycle.html",
+      "Year-1/1a-OR-Modelling/purchasing-cost.html",
+      "Year-1/1a-OR-Modelling/setup-cost.html",
+      "Year-1/1a-OR-Modelling/shortage-cost.html"
+    ],
+    "Year-1/1a-OR-Modelling/job-sequencing-model.html": [],
+    "Year-1/1a-OR-Modelling/k-out-of-n-constraints.html": [],
+    "Year-1/1a-OR-Modelling/konigsberg-bridge-problem.html": [],
+    "Year-1/1a-OR-Modelling/kruskal-method.html": [],
+    "Year-1/1a-OR-Modelling/linear-program-formulation.html": [
+      "Year-1/1a-OR-Modelling/bus-scheduling-model.html",
+      "Year-1/1a-OR-Modelling/diet-problem.html",
+      "Year-1/1a-OR-Modelling/excel-solver-for-linear-programming.html",
+      "Year-1/1a-OR-Modelling/giapetto-production-model.html",
+      "Year-1/1a-OR-Modelling/production-inventory-model.html",
+      "Year-1/1a-OR-Modelling/transportation-problem.html"
+    ],
+    "Year-1/1a-OR-Modelling/linear-programming.html": [
+      "Year-1/1a-OR-Modelling/augmented-form.html",
+      "Year-1/1a-OR-Modelling/corner-point-optimality.html",
+      "Year-1/1a-OR-Modelling/giapetto-production-model.html",
+      "Year-1/1a-OR-Modelling/graphical-method.html",
+      "Year-1/1a-OR-Modelling/integer-linear-programming.html",
+      "Year-1/1a-OR-Modelling/linear-program-formulation.html",
+      "Year-1/1a-OR-Modelling/maximum-flow-linear-program.html",
+      "Year-1/1a-OR-Modelling/multiple-optimal-solutions.html",
+      "Year-1/1a-OR-Modelling/simplex-method.html",
+      "Year-1/1a-OR-Modelling/unbounded-linear-program.html",
+      "Year-1/1a-OR-Modelling/unrestricted-variable-transformation.html"
+    ],
+    "Year-1/1a-OR-Modelling/lot-size-bellman-recursion.html": [
+      "Year-1/1a-OR-Modelling/zero-inventory-ordering-property.html"
+    ],
+    "Year-1/1a-OR-Modelling/lp-relaxation.html": [
+      "Year-1/1a-OR-Modelling/branch-and-bound.html",
+      "Year-1/1a-OR-Modelling/rounding-heuristic.html"
+    ],
+    "Year-1/1a-OR-Modelling/maximum-flow-linear-program.html": [],
+    "Year-1/1a-OR-Modelling/maximum-flow-problem.html": [
+      "Year-1/1a-OR-Modelling/maximum-flow-linear-program.html",
+      "Year-1/1a-OR-Modelling/residual-network.html"
+    ],
+    "Year-1/1a-OR-Modelling/minimization-to-maximization.html": [],
+    "Year-1/1a-OR-Modelling/minimum-ratio-test.html": [
+      "Year-1/1a-OR-Modelling/degeneracy.html",
+      "Year-1/1a-OR-Modelling/simplex-pivot.html",
+      "Year-1/1a-OR-Modelling/unbounded-linear-program.html"
+    ],
+    "Year-1/1a-OR-Modelling/minimum-spanning-tree.html": [
+      "Year-1/1a-OR-Modelling/dijkstra-prim-method.html",
+      "Year-1/1a-OR-Modelling/kruskal-method.html"
+    ],
+    "Year-1/1a-OR-Modelling/minimum-weight-perfect-matching.html": [
+      "Year-1/1a-OR-Modelling/chinese-postman-problem.html"
+    ],
+    "Year-1/1a-OR-Modelling/minimum-zero-cover.html": [],
+    "Year-1/1a-OR-Modelling/mixed-integer-program.html": [
+      "Year-1/1a-OR-Modelling/job-sequencing-model.html"
+    ],
+    "Year-1/1a-OR-Modelling/model-parameter.html": [
+      "Year-1/1a-OR-Modelling/linear-program-formulation.html",
+      "Year-1/1a-OR-Modelling/sensitivity-analysis.html"
+    ],
+    "Year-1/1a-OR-Modelling/multiple-optimal-solutions.html": [
+      "Year-1/1a-OR-Modelling/convex-combination-of-optimal-solutions.html"
+    ],
+    "Year-1/1a-OR-Modelling/mutually-exclusive-decisions.html": [
+      "Year-1/1a-OR-Modelling/finite-value-constraint.html",
+      "Year-1/1a-OR-Modelling/nonconvex-region-modelling.html"
+    ],
+    "Year-1/1a-OR-Modelling/negative-rhs-transformation.html": [],
+    "Year-1/1a-OR-Modelling/network.html": [
+      "Year-1/1a-OR-Modelling/bipartite-matching.html",
+      "Year-1/1a-OR-Modelling/directed-network.html",
+      "Year-1/1a-OR-Modelling/konigsberg-bridge-problem.html",
+      "Year-1/1a-OR-Modelling/path.html",
+      "Year-1/1a-OR-Modelling/undirected-network.html"
+    ],
+    "Year-1/1a-OR-Modelling/newsvendor-model.html": [
+      "Year-1/1a-OR-Modelling/overage-cost.html",
+      "Year-1/1a-OR-Modelling/underage-cost.html"
+    ],
+    "Year-1/1a-OR-Modelling/newsvendor-price-sensitivity.html": [],
+    "Year-1/1a-OR-Modelling/nonbasic-variable.html": [
+      "Year-1/1a-OR-Modelling/entering-variable-rule.html",
+      "Year-1/1a-OR-Modelling/simplex-tableau.html"
+    ],
+    "Year-1/1a-OR-Modelling/nonconvex-region-modelling.html": [],
+    "Year-1/1a-OR-Modelling/nonnegativity-constraint.html": [
+      "Year-1/1a-OR-Modelling/slack-variable.html",
+      "Year-1/1a-OR-Modelling/surplus-variable.html",
+      "Year-1/1a-OR-Modelling/unrestricted-variable-transformation.html"
+    ],
+    "Year-1/1a-OR-Modelling/normal-demand-distribution.html": [],
+    "Year-1/1a-OR-Modelling/objective-coefficient-range.html": [],
+    "Year-1/1a-OR-Modelling/objective-function.html": [
+      "Year-1/1a-OR-Modelling/linear-programming.html",
+      "Year-1/1a-OR-Modelling/minimization-to-maximization.html",
+      "Year-1/1a-OR-Modelling/model-parameter.html",
+      "Year-1/1a-OR-Modelling/objective-coefficient-range.html",
+      "Year-1/1a-OR-Modelling/objective-line.html",
+      "Year-1/1a-OR-Modelling/optimal-solution.html"
+    ],
+    "Year-1/1a-OR-Modelling/objective-line.html": [
+      "Year-1/1a-OR-Modelling/graphical-method.html"
+    ],
+    "Year-1/1a-OR-Modelling/operations-research.html": [
+      "Year-1/1a-OR-Modelling/or-study-cycle.html"
+    ],
+    "Year-1/1a-OR-Modelling/optimal-solution.html": [
+      "Year-1/1a-OR-Modelling/corner-point-optimality.html",
+      "Year-1/1a-OR-Modelling/heuristic.html",
+      "Year-1/1a-OR-Modelling/minimization-to-maximization.html",
+      "Year-1/1a-OR-Modelling/multiple-optimal-solutions.html",
+      "Year-1/1a-OR-Modelling/relaxation.html",
+      "Year-1/1a-OR-Modelling/sensitivity-analysis.html"
+    ],
+    "Year-1/1a-OR-Modelling/optimization-bounds.html": [
+      "Year-1/1a-OR-Modelling/branch-and-bound.html"
+    ],
+    "Year-1/1a-OR-Modelling/optimization-model.html": [
+      "Year-1/1a-OR-Modelling/algorithm.html",
+      "Year-1/1a-OR-Modelling/dynamic-programming.html",
+      "Year-1/1a-OR-Modelling/inventory-policy.html",
+      "Year-1/1a-OR-Modelling/or-study-cycle.html",
+      "Year-1/1a-OR-Modelling/relaxation.html",
+      "Year-1/1a-OR-Modelling/vehicle-routing-problem.html"
+    ],
+    "Year-1/1a-OR-Modelling/or-study-cycle.html": [],
+    "Year-1/1a-OR-Modelling/ordering-cycle.html": [
+      "Year-1/1a-OR-Modelling/classical-eoq-model.html",
+      "Year-1/1a-OR-Modelling/effective-lead-time.html",
+      "Year-1/1a-OR-Modelling/setup-cost.html"
+    ],
+    "Year-1/1a-OR-Modelling/overage-cost.html": [
+      "Year-1/1a-OR-Modelling/critical-ratio.html"
+    ],
+    "Year-1/1a-OR-Modelling/parity-constraint.html": [],
+    "Year-1/1a-OR-Modelling/path.html": [
+      "Year-1/1a-OR-Modelling/augmenting-path.html",
+      "Year-1/1a-OR-Modelling/connected-network.html",
+      "Year-1/1a-OR-Modelling/cycle.html",
+      "Year-1/1a-OR-Modelling/shortest-path-problem.html"
+    ],
+    "Year-1/1a-OR-Modelling/positive-part.html": [
+      "Year-1/1a-OR-Modelling/discrete-newsvendor-rule.html",
+      "Year-1/1a-OR-Modelling/newsvendor-model.html",
+      "Year-1/1a-OR-Modelling/overage-cost.html",
+      "Year-1/1a-OR-Modelling/underage-cost.html"
+    ],
+    "Year-1/1a-OR-Modelling/price-break-indifference-quantity.html": [],
+    "Year-1/1a-OR-Modelling/production-inventory-model.html": [
+      "Year-1/1a-OR-Modelling/dynamic-lot-size-model.html"
+    ],
+    "Year-1/1a-OR-Modelling/project-longest-path-model.html": [],
+    "Year-1/1a-OR-Modelling/project-selection-model.html": [],
+    "Year-1/1a-OR-Modelling/purchasing-cost.html": [
+      "Year-1/1a-OR-Modelling/eoq-with-price-breaks.html"
+    ],
+    "Year-1/1a-OR-Modelling/pure-integer-program.html": [
+      "Year-1/1a-OR-Modelling/bus-scheduling-model.html"
+    ],
+    "Year-1/1a-OR-Modelling/reduced-cost.html": [],
+    "Year-1/1a-OR-Modelling/relaxation.html": [
+      "Year-1/1a-OR-Modelling/lp-relaxation.html",
+      "Year-1/1a-OR-Modelling/optimization-bounds.html",
+      "Year-1/1a-OR-Modelling/vehicle-routing-problem.html"
+    ],
+    "Year-1/1a-OR-Modelling/residual-network.html": [
+      "Year-1/1a-OR-Modelling/augmenting-path-algorithm.html",
+      "Year-1/1a-OR-Modelling/augmenting-path.html"
+    ],
+    "Year-1/1a-OR-Modelling/rhs-sensitivity-range.html": [],
+    "Year-1/1a-OR-Modelling/rounding-heuristic.html": [],
+    "Year-1/1a-OR-Modelling/sensitivity-analysis.html": [
+      "Year-1/1a-OR-Modelling/excel-sensitivity-report.html",
+      "Year-1/1a-OR-Modelling/objective-coefficient-range.html",
+      "Year-1/1a-OR-Modelling/reduced-cost.html",
+      "Year-1/1a-OR-Modelling/rhs-sensitivity-range.html",
+      "Year-1/1a-OR-Modelling/shadow-price.html"
+    ],
+    "Year-1/1a-OR-Modelling/setup-cost.html": [
+      "Year-1/1a-OR-Modelling/classical-eoq-model.html",
+      "Year-1/1a-OR-Modelling/dynamic-lot-size-model.html"
+    ],
+    "Year-1/1a-OR-Modelling/shadow-price.html": [
+      "Year-1/1a-OR-Modelling/rhs-sensitivity-range.html"
+    ],
+    "Year-1/1a-OR-Modelling/shortage-cost.html": [
+      "Year-1/1a-OR-Modelling/eoq-with-planned-shortages.html"
+    ],
+    "Year-1/1a-OR-Modelling/shortest-path-algorithm.html": [],
+    "Year-1/1a-OR-Modelling/shortest-path-binary-formulation.html": [
+      "Year-1/1a-OR-Modelling/project-longest-path-model.html"
+    ],
+    "Year-1/1a-OR-Modelling/shortest-path-problem.html": [
+      "Year-1/1a-OR-Modelling/chinese-postman-problem.html",
+      "Year-1/1a-OR-Modelling/minimum-weight-perfect-matching.html",
+      "Year-1/1a-OR-Modelling/shortest-path-algorithm.html",
+      "Year-1/1a-OR-Modelling/shortest-path-binary-formulation.html"
+    ],
+    "Year-1/1a-OR-Modelling/silver-meal-heuristic.html": [],
+    "Year-1/1a-OR-Modelling/simplex-method.html": [
+      "Year-1/1a-OR-Modelling/two-phase-method.html"
+    ],
+    "Year-1/1a-OR-Modelling/simplex-optimality-test.html": [],
+    "Year-1/1a-OR-Modelling/simplex-pivot.html": [
+      "Year-1/1a-OR-Modelling/degeneracy.html"
+    ],
+    "Year-1/1a-OR-Modelling/simplex-tableau.html": [
+      "Year-1/1a-OR-Modelling/entering-variable-rule.html",
+      "Year-1/1a-OR-Modelling/reduced-cost.html",
+      "Year-1/1a-OR-Modelling/shadow-price.html",
+      "Year-1/1a-OR-Modelling/simplex-optimality-test.html",
+      "Year-1/1a-OR-Modelling/simplex-pivot.html",
+      "Year-1/1a-OR-Modelling/two-phase-method.html"
+    ],
+    "Year-1/1a-OR-Modelling/slack-variable.html": [
+      "Year-1/1a-OR-Modelling/augmented-form.html",
+      "Year-1/1a-OR-Modelling/shadow-price.html"
+    ],
+    "Year-1/1a-OR-Modelling/spanning-tree.html": [
+      "Year-1/1a-OR-Modelling/minimum-spanning-tree.html"
+    ],
+    "Year-1/1a-OR-Modelling/standard-normal-distribution.html": [
+      "Year-1/1a-OR-Modelling/normal-demand-distribution.html"
+    ],
+    "Year-1/1a-OR-Modelling/surplus-variable.html": [
+      "Year-1/1a-OR-Modelling/artificial-variable.html"
+    ],
+    "Year-1/1a-OR-Modelling/task-quota-assignment.html": [],
+    "Year-1/1a-OR-Modelling/transportation-problem.html": [],
+    "Year-1/1a-OR-Modelling/tree.html": [
+      "Year-1/1a-OR-Modelling/spanning-tree.html"
+    ],
+    "Year-1/1a-OR-Modelling/two-phase-method.html": [
+      "Year-1/1a-OR-Modelling/infeasible-linear-program.html"
+    ],
+    "Year-1/1a-OR-Modelling/unbounded-linear-program.html": [],
+    "Year-1/1a-OR-Modelling/underage-cost.html": [
+      "Year-1/1a-OR-Modelling/critical-ratio.html"
+    ],
+    "Year-1/1a-OR-Modelling/undirected-network.html": [
+      "Year-1/1a-OR-Modelling/connected-network.html",
+      "Year-1/1a-OR-Modelling/euclidean-network.html",
+      "Year-1/1a-OR-Modelling/shortest-path-problem.html",
+      "Year-1/1a-OR-Modelling/vertex-degree.html"
+    ],
+    "Year-1/1a-OR-Modelling/uniform-demand-distribution.html": [],
+    "Year-1/1a-OR-Modelling/unrestricted-variable-transformation.html": [],
+    "Year-1/1a-OR-Modelling/vehicle-routing-problem.html": [],
+    "Year-1/1a-OR-Modelling/vertex-degree.html": [
+      "Year-1/1a-OR-Modelling/chinese-postman-problem.html",
+      "Year-1/1a-OR-Modelling/euler-network-characterization.html",
+      "Year-1/1a-OR-Modelling/euler-tour.html",
+      "Year-1/1a-OR-Modelling/konigsberg-bridge-problem.html",
+      "Year-1/1a-OR-Modelling/minimum-weight-perfect-matching.html"
+    ],
+    "Year-1/1a-OR-Modelling/weibull-demand-distribution.html": [],
+    "Year-1/1a-OR-Modelling/zero-cost-matching-via-maximum-flow.html": [
+      "Year-1/1a-OR-Modelling/minimum-zero-cover.html"
+    ],
+    "Year-1/1a-OR-Modelling/zero-inventory-ordering-property.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/index.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/2-argument-arctangent.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/abelian-group.html": [
