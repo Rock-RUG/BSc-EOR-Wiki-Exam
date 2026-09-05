@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="- Set - Subset - Union of Sets - Intersection of Sets - Difference Set" name="description"/>
+<meta content="Build from sets, numbers and limits to differentiation, series and integration. Find lecture notes, concepts and preparation tools." name="description"/>
 <link href="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/1a-Math-I-Calculus/index.html" rel="canonical"/>
 <link href="../1a-Introduction-to-Data-Analytics/index.html" rel="prev"/>
 <link href="absolute-value.html" rel="next"/>
@@ -22,11 +22,12 @@
 <link href="../../stylesheets/find-builder.css?h=68f6090ea745" rel="stylesheet"/>
 <link href="../../stylesheets/course-search.css?h=0e431d40c86d" rel="stylesheet"/>
 <link href="../../stylesheets/course-status.css?h=4224c998406e" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-surfaces.css?h=8956f955c053" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-surfaces.css?h=cb55e64aef1a" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-community.css?h=a283eeb6614f" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-maps.css?h=0d1c0df611eb" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-home.css?h=8d819898169a" rel="stylesheet"/>
-<link href="../../stylesheets/teaching-workbench.css?h=341d487063a0" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-maps.css?h=91098a8ea726" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-home.css?h=20b01d119048" rel="stylesheet"/>
+<link href="../../stylesheets/teaching-workbench.css?h=fa5b92f7fa26" rel="stylesheet"/>
+<link href="../../stylesheets/course-home.css?h=3a41489c7105" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="mk-search-index-network-cache">
 // Material uses XMLHttpRequest before extra_javascript. Let custom search reuse
@@ -2298,7 +2299,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Probability Distributions
+    2b Probability Distributions
   
 
     
@@ -2362,234 +2363,83 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#course-find">
+<span class="md-ellipsis">
+      
+        Find within this course
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-units">
+<span class="md-ellipsis">
+      
+        Lecture index
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-concepts">
+<span class="md-ellipsis">
+      
+        Concept library
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#foundations-block">
 <span class="md-ellipsis">
       
-        Foundations Sets, numbers, functions, plus sequences.
+        Foundations
       
     </span>
 </a>
-<nav aria-label="Foundations Sets, numbers, functions, plus sequences." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#sets">
-<span class="md-ellipsis">
-      
-        Sets
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#number-systems">
-<span class="md-ellipsis">
-      
-        Number systems
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#functions">
-<span class="md-ellipsis">
-      
-        Functions
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#sequences">
-<span class="md-ellipsis">
-      
-        Sequences
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#limits-block">
 <span class="md-ellipsis">
       
-        Limits and continuity Definitions, tools, and core theorems.
+        Limits and continuity
       
     </span>
 </a>
-<nav aria-label="Limits and continuity Definitions, tools, and core theorems." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#limits">
-<span class="md-ellipsis">
-      
-        Limits
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#limit-tools">
-<span class="md-ellipsis">
-      
-        Limit tools
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#continuity">
-<span class="md-ellipsis">
-      
-        Continuity
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#continuity-theorems">
-<span class="md-ellipsis">
-      
-        Continuity theorems
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#diff-block">
 <span class="md-ellipsis">
       
-        Differentiation Rules, approximation, extrema, and key theorems.
+        Differentiation
       
     </span>
 </a>
-<nav aria-label="Differentiation Rules, approximation, extrema, and key theorems." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#essentials">
-<span class="md-ellipsis">
-      
-        Essentials
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#extrema-and-shape">
-<span class="md-ellipsis">
-      
-        Extrema and shape
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#approximation">
-<span class="md-ellipsis">
-      
-        Approximation
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#key-theorems">
-<span class="md-ellipsis">
-      
-        Key theorems
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#series-block">
 <span class="md-ellipsis">
       
-        Series Series and convergence tests.
+        Series
       
     </span>
 </a>
-<nav aria-label="Series Series and convergence tests." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#core-series">
-<span class="md-ellipsis">
-      
-        Core series
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#convergence-tests">
-<span class="md-ellipsis">
-      
-        Convergence tests
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#int-block">
 <span class="md-ellipsis">
       
-        Integration Riemann machinery, FTC, and standard techniques.
+        Integration
       
     </span>
 </a>
-<nav aria-label="Integration Riemann machinery, FTC, and standard techniques." class="md-nav">
+<nav aria-label="Integration" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#basics">
+<a class="md-nav__link" href="#further-reading">
 <span class="md-ellipsis">
       
-        Basics
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ftc-and-techniques">
-<span class="md-ellipsis">
-      
-        FTC and techniques
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#riemann-machinery">
-<span class="md-ellipsis">
-      
-        Riemann machinery
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#improper-integrals-and-tests">
-<span class="md-ellipsis">
-      
-        Improper integrals and tests
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#self-study">
-<span class="md-ellipsis">
-      
-        Self-study
+        Further reading
       
     </span>
 </a>
@@ -2608,26 +2458,69 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-tag">curriculum-current</span>
 <span class="md-tag">m1c</span>
 </nav>
-<div class="rf-fold-h2" data-rf-fold="h2" style="display:none"></div>
-<h1 id="math-i-calculus">Math I: Calculus<a class="headerlink" href="#math-i-calculus" title="Permanent link">¶</a></h1>
+<p class="ch-course-kicker">Year 1 <span aria-hidden="true">/</span> Block 1a <span aria-hidden="true">/</span> Mathematics</p>
+<h1 class="ch-title" id="math-i-calculus">Math I: Calculus<a class="headerlink" href="#math-i-calculus" title="Permanent link">¶</a></h1>
 <div data-course-mastery-map="m1c"></div>
+<div class="course-home" data-course-home="m1c">
+<div class="ch-intro-panel">
+<p class="ch-intro">Build from sets, numbers and limits to differentiation, series and integration.</p>
+<p class="ch-orientation">Start with the idea you need today. Find its definition, work through an example, then follow the links to its foundations.</p>
+<nav aria-label="Course tasks" class="ch-task-grid">
+<a class="ch-task" href="#course-find"><span class="ch-task-index">01</span><strong>Find a concept</strong><span>Search within Math I.</span></a>
+<a class="ch-task" href="#course-units"><span class="ch-task-index">02</span><strong>Return to a lecture</strong><span>Open its tagged concepts in Finder.</span></a>
+<a class="ch-task" href="#course-concepts"><span class="ch-task-index">03</span><strong>Explore by topic</strong><span>Open a small group of related ideas.</span></a>
+</nav>
+</div>
+<section aria-labelledby="course-find" class="ch-search-section">
+<h2 class="ch-section-title" id="course-find">Find within this course<a class="headerlink" href="#course-find" title="Permanent link">¶</a></h2>
 <div class="course-search" data-course-token="m1c">
 <form class="search-hero__form" id="course-search-form">
-<input aria-label="Search in course" autocomplete="off" class="search-hero__input" id="course-search-input" placeholder="Search in Math I: Calculus (for example, type 'limit', press Enter)" type="text"/>
-<button class="search-hero__button" id="course-search-btn" type="submit">
-      Search in course
-    </button>
+<input aria-label="Search in Math I: Calculus" autocomplete="off" class="search-hero__input" id="course-search-input" placeholder="Try limit" type="text"/>
+<button class="search-hero__button" id="course-search-btn" type="submit">Search in course</button>
 </form>
 <div class="course-search-results" id="course-search-results"></div>
 </div>
-<hr/>
-<p class="course-blocks-label">Core blocks</p>
-<h2 id="foundations-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 18.54 7.37-5.74L21 14.07l-9 7-9-7 1.62-1.26zM12 16 3 9l9-7 9 7zm0-11.47L6.26 9 12 13.47 17.74 9z"></path></svg></span> Foundations <span class="sec-sub">Sets, numbers, functions, plus sequences.</span><a class="headerlink" href="#foundations-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="sets">Sets<a class="headerlink" href="#sets" title="Permanent link">¶</a></h3>
+<p class="ch-search-help"><a href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m1c&amp;lp_token=m1c#search-results">Open the full course in Concept Finder →</a> <span>Filter, select concepts and start a focused review there.</span></p>
+</section>
+<section aria-labelledby="course-units" class="ch-unit-section">
+<h2 class="ch-section-title" id="course-units">Lecture index<a class="headerlink" href="#course-units" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Grouped by the tags on published Wiki pages; each tile names one example concept. Follow your course materials for the teaching schedule.</p>
+<nav aria-label="Lecture concepts" class="ch-unit-grid">
+<a class="ch-unit" data-course-unit="m1c-lecture01" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m1c-lecture01&amp;lp_token=m1c-lecture01#search-results"><span class="ch-unit-number">Lecture 01</span><span class="ch-unit-example">Set</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+<a class="ch-unit" data-course-unit="m1c-lecture02" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m1c-lecture02&amp;lp_token=m1c-lecture02#search-results"><span class="ch-unit-number">Lecture 02</span><span class="ch-unit-example">Sequence</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+<a class="ch-unit" data-course-unit="m1c-lecture03" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m1c-lecture03&amp;lp_token=m1c-lecture03#search-results"><span class="ch-unit-number">Lecture 03</span><span class="ch-unit-example">Limit of a Sequence</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+<a class="ch-unit" data-course-unit="m1c-lecture04" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m1c-lecture04&amp;lp_token=m1c-lecture04#search-results"><span class="ch-unit-number">Lecture 04</span><span class="ch-unit-example">Function</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+<a class="ch-unit" data-course-unit="m1c-lecture05" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m1c-lecture05&amp;lp_token=m1c-lecture05#search-results"><span class="ch-unit-number">Lecture 05</span><span class="ch-unit-example">Limit at a Point</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+<a class="ch-unit" data-course-unit="m1c-lecture06" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m1c-lecture06&amp;lp_token=m1c-lecture06#search-results"><span class="ch-unit-number">Lecture 06</span><span class="ch-unit-example">Derivative and Differentiability</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+<a class="ch-unit" data-course-unit="m1c-lecture07" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m1c-lecture07&amp;lp_token=m1c-lecture07#search-results"><span class="ch-unit-number">Lecture 07</span><span class="ch-unit-example">Mean Value Theorem</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+<a class="ch-unit" data-course-unit="m1c-lecture08" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m1c-lecture08&amp;lp_token=m1c-lecture08#search-results"><span class="ch-unit-number">Lecture 08</span><span class="ch-unit-example">L'Hôpital's Rule</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+<a class="ch-unit" data-course-unit="m1c-lecture09" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m1c-lecture09&amp;lp_token=m1c-lecture09#search-results"><span class="ch-unit-number">Lecture 09</span><span class="ch-unit-example">Higher-order Derivative</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+<a class="ch-unit" data-course-unit="m1c-lecture10" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m1c-lecture10&amp;lp_token=m1c-lecture10#search-results"><span class="ch-unit-number">Lecture 10</span><span class="ch-unit-example">Infinite Series</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+<a class="ch-unit" data-course-unit="m1c-lecture11" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m1c-lecture11&amp;lp_token=m1c-lecture11#search-results"><span class="ch-unit-number">Lecture 11</span><span class="ch-unit-example">Definite Integral</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+<a class="ch-unit" data-course-unit="m1c-lecture12" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m1c-lecture12&amp;lp_token=m1c-lecture12#search-results"><span class="ch-unit-number">Lecture 12</span><span class="ch-unit-example">Integration by Parts</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+</nav>
+</section>
+<div class="ch-study-note">
+<p><strong>Make the review active.</strong> Try to explain a selected concept before reopening its definition. If a step is unclear, follow its prerequisite links and return to your example. When enabled, <strong>Course diagnostics</strong> beside the course title can help locate gaps using your own learning records. Its readiness signals are separate from course grades.</p>
+</div>
+<section aria-labelledby="course-concepts" class="ch-library-intro">
+<h2 class="ch-section-title" id="course-concepts">Concept library<a class="headerlink" href="#course-concepts" title="Permanent link">¶</a></h2>
+<p>Open a topic group to see its concept pages. The first group is open to help you get started.</p>
+<nav aria-label="Topic sections" class="ch-topic-nav">
+<a href="#foundations-block">Foundations</a>
+<a href="#limits-block">Limits and continuity</a>
+<a href="#diff-block">Differentiation</a>
+<a href="#series-block">Series</a>
+<a href="#int-block">Integration</a>
+</nav>
+</section>
+</div>
+<section aria-labelledby="foundations-block" class="ch-topic-section">
+<h2 class="ch-section-title" id="foundations-block">Foundations<a class="headerlink" href="#foundations-block" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Sets, numbers, functions, plus sequences.</p>
+<div class="ch-concept-grid">
+<details class="ch-concept-group" open="open">
+<summary>Sets <span class="ch-group-count">5</span></summary>
 <ul>
 <li><a href="set.html">Set</a></li>
 <li><a href="subset.html">Subset</a></li>
@@ -2635,9 +2528,9 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li><a href="intersection-of-sets.html">Intersection of Sets</a></li>
 <li><a href="difference-set.html">Difference Set</a></li>
 </ul>
-</li>
-<li>
-<h3 id="number-systems">Number systems<a class="headerlink" href="#number-systems" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Number systems <span class="ch-group-count">5</span></summary>
 <ul>
 <li><a href="natural-number.html">Natural Number</a></li>
 <li><a href="integer.html">Integer</a></li>
@@ -2645,33 +2538,31 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li><a href="real-number.html">Real Number</a></li>
 <li><a href="infinity.html">Infinity</a></li>
 </ul>
-</li>
-<li>
-<h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Functions <span class="ch-group-count">3</span></summary>
 <ul>
 <li><a href="function.html">Function</a></li>
 <li><a href="composition-of-functions.html">Composition of Functions</a></li>
 <li><a href="bijection-and-inverse-function.html">Bijection and Inverse Function</a></li>
 </ul>
-</li>
-<li>
-<h3 id="sequences">Sequences<a class="headerlink" href="#sequences" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Sequences <span class="ch-group-count">3</span></summary>
 <ul>
 <li><a href="sequence.html">Sequence</a></li>
 <li><a href="bounded-sequence.html">Bounded Sequence</a></li>
 <li><a href="monotone-sequence.html">Monotone Sequence</a></li>
 </ul>
-</li>
-</ul>
+</details>
 </div>
-</div>
-<hr/>
-<h2 id="limits-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m16 11.78 4.24-7.33 1.73 1-5.23 9.05-6.51-3.75L5.46 19H22v2H2V3h2v14.54L9.5 8z"></path></svg></span> Limits and continuity <span class="sec-sub">Definitions, tools, and core theorems.</span><a class="headerlink" href="#limits-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="limits">Limits<a class="headerlink" href="#limits" title="Permanent link">¶</a></h3>
+</section>
+<section aria-labelledby="limits-block" class="ch-topic-section">
+<h2 class="ch-section-title" id="limits-block">Limits and continuity<a class="headerlink" href="#limits-block" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Definitions, tools, and core theorems.</p>
+<div class="ch-concept-grid">
+<details class="ch-concept-group">
+<summary>Limits <span class="ch-group-count">5</span></summary>
 <ul>
 <li><a href="limit-at-a-point.html">Limit at a Point</a></li>
 <li><a href="limit-of-a-sequence.html">Limit of a Sequence</a></li>
@@ -2679,80 +2570,76 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li><a href="punctured-neighbourhood.html">Punctured Neighbourhood</a></li>
 <li><a href="divergence-to-infinity.html">Divergence to Infinity</a></li>
 </ul>
-</li>
-<li>
-<h3 id="limit-tools">Limit tools<a class="headerlink" href="#limit-tools" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Limit tools <span class="ch-group-count">4</span></summary>
 <ul>
 <li><a href="limit-laws-for-functions.html">Limit Laws for Functions</a></li>
 <li><a href="squeeze-theorem-for-functions.html">Squeeze Theorem for Functions</a></li>
 <li><a href="limit-laws-for-sequences.html">Limit Laws for Sequences</a></li>
 <li><a href="squeeze-theorem-for-sequences.html">Squeeze Theorem for Sequences</a></li>
 </ul>
-</li>
-<li>
-<h3 id="continuity">Continuity<a class="headerlink" href="#continuity" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Continuity <span class="ch-group-count">2</span></summary>
 <ul>
 <li><a href="continuity.html">Continuity</a></li>
 <li><a href="one-sided-continuity.html">One-sided Continuity</a></li>
 </ul>
-</li>
-<li>
-<h3 id="continuity-theorems">Continuity theorems<a class="headerlink" href="#continuity-theorems" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Continuity theorems <span class="ch-group-count">2</span></summary>
 <ul>
 <li><a href="intermediate-value-theorem.html">Intermediate Value Theorem</a></li>
 <li><a href="extreme-value-theorem.html">Extreme Value Theorem</a></li>
 </ul>
-</li>
-</ul>
+</details>
 </div>
-</div>
-<hr/>
-<h2 id="diff-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.6 5.29c-1.1-.1-2.07.71-2.17 1.82L13.18 10H16v2h-3l-.44 5.07a3.986 3.986 0 0 1-4.33 3.63 4 4 0 0 1-3.06-1.87l1.5-1.5c.24.74.9 1.31 1.73 1.38 1.1.1 2.07-.71 2.17-1.82L11 12H8v-2h3.17l.27-3.07c.19-2.2 2.13-3.83 4.33-3.63 1.31.11 2.41.84 3.06 1.87l-1.5 1.5c-.24-.74-.9-1.31-1.73-1.38"></path></svg></span> Differentiation <span class="sec-sub">Rules, approximation, extrema, and key theorems.</span><a class="headerlink" href="#diff-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="essentials">Essentials<a class="headerlink" href="#essentials" title="Permanent link">¶</a></h3>
+</section>
+<section aria-labelledby="diff-block" class="ch-topic-section">
+<h2 class="ch-section-title" id="diff-block">Differentiation<a class="headerlink" href="#diff-block" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Rules, approximation, extrema, and key theorems.</p>
+<div class="ch-concept-grid">
+<details class="ch-concept-group">
+<summary>Essentials <span class="ch-group-count">4</span></summary>
 <ul>
 <li><a href="derivative-and-differentiability.html">Derivative and Differentiability</a></li>
 <li><a href="differentiation-rules.html">Differentiation Rules</a></li>
 <li><a href="chain-rule.html">Chain Rule</a></li>
 <li><a href="higher-order-derivative.html">Higher Order Derivative</a></li>
 </ul>
-</li>
-<li>
-<h3 id="extrema-and-shape">Extrema and shape<a class="headerlink" href="#extrema-and-shape" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Extrema and shape <span class="ch-group-count">4</span></summary>
 <ul>
 <li><a href="critical-point.html">Critical Point</a></li>
 <li><a href="local-extremum.html">Local Extremum</a></li>
 <li><a href="convexity-and-concavity.html">Convexity and Concavity</a></li>
 <li><a href="inflection-point.html">Inflection Point</a></li>
 </ul>
-</li>
-<li>
-<h3 id="approximation">Approximation<a class="headerlink" href="#approximation" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Approximation <span class="ch-group-count">2</span></summary>
 <ul>
 <li><a href="differential.html">Differential</a></li>
 <li><a href="asymptotic-equivalence.html">Asymptotic Equivalence</a></li>
 </ul>
-</li>
-<li>
-<h3 id="key-theorems">Key theorems<a class="headerlink" href="#key-theorems" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Key theorems <span class="ch-group-count">2</span></summary>
 <ul>
 <li><a href="mean-value-theorem.html">Mean Value Theorem</a></li>
 <li><a href="lhopitals-rule.html">L'Hôpital's Rule</a></li>
 </ul>
-</li>
-</ul>
+</details>
 </div>
-</div>
-<hr/>
-<h2 id="series-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.6 6.62C21.58 6.62 24 9 24 12c0 2.96-2.42 5.37-5.4 5.37-1.45 0-2.8-.56-3.82-1.57L12 13.34l-2.83 2.51c-.97.97-2.33 1.53-3.77 1.53C2.42 17.38 0 14.96 0 12s2.42-5.38 5.4-5.38c1.44 0 2.8.56 3.82 1.58L12 10.66l2.83-2.51c.97-.97 2.33-1.53 3.77-1.53M7.8 14.39 10.5 12 7.84 9.65c-.68-.68-1.53-1.03-2.44-1.03C3.53 8.62 2 10.13 2 12s1.53 3.38 3.4 3.38c.91 0 1.76-.35 2.4-.99m8.4-4.78L13.5 12l2.66 2.35c.68.68 1.54 1.03 2.44 1.03 1.87 0 3.4-1.51 3.4-3.38s-1.53-3.38-3.4-3.38c-.91 0-1.76.35-2.4.99"></path></svg></span> Series <span class="sec-sub">Series and convergence tests.</span><a class="headerlink" href="#series-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="core-series">Core series<a class="headerlink" href="#core-series" title="Permanent link">¶</a></h3>
+</section>
+<section aria-labelledby="series-block" class="ch-topic-section">
+<h2 class="ch-section-title" id="series-block">Series<a class="headerlink" href="#series-block" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Series and convergence tests.</p>
+<div class="ch-concept-grid">
+<details class="ch-concept-group">
+<summary>Core series <span class="ch-group-count">5</span></summary>
 <ul>
 <li><a href="finite-series.html">Finite Series</a></li>
 <li><a href="arithmetic-series.html">Arithmetic Series</a></li>
@@ -2760,34 +2647,32 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li><a href="infinite-series.html">Infinite Series</a></li>
 <li><a href="harmonic-series.html">Harmonic Series</a></li>
 </ul>
-</li>
-<li>
-<h3 id="convergence-tests">Convergence tests<a class="headerlink" href="#convergence-tests" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Convergence tests <span class="ch-group-count">3</span></summary>
 <ul>
 <li><a href="alternating-series-test.html">Alternating Series Test</a></li>
 <li><a href="comparison-test-for-series.html">Comparison Test for Series</a></li>
 <li><a href="p-test.html"><span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span></span>-test</a></li>
 </ul>
-</li>
-</ul>
+</details>
 </div>
-</div>
-<hr/>
-<h2 id="int-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 16H5V5h14zM6.2 7.7h5v1.5h-5zm6.8 8.1h5v1.5h-5zm0-2.6h5v1.5h-5zM8 18h1.5v-2h2v-1.5h-2v-2H8v2H6V16h2zm6.1-7.1 1.4-1.4 1.4 1.4 1.1-1-1.4-1.4L18 7.1 16.9 6l-1.4 1.4L14.1 6 13 7.1l1.4 1.4L13 9.9z"></path></svg></span> Integration <span class="sec-sub">Riemann machinery, FTC, and standard techniques.</span><a class="headerlink" href="#int-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="basics">Basics<a class="headerlink" href="#basics" title="Permanent link">¶</a></h3>
+</section>
+<section aria-labelledby="int-block" class="ch-topic-section">
+<h2 class="ch-section-title" id="int-block">Integration<a class="headerlink" href="#int-block" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Riemann machinery, FTC, and standard techniques.</p>
+<div class="ch-concept-grid">
+<details class="ch-concept-group">
+<summary>Basics <span class="ch-group-count">4</span></summary>
 <ul>
 <li><a href="definite-integral.html">Definite Integral</a></li>
 <li><a href="indefinite-integral.html">Indefinite Integral</a></li>
 <li><a href="integrand.html">Integrand</a></li>
 <li><a href="antiderivative.html">Antiderivative</a></li>
 </ul>
-</li>
-<li>
-<h3 id="ftc-and-techniques">FTC and techniques<a class="headerlink" href="#ftc-and-techniques" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>FTC and techniques <span class="ch-group-count">5</span></summary>
 <ul>
 <li><a href="fundamental-theorem-of-calculus-part-1.html">Fundamental Theorem of Calculus Part 1</a></li>
 <li><a href="fundamental-theorem-of-calculus-part-2.html">Fundamental Theorem of Calculus Part 2</a></li>
@@ -2795,33 +2680,34 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li><a href="integration-by-substitution-type-2.html">Integration by Substitution Type 2</a></li>
 <li><a href="integration-by-parts.html">Integration by Parts</a></li>
 </ul>
-</li>
-<li>
-<h3 id="riemann-machinery">Riemann machinery<a class="headerlink" href="#riemann-machinery" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Riemann machinery <span class="ch-group-count">3</span></summary>
 <ul>
 <li><a href="partition-and-regular-subdivision.html">Partition and Regular Subdivision</a></li>
 <li><a href="riemann-sum.html">Riemann Sum</a></li>
 <li><a href="riemann-integral.html">Riemann Integral</a></li>
 </ul>
-</li>
-<li>
-<h3 id="improper-integrals-and-tests">Improper integrals and tests<a class="headerlink" href="#improper-integrals-and-tests" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Improper integrals and tests <span class="ch-group-count">3</span></summary>
 <ul>
 <li><a href="improper-integral.html">Improper Integral</a></li>
 <li><a href="comparison-test-for-improper-integrals.html">Comparison Test for Improper Integrals</a></li>
 <li><a href="integral-test-for-convergence.html">Integral Test for Convergence</a></li>
 </ul>
-</li>
-<li>
-<h3 id="self-study">Self-study<a class="headerlink" href="#self-study" title="Permanent link">¶</a></h3>
+</details>
+</div>
+</section>
+<aside class="ch-further-reading">
+<h3 id="further-reading">Further reading<a class="headerlink" href="#further-reading" title="Permanent link">¶</a></h3>
+<p>These enrichment pages are available for self-study and are kept separate from the core learning pool.</p>
 <ul>
+<li><a href="cauchy-sequence.html">Cauchy Sequence</a></li>
 <li><a href="gamma-function.html">Gamma Function</a></li>
 </ul>
-</li>
-</ul>
-</div>
-</div>
-<p class="mk-last-updated">Last updated: 2 September 2026 22:48</p>
+</aside>
+<p class="mk-last-updated">Last updated: 5 September 2026 16:41</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -2858,7 +2744,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="../../javascripts/exam-mode.js?h=d89710d31520"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
-<script src="../../javascripts/startup-preferences.js?h=72d690d51f36"></script>
+<script src="../../javascripts/startup-preferences.js?h=1bd17732f1d3"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=86f8be5c857c"></script>
 <script src="../../javascripts/ui-guard.js?h=d12ed10a371d"></script>

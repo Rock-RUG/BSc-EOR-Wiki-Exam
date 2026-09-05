@@ -1861,6 +1861,10 @@
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
+         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/1b-Probability-Theory-for-EOR/first-success-distribution.html</loc>
+         <lastmod>2026-09-05</lastmod>
+    </url>
+    <url>
          <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/1b-Probability-Theory-for-EOR/folded-normal-distribution.html</loc>
          <lastmod>2026-09-05</lastmod>
     </url>
@@ -2681,14 +2685,6 @@
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/bernoulli-distribution.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/binomial-distribution.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
          <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/binomial-theorem.html</loc>
          <lastmod>2026-09-05</lastmod>
     </url>
@@ -2706,10 +2702,6 @@
     </url>
     <url>
          <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/change-of-variables-1d.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/chebyshev-inequality.html</loc>
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
@@ -2749,11 +2741,7 @@
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/conditional-probability.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/conditional-variance.html</loc>
+         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/conditional-variance-given-a-random-variable.html</loc>
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
@@ -2773,15 +2761,7 @@
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/continuous-random-variable.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
          <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/convergence-in-distribution.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/convergence-in-probability.html</loc>
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
@@ -2797,15 +2777,7 @@
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/cumulative-distribution-function.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/discrete-random-variable.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/discrete-uniform-distribution.html</loc>
+         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/density-of-an-order-statistic.html</loc>
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
@@ -2821,27 +2793,11 @@
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/exponential-distribution.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
          <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/exponential-limit.html</loc>
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/first-success-distribution.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/fundamental-bridge.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
          <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/gamma-distribution.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/geometric-distribution.html</loc>
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
@@ -2854,18 +2810,6 @@
     </url>
     <url>
          <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/independence-discrete.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/independence-of-events.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/indicator-random-variable.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/inverse-cdf.html</loc>
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
@@ -2897,14 +2841,6 @@
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/law-of-total-probability.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/linearity-of-expectation.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
          <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/lotus-continuous.html</loc>
          <lastmod>2026-09-05</lastmod>
     </url>
@@ -2922,10 +2858,6 @@
     </url>
     <url>
          <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/markov-inequality.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/memoryless-property.html</loc>
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
@@ -2957,18 +2889,6 @@
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/order-statistic.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/partition.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/poisson-distribution.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
          <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/poisson-merging.html</loc>
          <lastmod>2026-09-05</lastmod>
     </url>
@@ -2977,23 +2897,11 @@
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/probability-density-function.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/probability-mass-function.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
          <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/strong-law-of-large-numbers.html</loc>
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
          <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/sum-of-iid-uniforms.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/support-of-a-random-variable.html</loc>
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>
@@ -3006,18 +2914,6 @@
     </url>
     <url>
          <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/taylor-series.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/uniform-distribution.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/variance.html</loc>
-         <lastmod>2026-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/weak-law-of-large-numbers.html</loc>
          <lastmod>2026-09-05</lastmod>
     </url>
     <url>

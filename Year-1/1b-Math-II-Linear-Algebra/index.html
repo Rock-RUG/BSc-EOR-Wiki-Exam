@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="Week 1 recalls basic set operations and then develops finite, countable, and uncountable cardinalities." name="description"/>
+<meta content="Connect vector spaces and linear maps with matrices, geometry and eigenvalues. Find lecture notes, concepts and preparation tools." name="description"/>
 <link href="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/1b-Math-II-Linear-Algebra/index.html" rel="canonical"/>
 <link href="../1a-OR-Modelling/zero-inventory-ordering-property.html" rel="prev"/>
 <link href="2-argument-arctangent.html" rel="next"/>
@@ -22,11 +22,12 @@
 <link href="../../stylesheets/find-builder.css?h=68f6090ea745" rel="stylesheet"/>
 <link href="../../stylesheets/course-search.css?h=0e431d40c86d" rel="stylesheet"/>
 <link href="../../stylesheets/course-status.css?h=4224c998406e" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-surfaces.css?h=8956f955c053" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-surfaces.css?h=cb55e64aef1a" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-community.css?h=a283eeb6614f" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-maps.css?h=0d1c0df611eb" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-home.css?h=8d819898169a" rel="stylesheet"/>
-<link href="../../stylesheets/teaching-workbench.css?h=341d487063a0" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-maps.css?h=91098a8ea726" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-home.css?h=20b01d119048" rel="stylesheet"/>
+<link href="../../stylesheets/teaching-workbench.css?h=fa5b92f7fa26" rel="stylesheet"/>
+<link href="../../stylesheets/course-home.css?h=3a41489c7105" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="mk-search-index-network-cache">
 // Material uses XMLHttpRequest before extra_javascript. Let custom search reuse
@@ -2344,7 +2345,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Probability Distributions
+    2b Probability Distributions
   
 
     
@@ -2408,329 +2409,94 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#course-find">
+<span class="md-ellipsis">
+      
+        Find within this course
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-units">
+<span class="md-ellipsis">
+      
+        Week index
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-concepts">
+<span class="md-ellipsis">
+      
+        Concept library
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#sets-cardinality-block">
 <span class="md-ellipsis">
       
-        Set theory and cardinality Set-theory recall, comparing sizes, and Cantor's results.
+        Set theory and cardinality
       
     </span>
 </a>
-<nav aria-label="Set theory and cardinality Set-theory recall, comparing sizes, and Cantor's results." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#set-theory-recall">
-<span class="md-ellipsis">
-      
-        Set-theory recall
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#comparing-sizes">
-<span class="md-ellipsis">
-      
-        Comparing sizes
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#cantors-results">
-<span class="md-ellipsis">
-      
-        Cantor's results
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#foundations-block">
 <span class="md-ellipsis">
       
-        Algebraic and complex foundations Complex numbers, fields, polynomials, and formulas used later.
+        Algebraic and complex foundations
       
     </span>
 </a>
-<nav aria-label="Algebraic and complex foundations Complex numbers, fields, polynomials, and formulas used later." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#algebraic-language">
-<span class="md-ellipsis">
-      
-        Algebraic language
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#complex-number-basics">
-<span class="md-ellipsis">
-      
-        Complex-number basics
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#complex-arithmetic">
-<span class="md-ellipsis">
-      
-        Complex arithmetic
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#complex-geometry">
-<span class="md-ellipsis">
-      
-        Complex geometry
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#exponential-trig-and-logarithm">
-<span class="md-ellipsis">
-      
-        Exponential, trig, and logarithm
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#polynomials-and-formulas">
-<span class="md-ellipsis">
-      
-        Polynomials and formulas
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#vector-space-block">
 <span class="md-ellipsis">
       
-        Vector spaces Linear combinations, span, independence, bases, and dimension.
+        Vector spaces
       
     </span>
 </a>
-<nav aria-label="Vector spaces Linear combinations, span, independence, bases, and dimension." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#spaces-and-subspaces">
-<span class="md-ellipsis">
-      
-        Spaces and subspaces
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#span-and-combinations">
-<span class="md-ellipsis">
-      
-        Span and combinations
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#independence-and-bases">
-<span class="md-ellipsis">
-      
-        Independence and bases
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dimension-and-coordinates">
-<span class="md-ellipsis">
-      
-        Dimension and coordinates
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#matrices-systems-block">
 <span class="md-ellipsis">
       
-        Matrices, systems, and linear maps Matrix operations, linear systems, row reduction, and maps.
+        Matrices, systems, and linear maps
       
     </span>
 </a>
-<nav aria-label="Matrices, systems, and linear maps Matrix operations, linear systems, row reduction, and maps." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#matrix-essentials">
-<span class="md-ellipsis">
-      
-        Matrix essentials
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linear-systems">
-<span class="md-ellipsis">
-      
-        Linear systems
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#row-reduction">
-<span class="md-ellipsis">
-      
-        Row reduction
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linear-maps">
-<span class="md-ellipsis">
-      
-        Linear maps
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#rank-det-block">
 <span class="md-ellipsis">
       
-        Rank, kernel, inverse matrices, and determinants Invertibility, rank, determinant methods, and solution structure.
+        Rank, kernel, inverse matrices, and determinants
       
     </span>
 </a>
-<nav aria-label="Rank, kernel, inverse matrices, and determinants Invertibility, rank, determinant methods, and solution structure." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#kernel-range-and-rank">
-<span class="md-ellipsis">
-      
-        Kernel, range, and rank
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#invertibility-and-systems">
-<span class="md-ellipsis">
-      
-        Invertibility and systems
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#determinants">
-<span class="md-ellipsis">
-      
-        Determinants
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#geometry-block">
 <span class="md-ellipsis">
       
-        Inner products and geometry Lengths, angles, orthogonality, projections, lines, and planes.
+        Inner products and geometry
       
     </span>
 </a>
-<nav aria-label="Inner products and geometry Lengths, angles, orthogonality, projections, lines, and planes." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#lengths-and-angles">
-<span class="md-ellipsis">
-      
-        Lengths and angles
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#orthogonality-and-projections">
-<span class="md-ellipsis">
-      
-        Orthogonality and projections
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#lines-and-planes">
-<span class="md-ellipsis">
-      
-        Lines and planes
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#eigen-block">
 <span class="md-ellipsis">
       
-        Eigenvalues, diagonalisation, and quadratic forms Spectral ideas, diagonalisation, Jordan form, and definiteness.
+        Eigenvalues, diagonalisation, and quadratic forms
       
     </span>
 </a>
-<nav aria-label="Eigenvalues, diagonalisation, and quadratic forms Spectral ideas, diagonalisation, Jordan form, and definiteness." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#eigenvalue-basics">
-<span class="md-ellipsis">
-      
-        Eigenvalue basics
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#diagonalisation">
-<span class="md-ellipsis">
-      
-        Diagonalisation
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#quadratic-forms">
-<span class="md-ellipsis">
-      
-        Quadratic forms
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -2743,76 +2509,112 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-tag">curriculum-current</span>
 <span class="md-tag">m2la</span>
 </nav>
-<div class="rf-fold-h2" data-rf-fold="h2" style="display:none"></div>
-<h1 id="math-ii-linear-algebra">Math II: Linear Algebra<a class="headerlink" href="#math-ii-linear-algebra" title="Permanent link">¶</a></h1>
+<p class="ch-course-kicker">Year 1 <span aria-hidden="true">/</span> Block 1b <span aria-hidden="true">/</span> Mathematics</p>
+<h1 class="ch-title" id="math-ii-linear-algebra">Math II: Linear Algebra<a class="headerlink" href="#math-ii-linear-algebra" title="Permanent link">¶</a></h1>
 <div data-course-mastery-map="m2la"></div>
+<div class="course-home" data-course-home="m2la">
+<div class="ch-intro-panel">
+<p class="ch-intro">Connect vector spaces and linear maps with matrices, geometry and eigenvalues.</p>
+<p class="ch-orientation">Start with the idea you need today. Find its definition, work through an example, then follow the links to its foundations.</p>
+<nav aria-label="Course tasks" class="ch-task-grid">
+<a class="ch-task" href="#course-find"><span class="ch-task-index">01</span><strong>Find a concept</strong><span>Search within Math II.</span></a>
+<a class="ch-task" href="#course-units"><span class="ch-task-index">02</span><strong>Return to a week</strong><span>Open its tagged concepts in Finder.</span></a>
+<a class="ch-task" href="#course-concepts"><span class="ch-task-index">03</span><strong>Explore by topic</strong><span>Open a small group of related ideas.</span></a>
+</nav>
+</div>
+<section aria-labelledby="course-find" class="ch-search-section">
+<h2 class="ch-section-title" id="course-find">Find within this course<a class="headerlink" href="#course-find" title="Permanent link">¶</a></h2>
 <div class="course-search" data-course-token="m2la">
 <form class="search-hero__form" id="course-search-form">
-<input aria-label="Search in course" autocomplete="off" class="search-hero__input" id="course-search-input" placeholder="Search in Math II: Linear Algebra (for example, type 'eigenvalue', press Enter)" type="text"/>
-<button class="search-hero__button" id="course-search-btn" type="submit">
-      Search in course
-    </button>
+<input aria-label="Search in Math II: Linear Algebra" autocomplete="off" class="search-hero__input" id="course-search-input" placeholder="Try eigenvalue" type="text"/>
+<button class="search-hero__button" id="course-search-btn" type="submit">Search in course</button>
 </form>
 <div class="course-search-results" id="course-search-results"></div>
 </div>
-<hr/>
-<p class="course-blocks-label">Core blocks</p>
-<h2 id="sets-cardinality-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 5a7 7 0 0 0-7 7 7 7 0 0 0 7 7c1.04 0 2.06-.24 3-.68.94.44 1.96.68 3 .68a7 7 0 0 0 7-7 7 7 0 0 0-7-7c-1.04 0-2.06.24-3 .68-.94-.44-1.96-.68-3-.68m0 2c.34 0 .67.03 1 .1-1.28 1.31-2 3.07-2 4.9s.72 3.59 2 4.89c-.33.07-.66.11-1 .11a5 5 0 0 1-5-5 5 5 0 0 1 5-5m6 0a5 5 0 0 1 5 5 5 5 0 0 1-5 5c-.34 0-.67-.03-1-.1 1.28-1.31 2-3.07 2-4.9s-.72-3.59-2-4.89c.33-.07.66-.11 1-.11"></path></svg></span> Set theory and cardinality <span class="sec-sub">Set-theory recall, comparing sizes, and Cantor's results.</span><a class="headerlink" href="#sets-cardinality-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<p>Week 1 recalls basic set operations and then develops finite, countable, and uncountable cardinalities.</p>
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="set-theory-recall">Set-theory recall<a class="headerlink" href="#set-theory-recall" title="Permanent link">¶</a></h3>
+<p class="ch-search-help"><a href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m2la&amp;lp_token=m2la#search-results">Open the full course in Concept Finder →</a> <span>Filter, select concepts and start a focused review there.</span></p>
+</section>
+<section aria-labelledby="course-units" class="ch-unit-section">
+<h2 class="ch-section-title" id="course-units">Week index<a class="headerlink" href="#course-units" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Grouped by the tags on published Wiki pages; each tile names one example concept. Follow your course materials for the teaching schedule.</p>
+<nav aria-label="Week concepts" class="ch-unit-grid">
+<a class="ch-unit" data-course-unit="m2la-week01" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m2la-week01&amp;lp_token=m2la-week01#search-results"><span class="ch-unit-number">Week 01</span><span class="ch-unit-example">Complex Number</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+<a class="ch-unit" data-course-unit="m2la-week02" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m2la-week02&amp;lp_token=m2la-week02#search-results"><span class="ch-unit-number">Week 02</span><span class="ch-unit-example">Vector Space</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+<a class="ch-unit" data-course-unit="m2la-week03" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m2la-week03&amp;lp_token=m2la-week03#search-results"><span class="ch-unit-number">Week 03</span><span class="ch-unit-example">Linear Map</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+<a class="ch-unit" data-course-unit="m2la-week04" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m2la-week04&amp;lp_token=m2la-week04#search-results"><span class="ch-unit-number">Week 04</span><span class="ch-unit-example">Determinant</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+<a class="ch-unit" data-course-unit="m2la-week05" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m2la-week05&amp;lp_token=m2la-week05#search-results"><span class="ch-unit-number">Week 05</span><span class="ch-unit-example">Inner Product</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+<a class="ch-unit" data-course-unit="m2la-week06" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m2la-week06&amp;lp_token=m2la-week06#search-results"><span class="ch-unit-number">Week 06</span><span class="ch-unit-example">Eigenvalue and Eigenvector</span><span aria-hidden="true" class="ch-unit-arrow">↗</span></a>
+</nav>
+</section>
+<div class="ch-study-note">
+<p><strong>Make the review active.</strong> Try to explain a selected concept before reopening its definition. If a step is unclear, follow its prerequisite links and return to your example. When enabled, <strong>Course diagnostics</strong> beside the course title can help locate gaps using your own learning records. Its readiness signals are separate from course grades.</p>
+</div>
+<section aria-labelledby="course-concepts" class="ch-library-intro">
+<h2 class="ch-section-title" id="course-concepts">Concept library<a class="headerlink" href="#course-concepts" title="Permanent link">¶</a></h2>
+<p>Open a topic group to see its concept pages. The first group is open to help you get started.</p>
+<nav aria-label="Topic sections" class="ch-topic-nav">
+<a href="#sets-cardinality-block">Set theory and cardinality</a>
+<a href="#foundations-block">Algebraic and complex foundations</a>
+<a href="#vector-space-block">Vector spaces</a>
+<a href="#matrices-systems-block">Matrices, systems, and linear maps</a>
+<a href="#rank-det-block">Rank, kernel, inverse matrices, and determinants</a>
+<a href="#geometry-block">Inner products and geometry</a>
+<a href="#eigen-block">Eigenvalues, diagonalisation, and quadratic forms</a>
+</nav>
+</section>
+</div>
+<section aria-labelledby="sets-cardinality-block" class="ch-topic-section">
+<h2 class="ch-section-title" id="sets-cardinality-block">Set theory and cardinality<a class="headerlink" href="#sets-cardinality-block" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Set-theory recall, comparing sizes, and Cantor's results.</p>
+<div class="ch-concept-grid">
+<details class="ch-concept-group" open="open">
+<summary>Set-theory recall <span class="ch-group-count">3</span></summary>
 <ul>
 <li><a href="complement.html">Complement</a></li>
 <li><a href="cartesian-product.html">Cartesian Product</a></li>
 <li><a href="power-set.html">Power Set</a></li>
 </ul>
-</li>
-<li>
-<h3 id="comparing-sizes">Comparing sizes<a class="headerlink" href="#comparing-sizes" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Comparing sizes <span class="ch-group-count">4</span></summary>
 <ul>
 <li><a href="cardinality.html">Cardinality</a></li>
 <li><a href="countable-and-uncountable-sets.html">Countable and Uncountable Sets</a></li>
 <li><a href="aleph-null.html">Aleph Null</a></li>
 <li><a href="cardinality-of-the-continuum.html">Cardinality of the Continuum</a></li>
 </ul>
-</li>
-<li>
-<h3 id="cantors-results">Cantor's results<a class="headerlink" href="#cantors-results" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Cantor's results <span class="ch-group-count">3</span></summary>
 <ul>
 <li><a href="cantors-diagonal-argument.html">Cantor's Diagonal Argument</a></li>
 <li><a href="cantors-theorem.html">Cantor's Theorem</a></li>
 <li><a href="continuum-hypothesis.html">Continuum Hypothesis</a></li>
 </ul>
-</li>
-</ul>
+</details>
 </div>
-</div>
-<hr/>
-<h2 id="foundations-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 11a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1M4.22 4.22C5.65 2.79 8.75 3.43 12 5.56c3.25-2.13 6.35-2.77 7.78-1.34s.79 4.53-1.34 7.78c2.13 3.25 2.77 6.35 1.34 7.78s-4.53.79-7.78-1.34c-3.25 2.13-6.35 2.77-7.78 1.34S3.43 15.25 5.56 12C3.43 8.75 2.79 5.65 4.22 4.22m11.32 4.24c.61.62 1.17 1.25 1.69 1.88 1.38-2.13 1.88-3.96 1.13-4.7-.74-.75-2.57-.25-4.7 1.13.63.52 1.26 1.08 1.88 1.69m-7.08 7.08c-.61-.62-1.17-1.25-1.69-1.88-1.38 2.13-1.88 3.96-1.13 4.7.74.75 2.57.25 4.7-1.13-.63-.52-1.26-1.08-1.88-1.69m-2.82-9.9c-.75.74-.25 2.57 1.13 4.7.52-.63 1.08-1.26 1.69-1.88.62-.61 1.25-1.17 1.88-1.69-2.13-1.38-3.96-1.88-4.7-1.13m4.24 8.48c.7.7 1.42 1.34 2.12 1.91.7-.57 1.42-1.21 2.12-1.91s1.34-1.42 1.91-2.12c-.57-.7-1.21-1.42-1.91-2.12S12.7 8.54 12 7.97c-.7.57-1.42 1.21-2.12 1.91S8.54 11.3 7.97 12c.57.7 1.21 1.42 1.91 2.12m8.48 4.24c.75-.74.25-2.57-1.13-4.7-.52.63-1.08 1.26-1.69 1.88-.62.61-1.25 1.17-1.88 1.69 2.13 1.38 3.96 1.88 4.7 1.13"></path></svg></span> Algebraic and complex foundations <span class="sec-sub">Complex numbers, fields, polynomials, and formulas used later.</span><a class="headerlink" href="#foundations-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="algebraic-language">Algebraic language<a class="headerlink" href="#algebraic-language" title="Permanent link">¶</a></h3>
+</section>
+<section aria-labelledby="foundations-block" class="ch-topic-section">
+<h2 class="ch-section-title" id="foundations-block">Algebraic and complex foundations<a class="headerlink" href="#foundations-block" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Complex numbers, fields, polynomials, and formulas used later.</p>
+<div class="ch-concept-grid">
+<details class="ch-concept-group">
+<summary>Algebraic language <span class="ch-group-count">2</span></summary>
 <ul>
 <li><a href="field.html">Field</a></li>
 <li><a href="equivalence-relation.html">Equivalence Relation</a></li>
 </ul>
-</li>
-<li>
-<h3 id="complex-number-basics">Complex-number basics<a class="headerlink" href="#complex-number-basics" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Complex-number basics <span class="ch-group-count">4</span></summary>
 <ul>
 <li><a href="complex-number.html">Complex Number</a></li>
 <li><a href="imaginary-unit.html">Imaginary Unit</a></li>
 <li><a href="complex-conjugate.html">Complex Conjugate</a></li>
 <li><a href="complex-absolute-value.html">Complex Absolute Value</a></li>
 </ul>
-</li>
-<li>
-<h3 id="complex-arithmetic">Complex arithmetic<a class="headerlink" href="#complex-arithmetic" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Complex arithmetic <span class="ch-group-count">6</span></summary>
 <ul>
 <li><a href="complex-addition.html">Complex Addition</a></li>
 <li><a href="complex-subtraction.html">Complex Subtraction</a></li>
@@ -2821,9 +2623,9 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li><a href="complex-reciprocal.html">Complex Reciprocal</a></li>
 <li><a href="complex-division.html">Complex Division</a></li>
 </ul>
-</li>
-<li>
-<h3 id="complex-geometry">Complex geometry<a class="headerlink" href="#complex-geometry" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Complex geometry <span class="ch-group-count">5</span></summary>
 <ul>
 <li><a href="complex-plane-cartesian-coordinate-system.html">Complex Plane (Cartesian Coordinate System)</a></li>
 <li><a href="complex-plane-polar-coordinate-system.html">Complex Plane (Polar Coordinate System)</a></li>
@@ -2831,9 +2633,9 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li><a href="2-argument-arctangent.html">2-argument Arctangent</a></li>
 <li><a href="polar-coordinate-system.html">Polar Coordinate System</a></li>
 </ul>
-</li>
-<li>
-<h3 id="exponential-trig-and-logarithm">Exponential, trig, and logarithm<a class="headerlink" href="#exponential-trig-and-logarithm" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Exponential, trig, and logarithm <span class="ch-group-count">6</span></summary>
 <ul>
 <li><a href="eulers-formula.html">Euler's Formula</a></li>
 <li><a href="eulers-identity.html">Euler's Identity</a></li>
@@ -2842,201 +2644,190 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li><a href="complex-exponentiation.html">Complex Exponentiation</a></li>
 <li><a href="complex-trigonometric-functions.html">Complex Trigonometric Functions</a></li>
 </ul>
-</li>
-<li>
-<h3 id="polynomials-and-formulas">Polynomials and formulas<a class="headerlink" href="#polynomials-and-formulas" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Polynomials and formulas <span class="ch-group-count">3</span></summary>
 <ul>
 <li><a href="root-of-a-polynomial.html">Root of a Polynomial</a></li>
 <li><a href="fundamental-theorem-of-algebra.html">Fundamental Theorem of Algebra</a></li>
 <li><a href="de-moivres-formula.html">De Moivre's Formula</a></li>
 </ul>
-</li>
-</ul>
+</details>
 </div>
-</div>
-<hr/>
-<h2 id="vector-space-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 3v4.59L7.59 15H3v6h6v-4.58L16.42 9H21V3m-4 2h2v2h-2M5 17h2v2H5"></path></svg></span> Vector spaces <span class="sec-sub">Linear combinations, span, independence, bases, and dimension.</span><a class="headerlink" href="#vector-space-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="spaces-and-subspaces">Spaces and subspaces<a class="headerlink" href="#spaces-and-subspaces" title="Permanent link">¶</a></h3>
+</section>
+<section aria-labelledby="vector-space-block" class="ch-topic-section">
+<h2 class="ch-section-title" id="vector-space-block">Vector spaces<a class="headerlink" href="#vector-space-block" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Linear combinations, span, independence, bases, and dimension.</p>
+<div class="ch-concept-grid">
+<details class="ch-concept-group">
+<summary>Spaces and subspaces <span class="ch-group-count">3</span></summary>
 <ul>
 <li><a href="vector.html">Vector</a></li>
 <li><a href="vector-space.html">Vector Space</a></li>
 <li><a href="subspace.html">Subspace</a></li>
 </ul>
-</li>
-<li>
-<h3 id="span-and-combinations">Span and combinations<a class="headerlink" href="#span-and-combinations" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Span and combinations <span class="ch-group-count">3</span></summary>
 <ul>
 <li><a href="linear-combination.html">Linear Combination</a></li>
 <li><a href="linear-span.html">Linear Span</a></li>
 <li><a href="spanning-list.html">Spanning List</a></li>
 </ul>
-</li>
-<li>
-<h3 id="independence-and-bases">Independence and bases<a class="headerlink" href="#independence-and-bases" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Independence and bases <span class="ch-group-count">2</span></summary>
 <ul>
 <li><a href="linear-independence.html">Linear Dependence and Independence</a></li>
 <li><a href="basis.html">Basis</a></li>
 </ul>
-</li>
-<li>
-<h3 id="dimension-and-coordinates">Dimension and coordinates<a class="headerlink" href="#dimension-and-coordinates" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Dimension and coordinates <span class="ch-group-count">4</span></summary>
 <ul>
 <li><a href="finite-dimensional-vector-space.html">Finite-Dimensional Vector Space</a></li>
 <li><a href="dimension.html">Dimension</a></li>
 <li><a href="coordinate.html">Coordinate</a></li>
 <li><a href="direct-sum.html">Direct Sum</a></li>
 </ul>
-</li>
-</ul>
+</details>
 </div>
-</div>
-<hr/>
-<h2 id="matrices-systems-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 2h4v2H4v16h2v2H2zm18 2h-2V2h4v20h-4v-2h2zM9 5h1v5h1v1H8v-1h1V6l-1 .5v-1zm6 8h1v5h1v1h-3v-1h1v-4l-1 .5v-1zm-6 0c1.1 0 2 1.34 2 3s-.9 3-2 3-2-1.34-2-3 .9-3 2-3m0 1c-.55 0-1 .9-1 2s.45 2 1 2 1-.9 1-2-.45-2-1-2m6-9c1.1 0 2 1.34 2 3s-.9 3-2 3-2-1.34-2-3 .9-3 2-3m0 1c-.55 0-1 .9-1 2s.45 2 1 2 1-.9 1-2-.45-2-1-2"></path></svg></span> Matrices, systems, and linear maps <span class="sec-sub">Matrix operations, linear systems, row reduction, and maps.</span><a class="headerlink" href="#matrices-systems-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="matrix-essentials">Matrix essentials<a class="headerlink" href="#matrix-essentials" title="Permanent link">¶</a></h3>
+</section>
+<section aria-labelledby="matrices-systems-block" class="ch-topic-section">
+<h2 class="ch-section-title" id="matrices-systems-block">Matrices, systems, and linear maps<a class="headerlink" href="#matrices-systems-block" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Matrix operations, linear systems, row reduction, and maps.</p>
+<div class="ch-concept-grid">
+<details class="ch-concept-group">
+<summary>Matrix essentials <span class="ch-group-count">4</span></summary>
 <ul>
 <li><a href="matrix.html">Matrix</a></li>
 <li><a href="matrix-product.html">Matrix Product</a></li>
 <li><a href="identity-matrix.html">Identity Matrix</a></li>
 <li><a href="transpose.html">Transpose</a></li>
 </ul>
-</li>
-<li>
-<h3 id="linear-systems">Linear systems<a class="headerlink" href="#linear-systems" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Linear systems <span class="ch-group-count">4</span></summary>
 <ul>
 <li><a href="system-of-linear-equations.html">System of Linear Equations</a></li>
 <li><a href="standard-form-of-a-linear-system.html">Standard Form of a Linear System</a></li>
 <li><a href="augmented-matrix.html">Augmented Matrix</a></li>
 <li><a href="solution-set.html">Solution Set</a></li>
 </ul>
-</li>
-<li>
-<h3 id="row-reduction">Row reduction<a class="headerlink" href="#row-reduction" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Row reduction <span class="ch-group-count">3</span></summary>
 <ul>
 <li><a href="elementary-row-operation.html">Elementary Row Operation</a></li>
 <li><a href="row-echelon-form.html">Row Echelon and Reduced Row Echelon Form</a></li>
 <li><a href="gauss-jordan-elimination.html">Gauss-Jordan Elimination</a></li>
 </ul>
-</li>
-<li>
-<h3 id="linear-maps">Linear maps<a class="headerlink" href="#linear-maps" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Linear maps <span class="ch-group-count">3</span></summary>
 <ul>
 <li><a href="linear-map.html">Linear Map</a></li>
 <li><a href="linear-operator.html">Linear Operator</a></li>
 <li><a href="composition-of-linear-maps.html">Product of Linear Maps</a></li>
 </ul>
-</li>
-</ul>
+</details>
 </div>
-</div>
-<hr/>
-<h2 id="rank-det-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.98 2.98 0 0 0 0-4.24 2.98 2.98 0 0 0-4.24 0l-3.53 3.53a2.98 2.98 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.98 2.98 0 0 0 0 4.24 2.98 2.98 0 0 0 4.24 0l3.53-3.53a2.98 2.98 0 0 0 0-4.24.973.973 0 0 1 0-1.42"></path></svg></span> Rank, kernel, inverse matrices, and determinants <span class="sec-sub">Invertibility, rank, determinant methods, and solution structure.</span><a class="headerlink" href="#rank-det-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="kernel-range-and-rank">Kernel, range, and rank<a class="headerlink" href="#kernel-range-and-rank" title="Permanent link">¶</a></h3>
+</section>
+<section aria-labelledby="rank-det-block" class="ch-topic-section">
+<h2 class="ch-section-title" id="rank-det-block">Rank, kernel, inverse matrices, and determinants<a class="headerlink" href="#rank-det-block" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Invertibility, rank, determinant methods, and solution structure.</p>
+<div class="ch-concept-grid">
+<details class="ch-concept-group">
+<summary>Kernel, range, and rank <span class="ch-group-count">4</span></summary>
 <ul>
 <li><a href="kernel.html">Kernel</a></li>
 <li><a href="range-of-a-linear-map.html">Range of a Linear Map</a></li>
 <li><a href="rank.html">Rank</a></li>
 <li><a href="fundamental-theorem-of-linear-maps.html">Fundamental Theorem of Linear Maps</a></li>
 </ul>
-</li>
-<li>
-<h3 id="invertibility-and-systems">Invertibility and systems<a class="headerlink" href="#invertibility-and-systems" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Invertibility and systems <span class="ch-group-count">2</span></summary>
 <ul>
 <li><a href="inverse-matrix.html">Inverse and Singular Matrices</a></li>
 <li><a href="homogeneous-system.html">Homogeneous and Inhomogeneous Systems</a></li>
 </ul>
-</li>
-<li>
-<h3 id="determinants">Determinants<a class="headerlink" href="#determinants" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Determinants <span class="ch-group-count">4</span></summary>
 <ul>
 <li><a href="determinant.html">Determinant</a></li>
 <li><a href="cofactor-expansion.html">Cofactor Expansion</a></li>
 <li><a href="adjugate-matrix.html">Adjugate Matrix</a></li>
 <li><a href="cramers-rule.html">Cramer's Rule</a></li>
 </ul>
-</li>
-</ul>
+</details>
 </div>
-</div>
-<hr/>
-<h2 id="geometry-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 5v16h6v-1.5H7V18h2v-1.5H5V15h4v-1.5H7V12h2v-1.5H5V9h4V5h1.5v4H12V7h1.5v2H15V5h1.5v4H18V7h1.5v2H21V3H5a2 2 0 0 0-2 2m3 2a1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1 1 1 0 0 1-1 1"></path></svg></span> Inner products and geometry <span class="sec-sub">Lengths, angles, orthogonality, projections, lines, and planes.</span><a class="headerlink" href="#geometry-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="lengths-and-angles">Lengths and angles<a class="headerlink" href="#lengths-and-angles" title="Permanent link">¶</a></h3>
+</section>
+<section aria-labelledby="geometry-block" class="ch-topic-section">
+<h2 class="ch-section-title" id="geometry-block">Inner products and geometry<a class="headerlink" href="#geometry-block" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Lengths, angles, orthogonality, projections, lines, and planes.</p>
+<div class="ch-concept-grid">
+<details class="ch-concept-group">
+<summary>Lengths and angles <span class="ch-group-count">4</span></summary>
 <ul>
 <li><a href="euclidean-space.html">Euclidean Space</a></li>
 <li><a href="inner-product.html">Inner Product</a></li>
 <li><a href="vector-norm.html">Vector Norm</a></li>
 <li><a href="angle-between-vectors.html">Angle Between Vectors</a></li>
 </ul>
-</li>
-<li>
-<h3 id="orthogonality-and-projections">Orthogonality and projections<a class="headerlink" href="#orthogonality-and-projections" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Orthogonality and projections <span class="ch-group-count">3</span></summary>
 <ul>
 <li><a href="orthogonal-vectors.html">Orthogonal Vectors</a></li>
 <li><a href="cauchy-schwarz-inequality.html">Cauchy-Schwarz Inequality</a></li>
 <li><a href="projection-matrix.html">Projection Matrix</a></li>
 </ul>
-</li>
-<li>
-<h3 id="lines-and-planes">Lines and planes<a class="headerlink" href="#lines-and-planes" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Lines and planes <span class="ch-group-count">4</span></summary>
 <ul>
 <li><a href="hyperplane.html">Hyperplane</a></li>
 <li><a href="plane.html">Plane</a></li>
 <li><a href="parametric-representation-of-a-line.html">Parametric Representations of Lines and Planes</a></li>
 <li><a href="point-normal-equation-of-a-plane.html">Point-Normal Equation of a Plane</a></li>
 </ul>
-</li>
-</ul>
+</details>
 </div>
-</div>
-<hr/>
-<h2 id="eigen-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m16 11.78 4.24-7.33 1.73 1-5.23 9.05-6.51-3.75L5.46 19H22v2H2V3h2v14.54L9.5 8z"></path></svg></span> Eigenvalues, diagonalisation, and quadratic forms <span class="sec-sub">Spectral ideas, diagonalisation, Jordan form, and definiteness.</span><a class="headerlink" href="#eigen-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="eigenvalue-basics">Eigenvalue basics<a class="headerlink" href="#eigenvalue-basics" title="Permanent link">¶</a></h3>
+</section>
+<section aria-labelledby="eigen-block" class="ch-topic-section">
+<h2 class="ch-section-title" id="eigen-block">Eigenvalues, diagonalisation, and quadratic forms<a class="headerlink" href="#eigen-block" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Spectral ideas, diagonalisation, Jordan form, and definiteness.</p>
+<div class="ch-concept-grid">
+<details class="ch-concept-group">
+<summary>Eigenvalue basics <span class="ch-group-count">3</span></summary>
 <ul>
 <li><a href="eigenvalue-and-eigenvector.html">Eigenvalue and Eigenvector</a></li>
 <li><a href="characteristic-polynomial.html">Characteristic Polynomial</a></li>
 <li><a href="algebraic-multiplicity.html">Algebraic and Geometric Multiplicity</a></li>
 </ul>
-</li>
-<li>
-<h3 id="diagonalisation">Diagonalisation<a class="headerlink" href="#diagonalisation" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Diagonalisation <span class="ch-group-count">4</span></summary>
 <ul>
 <li><a href="eigenbasis.html">Eigenbasis</a></li>
 <li><a href="diagonalizable-matrix.html">Diagonalizable Matrix</a></li>
 <li><a href="diagonalization.html">Diagonalization</a></li>
 <li><a href="jordan-normal-form.html">Jordan Normal Form</a></li>
 </ul>
-</li>
-<li>
-<h3 id="quadratic-forms">Quadratic forms<a class="headerlink" href="#quadratic-forms" title="Permanent link">¶</a></h3>
+</details>
+<details class="ch-concept-group">
+<summary>Quadratic forms <span class="ch-group-count">3</span></summary>
 <ul>
 <li><a href="quadratic-form.html">Quadratic Form</a></li>
 <li><a href="definite-matrix.html">Definite Matrix</a></li>
 <li><a href="definiteness-and-eigenvalues.html">Definiteness and Eigenvalues</a></li>
 </ul>
-</li>
-</ul>
+</details>
 </div>
-</div>
-<p class="mk-last-updated">Last updated: 2 September 2026 22:48</p>
+</section>
+<p class="mk-last-updated">Last updated: 5 September 2026 16:41</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -3073,7 +2864,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="../../javascripts/exam-mode.js?h=d89710d31520"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
-<script src="../../javascripts/startup-preferences.js?h=72d690d51f36"></script>
+<script src="../../javascripts/startup-preferences.js?h=1bd17732f1d3"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=86f8be5c857c"></script>
 <script src="../../javascripts/ui-guard.js?h=d12ed10a371d"></script>

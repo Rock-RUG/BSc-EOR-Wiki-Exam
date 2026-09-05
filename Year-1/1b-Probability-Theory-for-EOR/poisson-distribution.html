@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="This page presents the Probability Theory for EOR treatment. See also the treatment in Probability Distributions." name="description"/>
+<meta content="Let λ&gt;0. A discrete random variable X has a Poisson distribution with parameter λ, written X(λ), if" name="description"/>
 <link href="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html" rel="canonical"/>
 <link href="permutation.html" rel="prev"/>
 <link href="poisson-process.html" rel="next"/>
@@ -22,11 +22,12 @@
 <link href="../../stylesheets/find-builder.css?h=68f6090ea745" rel="stylesheet"/>
 <link href="../../stylesheets/course-search.css?h=0e431d40c86d" rel="stylesheet"/>
 <link href="../../stylesheets/course-status.css?h=4224c998406e" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-surfaces.css?h=8956f955c053" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-surfaces.css?h=cb55e64aef1a" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-community.css?h=a283eeb6614f" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-maps.css?h=0d1c0df611eb" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-home.css?h=8d819898169a" rel="stylesheet"/>
-<link href="../../stylesheets/teaching-workbench.css?h=341d487063a0" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-maps.css?h=91098a8ea726" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-home.css?h=20b01d119048" rel="stylesheet"/>
+<link href="../../stylesheets/teaching-workbench.css?h=fa5b92f7fa26" rel="stylesheet"/>
+<link href="../../stylesheets/course-home.css?h=3a41489c7105" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="mk-search-index-network-cache">
 // Material uses XMLHttpRequest before extra_javascript. Let custom search reuse
@@ -930,6 +931,18 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="first-success-distribution.html">
+<span class="md-ellipsis">
+    
+  
+    First Success Distribution
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="folded-normal-distribution.html">
 <span class="md-ellipsis">
     
@@ -982,7 +995,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Geometric Distribution (Probability Theory for EOR)
+    Geometric Distribution
   
 
     
@@ -1877,7 +1890,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Probability Distributions
+    2b Probability Distributions
   
 
     
@@ -2016,7 +2029,6 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-tag">pt-week06</span>
 </nav>
 <h1 id="poisson-distribution">Poisson Distribution<a class="headerlink" href="#poisson-distribution" title="Permanent link">¶</a></h1>
-<p>This page presents the <strong>Probability Theory for EOR</strong> treatment. See also the treatment in <a href="../2b-Probability-Distributions/poisson-distribution.html">Probability Distributions</a>. Mastery is recorded separately for each course context.</p>
 <h2 id="definition"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 7h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H9zm2 2v6h2V9zM3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm2 0v14h14V5z"></path></svg></span> Definition<a class="headerlink" href="#definition" title="Permanent link">¶</a></h2>
 <p>Let <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lambda&gt;0</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">λ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></span>. A discrete <a href="random-variable.html">random variable</a> <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span></span></span></span></span> has a <strong>Poisson distribution</strong> with parameter <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span></span>, written <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>∼</mo><mi mathvariant="normal">Pois</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">X\sim\operatorname{Pois}(\lambda)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop"><span class="mord mathrm">Pois</span></span><span class="mopen">(</span><span class="mord mathnormal">λ</span><span class="mclose">)</span></span></span></span></span>, if</p>
 <div class="arithmatex arithmatex-prerendered arithmatex-display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><msup><mi mathvariant="normal">e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup><mfrac><msup><mi>λ</mi><mi>k</mi></msup><mrow><mi>k</mi><mo stretchy="false">!</mo></mrow></mfrac><mo separator="true">,</mo><mspace width="2em"></mspace><mi>k</mi><mo>=</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mo>…</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">P(X=k)=\mathrm e^{-\lambda}\frac{\lambda^k}{k!},\qquad k=0,1,2,\ldots.</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.2121em;vertical-align:-0.686em;"></span><span class="mord"><span class="mord mathrm">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathnormal mtight">λ</span></span></span></span></span></span></span></span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.5261em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mclose">!</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">λ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">.</span></span></span></span></span></div>
@@ -2054,13 +2066,13 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </ul>
 <h2 id="sources"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20.7c0 .46.1.9.27 1.3H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6.11c-.32-.07-.66-.11-1-.11s-.68.04-1 .11V4h-5v8l-2.5-2.25L8 12V4H6v16h7zm10-3.4v3.5c0 .6-.6 1.2-1.3 1.2h-5.5c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2v-1.5c0-1.4 1.4-2.5 2.8-2.5s2.8 1.1 2.8 2.5V16c.6 0 1.2.6 1.2 1.3m-2.5-2.8c0-.8-.7-1.3-1.5-1.3s-1.5.5-1.5 1.3V16h3z"></path></svg></span> Sources<a class="headerlink" href="#sources" title="Permanent link">¶</a></h2>
 <ul>
-<li>Probability Theory For EOR · Week 4</li>
+<li>Probability Theory For EOR - Week 4</li>
 </ul>
 <p><span class="search-aliases" data-nosnippet="">
 Aliases: Pois(lambda), Poisson random variable
 Symbols: lambda
 </span></p>
-<p class="mk-last-updated">Last updated: 2 September 2026 22:48</p>
+<p class="mk-last-updated">Last updated: 5 September 2026 16:41</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -2097,7 +2109,7 @@ Symbols: lambda
 <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="../../javascripts/exam-mode.js?h=d89710d31520"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
-<script src="../../javascripts/startup-preferences.js?h=72d690d51f36"></script>
+<script src="../../javascripts/startup-preferences.js?h=1bd17732f1d3"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=86f8be5c857c"></script>
 <script src="../../javascripts/ui-guard.js?h=d12ed10a371d"></script>
