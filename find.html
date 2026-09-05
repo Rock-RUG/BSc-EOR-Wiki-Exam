@@ -32,8 +32,8 @@
 <link href="stylesheets/wiki-home-night.css?h=cbcaf276c44a" rel="stylesheet"/>
 <link href="stylesheets/wiki-contributors.css?h=69704a737fb7" rel="stylesheet"/>
 <link href="stylesheets/wiki-about.css?h=30c0332cb287" rel="stylesheet"/>
-<link href="stylesheets/wiki-finder.css?h=95a1acbc0782" rel="stylesheet"/>
-<link href="stylesheets/wiki-rankings.css?h=5bc4f3c554ee" rel="stylesheet"/>
+<link href="stylesheets/wiki-finder.css?h=4ec49ae5427a" rel="stylesheet"/>
+<link href="stylesheets/wiki-rankings.css?h=684fcfb61096" rel="stylesheet"/>
 <link href="stylesheets/teaching-workbench.css?h=fa5b92f7fa26" rel="stylesheet"/>
 <link href="stylesheets/course-home.css?h=3a41489c7105" rel="stylesheet"/>
 <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -573,19 +573,20 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </nav>
 <h1>Concept Finder</h1>
 <div class="wiki-home wiki-finder">
-<div class="wf-intro">
-<div><span class="wf-eyebrow">Find · connect · revisit</span><p>Turn a question into a focused set of concepts.</p></div>
-<p class="wf-guide">Add keywords, course codes or lecture tags. Combine them in the Query panel, then run your search. <a href="about.html#search-and-concept-finder">Finder guide ↗</a></p>
+<div class="wf-workspace-bar" data-wf-bar="" hidden="">
+<div class="wf-query-summary"><span class="wf-query-label">Current search</span><code data-wf-applied=""></code><span class="wf-draft-badge" data-wf-dirty="" hidden="">Draft changed</span></div>
+<div class="wf-view-actions"><button aria-controls="wf-query-editor" data-wf-edit="" type="button">Edit query</button><button aria-controls="search-results" data-wf-results="" type="button">Results <span data-wf-count=""></span></button></div>
 </div>
-<section aria-label="Build your query" class="search-hero">
-<div class="wf-editor-heading"><span aria-hidden="true" class="wf-step">01</span><h2>Build your query</h2></div>
+<section aria-label="Build your query" class="search-hero" id="wf-query-editor">
+<div class="wf-editor-heading"><h2>Build your query</h2><a href="about.html#search-and-concept-finder">Finder guide ↗</a></div>
+<p class="wf-editor-help">Add keywords or course tags, then combine them below.</p>
 <form class="search-hero__form" id="search-form">
 <input aria-label="Search concepts" autocomplete="off" class="search-hero__input" id="search-input" placeholder="limit, m1c, m2la" type="search"/>
 <button class="search-hero__button" type="submit">Add token</button>
 </form>
 <div class="search-filters" id="search-filters"></div>
 </section>
-<div id="search-results"></div>
+<div aria-label="Search results" id="search-results" tabindex="-1"></div>
 </div>
 </article>
 </div>
@@ -623,7 +624,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="javascripts/exam-mode.js?h=d89710d31520"></script>
 <script src="javascripts/perf-probe.js?h=ea289ef426e5"></script>
-<script src="javascripts/startup-preferences.js?h=2cb56c664e59"></script>
+<script src="javascripts/startup-preferences.js?h=861412c80d17"></script>
 <script src="javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="javascripts/style-shortcuts.js?h=86f8be5c857c"></script>
 <script src="javascripts/ui-guard.js?h=d12ed10a371d"></script>

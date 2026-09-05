@@ -761,7 +761,7 @@ function fbNormalizeOpButtons(host){const root=host||document.getElementById("fi
 try{b.style.borderRadius="999px";b.style.padding=".32rem .72rem";b.style.fontSize=".80rem";b.style.fontWeight="750";b.style.lineHeight="1";b.style.minHeight="26px";b.style.height="auto";b.style.display="inline-flex";b.style.alignItems="center";b.style.justifyContent="center";b.style.boxSizing="border-box";}catch(_){}}}
 function clearStatus(){state.lastMsg="";state.lastMsgKind="";}
 function setStatus(kind,msg){state.lastMsgKind=kind||"";state.lastMsg=String(msg||"");}
-function fbUseCompactGhost(isMobile){if(isMobile)return true;return!!(document.querySelector('.wiki-finder')&&window.matchMedia&&window.matchMedia('(min-width: 1200px), (max-width: 759px)').matches);}
+function fbUseCompactGhost(isMobile){if(isMobile)return true;const workspace=document.querySelector('.wiki-finder');return!!(workspace&&(workspace.dataset.wfHasResults==='true'||(window.matchMedia&&window.matchMedia('(max-width: 759px)').matches)));}
 function render(){state.tokens=readTokens();try{fbEnsureExprNodeIds(state.expr);}catch(_){}
 try{if(fbPrefersReducedMotion()){if(state.animHideTokens&&state.animHideTokens.size)state.animHideTokens.clear();if(state.animHideNodeIds&&state.animHideNodeIds.size)state.animHideNodeIds.clear();}}catch(_){}
 try{writeExpr(state.expr);}catch{}
@@ -808,7 +808,7 @@ const isMobile=!!(window.matchMedia&&window.matchMedia("(max-width: 600px)").mat
         <span class="fb-ghost__chip fb-ghost__term">infinity</span>
         <span class="fb-ghost__chip fb-ghost__paren">)</span>
       </div>
-    `;const ghostHintText=useCompactGhost?`Tip: build like "token AND token".`:`Tip: add tokens above, then click tokens and AND/OR/() to build the query. You can drag tokens to rearrange.`;const __nowMs=Date.now();const __suppressPoolEmpty=__nowMs<(state.suppressPoolHintUntil||0);const __suppressBoardEmpty=__nowMs<(state.suppressBoardHintUntil||0);const placeholderHtml=`
+    `;const ghostHintText=useCompactGhost?`Tap tokens to add them. Drag to reorder.`:`Click tokens to add them. Drag to reorder.`;const __nowMs=Date.now();const __suppressPoolEmpty=__nowMs<(state.suppressPoolHintUntil||0);const __suppressBoardEmpty=__nowMs<(state.suppressBoardHintUntil||0);const placeholderHtml=`
     <div class="fb-board__placeholder fb-ghost fb-hint${__suppressBoardEmpty ? " fb-hint--pending" : ""}" data-fb-empty-hint="board">
       ${ghostLineHtml}
       <div class="fb-ghost__hint">${escapeHtml(ghostHintText)}</div>
@@ -818,7 +818,7 @@ const isMobile=!!(window.matchMedia&&window.matchMedia("(max-width: 600px)").mat
             <span class="fb-clear__x" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false" fill="none"><path d="M4 7h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 3.5h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 7l-1 12a2 2 0 0 1-2 1.8H9A2 2 0 0 1 7 19L6 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 11v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M14 11v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
             <span class="fb-clear__txt">Clear tokens</span>
           </button>
-        `;const poolEmptyHtml=`<div class="fb-tokens__empty fb-hint${__suppressPoolEmpty ? " fb-hint--pending" : ""}" data-fb-empty-hint="pool">No tokens yet. Add tokens from the search bar above the pool.</div>`;host.innerHTML=`
+        `;const poolEmptyHtml=`<div class="fb-tokens__empty fb-hint${__suppressPoolEmpty ? " fb-hint--pending" : ""}" data-fb-empty-hint="pool">Your saved keywords and tags.</div>`;host.innerHTML=`
     <div id="fb-fuzzy-note"></div>
 
     <div class="fb-panel fb-panel--pool">
