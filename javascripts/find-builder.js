@@ -705,7 +705,9 @@ if(locFull===pageLoc&&d.title)entry.title=String(d.title);if(d.text)entry.text+=
 for(const e of pageMap.values()){if(!e.title){const file=e.location.split("/").pop()||"Untitled";e.title=file.replace(/\.html$/i,"").replace(/-/g," ");}}
 return Array.from(pageMap.values()).map(e=>({location:e.location,title:e.title,text:e.text,tags:Array.from(e.tags),aliases:Array.from(e.aliases),}));}
 function fbClearEmptySearchResults(){const container=document.getElementById("search-results");if(!container||!container.querySelector(".sr-empty"))return;const api=window.__findSearchV2;if(api&&typeof api.clearEmptyResults==="function"&&api.clearEmptyResults())return;container.innerHTML="";}
-function fbRenderNoResults(qText,hintText){const container=document.getElementById("search-results");if(!container)return;container.innerHTML=`
+function fbRenderNoResults(qText,hintText){const container=document.getElementById("search-results");if(!container)return;const api=window.__findSearchV2;if(api&&typeof api.runLogicExpr==="function"){if(api.runLogicExpr(qText)!==false){const empty=container.querySelector(".sr-empty");if(empty&&hintText){const hint=document.createElement("p");hint.className="sr-hint";hint.textContent=String(hintText);empty.appendChild(hint);}
+return;}}
+container.innerHTML=`
     <div class="sr-top">
       <div class="sr-top__title">Search results</div>
       <div class="sr-top__q">${escapeHtml(qText)}</div>
@@ -759,6 +761,7 @@ function fbNormalizeOpButtons(host){const root=host||document.getElementById("fi
 try{b.style.borderRadius="999px";b.style.padding=".32rem .72rem";b.style.fontSize=".80rem";b.style.fontWeight="750";b.style.lineHeight="1";b.style.minHeight="26px";b.style.height="auto";b.style.display="inline-flex";b.style.alignItems="center";b.style.justifyContent="center";b.style.boxSizing="border-box";}catch(_){}}}
 function clearStatus(){state.lastMsg="";state.lastMsgKind="";}
 function setStatus(kind,msg){state.lastMsgKind=kind||"";state.lastMsg=String(msg||"");}
+function fbUseCompactGhost(isMobile){if(isMobile)return true;return!!(document.querySelector('.wiki-finder')&&window.matchMedia&&window.matchMedia('(min-width: 1200px), (max-width: 759px)').matches);}
 function render(){state.tokens=readTokens();try{fbEnsureExprNodeIds(state.expr);}catch(_){}
 try{if(fbPrefersReducedMotion()){if(state.animHideTokens&&state.animHideTokens.size)state.animHideTokens.clear();if(state.animHideNodeIds&&state.animHideNodeIds.size)state.animHideNodeIds.clear();}}catch(_){}
 try{writeExpr(state.expr);}catch{}
@@ -785,7 +788,7 @@ const host=ensureFindBuilderHost();if(!host)return;state.cursor=clamp(state.curs
           <button class="fb-chip__x" type="button" data-del="${i}" aria-label="Delete">×</button>
         </span>
       `;}}
-const isMobile=!!(window.matchMedia&&window.matchMedia("(max-width: 600px)").matches);const ghostLineHtml=isMobile?`
+const isMobile=!!(window.matchMedia&&window.matchMedia("(max-width: 600px)").matches);const useCompactGhost=fbUseCompactGhost(isMobile);const ghostLineHtml=useCompactGhost?`
       <div class="fb-ghost__line">
         <span class="fb-ghost__chip fb-ghost__term">m1c</span>
         <span class="fb-ghost__chip fb-ghost__op">AND</span>
@@ -805,7 +808,7 @@ const isMobile=!!(window.matchMedia&&window.matchMedia("(max-width: 600px)").mat
         <span class="fb-ghost__chip fb-ghost__term">infinity</span>
         <span class="fb-ghost__chip fb-ghost__paren">)</span>
       </div>
-    `;const ghostHintText=isMobile?`Tip: build like "token AND token".`:`Tip: add tokens above, then click tokens and AND/OR/() to build the query. You can drag tokens to rearrange.`;const __nowMs=Date.now();const __suppressPoolEmpty=__nowMs<(state.suppressPoolHintUntil||0);const __suppressBoardEmpty=__nowMs<(state.suppressBoardHintUntil||0);const placeholderHtml=`
+    `;const ghostHintText=useCompactGhost?`Tip: build like "token AND token".`:`Tip: add tokens above, then click tokens and AND/OR/() to build the query. You can drag tokens to rearrange.`;const __nowMs=Date.now();const __suppressPoolEmpty=__nowMs<(state.suppressPoolHintUntil||0);const __suppressBoardEmpty=__nowMs<(state.suppressBoardHintUntil||0);const placeholderHtml=`
     <div class="fb-board__placeholder fb-ghost fb-hint${__suppressBoardEmpty ? " fb-hint--pending" : ""}" data-fb-empty-hint="board">
       ${ghostLineHtml}
       <div class="fb-ghost__hint">${escapeHtml(ghostHintText)}</div>
@@ -871,7 +874,8 @@ try{fbMaybeShowEnterCorrectionNote();}catch(_){}
 try{fbScheduleThemeForegroundSync();}catch(_){}
 try{fbNormalizeOpButtons(host);}catch(_){}
 try{fbMarkLockedLogicButtons(host);}catch(_){}
-bind(host);}
+bind(host);fbPublishDraftExpr();}
+function fbPublishDraftExpr(){const api=window.__findSearchV2;if(!api||typeof api.setDraftExpr!=="function")return;api.setDraftExpr(tokensToExprText(normalizeNodesToTokens(state.expr)));}
 function bind(host){const fuzzyNote=host.querySelector("#fb-fuzzy-note");if(fuzzyNote&&fuzzyNote.dataset.bound!=="1"){fuzzyNote.dataset.bound="1";fuzzyNote.addEventListener("click",(e)=>{const btn=e.target&&e.target.closest?e.target.closest("button[data-fb-fuzzy-act]"):null;if(!btn)return;const act=btn.getAttribute("data-fb-fuzzy-act")||"";if(act!=="edit")return;const payload=fuzzyNote.getAttribute("data-fb-fuzzy-payload")||(state.fuzzyNote&&state.fuzzyNote.payload)||"";let data=null;try{data=payload?JSON.parse(payload):null;}catch(_){}
 if(data&&data.origExpr){try{state.expr=Array.isArray(data.origExpr)?data.origExpr.map(n=>({...n})):[];state.cursor=Math.min(state.cursor,state.expr.length);}catch(_){}}
 if(data&&data.tokenSwaps&&typeof data.tokenSwaps==="object"){for(const[to,from]of Object.entries(data.tokenSwaps)){fbReplaceTokenEverywhere(to,from);}
@@ -960,7 +964,7 @@ try{const terms=norm.filter(t=>t.k==="TERM").map(t=>String(t.v||"").trim()).filt
 if(fbEvalRPN(rpn,termMatches))combinedCount+=1;}
 if(combinedCount<=0){let hint="";if(!hasLogic&&uniqueTerms.length===1){hint=`This token "${uniqueTerms[0]}" has no matches. Is it spelled correctly?`;}else{const zeroTerms=uniqueTerms.filter(t=>(termCounts.get(t)||0)<=0);if(zeroTerms.length){hint=buildNoMatchTokenHint(zeroTerms);}else{hint=`Each token matches some pages, but the combined logic returns none. Consider adjusting AND/OR or parentheses.`;}}
 try{const did=await fbTryAutoCorrectOnNoResults(norm,uniqueTerms,termCounts,hasLogic,exprText,isCurrent);if(did)return;}catch(_){}
-if(!isCurrent())return;const displayExpr=formatExprForDisplay(norm);fbRenderNoResults(displayExpr,hint);return;}}catch(e){}
+if(!isCurrent())return;fbRenderNoResults(exprText,hint);return;}}catch(e){}
 if(!isCurrent())return;if(window.__findSearchV2&&typeof window.__findSearchV2.runLogicExpr==="function"){clearStatus();render();try{fbStartRunSearchFx();}catch(_){}
 window.__findSearchV2.runLogicExpr(exprText);return;}
 if(window.__findSearchV2&&typeof window.__findSearchV2.runQuery==="function"){const onlyTerms=norm.filter((t)=>t.k==="TERM").flatMap((t)=>String(t.v||"").trim().split(/\s+/).filter(Boolean)).join(" ").trim();if(!onlyTerms){setStatus("bad","No terms to search.");render();return;}
