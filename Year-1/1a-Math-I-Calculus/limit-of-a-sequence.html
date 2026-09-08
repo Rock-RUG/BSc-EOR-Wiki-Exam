@@ -17,7 +17,7 @@
 <link href="../../stylesheets/fonts-vendor.css?h=6f3b200e55fb" rel="stylesheet"/>
 <link href="../../stylesheets/katex-vendor.css?h=810f682352aa" rel="stylesheet"/>
 <link href="../../stylesheets/katex-fast.css?h=29ac38851d7d" rel="stylesheet"/>
-<link href="../../stylesheets/extra.css?h=1586f375acda" rel="stylesheet"/>
+<link href="../../stylesheets/extra.css?h=8e623e022312" rel="stylesheet"/>
 <link href="../../stylesheets/mastery-widget.css?h=ac9184281879" rel="stylesheet"/>
 <link href="../../stylesheets/find-builder.css?h=68f6090ea745" rel="stylesheet"/>
 <link href="../../stylesheets/course-search.css?h=0e431d40c86d" rel="stylesheet"/>
@@ -88,7 +88,7 @@
   var enabled=true;
   try{var p=JSON.parse(localStorage.getItem("mk_startup_features_v1")||"{}");if(p&&p.sidebarSort===false)enabled=false;}catch(_){}
   try{var f=window.__mkForcedStartupPrefs;if(f&&typeof f.sidebarSort==="boolean")enabled=f.sidebarSort;}catch(_){}
-  enabled=true;
+  
   if(!enabled)return;
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
@@ -2560,7 +2560,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <div class="admonition note">
 <p class="admonition-title">Enrichment: non-assessable in 2026-27</p>
 <p>Every convergent sequence is a <a href="cauchy-sequence.html">Cauchy sequence</a>, and over
-<span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>a</mi><mi>t</mi><mi>h</mi><mi>b</mi><mi>b</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">mathbb R</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">ma</span><span class="mord mathnormal">t</span><span class="mord mathnormal">hbb</span><span class="mord mathnormal" style="margin-right:0.0077em;">R</span></span></span></span></span> the converse also holds. The Cauchy criterion is optional
+<span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">R</mi></mrow><annotation encoding="application/x-tex">\mathbb R</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">R</span></span></span></span></span> the converse also holds. The Cauchy criterion is optional
 enrichment in Math I and is not part of the assessable sequence-limit core.</p>
 </div>
 <hr/>
@@ -2594,7 +2594,7 @@ enrichment in Math I and is not part of the assessable sequence-limit core.</p>
 Aliases: sequence limit, convergent sequence, convergence of a sequence
 Symbols: element of, epsilon, infinity, real numbers
 </span></p>
-<p class="mk-last-updated">Last updated: 31 August 2026 11:00</p>
+<p class="mk-last-updated">Last updated: 8 September 2026 02:37</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -2631,7 +2631,7 @@ Symbols: element of, epsilon, infinity, real numbers
 <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="../../javascripts/exam-mode.js?h=d89710d31520"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
-<script src="../../javascripts/startup-preferences.js?h=7924bcc4c987"></script>
+<script src="../../javascripts/startup-preferences.js?h=05138ec17571"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=86f8be5c857c"></script>
 <script src="../../javascripts/ui-guard.js?h=d12ed10a371d"></script>
