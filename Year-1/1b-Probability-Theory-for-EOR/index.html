@@ -34,7 +34,8 @@
 <link href="../../stylesheets/wiki-about.css?h=30c0332cb287" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-finder.css?h=dbb45cd58972" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-rankings.css?h=36e6223ec586" rel="stylesheet"/>
-<link href="../../stylesheets/teaching-workbench.css?h=fa5b92f7fa26" rel="stylesheet"/>
+<link href="../../stylesheets/teaching-workbench.css?h=b659da792eba" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-mastery-manager.css?h=fe1adf847757" rel="stylesheet"/>
 <link href="../../stylesheets/course-home.css?h=3a41489c7105" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <meta content="website" property="og:type"/>
@@ -169,9 +170,12 @@
   function boot(reason){markKind();id++;start=now();clearTimeout(timer);clearTimeout(hard);blank(reason);var n=id;timer=setTimeout(function(){probe(n);},0);hard=setTimeout(function(){hardRevealWhenSafe(n);},isFind()?500:480);}
   function hardRevealWhenSafe(n){if(n!==id)return;var ms=now()-start;if(shouldGateDesktopSidebar(ms)&&!sidebarReady(ms)&&ms<650){clearTimeout(hard);hard=setTimeout(function(){hardRevealWhenSafe(n);},50);return;}reveal(n);}
   function releaseForInteraction(e){try{if(e&&e.isTrusted===false)return;userInteracted=true;forceTopThisBoot=false;cancelTopTimers();if(root.classList.contains("mk-app-booting"))reveal(id);}catch(_){}}
-  function searchTarget(t){try{if(t&&t.closest&&t.closest(".mk-page-comments, .mk-comment-form, .mk-comment-composer"))return false;return !!(t&&t.closest&&t.closest(".md-header .md-search, .md-search, label[for='__search'], input#__search, input[data-md-component='search-query'], form"));}catch(_){return false;}}
+  // Only header-search navigation needs a new page-paint gate. In-page forms
+  // (Finder tokens, course filters, preparation notes, account settings) keep
+  // their own loading states and must remain visible while handling submit.
+  function searchTarget(t){try{if(t&&t.closest&&t.closest(".mk-page-comments, .mk-comment-form, .mk-comment-composer"))return false;return !!(t&&t.closest&&t.closest(".md-header .md-search, .md-search, label[for='__search'], input#__search, input[data-md-component='search-query']"));}catch(_){return false;}}
   document.addEventListener("submit",function(e){if(searchTarget(e&&e.target))boot("find");},true);
-  document.addEventListener("keydown",function(e){if(e&&e.key==="Enter"&&searchTarget(e.target))boot("find");},true);
+  document.addEventListener("keydown",function(e){var t=e&&e.target;if(e&&e.key==="Enter"&&!e.isComposing&&e.keyCode!==229&&searchTarget(t)&&t.matches&&t.matches('input.md-search__input, input[data-md-component="search-query"]'))boot("find");},true);
   window.addEventListener("find:autofill",function(){boot("find");},true);
   try{["pushState","replaceState"].forEach(function(k){var orig=history[k];if(!orig||orig.__mkGateWrappedV8)return;var wrapped=function(){var ret=orig.apply(this,arguments);setTimeout(function(){markKind();if(isFind())boot("history-find");else probe(id);},0);return ret;};wrapped.__mkGateWrappedV8=true;history[k]=wrapped;});}catch(_){}
   window.__mkUnifiedFirstPaintStart=boot;window.__mkUnifiedFirstPaintBlank=function(reason){boot(reason||"manual")};window.__mkUnifiedFirstPaintProbe=function(){probe(id)};window.__mkClearFindSearchResidue=clearFindSearchResidue;
@@ -2379,7 +2383,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="../../javascripts/exam-mode.js?h=d89710d31520"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
-<script src="../../javascripts/startup-preferences.js?h=abd65e447e9f"></script>
+<script src="../../javascripts/startup-preferences.js?h=10305c1bc4b6"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=86f8be5c857c"></script>
 <script src="../../javascripts/ui-guard.js?h=d12ed10a371d"></script>
@@ -2395,10 +2399,10 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../javascripts/random.js?h=916d85556f64"></script>
 <script src="../../javascripts/random-tabs.js?h=0088914bb6d0"></script>
 <script src="../../javascripts/search-enter.js?h=ecfa6b413a1a"></script>
-<script src="../../javascripts/concept-fold.js?h=69bb11cf611f"></script>
+<script src="../../javascripts/concept-fold.js?h=fa916da745b7"></script>
 <script src="../../javascripts/tag-search-links.js?h=84cb5c2dd87f"></script>
 <script src="../../javascripts/logo-lightbox.js?h=fda4850b9a41"></script>
 <script src="../../javascripts/wiki-home.js?h=4318a2688b8d"></script>
-<script src="../../javascripts/teaching-workbench.js?h=ba93e7669dd3"></script>
+<script src="../../javascripts/teaching-workbench.js?h=cd47eef7b7c9"></script>
 </body>
 </html>
