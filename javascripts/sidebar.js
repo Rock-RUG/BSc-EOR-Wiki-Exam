@@ -1951,7 +1951,7 @@ html:is(
 }
 
 `;(document.head||document.documentElement).appendChild(style);}
-function ensureCurrentCourseBarNode(scrollWrap){const host=controlsHost(scrollWrap);if(!(host instanceof HTMLElement))return null;let bar=host.querySelector('#current-course-bar');if(!(bar instanceof HTMLElement)){bar=document.createElement('div');bar.id='current-course-bar';bar.setAttribute(ATTR.injected,'1');bar.innerHTML='<div class="ccb-row">'+'<button type="button" class="ccb-course-trigger" aria-haspopup="menu" aria-expanded="false">'+'<span class="ccb-trigger-main">'+'<span class="ccb-kicker">Course</span>'+'<span class="ccb-title"></span>'+'</span>'+'<span class="ccb-trigger-icon" aria-hidden="true">'+currentCourseBarChevronSvg('ccb-icon')+'</span>'+'</button>'+'<div class="ccb-menu" role="menu" hidden></div>'+'</div>';host.prepend(bar);}else if(bar.parentElement!==host){host.prepend(bar);}else if(!bar.querySelector('.ccb-course-trigger')){bar.innerHTML='<div class="ccb-row">'+'<button type="button" class="ccb-course-trigger" aria-haspopup="menu" aria-expanded="false">'+'<span class="ccb-trigger-main">'+'<span class="ccb-kicker">Course</span>'+'<span class="ccb-title"></span>'+'</span>'+'<span class="ccb-trigger-icon" aria-hidden="true">'+currentCourseBarChevronSvg('ccb-icon')+'</span>'+'</button>'+'<div class="ccb-menu" role="menu" hidden></div>'+'</div>';}
+function ensureCurrentCourseBarNode(scrollWrap){const host=controlsHost(scrollWrap);if(!(host instanceof HTMLElement))return null;let bar=host.querySelector('#current-course-bar');if(!(bar instanceof HTMLElement)){bar=document.createElement('div');bar.id='current-course-bar';bar.setAttribute(ATTR.injected,'1');bar.innerHTML='<div class="ccb-row">'+'<button type="button" class="ccb-course-trigger" aria-haspopup="menu" aria-expanded="false">'+'<span class="ccb-trigger-main">'+'<span class="ccb-kicker">Course</span>'+'<span class="ccb-title"></span>'+'</span>'+'<span class="ccb-trigger-icon" aria-hidden="true">'+currentCourseBarChevronSvg('ccb-icon')+'</span>'+'</button>'+'<div class="ccb-menu" role="menu" aria-label="Choose a course" hidden></div>'+'</div>';host.prepend(bar);}else if(bar.parentElement!==host){host.prepend(bar);}else if(!bar.querySelector('.ccb-course-trigger')){bar.innerHTML='<div class="ccb-row">'+'<button type="button" class="ccb-course-trigger" aria-haspopup="menu" aria-expanded="false">'+'<span class="ccb-trigger-main">'+'<span class="ccb-kicker">Course</span>'+'<span class="ccb-title"></span>'+'</span>'+'<span class="ccb-trigger-icon" aria-hidden="true">'+currentCourseBarChevronSvg('ccb-icon')+'</span>'+'</button>'+'<div class="ccb-menu" role="menu" aria-label="Choose a course" hidden></div>'+'</div>';}
 return bar;}
 function activePrimarySidebarLink(){const sidebar=getPrimarySidebar();if(!(sidebar instanceof HTMLElement))return null;const active=sidebar.querySelector('a.md-nav__link[aria-current="page"], a.md-nav__link--active')||sidebar.querySelector('.md-nav__link--active');return active instanceof HTMLElement?active:null;}
 function currentBarScopeNode(scope){if(!scope||!scope.kind)return null;if(scope.kind==='year'){return findYearNode(scope.yearSeg)||(activePrimarySidebarLink()?activePrimarySidebarLink().closest('.md-nav__item'):null);}
@@ -2906,9 +2906,11 @@ html.msb-unified-mobile-drawer-visible #mk-sidebar-drawer-gap-bottom{
    No default coloured circle, no text glyph, no Material-icon residue. */
 html.mk-sidebar-sort-ready .md-sidebar--primary .msb-group-head__btn,
 #mk-mobile-unified-sidebar-surface .msb-group-head__btn{
-  width:1.35rem !important;
-  height:1.35rem !important;
-  min-width:1.35rem !important;
+  width:max(24px, 1.35rem) !important;
+  height:max(24px, 1.35rem) !important;
+  min-width:24px !important;
+  min-height:24px !important;
+  flex-shrink:0 !important;
   margin-left:auto !important;
   padding:0 !important;
   border:0 !important;

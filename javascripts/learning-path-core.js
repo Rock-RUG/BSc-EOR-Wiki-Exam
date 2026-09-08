@@ -1206,6 +1206,17 @@ function lpEnsureMapDocumentSurfaceStyle(){if(document.getElementById("lp-map-do
   #lp-h1sg-modal.lp-doc-surface .lp-mzoom .lp-ctrl-group{
     pointer-events:auto !important;
   }
+  /* The map surface extends below the browser chrome. Every control row must
+     share the zoom dock's visible-viewport anchor, including the view switch. */
+  #lp-map-modal.lp-doc-surface .lp-mbox > .lp-view-toggle,
+  #lp-h1sg-modal.lp-doc-surface .lp-mbox > .lp-view-toggle{
+    top:auto !important;
+    bottom:calc(var(--lp-map-zoom-bottom, calc(env(safe-area-inset-bottom, 0px) + 22px)) + 68px) !important;
+    z-index:2147483405 !important;
+  }
+  #lp-h1sg-modal.lp-doc-surface .lp-mbox > .lp-view-toggle{
+    bottom:calc(var(--lp-map-zoom-bottom, calc(env(safe-area-inset-bottom, 0px) + 22px)) + 136px) !important;
+  }
   /* The guided-study CTA sits directly above the dock, so it has to ride the
      same visible-viewport anchor instead of the taller document surface. */
   #lp-h1sg-modal.lp-doc-surface .lp-h1sg-docklaunch{
