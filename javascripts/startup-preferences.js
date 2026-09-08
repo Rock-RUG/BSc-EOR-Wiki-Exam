@@ -45,7 +45,7 @@ host=aside.querySelector(".md-sidebar__inner")||aside;}
 if(!host)return null;try{aside.classList.add("lp-secondary-host-active");}catch(_){}
 try{aside.querySelectorAll(".md-nav--secondary").forEach((nav)=>{nav.dataset.mkLpEarlyTocHidden="1";nav.style.display="none";});}catch(_){}
 let panel=document.getElementById("lp-side-panel");const alreadyCurrent=!!(panel&&panel.dataset&&panel.dataset.lpCurrentLoc===rel&&panel.dataset.lpEarlyShell!=="1");if(alreadyCurrent)return panel;if(!panel){panel=document.createElement("div");panel.id="lp-side-panel";}
-panel.className="lp-pending lp-early-shell";panel.dataset.lpCurrentLoc=rel;panel.dataset.lpEarlyShell="1";panel.dataset.lpShell="1";panel.setAttribute("aria-busy","true");panel.innerHTML=['<div class="lp-head"><div class="lp-title">Concept connections</div></div>','<div class="lp-early-section"><span>Dependents</span><i></i><i></i></div>','<div class="lp-early-section"><span>Prerequisites</span><i></i><i></i></div>','<div class="lp-early-section"><span>Related concepts</span><i></i><i></i></div>'].join("");if(panel.parentElement!==host)host.insertAdjacentElement("afterbegin",panel);window.__lpShellMountedRel=rel;bindLearningPathPanelShiftResize();syncLearningPathPanelShift();bindLearningPathTitleFit();scheduleLearningPathTitleFit();try{window.dispatchEvent(new CustomEvent("lp:shell-mounted",{detail:{relPath:rel,panelId:panel.id}}));}catch(_){}
+panel.className="lp-pending lp-early-shell";panel.dataset.lpCurrentLoc=rel;panel.dataset.lpEarlyShell="1";panel.dataset.lpShell="1";panel.setAttribute("aria-busy","true");panel.innerHTML=['<div class="lp-head"><div class="lp-title">Concept connections</div></div>',...[['lp-deps','Dependents'],['lp-pres','Prerequisites'],['lp-rel','Related concepts']].map(([kind,title])=>`<details class="lp-acc lp-early-section ${kind}" open inert aria-hidden="true"><summary class="lp-sum" tabindex="-1"><span class="lp-sum-left">${title}</span></summary><div class="lp-body"><i></i><i></i></div></details>`)].join("");if(panel.parentElement!==host)host.insertAdjacentElement("afterbegin",panel);window.__lpShellMountedRel=rel;bindLearningPathPanelShiftResize();syncLearningPathPanelShift();bindLearningPathTitleFit();scheduleLearningPathTitleFit();try{window.dispatchEvent(new CustomEvent("lp:shell-mounted",{detail:{relPath:rel,panelId:panel.id}}));}catch(_){}
 return panel;}catch(_){return null;}}
 const LP_PANEL_SHIFT_VAR="--lp-desktop-panel-right-shift-current";const LP_PANEL_MIN_RIGHT_GAP_PX=18;const LP_PANEL_MAX_SHIFT_PX=96;function lpVisibleRect(el){try{if(!el||!el.getBoundingClientRect)return null;const r=el.getBoundingClientRect();if(!r||r.width<=2||r.height<=2)return null;return r;}catch(_){return null;}}
 function syncLearningPathPanelShift(){try{const desktop=window.matchMedia?window.matchMedia("(min-width: 901px)").matches:(window.innerWidth||0)>=901;const panel=document.getElementById("lp-side-panel");if(!desktop||!panel||!panel.isConnected)return;if(typeof window.__lpDesktopPanelRightShiftApplyNow==="function"){window.__lpDesktopPanelRightShiftApplyNow();return;}
@@ -207,18 +207,23 @@ function ensureStyle(){if(document.getElementById("mk-startup-preferences-style"
         }
       }
       @media (max-width:900px){.lp-secondary-fallback{display:none!important}}
-      #lp-side-panel.lp-early-shell{display:block;opacity:1!important;pointer-events:none;font-size:1.03em;color:var(--md-default-fg-color,#1f2937)}
+      #lp-side-panel.lp-early-shell{display:block;opacity:1!important;pointer-events:none;font-size:max(13px,.65rem);color:var(--md-default-fg-color,#1f2937)}
       /* Match the real card's frame so the first paint is not re-boxed later. */
-      #lp-side-panel.lp-early-shell{box-sizing:border-box;max-width:100%;margin:0 0 .8rem;padding:.8rem;border-radius:18px;border:1px solid var(--md-default-fg-color--lightest,rgba(100,116,139,.18))}
+      #lp-side-panel.lp-early-shell{box-sizing:border-box;max-width:100%;margin:0 0 .8rem;padding:.8rem;border-radius:18px;border:1px solid var(--md-default-fg-color--lightest,rgba(100,116,139,.18));--lp-pre:rgb(16,185,129);--lp-post:rgb(96,165,250);--lp-rel:rgb(167,139,250)}
       #lp-side-panel.lp-early-shell .lp-head{display:block;width:100%;margin-bottom:.55rem}
       /* Same clamps as lp-concept-connections-polish-v1 in learning-path.js, so
          the title does not resize when the real panel replaces the shell. */
       #lp-side-panel.lp-early-shell .lp-title{font-weight:800;letter-spacing:-.01em;opacity:.95;font-size:clamp(.96rem,1.05vw,1.08rem);line-height:1.2;white-space:nowrap}
       @media (min-width:901px){#lp-side-panel.lp-early-shell .lp-title{font-size:clamp(.90rem,1vw,1.02rem)}}
       #lp-side-panel.lp-early-shell .lp-early-section{display:grid;gap:.38rem;border-top:1px solid var(--md-default-fg-color--lightest,rgba(100,116,139,.18));padding-top:.55rem;margin-top:.55rem}
-      #lp-side-panel.lp-early-shell .lp-early-section>span{font-size:1.2em;font-weight:780;line-height:1.3;opacity:.95}
-      #lp-side-panel.lp-early-shell .lp-early-section>i{display:block;height:.52rem;border-radius:999px;background:var(--md-default-fg-color--lightest,rgba(100,116,139,.16));opacity:.62}
-      #lp-side-panel.lp-early-shell .lp-early-section>i:last-child{width:68%;opacity:.42}
+      #lp-side-panel.lp-early-shell .lp-early-section>summary{display:block;list-style:none;font-size:1.2em;font-weight:780;line-height:1.3;opacity:.95}
+      #lp-side-panel.lp-early-shell .lp-early-section>summary::-webkit-details-marker{display:none}
+      #lp-side-panel.lp-early-shell .lp-early-section.lp-deps>summary{color:var(--lp-post)}
+      #lp-side-panel.lp-early-shell .lp-early-section.lp-pres>summary{color:var(--lp-pre)}
+      #lp-side-panel.lp-early-shell .lp-early-section.lp-rel>summary{color:var(--lp-rel)}
+      #lp-side-panel.lp-early-shell .lp-early-section>.lp-body{display:grid;gap:.38rem;margin-top:.38rem}
+      #lp-side-panel.lp-early-shell .lp-early-section>.lp-body>i{display:block;height:.52rem;border-radius:999px;background:var(--md-default-fg-color--lightest,rgba(100,116,139,.16));opacity:.62}
+      #lp-side-panel.lp-early-shell .lp-early-section>.lp-body>i:last-child{width:68%;opacity:.42}
       /* Mastery first-paint shell: inert, and reserving the icon boxes so the row
          heights match the real widget exactly. */
       #mw-mastery[data-mw-shell="1"]{pointer-events:none}

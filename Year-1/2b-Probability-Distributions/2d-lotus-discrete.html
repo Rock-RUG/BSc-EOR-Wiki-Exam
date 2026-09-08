@@ -18,7 +18,7 @@
 <link href="../../stylesheets/katex-vendor.css?h=810f682352aa" rel="stylesheet"/>
 <link href="../../stylesheets/katex-fast.css?h=29ac38851d7d" rel="stylesheet"/>
 <link href="../../stylesheets/extra.css?h=486791399437" rel="stylesheet"/>
-<link href="../../stylesheets/mastery-widget.css?h=ac9184281879" rel="stylesheet"/>
+<link href="../../stylesheets/mastery-widget.css?h=e5de2fb7f23a" rel="stylesheet"/>
 <link href="../../stylesheets/find-builder.css?h=68f6090ea745" rel="stylesheet"/>
 <link href="../../stylesheets/course-search.css?h=0e431d40c86d" rel="stylesheet"/>
 <link href="../../stylesheets/course-status.css?h=4224c998406e" rel="stylesheet"/>
@@ -32,11 +32,12 @@
 <link href="../../stylesheets/wiki-home-night.css?h=cbcaf276c44a" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-contributors.css?h=69704a737fb7" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-about.css?h=30c0332cb287" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-finder.css?h=dbb45cd58972" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-finder.css?h=58122de3c55e" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-rankings.css?h=36e6223ec586" rel="stylesheet"/>
 <link href="../../stylesheets/teaching-workbench.css?h=b659da792eba" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-mastery-manager.css?h=fe1adf847757" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-mastery-manager.css?h=e2770bae9ea7" rel="stylesheet"/>
 <link href="../../stylesheets/course-home.css?h=3a41489c7105" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-interactions.css?h=31cf8547fee6" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <meta content="website" property="og:type"/>
 <meta content="BSc EOR Wiki (Exam Mode)" property="og:site_name"/>
@@ -130,13 +131,20 @@
 (function(){
   var root=document.documentElement;
   var id=0,timer=0,hard=0,start=0,lastReason="",forceTopThisBoot=false,userInteracted=false,lastScrollSig="",stableScrollFrames=0,topTimers=[];
+  // Keep native restoration enabled for the history entry when it is first
+  // created, not only after returning to it. BFCache retains this script state.
+  function nativeScrollRestoration(){try{if('scrollRestoration' in history)history.scrollRestoration='auto';}catch(_){}}
+  function freshDocumentNavigation(){try{var p=window.performance,e=p&&p.getEntriesByType&&p.getEntriesByType('navigation')[0];if(e&&e.type)return e.type==='navigate';if(p&&p.navigation)return p.navigation.type===0;}catch(_){}return false;}
+  var scrollResetPath=String(location.pathname||""),preserveScroll=!!location.hash||!freshDocumentNavigation(),scrollPageAway=false;
+  nativeScrollRestoration();
   function ensureCover(){try{var d=document.getElementById("mk-first-paint-cover");if(!d){d=document.createElement("div");d.id="mk-first-paint-cover";d.setAttribute("aria-hidden","true");(document.body||document.documentElement).appendChild(d);}return d;}catch(_){return null;}}
   function removeCoverSoon(){try{setTimeout(function(){var d=document.getElementById("mk-first-paint-cover");if(d&&d.parentNode)d.parentNode.removeChild(d);},90);}catch(_){}}
   function now(){return (window.performance&&performance.now)?performance.now():Date.now();}
   function cancelTopTimers(){try{topTimers.forEach(function(t){clearTimeout(t);});topTimers=[];}catch(_){}}
-  function shouldForceTop(reason){try{if(location.hash)return false;var r=String(reason||"");if(r==="popstate"||r==="pageshow")return false;return true;}catch(_){return true;}}
+  function preserveReadingPosition(){scrollResetPath=String(location.pathname||"");preserveScroll=true;forceTopThisBoot=false;cancelTopTimers();nativeScrollRestoration();}
+  function shouldForceTop(reason){try{var p=String(location.pathname||"");if(p!==scrollResetPath){scrollResetPath=p;preserveScroll=false;userInteracted=false;}if(scrollPageAway||preserveScroll||location.hash)return false;var r=String(reason||"");return r!=="popstate"&&r!=="pageshow";}catch(_){return false;}}
   function scrollTopValue(){try{var se=document.scrollingElement||document.documentElement;return Math.max(window.pageYOffset||0,document.documentElement.scrollTop||0,document.body?document.body.scrollTop||0:0,se?se.scrollTop||0:0);}catch(_){return window.pageYOffset||0;}}
-  function forceTopNow(){if(!forceTopThisBoot||userInteracted)return;try{if('scrollRestoration' in history)history.scrollRestoration='manual';}catch(_){}try{var se=document.scrollingElement||document.documentElement;if(se)se.scrollTop=0;document.documentElement.scrollTop=0;if(document.body)document.body.scrollTop=0;window.scrollTo(0,0);}catch(_){}}
+  function forceTopNow(){if(!forceTopThisBoot||userInteracted||scrollPageAway||preserveScroll||location.hash||scrollResetPath!==String(location.pathname||""))return;try{var se=document.scrollingElement||document.documentElement;if(se)se.scrollTop=0;document.documentElement.scrollTop=0;if(document.body)document.body.scrollTop=0;window.scrollTo(0,0);}catch(_){}}
   function armTopFix(){cancelTopTimers();if(!forceTopThisBoot)return;[0,8,16,32,64,120,220].forEach(function(ms){topTimers.push(setTimeout(forceTopNow,ms));});}
   function viewportSig(){try{var vv=window.visualViewport;var y=Math.round(scrollTopValue());var oy=vv?Math.round(vv.offsetTop||0):0;var h=vv?Math.round(vv.height||0):Math.round(window.innerHeight||0);var w=vv?Math.round(vv.width||0):Math.round(window.innerWidth||0);return y+":"+oy+":"+h+":"+w;}catch(_){return String(Math.round(scrollTopValue()));}}
   function viewportStable(ms){try{if(!forceTopThisBoot)return true;forceTopNow();var y=scrollTopValue();var sig=viewportSig();if(sig===lastScrollSig)stableScrollFrames+=1;else{lastScrollSig=sig;stableScrollFrames=0;}if(y>1&&ms<360)return false;return stableScrollFrames>=2||ms>180;}catch(_){return true;}}
@@ -157,7 +165,7 @@
   function isHeaderSearchActive(){try{var ae=document.activeElement,t=document.querySelector('input.md-toggle[data-md-toggle="search"], input#__search, #__search'),s=document.querySelector('.md-header .md-search'),b=document.body;return !!((t&&t.checked)||(ae&&ae.closest&&ae.closest('.md-header .md-search'))||(s&&s.classList&&s.classList.contains('md-search--active'))||(s&&s.getAttribute&&s.getAttribute('data-mk-search-force-active')==='1')||root.classList.contains('md-search--active')||root.classList.contains('mk-hsf-open')||(b&&b.classList&&b.classList.contains('md-search--active')));}catch(_){return false;}}
   function clearFindFx(){try{var r=document.getElementById("search-results");if(r)r.classList.remove("fb-preblur");var fb=document.getElementById("find-builder");if(fb)fb.classList.remove("fb-dream-active","fb-undo-bump","fb-redo-bump");document.querySelectorAll("#search-results .csr-cols,#search-results .csr-list,#search-results .csr-foot,#find-builder .fb-board,#find-builder .fb-hint").forEach(function(el){el.style.filter="";el.style.opacity="";el.style.transform="";el.classList.remove("fb-hint--pending","fb-hint--reveal");});}catch(_){} }
   function clearFindSearchResidue(){if(!isFind())return;clearFindFx();var active=isHeaderSearchActive();root.classList.toggle("mk-header-search-open",!!active);if(active)return;try{var toggle=document.querySelector('input.md-toggle[data-md-toggle="search"], input#__search, #__search');if(toggle)toggle.checked=false;document.querySelectorAll('.md-header .md-search.md-search--active').forEach(function(el){el.classList.remove('md-search--active');});root.classList.remove('md-search--active');if(document.body)document.body.classList.remove('md-search--active');document.querySelectorAll('.md-header .md-search__output,.md-header .md-search__overlay,.md-header .mk-search-history,.md-header .mk-search-suggest').forEach(function(el){try{el.style.display='none';el.style.pointerEvents='none';el.style.opacity='0';el.setAttribute('aria-hidden','true');}catch(_){}});var bd=document.getElementById('mk-mobile-search-backdrop');if(bd){bd.dataset.mkFindHidden='1';bd.style.display='none';bd.style.opacity='0';bd.style.backdropFilter='none';bd.style.webkitBackdropFilter='none';}}catch(_){} }
-  function blank(reason){markKind();ensureCover();lastReason=reason||"";userInteracted=false;forceTopThisBoot=shouldForceTop(lastReason);lastScrollSig="";stableScrollFrames=0;clearFindSearchResidue();forceTopNow();armTopFix();root.classList.remove("mk-app-ready","mk-first-paint-release","mk-tabs-ready","mk-sidebar-sort-centered");root.classList.add("mk-app-booting","mk-nav-pending","mk-startup-no-motion","mk-tabs-boot","mk-sidebar-sort-boot","mk-scroll-stabilizing");if(reason==="find"||isFind())root.classList.add("mk-find-booting","mk-find-entering");}
+  function blank(reason){markKind();ensureCover();lastReason=reason||"";forceTopThisBoot=shouldForceTop(lastReason);lastScrollSig="";stableScrollFrames=0;clearFindSearchResidue();forceTopNow();armTopFix();root.classList.remove("mk-app-ready","mk-first-paint-release","mk-tabs-ready","mk-sidebar-sort-centered");root.classList.add("mk-app-booting","mk-nav-pending","mk-startup-no-motion","mk-tabs-boot","mk-sidebar-sort-boot","mk-scroll-stabilizing");if(reason==="find"||isFind())root.classList.add("mk-find-booting","mk-find-entering");}
   function revealCommit(n){if(n!==id)return;clearFindSearchResidue();forceTopNow();markKind();root.classList.add("mk-app-ready","mk-first-paint-release","mk-tabs-ready");removeCoverSoon();root.classList.remove("mk-app-booting","mk-nav-pending","mk-tabs-boot","mk-sidebar-sort-boot","mk-find-booting","mk-find-entering","mk-scroll-stabilizing");forceTopNow();setTimeout(forceTopNow,0);setTimeout(forceTopNow,60);setTimeout(function(){if(n===id){root.classList.remove("mk-startup-no-motion","mk-first-paint-release");cancelTopTimers();}},90);}
   /* revealCommit is idempotent (class add/remove + cover removal), so the paths
      below may race safely. A HIDDEN tab never paints, so requestAnimationFrame
@@ -183,7 +191,9 @@
   window.__mkUnifiedFirstPaintStart=boot;window.__mkUnifiedFirstPaintBlank=function(reason){boot(reason||"manual")};window.__mkUnifiedFirstPaintProbe=function(){probe(id)};window.__mkClearFindSearchResidue=clearFindSearchResidue;
   ["wheel","touchstart","pointerdown"].forEach(function(e){window.addEventListener(e,releaseForInteraction,{passive:true,capture:true});});window.addEventListener("keydown",function(e){if(e&&/^(ArrowDown|ArrowUp|PageDown|PageUp|Home|End| )$/.test(String(e.key||"")))releaseForInteraction(e);},true);
   ["mk:random-tabs-ready","mk:sidebar-sort-done","mk:sidebar-sort-rendered","mk:sidebar-sort-centered","mk:mastery-widget-ready","mk:learning-path-ready","mk:site-motion-change","mk:motionchange","fb:ready"].forEach(function(e){window.addEventListener(e,function(){probe(id);},true);});
-  boot("initial");document.addEventListener("DOMContentLoaded",function(){probe(id);},{once:true});document.addEventListener("DOMContentSwitch",function(){boot("switch");});window.addEventListener("pageshow",function(e){if(e&&e.persisted)boot("pageshow");else probe(id);},{passive:true});window.addEventListener("popstate",function(){boot("popstate");},{passive:true});[0,60,160,340,700,1200,1800].forEach(function(ms){setTimeout(clearFindSearchResidue,ms);});
+  window.addEventListener("pagehide",function(){scrollPageAway=true;preserveReadingPosition();},{passive:true});
+  window.addEventListener("hashchange",preserveReadingPosition,{passive:true});
+  boot("initial");document.addEventListener("DOMContentLoaded",function(){probe(id);},{once:true});document.addEventListener("DOMContentSwitch",function(){boot("switch");});window.addEventListener("pageshow",function(e){scrollPageAway=false;if(e&&e.persisted){preserveReadingPosition();boot("pageshow");}else probe(id);},{passive:true});window.addEventListener("popstate",function(){preserveReadingPosition();boot("popstate");},{passive:true});[0,60,160,340,700,1200,1800].forEach(function(ms){setTimeout(clearFindSearchResidue,ms);});
 })();
 </script>
 <style id="mk-unified-first-paint-css-v12-fast-release">
@@ -1653,17 +1663,17 @@ Symbols: sum
 <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="../../javascripts/exam-mode.js?h=d89710d31520"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
-<script src="../../javascripts/startup-preferences.js?h=10305c1bc4b6"></script>
+<script src="../../javascripts/startup-preferences.js?h=56426b8a123d"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=86f8be5c857c"></script>
-<script src="../../javascripts/ui-guard.js?h=d12ed10a371d"></script>
+<script src="../../javascripts/ui-guard.js?h=8b3fbdf7b5e9"></script>
 <script src="../../javascripts/a11y-landmarks.js?h=89016260de57"></script>
 <script src="../../javascripts/sync-status-indicator.js?h=5a99867d99dc"></script>
 <script src="../../javascripts/fuzzy-core.js?h=2104d6f6309d"></script>
 <script src="../../javascripts/search-suggestions.js?h=6d411241d851"></script>
 <script src="../../javascripts/search-history.js?h=8afc9a8bc51d"></script>
 <script src="../../javascripts/header-search-stabilizer.js?h=cdd630b06fd3"></script>
-<script src="../../javascripts/concept-hover-preview.js?h=8347ef71799d"></script>
+<script src="../../javascripts/concept-hover-preview.js?h=e99332f3773f"></script>
 <script src="../../javascripts/mathjax.js?h=c15e6455b642"></script>
 <script src="../../javascripts/preload-guard.js?h=01ffb1bbb74f"></script>
 <script src="../../javascripts/random.js?h=916d85556f64"></script>
