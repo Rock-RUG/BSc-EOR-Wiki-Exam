@@ -780,16 +780,16 @@ const host=ensureFindBuilderHost();if(!host)return;state.cursor=clamp(state.curs
           <button class="fb-tokenbtn" type="button" ${hasTokenList ? "" : "disabled"} title="${safe}">
             <span class="fb-tokenbtn__text">${safe}</span>
           </button>
-          <button class="fb-tokenbtn__x" type="button" title="Remove token" aria-label="Remove token">×</button>
+          <button class="fb-tokenbtn__x" type="button" title="Remove token: ${safe}" aria-label="Remove token: ${safe}">×</button>
         </div>
       `;}).join("");let boardHtml="";for(let i=0;i<=state.expr.length;i++){const isCursor=i===state.cursor;boardHtml+=`
-      <button class="fb-slot ${isCursor ? "is-cursor" : ""}" type="button" data-slot="${i}" aria-label="Insert here">
+      <button class="fb-slot ${isCursor ? "is-cursor" : ""}" type="button" data-slot="${i}" aria-label="Insert at position ${i + 1} of ${state.expr.length + 1}">
         <span class="fb-caret">${isCursor ? "|" : ""}</span>
       </button>
     `;if(i<state.expr.length){const n=state.expr[i];const txt=escapeHtml(nodeLabel(n));let cls="fb-chip";if(n.t==="TERM")cls+=" fb-chip--term";else if(n.t==="OP")cls+=" fb-chip--op";else if(n.t==="LP"||n.t==="RP")cls+=" fb-chip--paren";const __nid=String(n.__fbid||"");const __hideChip=!!(state.animHideNodeIds&&__nid&&state.animHideNodeIds.has(__nid));const __chipStyle=__hideChip?`style="opacity:0; visibility:hidden; transform:scale(.98);"`:"";boardHtml+=`
         <span class="${cls}" data-chip="${i}" data-expr-idx="${i}" data-fb-node="${escapeHtml(n.__fbid || '')}" ${__chipStyle}>
           <span class="fb-chip__text">${txt}</span>
-          <button class="fb-chip__x" type="button" data-del="${i}" aria-label="Delete">×</button>
+          <button class="fb-chip__x" type="button" data-del="${i}" aria-label="Delete ${txt} at position ${i + 1}">×</button>
         </span>
       `;}}
 const isMobile=!!(window.matchMedia&&window.matchMedia("(max-width: 600px)").matches);const useCompactGhost=fbUseCompactGhost(isMobile);const ghostLineHtml=useCompactGhost?`

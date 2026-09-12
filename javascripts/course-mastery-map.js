@@ -1,5 +1,5 @@
 (function(){function __mkFetchSearchIndex(url,init){const shared=window.__mkFetchJsonShared;if(typeof shared==="function")return shared(url,init);return fetch(url,init).then(function(r){return r&&r.ok?r.json():null;});}
-const{STYLE_ID,PANEL_ID,TOGGLE_ID,STORAGE_KEY,RECENT_WINDOW_MS,DAILY_HISTORY_KEY,DAILY_HISTORY_LIMIT,AIQ_SESSIONS_KEY,CMM_HOT_API_BASE,CMM_DIAGNOSTICS_ITEM_ID,CMM_DIAGNOSTICS_PRICE,CMM_DIAGNOSTICS_NAME,q,escapeHtml,csrSimpleHash,getSiteRootUrl,normLoc,safeNum,asStringList,cleanTitle,clamp,clamp01,cmmClamp,cmmPx,csrConsumeGuestAction,cmmConsumeGuestAction,unitNounFromType,lectureInfoFromTags,readAllMastery,cmmMasteryContext,cmmMasteryReadError,cmmComparableMasteryLocation,cmmEnsureMasteryReader,isExplicitRating,masteryPctFromLevel,historyEntryKind,masterySourceName,isAiMasterySource,lectureRiskLabel,lectureRiskToneByScore,cmmVisitorId,publicScoreAvgLabel,todayKeyLocal,shortDateLabel,mapSvg,chevronSvg,cmmIsTouchLikeViewport,cmmPageScrollXNow,cmmPageScrollYNow,cmmIsIOSWebKitMobile,cmmReadSafeAreaBottomInsetPx,cmmCssLength,cmmSetVar}=window.MkCMM||{};const BUILD="mk-course-mastery-map-v35-account-history-reader";if(window.__mkCourseMasteryMapBuild===BUILD){try{if(window.MkCourseMasteryMap&&typeof window.MkCourseMasteryMap.refresh==="function"){window.MkCourseMasteryMap.refresh();}}catch(_){}
+const{STYLE_ID,PANEL_ID,TOGGLE_ID,STORAGE_KEY,RECENT_WINDOW_MS,DAILY_HISTORY_KEY,DAILY_HISTORY_LIMIT,AIQ_SESSIONS_KEY,CMM_HOT_API_BASE,CMM_DIAGNOSTICS_ITEM_ID,CMM_DIAGNOSTICS_PRICE,CMM_DIAGNOSTICS_NAME,q,escapeHtml,csrSimpleHash,getSiteRootUrl,normLoc,safeNum,asStringList,cleanTitle,clamp,clamp01,cmmClamp,cmmPx,csrConsumeGuestAction,cmmConsumeGuestAction,unitNounFromType,lectureInfoFromTags,readAllMastery,cmmMasteryContext,cmmMasteryReadError,cmmComparableMasteryLocation,cmmEnsureMasteryReader,isExplicitRating,masteryPctFromLevel,historyEntryKind,masterySourceName,isAiMasterySource,lectureRiskLabel,lectureRiskToneByScore,cmmVisitorId,publicScoreAvgLabel,todayKeyLocal,shortDateLabel,mapSvg,chevronSvg,cmmIsTouchLikeViewport,cmmPageScrollXNow,cmmPageScrollYNow,cmmIsIOSWebKitMobile,cmmReadSafeAreaBottomInsetPx,cmmCssLength,cmmSetVar}=window.MkCMM||{};const BUILD="mk-course-mastery-map-v36-course-and-quiz-evidence";if(window.__mkCourseMasteryMapBuild===BUILD){try{if(window.MkCourseMasteryMap&&typeof window.MkCourseMasteryMap.refresh==="function"){window.MkCourseMasteryMap.refresh();}}catch(_){}
 return;}
 window.__mkCourseMasteryMapBuild=BUILD;const state={open:false,filters:{weak:false,unvisited:false},expandedLecture:new Set(),data:null,loadPromise:null,seq:0,refreshTimer:0,selectedConceptLoc:'',scrollToLecture:'',scrollToFocus:false,autoExpandedOnce:false,preservedScrollTop:null,prereqReadySeq:0,prereqReadyCache:new Map(),};function currentRelPath(){try{const root=new URL(getSiteRootUrl());const rootPath=root.pathname.endsWith("/")?root.pathname:root.pathname+"/";let p=String(window.location.pathname||"");if(p.startsWith(rootPath))p=p.slice(rootPath.length);return p.replace(/^\/+/,"");}catch(_){return String(window.location.pathname||"").replace(/^\/+/,"");}}
 function currentCourseScope(){const rel=currentRelPath();const segs=rel.split("/").filter(Boolean);if(segs.length>=3&&/^index\.html?$/i.test(segs[segs.length-1]))segs.pop();if(segs.length>=2){return{yearSeg:segs[0],courseSeg:segs[1]};}
@@ -23,10 +23,10 @@ function isDirectMasterySource(source){const s=String(source||'').toLowerCase().
 function directMasteryUpdateCount(rec){const hist=rec&&Array.isArray(rec.history)?rec.history:[];let count=0;hist.forEach((item)=>{if(historyEntryKind(item)!=='mastery')return;if(!isDirectMasterySource(masterySourceName(item)))return;count+=1;});return count;}
 function cmmQuizTimestamp(value){if(value==null||value===''||!['number','string'].includes(typeof value))return 0;const number=Number(value);if(Number.isFinite(number)&&number>0)return number;if(typeof value==='string'&&/^\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:?\d{2}))?$/.test(value)){const parsed=Date.parse(value);if(Number.isFinite(parsed)&&parsed>0)return parsed;}
 return 0;}
-function cmmQuizSessionInfo(session){const invalid={ok:false};if(!session||typeof session!=='object'||Array.isArray(session))return invalid;const ids=['result_id','resultId','completionId','completion_id','session_id','sessionId','id'];if(ids.some(key=>session[key]!=null&&!['string','number'].includes(typeof session[key])))return invalid;if(session.status!=null&&typeof session.status!=='string'||session.completed!=null&&typeof session.completed!=='boolean')return invalid;if(session.questions!=null&&(!Array.isArray(session.questions)||session.questions.some(question=>!question||typeof question!=='object'||Array.isArray(question))))return invalid;const times=['completed_at','completedAt','result_at','resultAt','updatedAt','updated_at','finishedAt','finished_at','ts','started_at','startedAt'];const numeric=value=>(typeof value==='number'||typeof value==='string'&&value.trim()!=='')&&Number.isFinite(Number(value));if(times.some(key=>session[key]!=null&&session[key]!==''&&!(numeric(session[key])&&Number(session[key])===0)&&!cmmQuizTimestamp(session[key])))return invalid;if(!times.some(key=>cmmQuizTimestamp(session[key])))return invalid;const hasId=ids.some(key=>session[key]!=null&&String(session[key]).trim());const status=String(session.status||'').toLowerCase();const unfinished=session.completed===false||session.resultProduced===false||status&&status!=='completed'&&status!=='complete';const hasResult=hasId||session.completed===true||status==='completed'||status==='complete'||!!(Array.isArray(session.questions)&&session.questions.length&&numeric(session.correct_count));return{ok:unfinished?hasId:hasResult};}
+function cmmQuizSessionInfo(session){const invalid={ok:false};if(!session||typeof session!=='object'||Array.isArray(session))return invalid;const ids=['result_id','resultId','completionId','completion_id','session_id','sessionId','id'];if(ids.some(key=>session[key]!=null&&!['string','number'].includes(typeof session[key])))return invalid;if(session.status!=null&&typeof session.status!=='string'||session.completed!=null&&typeof session.completed!=='boolean')return invalid;if(session.questions!=null&&(!Array.isArray(session.questions)||session.questions.some(question=>!question||typeof question!=='object'||Array.isArray(question))))return invalid;const times=['completed_at','completedAt','result_at','resultAt','updatedAt','updated_at','finishedAt','finished_at','ts','started_at','startedAt'];const numeric=value=>(typeof value==='number'||typeof value==='string'&&value.trim()!=='')&&Number.isFinite(Number(value));if(times.some(key=>session[key]!=null&&session[key]!==''&&!(numeric(session[key])&&Number(session[key])===0)&&!cmmQuizTimestamp(session[key])))return invalid;if(!times.some(key=>cmmQuizTimestamp(session[key])))return{ok:false,shapeValid:true};const hasId=ids.some(key=>session[key]!=null&&String(session[key]).trim());const status=String(session.status||'').toLowerCase();const unfinished=session.completed===false||session.resultProduced===false||status&&status!=='completed'&&status!=='complete';const hasResult=hasId||session.completed===true||status==='completed'||status==='complete'||!!(Array.isArray(session.questions)&&session.questions.length&&numeric(session.correct_count));return{ok:unfinished?hasId:hasResult,shapeValid:true};}
 function cmmIsCompletedQuizSession(session){if(!session||typeof session!=='object'||Array.isArray(session))return false;const status=String(session.status||'').toLowerCase();if(session.completed===false||session.resultProduced===false||status&&status!=='completed'&&status!=='complete')return false;const completionTime=['completed_at','completedAt','result_at','resultAt','finishedAt','finished_at'].some(key=>cmmQuizTimestamp(session[key]));const resultIdentity=['result_id','resultId','completionId','completion_id'].some(key=>session[key]!=null&&String(session[key]).trim());if(cmmQuizSessionInfo(session).ok&&(session.completed===true||status==='completed'||status==='complete'||completionTime||resultIdentity))return true;if(session.completed_at||session.suggested_mastery!=null)return true;return Array.isArray(session.questions)&&session.questions.length>0&&session.correct_count!=null;}
-function readAiQuizCountsByConcept(){let raw='';try{raw=localStorage.getItem(AIQ_SESSIONS_KEY)||'';}catch(_){raw='';}
-if(__cmmAiQuizCountsByConcept&&raw===__cmmAiQuizCountsRaw)return __cmmAiQuizCountsByConcept;const map=new Map(),seenByConcept=new Map();try{const parsed=raw?JSON.parse(raw):{};if(parsed&&typeof parsed==='object'&&!Array.isArray(parsed)){Object.entries(parsed).forEach(([conceptId,sessions])=>{const key=cmmComparableMasteryLocation(conceptId);if(!key)return;const arr=Array.isArray(sessions)?sessions:cmmQuizSessionInfo(sessions).ok?[sessions]:[];const seen=seenByConcept.get(key)||new Set();seenByConcept.set(key,seen);arr.forEach(session=>{if(!cmmIsCompletedQuizSession(session))return;const resultId=['result_id','resultId','completionId','completion_id'].map(field=>session[field]).find(value=>value!=null&&String(value).trim());const attemptId=['session_id','sessionId','id'].map(field=>session[field]).find(value=>value!=null&&String(value).trim());const identity=resultId!=null?`result:${resultId}`:attemptId!=null?`attempt:${attemptId}`:null;if(identity&&seen.has(identity))return;if(identity)seen.add(identity);map.set(key,(map.get(key)||0)+1);});});}}catch(_){}
+function readAiQuizCountsByConcept(){if(window.__mkExamMode)return new Map();let raw=null;try{raw=localStorage.getItem(AIQ_SESSIONS_KEY);}catch(_){throw cmmMasteryReadError();}
+if(__cmmAiQuizCountsByConcept&&raw===__cmmAiQuizCountsRaw)return __cmmAiQuizCountsByConcept;const map=new Map(),seenByConcept=new Map();try{const parsed=raw==null?{}:JSON.parse(raw);if(!parsed||typeof parsed!=='object'||Array.isArray(parsed))throw cmmMasteryReadError();{Object.entries(parsed).forEach(([conceptId,sessions])=>{const key=cmmComparableMasteryLocation(conceptId);const array=Array.isArray(sessions);const arr=array?sessions:[sessions];if(!arr.every(session=>{const info=cmmQuizSessionInfo(session);return array?info.shapeValid:info.ok;}))throw cmmMasteryReadError();if(!key)return;const seen=seenByConcept.get(key)||new Set();seenByConcept.set(key,seen);arr.forEach(session=>{if(!cmmIsCompletedQuizSession(session))return;const resultId=['result_id','resultId','completionId','completion_id'].map(field=>session[field]).find(value=>value!=null&&String(value).trim());const attemptId=['session_id','sessionId','id'].map(field=>session[field]).find(value=>value!=null&&String(value).trim());const identity=resultId!=null?`result:${resultId}`:attemptId!=null?`attempt:${attemptId}`:null;if(identity&&seen.has(identity))return;if(identity)seen.add(identity);map.set(key,(map.get(key)||0)+1);});});}}catch(_){throw cmmMasteryReadError();}
 __cmmAiQuizCountsRaw=raw;__cmmAiQuizCountsByConcept=map;return map;}
 function aiQuizCountForConceptLoc(loc){const key=cmmComparableMasteryLocation(loc);if(!key)return 0;const map=readAiQuizCountsByConcept();if(map.has(key))return safeNum(map.get(key));return 0;}
 function recencyLabel(ts){const n=safeNum(ts);if(!n)return"No activity yet";const diff=Date.now()-n;const day=24*60*60*1000;if(diff<60*60*1000)return"Active today";if(diff<day)return"Touched today";if(diff<2*day)return"Touched yesterday";const days=Math.floor(diff/day);if(days<7)return`Touched ${days} days ago`;if(days<30)return`Touched ${Math.floor(days / 7)} weeks ago`;return`Touched ${Math.floor(days / 30)} months ago`;}
@@ -210,9 +210,10 @@ function buildHeatmapRow(lecture,diagnosis){const diag=(diagnosis&&diagnosis.lec
           <span class="cmm-row__meta">
             <span class="cmm-row__meta-line">${escapeHtml(`${lecture.weak}low-rated`)}</span>
             <span class="cmm-row__meta-line">${escapeHtml(`${lecture.total-lecture.rated}unrated`)}</span>
+            <span class="cmm-row__scroll-hint" hidden>Scroll tiles ↔</span>
           </span>
         </button>
-        <div class="cmm-row__tiles">
+        <div class="cmm-row__tiles" role="group" aria-label="${escapeHtml(lecture.label)} concept tiles">
           ${concepts.map((concept) => {
             const entry = diagnosis.byConcept.get(concept.location);
             const rec = concept.record;
@@ -224,6 +225,7 @@ class="cmm-tile ${levelClass(rec)} ${isActive ? 'is-active' : ''}"
 data-cmm-select-concept="${escapeHtml(concept.location)}"
 title="${escapeHtml(tileTitle)}"
 aria-label="${escapeHtml(tileTitle)}"
+aria-pressed="${isActive ? 'true' : 'false'}"
 style="${tileStyle(entry)}"><span class="cmm-tile__txt">${escapeHtml(levelShort(rec))}</span></button>`;
           }).join('')}
         </div>
@@ -238,7 +240,7 @@ function buildVisualStage(summary,diagnosis){const selected=ensureSelectedConcep
           <div class="cmm-stagehead">
             <div>
               <div class="cmm-sidecard__kicker">${escapeHtml(unitNoun)} concept tiles</div>
-              <div class="cmm-stagehead__sub">Each square is one concept. Click a tile to inspect it.</div>
+              <div class="cmm-stagehead__sub">Each square is one concept. Click a tile to inspect it. Concepts covered in several units are listed once, under the first unit named in their tags for this course.</div>
             </div>
             <div class="cmm-legend">
               <span class="cmm-legend__label">Low mastery readiness</span>
@@ -257,6 +259,8 @@ function buildVisualStage(summary,diagnosis){const selected=ensureSelectedConcep
         </aside>
       </div>
     `;}
+function cmmSyncTileScrollHints(panel){if(!panel)return;panel.querySelectorAll('.cmm-row').forEach(row=>{const tiles=row.querySelector('.cmm-row__tiles');const hint=row.querySelector('.cmm-row__scroll-hint');if(!tiles||!hint)return;const overflow=tiles.clientWidth>0&&tiles.scrollWidth>tiles.clientWidth+1;hint.hidden=!overflow;if(overflow)tiles.setAttribute('aria-description','Scroll horizontally to see more concepts.');else tiles.removeAttribute('aria-description');});}
+function cmmRevealFocusedTile(tile){if(!tile||!tile.classList.contains('cmm-tile'))return;const group=tile.closest('.cmm-row__tiles');if(!group||!(group.clientWidth>0)||group.scrollWidth<=group.clientWidth)return;const bounds=group.getBoundingClientRect();const target=tile.getBoundingClientRect();const left=bounds.left+(group.clientLeft||0);const right=left+group.clientWidth;const delta=target.left<left?target.left-left:target.right>right?target.right-right:0;if(delta)group.scrollLeft=Math.max(0,Math.min(group.scrollWidth-group.clientWidth,group.scrollLeft+delta));}
 function levelLabel(rec){if(!rec)return"Not visited";if(!rec.visited&&!isExplicitRating(rec))return"Not visited";if(!isExplicitRating(rec))return"Visited";if(rec.m===3)return"Mastered";if(rec.m===2)return"Clear";if(rec.m===1)return"Unclear";if(rec.m===0)return"Unknown";return rec.visited?"Visited":"Not visited";}
 function levelClass(rec){if(!rec)return"is-none";if(!rec.visited&&!isExplicitRating(rec))return"is-none";if(!isExplicitRating(rec))return"is-visit";if(rec.m===3)return"is-m3";if(rec.m===2)return"is-m2";if(rec.m===1)return"is-m1";if(rec.m===0)return"is-m0";return"is-none";}
 function matchesFilters(concept){const rec=concept.record;const wantWeak=!!state.filters.weak;const wantUnvisited=!!state.filters.unvisited;if(!wantWeak&&!wantUnvisited)return true;const isWeak=!!(rec&&isExplicitRating(rec)&&(rec.m===0||rec.m===1));const isUnvisited=!rec||!rec.visited;if(wantWeak&&wantUnvisited)return isWeak||isUnvisited;if(wantWeak)return isWeak;if(wantUnvisited)return isUnvisited;return true;}
@@ -270,7 +274,7 @@ function cmmIOSCompleteToolbarOcclusionPx(){if(!cmmIsTouchLikeViewport()||!cmmIs
 const safe=Math.max(0,cmmReadSafeAreaBottomInsetPx());const screenGap=screenH>0?Math.max(0,Math.round(screenH-layoutH-safe)):0;const raw=Math.max(visualGap,screenGap);if(raw<56)return 0;return cmmClamp(raw,64,260);}catch(_){return 0;}}
 function cmmUpdateViewportMetrics(){try{const modal=document.getElementById('mk-course-mastery-map-modal');if(!state.open||!modal||modal.hidden)return;const setModalVar=(name,value)=>{if(modal.style.getPropertyValue(name)!==value)modal.style.setProperty(name,value);};const vv=window.visualViewport;const layoutW=Math.max(1,Number(window.innerWidth)||Number(document.documentElement&&document.documentElement.clientWidth)||1);const layoutH=Math.max(1,Number(window.innerHeight)||Number(document.documentElement&&document.documentElement.clientHeight)||1);const vvLeft=vv?(Number(vv.offsetLeft)||0):0;const vvTop=vv?(Number(vv.offsetTop)||0):0;const vvW=vv&&Number(vv.width)?Number(vv.width):layoutW;const vvH=vv&&Number(vv.height)?Number(vv.height):layoutH;const vvBottom=vvTop+vvH;if(vvH>0)setModalVar('--cmm-vh',cmmPx(vvH));if(!cmmIsTouchLikeViewport()){setModalVar('--cmm-mobile-top-pad','0px');setModalVar('--cmm-mobile-bottom-pad','0px');['--cmm-doc-left','--cmm-doc-top','--cmm-doc-width','--cmm-doc-height','--cmm-visible-height','--cmm-ios-hidden-tail'].forEach((name)=>{try{modal.style.removeProperty(name);}catch(_){}});const dialog=q('.cmm-modal__dialog',modal);if(dialog)dialog.classList.remove('cmm-ios-bottom-continued');return;}
 const safeStrip=Math.max(cmmReadSafeAreaBottomInsetPx(),vv?Math.max(0,Math.round(layoutH-vvBottom)):0,cmmIOSCompleteToolbarOcclusionPx());const visibleBottom=vv?Math.max(0,vvBottom):layoutH;const layoutBottom=Math.max(layoutH,visibleBottom)+Math.max(0,safeStrip);const docLeft=cmmPageScrollXNow()+vvLeft;const docTop=cmmPageScrollYNow()+vvTop;const docHeight=Math.max(80,Math.ceil(layoutBottom-vvTop));const visibleHeight=Math.max(80,Math.ceil(vvH||layoutH));const hiddenTail=Math.max(0,Math.ceil(docHeight-visibleHeight));const vars={'--cmm-doc-left':cmmPx(docLeft),'--cmm-doc-top':cmmPx(docTop),'--cmm-doc-width':cmmPx(vvW||layoutW),'--cmm-doc-height':cmmPx(docHeight),'--cmm-visible-height':cmmPx(visibleHeight),'--cmm-ios-hidden-tail':cmmPx(hiddenTail),'--cmm-mobile-top-pad':'0px','--cmm-mobile-bottom-pad':'0px',};Object.keys(vars).forEach((name)=>{try{setModalVar(name,vars[name]);}catch(_){}});const dialog=q('.cmm-modal__dialog',modal);if(dialog)dialog.classList.toggle('cmm-ios-bottom-continued',hiddenTail>12||safeStrip>12);}catch(_){}}
-function cmmBindViewportMetricsOnce(){if(window.__cmmViewportMetricsBoundV22)return;window.__cmmViewportMetricsBoundV22=true;const update=()=>cmmUpdateViewportMetrics();try{window.addEventListener('resize',update,{passive:true});}catch(_){window.addEventListener('resize',update);}
+function cmmBindViewportMetricsOnce(){if(window.__cmmViewportMetricsBoundV22)return;window.__cmmViewportMetricsBoundV22=true;const update=event=>{cmmUpdateViewportMetrics();if(!event||event.type!=='scroll')cmmSyncTileScrollHints(document.getElementById(PANEL_ID));};try{window.addEventListener('resize',update,{passive:true});}catch(_){window.addEventListener('resize',update);}
 try{window.addEventListener('orientationchange',()=>window.setTimeout(update,80),{passive:true});}catch(_){window.addEventListener('orientationchange',()=>window.setTimeout(update,80));}
 try{if(window.visualViewport){window.visualViewport.addEventListener('resize',update,{passive:true});window.visualViewport.addEventListener('scroll',update,{passive:true});}}catch(_){}}
 function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();if(document.getElementById(STYLE_ID))return;const st=document.createElement('style');st.id=STYLE_ID;st.textContent=`
@@ -890,6 +894,8 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         display:block;
         white-space:nowrap;
       }
+      #${PANEL_ID} .cmm-row__scroll-hint{font-size:.62rem;line-height:1.2;margin-top:.2rem;}
+      #${PANEL_ID} .cmm-row__scroll-hint[hidden]{display:none !important;}
       #${PANEL_ID} .cmm-row__tiles{
         display:flex;
         flex-wrap:wrap;
@@ -2424,9 +2430,9 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
           min-width:0 !important;
           max-width:100% !important;
           display:grid !important;
-          grid-template-rows:repeat(2, 18px) !important;
+          grid-template-rows:repeat(2, 44px) !important;
           grid-auto-flow:column !important;
-          grid-auto-columns:18px !important;
+          grid-auto-columns:44px !important;
           justify-content:flex-start !important;
           align-content:center !important;
           align-items:center !important;
@@ -2435,22 +2441,24 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
           overflow-y:hidden !important;
           -webkit-overflow-scrolling:touch !important;
           overscroll-behavior-x:contain !important;
-          scrollbar-width:none !important;
+          scrollbar-width:thin !important;
           padding:2px 1px 3px !important;
         }
         #${PANEL_ID} .cmm-row__tiles::-webkit-scrollbar{
-          display:none !important;
+          display:block !important;
+          height:6px;
         }
+        #${PANEL_ID} .cmm-row__tiles::-webkit-scrollbar-thumb{background:var(--md-default-fg-color--light, #777);border-radius:4px;}
         #${PANEL_ID} .cmm-tile{
-          width:18px !important;
-          height:18px !important;
-          min-width:18px !important;
-          min-height:18px !important;
-          flex:0 0 18px !important;
+          width:44px !important;
+          height:44px !important;
+          min-width:44px !important;
+          min-height:44px !important;
+          flex:0 0 44px !important;
           border-radius:7px !important;
         }
         #${PANEL_ID} .cmm-tile__txt{
-          font-size:.54rem !important;
+          font-size:.68rem !important;
         }
         #${PANEL_ID} .cmm-row__risk{
           grid-column:3 !important;
@@ -2816,7 +2824,7 @@ function renderPanelShell(panel){panel.innerHTML=`
         <div class="cmm-loading">Loading course map…</div>
       </div>
     `;}
-async function renderMap(anchor,panel){if(!anchor||!panel)return;const seq=++state.seq;const context=cmmMasteryContext();const route=currentRelPath();const focused=document.activeElement;const focusAttr=panel.contains(focused)&&['data-cmm-filter','data-cmm-lecture-toggle','data-cmm-select-concept','data-cmm-jump-lecture','data-cmm-course-readiness-info'].find(attr=>focused.hasAttribute(attr));const focusValue=focusAttr?focused.getAttribute(focusAttr):null;ensureStyles();renderPanelShell(panel);panel.hidden=!state.open;try{const data=await loadCourseMapData(anchor);if(seq!==state.seq)return;if(context!==cmmMasteryContext()||route!==currentRelPath())throw cmmMasteryReadError();const summary=data.summary;const totals=summary.totals;const diagnosis=buildDiagnosis(summary);diagnosis.dailyHistory=cmmRecordDailySnapshot(data.key,summary,diagnosis);const selected=ensureSelectedConcept(summary,diagnosis);const allLecturesHtml=(summary.lectures||[]).map(buildLectureCard).join('');const panelBody=`
+async function renderMap(anchor,panel){if(!anchor||!panel)return;const seq=++state.seq;const context=cmmMasteryContext();const route=currentRelPath();const focused=document.activeElement;const focusAttr=panel.contains(focused)&&['data-cmm-filter','data-cmm-lecture-toggle','data-cmm-select-concept','data-cmm-jump-lecture','data-cmm-course-readiness-info'].find(attr=>focused.hasAttribute(attr));const focusValue=focusAttr?focused.getAttribute(focusAttr):null;ensureStyles();renderPanelShell(panel);panel.hidden=!state.open;try{const data=await loadCourseMapData(anchor);if(seq!==state.seq)return;if(context!==cmmMasteryContext()||route!==currentRelPath())throw cmmMasteryReadError();const summary=data.summary;const totals=summary.totals;readAiQuizCountsByConcept();const diagnosis=buildDiagnosis(summary);diagnosis.dailyHistory=cmmRecordDailySnapshot(data.key,summary,diagnosis);const selected=ensureSelectedConcept(summary,diagnosis);const allLecturesHtml=(summary.lectures||[]).map(buildLectureCard).join('');const panelBody=`
         <div class="cmm-toprow">
           <div class="cmm-metrics">
             ${metricValueCard('Visited concepts', `${totals.visited}/${totals.total}`, `${Math.round(totals.total ? (totals.visited /totals.total)*100:0)}%visited`)}
@@ -2826,14 +2834,15 @@ async function renderMap(anchor,panel){if(!anchor||!panel)return;const seq=++sta
         </div>
         ${buildVisualStage(summary, diagnosis, selected)}
         <div class="cmm-filters">
-          <button type="button" class="cmm-filter ${state.filters.weak ? 'is-on' : ''}" data-cmm-filter="weak">Low mastery readiness</button>
-          <button type="button" class="cmm-filter ${state.filters.unvisited ? 'is-on' : ''}" data-cmm-filter="unvisited">Unvisited</button>
+          <button type="button" class="cmm-filter ${state.filters.weak ? 'is-on' : ''}" data-cmm-filter="weak" aria-pressed="${state.filters.weak ? 'true' : 'false'}">Low mastery readiness</button>
+          <button type="button" class="cmm-filter ${state.filters.unvisited ? 'is-on' : ''}" data-cmm-filter="unvisited" aria-pressed="${state.filters.unvisited ? 'true' : 'false'}">Unvisited</button>
         </div>
         <div class="cmm-lectures">${allLecturesHtml || '<div class="cmm-error">No concept pages were found for this course yet.</div>'}</div>
       `;panel.innerHTML=`
         ${buildCourseDiagnosticHead(diagnosis.courseReadinessAvg)}
         <div class="cmm-body">${panelBody}</div>
-      `;if(focusAttr&&state.open&&document.activeElement===document.body){const restored=Array.from(panel.querySelectorAll(`[${focusAttr}]`)).find(node=>node.getAttribute(focusAttr)===focusValue);if(restored){try{restored.focus({preventScroll:true});}catch(_){}}}
+      `;cmmSyncTileScrollHints(panel);if(focusAttr&&state.open&&document.activeElement===document.body){const restored=Array.from(panel.querySelectorAll(`[${focusAttr}]`)).find(node=>node.getAttribute(focusAttr)===focusValue);if(restored){try{restored.focus({preventScroll:true});}catch(_){}
+cmmRevealFocusedTile(restored);}}
 syncSelectedPrereqReadiness(panel,selected);if(panel.dataset.cmmBound!=='1'){panel.dataset.cmmBound='1';panel.addEventListener('click',(e)=>{const readinessInfo=e.target&&e.target.closest?e.target.closest('[data-cmm-course-readiness-info]'):null;if(readinessInfo){e.preventDefault();e.stopPropagation();const wrap=readinessInfo.closest('.cmm-headreadiness-wrap');const help=wrap&&wrap.querySelector?wrap.querySelector('.cmm-readiness-help'):null;if(help){if(help.hasAttribute('hidden'))help.removeAttribute('hidden');else help.setAttribute('hidden','');}
 return;}
 if(e.target&&e.target.closest&&!e.target.closest('.cmm-headreadiness-wrap')){panel.querySelectorAll('.cmm-readiness-help').forEach((el)=>el.setAttribute('hidden',''));}
