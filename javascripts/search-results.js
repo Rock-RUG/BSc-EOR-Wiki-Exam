@@ -722,7 +722,7 @@ const filteredHits=srFilteredHits(state.hits);const total=filteredHits.length;co
         <button type="button" class="md-button" id="cr-all" aria-label="Select all" title="Select every filtered result across all pages">All</button>
         <button type="button" class="md-button" id="cr-none" aria-label="Select none" title="Deselect every filtered result across all pages">None</button>
       </div>
-      ${window.__mkExamMode ? '' : '<button type="button" class="md-button csr-study-set-create" data-study-set-create>Save as set</button>'}
+      ${window.__mkExamMode ? '' : '<button type="button" class="md-button csr-study-set-create" data-study-set-create aria-controls="study-sets-workspace" aria-expanded="false">Save as set</button>'}
       <button type="button" class="csr-revision-toggle" data-sr-toggle="revision" aria-controls="csr-revision-panel" aria-expanded="${!!state.revisionOptionsOpen}">Revision <span class="csr-revision-mode" data-sr-revision-mode></span></button>
     <button type="button" class="md-button md-button--primary cr-dice-btn csr-action-start" id="cr-random">
       <span class="cr-dice__ico" aria-hidden="true">${diceSvg(readLastFace())}</span>
