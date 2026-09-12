@@ -114,6 +114,8 @@
     current = null;
     sequence += 1;
     ui.controller.abort();
+    ui.arenaDispose?.();
+    if (ui.arenaReady) window.removeEventListener("mk-arena-ready", ui.arenaReady);
     ui.detail?.close(); ui.detail?.remove();
     ui.dialog.close(); ui.dialog.remove();
     if (ui.opener?.isConnected) ui.opener.focus({ preventScroll: true });
@@ -131,6 +133,9 @@
   function render(ui) {
     if (!live(ui)) return;
     const data = ui.data;
+    const arenaOnly = ui.kind === "arena";
+    if (ui.arenaHost) ui.arenaHost.hidden = !["all", "arena"].includes(ui.kind);
+    for (const selector of [".rw-filters", ".rw-results-count", ".rw-grid"]) ui.dialog.querySelector(selector).hidden = arenaOnly;
     const all = data.items.concat(data.honors.map(honorItem));
     const counts = { achievement: data.items.filter(earned).length, honor: data.honors.length };
     ui.dialog.querySelector(".rw-counts").innerHTML = Object.entries(counts).map(([kind, count]) => `<div><strong>${number(count)}</strong><span>${kind === "achievement" ? "Personal achievements" : "Monthly honours"}</span></div>`).join("");
@@ -242,10 +247,24 @@
     dialog.setAttribute("role", "dialog");
     dialog.setAttribute("aria-modal", "true");
     dialog.setAttribute("aria-labelledby", "rw-title");
-    dialog.innerHTML = `<div class="rw-shell"><header class="rw-header"><div><span class="rw-eyebrow">The learning collection</span><h1 id="rw-title">Your learning collection</h1></div><button type="button" class="rw-icon-button" data-close aria-label="Close collection">×</button></header><div class="rw-scroll"><section class="rw-hero"><div><span class="rw-eyebrow">A little progress. A lasting keepsake.</span><h2>Your learning,<br>collected.</h2><p>Personal milestones at your own pace.<br>Monthly honours for the leaders of each month.</p><div class="rw-counts"></div></div><div class="rw-hero-art" aria-hidden="true">${medal({ kind: "achievement", rarity: "epic", icon: "compass", earned: true })}${medal({ kind: "honor", rarity: "legendary", earned: true })}${medal({ rarity: "rare", icon: "book", earned: true })}</div></section><div class="rw-status-row"><p class="rw-status" role="status" aria-live="polite"></p><button type="button" class="rw-button" data-refresh>↻ Refresh</button></div><section class="rw-showcase" aria-label="Your profile showcase"><div class="rw-section-heading"><h2>The showcase</h2><span>Three places. Your favourite milestones.</span></div><div class="rw-showcase-items"></div></section><section class="rw-next" aria-label="Suggested next reward" hidden></section><section class="rw-catalog" aria-label="Reward collection"><div class="rw-collection-tabs" role="group" aria-label="Reward type"><button type="button" data-kind="all" aria-pressed="true">Everything</button><button type="button" data-kind="achievement" aria-pressed="false">Personal achievements</button><button type="button" data-kind="honor" aria-pressed="false">Monthly honours</button></div><div class="rw-filters"><label><span>Search collection</span><input type="search" placeholder="Find a reward…" data-search></label><label><span>Collection</span><select data-filter="category"><option value="all">Every collection</option></select></label><label><span>Progress</span><select data-filter="filter"><option value="all">All progress</option><option value="earned">Collected</option><option value="locked">Still to discover</option></select></label><label><span>Sort</span><select data-filter="sort"><option value="next">Closest first</option><option value="recent">Recently collected</option><option value="name">Name A–Z</option></select></label></div><p class="rw-results-count" aria-live="polite"></p><div class="rw-grid"></div></section><details class="rw-rules"><summary>How the collection works</summary><p>Personal achievements celebrate your learning milestones, from first steps to bigger challenges. They share one collection, with rarity ranging from common to legendary. Earn them at your own pace, without competing for a rank.</p><p>Monthly honours are competitive awards for the leaders of completed UTC calendar months, with at least 48 hours for cloud sync and shared trophies for ties. A month stays open until all synced results are checked; once awarded, its honours are permanent. Historical awards can also be reconstructed from retained records; their details identify them as historical.</p><p>Your cloud learning unlocks rewards automatically. Earned rewards are kept even if you later revise your self-ratings. Public displays respect the privacy of the learning behind each reward. Older activity only counts where reliable records exist; missing history never becomes an invented award.</p><p>There is no deadline on personal achievements and no penalty for taking a break. Wiki activity and self-ratings are learning records, not academic certifications. These rewards do not add XP or spendable EORbits.</p></details></div></div>`;
+    dialog.innerHTML = `<div class="rw-shell"><header class="rw-header"><div><span class="rw-eyebrow">The learning collection</span><h1 id="rw-title">Your learning collection</h1></div><button type="button" class="rw-icon-button" data-close aria-label="Close collection">×</button></header><div class="rw-scroll"><section class="rw-hero"><div><span class="rw-eyebrow">A little progress. A lasting keepsake.</span><h2>Your learning,<br>collected.</h2><p>Personal milestones at your own pace.<br>Monthly and Arena honours for friendly competition.</p><div class="rw-counts"></div></div><div class="rw-hero-art" aria-hidden="true">${medal({ kind: "achievement", rarity: "epic", icon: "compass", earned: true })}${medal({ kind: "honor", rarity: "legendary", earned: true })}${medal({ rarity: "rare", icon: "book", earned: true })}</div></section><div class="rw-status-row"><p class="rw-status" role="status" aria-live="polite"></p><button type="button" class="rw-button" data-refresh>↻ Refresh</button></div><section class="rw-showcase" aria-label="Your profile showcase"><div class="rw-section-heading"><h2>The showcase</h2><span>Three places. Your favourite milestones.</span></div><div class="rw-showcase-items"></div></section><section class="rw-next" aria-label="Suggested next reward" hidden></section><section class="rw-catalog" aria-label="Reward collection"><div class="rw-collection-tabs" role="group" aria-label="Reward type"><button type="button" data-kind="all" aria-pressed="true">Everything</button><button type="button" data-kind="achievement" aria-pressed="false">Personal achievements</button><button type="button" data-kind="honor" aria-pressed="false">Monthly honours</button></div><div class="rw-filters"><label><span>Search collection</span><input type="search" placeholder="Find a reward…" data-search></label><label><span>Collection</span><select data-filter="category"><option value="all">Every collection</option></select></label><label><span>Progress</span><select data-filter="filter"><option value="all">All progress</option><option value="earned">Collected</option><option value="locked">Still to discover</option></select></label><label><span>Sort</span><select data-filter="sort"><option value="next">Closest first</option><option value="recent">Recently collected</option><option value="name">Name A–Z</option></select></label></div><p class="rw-results-count" aria-live="polite"></p><div class="rw-grid"></div></section><details class="rw-rules"><summary>How the collection works</summary><p>Personal achievements celebrate your learning milestones, from first steps to bigger challenges. They share one collection, with rarity ranging from common to legendary. Earn them at your own pace, without competing for a rank.</p><p>Monthly honours are competitive awards for the leaders of completed UTC calendar months, with at least 48 hours for cloud sync and shared trophies for ties. A month stays open until all synced results are checked; once awarded, its honours are permanent. Historical awards can also be reconstructed from retained records; their details identify them as historical.</p><p>Your cloud learning unlocks rewards automatically. Earned rewards are kept even if you later revise your self-ratings. Public displays respect the privacy of the learning behind each reward. Older activity only counts where reliable records exist; missing history never becomes an invented award.</p><p>There is no deadline on personal achievements and no penalty for taking a break. Wiki activity and self-ratings are learning records, not academic certifications. These rewards do not add XP or spendable EORbits.</p></details></div></div>`;
     const ui = { dialog, account: key(), opener: document.activeElement, controller: new AbortController(), generation: 0, data: normalise({}), kind: "all", category: "all", filter: "all", sort: "next", query: "", saving: false };
     current = ui; sequence += 1;
     document.body.appendChild(dialog);
+    ui.arenaReady = () => {
+      if (!live(ui) || ui.arenaHost || !window.MkArena?.mountCollection) return;
+      const tab = document.createElement("button");
+      tab.type = "button"; tab.dataset.kind = "arena"; tab.setAttribute("aria-pressed", "false"); tab.textContent = "Arena honours";
+      dialog.querySelector(".rw-collection-tabs").appendChild(tab);
+      const host = document.createElement("section"); host.className = "rw-arena-collection";
+      host.setAttribute("aria-label", "Arena competition honours");
+      dialog.querySelector(".rw-catalog").appendChild(host); ui.arenaHost = host;
+      const dispose = window.MkArena.mountCollection(host);
+      if (typeof dispose === "function") ui.arenaDispose = dispose;
+      render(ui);
+    };
+    window.addEventListener("mk-arena-ready", ui.arenaReady);
+    ui.arenaReady();
     dialog.querySelector("[data-close]").onclick = close;
     dialog.addEventListener("cancel", event => { event.preventDefault(); close(); });
     dialog.querySelector("[data-refresh]").onclick = () => { if (!ui.saving) refresh(ui); };
@@ -262,6 +281,7 @@
         dialog.querySelector('[data-filter="filter"]').value = "all";
         dialog.querySelector('[data-search]').value = "";
         render(ui);
+        if (ui.kind === "arena") ui.arenaHost?.scrollIntoView?.({ block: "start" });
       }
     });
     dialog.querySelector("[data-search]").addEventListener("input", event => { ui.query = event.target.value; render(ui); });
