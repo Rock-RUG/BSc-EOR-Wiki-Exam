@@ -8457,7 +8457,7 @@ function ensureStyle(){try{if(document.getElementById(STYLE_ID))return;const st=
   }
 }
 `;(document.head||document.documentElement).appendChild(st);}catch(_){}}
-function restoreDefaultFogOnce(){try{const marker="lp_map_fog_free_default_restored_v72";if(localStorage.getItem(marker)==="1")return;if(localStorage.getItem(FOG_KEY)==="0")localStorage.setItem(FOG_KEY,"1");localStorage.setItem(marker,"1");}catch(_){}}
+function restoreDefaultFogOnce(){try{const marker="lp_map_fog_free_default_restored_v72";if(localStorage.getItem(marker)==="1")return;localStorage.setItem(marker,"1");}catch(_){}}
 function syncOpenMap(){try{ensureStyle();const look=backdropForViewport();for(const id of MAP_IDS){const modal=document.getElementById(id);if(!modal||!modal.classList||!modal.classList.contains("lp-open"))continue;modal.style.setProperty("background",look.bg,"important");modal.style.setProperty("-webkit-backdrop-filter",look.filter,"important");modal.style.setProperty("backdrop-filter",look.filter,"important");}}catch(_){}}
 function boot(){restoreDefaultFogOnce();ensureStyle();syncOpenMap();}
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true});else boot();try{window.addEventListener("pageshow",boot,{passive:true});}catch(_){}

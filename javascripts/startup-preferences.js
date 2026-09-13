@@ -183,6 +183,8 @@ function ensureStyle(){if(document.getElementById("mk-startup-preferences-style"
       .mk-startup-row input{width:.86rem;height:.86rem;margin:.08rem 0 0;accent-color:var(--md-accent-fg-color,#00bfa5)}
       .mk-startup-name{display:block;font-size:.68rem;font-weight:760;line-height:1.15}
       .mk-startup-detail{display:block;margin-top:.08rem;font-size:.56rem;line-height:1.2;color:var(--md-default-fg-color--light,#64748b)}
+      .mk-startup-lite-help{margin:.3rem .4rem;font-size:.58rem;line-height:1.45;color:var(--md-default-fg-color--light,#64748b)}
+      .mk-startup-lite-help summary{min-height:32px;cursor:pointer;padding-block:.25rem}
       .mk-startup-foot{display:flex;align-items:center;justify-content:flex-end;gap:.3rem;padding:.32rem .24rem .08rem;border-top:1px solid rgba(148,163,184,.18);margin-top:.18rem}
       .mk-startup-action{border:1px solid rgba(148,163,184,.42);border-radius:999px;background:transparent;color:inherit;cursor:pointer;font:inherit;font-size:.6rem;font-weight:720;padding:.2rem .43rem;white-space:nowrap}
       .mk-startup-action:hover,.mk-startup-action:focus-visible{border-color:var(--md-accent-fg-color,#00bfa5);outline:none;color:var(--md-accent-fg-color,#00bfa5)}
@@ -283,7 +285,8 @@ function renderMenu(effectivePrefs){const wrap=ensureMenu();const list=wrap.quer
             <span class="mk-startup-detail">${escapeHtml(detail)}</span>
           </span>
         </label>
-      `;}).join("");if(focusedFeature){const inputs=Array.from(list.querySelectorAll("input[data-feature]"));const target=inputs.find(input=>input.getAttribute("data-feature")===focusedFeature&&!input.disabled)||inputs.find(input=>!input.disabled);try{if(target)target.focus({preventScroll:true});}catch(_){}}
+      `;}).join("")+'<details class="mk-startup-lite-help"><summary>What does Lite change?</summary><p id="mk-startup-lite-explanation">Lite hides account and sync tools, concept maps, mastery, AI quizzes and sidebar sorting. Saving study sets and review queues requires Account / sync. Reading and basic search remain available. Reload applies the full change. Stored learning records are not deleted. To restore these tools, choose Defaults, then Reload.</p></details>';const lite=wrap.querySelector('[data-action="lite"]');if(lite){lite.setAttribute("aria-describedby","mk-startup-lite-explanation");lite.title="Hide optional learning tools without deleting their saved records. Defaults then Reload restores them.";}
+if(focusedFeature){const inputs=Array.from(list.querySelectorAll("input[data-feature]"));const target=inputs.find(input=>input.getAttribute("data-feature")===focusedFeature&&!input.disabled)||inputs.find(input=>!input.disabled);try{if(target)target.focus({preventScroll:true});}catch(_){}}
 paintStartupSaveStatus();}
 function saveFromMenu(reload){const wrap=ensureMenu();const next=readPrefs();wrap.querySelectorAll("input[data-feature]").forEach((input)=>{const key=input.getAttribute("data-feature");if(!FEATURES[key]||input.disabled)return;next[key]=!!input.checked;});if(next.mastery===false)next.aiQuiz=false;return commitStartupPrefs(next,reload);}
 function ensureBackdrop(){let bd=document.getElementById("mk-startup-backdrop");if(bd)return bd;bd=document.createElement("div");bd.id="mk-startup-backdrop";bd.className="mk-startup-backdrop";bd.hidden=true;const swallow=(event)=>{try{event.preventDefault();}catch(_){}

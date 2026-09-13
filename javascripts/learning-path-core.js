@@ -1,4 +1,4 @@
-(function(){"use strict";const LP_FOG_ENABLED_KEY="lp_map_fog_enabled_v1";function lpReadFogEnabled(){try{const raw=localStorage.getItem(LP_FOG_ENABLED_KEY);return raw!=="0";}catch(_){return true;}}
+(function(){"use strict";const LP_FOG_ENABLED_KEY="lp_map_fog_enabled_v1";function lpReadFogEnabled(){try{const raw=localStorage.getItem(LP_FOG_ENABLED_KEY);return raw==="1";}catch(_){return false;}}
 function lpWriteFogEnabled(v){try{localStorage.setItem(LP_FOG_ENABLED_KEY,v?"1":"0");}catch(_){}}
 function lpFogEnabled(){return lpReadFogEnabled();}
 function lpSetFogEnabled(v){const enabled=!!v;lpWriteFogEnabled(enabled);try{document.querySelectorAll('[data-lp-fog-switch], [data-lp-ms-fog-switch]').forEach((el)=>{try{el.checked=enabled;}catch(_){}});}catch(_){}

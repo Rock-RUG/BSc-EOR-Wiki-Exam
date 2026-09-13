@@ -39,6 +39,16 @@ function ensureRuntimeStyle(){if(document.getElementById(RUNTIME_STYLE_ID))retur
       #lp-map-modal .katex-html{
         overflow:visible !important;
       }
+      [data-mk-math-scroll="1"]::after{
+        content:"↔ Scroll equation · focus and use arrow keys";
+        display:block; position:sticky; left:0;
+        width:fit-content; max-width:100%; white-space:normal;
+        padding-top:.35rem; font:500 .65rem/1.4 var(--md-text-font-family, sans-serif);
+        opacity:.72;
+      }
+      [data-mk-math-scroll="1"]:focus-visible{
+        outline:2px solid var(--md-accent-fg-color, #2563eb); outline-offset:2px;
+      }
       .mk-search-suggest .katex .base,
       .md-search-result .katex .base,
       .csr-wrap .katex .base,
@@ -63,7 +73,7 @@ function badRoot(root){try{return!!(!root||!root.querySelectorAll||(root.nodeTyp
 function renderRootNow(root){if(badRoot(root))return Promise.resolve(true);if(!hasMathText(root))return Promise.resolve(true);return ensureKatex().then((ok)=>{if(!ok||typeof window.renderMathInElement!=="function")return false;try{window.renderMathInElement(root,{delimiters:[{left:"$$",right:"$$",display:true},{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false},{left:"$",right:"$",display:false}],throwOnError:false,strict:"ignore",trust:false,macros:Object.assign({},window.MK_KATEX_MACROS||{}),ignoredTags:["script","noscript","style","textarea","pre","code","option"],ignoredClasses:["katex","katex-display","katex-html","katex-mathml","arithmatex-prerendered","no-katex","mk-no-runtime-math","MathJax_Preview","MJX_LiveRegion","mjx-assistive-mml"]});try{root.classList&&root.classList.add("mk-katex-runtime-rendered");}catch(_){}
 return true;}catch(_){return false;}}).catch(()=>false);}
 function typesetPromise(elements){const roots=asArray(elements&&elements.length!==0?elements:document.body);return Promise.all(roots.map(renderRootNow)).then((results)=>{roots.forEach(updateMathScrollAccess);return results.every(result=>result!==false);}).catch(()=>false);}
-function updateMathScrollAccess(root){if(!root||!root.querySelectorAll)return;const blocks=Array.from(root.querySelectorAll('.arithmatex > .katex-display,.arithmatex-prerendered > .katex-display,.katex-display'));for(const block of blocks){const host=block.closest('.arithmatex')||block.closest('.arithmatex-prerendered')||block;const scrollable=host.scrollWidth>host.clientWidth+1;if(scrollable){if(!host.hasAttribute('tabindex')){host.tabIndex=0;host.setAttribute('data-mk-math-scroll','1');host.setAttribute('role','region');host.setAttribute('aria-label','Scrollable equation');}}else if(host.getAttribute('data-mk-math-scroll')==='1'){for(const attr of['tabindex','data-mk-math-scroll','role','aria-label'])host.removeAttribute(attr);}}}
+function updateMathScrollAccess(root){if(!root||!root.querySelectorAll)return;const blocks=Array.from(root.querySelectorAll('.arithmatex > .katex-display,.arithmatex-prerendered > .katex-display,.katex-display'));for(const block of blocks){const host=block.closest('.arithmatex')||block.closest('.arithmatex-prerendered')||block;const scrollable=host.scrollWidth>host.clientWidth+1;if(scrollable){if(!host.hasAttribute('tabindex')){host.tabIndex=0;host.setAttribute('data-mk-math-scroll','1');host.setAttribute('role','region');host.setAttribute('aria-label','Scrollable equation');host.setAttribute('aria-description','Scroll horizontally, or focus this equation and use the left and right arrow keys.');}}else if(host.getAttribute('data-mk-math-scroll')==='1'){for(const attr of['tabindex','data-mk-math-scroll','role','aria-label','aria-description'])host.removeAttribute(attr);}}}
 let mathScrollFrame=0;function scheduleMathScrollAccess(){if(mathScrollFrame)return;mathScrollFrame=requestAnimationFrame(()=>{mathScrollFrame=0;updateMathScrollAccess(document);});}
 window.addEventListener('resize',scheduleMathScrollAccess,{passive:true});window.addEventListener('hashchange',scheduleMathScrollAccess);window.addEventListener('DOMContentSwitch',scheduleMathScrollAccess);document.addEventListener('click',event=>{if(event.target&&event.target.closest&&event.target.closest('.rf-toggle,summary'))scheduleMathScrollAccess();});if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',scheduleMathScrollAccess,{once:true});else scheduleMathScrollAccess();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(scheduleMathScrollAccess);function pickRenderRoot(node){try{if(!node||node.nodeType!==1)return null;if(node.matches&&node.matches(DYNAMIC_ROOT_SELECTOR))return node;if(node.closest){const close=node.closest(DYNAMIC_ROOT_SELECTOR);if(close)return close;}
 return node;}catch(_){return node;}}
