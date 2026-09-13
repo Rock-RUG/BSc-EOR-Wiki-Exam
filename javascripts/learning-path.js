@@ -422,7 +422,10 @@ const linkCls=step.isTarget?'lp-gps-target-link lp-gps-node-link':'lp-gps-node-l
           <span class="lp-gps-cta-icon" aria-hidden="true">${lpGpsPlayButtonSvg()}</span>
           <span>${escapeHtml(startLabel)}</span>
         </button>
-        ${continueLabel ? `<button type="button"class="lp-gps-cta"${currentIndex<(state.path.length-1)?`data-lp-gps-next-index="${escapeHtml(String(currentIndex + 1))}"`:'data-lp-gps-clear="1"'}><span class="lp-gps-cta-icon"aria-hidden="true">${lpCompassButtonSvg()}</span><span>${escapeHtml(continueLabel)}</span></button>` : ''}
+        ${continueLabel ? `<button type="button" class="lp-gps-cta" ${currentIndex<(state.path.length-1)?`data-lp-gps-next-index="${escapeHtml(String(currentIndex + 1))}"`:'data-lp-gps-clear="1"'}>
+          <span class="lp-gps-cta-icon" aria-hidden="true">${lpCompassButtonSvg()}</span>
+          <span>${escapeHtml(continueLabel)}</span>
+        </button>` : ''}
         <button type="button" class="lp-gps-cta" data-lp-gps-reroll="1">
           <span class="lp-gps-cta-icon" aria-hidden="true">${lpGpsShuffleButtonSvg()}</span>
           <span>Another valid path</span>
@@ -433,12 +436,27 @@ const linkCls=step.isTarget?'lp-gps-target-link lp-gps-node-link':'lp-gps-node-l
         ${steps.map((step, idx) => {
           const courseLabel = __lpCourseLabelFromRelPath(step.loc) || '';
           const lectureNum = lpGpsLectureNumForLoc(step.loc);
-          const courseLecture = courseLabel ? (lectureNum ? `${courseLabel}· Lecture ${lectureNum}` : courseLabel) : (lectureNum ? `Lecture ${lectureNum}` : '');
+          const courseLecture = courseLabel ? (lectureNum ? `${courseLabel} · Lecture ${lectureNum}` : courseLabel) : (lectureNum ? `Lecture ${lectureNum}` : '');
           const masteryText = step.meta && step.meta.label ? step.meta.label : 'Not rated';
           const readinessRaw = lpMasteryPercentForLoc(step.loc);
           const readinessPct = Math.max(0, Math.min(100, Math.round(readinessRaw >= 0 ? readinessRaw : ((Number(step.meta && step.meta.ready) || 0) * 100))));
           const isCurrent = lpCanonKey(step.loc) === lpCanonKey(cur);
-          return `<div class="lp-gps-route-step is-${escapeHtml(String(step.status || 'solid'))} ${step.isTarget ? 'is-target-card' : ''} ${isCurrent ? 'is-current-page' : ''}"><div class="lp-gps-route-rail"aria-hidden="true"><div class="lp-gps-route-dot">${idx+1}</div>${idx<steps.length-1?'<div class="lp-gps-route-line"></div><div class="lp-gps-route-arrow">↓</div>':''}</div><div class="lp-gps-route-card"><div class="lp-gps-route-title">${renderRouteTitle(step,idx,isCurrent)}</div><div class="lp-gps-route-meta"><span class="lp-gps-meta-pill">${escapeHtml(masteryText)}</span><span class="lp-gps-meta-pill">Readiness ${escapeHtml(String(readinessPct))}%</span>${courseLecture?`<span class="lp-gps-meta-course">${escapeHtml(courseLecture)}</span>`:''}</div></div></div>`;
+          return `
+            <div class="lp-gps-route-step is-${escapeHtml(String(step.status||'solid'))} ${step.isTarget?'is-target-card':''} ${isCurrent?'is-current-page':''}">
+              <div class="lp-gps-route-rail" aria-hidden="true">
+                <div class="lp-gps-route-dot">${idx+1}</div>
+                ${idx<steps.length-1?'<div class="lp-gps-route-line"></div><div class="lp-gps-route-arrow">↓</div>':''}
+              </div>
+              <div class="lp-gps-route-card">
+                <div class="lp-gps-route-title">${renderRouteTitle(step,idx,isCurrent)}</div>
+                <div class="lp-gps-route-meta">
+                  <span class="lp-gps-meta-pill">${escapeHtml(masteryText)}</span>
+                  <span class="lp-gps-meta-pill">Readiness ${escapeHtml(String(readinessPct))}%</span>
+                  ${courseLecture?`<span class="lp-gps-meta-course">${escapeHtml(courseLecture)}</span>`:''}
+                </div>
+              </div>
+            </div>
+          `;
         }).join('')}
       </div>
     `;};return`

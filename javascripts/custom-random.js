@@ -95,7 +95,7 @@ function renderApp(container,state){const tokens=state.tokens;const unionCount=s
           <span class="cr-dice__txt">Start random</span>
         </button>
 
-        <label class="${crHasShopItem(CR_SELF_TEST_ITEM_ID) ? "" : "is-locked"}" title="${crHasShopItem(CR_SELF_TEST_ITEM_ID) ? "" : `Unlock ${CR_SELF_TEST_ITEM_TITLE}· ${CR_SELF_TEST_ITEM_PRICE}EORbits`}" style="display:inline-flex;align-items:center;gap:8px;opacity:.9">
+        <label class="${crHasShopItem(CR_SELF_TEST_ITEM_ID) ? "" : "is-locked"}" title="${crHasShopItem(CR_SELF_TEST_ITEM_ID) ? "" : `Unlock ${CR_SELF_TEST_ITEM_TITLE} · ${CR_SELF_TEST_ITEM_PRICE} EORbits`}" style="display:inline-flex;align-items:center;gap:8px;opacity:.9">
           <input id="cr-selftest" type="checkbox" ${selfTestChecked} />
           Self-test mode (fold sections)
         </label>
@@ -112,7 +112,7 @@ function renderApp(container,state){const tokens=state.tokens;const unionCount=s
                   </article>
                 `;}).join(""):`<div style="opacity:.7;padding:8px 0">No pages matched this token.</div>`;const toggleBtn=count>PER_TOKEN_PREVIEW?`<div style="margin-top:10px;display:flex;justify-content:flex-end">
                      <button data-toggle-token="${escapeHtml(token)}" class="md-button" style="padding:4px 10px">
-                       ${expanded ? "Collapse" : `Expand(+${hiddenCount})`}
+                       ${expanded ? "Collapse" : `Expand (+${hiddenCount})`}
                      </button>
                    </div>`:"";const tokenActions=count?`
               <button data-token-all="${escapeHtml(token)}" class="md-button" style="padding:4px 10px">Select all</button>

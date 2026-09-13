@@ -777,7 +777,22 @@ const totalCount=Number(data.totalAvailable)||0;const directCount=Number(data.di
         const contribution = weight * score / 100;
         const stateLabel = String(item && item.stateLabel || "Not rated");
         const href = typeof hrefForLoc === "function" ? hrefForLoc(item && item.loc || "") : "#";
-        return `<li class="mw-ready-calc-item"><a class="mw-ready-link"data-mk-no-hover-preview="1"href="${escapeHtml(href)}"title="Open prerequisite page"aria-label="Open prerequisite page: ${escapeHtml(rawTitle)}"><span class="mw-ready-link-title-row"><span class="mw-ready-link-title">${escapeHtml(rawTitle)}</span><span class="mw-ready-open"aria-hidden="true">↗</span></span><span class="mw-ready-link-meta">${escapeHtml(relation)}· ${mwReadinessFormatNumber(weight,0)}%influence</span></a><span class="mw-ready-state"title="${escapeHtml(stateLabel)}">${escapeHtml(stateLabel)}</span><span class="mw-ready-calc-line"aria-label="${escapeHtml(rawTitle)} contributes ${mwReadinessFormatNumber(contribution, 1)} percentage points"><span class="mw-ready-bar"aria-hidden="true"><span class="mw-ready-bar-fill"style="--mw-ready-score-width:${mwReadinessFormatNumber(score, 0)}%"></span></span><span class="mw-ready-calc-text">${mwReadinessFormatNumber(weight,0)}%× ${mwReadinessFormatNumber(score,0)}%=+${mwReadinessFormatNumber(contribution,1)}%</span></span></li>`;
+        return `
+          <li class="mw-ready-calc-item">
+            <a class="mw-ready-link" data-mk-no-hover-preview="1" href="${escapeHtml(href)}" title="Open prerequisite page" aria-label="Open prerequisite page: ${escapeHtml(rawTitle)}">
+              <span class="mw-ready-link-title-row">
+                <span class="mw-ready-link-title">${escapeHtml(rawTitle)}</span>
+                <span class="mw-ready-open" aria-hidden="true">↗</span>
+              </span>
+              <span class="mw-ready-link-meta">${escapeHtml(relation)} · ${mwReadinessFormatNumber(weight,0)}% influence</span>
+            </a>
+            <span class="mw-ready-state" title="${escapeHtml(stateLabel)}">${escapeHtml(stateLabel)}</span>
+            <span class="mw-ready-calc-line" aria-label="${escapeHtml(rawTitle)} contributes ${mwReadinessFormatNumber(contribution,1)} percentage points">
+              <span class="mw-ready-bar" aria-hidden="true"><span class="mw-ready-bar-fill" style="--mw-ready-score-width:${mwReadinessFormatNumber(score,0)}%"></span></span>
+              <span class="mw-ready-calc-text">${mwReadinessFormatNumber(weight,0)}% × ${mwReadinessFormatNumber(score,0)}% = +${mwReadinessFormatNumber(contribution,1)}%</span>
+            </span>
+          </li>
+        `;
       }).join("")}</ul>`:`<div class="mw-ready-empty">No prerequisite details to show.</div>`;const rowNote=items.length&&Math.abs(Math.round(rowSum)-exactPct)>1?`<div class="mw-ready-rounding-note">Visible rows use rounded influence weights; the displayed total uses the stored exact readiness value.</div>`:`<div class="mw-ready-rounding-note">The row contributions add up to the readiness score, up to normal rounding.</div>`;return`
         <div class="mw-ready-calc" data-mk-no-hover-preview="1">
           <div class="mw-menu-panel-title mw-ready-title">Prerequisite readiness</div>
@@ -793,7 +808,7 @@ const totalCount=Number(data.totalAvailable)||0;const directCount=Number(data.di
             <div class="mw-ready-scale">Mastered/Clear = 100%, Unclear = 50%, Unknown/Not visited = 0%.</div>
           </div>
           <div class="mw-menu-panel-copy mw-ready-summary">${escapeHtml(countParts.join(" · "))}</div>
-          ${mwReadinessUnassessed(data) ? `<p>No prerequisite has a mastery assessment yet.Open one below,try explaining it,then choose a mastery rating.An unassessed concept is not a failed quiz.</p>` : ""}
+          ${mwReadinessUnassessed(data) ? `<p>No prerequisite has a mastery assessment yet. Open one below, try explaining it, then choose a mastery rating. An unassessed concept is not a failed quiz.</p>` : ""}
           ${listHtml}
           ${mwReadinessUnassessed(data) ? "" : rowNote}
         </div>
@@ -804,7 +819,14 @@ function mwHiddenBuildReadinessMenuHtml(data){return mwReadinessBuildFormulaHtml
 function mwHiddenRecapTimelineHtml(data){const items=Array.isArray(data&&data.timeline)?data.timeline:[];if(!items.length)return`<div class="mw-recap-empty">No recent activity yet.</div>`;return`<ol class="mw-recap-list">${items.map((item) => {
           const kind = String(item && item.kind || "");
           const mm = Number(item && item.m);
-          return `<li class="mw-recap-item"><span class="mw-recap-dot"data-kind="${escapeHtml(kind)}"${Number.isFinite(mm)?` data-m="${mm}"${mwEffectTierHtml(mm)}`:""}></span><span class="mw-recap-main"><span class="mw-recap-label">${escapeHtml(item&&item.label||"")}</span></span><span class="mw-recap-when">${escapeHtml(mwRelativeTimeLabel(item&&item.ts))}</span></li>`;
+          return `
+            <li class="mw-recap-item">
+              <span class="mw-recap-dot" data-kind="${escapeHtml(kind)}"${Number.isFinite(mm)?` data-m="${mm}"${mwEffectTierHtml(mm)}`:""}></span>
+              <span class="mw-recap-main">
+                <span class="mw-recap-label">${escapeHtml(item&&item.label||"")}</span>
+              </span>
+              <span class="mw-recap-when">${escapeHtml(mwRelativeTimeLabel(item&&item.ts))}</span>
+            </li>`;
         }).join("")}</ol>`;}
 function hiddenRenderReadiness(summary){const data=summary&&typeof summary==="object"?summary:{status:"unavailable"};state.readinessData=data;try{const btn=state.titleMenuReadyBtn||document.querySelector('.mw-title-menu .mw-title-menu-btn--ready');if(btn){const pctEl=btn.querySelector(".mw-ready-chip-pct");if(pctEl)pctEl.textContent=mwReadinessDisplayText(data);btn.disabled=!(data&&data.status==="ok");mwApplyReadinessColor(btn,data);}}catch(_){}
 try{const host=state.titleMenuReadinessHost||document.querySelector('.mw-title-menu [data-mw-ready-inline="1"]');if(host){host.innerHTML=mwHiddenBuildReadinessMenuHtml(data);mwTypesetMathIn(host);}}catch(_){}
@@ -998,7 +1020,14 @@ function mwRecapSummaryText(data){const counts=(data&&data.counts)?data.counts:{
 function mwRecapTimelineHtml(data){const items=Array.isArray(data&&data.timeline)?data.timeline:[];if(!items.length)return`<div class="mw-recap-empty">No recent activity yet.</div>`;return`<ol class="mw-recap-list">${items.map((item) => {
         const kind = String(item && item.kind || "");
         const mm = Number(item && item.m);
-        return `<li class="mw-recap-item"><span class="mw-recap-dot"data-kind="${escapeHtml(kind)}"${Number.isFinite(mm)?` data-m="${mm}"${mwEffectTierHtml(mm)}`:""}></span><span class="mw-recap-main"><span class="mw-recap-label">${escapeHtml(item&&item.label||"")}</span></span><span class="mw-recap-when">${escapeHtml(mwRelativeTimeLabel(item&&item.ts))}</span></li>`;
+        return `
+          <li class="mw-recap-item">
+            <span class="mw-recap-dot" data-kind="${escapeHtml(kind)}"${Number.isFinite(mm)?` data-m="${mm}"${mwEffectTierHtml(mm)}`:""}></span>
+            <span class="mw-recap-main">
+              <span class="mw-recap-label">${escapeHtml(item&&item.label||"")}</span>
+            </span>
+            <span class="mw-recap-when">${escapeHtml(mwRelativeTimeLabel(item&&item.ts))}</span>
+          </li>`;
       }).join("")}</ol>`;}
 function mwRenderRecapHost(host,mode,placeFn){if(!host)return;const data=state.recapData;if(mode!=="menu"){host.hidden=true;host.innerHTML="";return;}
 const hasRecap=!!(data&&(data.status==="ok"||Array.isArray(data.timeline)||data.counts||Number(data.lastViewed)>0||Number(data.lastReviewed)>0));const ratingText=Number.isFinite(state.currentM)?`Your current rating is ${mwLevelLabel(state.currentM)}.`:"Not rated yet.";const bodyHtml=hasRecap?mwRecapTimelineHtml(data):`<div class="mw-recap-empty">No recent activity yet.</div>`;host.innerHTML=`

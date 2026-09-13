@@ -75,7 +75,12 @@ function srGetSelectionSnapshot(context,options){const error=srStudySetContextEr
 if(!items.length)return{ok:false,code:'empty_selection'};return{ok:true,version:1,capturedAt:Date.now(),source:{kind:'finder-selection',expression:String(state.currentExpr||''),sortKey:String(state.sortKey||'best'),sortDir:state.sortDir==='asc'?'asc':'desc',includeEnrichment},matchedCount:sorted.length,selectedVisibleCount:selected.length,excludedCount:selected.length-items.length,items};}
 function srRenderMasteryFilterHtml(){const f=state.masteryFilter||srDefaultMasteryFilter();const items=[["mastered","Mastered"],["clear","Clear"],["fuzzy","Unclear"],["unknown","Unknown"],["unrated","Unrated"],["unvisited","Unvisited"],];return`
     <div class="csr-mastery-filter" aria-label="Filter by mastery level">
-      ${items.map(([key, label]) => `<label class="csr-mf"><input type="checkbox"data-mastery-filter="${key}"${f[key]!==false?"checked":""}><span>${label}</span></label>`.trim()).join("")}
+      ${items.map(([key, label]) => `
+        <label class="csr-mf">
+          <input type="checkbox" data-mastery-filter="${key}" ${f[key]!==false?"checked":""}>
+          <span>${label}</span>
+        </label>
+      `.trim()).join("")}
     </div>
   `.trim();}
 function srEnsureMasteryFilterStylesOnce(){const STYLE_ID="mk-search-results-mastery-filter-style-v11-random-dice-light-bg-fix";if(document.getElementById(STYLE_ID))return;["mk-search-results-mastery-filter-style-v1","mk-search-results-mastery-filter-style-v2","mk-search-results-mastery-filter-style-v3","mk-search-results-mastery-filter-style-v3-layout","mk-search-results-mastery-filter-style-v4-layout","mk-search-results-mastery-filter-style-v5-select-group","mk-search-results-mastery-filter-style-v6-stable-filter-update","mk-search-results-mastery-filter-style-v7-pc-selftest-sort-swap","mk-search-results-mastery-filter-style-v8-pc-filter-one-line","mk-search-results-mastery-filter-style-v9-pc-filter-inline-with-sort","mk-search-results-mastery-filter-style-v10-mobile-random-modes-red"].forEach((id)=>{try{const old=document.getElementById(id);if(old&&old.parentNode)old.parentNode.removeChild(old);}catch(_){}});const st=document.createElement("style");st.id=STYLE_ID;st.textContent=`
@@ -604,7 +609,7 @@ function setRandomMode(mode){const m=(mode==="ai"||mode==="self")?mode:"normal";
 state.selfTestMode=m==="self";state.aiTestMode=m==="ai"&&!window.__mkExamMode;}
 function loadSelfTestMode(){return loadRandomMode()==="self";}
 function loadAiTestMode(){return loadRandomMode()==="ai";}
-function srBuildResultRowHtml(x,root){const d=(x&&x.doc)||{};const href=new URL(String(d.location||""),root).toString();const lec=lectureInfoFromTags(d.tags);const courseName=lec?(lec.courseName||srCourseLabelFromLocation(d.location)):"";const metaHtml=lec?`${courseName ? `<span class="csr-course">${escapeHtml(courseName)}</span><span class="csr-meta-sep"aria-hidden="true">·</span>` : ""}<span class="csr-lecture-no">${escapeHtml(lec.unitLabel || `Lecture ${lec.lectureNum}`)}</span>`:"";const checked=state.selectedMap&&state.selectedMap[d.location]?"checked":"";return`
+function srBuildResultRowHtml(x,root){const d=(x&&x.doc)||{};const href=new URL(String(d.location||""),root).toString();const lec=lectureInfoFromTags(d.tags);const courseName=lec?(lec.courseName||srCourseLabelFromLocation(d.location)):"";const metaHtml=lec?`${courseName ? `<span class="csr-course">${escapeHtml(courseName)}</span><span class="csr-meta-sep" aria-hidden="true"> · </span>` : ""}<span class="csr-lecture-no">${escapeHtml(lec.unitLabel || `Lecture ${lec.lectureNum}`)}</span>`:"";const checked=state.selectedMap&&state.selectedMap[d.location]?"checked":"";return`
     <div class="csr-row csr-row--select">
       <label class="csr-check">
         <input type="checkbox"
@@ -736,16 +741,19 @@ const filteredHits=srFilteredHits(state.hits);const total=filteredHits.length;co
       ${srRenderMasteryFilterHtml()}
     </div>
     <div class="csr-revision-options" id="csr-revision-panel" role="group" aria-label="Revision modes" ${state.revisionOptionsOpen ? "" : "hidden"}>
-    <label class="csr-selftest ${srHasShopItem(SR_SELF_TEST_ITEM_ID) ? "" : "is-locked"}" title="${srHasShopItem(SR_SELF_TEST_ITEM_ID) ? "" : `Unlock ${SR_SELF_TEST_ITEM_TITLE}· ${SR_SELF_TEST_ITEM_PRICE}EORbits`}">
+    <label class="csr-selftest ${srHasShopItem(SR_SELF_TEST_ITEM_ID) ? "" : "is-locked"}" title="${srHasShopItem(SR_SELF_TEST_ITEM_ID) ? "" : `Unlock ${SR_SELF_TEST_ITEM_TITLE} · ${SR_SELF_TEST_ITEM_PRICE} EORbits`}">
       <input type="checkbox" id="cr-selftest" ${state.selfTestMode ? "checked" : ""}>
       <span>Self-test mode</span>
     </label>
 
-    ${window.__mkExamMode ? "" : `<label class="csr-aitest ${srHasShopItem(SR_AI_ITEM_ID) ? "" : "is-locked"}"title="${srHasShopItem(SR_AI_ITEM_ID) ? "" : `Unlock ${SR_AI_ITEM_TITLE} · ${SR_AI_ITEM_PRICE} EORbits`}"><input type="checkbox"id="cr-aitest"${state.aiTestMode?"checked":""}><span>AI-test mode</span></label>`}
+    ${window.__mkExamMode ? "" : `<label class="csr-aitest ${srHasShopItem(SR_AI_ITEM_ID)?"":"is-locked"}" title="${srHasShopItem(SR_AI_ITEM_ID)?"":`Unlock ${SR_AI_ITEM_TITLE} · ${SR_AI_ITEM_PRICE} EORbits`}">
+      <input type="checkbox" id="cr-aitest" ${state.aiTestMode?"checked":""}>
+      <span>AI-test mode</span>
+    </label>`}
     </div>
     </div>
   </div>
-`;const listHtml=pageHits.map(x=>{const d=x.doc||{};const href=new URL(String(d.location||""),root).toString();const lec=lectureInfoFromTags(d.tags);const courseName=lec?(lec.courseName||srCourseLabelFromLocation(d.location)):"";const metaHtml=lec?`${courseName ? `<span class="csr-course">${escapeHtml(courseName)}</span><span class="csr-meta-sep"aria-hidden="true">·</span>` : ""}<span class="csr-lecture-no">${escapeHtml(lec.unitLabel || `Lecture ${lec.lectureNum}`)}</span>`:"";const checked=state.selectedMap&&state.selectedMap[d.location]?"checked":"";return`
+`;const listHtml=pageHits.map(x=>{const d=x.doc||{};const href=new URL(String(d.location||""),root).toString();const lec=lectureInfoFromTags(d.tags);const courseName=lec?(lec.courseName||srCourseLabelFromLocation(d.location)):"";const metaHtml=lec?`${courseName ? `<span class="csr-course">${escapeHtml(courseName)}</span><span class="csr-meta-sep" aria-hidden="true"> · </span>` : ""}<span class="csr-lecture-no">${escapeHtml(lec.unitLabel || `Lecture ${lec.lectureNum}`)}</span>`:"";const checked=state.selectedMap&&state.selectedMap[d.location]?"checked":"";return`
     <div class="csr-row csr-row--select">
       <label class="csr-check">
         <input type="checkbox"
@@ -788,7 +796,7 @@ const filteredHits=srFilteredHits(state.hits);const total=filteredHits.length;co
   <div class="csr-wrap ${hasResults ? "is-visible" : "is-hidden"}">
     ${srRenderResultSummaryHtml()}
     ${actionsHtml}
-    ${state.viewsError ? `<p class="sr-loading"role="status">${escapeHtml(state.viewsError)}</p>` : ""}
+    ${state.viewsError ? `<p class="sr-loading" role="status">${escapeHtml(state.viewsError)}</p>` : ""}
     ${headerHtml}
     <p class="csr-filter-empty" role="status" hidden>No results match the current mastery filters. Change a filter to see the matching concepts.</p>
     <div class="csr-list">

@@ -965,38 +965,38 @@ function userAvatarFrameValue(item){const raw=firstDefinedValue(item,["selectedA
 function avatarFrameLabelLocal(frameId){const id=cleanAvatarFrameLocal(frameId);const found=AVATAR_FRAME_DEFS_LOCAL.find((f)=>f.id===id);return found?found.label:`Level ${avatarFrameLevelLocal(id)}`;}
 function avatarFrameSvgLocal(frameId){const level=avatarFrameLevelLocal(frameId);const svgOpen=`<svg class="mk-avatar-frame-svg mk-avatar-frame-svg-${level}" viewBox="-28 -28 156 156" aria-hidden="true" focusable="false">`;const svgClose=`</svg>`;const circle=(r,attrs)=>`<circle cx="50" cy="50" r="${r}" fill="none" ${attrs || ""}/>`;const polar=(deg,r)=>{const a=(Number(deg)||0)*Math.PI/180;return[Number((50+Math.cos(a)*r).toFixed(2)),Number((50+Math.sin(a)*r).toFixed(2))];};const bead=(cx,cy,r,fill,stroke)=>`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${fill}" stroke="${stroke || "rgba(255,255,255,.76)"}" stroke-width="1.35"/>`;const beadAt=(deg,rad,rr,fill,stroke)=>{const[x,y]=polar(deg,rad);return bead(x,y,rr,fill,stroke);};const tickAt=(deg,r1,r2,color,width)=>{const[x1,y1]=polar(deg,r1);const[x2,y2]=polar(deg,r2);return`<path d="M${x1} ${y1}L${x2} ${y2}" stroke="${color}" stroke-width="${width || 1.4}" stroke-linecap="round"/>`;};const dots=(count,rad,rr,fills,start)=>Array.from({length:count},(_,i)=>{const deg=(start==null?-90:start)+i*360/count;const fill=Array.isArray(fills)?fills[i%fills.length]:fills;return beadAt(deg,rad,rr,fill,"rgba(255,255,255,.72)");}).join(" ");const ticks=(count,r1,r2,color,width,start)=>Array.from({length:count},(_,i)=>tickAt((start==null?-90:start)+i*360/count,r1,r2,color,width)).join(" ");const diamond=(cx,cy,size,fill,stroke)=>{const z=Number(size)||5;return`<path d="M ${cx} ${cy - z} L ${cx + z} ${cy} L ${cx} ${cy + z} L ${cx - z} ${cy} Z" fill="${fill}" stroke="${stroke || "rgba(255,255,255,.82)"}" stroke-width="1.35" stroke-linejoin="round"/>`;};const diamondAt=(deg,rad,size,fill,stroke)=>{const[x,y]=polar(deg,rad);return diamond(x,y,size,fill,stroke);};const star=(cx,cy,r1,r2,fill,stroke)=>{const pts=[];for(let i=0;i<10;i++){const a=(-90+i*36)*Math.PI/180;const rr=i%2===0?r1:r2;pts.push(`${(cx + Math.cos(a) * rr).toFixed(1)},${(cy + Math.sin(a) * rr).toFixed(1)}`);}
 return`<polygon points="${pts.join(" ")}" fill="${fill}" stroke="${stroke || "rgba(255,255,255,.82)"}" stroke-width="1.05" stroke-linejoin="round"/>`;};const starAt=(deg,rad,r1,r2,fill,stroke)=>{const[x,y]=polar(deg,rad);return star(x,y,r1,r2,fill,stroke);};const leaf=(cx,cy,rot,fill,scale)=>{const sc=Number(scale||1);return`<path d="M ${cx} ${cy} C ${cx - 7 * sc} ${cy - 8 * sc}, ${cx - 15 * sc} ${cy - 6 * sc}, ${cx - 17 * sc} ${cy + 2 * sc} C ${cx - 9 * sc} ${cy + 4 * sc}, ${cx - 3 * sc} ${cy + 2 * sc}, ${cx} ${cy} Z" fill="${fill}" stroke="rgba(255,255,255,.62)" stroke-width="1" transform="rotate(${rot} ${cx} ${cy})"/>`;};const petalAt=(deg,rad,len,fill,stroke,twist)=>{const[x,y]=polar(deg,rad);const rot=deg+(twist||0);return`<path d="M ${x} ${y - len} C ${x + len * .72} ${y - len * .12}, ${x + len * .52} ${y + len * .56}, ${x} ${y + len * .88} C ${x - len * .52} ${y + len * .56}, ${x - len * .72} ${y - len * .12}, ${x} ${y - len} Z" fill="${fill}" stroke="${stroke || "rgba(255,255,255,.72)"}" stroke-width="1.1" stroke-linejoin="round" transform="rotate(${rot} ${x} ${y})"/>`;};const shardAt=(deg,rad,len,fill,stroke,width)=>{const[x,y]=polar(deg,rad);const w=width||len*.42;const rot=deg+90;return`<path d="M ${x} ${y - len} L ${x + w} ${y + len * .12} L ${x} ${y + len * .72} L ${x - w} ${y + len * .12} Z" fill="${fill}" stroke="${stroke || "rgba(255,255,255,.82)"}" stroke-width="1.1" stroke-linejoin="round" transform="rotate(${rot} ${x} ${y})"/>`;};if(level===1){return`${svgOpen}
-        ${circle(53, `stroke="rgba(122,133,150,.78)"stroke-width="3.2"`)}
-        ${circle(57, `stroke="rgba(122,133,150,.25)"stroke-width="1.2"`)}
+        ${circle(53, `stroke="rgba(122,133,150,.78)" stroke-width="3.2"`)}
+        ${circle(57, `stroke="rgba(122,133,150,.25)" stroke-width="1.2"`)}
         ${ticks(8, 59, 62, "rgba(148,163,184,.32)", 1.1, -90)}
         ${beadAt(-90, 61, 2.4, "#cbd5e1", "#f8fafc")}
       ${svgClose}`;}
 if(level===2){return`${svgOpen}
-        ${circle(52, `stroke="#9a5c2c"stroke-width="4.3"`)}
-        ${circle(58, `stroke="rgba(245,186,117,.62)"stroke-width="1.6"stroke-dasharray="4 6"`)}
-        ${circle(46, `stroke="rgba(120,53,15,.32)"stroke-width="1.4"`)}
+        ${circle(52, `stroke="#9a5c2c" stroke-width="4.3"`)}
+        ${circle(58, `stroke="rgba(245,186,117,.62)" stroke-width="1.6" stroke-dasharray="4 6"`)}
+        ${circle(46, `stroke="rgba(120,53,15,.32)" stroke-width="1.4"`)}
         ${dots(8, 62, 3.4, ["#b87333", "#d08a45"])}
         ${ticks(16, 55, 59, "rgba(255,237,213,.48)", 1.05, -90)}
       ${svgClose}`;}
 if(level===3){return`${svgOpen}
-        ${circle(52, `stroke="#cbd5e1"stroke-width="4.1"`)}
-        ${circle(59, `stroke="rgba(148,163,184,.56)"stroke-width="1.55"`)}
-        ${circle(45, `stroke="rgba(226,232,240,.30)"stroke-width="1.2"stroke-dasharray="7 7"`)}
+        ${circle(52, `stroke="#cbd5e1" stroke-width="4.1"`)}
+        ${circle(59, `stroke="rgba(148,163,184,.56)" stroke-width="1.55"`)}
+        ${circle(45, `stroke="rgba(226,232,240,.30)" stroke-width="1.2" stroke-dasharray="7 7"`)}
         ${[ -90, 0, 90, 180 ].map((d) => diamondAt(d, 63, 6.1, "#e2e8f0", "#94a3b8")).join(" ")}
         ${[ -45, 45, 135, 225 ].map((d) => diamondAt(d, 60, 3.7, "#f8fafc", "#cbd5e1")).join(" ")}
         ${ticks(12, 54, 61, "rgba(248,250,252,.55)", 1.25, -90)}
         <path d="M50 -4V12 M50 88v16 M-4 50H12 M88 50h16" stroke="#f8fafc" stroke-width="2.8" stroke-linecap="round"/>
       ${svgClose}`;}
 if(level===4){return`${svgOpen}
-        ${circle(51, `stroke="#d99b22"stroke-width="5"`)}
-        ${circle(58, `stroke="rgba(255,224,130,.76)"stroke-width="2"stroke-dasharray="2 7"stroke-linecap="round"`)}
-        ${circle(44, `stroke="rgba(146,64,14,.34)"stroke-width="1.6"`)}
+        ${circle(51, `stroke="#d99b22" stroke-width="5"`)}
+        ${circle(58, `stroke="rgba(255,224,130,.76)" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"`)}
+        ${circle(44, `stroke="rgba(146,64,14,.34)" stroke-width="1.6"`)}
         ${dots(12, 63, 3.6, ["#facc15", "#f59e0b", "#fde68a"])}
         ${dots(12, 48, 1.25, "rgba(255,251,235,.70)", -75)}
         ${[ -90, 0, 90, 180 ].map((d) => diamondAt(d, 66, 4.2, "#fff7ad", "#ca8a04")).join(" ")}
       ${svgClose}`;}
 if(level===5){return`${svgOpen}
-        ${circle(51, `stroke="#059669"stroke-width="4.8"`)}
-        ${circle(58, `stroke="rgba(167,243,208,.62)"stroke-width="1.7"stroke-dasharray="10 8"stroke-linecap="round"`)}
+        ${circle(51, `stroke="#059669" stroke-width="4.8"`)}
+        ${circle(58, `stroke="rgba(167,243,208,.62)" stroke-width="1.7" stroke-dasharray="10 8" stroke-linecap="round"`)}
         <path d="M 6 88 C -10 60, -6 29, 15 8" fill="none" stroke="#10b981" stroke-width="4.2" stroke-linecap="round"/>
         <path d="M 94 88 C 110 60, 106 29, 85 8" fill="none" stroke="#10b981" stroke-width="4.2" stroke-linecap="round"/>
         ${leaf(19,82,-25,"#10b981",1.02)} ${leaf(10,68,-15,"#6ee7b7",.92)} ${leaf(7,53,0,"#34d399",.85)} ${leaf(10,38,14,"#10b981",.92)} ${leaf(20,21,31,"#6ee7b7",1)}
@@ -1005,9 +1005,9 @@ if(level===5){return`${svgOpen}
         ${dots(8, 49, 1.35, "rgba(236,253,245,.70)", -90)}
       ${svgClose}`;}
 if(level===6){return`${svgOpen}
-        ${circle(51, `stroke="#2563eb"stroke-width="4.9"`)}
-        ${circle(59, `stroke="rgba(96,165,250,.82)"stroke-width="2"stroke-dasharray="9 7"stroke-linecap="round"`)}
-        ${circle(44, `stroke="rgba(191,219,254,.34)"stroke-width="1.45"`)}
+        ${circle(51, `stroke="#2563eb" stroke-width="4.9"`)}
+        ${circle(59, `stroke="rgba(96,165,250,.82)" stroke-width="2" stroke-dasharray="9 7" stroke-linecap="round"`)}
+        ${circle(44, `stroke="rgba(191,219,254,.34)" stroke-width="1.45"`)}
         ${[ -90, 0, 90, 180 ].map((d) => shardAt(d, 64, 8.8, "#38bdf8", "#dbeafe", 4.4)).join(" ")}
         ${[ -45, 45, 135, 225 ].map((d) => shardAt(d, 61, 5.7, "#60a5fa", "#eff6ff", 3.2)).join(" ")}
         <path d="M18 3 C33 -9, 67 -9, 82 3" fill="none" stroke="#bfdbfe" stroke-width="3.2" stroke-linecap="round"/>
@@ -1015,9 +1015,9 @@ if(level===6){return`${svgOpen}
         ${dots(12, 50, 1.2, ["#dbeafe", "#93c5fd"], -75)}
       ${svgClose}`;}
 if(level===7){return`${svgOpen}
-        ${circle(51, `stroke="#7c3aed"stroke-width="5.1"`)}
-        ${circle(60, `stroke="rgba(216,180,254,.78)"stroke-width="2"stroke-dasharray="1 8"stroke-linecap="round"`)}
-        ${circle(44, `stroke="rgba(233,213,255,.34)"stroke-width="1.4"stroke-dasharray="5 6"`)}
+        ${circle(51, `stroke="#7c3aed" stroke-width="5.1"`)}
+        ${circle(60, `stroke="rgba(216,180,254,.78)" stroke-width="2" stroke-dasharray="1 8" stroke-linecap="round"`)}
+        ${circle(44, `stroke="rgba(233,213,255,.34)" stroke-width="1.4" stroke-dasharray="5 6"`)}
         ${[ -90, 90 ].map((d) => starAt(d, 65, 8, 3.4, "#c084fc", "#faf5ff")).join(" ")}
         ${[ -35, 35, 145, 215 ].map((d) => starAt(d, 64, 6.1, 2.5, "#a78bfa", "#ede9fe")).join(" ")}
         ${[ -65, -15, 70, 110, 195, 245 ].map((d) => starAt(d, 54, 3.2, 1.4, "#f0abfc", "#fdf4ff")).join(" ")}
@@ -1026,8 +1026,8 @@ if(level===7){return`${svgOpen}
         ${dots(14, 49, 1.05, ["#f5d0fe", "#ddd6fe"], -86)}
       ${svgClose}`;}
 if(level===8){return`${svgOpen}
-        ${circle(51, `stroke="#e11d48"stroke-width="5.2"`)}
-        ${circle(60, `stroke="rgba(253,164,175,.78)"stroke-width="2"stroke-dasharray="6 5"stroke-linecap="round"`)}
+        ${circle(51, `stroke="#e11d48" stroke-width="5.2"`)}
+        ${circle(60, `stroke="rgba(253,164,175,.78)" stroke-width="2" stroke-dasharray="6 5" stroke-linecap="round"`)}
         ${[ -90, 0, 90, 180 ].map((d) => petalAt(d, 63, 10.2, "#fb7185", "#fff1f2", 0)).join(" ")}
         ${[ -45, 45, 135, 225 ].map((d) => petalAt(d, 61, 7.3, "#f97316", "#ffedd5", 5)).join(" ")}
         ${[ -20, 20, 160, 200 ].map((d) => shardAt(d, 57, 5.2, "#f43f5e", "#ffe4e6", 3)).join(" ")}
@@ -1036,8 +1036,8 @@ if(level===8){return`${svgOpen}
         ${dots(16, 50, 1.05, ["#ffe4e6", "#fed7aa"], -90)}
       ${svgClose}`;}
 if(level===9){return`${svgOpen}
-        ${circle(51, `stroke="#06b6d4"stroke-width="5.2"`)}
-        ${circle(60, `stroke="rgba(240,171,252,.72)"stroke-width="2"stroke-dasharray="12 6"stroke-linecap="round"`)}
+        ${circle(51, `stroke="#06b6d4" stroke-width="5.2"`)}
+        ${circle(60, `stroke="rgba(240,171,252,.72)" stroke-width="2" stroke-dasharray="12 6" stroke-linecap="round"`)}
         <path d="M -12 61 C 7 23, 23 1, 46 -11" fill="none" stroke="#a78bfa" stroke-width="5.4" stroke-linecap="round"/>
         <path d="M 112 61 C 93 23, 77 1, 54 -11" fill="none" stroke="#f0abfc" stroke-width="5.4" stroke-linecap="round"/>
         <path d="M -5 78 C 12 48, 25 28, 45 8" fill="none" stroke="#22d3ee" stroke-width="3.4" stroke-linecap="round"/>
@@ -1050,9 +1050,9 @@ if(level===9){return`${svgOpen}
         ${dots(18, 49, 1.15, ["#cffafe", "#fae8ff", "#fde68a"], -90)}
       ${svgClose}`;}
 return`${svgOpen}
-      ${circle(51, `stroke="#f59e0b"stroke-width="5.6"`)}
-      ${circle(61, `stroke="rgba(251,191,36,.88)"stroke-width="2.4"stroke-dasharray="3 5"stroke-linecap="round"`)}
-      ${circle(43, `stroke="rgba(254,240,138,.34)"stroke-width="1.5"stroke-dasharray="8 5"`)}
+      ${circle(51, `stroke="#f59e0b" stroke-width="5.6"`)}
+      ${circle(61, `stroke="rgba(251,191,36,.88)" stroke-width="2.4" stroke-dasharray="3 5" stroke-linecap="round"`)}
+      ${circle(43, `stroke="rgba(254,240,138,.34)" stroke-width="1.5" stroke-dasharray="8 5"`)}
       <path d="M 16 -9 L 32 10 L 50 -20 L 68 10 L 84 -9 L 80 19 L 20 19 Z" fill="#facc15" stroke="#fff7ad" stroke-width="2.2" stroke-linejoin="round"/>
       <path d="M 25 18 C 35 23, 65 23, 75 18" fill="none" stroke="#fef3c7" stroke-width="2" stroke-linecap="round"/>
       ${diamond(50,-2,6,"#ef4444","#fff1f2")} ${diamond(32,8,4.7,"#38bdf8","#eff6ff")} ${diamond(68,8,4.7,"#a855f7","#faf5ff")}

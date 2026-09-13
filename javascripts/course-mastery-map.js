@@ -47,7 +47,15 @@ function metricValueCard(label,value,helper){return`
 function buildCourseDiagnosticHead(score){const hasScore=Number.isFinite(Number(score));const pct=hasScore?Math.max(0,Math.min(100,Math.round(Number(score)))):null;return`
       <div class="cmm-head">
         <div class="cmm-head__row">
-          ${hasScore ? `<div class="cmm-headreadiness-wrap"><button type="button"class="cmm-headreadiness cmm-headreadiness--orb"data-cmm-course-readiness-info="1"style="${escapeHtml(readinessToneStyle(pct))}"aria-label="${escapeHtml(`Course mastery readiness ${pct}%. Lower scores mark lecture units and concepts to review first.`)}"><strong>${escapeHtml(String(pct))}%</strong><span>Course mastery</span></button><div class="cmm-readiness-help"hidden>Lower mastery readiness marks the lecture units and concepts to review first.</div></div>` : ''}
+          ${hasScore ? `
+            <div class="cmm-headreadiness-wrap">
+              <button type="button" class="cmm-headreadiness cmm-headreadiness--orb" data-cmm-course-readiness-info="1" style="${escapeHtml(readinessToneStyle(pct))}" aria-label="${escapeHtml(`Course mastery readiness ${pct}%. Lower scores mark lecture units and concepts to review first.`)}">
+                <strong>${escapeHtml(String(pct))}%</strong>
+                <span>Course mastery</span>
+              </button>
+              <div class="cmm-readiness-help" hidden>Lower mastery readiness marks the lecture units and concepts to review first.</div>
+            </div>
+          ` : ''}
           <div class="cmm-headcopy">
             <div class="cmm-title" id="${PANEL_ID}-title">Course diagnostics</div>
             <div class="cmm-sub">A course view of visited, rated, unrated, and low-readiness concepts. Separate from prerequisite readiness.</div>
@@ -175,7 +183,7 @@ function buildLectureStatusHighlightsCard(summary){const lectures=summary&&Array
       <section class="cmm-sidecard cmm-sidecard--chart">
         <div class="cmm-sidecard__kicker">${escapeHtml(unitNoun)} highlights</div>
         <div class="cmm-vizrows">
-          ${lectures.length ? metrics.map((metric) => lectureHighlightRow(metric, lectures)).join('') : `<div class="cmm-sidecard__empty">No ${escapeHtml(unitNoun.toLowerCase())}data yet.</div>`}
+          ${lectures.length ? metrics.map((metric) => lectureHighlightRow(metric, lectures)).join('') : `<div class="cmm-sidecard__empty">No ${escapeHtml(unitNoun.toLowerCase())} data yet.</div>`}
         </div>
       </section>
     `;}
@@ -186,7 +194,14 @@ function buildRecentChangeCard(diagnosis){const hist=diagnosis&&diagnosis.dailyH
       <section class="cmm-sidecard cmm-sidecard--chart">
         <div class="cmm-sidecard__kicker">Recent mastery-readiness change</div>
         <div class="cmm-change-list cmm-change-list--compact">
-          ${changes.length ? changes.map((item) => `<button type="button"class="cmm-change-row cmm-change-row--${changeToneClass(item.delta)}"data-cmm-jump-lecture="${escapeHtml(String(item.lectureNum))}"><span class="cmm-change-row__label">${escapeHtml(item.label)}</span><span class="cmm-change-row__right"><span class="cmm-change-row__beforeafter ${changeToneClass(item.delta)}">${changeBeforeAfterHtml(item,changeDate)}</span></span></button>`).join('') : '<div class="cmm-sidecard__empty">No recent lecture change yet.</div>'}
+          ${changes.length ? changes.map((item) => `
+            <button type="button" class="cmm-change-row cmm-change-row--${changeToneClass(item.delta)}" data-cmm-jump-lecture="${escapeHtml(String(item.lectureNum))}">
+              <span class="cmm-change-row__label">${escapeHtml(item.label)}</span>
+              <span class="cmm-change-row__right">
+                <span class="cmm-change-row__beforeafter ${changeToneClass(item.delta)}">${changeBeforeAfterHtml(item,changeDate)}</span>
+              </span>
+            </button>
+          `).join('') : '<div class="cmm-sidecard__empty">No recent lecture change yet.</div>'}
         </div>
       </section>
     `;}
@@ -198,7 +213,14 @@ function buildConceptStateHistogram(diagnosis){const items=diagnosis&&Array.isAr
           ${buckets.map((bucket) => {
             const width = Math.round((bucket.count / maxCount) * 100);
             const share = Math.round((bucket.count / total) * 100);
-            return `<div class="cmm-histrow cmm-histrow--state"><span class="cmm-histrow__label">${escapeHtml(bucket.label)}</span><span class="cmm-histbar"><span class="cmm-histbar__fill"style="${escapeHtml(readinessToneStyle(bucket.tone))}width:${escapeHtml(String(width))}%"></span></span><span class="cmm-histrow__count">${escapeHtml(String(bucket.count))}</span><span class="cmm-histrow__share">${escapeHtml(String(share))}%</span></div>`;
+            return `
+              <div class="cmm-histrow cmm-histrow--state">
+                <span class="cmm-histrow__label">${escapeHtml(bucket.label)}</span>
+                <span class="cmm-histbar"><span class="cmm-histbar__fill" style="${escapeHtml(readinessToneStyle(bucket.tone))}width:${escapeHtml(String(width))}%"></span></span>
+                <span class="cmm-histrow__count">${escapeHtml(String(bucket.count))}</span>
+                <span class="cmm-histrow__share">${escapeHtml(String(share))}%</span>
+              </div>
+            `;
           }).join('')}
         </div>
       </section>
@@ -208,8 +230,8 @@ function buildHeatmapRow(lecture,diagnosis){const diag=(diagnosis&&diagnosis.lec
         <button type="button" class="cmm-row__label" data-cmm-jump-lecture="${escapeHtml(String(lecture.lectureNum))}">
           <span class="cmm-row__title">${escapeHtml(lecture.label)}</span>
           <span class="cmm-row__meta">
-            <span class="cmm-row__meta-line">${escapeHtml(`${lecture.weak}low-rated`)}</span>
-            <span class="cmm-row__meta-line">${escapeHtml(`${lecture.total-lecture.rated}unrated`)}</span>
+            <span class="cmm-row__meta-line">${escapeHtml(`${lecture.weak} low-rated`)}</span>
+            <span class="cmm-row__meta-line">${escapeHtml(`${lecture.total-lecture.rated} unrated`)}</span>
             <span class="cmm-row__scroll-hint" hidden>Scroll tiles ↔</span>
           </span>
         </button>
@@ -218,19 +240,24 @@ function buildHeatmapRow(lecture,diagnosis){const diag=(diagnosis&&diagnosis.lec
             const entry = diagnosis.byConcept.get(concept.location);
             const rec = concept.record;
             const isActive = state.selectedConceptLoc === concept.location;
-            const tileTitle = `${concept.title}· ${levelLabel(rec)}· ${readinessValueLabel(entry?readinessPct(entry):0)}`;
-            return `<button
-type="button"
-class="cmm-tile ${levelClass(rec)} ${isActive ? 'is-active' : ''}"
-data-cmm-select-concept="${escapeHtml(concept.location)}"
-title="${escapeHtml(tileTitle)}"
-aria-label="${escapeHtml(tileTitle)}"
-aria-pressed="${isActive ? 'true' : 'false'}"
-style="${tileStyle(entry)}"><span class="cmm-tile__txt">${escapeHtml(levelShort(rec))}</span></button>`;
+            const tileTitle = `${concept.title} · ${levelLabel(rec)} · ${readinessValueLabel(entry?readinessPct(entry):0)}`;
+            return `
+              <button
+                type="button"
+                class="cmm-tile ${levelClass(rec)} ${isActive?'is-active':''}"
+                data-cmm-select-concept="${escapeHtml(concept.location)}"
+                title="${escapeHtml(tileTitle)}"
+                aria-label="${escapeHtml(tileTitle)}"
+                aria-pressed="${isActive?'true':'false'}"
+                style="${tileStyle(entry)}"
+              >
+                <span class="cmm-tile__txt">${escapeHtml(levelShort(rec))}</span>
+              </button>
+            `;
           }).join('')}
         </div>
         <div class="cmm-row__risk">
-          <span class="cmm-riskchip" style="${escapeHtml(readinessToneStyle(score))}" title="${escapeHtml(`${lecture.label}· ${readinessValueLabel(score)}`)}">${escapeHtml(String(score))}%</span><span class="cmm-row__risklabel">Mastery readiness</span>
+          <span class="cmm-riskchip" style="${escapeHtml(readinessToneStyle(score))}" title="${escapeHtml(`${lecture.label} · ${readinessValueLabel(score)}`)}">${escapeHtml(String(score))}%</span><span class="cmm-row__risklabel">Mastery readiness</span>
         </div>
       </div>
     `;}
@@ -249,7 +276,7 @@ function buildVisualStage(summary,diagnosis){const selected=ensureSelectedConcep
             </div>
           </div>
           <div class="cmm-heatmap">
-            ${(summary && summary.lectures ? summary.lectures : []).map((lecture) => buildHeatmapRow(lecture, diagnosis)).join('') || `<div class="cmm-error">No ${escapeHtml(unitNoun.toLowerCase())}data yet.</div>`}
+            ${(summary && summary.lectures ? summary.lectures : []).map((lecture) => buildHeatmapRow(lecture, diagnosis)).join('') || `<div class="cmm-error">No ${escapeHtml(unitNoun.toLowerCase())} data yet.</div>`}
           </div>
         </section>
         <aside class="cmm-stage__side">
@@ -2805,10 +2832,10 @@ function buildLectureCard(lecture){const filtered=lecture.concepts.filter(matche
           <div class="cmm-lecture__left">
             <div class="cmm-lecture__title">${escapeHtml(lecture.label)}</div>
           </div>
-          <div class="cmm-lecture__facts" aria-label="${escapeHtml(`${lecture.label}status summary`)}">
+          <div class="cmm-lecture__facts" aria-label="${escapeHtml(`${lecture.label} status summary`)}">
             ${facts.map((text) => `<span class="cmm-lecture__fact">${escapeHtml(text)}</span>`).join('')}
           </div>
-          <span class="cmm-lecture__score" style="${escapeHtml(readinessToneStyle(readinessAvg))}" title="${escapeHtml(`${lecture.label}· Mastery readiness ${readinessAvg}%`)}"><span class="cmm-lecture__scorelabel">Mastery readiness</span><strong>${escapeHtml(String(readinessAvg))}%</strong></span>
+          <span class="cmm-lecture__score" style="${escapeHtml(readinessToneStyle(readinessAvg))}" title="${escapeHtml(`${lecture.label} · Mastery readiness ${readinessAvg}%`)}"><span class="cmm-lecture__scorelabel">Mastery readiness</span><strong>${escapeHtml(String(readinessAvg))}%</strong></span>
           <span class="cmm-lecture__chev" aria-hidden="true">${chevronSvg()}</span>
         </button>
         <div class="cmm-lecture__body" ${isOpen ? '' : 'hidden'}>
@@ -2827,8 +2854,8 @@ function renderPanelShell(panel){panel.innerHTML=`
 async function renderMap(anchor,panel){if(!anchor||!panel)return;const seq=++state.seq;const context=cmmMasteryContext();const route=currentRelPath();const focused=document.activeElement;const focusAttr=panel.contains(focused)&&['data-cmm-filter','data-cmm-lecture-toggle','data-cmm-select-concept','data-cmm-jump-lecture','data-cmm-course-readiness-info'].find(attr=>focused.hasAttribute(attr));const focusValue=focusAttr?focused.getAttribute(focusAttr):null;ensureStyles();renderPanelShell(panel);panel.hidden=!state.open;try{const data=await loadCourseMapData(anchor);if(seq!==state.seq)return;if(context!==cmmMasteryContext()||route!==currentRelPath())throw cmmMasteryReadError();const summary=data.summary;const totals=summary.totals;readAiQuizCountsByConcept();const diagnosis=buildDiagnosis(summary);diagnosis.dailyHistory=cmmRecordDailySnapshot(data.key,summary,diagnosis);const selected=ensureSelectedConcept(summary,diagnosis);const allLecturesHtml=(summary.lectures||[]).map(buildLectureCard).join('');const panelBody=`
         <div class="cmm-toprow">
           <div class="cmm-metrics">
-            ${metricValueCard('Visited concepts', `${totals.visited}/${totals.total}`, `${Math.round(totals.total ? (totals.visited /totals.total)*100:0)}%visited`)}
-            ${metricValueCard('Rated concepts', `${totals.rated}/${totals.total}`, `${totals.total-totals.rated}unrated`)}
+            ${metricValueCard('Visited concepts', `${totals.visited}/${totals.total}`, `${Math.round(totals.total?(totals.visited/totals.total)*100:0)}% visited`)}
+            ${metricValueCard('Rated concepts', `${totals.rated}/${totals.total}`, `${totals.total-totals.rated} unrated`)}
           </div>
           ${buildSelectedConceptCard(selected)}
         </div>
