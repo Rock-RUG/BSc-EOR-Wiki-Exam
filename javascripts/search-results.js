@@ -28,12 +28,7 @@ function srBeginRandomNavigation(container,button){srCancelRandomNavigation();co
 function srRandomNavigationCurrent(request){return request===__srRandomNavigation&&request.url===String(window.location.href)&&isOnFindPage()&&(!request.container||(request.container.isConnected&&document.getElementById("search-results")===request.container))&&(!request.button||(request.button.isConnected&&document.getElementById("cr-random")===request.button));}
 function isHoverPointer(){try{return!!(window.matchMedia&&window.matchMedia("(hover: hover) and (pointer: fine)").matches);}catch(_){return false;}}
 function sleep(ms){return new Promise((r)=>setTimeout(r,ms||0));}
-function diceSvg(n){const pips={1:[[12,12]],2:[[8,8],[16,16]],3:[[8,8],[12,12],[16,16]],4:[[8,8],[16,8],[8,16],[16,16]],5:[[8,8],[16,8],[12,12],[8,16],[16,16]],6:[[8,8],[16,8],[8,12],[16,12],[8,16],[16,16]],};const pts=pips[n]||pips[1];const dots=pts.map(([x,y])=>`<circle cx="${x}" cy="${y}" r="2.05" fill="currentColor"/>`).join("");return`
-      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
-        <rect x="4.5" y="4.5" width="15" height="15" rx="3" ry="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
-        ${dots}
-      </svg>
-    `;}
+function diceSvg(n){const faces={1:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 12h.01"/>',2:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M15 9h.01"/><path d="M9 15h.01"/>',3:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M16 8h.01"/><path d="M12 12h.01"/><path d="M8 16h.01"/>',4:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M16 8h.01"/><path d="M8 8h.01"/><path d="M8 16h.01"/><path d="M16 16h.01"/>',5:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M16 8h.01"/><path d="M8 8h.01"/><path d="M8 16h.01"/><path d="M16 16h.01"/><path d="M12 12h.01"/>',6:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M16 8h.01"/><path d="M16 12h.01"/><path d="M16 16h.01"/><path d="M8 8h.01"/><path d="M8 12h.01"/><path d="M8 16h.01"/>',};return`<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${faces[n] || faces[1]}</svg>`;}
 function randFace(){return 1+Math.floor(Math.random()*6);}
 function srConsumeGuestAction(action,detail){try{if(!window.MkGuestAccess||typeof window.MkGuestAccess.consume!=="function")return true;return window.MkGuestAccess.consume(action,Object.assign({blocking:true},detail||{}));}catch(_){return true;}}
 function readLastFace(){try{const v=Number(sessionStorage.getItem(LAST_FACE_KEY)||"");return v>=1&&v<=6?v:1;}catch(_){return 1;}}
@@ -392,15 +387,7 @@ function srViewsCountFor(hit){if(!__srViews30dMap)return 0;const p=mkNormPath(hi
 function srSortLabel(){const key=state.sortKey||"best";const dir=state.sortDir||"desc";if(key==="best")return"Most relevant";if(key==="views30d")return"Most viewed (30d)";if(key==="lecture"&&dir==="asc")return"Course · Lecture/Week ↑";if(key==="lecture"&&dir==="desc")return"Course · Lecture/Week ↓";if(key==="title"&&dir==="asc")return"Title A → Z";if(key==="title"&&dir==="desc")return"Title Z → A";return"Most relevant";}
 function srSortKeyDirFromOption(optId){const id=String(optId||"");if(id==="best")return{key:"best",dir:"desc"};if(id==="views30d")return{key:"views30d",dir:"desc"};if(id==="lecture-asc")return{key:"lecture",dir:"asc"};if(id==="lecture-desc")return{key:"lecture",dir:"desc"};if(id==="title-asc")return{key:"title",dir:"asc"};if(id==="title-desc")return{key:"title",dir:"desc"};return{key:"best",dir:"desc"};}
 function srIsActiveOption(optId){const s=srSortKeyDirFromOption(optId);return(state.sortKey||"best")===s.key&&(state.sortDir||"desc")===s.dir;}
-function srSvg(name,size){const s=Number(size)||18;const common=`width="${s}" height="${s}" viewBox="0 0 24 24" aria-hidden="true" focusable="false"`;const stroke=`fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"`;if(name==="sort"){return`<svg ${common} ${stroke}><path d="M3 6h10"/><path d="M3 12h14"/><path d="M3 18h6"/><path d="M17 8l2-2 2 2"/><path d="M19 6v12"/><path d="M21 16l-2 2-2-2"/></svg>`;}
-if(name==="chev"){return`<svg ${common} ${stroke}><path d="M6 9l6 6 6-6"/></svg>`;}
-if(name==="target"){return`<svg ${common} ${stroke}><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M2 12h2"/><path d="M20 12h2"/></svg>`;}
-if(name==="fire"){return`<svg ${common} ${stroke}><path d="M12 2c2.6 3 4 5.2 4 8.2A4.5 4.5 0 0 1 11.5 15c-1.8 0-3.5-1.5-3.5-3.8C8 7.9 10 5.6 12 2z"/><path d="M12 13c1.2 1.3 1.7 2.3 1.7 3.4A2 2 0 0 1 11.7 19 2.2 2.2 0 0 1 9.5 16.6C9.5 15.1 10.6 14 12 13z"/></svg>`;}
-if(name==="up"){return`<svg ${common} ${stroke}><path d="M12 6v12"/><path d="M7 11l5-5 5 5"/></svg>`;}
-if(name==="down"){return`<svg ${common} ${stroke}><path d="M12 6v12"/><path d="M7 13l5 5 5-5"/></svg>`;}
-if(name==="az"){return`<svg ${common} fill="none"><text x="4.8" y="9.4" font-size="8" font-family="system-ui, sans-serif" fill="currentColor">A</text><text x="4.8" y="20.2" font-size="8" font-family="system-ui, sans-serif" fill="currentColor">Z</text><path d="M12 7h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 17h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M19 6l2 2-2 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;}
-if(name==="za"){return`<svg ${common} fill="none"><text x="4.8" y="9.4" font-size="8" font-family="system-ui, sans-serif" fill="currentColor">Z</text><text x="4.8" y="20.2" font-size="8" font-family="system-ui, sans-serif" fill="currentColor">A</text><path d="M12 7h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 17h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M21 18l-2-2 2-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;}
-return"";}
+function srSvg(name,size){const s=Number(size)||18;const icons={sort:'<path d="m3 16 4 4 4-4"/><path d="M7 20V4"/><path d="m21 8-4-4-4 4"/><path d="M17 4v16"/>',chev:'<path d="m6 9 6 6 6-6"/>',target:'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',fire:'<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>',up:'<path d="m5 12 7-7 7 7"/><path d="M12 19V5"/>',down:'<path d="M12 5v14"/><path d="m19 12-7 7-7-7"/>',az:'<path d="m3 16 4 4 4-4"/><path d="M7 20V4"/><path d="M20 8h-5"/><path d="M15 10V6.5a2.5 2.5 0 0 1 5 0V10"/><path d="M15 14h5l-5 6h5"/>',za:'<path d="m3 16 4 4 4-4"/><path d="M7 4v16"/><path d="M15 4h5l-5 6h5"/><path d="M15 20v-3.5a2.5 2.5 0 0 1 5 0V20"/><path d="M20 18h-5"/>',};if(!icons[name])return"";return`<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${icons[name]}</svg>`;}
 function srRenderSortDropdownHtml(){const label=srSortLabel();const opts=[{id:"best",label:"Most relevant",icon:"target"},{id:"views30d",label:"Most viewed (30d)",icon:"fire"},{id:"lecture-asc",label:"Course · Lecture/Week ↑",icon:"up"},{id:"lecture-desc",label:"Course · Lecture/Week ↓",icon:"down"},{id:"title-asc",label:"Title A → Z",icon:"az"},{id:"title-desc",label:"Title Z → A",icon:"za"},];const menu=opts.map(o=>{const active=srIsActiveOption(o.id)?"is-active":"";return`
       <button type="button" class="mk-sortopt ${active}" data-mk-sort="${o.id}" aria-pressed="${active ? "true" : "false"}">
         <span class="mk-sortopt__ico">${srSvg(o.icon, 18)}</span>
@@ -633,9 +620,7 @@ function srBuildFooterHtml(total,start,end,totalPages,pagerBtns){return`
       <div class="csr-pager">
         <button type="button" class="md-button csr-prev" aria-label="Previous page" ${state.page <= 1 ? "disabled" : ""}>
           <span class="csr-pagerbtn__ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="18" height="18" focusable="false">
-              <path d="M14.5 5.5 8 12l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m15 18-6-6 6-6"/></svg>
           </span>
           <span class="csr-pagerbtn__txt">Prev</span>
         </button>
@@ -643,9 +628,7 @@ function srBuildFooterHtml(total,start,end,totalPages,pagerBtns){return`
         <button type="button" class="md-button csr-next" aria-label="Next page" ${state.page >= totalPages ? "disabled" : ""}>
           <span class="csr-pagerbtn__txt">Next</span>
           <span class="csr-pagerbtn__ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="18" height="18" focusable="false">
-              <path d="M9.5 5.5 16 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
           </span>
         </button>
       </div>
@@ -775,9 +758,7 @@ const filteredHits=srFilteredHits(state.hits);const total=filteredHits.length;co
       <div class="csr-pager">
         <button type="button" class="md-button csr-prev" aria-label="Previous page" ${state.page <= 1 ? "disabled" : ""}>
           <span class="csr-pagerbtn__ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="18" height="18" focusable="false">
-              <path d="M14.5 5.5 8 12l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m15 18-6-6 6-6"/></svg>
           </span>
           <span class="csr-pagerbtn__txt">Prev</span>
         </button>
@@ -785,9 +766,7 @@ const filteredHits=srFilteredHits(state.hits);const total=filteredHits.length;co
         <button type="button" class="md-button csr-next" aria-label="Next page" ${state.page >= totalPages ? "disabled" : ""}>
           <span class="csr-pagerbtn__txt">Next</span>
           <span class="csr-pagerbtn__ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="18" height="18" focusable="false">
-              <path d="M9.5 5.5 16 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
           </span>
         </button>
       </div>

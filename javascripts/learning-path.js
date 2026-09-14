@@ -1141,12 +1141,6 @@ function injectStylesOnce(){if(document.getElementById("lp-style-v2"))return;con
   filter:none !important;
 }
 
-#lp-side-panel .lp-gps-open svg circle:last-of-type,
-#lp-mobile-sheet [data-lp-ms-opengps] svg circle:last-of-type{
-  fill: currentColor !important;
-  stroke: none !important;
-}
-
 html[data-md-color-scheme="slate"] #lp-side-panel .lp-icon-btn,
 body[data-md-color-scheme="slate"] #lp-side-panel .lp-icon-btn,
 html[data-md-color-scheme="slate"] #lp-mobile-sheet .lp-msheet-iconbtn,
@@ -1240,8 +1234,8 @@ article.md-content__inner .lp-h1-route-target-pin svg path{
   fill:none;
 }
 article.md-content__inner .lp-h1-route-target-pin svg circle{
-  fill:currentColor;
-  stroke:none;
+  fill:none;
+  stroke:currentColor;
 }
 article.md-content__inner .lp-h1-route-target:hover{
   border-color:var(--md-accent-fg-color);
@@ -1485,8 +1479,8 @@ body[data-md-color-scheme="slate"] article.md-content__inner .lp-h1-route-arrow{
     fill:none;
   }
   article.md-content__inner .lp-h1-route-target--icon .lp-h1-route-target-icon svg circle{
-    fill:currentColor;
-    stroke:none;
+    fill:none;
+    stroke:currentColor;
   }
 }
 
@@ -3579,12 +3573,12 @@ modal.innerHTML=`
               <button type="button" class="lp-map-tab" data-lp-map-tab="fromHere" role="tab" aria-selected="false"><span class="lp-tab-label-long">Dependents</span><span class="lp-tab-label-short">Dependents</span></button>
             </div>
             <button type="button" class="lp-map-tipbtn" data-lp-map-tip-toggle aria-expanded="false">
-              <span class="lp-map-tipbtn-icon" aria-hidden="true">i</span>
+              <span class="lp-map-tipbtn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
               <span class="lp-map-tipbtn-text">Map tips</span>
             </button>
           </div>
           <div class="lp-map-context">
-            <button class="lp-btn lp-map-fit" type="button" data-lp-map-fit aria-label="Fit all map nodes in view" title="Zoom out until every concept fits on screen"><svg class="lp-map-fit-ico" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 5.6V2h3.6M14 5.6V2h-3.6M2 10.4V14h3.6M14 10.4V14h-3.6"/></svg><span class="lp-map-fit-txt">Fit all</span></button>
+            <button class="lp-btn lp-map-fit" type="button" data-lp-map-fit aria-label="Fit all map nodes in view" title="Zoom out until every concept fits on screen"><svg class="lp-map-fit-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><rect x="7" y="8" width="10" height="8" rx="1"/></svg><span class="lp-map-fit-txt">Fit all</span></button>
             <div class="lp-map-context-copy" role="status" aria-live="polite" aria-atomic="true">
               <span data-lp-map-context>Drag to explore nearby concepts.</span>
               <span class="lp-map-context-note" data-lp-map-fit-status hidden></span>
@@ -3810,7 +3804,7 @@ let root=document.getElementById("lp-mobile-sheet");if(!root){root=document.crea
               </label>
             </div>
             <button class="lp-msheet-btn lp-msheet-toggle" type="button" aria-label="Toggle" data-lp-ms-toggle>
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
             </button>
           </div>
         </div>
@@ -3915,21 +3909,21 @@ const host=ensurePanelHost();if(!host)return null;const prevUiState=existing?lpS
       <details class="lp-acc lp-forward lp-deps" open>
         <summary class="lp-sum" aria-label="Toggle Dependents section">
           <span class="lp-sum-left">Dependents</span>
-          <span class="lp-sum-right"><span class="lp-sum-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></span></span>
+          <span class="lp-sum-right"><span class="lp-sum-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m6 9 6 6 6-6"/></svg></span></span>
         </summary>
         <div class="lp-body"><div class="lp-empty">Loading...</div></div>
       </details>
       <details class="lp-acc lp-pres" open>
         <summary class="lp-sum" aria-label="Toggle Prerequisites section">
           <span class="lp-sum-left">Prerequisites</span>
-          <span class="lp-sum-right"><span class="lp-sum-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></span></span>
+          <span class="lp-sum-right"><span class="lp-sum-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m6 9 6 6 6-6"/></svg></span></span>
         </summary>
         <div class="lp-body"><div class="lp-empty">Loading...</div></div>
       </details>
       <details class="lp-acc lp-rel" open>
         <summary class="lp-sum" aria-label="Toggle Related concepts section">
           <span class="lp-sum-left">Related concepts</span>
-          <span class="lp-sum-right"><span class="lp-sum-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></span></span>
+          <span class="lp-sum-right"><span class="lp-sum-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m6 9 6 6 6-6"/></svg></span></span>
         </summary>
         <div class="lp-body"><div class="lp-empty">Loading...</div></div>
       </details>
@@ -3954,7 +3948,7 @@ const prevUiState=old?lpSnapshotPanelUiState(old):null;const panel=old||document
       <details class="lp-acc lp-forward lp-deps" open>
         <summary class="lp-sum" aria-label="Toggle Dependents section">
           <span class="lp-sum-left">Dependents</span>
-          <span class="lp-sum-right"><span class="lp-sum-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></span></span>
+          <span class="lp-sum-right"><span class="lp-sum-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m6 9 6 6 6-6"/></svg></span></span>
         </summary>
         <div class="lp-body">${buildList(forward, graph, panelTitleFor)}</div>
       </details>
@@ -3962,7 +3956,7 @@ const prevUiState=old?lpSnapshotPanelUiState(old):null;const panel=old||document
       <details class="lp-acc lp-pres" open>
         <summary class="lp-sum" aria-label="Toggle Prerequisites section">
           <span class="lp-sum-left">Prerequisites</span>
-          <span class="lp-sum-right"><span class="lp-sum-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></span></span>
+          <span class="lp-sum-right"><span class="lp-sum-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m6 9 6 6 6-6"/></svg></span></span>
         </summary>
         <div class="lp-body">${buildList(prereqsAll, graph, panelTitleFor)}</div>
       </details>
@@ -3970,7 +3964,7 @@ const prevUiState=old?lpSnapshotPanelUiState(old):null;const panel=old||document
       <details class="lp-acc lp-rel" open>
         <summary class="lp-sum" aria-label="Toggle Related concepts section">
           <span class="lp-sum-left">Related concepts</span>
-          <span class="lp-sum-right"><span class="lp-sum-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></span></span>
+          <span class="lp-sum-right"><span class="lp-sum-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m6 9 6 6 6-6"/></svg></span></span>
         </summary>
         <div class="lp-body">${relatedListHtml}</div>
       </details>
@@ -4333,16 +4327,16 @@ function ensureH1StudyStartModal(){let modal=document.getElementById("lp-h1sg-mo
                 <button type="button" class="lp-h1sg-tab" data-lp-map-tab="fromHere" role="tab" aria-selected="false"><span class="lp-tab-label-long">Dependents</span><span class="lp-tab-label-short">Dependents</span></button>
               </div>
               <button type="button" class="lp-h1sg-tipbtn" data-lp-map-tip-toggle aria-expanded="false">
-                <span class="lp-h1sg-tipbtn-icon" aria-hidden="true">i</span>
+                <span class="lp-h1sg-tipbtn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
                 <span class="lp-h1sg-tipbtn-text">Map tips</span>
               </button>
               <div class="lp-h1sg-filter">
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                 <input type="text" autocomplete="off" spellcheck="false" placeholder="Find a prerequisite" data-lp-h1sg-filter-input>
               </div>
             </div>
             <div class="lp-map-context">
-              <button class="lp-btn lp-map-fit" type="button" data-lp-map-fit aria-label="Fit all map nodes in view" title="Zoom out until every concept fits on screen"><svg class="lp-map-fit-ico" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 5.6V2h3.6M14 5.6V2h-3.6M2 10.4V14h3.6M14 10.4V14h-3.6"/></svg><span class="lp-map-fit-txt">Fit all</span></button>
+              <button class="lp-btn lp-map-fit" type="button" data-lp-map-fit aria-label="Fit all map nodes in view" title="Zoom out until every concept fits on screen"><svg class="lp-map-fit-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><rect x="7" y="8" width="10" height="8" rx="1"/></svg><span class="lp-map-fit-txt">Fit all</span></button>
               <div class="lp-map-context-copy" role="status" aria-live="polite" aria-atomic="true">
                 <span data-lp-map-context>Select a node to show a learning path.</span>
                 <span class="lp-map-route-endpoints" data-lp-map-route-endpoints hidden></span>
@@ -5334,8 +5328,8 @@ function ensureH1StudyStartStyles(){if(document.getElementById("lp-h1sg-style-v8
         fill:none;
       }
       #lp-h1sg-modal .lp-h1sg-launch-end-pin svg circle{
-        fill:currentColor;
-        stroke:none;
+        fill:none;
+        stroke:currentColor;
       }
       #lp-h1sg-modal .lp-h1sg-launch-shadow{
         position:absolute;
@@ -6127,6 +6121,12 @@ document.addEventListener('mk:map-opened',event=>{const source=event&&event.deta
   box-shadow:0 12px 24px rgba(0,0,0,.18) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
+}
+#lp-map-modal .lp-map-tipbtn-icon svg,
+#lp-h1sg-modal .lp-h1sg-tipbtn-icon svg{
+  width:100%;
+  height:100%;
+  display:block;
 }
 #lp-map-modal .lp-map-tipbtn-icon,
 #lp-h1sg-modal .lp-h1sg-tipbtn-icon{

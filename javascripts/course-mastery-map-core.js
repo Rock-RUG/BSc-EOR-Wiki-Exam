@@ -43,16 +43,11 @@ function publicScoreAvgLabel(type,value,count){const n=Number(value);const label
 function todayKeyLocal(){const d=new Date();const y=d.getUTCFullYear();const m=String(d.getUTCMonth()+1).padStart(2,'0');const day=String(d.getUTCDate()).padStart(2,'0');return`${y}-${m}-${day}`;}
 function shortDateLabel(dateKey){const s=String(dateKey||'');const m=s.match(/^(\d{4})-(\d{2})-(\d{2})$/);if(!m)return s||'today';const monthNames=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];const monthIdx=Math.max(0,Math.min(11,Number(m[2])-1));const day=String(Number(m[3])||m[3]);return`${monthNames[monthIdx]} ${day}`;}
 function mapSvg(){return`
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <rect x="5" y="3.5" width="14" height="17" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></rect>
-        <path d="M9.2 3.5h5.6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M8 13h2.1l1.35-3.15 2.25 6.3 1.55-3.15H17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M8 8h3.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M7 14h2l1.5-3 3 6 1.5-3h2"/>
       </svg>
     `;}
 function chevronSvg(){return`
-      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M7 10l5 5 5-5"/>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/>
       </svg>
     `;}
 function cmmIsTouchLikeViewport(){try{const mm=window.matchMedia;return!!((mm&&(mm('(max-width: 900px)').matches||mm('(pointer: coarse)').matches||mm('(hover: none)').matches))||(navigator&&navigator.maxTouchPoints>0));}catch(_){return false;}}

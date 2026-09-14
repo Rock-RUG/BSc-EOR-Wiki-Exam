@@ -45,7 +45,7 @@ return 9;}
 function sidebarCacheEnabled(){try{if(localStorage.getItem("mk_enable_sidebar_cache")!=="1")return false;}catch(_){return false;}
 try{return!!window.sessionStorage;}catch(_){return false;}}
 function sidebarCacheCourseKey(scope){if(!scope||scope.kind!=="course"||!scope.yearSeg||!scope.courseSeg)return"";return scope.yearSeg+"/"+scope.courseSeg;}
-function currentCourseBarChevronSvg(className){const cls=className?' '+className:'';return'<svg class="ccb-chevron'+cls+'" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5"></path></svg>';}
+function currentCourseBarChevronSvg(className){const cls=className?' '+className:'';return'<svg class="ccb-chevron'+cls+'" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 4 4 4-4 4"/></svg>';}
 function swallowMobileDrawerBackdropEvent(event){if(!event)return;try{if(typeof event.preventDefault==='function')event.preventDefault();}catch(_){}
 try{if(typeof event.stopImmediatePropagation==='function')event.stopImmediatePropagation();}catch(_){}
 try{if(typeof event.stopPropagation==='function')event.stopPropagation();}catch(_){}}

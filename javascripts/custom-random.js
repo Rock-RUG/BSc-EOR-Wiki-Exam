@@ -23,12 +23,7 @@ if(window.MkAccountData&&typeof window.MkAccountData.recordActivity==="function"
 queueCustomRandomXp(d);document.dispatchEvent(new CustomEvent("mk:xp-activity",{detail:Object.assign({metric:"random_browse_start"},d)}));}catch(_){}}
 function isHoverPointer(){try{return!!(window.matchMedia&&window.matchMedia("(hover: hover) and (pointer: fine)").matches);}catch(_){return false;}}
 function sleep(ms){return new Promise((r)=>setTimeout(r,ms||0));}
-function diceSvg(n){const pips={1:[[12,12]],2:[[8,8],[16,16]],3:[[8,8],[12,12],[16,16]],4:[[8,8],[16,8],[8,16],[16,16]],5:[[8,8],[16,8],[12,12],[8,16],[16,16]],6:[[8,8],[16,8],[8,12],[16,12],[8,16],[16,16]],};const pts=pips[n]||pips[1];const dots=pts.map(([x,y])=>`<circle cx="${x}" cy="${y}" r="2.05" fill="currentColor"/>`).join("");return`
-      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
-        <rect x="4.5" y="4.5" width="15" height="15" rx="3" ry="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
-        ${dots}
-      </svg>
-    `;}
+function diceSvg(n){const faces={1:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 12h.01"/>',2:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M15 9h.01"/><path d="M9 15h.01"/>',3:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M16 8h.01"/><path d="M12 12h.01"/><path d="M8 16h.01"/>',4:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M16 8h.01"/><path d="M8 8h.01"/><path d="M8 16h.01"/><path d="M16 16h.01"/>',5:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M16 8h.01"/><path d="M8 8h.01"/><path d="M8 16h.01"/><path d="M16 16h.01"/><path d="M12 12h.01"/>',6:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M16 8h.01"/><path d="M16 12h.01"/><path d="M16 16h.01"/><path d="M8 8h.01"/><path d="M8 12h.01"/><path d="M8 16h.01"/>',};return`<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${faces[n] || faces[1]}</svg>`;}
 function randFace(){return 1+Math.floor(Math.random()*6);}
 function readLastFace(){try{const v=Number(sessionStorage.getItem(LAST_FACE_KEY)||"");return v>=1&&v<=6?v:1;}catch(_){return 1;}}
 function writeLastFace(n){try{const v=Number(n);if(v>=1&&v<=6)sessionStorage.setItem(LAST_FACE_KEY,String(v));}catch(_){}}

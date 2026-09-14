@@ -1166,11 +1166,7 @@ return p.replace(/^\/+/,"").replace(/\/+$/,"");}
 function currentHotPathKeys(){const out=new Set();const push=(x)=>{const k=normaliseHotPathKey(x);if(k)out.add(k);};push(relPathFromSiteRoot(window.location.pathname||""));push(window.location.pathname||"");try{const canonical=document.querySelector('link[rel="canonical"]');if(canonical&&canonical.href){const u=new URL(canonical.href,document.baseURI);push(relPathFromSiteRoot(u.pathname||""));push(u.pathname||"");}}catch(_){}
 return out;}
 function isConceptPageForHotBadge(){const rel=relPathFromSiteRoot(window.location.pathname||"").toLowerCase();if(!rel)return false;const base=(rel.split("/").pop()||"").replace(/\.html$/i,"");if(!base)return false;if(["index","about","find","random","custom-random","trending","contributors","search","tags"].includes(base))return false;const segs=rel.split("/").filter(Boolean);return segs.length>=3;}
-function hotIconSvg(size){const s=Number(size)||20;return`<svg class="mk-trending-hot-svg" width="${s}" height="${s}" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 2.5c1.25 3.25.35 5.48-2.6 8.1"></path>
-      <path d="M9.4 10.6C7.58 8.3 7.25 6.2 7.35 4.45C5.35 6.55 3.6 10.05 3.6 14.05C3.6 18.65 7.28 22 12 22s8.4-3.35 8.4-7.95c0-3.52-1.82-6.7-4.78-8.95c.55 2.78-.2 5.02-2.15 6.68"></path>
-      <path d="M12.02 21.55c-1.95-1.25-2.9-3.05-2.55-5.05c.26-1.45 1.25-2.45 2.05-3.56c.82 1.22 2.22 2.16 2.58 3.76c.45 1.94-.42 3.75-2.08 4.85"></path>
-    </svg>`;}
+function hotIconSvg(size){const s=Number(size)||20;return`<svg class="mk-trending-hot-svg" width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>`;}
 function escapeHtmlHot(s){return String(s||"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;");}
 function trendingPageHref(){try{return new URL("trending.html",getSiteRootUrl()).toString();}
 catch(_){return"trending.html";}}

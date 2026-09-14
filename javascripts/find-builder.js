@@ -205,8 +205,8 @@ html.mk-site-motion-off #lp-map-modal .lp-mapviewport svg path.lp-rel-edge.lp-re
   animation:none !important;
 }
 `;(document.head||document.documentElement).appendChild(st);}
-function __mkEnabledIcon(){return'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 5.14v14l11-7-11-7Z"/></svg>';}
-function __mkDisabledIcon(){return'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6 19h4V5H6v14m8-14v14h4V5h-4Z"/></svg>';}
+function __mkEnabledIcon(){return'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3l14 9-14 9z"/></svg>';}
+function __mkDisabledIcon(){return'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="14" y="4" width="4" height="16" rx="1"/><rect x="6" y="4" width="4" height="16" rx="1"/></svg>';}
 function __mkGetAnchor(){const palette=document.querySelector('label[for="__palette"]');if(palette&&palette.closest){const opt=palette.closest('.md-header__option');if(opt)return opt;}
 const options=document.querySelector('.md-header__options');if(options)return options;return document.querySelector('.md-header');}
 function __mkUpdateButton(){const wrap=document.getElementById(BTN_WRAP_ID);if(!wrap)return;const btn=wrap.querySelector('.mk-motion-btn');if(!btn)return;const enabled=__mkMotionEnabled();const systemReduced=__mkSystemReduced();btn.innerHTML=enabled?__mkEnabledIcon():__mkDisabledIcon();btn.setAttribute('aria-label',enabled?'Turn off site animations':'Turn on site animations');btn.setAttribute('title',systemReduced?'Site animations follow your system reduced-motion setting':(enabled?'Turn off site animations':'Turn on site animations'));wrap.classList.toggle('is-off',!enabled);wrap.classList.toggle('is-system-off',systemReduced);}
@@ -405,8 +405,8 @@ body.mk-find-page.trending-page #find-builder :is(.fb-btn__ico,.fb-clear__x) svg
 }
 body.mk-find-page.trending-page #find-builder :is(#fb-undo,#fb-redo,#fb-run) .fb-btn__ico svg,
 body.mk-find-page.trending-page #find-builder :is(#fb-undo,#fb-redo,#fb-run) .fb-btn__ico svg *{
-  fill: currentColor !important;
-  stroke: none !important;
+  fill: none !important;
+  stroke: currentColor !important;
 }
 body.mk-find-page.trending-page #find-builder :is(#fb-clear,#fb-clear-tokens) :is(.fb-btn__ico,.fb-clear__x) svg,
 body.mk-find-page.trending-page #find-builder :is(#fb-clear,#fb-clear-tokens) :is(.fb-btn__ico,.fb-clear__x) svg *{
@@ -742,7 +742,7 @@ function fbEnsureMobileIntroTips(){if(!isOnFindPage())return;fbEnsureMobileIntro
 let shell=h1.closest&&h1.closest(".fb-mobile-intro-title-shell[data-fb-mobile-intro-shell='1']");let panel=shell&&shell.querySelector?shell.querySelector(".fb-mobile-helper"):null;const p=fbFindIntroParagraph(article,h1,panel);if(!p)return;if(!shell){shell=document.createElement("div");shell.className="fb-mobile-intro-title-shell";shell.setAttribute("data-fb-mobile-intro-shell","1");h1.insertAdjacentElement("beforebegin",shell);shell.appendChild(h1);}
 let wrap=shell.querySelector(".fb-mobile-intro-tips[data-fb-mobile-intro-tips='1']")||h1.querySelector(".fb-mobile-intro-tips[data-fb-mobile-intro-tips='1']");if(!wrap){wrap=document.createElement("span");wrap.className="fb-mobile-intro-tips";wrap.setAttribute("data-fb-mobile-intro-tips","1");wrap.innerHTML=`
         <button type="button" class="fb-mobile-tipbtn" aria-expanded="false" aria-label="Search tips" title="Search tips">
-          <span class="fb-mobile-tipbtn-icon" aria-hidden="true">i</span>
+          <span class="fb-mobile-tipbtn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
           <span class="fb-mobile-tipbtn-text">Search tips</span>
         </button>
       `;}
@@ -820,7 +820,7 @@ const isMobile=!!(window.matchMedia&&window.matchMedia("(max-width: 600px)").mat
     </div>
   `;const placeholderHeightHtml=placeholderHtml.replace(/<button[^>]*data-fb-example[^>]*>[^<]*<\/button>/,"").replace('class="fb-board__placeholder ','aria-hidden="true" class="fb-board__placeholder fb-board__placeholder--height-ghost ').replace('data-fb-empty-hint="board"','data-fb-empty-hint="board-height"');const clearTokensBtnHtml=`
           <button id="fb-clear-tokens" class="fb-btn fb-btn--ghost fb-tokens__clear" type="button" ${hasTokenList ? "" : "disabled"}>
-            <span class="fb-clear__x" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false" fill="none"><path d="M4 7h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 3.5h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 7l-1 12a2 2 0 0 1-2 1.8H9A2 2 0 0 1 7 19L6 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 11v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M14 11v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <span class="fb-clear__x" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M10 11v6"/><path d="M14 11v6"/></svg></span>
             <span class="fb-clear__txt">Clear tokens</span>
           </button>
         `;const poolEmptyHtml=`<div class="fb-tokens__empty fb-hint${__suppressPoolEmpty ? " fb-hint--pending" : ""}" data-fb-empty-hint="pool">Your saved keywords and tags.</div>`;host.innerHTML=`

@@ -5,7 +5,7 @@ function inferYearCourse(){const rel=relPathFromSiteRoot(window.location.pathnam
 return{year:segs[0],course:segs[1]};}
 function cleanTitleText(s){return String(s||"").replace(/\s*¶\s*$/u,"").replace(/\s+/g," ").trim();}
 function directNavLink(item){if(!item||!item.querySelector)return null;return item.querySelector(':scope > a.md-nav__link, :scope > label.md-nav__link, :scope > .md-nav__link');}
-function chevronSvg(className){const cls=className?` ${className}`:"";return`<svg class="ccb-chevron${cls}" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5"></path></svg>`;}
+function chevronSvg(className){const cls=className?` ${className}`:"";return`<svg class="ccb-chevron${cls}" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 4 4 4-4 4"/></svg>`;}
 function ensureStyleInjected(){if(document.getElementById(STYLE_ID))return;const style=document.createElement("style");style.id=STYLE_ID;style.textContent=`
 #current-course-bar{
   --ccb-line: transparent;
