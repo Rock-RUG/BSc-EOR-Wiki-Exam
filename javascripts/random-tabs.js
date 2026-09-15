@@ -258,9 +258,11 @@ html:is(.mk-rt-search-active, :has(.md-header input[data-md-component="search-qu
 }
 .mk-rt-panel .mk-rt-panel-label{ flex:0 1 auto; min-width:0; text-align:left; }
 .mk-rt-panel .mk-rt-panel-account-badge{ margin-left:.35rem; flex:0 0 auto; }
-.mk-rt-panel a.mk-rt-panel-item:hover,
+/* Default menus: hover is a state layer from wiki-interactions.css; the
+   accent ink marks keyboard focus and the current item. */
+:where(html:is([data-mk-interface-theme],[data-mk-image-interface-theme],[data-mk-dropdown-skin],[data-mk-header-skin])) .mk-rt-panel a.mk-rt-panel-item:hover,
 .mk-rt-panel a.mk-rt-panel-item:focus-visible,
-.mk-rt-panel button.mk-rt-panel-item:hover,
+:where(html:is([data-mk-interface-theme],[data-mk-image-interface-theme],[data-mk-dropdown-skin],[data-mk-header-skin])) .mk-rt-panel button.mk-rt-panel-item:hover,
 .mk-rt-panel button.mk-rt-panel-item:focus-visible{
   color:var(--md-accent-fg-color) !important;
   background:transparent !important;

@@ -604,12 +604,8 @@ function ensureGpsStylesOnce(){if(document.getElementById('lp-gps-style-v3'))ret
     #lp-gps-modal .lp-gps-cta:not(.is-primary){ background:rgba(255,255,255,.045); }
     #lp-side-panel .lp-gps-cta,
     #lp-gps-modal .lp-gps-cta{ transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease, filter .18s ease; }
-    #lp-side-panel .lp-gps-cta:hover,
-    #lp-gps-modal .lp-gps-cta:hover{ border-color:rgba(129,140,248,.38); background:rgba(255,255,255,.08); transform:translateY(-2px); box-shadow:0 14px 28px rgba(15,23,42,.12); }
     #lp-side-panel .lp-gps-cta.is-primary,
     #lp-gps-modal .lp-gps-cta.is-primary{ background:linear-gradient(135deg, rgba(99,102,241,.20), rgba(99,102,241,.10)); border-color:rgba(99,102,241,.42); }
-    #lp-side-panel .lp-gps-cta.is-primary:hover,
-    #lp-gps-modal .lp-gps-cta.is-primary:hover{ filter:brightness(1.06) saturate(1.04); transform:translateY(-2px); box-shadow:0 16px 30px rgba(79,70,229,.18), 0 0 0 1px rgba(99,102,241,.18); }
     #lp-side-panel .lp-gps-cta-icon,
     #lp-gps-modal .lp-gps-cta-icon{ width:.96rem; height:.96rem; display:inline-flex; align-items:center; justify-content:center; flex:0 0 auto; }
     #lp-side-panel .lp-gps-cta-icon svg,
@@ -1102,7 +1098,8 @@ function injectStylesOnce(){if(document.getElementById("lp-style-v2"))return;con
   transform:none;
 }
 
-#lp-side-panel .lp-icon-btn:hover,
+/* Without a theme or side-panel skin, wiki-interactions.css owns this hover. */
+:where(html:is([data-mk-interface-theme],[data-mk-image-interface-theme],[data-mk-connections-links],[data-mk-connections-sections],[data-mk-connections-panel],[data-mk-sidepanel-cards],[data-mk-sidepanel-links],[data-mk-sidepanel-surface])) #lp-side-panel .lp-icon-btn:hover,
 #lp-mobile-sheet .lp-msheet-iconbtn:hover{
   border-color: var(--md-accent-fg-color);
   background: rgba(99,102,241,.10);
@@ -1237,11 +1234,6 @@ article.md-content__inner .lp-h1-route-target-pin svg circle{
   fill:none;
   stroke:currentColor;
 }
-article.md-content__inner .lp-h1-route-target:hover{
-  border-color:var(--md-accent-fg-color);
-  background:rgba(99,102,241,.1);
-  transform:translateY(-1px);
-}
 article.md-content__inner .lp-h1-route-target.is-current{
   border-color:rgba(16,185,129,.42);
   box-shadow:0 0 0 1px rgba(16,185,129,.14) inset;
@@ -1346,11 +1338,6 @@ article.md-content__inner .lp-h1-route-marker-svg{
 }
 article.md-content__inner .lp-h1-route-marker-svg path{
   fill:currentColor;
-}
-article.md-content__inner .lp-h1-route-stop:hover{
-  border-color:var(--md-accent-fg-color);
-  background:rgba(99,102,241,.1);
-  transform:translateY(-1px);
 }
 article.md-content__inner .lp-h1-route-arrow{
   opacity:.72;
@@ -5904,12 +5891,10 @@ document.addEventListener('mk:map-opened',event=>{const source=event&&event.deta
         z-index:3 !important;
       }
       #lp-h1sg-modal .lp-h1sg-docklaunch:hover,
-      #lp-h1sg-modal .lp-h1sg-docklaunch.is-hover{
-        transform:translateX(-50%) translateY(-2px) scale(1.032) !important;
-      }
+      #lp-h1sg-modal .lp-h1sg-docklaunch.is-hover,
       #lp-h1sg-modal .lp-h1sg-docklaunch:active,
       #lp-h1sg-modal .lp-h1sg-docklaunch.is-press{
-        transform:translateX(-50%) scale(.988) !important;
+        transform:translateX(-50%) !important;
       }
 
       #lp-h1sg-modal:not(.lp-webgl3d) .lp-node{
@@ -6823,16 +6808,18 @@ document.addEventListener('DOMContentSwitch',sync);window.addEventListener('resi
   transition: transform .18s ease, box-shadow .18s ease, filter .18s ease, border-color .18s ease, background .18s ease !important;
   will-change: transform !important;
 }
+/* Filled-button recipe from wiki-interactions.css: a state layer of the
+   button ink over its fill, drawn on the centred anchor without lifting it. */
 #lp-h1sg-modal .lp-h1sg-docklaunch:hover,
 #lp-h1sg-modal .lp-h1sg-docklaunch.is-hover{
-  transform: translateX(-50%) translateY(-2px) scale(1.032) !important;
-  box-shadow: 0 22px 40px rgba(0,0,0,.34), 0 0 0 1px rgba(129,140,248,.34), 0 0 0 8px rgba(129,140,248,.14) !important;
-  filter: brightness(1.10) saturate(1.08) !important;
+  transform: translateX(-50%) !important;
+  box-shadow: 0 10px 22px rgba(0,0,0,.24), 0 0 0 1px rgba(129,140,248,.18), inset 0 0 0 100vmax color-mix(in srgb, currentColor 14%, transparent) !important;
+  filter: none !important;
 }
 #lp-h1sg-modal .lp-h1sg-docklaunch:active,
 #lp-h1sg-modal .lp-h1sg-docklaunch.is-press{
-  transform: translateX(-50%) scale(.988) !important;
-  box-shadow: 0 10px 22px rgba(0,0,0,.24), 0 0 0 1px rgba(129,140,248,.18) !important;
+  transform: translateX(-50%) !important;
+  box-shadow: 0 10px 22px rgba(0,0,0,.24), 0 0 0 1px rgba(129,140,248,.18), inset 0 0 0 100vmax color-mix(in srgb, currentColor 22%, transparent) !important;
 }
 #lp-h1sg-modal .lp-h1sg-docklaunch:focus-visible{
   outline: none !important;

@@ -397,12 +397,6 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
       .cmm-h1-entry__label{
         display:inline-block;
       }
-      .cmm-h1-entry:hover{
-        transform: translateY(-1px);
-        border-color: rgba(82,102,255,.50);
-        background: linear-gradient(135deg, rgba(82,102,255,.18), rgba(128,92,255,.12));
-        box-shadow: 0 14px 34px rgba(82,102,255,.14), var(--shadow-soft, 0 10px 26px rgba(0,0,0,.10));
-      }
       .cmm-h1-entry svg,
       .cmm-cta svg,
       .cmm-filter svg,
@@ -468,9 +462,6 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         appearance:none;
         -webkit-appearance:none;
         user-select:none;
-      }
-      .cmm-modal__close:hover{
-        transform: translateY(-1px);
       }
       .cmm-modal__close:focus,
       .cmm-modal__close:focus-visible,
@@ -636,10 +627,6 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         font-size:.84rem;
         font-weight:500;
         padding:.44rem .74rem;
-      }
-      #${PANEL_ID} .cmm-cta:hover,
-      #${PANEL_ID} .cmm-filter:hover{
-        background: color-mix(in srgb, var(--md-default-bg-color) 82%, var(--md-accent-fg-color, var(--md-primary-fg-color)) 18%);
       }
       #${PANEL_ID} .cmm-cta[disabled]{
         opacity:.45;
@@ -946,7 +933,6 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         box-shadow: inset 0 0 0 1px rgba(255,255,255,.28), 0 4px 10px rgba(0,0,0,.05);
         transition: transform .14s ease, box-shadow .18s ease, border-color .18s ease;
       }
-      #${PANEL_ID} .cmm-tile:hover,
       #${PANEL_ID} .cmm-tile.is-active{
         transform: translateY(-1px) scale(1.06);
         box-shadow: inset 0 0 0 1px rgba(255,255,255,.36), 0 8px 18px rgba(0,0,0,.10);
@@ -1011,10 +997,6 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         text-decoration:none;
         text-underline-offset:.16em;
         max-width:100%;
-      }
-      #${PANEL_ID} .cmm-focuscard__titlelink:hover{
-        color:var(--md-primary-fg-color);
-        text-decoration:underline;
       }
       #${PANEL_ID} .cmm-focuscard__lecture{
         margin-top:.32rem;
@@ -1241,12 +1223,6 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         cursor:pointer;
         transition: transform .14s ease, background .18s ease, border-color .18s ease;
       }
-      #${PANEL_ID} .cmm-minirow:hover,
-      #${PANEL_ID} .cmm-cluster:hover,
-      #${PANEL_ID} .cmm-actioncard:hover{
-        transform: translateY(-1px);
-        background: color-mix(in srgb, var(--md-default-bg-color) 80%, var(--md-accent-fg-color, var(--md-primary-fg-color)) 20%);
-      }
       #${PANEL_ID} .cmm-minirow{
         display:grid;
         grid-template-columns:auto minmax(0, 1fr) auto;
@@ -1337,14 +1313,8 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         text-align:left;
         cursor:pointer;
       }
-      #${PANEL_ID} .cmm-vizrow:hover{
-        background: color-mix(in srgb, var(--md-default-bg-color) 82%, var(--md-accent-fg-color, var(--md-primary-fg-color)) 18%);
-      }
       #${PANEL_ID} .cmm-vizrow--static{
         cursor:default;
-      }
-      #${PANEL_ID} .cmm-vizrow--static:hover{
-        background: rgba(255,255,255,.48);
       }
       #${PANEL_ID} .cmm-vizrow__head,
       #${PANEL_ID} .cmm-vizrow__top{
@@ -1506,9 +1476,6 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         border-color: color-mix(in srgb, hsl(220 16% 48%) 20%, rgba(0,0,0,.08));
         background: color-mix(in srgb, var(--md-default-bg-color) 91%, hsl(220 16% 60%) 9%);
       }
-      #${PANEL_ID} .cmm-change-row:hover{
-        background: color-mix(in srgb, var(--md-default-bg-color) 82%, var(--md-accent-fg-color, var(--md-primary-fg-color)) 18%);
-      }
       #${PANEL_ID} .cmm-change-row__label{
         font-size:.74rem;
         font-weight:800;
@@ -1607,11 +1574,6 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         color: rgba(255,255,255,.96) !important;
         border-color: rgba(129,140,248,.42);
         box-shadow: 0 12px 34px rgba(0,0,0,.28);
-      }
-      html[data-md-color-scheme="slate"] .cmm-h1-entry:hover,
-      body[data-md-color-scheme="slate"] .cmm-h1-entry:hover{
-        background: linear-gradient(135deg, rgba(99,102,241,.31), rgba(129,140,248,.20));
-        border-color: rgba(165,180,252,.58);
       }
       html[data-md-color-scheme="slate"] .cmm-h1-entry,
       html[data-md-color-scheme="slate"] .cmm-h1-entry__icon,

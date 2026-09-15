@@ -1039,7 +1039,8 @@ html.mk-sidebar-sort-ready .md-sidebar--primary .md-nav__link {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
-#${IDS.control} .${CLS.dockButton}:hover,
+/* Without an interface theme, hover paint comes from wiki-interactions.css. */
+:where(html:is([data-mk-interface-theme],[data-mk-image-interface-theme])) #${IDS.control} .${CLS.dockButton}:hover,
 #${IDS.control} .${CLS.dockButton}:focus-visible {
   outline: none;
   color: var(--md-accent-fg-color);

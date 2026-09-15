@@ -275,7 +275,6 @@ function csrEnsureSortDropdownStylesOnce(){if(document.getElementById("mk-sortdr
       max-width:100%;
     }
     [data-md-color-scheme="slate"] .mk-sortbtn{ background: rgba(255,255,255,.04); }
-    .mk-sortbtn:hover{ border-color: rgba(99,102,241,.45); background: rgba(99,102,241,.06); }
     .mk-sortbtn__ico, .mk-sortbtn__chev{ display:inline-flex; align-items:center; justify-content:center; width:18px; height:18px; opacity:.85; flex:0 0 auto; color: inherit; }
     .mk-sortbtn__txt{ font-weight:650; opacity:.85; }
     .mk-sortbtn__val{
@@ -318,8 +317,6 @@ function csrEnsureSortDropdownStylesOnce(){if(document.getElementById("mk-sortdr
       text-align:left;
     }
     .mk-sortopt__ico{ width:18px; height:18px; display:inline-flex; align-items:center; justify-content:center; opacity:.88; flex:0 0 auto; color: inherit; }
-    .mk-sortopt:hover{ background: rgba(0,0,0,.06); }
-    [data-md-color-scheme="slate"] .mk-sortopt:hover{ background: rgba(255,255,255,.08); }
     .mk-sortopt.is-active{
       background: rgba(99,102,241,.10);
       box-shadow: inset 0 0 0 1px rgba(99,102,241,.22);
