@@ -1098,8 +1098,8 @@ function injectStylesOnce(){if(document.getElementById("lp-style-v2"))return;con
   transform:none;
 }
 
-/* Without a theme or side-panel skin, wiki-interactions.css owns this hover. */
-:where(html:is([data-mk-interface-theme],[data-mk-image-interface-theme],[data-mk-connections-links],[data-mk-connections-sections],[data-mk-connections-panel],[data-mk-sidepanel-cards],[data-mk-sidepanel-links],[data-mk-sidepanel-surface])) #lp-side-panel .lp-icon-btn:hover,
+/* Without a side-panel skin, wiki-interactions.css owns this hover. */
+:where(html:is([data-mk-connections-links],[data-mk-connections-sections],[data-mk-connections-panel],[data-mk-sidepanel-cards],[data-mk-sidepanel-links],[data-mk-sidepanel-surface])) #lp-side-panel .lp-icon-btn:hover,
 #lp-mobile-sheet .lp-msheet-iconbtn:hover{
   border-color: var(--md-accent-fg-color);
   background: rgba(99,102,241,.10);

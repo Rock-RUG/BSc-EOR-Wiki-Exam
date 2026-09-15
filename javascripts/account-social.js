@@ -771,8 +771,7 @@ body[data-md-color-scheme="slate"] .mk-page-comments .mk-comment-icon-btn svg *,
 .mk-comment-primary-btn{ padding:.45rem .8rem; font-weight:650; }
 .mk-comment-small-btn{ padding:.28rem .58rem; font-size:.78rem; }
 .mk-comment-reaction{ padding:.18rem .42rem; font-size:.75rem; }
-:where(html:is([data-mk-interface-theme],[data-mk-image-interface-theme])) .mk-comment-primary-btn:hover,:where(html:is([data-mk-interface-theme],[data-mk-image-interface-theme])) .mk-comment-small-btn:hover{ background:color-mix(in srgb, var(--md-default-fg-color) 5%, transparent) !important; border-color:color-mix(in srgb, var(--md-default-fg-color) 16%, transparent) !important; box-shadow:none !important; transform:none !important; }
-:where(html:is([data-mk-interface-theme],[data-mk-image-interface-theme])) .mk-comment-icon-btn:hover,.mk-comment-icon-btn:focus-visible{ background:color-mix(in srgb, var(--md-default-fg-color) 5%, transparent) !important; border-color:color-mix(in srgb, var(--md-default-fg-color) 16%, transparent) !important; box-shadow:none !important; transform:none !important; }
+.mk-comment-icon-btn:focus-visible{ background:color-mix(in srgb, var(--md-default-fg-color) 5%, transparent) !important; border-color:color-mix(in srgb, var(--md-default-fg-color) 16%, transparent) !important; box-shadow:none !important; transform:none !important; }
 .mk-comment-reaction.is-owner-view{ cursor:pointer; }
 .mk-comment-danger-btn{ color:#b91c1c; border-color:rgba(185,28,28,.25); }
 .mk-comment-danger-btn:hover{ color:#b91c1c !important; border-color:rgba(185,28,28,.25) !important; }
@@ -1746,16 +1745,6 @@ body[data-md-color-scheme="slate"] .mk-comment-form-actions .mk-comment-primary-
   color:rgba(255,255,255,.92) !important;
   border-color:rgba(255,255,255,.28) !important;
   background:rgba(255,255,255,.08) !important;
-}
-[data-md-color-scheme="slate"] .mk-comment-admin-btn.is-on:hover,
-body[data-md-color-scheme="slate"] .mk-comment-admin-btn.is-on:hover,
-:where(html:is([data-mk-interface-theme],[data-mk-image-interface-theme])) [data-md-color-scheme="slate"] .mk-comment-emoji-btn:hover,
-:where(html:is([data-mk-interface-theme],[data-mk-image-interface-theme])) body[data-md-color-scheme="slate"] .mk-comment-emoji-btn:hover,
-:where(html:is([data-mk-interface-theme],[data-mk-image-interface-theme])) [data-md-color-scheme="slate"] .mk-comment-form-actions .mk-comment-primary-btn.mk-comment-icon-btn:hover,
-:where(html:is([data-mk-interface-theme],[data-mk-image-interface-theme])) body[data-md-color-scheme="slate"] .mk-comment-form-actions .mk-comment-primary-btn.mk-comment-icon-btn:hover{
-  color:#fff !important;
-  border-color:rgba(255,255,255,.38) !important;
-  background:rgba(255,255,255,.12) !important;
 }
 [data-md-color-scheme="slate"] .mk-comment-emoji-menu,
 body[data-md-color-scheme="slate"] .mk-comment-emoji-menu{

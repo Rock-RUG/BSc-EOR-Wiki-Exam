@@ -122,9 +122,11 @@ function ensureStyles(){if(document.getElementById(IDS.style))return;const st=do
   -webkit-tap-highlight-color:transparent;
   transition:color 125ms ease, opacity 125ms ease;
 }
-#${IDS.shell} a.mk-rt-link:hover,
+/* Hover is a state layer from wiki-interactions.css (an accent ink on the
+   coloured header was hard to read); header skins keep the accent ink. */
+:where(html[data-mk-header-skin]) #${IDS.shell} a.mk-rt-link:hover,
 #${IDS.shell} a.mk-rt-link:focus-visible,
-#${IDS.shell} button.mk-rt-trigger:hover,
+:where(html[data-mk-header-skin]) #${IDS.shell} button.mk-rt-trigger:hover,
 #${IDS.shell} button.mk-rt-trigger:focus-visible,
 #${IDS.shell} button.mk-rt-trigger[aria-expanded="true"]{
   color:var(--md-accent-fg-color) !important;
@@ -258,11 +260,11 @@ html:is(.mk-rt-search-active, :has(.md-header input[data-md-component="search-qu
 }
 .mk-rt-panel .mk-rt-panel-label{ flex:0 1 auto; min-width:0; text-align:left; }
 .mk-rt-panel .mk-rt-panel-account-badge{ margin-left:.35rem; flex:0 0 auto; }
-/* Default menus: hover is a state layer from wiki-interactions.css; the
-   accent ink marks keyboard focus and the current item. */
-:where(html:is([data-mk-interface-theme],[data-mk-image-interface-theme],[data-mk-dropdown-skin],[data-mk-header-skin])) .mk-rt-panel a.mk-rt-panel-item:hover,
+/* Menus take their hover state layer from wiki-interactions.css; the accent
+   ink marks keyboard focus, the current item and the dropdown and header skins. */
+:where(html:is([data-mk-dropdown-skin],[data-mk-header-skin])) .mk-rt-panel a.mk-rt-panel-item:hover,
 .mk-rt-panel a.mk-rt-panel-item:focus-visible,
-:where(html:is([data-mk-interface-theme],[data-mk-image-interface-theme],[data-mk-dropdown-skin],[data-mk-header-skin])) .mk-rt-panel button.mk-rt-panel-item:hover,
+:where(html:is([data-mk-dropdown-skin],[data-mk-header-skin])) .mk-rt-panel button.mk-rt-panel-item:hover,
 .mk-rt-panel button.mk-rt-panel-item:focus-visible{
   color:var(--md-accent-fg-color) !important;
   background:transparent !important;

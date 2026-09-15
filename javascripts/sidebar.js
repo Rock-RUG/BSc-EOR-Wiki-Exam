@@ -289,7 +289,7 @@ html[data-md-color-scheme="slate"] #current-course-bar{
   transition:border-color .16s ease, background .16s ease, color .16s ease, transform .14s ease, box-shadow .16s ease;
   -webkit-tap-highlight-color:transparent;
 }
-#current-course-bar .ccb-course-trigger:hover,
+/* Hover paint comes from wiki-interactions.css; focus and the open menu keep this look. */
 #current-course-bar .ccb-course-trigger:focus-visible,
 #current-course-bar[data-course-menu-open="1"] .ccb-course-trigger{
   outline:none;
@@ -371,7 +371,6 @@ html[data-md-color-scheme="slate"] #current-course-bar{
   line-height:1.18;
   transition:background .14s ease, color .14s ease, transform .12s ease;
 }
-#current-course-bar .ccb-menu-item:hover,
 #current-course-bar .ccb-menu-item:focus-visible{
   outline:none;
   color:var(--md-accent-fg-color);
@@ -1039,8 +1038,7 @@ html.mk-sidebar-sort-ready .md-sidebar--primary .md-nav__link {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
-/* Without an interface theme, hover paint comes from wiki-interactions.css. */
-:where(html:is([data-mk-interface-theme],[data-mk-image-interface-theme])) #${IDS.control} .${CLS.dockButton}:hover,
+/* Hover paint comes from wiki-interactions.css; this is the keyboard focus look. */
 #${IDS.control} .${CLS.dockButton}:focus-visible {
   outline: none;
   color: var(--md-accent-fg-color);

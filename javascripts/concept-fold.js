@@ -160,8 +160,8 @@ function injectCss(){if(document.getElementById(CSS_ID))return;const style=docum
         white-space: normal;
       }
 
-      #${PANEL_ID} a:hover,
-      #${PANEL_ID} a:focus {
+      /* Pointer hover is a state layer from wiki-interactions.css. */
+      #${PANEL_ID} a:focus-visible {
         color: var(--md-accent-fg-color, var(--md-primary-fg-color));
         background: rgba(100, 116, 139, 0.1);
         background: color-mix(in srgb, var(--md-accent-fg-color, #00bfa5) 10%, transparent);
