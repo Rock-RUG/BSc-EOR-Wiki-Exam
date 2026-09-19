@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1789817928743,
+  "generatedAt": 1789829620391,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -3117,20 +3117,6 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
-    "Year-1/1b-Probability-Theory-for-EOR/central-moment.html": {
-      "title": "Central Moment",
-      "courseName": "1b-Probability-Theory-for-EOR",
-      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/1b-Probability-Theory-for-EOR/chebyshev-inequality.html": {
-      "title": "Chebyshev Inequality (Probability Theory for EOR)",
-      "courseName": "1b-Probability-Theory-for-EOR",
-      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
     "Year-1/1b-Probability-Theory-for-EOR/combination.html": {
       "title": "Combination",
       "courseName": "1b-Probability-Theory-for-EOR",
@@ -3180,13 +3166,6 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
-    "Year-1/1b-Probability-Theory-for-EOR/convergence-in-probability.html": {
-      "title": "Convergence in Probability (Probability Theory for EOR)",
-      "courseName": "1b-Probability-Theory-for-EOR",
-      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
     "Year-1/1b-Probability-Theory-for-EOR/counting.html": {
       "title": "Counting",
       "courseName": "1b-Probability-Theory-for-EOR",
@@ -3196,13 +3175,6 @@
     },
     "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html": {
       "title": "Cumulative Distribution Function (Probability Theory for EOR)",
-      "courseName": "1b-Probability-Theory-for-EOR",
-      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/1b-Probability-Theory-for-EOR/degenerate-distribution.html": {
-      "title": "Degenerate Distribution",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -3301,13 +3273,6 @@
     },
     "Year-1/1b-Probability-Theory-for-EOR/half-life.html": {
       "title": "Half-Life",
-      "courseName": "1b-Probability-Theory-for-EOR",
-      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/1b-Probability-Theory-for-EOR/histogram.html": {
-      "title": "Histogram",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -3413,13 +3378,6 @@
     },
     "Year-1/1b-Probability-Theory-for-EOR/mode.html": {
       "title": "Mode",
-      "courseName": "1b-Probability-Theory-for-EOR",
-      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/1b-Probability-Theory-for-EOR/moment.html": {
-      "title": "Moment",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -3558,57 +3516,8 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
-    "Year-1/1b-Probability-Theory-for-EOR/sample-central-moment.html": {
-      "title": "Sample Central Moment",
-      "courseName": "1b-Probability-Theory-for-EOR",
-      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/1b-Probability-Theory-for-EOR/sample-mean.html": {
-      "title": "Sample Mean",
-      "courseName": "1b-Probability-Theory-for-EOR",
-      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/1b-Probability-Theory-for-EOR/sample-moment.html": {
-      "title": "Sample Moment",
-      "courseName": "1b-Probability-Theory-for-EOR",
-      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
     "Year-1/1b-Probability-Theory-for-EOR/sample-space.html": {
       "title": "Sample Space",
-      "courseName": "1b-Probability-Theory-for-EOR",
-      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/1b-Probability-Theory-for-EOR/sample-standard-deviation.html": {
-      "title": "Sample Standard Deviation",
-      "courseName": "1b-Probability-Theory-for-EOR",
-      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/1b-Probability-Theory-for-EOR/sample-standardized-moment.html": {
-      "title": "Sample Standardized Moment",
-      "courseName": "1b-Probability-Theory-for-EOR",
-      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/1b-Probability-Theory-for-EOR/sample-variance.html": {
-      "title": "Sample Variance",
-      "courseName": "1b-Probability-Theory-for-EOR",
-      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/1b-Probability-Theory-for-EOR/skewness-and-kurtosis.html": {
-      "title": "Skewness and Kurtosis",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -3623,13 +3532,6 @@
     },
     "Year-1/1b-Probability-Theory-for-EOR/standardization.html": {
       "title": "Standardization",
-      "courseName": "1b-Probability-Theory-for-EOR",
-      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/1b-Probability-Theory-for-EOR/standardized-moment.html": {
-      "title": "Standardized Moment",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -3714,13 +3616,6 @@
     },
     "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html": {
       "title": "Variance and Standard Deviation",
-      "courseName": "1b-Probability-Theory-for-EOR",
-      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/1b-Probability-Theory-for-EOR/weak-law-of-large-numbers.html": {
-      "title": "Weak Law of Large Numbers (Probability Theory for EOR)",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -6839,15 +6734,6 @@
       "Year-1/1b-Probability-Theory-for-EOR/naive-probability.html",
       "Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html"
     ],
-    "Year-1/1b-Probability-Theory-for-EOR/central-moment.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/moment.html",
-      "Year-1/1b-Probability-Theory-for-EOR/expectation.html"
-    ],
-    "Year-1/1b-Probability-Theory-for-EOR/chebyshev-inequality.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html",
-      "Year-1/1b-Probability-Theory-for-EOR/expectation.html",
-      "Year-1/1a-Math-I-Calculus/inequality.html"
-    ],
     "Year-1/1b-Probability-Theory-for-EOR/combination.html": [
       "Year-1/1a-Math-I-Calculus/set.html"
     ],
@@ -6877,11 +6763,6 @@
       "Year-1/1b-Probability-Theory-for-EOR/random-variable.html",
       "Year-1/1a-Math-I-Calculus/definite-integral.html"
     ],
-    "Year-1/1b-Probability-Theory-for-EOR/convergence-in-probability.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/random-variable.html",
-      "Year-1/1a-Math-I-Calculus/sequence.html",
-      "Year-1/1a-Math-I-Calculus/limit-of-a-sequence.html"
-    ],
     "Year-1/1b-Probability-Theory-for-EOR/counting.html": [
       "Year-1/1a-Math-I-Calculus/finite-and-infinite-sets.html",
       "Year-1/1b-Math-II-Linear-Algebra/cardinality.html",
@@ -6890,10 +6771,6 @@
     "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html": [
       "Year-1/1b-Probability-Theory-for-EOR/random-variable.html",
       "Year-1/1b-Probability-Theory-for-EOR/distribution.html"
-    ],
-    "Year-1/1b-Probability-Theory-for-EOR/degenerate-distribution.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/distribution.html",
-      "Year-1/1b-Probability-Theory-for-EOR/random-variable.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/discrete-random-variable.html": [
       "Year-1/1b-Probability-Theory-for-EOR/random-variable.html",
@@ -6956,10 +6833,6 @@
       "Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/half-life.html": [],
-    "Year-1/1b-Probability-Theory-for-EOR/histogram.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/partition.html",
-      "Year-1/1a-Math-I-Calculus/interval.html"
-    ],
     "Year-1/1b-Probability-Theory-for-EOR/hypergeometric-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/combination.html"
     ],
@@ -7022,11 +6895,6 @@
     "Year-1/1b-Probability-Theory-for-EOR/mode.html": [
       "Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html",
       "Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html"
-    ],
-    "Year-1/1b-Probability-Theory-for-EOR/moment.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/expectation.html",
-      "Year-1/1b-Probability-Theory-for-EOR/random-variable.html",
-      "Year-1/1a-Math-I-Calculus/natural-number.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/monotonicity-of-expectation.html": [
       "Year-1/1b-Probability-Theory-for-EOR/expectation.html",
@@ -7107,44 +6975,15 @@
     "Year-1/1b-Probability-Theory-for-EOR/rayleigh-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/continuous-random-variable.html"
     ],
-    "Year-1/1b-Probability-Theory-for-EOR/sample-central-moment.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/sample-mean.html",
-      "Year-1/1b-Probability-Theory-for-EOR/central-moment.html"
-    ],
-    "Year-1/1b-Probability-Theory-for-EOR/sample-mean.html": [
-      "Year-1/1a-Math-I-Calculus/addition-and-sum.html"
-    ],
-    "Year-1/1b-Probability-Theory-for-EOR/sample-moment.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/moment.html",
-      "Year-1/1a-Math-I-Calculus/addition-and-sum.html"
-    ],
     "Year-1/1b-Probability-Theory-for-EOR/sample-space.html": [
       "Year-1/1a-Math-I-Calculus/set.html",
       "Year-1/1b-Probability-Theory-for-EOR/outcome.html"
-    ],
-    "Year-1/1b-Probability-Theory-for-EOR/sample-standard-deviation.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/sample-variance.html",
-      "Year-1/1a-Math-I-Calculus/n-th-root.html"
-    ],
-    "Year-1/1b-Probability-Theory-for-EOR/sample-standardized-moment.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/sample-central-moment.html",
-      "Year-1/1b-Probability-Theory-for-EOR/standardized-moment.html"
-    ],
-    "Year-1/1b-Probability-Theory-for-EOR/sample-variance.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/sample-mean.html"
-    ],
-    "Year-1/1b-Probability-Theory-for-EOR/skewness-and-kurtosis.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/standardized-moment.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/standard-normal-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/normal-distribution.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/standardization.html": [
       "Year-1/1b-Probability-Theory-for-EOR/expectation.html",
-      "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html"
-    ],
-    "Year-1/1b-Probability-Theory-for-EOR/standardized-moment.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/central-moment.html",
       "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/stars-and-bars.html": [
@@ -7194,13 +7033,6 @@
     "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html": [
       "Year-1/1b-Probability-Theory-for-EOR/expectation.html",
       "Year-1/1b-Probability-Theory-for-EOR/random-variable.html"
-    ],
-    "Year-1/1b-Probability-Theory-for-EOR/weak-law-of-large-numbers.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/sample-mean.html",
-      "Year-1/1b-Probability-Theory-for-EOR/convergence-in-probability.html",
-      "Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html",
-      "Year-1/1b-Probability-Theory-for-EOR/chebyshev-inequality.html",
-      "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html"
     ],
     "Year-1/1b-Programming-for-EOR/index.html": [],
     "Year-1/2a-Finance-for-EOR/index.html": [],
@@ -7888,9 +7720,7 @@
     "Year-1/1a-Math-I-Calculus/addition-and-sum.html": [
       "Year-1/1a-Math-I-Calculus/multiplication-and-product.html",
       "Year-1/1a-Math-I-Calculus/negation.html",
-      "Year-1/1b-Probability-Theory-for-EOR/linearity-of-expectation.html",
-      "Year-1/1b-Probability-Theory-for-EOR/sample-mean.html",
-      "Year-1/1b-Probability-Theory-for-EOR/sample-moment.html"
+      "Year-1/1b-Probability-Theory-for-EOR/linearity-of-expectation.html"
     ],
     "Year-1/1a-Math-I-Calculus/alternating-series-test.html": [],
     "Year-1/1a-Math-I-Calculus/alternating-series.html": [
@@ -8165,7 +7995,6 @@
       "Year-1/1a-Math-I-Calculus/monotone-sequence.html",
       "Year-1/1a-Math-I-Calculus/squeeze-theorem-for-sequences.html",
       "Year-1/1a-Math-I-Calculus/upper-bound.html",
-      "Year-1/1b-Probability-Theory-for-EOR/chebyshev-inequality.html",
       "Year-1/1b-Probability-Theory-for-EOR/monotonicity-of-expectation.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/binding-and-nonbinding-constraints.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/complementary-slackness.html",
@@ -8217,7 +8046,6 @@
       "Year-1/1a-Math-I-Calculus/convexity-and-concavity.html",
       "Year-1/1a-Math-I-Calculus/endpoint-and-bounded-interval.html",
       "Year-1/1a-Math-I-Calculus/punctured-neighbourhood.html",
-      "Year-1/1b-Probability-Theory-for-EOR/histogram.html",
       "Year-1/1b-Probability-Theory-for-EOR/uniform-distribution.html",
       "Year-1/2a-Math-III-Analysis/convergence-of-power-series.html",
       "Year-1/2a-Math-III-Analysis/heine-cantor-theorem.html"
@@ -8262,7 +8090,6 @@
       "Year-1/1a-Math-I-Calculus/limit-laws-for-sequences.html",
       "Year-1/1a-Math-I-Calculus/monotone-convergence-theorem.html",
       "Year-1/1a-Math-I-Calculus/squeeze-theorem-for-sequences.html",
-      "Year-1/1b-Probability-Theory-for-EOR/convergence-in-probability.html",
       "Year-1/2a-Math-III-Analysis/convergence-in-a-metric-space.html",
       "Year-1/2a-Math-III-Analysis/limit-superior-and-limit-inferior.html",
       "Year-1/2a-Math-III-Analysis/pointwise-convergence.html"
@@ -8311,7 +8138,6 @@
     ],
     "Year-1/1a-Math-I-Calculus/n-th-root.html": [
       "Year-1/1b-Math-II-Linear-Algebra/complex-absolute-value.html",
-      "Year-1/1b-Probability-Theory-for-EOR/sample-standard-deviation.html",
       "Year-1/2a-Math-III-Analysis/root-test.html"
     ],
     "Year-1/1a-Math-I-Calculus/natural-number.html": [
@@ -8320,8 +8146,7 @@
       "Year-1/1a-Math-I-Calculus/finite-and-infinite-sets.html",
       "Year-1/1a-Math-I-Calculus/integer.html",
       "Year-1/1b-Math-II-Linear-Algebra/aleph-null.html",
-      "Year-1/1b-Math-II-Linear-Algebra/countable-and-uncountable-sets.html",
-      "Year-1/1b-Probability-Theory-for-EOR/moment.html"
+      "Year-1/1b-Math-II-Linear-Algebra/countable-and-uncountable-sets.html"
     ],
     "Year-1/1a-Math-I-Calculus/negation.html": [
       "Year-1/1a-Math-I-Calculus/subtraction-and-difference.html",
@@ -8395,8 +8220,7 @@
       "Year-1/1a-Math-I-Calculus/bounded-sequence.html",
       "Year-1/1a-Math-I-Calculus/cauchy-sequence.html",
       "Year-1/1a-Math-I-Calculus/finite-sequence.html",
-      "Year-1/1a-Math-I-Calculus/limit-of-a-sequence.html",
-      "Year-1/1b-Probability-Theory-for-EOR/convergence-in-probability.html"
+      "Year-1/1a-Math-I-Calculus/limit-of-a-sequence.html"
     ],
     "Year-1/1a-Math-I-Calculus/set.html": [
       "Year-1/1a-Math-I-Calculus/difference-set.html",
@@ -9534,13 +9358,6 @@
     ],
     "Year-1/1b-Probability-Theory-for-EOR/binomial-distribution.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/birthday-problem.html": [],
-    "Year-1/1b-Probability-Theory-for-EOR/central-moment.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/sample-central-moment.html",
-      "Year-1/1b-Probability-Theory-for-EOR/standardized-moment.html"
-    ],
-    "Year-1/1b-Probability-Theory-for-EOR/chebyshev-inequality.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/weak-law-of-large-numbers.html"
-    ],
     "Year-1/1b-Probability-Theory-for-EOR/combination.html": [
       "Year-1/1b-Probability-Theory-for-EOR/hypergeometric-distribution.html"
     ],
@@ -9570,9 +9387,6 @@
       "Year-1/1b-Probability-Theory-for-EOR/uniform-distribution.html",
       "Year-1/2b-Probability-Distributions/gamma-distribution.html"
     ],
-    "Year-1/1b-Probability-Theory-for-EOR/convergence-in-probability.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/weak-law-of-large-numbers.html"
-    ],
     "Year-1/1b-Probability-Theory-for-EOR/counting.html": [
       "Year-1/1b-Probability-Theory-for-EOR/multiplication-rule.html",
       "Year-1/1b-Probability-Theory-for-EOR/naive-probability.html",
@@ -9584,7 +9398,6 @@
       "Year-1/1b-Probability-Theory-for-EOR/universality-of-the-uniform.html",
       "Year-1/2b-Probability-Distributions/density-of-an-order-statistic.html"
     ],
-    "Year-1/1b-Probability-Theory-for-EOR/degenerate-distribution.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/discrete-random-variable.html": [
       "Year-1/1b-Probability-Theory-for-EOR/bernoulli-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/discrete-uniform-distribution.html",
@@ -9601,7 +9414,6 @@
     ],
     "Year-1/1b-Probability-Theory-for-EOR/distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html",
-      "Year-1/1b-Probability-Theory-for-EOR/degenerate-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html",
       "Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html",
       "Year-1/1b-Probability-Theory-for-EOR/mixture-distribution.html",
@@ -9623,13 +9435,10 @@
       "Year-1/1b-Probability-Theory-for-EOR/union-and-intersection-of-events.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/expectation.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/central-moment.html",
-      "Year-1/1b-Probability-Theory-for-EOR/chebyshev-inequality.html",
       "Year-1/1b-Probability-Theory-for-EOR/conditional-expectation.html",
       "Year-1/1b-Probability-Theory-for-EOR/fundamental-bridge.html",
       "Year-1/1b-Probability-Theory-for-EOR/linearity-of-expectation.html",
       "Year-1/1b-Probability-Theory-for-EOR/lotus.html",
-      "Year-1/1b-Probability-Theory-for-EOR/moment.html",
       "Year-1/1b-Probability-Theory-for-EOR/monotonicity-of-expectation.html",
       "Year-1/1b-Probability-Theory-for-EOR/standardization.html",
       "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html"
@@ -9648,11 +9457,8 @@
       "Year-1/1b-Probability-Theory-for-EOR/negative-binomial-distribution.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/half-life.html": [],
-    "Year-1/1b-Probability-Theory-for-EOR/histogram.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/hypergeometric-distribution.html": [],
-    "Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/weak-law-of-large-numbers.html"
-    ],
+    "Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/inclusion-exclusion-principle.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/independent-events.html": [
       "Year-1/1b-Probability-Theory-for-EOR/conditional-independence.html",
@@ -9684,10 +9490,6 @@
     "Year-1/1b-Probability-Theory-for-EOR/mode.html": [
       "Year-1/1b-Probability-Theory-for-EOR/unimodal-and-multimodal-distribution.html"
     ],
-    "Year-1/1b-Probability-Theory-for-EOR/moment.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/central-moment.html",
-      "Year-1/1b-Probability-Theory-for-EOR/sample-moment.html"
-    ],
     "Year-1/1b-Probability-Theory-for-EOR/monotonicity-of-expectation.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/multiplication-rule.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/naive-probability.html": [
@@ -9707,7 +9509,6 @@
       "Year-1/1b-Probability-Theory-for-EOR/sample-space.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/partition.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/histogram.html",
       "Year-1/1b-Probability-Theory-for-EOR/law-of-total-probability.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/permutation.html": [],
@@ -9752,9 +9553,7 @@
     "Year-1/1b-Probability-Theory-for-EOR/random-interval.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/random-variable.html": [
       "Year-1/1b-Probability-Theory-for-EOR/continuous-random-variable.html",
-      "Year-1/1b-Probability-Theory-for-EOR/convergence-in-probability.html",
       "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html",
-      "Year-1/1b-Probability-Theory-for-EOR/degenerate-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/discrete-random-variable.html",
       "Year-1/1b-Probability-Theory-for-EOR/distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/expectation.html",
@@ -9763,7 +9562,6 @@
       "Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html",
       "Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html",
       "Year-1/1b-Probability-Theory-for-EOR/indicator-random-variable.html",
-      "Year-1/1b-Probability-Theory-for-EOR/moment.html",
       "Year-1/1b-Probability-Theory-for-EOR/order-statistic.html",
       "Year-1/1b-Probability-Theory-for-EOR/random-interval.html",
       "Year-1/1b-Probability-Theory-for-EOR/stochastic-process.html",
@@ -9771,15 +9569,6 @@
       "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/rayleigh-distribution.html": [],
-    "Year-1/1b-Probability-Theory-for-EOR/sample-central-moment.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/sample-standardized-moment.html"
-    ],
-    "Year-1/1b-Probability-Theory-for-EOR/sample-mean.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/sample-central-moment.html",
-      "Year-1/1b-Probability-Theory-for-EOR/sample-variance.html",
-      "Year-1/1b-Probability-Theory-for-EOR/weak-law-of-large-numbers.html"
-    ],
-    "Year-1/1b-Probability-Theory-for-EOR/sample-moment.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/sample-space.html": [
       "Year-1/1b-Probability-Theory-for-EOR/axioms-of-probability.html",
       "Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html",
@@ -9788,18 +9577,8 @@
       "Year-1/1b-Probability-Theory-for-EOR/probability-function.html",
       "Year-1/1b-Probability-Theory-for-EOR/random-variable.html"
     ],
-    "Year-1/1b-Probability-Theory-for-EOR/sample-standard-deviation.html": [],
-    "Year-1/1b-Probability-Theory-for-EOR/sample-standardized-moment.html": [],
-    "Year-1/1b-Probability-Theory-for-EOR/sample-variance.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/sample-standard-deviation.html"
-    ],
-    "Year-1/1b-Probability-Theory-for-EOR/skewness-and-kurtosis.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/standard-normal-distribution.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/standardization.html": [],
-    "Year-1/1b-Probability-Theory-for-EOR/standardized-moment.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/sample-standardized-moment.html",
-      "Year-1/1b-Probability-Theory-for-EOR/skewness-and-kurtosis.html"
-    ],
     "Year-1/1b-Probability-Theory-for-EOR/stars-and-bars.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/stochastic-process.html": [
       "Year-1/1b-Probability-Theory-for-EOR/poisson-process.html"
@@ -9820,14 +9599,10 @@
     ],
     "Year-1/1b-Probability-Theory-for-EOR/universality-of-the-uniform.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/chebyshev-inequality.html",
       "Year-1/1b-Probability-Theory-for-EOR/conditional-variance.html",
       "Year-1/1b-Probability-Theory-for-EOR/standardization.html",
-      "Year-1/1b-Probability-Theory-for-EOR/standardized-moment.html",
-      "Year-1/1b-Probability-Theory-for-EOR/weak-law-of-large-numbers.html",
       "Year-1/2b-Probability-Distributions/conditional-variance-given-a-random-variable.html"
     ],
-    "Year-1/1b-Probability-Theory-for-EOR/weak-law-of-large-numbers.html": [],
     "Year-1/1b-Programming-for-EOR/index.html": [],
     "Year-1/2a-Finance-for-EOR/index.html": [],
     "Year-1/2a-Math-III-Analysis/index.html": [],
