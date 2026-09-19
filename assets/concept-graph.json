@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1789606394200,
+  "generatedAt": 1789817928743,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -5202,6 +5202,13 @@
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
       "aiMcq": true
+    },
+    "Year-3/index.html": {
+      "title": "Year 3",
+      "courseName": "Year-3",
+      "coursePath": "Year-3",
+      "curriculumStatus": "current",
+      "aiMcq": true
     }
   },
   "prereqOf": {
@@ -7856,7 +7863,8 @@
     "Year-2/2a-Life-Insurance/index.html": [],
     "Year-2/2b-Dynamic-Econometrics/index.html": [],
     "Year-2/2b-Game-Theory/index.html": [],
-    "Year-2/2b-Risk-Insurance/index.html": []
+    "Year-2/2b-Risk-Insurance/index.html": [],
+    "Year-3/index.html": []
   },
   "dependents": {
     "index.html": [],
@@ -10266,6 +10274,7 @@
     "Year-2/2a-Life-Insurance/index.html": [],
     "Year-2/2b-Dynamic-Econometrics/index.html": [],
     "Year-2/2b-Game-Theory/index.html": [],
-    "Year-2/2b-Risk-Insurance/index.html": []
+    "Year-2/2b-Risk-Insurance/index.html": [],
+    "Year-3/index.html": []
   }
 }
