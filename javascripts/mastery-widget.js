@@ -857,7 +857,7 @@ try{mwCloseTitleMenu();}catch(_){}
 try{mwClearFlyGhosts();}catch(_){}};return;}
 const anchor=document.createElement("div");anchor.className="mw-anchor";const box=document.createElement("div");box.id="mw-mastery";box.className="md-typeset";box.innerHTML=`
       <div class="mw-head">
-        <div class="mw-title">Mastery for this concept</div>
+        <div class="mw-title">My understanding</div>
         <div class="mw-head-right">
           <button type="button" class="mw-ready-chip" data-mw-ready-trigger="1" aria-haspopup="dialog" aria-expanded="false" disabled>
             <span class="mw-ready-chip-label">Prereq</span>
@@ -893,6 +893,7 @@ const anchor=document.createElement("div");anchor.className="mw-anchor";const bo
           <span class="mw-emo">${mwSvgForLevel(0, 18)}</span><span class="mw-lab">Unknown</span>
         </button>
       </div>
+      <p class="mw-meta">Self-rating, not a grade. Clear = understand; Mastered = use independently.</p>
       <div class="mw-meta mw-aiq-host" id="mw-meta" data-aiq-widget-host="1"></div>
       <div class="mw-recap" data-mw-recap="widget" hidden></div>
     `;const compact=document.createElement("div");compact.id="mw-mastery-compact";compact.className="md-typeset";compact.innerHTML=mwCompactMarkup();state.anchor=anchor;state.box=box;state.compact=compact;try{mwSyncSectionLineColor(state);}catch(_){}
