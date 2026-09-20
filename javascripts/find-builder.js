@@ -815,7 +815,7 @@ const isMobile=!!(window.matchMedia&&window.matchMedia("(max-width: 600px)").mat
     <div class="fb-board__placeholder fb-ghost fb-hint${__suppressBoardEmpty ? " fb-hint--pending" : ""}" data-fb-empty-hint="board">
       <strong class="fb-example-label">Example query</strong>
       ${ghostLineHtml}
-      <button type="button" class="fb-example-load" data-fb-example>Try this query</button>
+      <button type="button" class="fb-example-load" data-fb-example>Load example</button>
       <div class="fb-ghost__hint">${escapeHtml(ghostHintText)}</div>
     </div>
   `;const placeholderHeightHtml=placeholderHtml.replace(/<button[^>]*data-fb-example[^>]*>[^<]*<\/button>/,"").replace('class="fb-board__placeholder ','aria-hidden="true" class="fb-board__placeholder fb-board__placeholder--height-ghost ').replace('data-fb-empty-hint="board"','data-fb-empty-hint="board-height"');const clearTokensBtnHtml=`

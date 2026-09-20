@@ -139,7 +139,9 @@
   function isFind(){try{var p=cleanPath().toLowerCase();return p==="find"||p.endsWith("/find")||p.endsWith("/find.html")||p.endsWith("/find/index.html");}catch(_){return false;}}
   function markKind(){try{root.classList.toggle("mk-find-page",isFind());}catch(_){} }
   function concept(){try{var p=cleanPath();var a=p.split("/").filter(Boolean);if(a.length<3)return false;var x=(a[a.length-1]||"").toLowerCase().replace(/\.html$/i,"");return x&&!/^(index|find|search|tags|trending|random|custom-random|home|about)$/.test(x)&&!/^random-\d/.test(x);}catch(_){return false;}}
-  function tabsReady(){try{if(!document.querySelector(".md-tabs__list"))return true;return !!(document.getElementById("year-dropdown")&&document.getElementById("random-dropdown")&&document.querySelector(".md-tabs__item.random-right-start"));}catch(_){return false;}}
+  // Read the mounted shell as well as listening for its event: navigation may
+  // finish before this gate starts, or remain mounted across history restores.
+  function tabsReady(){try{if(!document.querySelector(".md-tabs__list"))return true;var nav=document.getElementById("mk-random-tabs-shadow");return !!(nav&&nav.getAttribute("data-mk-nav-ready")==="1");}catch(_){return false;}}
   function shellReady(){try{return !!document.querySelector(".md-container,.md-main,.md-content");}catch(_){return false;}}
   function isDesktopSidebar(){try{return !!(window.matchMedia&&window.matchMedia("(min-width: 960px)").matches);}catch(_){return false;}}
   function shouldGateDesktopSidebar(ms){try{if(!concept())return false;if(!isDesktopSidebar())return false;var s=document.querySelector(".md-sidebar--primary");if(s)return true;return ms<720;}catch(_){return false;}}
@@ -1694,7 +1696,7 @@ Aliases: MGF Uniqueness, MGF uniqueness
 <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="../../javascripts/exam-mode.js?h=d89710d31520"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
-<script src="../../javascripts/startup-preferences.js?h=91a111482508"></script>
+<script src="../../javascripts/startup-preferences.js?h=44bd24baf10f"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=9fa5ab51c2d9"></script>
 <script src="../../javascripts/ui-guard.js?h=8b3fbdf7b5e9"></script>
@@ -1707,7 +1709,7 @@ Aliases: MGF Uniqueness, MGF uniqueness
 <script src="../../javascripts/mathjax.js?h=f50cbd3a17e6"></script>
 <script src="../../javascripts/preload-guard.js?h=01ffb1bbb74f"></script>
 <script src="../../javascripts/random.js?h=7fd70d7d900c"></script>
-<script src="../../javascripts/random-tabs.js?h=4b22f5f6efaf"></script>
+<script src="../../javascripts/random-tabs.js?h=3b740e9ee017"></script>
 <script src="../../javascripts/search-enter.js?h=ecfa6b413a1a"></script>
 <script src="../../javascripts/concept-fold.js?h=fba48c836d97"></script>
 <script src="../../javascripts/tag-search-links.js?h=84cb5c2dd87f"></script>
