@@ -222,9 +222,7 @@ function urlToRelPath(u){try{const siteRoot=new URL(getSiteRootUrl());const url=
 function getPageTitleFromDom(){const h1=document.querySelector("article.md-content__inner h1");if(!h1)return"";try{const html=__lpSanitizeRenderedMathHtml(String(lpExtractRenderableTitleHtmlFromHeading(h1)||'').trim());if(html){const txt=__lpTitleHtmlToText(html);if(txt)return txt;}}catch(_){}
 return cleanTitle(h1.textContent||"");}
 function getPageTitleHtmlFromDom(){const h1=document.querySelector("article.md-content__inner h1");return h1?__lpSanitizeRenderedMathHtml(lpExtractRenderableTitleHtmlFromHeading(h1)):"";}
-function lpPanelStatusIcon(loc,rec,fallbackM){const m=(rec&&typeof rec.m==="number")?rec.m:(typeof fallbackM==="number"?fallbackM:null);if(m===0||m===1||m===2||m===3){return{state:`m${m}`,icon:lpMasteryIcon(m),label:`Mastery level: ${lpMasteryLevelLabel(m)}`};}
-if(lpWasVisited(loc)){return{state:"viewed-unrated",icon:lpMasterySvg("eye-outline",18),label:"Viewed but not rated"};}
-return{state:"not-viewed",icon:lpMasterySvg("eye-off-outline",18),label:"Not viewed"};}
+function lpPanelStatusIcon(loc,rec,fallbackM){return window.MkConceptConnections.statusFor(loc,rec,fallbackM);}
 function masteryScore(m){if(m===0)return 100;if(m===1)return 40;if(m===2)return 10;if(m===3)return 0;return 25;}
 function masteryReady(m,rec){try{if(rec&&window.ConceptMastery&&typeof window.ConceptMastery.readinessValueFromRecord==="function"){return Math.max(0,Math.min(1,Number(window.ConceptMastery.readinessValueFromRecord(rec))||0));}}catch(_){}
 if(m===3||m===2)return 1;if(m===1)return 0.5;if(m===0)return 0;return 0;}
@@ -242,7 +240,7 @@ try{if(!window.__lpMasteryCacheInvalidationInstalled){window.__lpMasteryCacheInv
 function lpMapSetTitleFilter(node,filter){if(!node)return;node.style.filter='none';const title=node.querySelector('.lp-node-title');if(title)title.style.filter=filter||'none';}
 function lpApplyMapReadinessFill(node,loc){const badge=node&&node.querySelector('.lp-readiness-badge');if(!badge)return;node.classList.add('lp-readiness-node');node.dataset.lpReadiness=badge.dataset.lpReadiness;node.dataset.lpReadinessLevel=badge.dataset.lpReadinessLevel;node.style.setProperty('--lp-node-readiness',`${badge.dataset.lpReadiness}%`);}
 function lpMapReadinessData(loc,record){const rec=record===undefined?getMastery(loc):record;const m=rec&&typeof rec.m==="number"?rec.m:null;const raw=Number(masteryReady(m,rec));const pct=Math.round(Math.max(0,Math.min(1,Number.isFinite(raw)?raw:0))*100);const rated=lpHasExplicitMastery(rec,m);const level=rated?({3:"mastered",2:"clear",1:"unclear",0:"unknown"}[m]||"unrated"):"unrated";return{pct,level,rated};}
-function lpCreateMapReadinessBadge(loc,record){const data=lpMapReadinessData(loc,record);const badge=document.createElement("span");badge.className="lp-readiness-badge";badge.dataset.lpReadiness=String(data.pct);badge.dataset.lpReadinessLevel=data.level;const rating={mastered:"Mastered",clear:"Clear",unclear:"Unclear",unknown:"Unknown",unrated:"Not rated"}[data.level];badge.title=`Readiness ${data.pct}% · ${rating}`;badge.setAttribute("role","meter");badge.setAttribute("aria-label","Readiness");badge.setAttribute("aria-valuemin","0");badge.setAttribute("aria-valuemax","100");badge.setAttribute("aria-valuenow",String(data.pct));badge.textContent=`${data.pct}%`;return badge;}
+function lpCreateMapReadinessBadge(loc,record){const data=lpMapReadinessData(loc,record);const badge=document.createElement("span");badge.className="lp-readiness-badge";badge.dataset.lpReadiness=String(data.pct);badge.dataset.lpReadinessLevel=data.level;const rating={mastered:"Mastered",clear:"Clear",unclear:"Partial",unknown:"Unknown",unrated:"Not rated"}[data.level];badge.title=`Readiness ${data.pct}% · ${rating}`;badge.setAttribute("role","meter");badge.setAttribute("aria-label","Readiness");badge.setAttribute("aria-valuemin","0");badge.setAttribute("aria-valuemax","100");badge.setAttribute("aria-valuenow",String(data.pct));badge.textContent=`${data.pct}%`;return badge;}
 function lpMasteryPercentForLoc(loc){const rec=getMastery(loc);if(!rec)return-1;const counts=(rec&&rec.counts&&typeof rec.counts==="object")?rec.counts:{};const full=Number(counts.full)||0;const know=Number(counts.know)||0;const fuzzy=Number(counts.fuzzy)||0;const dont=Number(counts.dont)||0;const total=Math.max(Number(rec.reviewCount)||0,full+know+fuzzy+dont);if(total>0){return((full*100)+(know*75)+(fuzzy*40)+(dont*10))/total;}
 const m=(rec&&typeof rec.m==="number")?rec.m:null;if(m===3)return 100;if(m===2)return 75;if(m===1)return 40;if(m===0)return 10;return lpWasVisited(loc)?40:0;}
 function lpSharedRevealHas(loc){try{const key=lpCanonKey(loc);return!!(key&&lpSharedRevealSet().has(key));}catch(_){return false;}}
@@ -370,16 +368,12 @@ for(const k of LP_RELATED_KEYS){try{const v=graph&&graph[k]?graph[k][key]:null;i
 try{const n=graph&&graph.nodes?(graph.nodes[key]||graph.nodes[key.replace(/\/$/,"")]||null):null;if(n){for(const k of LP_RELATED_KEYS){if(n[k])pushAny(n[k]);}
 if(n.links&&typeof n.links==="object"){if(n.links.related)pushAny(n.links.related);if(n.links.similar)pushAny(n.links.similar);if(n.links.seeAlso)pushAny(n.links.seeAlso);}}}catch(_){}
 return uniq(out).map(normLoc).filter((x)=>x&&x!==key&&isConceptPage(x));}
-function rankDependents(graph,currentLoc,resolveTitle){const deps=getDependents(graph,currentLoc);const out=[];const titleFor=(typeof resolveTitle==="function")?resolveTitle:((loc)=>nodeTitle(graph,loc));for(const loc of deps){const self=getMastery(loc);const selfM=self&&typeof self.m==="number"?self.m:null;const pres=getPrereqs(graph,loc);const total=pres.length;let readyStrong=0;let sumWeighted=0;for(const p of pres){const rec=getMastery(p);const m=rec&&typeof rec.m==="number"?rec.m:null;const r=masteryReady(m,rec);sumWeighted+=r;if(r>=1)readyStrong+=1;}
-const readiness=total?sumWeighted/total:1;const pct=Math.round(readiness*100);const hint=total?`Prereqs ${readyStrong}/${total} (${pct}%)`:`No prereqs`;const tooltip=total?`Readiness: ${pct}% (weighted ${sumWeighted.toFixed(1)}/${total}). Fully ready prereqs: ${readyStrong}/${total}.`:`No prerequisites.`;out.push({loc,title:titleFor(loc),m:selfM,hint,tooltip,readiness,readyStrong,total});}
-out.sort((a,b)=>{const aDone=a.m===3?1:0;const bDone=b.m===3?1:0;if(aDone!==bDone)return aDone-bDone;if(b.readiness!==a.readiness)return b.readiness-a.readiness;if((b.readyStrong||0)!==(a.readyStrong||0))return(b.readyStrong||0)-(a.readyStrong||0);if((a.total||0)!==(b.total||0))return(a.total||0)-(b.total||0);const at=String(a.title||"");const bt=String(b.title||"");return at.localeCompare(bt,undefined,{sensitivity:"base"});});const seen=new Set();const dedup=[];for(const it of out){const k=normLoc(it.loc);if(!k||seen.has(k))continue;seen.add(k);dedup.push(it);}
-return dedup;}
+function rankDependents(graph,currentLoc,resolveTitle){return lpPanelEngine().rankDependents(graph,currentLoc,resolveTitle);}
 function suggestForward(graph,currentLoc,limit){const ranked=rankDependents(graph,currentLoc);const candidates=ranked.filter((x)=>x.m!==3);return candidates.slice(0,limit);}
-function suggestBackfill(graph,currentLoc,limit,resolveTitle){const pres=getPrereqs(graph,currentLoc);const out=[];const titleFor=(typeof resolveTitle==="function")?resolveTitle:((loc)=>nodeTitle(graph,loc));for(const loc of pres){const rec=getMastery(loc);const m=rec&&typeof rec.m==="number"?rec.m:null;out.push({loc,title:titleFor(loc),m,rec,score:masteryScore(m)});}
-out.sort((a,b)=>b.score-a.score);return out.slice(0,limit);}
+function suggestBackfill(graph,currentLoc,limit,resolveTitle){return lpPanelEngine().suggestBackfill(graph,currentLoc,limit,resolveTitle);}
 function lpGpsMasteryMeta(loc){const rec=getMastery(loc);const m=rec&&typeof rec.m==="number"?rec.m:null;const ready=masteryReady(m,rec);let bucket="unrated";let label="Not rated";if(m===3){bucket="mastered";label="Mastered";}
 else if(m===2){bucket="know";label="Clear";}
-else if(m===1){bucket="fuzzy";label="Unclear";}
+else if(m===1){bucket="fuzzy";label="Partial";}
 else if(m===0){bucket="dont";label="Unknown";}
 return{rec,m,ready,bucket,label};}
 function lpGpsDistanceMap(graph,targetLoc,maxDepth){const target=normLoc(targetLoc);const limit=Math.max(1,Number(maxDepth)||6);const dist=new Map();if(!target)return dist;const q=[target];dist.set(target,0);for(let qi=0;qi<q.length;qi+=1){const cur=q[qi];const d=Number(dist.get(cur)||0);if(d>=limit)continue;for(const raw of getPrereqs(graph,cur)){const pre=normLoc(raw);if(!pre||!isConceptPage(pre))continue;const nd=d+1;if(!dist.has(pre)||nd<dist.get(pre)){dist.set(pre,nd);q.push(pre);}}}
@@ -410,7 +404,7 @@ return spine;}
 function lpGpsSortSupportLocs(graph,locs,distMap){return(locs||[]).slice().sort((a,b)=>{const ma=lpGpsMasteryMeta(a);const mb=lpGpsMasteryMeta(b);const needA=lpGpsNeedsWork(ma)?1:0;const needB=lpGpsNeedsWork(mb)?1:0;if(needB!==needA)return needB-needA;const fa=lpGpsIsFoundationNode(graph,a)?1:0;const fb=lpGpsIsFoundationNode(graph,b)?1:0;if(fb!==fa)return fb-fa;const da=Number(distMap.get(normLoc(a))||0);const db=Number(distMap.get(normLoc(b))||0);if(db!==da)return db-da;const at=String(nodeTitle(graph,a)||a||"");const bt=String(nodeTitle(graph,b)||b||"");return at.localeCompare(bt,undefined,{sensitivity:"base"});});}
 function lpGpsCollectSideSupports(graph,spineSet,stepLoc,prevLoc,distMap){const prevKey=prevLoc?lpCanonKey(prevLoc):"";const pres=uniq(getPrereqs(graph,stepLoc).map(normLoc).filter(Boolean).filter(isConceptPage));const extras=pres.filter((loc)=>{if(prevKey&&lpCanonKey(loc)===prevKey)return false;return!spineSet.has(normLoc(loc));});return lpGpsSortSupportLocs(graph,extras,distMap).slice(0,4);}
 function lpGpsStepWhy(graph,step,nextLoc,targetLoc){const meta=step.meta||{};const title=nodeTitle(graph,nextLoc||targetLoc);const parts=[];if(step.isTarget){parts.push('This is the page you are trying to reach.');}else if(nextLoc){parts.push(`Study this before ${title}.`);}
-if(meta.m==null)parts.push('Not rated yet.');else if(meta.m===0)parts.push("Currently marked Unknown.");else if(meta.m===1)parts.push('Currently marked Unclear.');else if(meta.m===2)parts.push('Currently marked Clear.');else if(meta.m===3)parts.push('Currently marked Mastered.');return parts.join(' ');}
+if(meta.m==null)parts.push('Not rated yet.');else if(meta.m===0)parts.push("Currently marked Unknown.");else if(meta.m===1)parts.push('Currently marked Partial.');else if(meta.m===2)parts.push('Currently marked Clear.');else if(meta.m===3)parts.push('Currently marked Mastered.');return parts.join(' ');}
 function lpBuildKnowledgeGpsPlan(graph,targetLoc,opts){const options=opts&&typeof opts==='object'?opts:{};const target=normLoc(targetLoc);const activeState=options.activeState&&lpCanonKey(options.activeState.target||'')===lpCanonKey(target)?options.activeState:null;const maxDepth=7;const distMap=lpGpsDistanceMap(graph,target,maxDepth);const directPrereqs=uniq(getPrereqs(graph,target).map(normLoc).filter(Boolean).filter(isConceptPage));const missingPrereqs=directPrereqs.filter((loc)=>lpGpsMasteryMeta(loc).ready<1);let routeLocs=[];if(activeState&&Array.isArray(activeState.path)&&activeState.path.length){routeLocs=lpGpsNormalizeRoutePath(activeState.path);}
 const memKey=`${currentRelPath()}::${lpCanonKey(target)}`;try{if(!window.__lpGpsPlanMem||window.__lpGpsPlanMemPage!==currentRelPath()){window.__lpGpsPlanMem=Object.create(null);window.__lpGpsPlanMemPage=currentRelPath();}
 const cached=window.__lpGpsPlanMem[memKey];if(!routeLocs.length&&Array.isArray(cached)&&cached.length)routeLocs=cached.slice();}catch(_){}
@@ -1048,7 +1042,7 @@ function injectStylesOnce(){if(document.getElementById("lp-style-v2"))return;con
   filter: drop-shadow(0 0 6px rgba(248,113,113,.18));
 }
 #lp-side-panel .lp-rank[data-lp-state="m1"]{
-  /* "Unclear" is a neutral state. Gold is reserved for m3/mastered. */
+  /* "Partial" is a neutral state. Gold is reserved for m3/mastered. */
   color: color-mix(in srgb, var(--md-default-fg-color) 92%, transparent);
   filter: none;
 }
@@ -2961,14 +2955,8 @@ body[data-md-color-scheme="slate"] article.md-content__inner .lp-h1-route-arrow{
   #lp-map-modal input.lp-zoomrange::-moz-range-thumb{ width:24px !important; height:24px !important; }
 }
 `;document.head.appendChild(st);}
-function buildList(items,graphRef,resolveTitle){if(!items.length)return`<div class="lp-empty">No suggestions.</div>`;const graphForTitles=graphRef||window.__lpLearningPathGraph||null;const titleFor=(typeof resolveTitle==="function")?resolveTitle:((loc)=>nodeTitle(graphForTitles,loc));return items.map((it)=>{const itemTitleHtml=__lpRepairTitleHtmlFromLoc(it.loc,String(it.titleHtml||it.html||"").trim());const fallbackTitle=cleanTitle(it.title||titleFor(it.loc)||it.loc);const display=lpNodeTitleDisplay(graphForTitles,it.loc,fallbackTitle);const titleText=cleanTitle(display.text||fallbackTitle||it.loc);const titleHtml=itemTitleHtml||String(display.html||"").trim()||escapeHtml(titleText);const rawTitle=cleanTitle(lpHasMathMarkup(titleText)?titleText:((itemTitleHtml?__lpTitleHtmlToText(itemTitleHtml):"")||titleText));const titleHasMath=lpHasMathMarkup(titleHtml)||lpHasMathMarkup(rawTitle)||lpHasMathMarkup(titleText);const titleClass=titleHasMath?"lp-name lp-name--math":"lp-name lp-name--text";const hint=it.hint?escapeHtml(it.hint):"";const tooltip=it.tooltip?escapeHtml(it.tooltip):"";const rec=getMastery(it.loc);const m=rec&&typeof rec.m==="number"?rec.m:(typeof it.m==="number"?it.m:null);const statusIcon=lpPanelStatusIcon(it.loc,rec,m);const statusLabel=escapeHtml(statusIcon.label||"Concept status");const statusState=escapeHtml(statusIcon.state||"not-viewed");const statusSvg=statusIcon.icon||lpMasterySvg("eye-off-outline",18);return`
-          <a class="lp-row" href="${toAbsoluteUrl(it.loc)}" data-lp-loc="${escapeHtml(normLoc(it.loc))}" ${tooltip ? `title="${tooltip}"` : ``}>
-            <span class="lp-rank" data-lp-state="${statusState}" aria-label="${statusLabel}" title="${statusLabel}">${statusSvg}</span>
-            <span class="lp-main">
-              <span class="lp-line1"><span class="${titleClass}" data-lp-title-loc="${escapeHtml(normLoc(it.loc))}" data-lp-raw-title="${escapeHtml(rawTitle)}">${titleHtml}</span></span>
-            </span>
-          </a>
-        `;}).join("");}
+function lpPanelEngine(overrides){return window.MkConceptConnections.createEngine(Object.assign({getMastery,nodeTitle,titleDisplay:lpNodeTitleDisplay,statusIcon:lpPanelStatusIcon,toAbsoluteUrl,repairTitleHtml:__lpRepairTitleHtmlFromLoc,titleHtmlToText:__lpTitleHtmlToText,hasMath:lpHasMathMarkup},overrides));}
+function buildList(items,graphRef,resolveTitle){return lpPanelEngine().buildList(items,graphRef,resolveTitle);}
 function findSectionHtmlByHeadingText(headingRegex){const inner=document.querySelector("article.md-content__inner");if(!inner)return null;const heads=Array.from(inner.querySelectorAll("h2, h3"));const normHead=(s)=>cleanTitle(s||"").replace(/[^\p{L}\p{N}\s]/gu,"").replace(/\s+/g," ").trim();const h=heads.find((x)=>headingRegex.test(normHead(x.textContent||"")));if(!h)return null;const parts=[];let n=h.nextElementSibling;while(n){const tag=(n.tagName||"").toLowerCase();if(tag==="h2"||tag==="h3")break;parts.push(n.outerHTML);n=n.nextElementSibling;}
 return parts.length?parts.join("\n"):null;}
 function extractConceptLinksFromLiveSection(headingRegex){try{const inner=document.querySelector("article.md-content__inner");if(!inner)return[];const normHead=(s)=>cleanTitle(s||"").replace(/[^\p{L}\p{N}\s]/gu,"").replace(/\s+/g," ").trim();const heads=Array.from(inner.querySelectorAll("h2, h3"));const h=heads.find((x)=>headingRegex.test(normHead(x.textContent||"")));if(!h)return[];const items=[];const seen=new Set();let n=h.nextElementSibling;while(n){const tag=(n.tagName||"").toLowerCase();if(tag==="h2"||tag==="h3")break;const links=n.querySelectorAll?Array.from(n.querySelectorAll("a[href]")):[];for(const a of links){const href=a.getAttribute("href");if(!href||!isSameOriginUrl(href))continue;const rel=urlToRelPath(href);if(!rel||!isConceptPage(rel))continue;const loc=normLoc(rel);if(!loc||seen.has(loc))continue;seen.add(loc);const rawHtml=String(a.innerHTML||"").trim();const titleHtml=rawHtml?(__lpRepairTitleHtmlFromLoc(loc,rawHtml)||__lpSanitizeRenderedMathHtml(rawHtml)||""):"";const textFromHtml=titleHtml?__lpTitleHtmlToText(titleHtml):"";const textFromDom=cleanTitle(a.textContent||"");const title=__lpRepairTitleMathFromLoc(loc,textFromHtml||textFromDom||cleanTitle(loc));items.push({loc,title,titleHtml});}
@@ -3928,66 +3916,15 @@ try{lpRestorePanelUiState(panel,prevUiState);}catch(_){}
 try{lpSyncDesktopPanelShiftNow();}catch(_){}
 lpEmitPanelShellMounted(panel,loc);return panel;}
 function mountPanel(graph){const host=ensurePanelHost();if(!host)return null;const old=document.getElementById("lp-side-panel");try{if(old&&window.getComputedStyle){const oldShift=window.getComputedStyle(old).getPropertyValue("--lp-panel-right-shift");if(oldShift)document.documentElement.style.setProperty("--lp-desktop-panel-right-shift-current",oldShift.trim());}}catch(_){}
-const currentLoc=normLoc(currentRelPath());if(!currentLoc||!isConceptPage(currentLoc))return null;const panelTitleCache=new Map();const panelTitleFor=(loc)=>{const k=normLoc(loc);if(!k)return"";if(panelTitleCache.has(k))return panelTitleCache.get(k);const title=nodeTitle(graph,k);panelTitleCache.set(k,title);return title;};const depsAll=rankDependents(graph,currentLoc,panelTitleFor);const forward=depsAll.filter((x)=>x.m!==3).slice(0,6);const prereqsAll=suggestBackfill(graph,currentLoc,99,panelTitleFor);const prereqTotal=prereqsAll.length;let prereqReadyStrong=0;let prereqSumWeighted=0;for(const it of prereqsAll){const r=masteryReady(it.m,it.rec);prereqSumWeighted+=r;if(r>=1)prereqReadyStrong+=1;}
-const prereqPct=prereqTotal?Math.round((prereqSumWeighted/prereqTotal)*100):0;const prereqRightText=prereqTotal?`${prereqReadyStrong}/${prereqTotal} (${prereqPct}%)`:`None`;const usedLocs=new Set();const usedTitles=new Set();const normTitleKey=(s)=>cleanTitle(s||"").toLowerCase();const addUsed=(it)=>{if(!it)return;const loc=it.loc?normLoc(it.loc):"";if(loc)usedLocs.add(loc);const tk=normTitleKey(it.title);if(tk)usedTitles.add(tk);};for(const it of(forward||[]))addUsed(it);for(const it of(prereqsAll||[]))addUsed(it);const filterOutUsed=(items)=>{const out=[];const seenLoc=new Set();const seenTitle=new Set();const currentCanon=lpCanonKey(currentLoc);for(const it of(items||[])){if(!it)continue;const loc=it.loc?normLoc(it.loc):"";if(loc&&lpCanonKey(loc)===currentCanon)continue;const incomingTitle=cleanTitle(it.title||"");const resolvedTitle=incomingTitle||(loc?panelTitleFor(loc):"");const tk=normTitleKey(resolvedTitle||it.title);if(loc&&usedLocs.has(loc))continue;if(tk&&usedTitles.has(tk))continue;if(loc&&seenLoc.has(loc))continue;if(tk&&seenTitle.has(tk))continue;if(loc)seenLoc.add(loc);if(tk)seenTitle.add(tk);out.push({loc:loc||it.loc,title:resolvedTitle||cleanTitle(it.title||""),titleHtml:it.titleHtml||it.html||""});}
-return out;};let relatedItemsFromBodyRaw=extractConceptLinksFromLiveSection(/^related concepts$/i);if(!relatedItemsFromBodyRaw.length)relatedItemsFromBodyRaw=extractConceptLinksFromLiveSection(/^related$/i);try{(relatedItemsFromBodyRaw||[]).forEach((it)=>{if(!it||!it.loc)return;if(it.title)__lpSetTitleCache(graph,it.loc,it.title,false);if(it.titleHtml)__lpSetTitleHtmlCache(graph,it.loc,it.titleHtml,false);});}catch(_){}
+const currentLoc=normLoc(currentRelPath());if(!currentLoc||!isConceptPage(currentLoc))return null;const panelTitleHtml=window.MkConceptConnections.titleHtmlMap();try{panelTitleHtml.forEach((html,loc)=>{__lpSetTitleHtmlCache(graph,loc,html,false);});}catch(_){}
+const panelTitleFor=window.MkConceptConnections.createTitleResolver(window.MkConceptConnections.readBootstrap(currentLoc),loc=>nodeTitle(graph,loc));const panelRenderEngine=lpPanelEngine({titleDisplay:(graphRef,loc,text)=>panelTitleHtml.has(normLoc(loc))?{text,html:panelTitleHtml.get(normLoc(loc))}:lpNodeTitleDisplay(graphRef,loc,text)});const panelBuildList=items=>panelRenderEngine.buildList(items,graph,panelTitleFor);const depsAll=rankDependents(graph,currentLoc,panelTitleFor);const forward=depsAll.filter((x)=>x.m!==3).slice(0,6);const prereqsAll=suggestBackfill(graph,currentLoc,99,panelTitleFor);const prereqTotal=prereqsAll.length;let prereqReadyStrong=0;let prereqSumWeighted=0;for(const it of prereqsAll){const r=masteryReady(it.m,it.rec);prereqSumWeighted+=r;if(r>=1)prereqReadyStrong+=1;}
+const prereqPct=prereqTotal?Math.round((prereqSumWeighted/prereqTotal)*100):0;const prereqRightText=prereqTotal?`${prereqReadyStrong}/${prereqTotal} (${prereqPct}%)`:`None`;const filterOutUsed=items=>window.MkConceptConnections.filterRelated(items,forward,prereqsAll,currentLoc,panelTitleFor);let relatedItemsFromBodyRaw=extractConceptLinksFromLiveSection(/^related concepts$/i);if(!relatedItemsFromBodyRaw.length)relatedItemsFromBodyRaw=extractConceptLinksFromLiveSection(/^related$/i);try{(relatedItemsFromBodyRaw||[]).forEach((it)=>{if(!it||!it.loc)return;if(it.title)__lpSetTitleCache(graph,it.loc,it.title,false);if(it.titleHtml)__lpSetTitleHtmlCache(graph,it.loc,it.titleHtml,false);});}catch(_){}
 try{const arr=(relatedItemsFromBodyRaw||[]).map((x)=>(x&&x.loc)?normLoc(x.loc):"").filter((loc2)=>loc2&&lpCanonKey(loc2)!==lpCanonKey(currentLoc));__lpSetRelatedCache(graph,currentLoc,arr);}catch(_){}
 const related=getRelated(graph,currentLoc);const relatedItemsFromBody=filterOutUsed(relatedItemsFromBodyRaw);const relatedLocObjs=filterOutUsed((related||[]).map((loc)=>({loc,title:panelTitleFor(loc)})));const relatedBodyByCanon=new Map();try{(relatedItemsFromBodyRaw||[]).forEach((x)=>{if(!x||!x.loc)return;const k=lpCanonKey(x.loc);if(!k||relatedBodyByCanon.has(k))return;relatedBodyByCanon.set(k,x);});}catch(_){}
-const relatedMerged=filterOutUsed(uniq([...((relatedItemsFromBodyRaw||[]).map((x)=>x&&x.loc).filter(Boolean)),...(related||[])]).map((loc)=>{const bodyItem=relatedBodyByCanon.get(lpCanonKey(loc))||null;return{loc,title:(bodyItem&&bodyItem.title)||panelTitleFor(loc),titleHtml:(bodyItem&&bodyItem.titleHtml)||""};}));let relatedCount=0;let relatedListHtml=`<div class="lp-empty">None.</div>`;if(relatedMerged.length){relatedCount=relatedMerged.length;relatedListHtml=buildList(relatedMerged.slice(0,12),graph,panelTitleFor);}
+const relatedMerged=filterOutUsed(uniq([...((relatedItemsFromBodyRaw||[]).map((x)=>x&&x.loc).filter(Boolean)),...(related||[])]).map((loc)=>{const bodyItem=relatedBodyByCanon.get(lpCanonKey(loc))||null;return{loc,title:(bodyItem&&bodyItem.title)||panelTitleFor(loc),titleHtml:(bodyItem&&bodyItem.titleHtml)||""};}));let relatedCount=0;let relatedListHtml=`<div class="lp-empty">None.</div>`;if(relatedMerged.length){relatedCount=relatedMerged.length;relatedListHtml=panelBuildList(relatedMerged.slice(0,12));}
 try{const sidebarSeedLocs=uniq([currentLoc,...((forward||[]).map((x)=>x&&x.loc).filter(Boolean)),...((prereqsAll||[]).map((x)=>x&&x.loc).filter(Boolean)),...((relatedItemsFromBodyRaw||[]).map((x)=>x&&x.loc).filter(Boolean)),...(related||[])]);__mkRunIdle(()=>{try{__lpPrefetchRelatedForLocs(graph,sidebarSeedLocs,null,20);}catch(_){}},1200);}catch(_){}
-const prevUiState=old?lpSnapshotPanelUiState(old):null;const panel=old||document.createElement("div");panel.id="lp-side-panel";panel.className="lp-pending";panel.dataset.lpCurrentLoc=currentLoc;panel.innerHTML=`
-      <div class="lp-head">
-        <div class="lp-title">Concept connections</div>
-      </div>
-
-      <details class="lp-acc lp-forward lp-deps" open>
-        <summary class="lp-sum" aria-label="Toggle Dependents section">
-          <span class="lp-sum-left">Dependents</span>
-          <span class="lp-sum-right"><span class="lp-sum-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m6 9 6 6 6-6"/></svg></span></span>
-        </summary>
-        <div class="lp-body">${buildList(forward, graph, panelTitleFor)}</div>
-      </details>
-
-      <details class="lp-acc lp-pres" open>
-        <summary class="lp-sum" aria-label="Toggle Prerequisites section">
-          <span class="lp-sum-left">Prerequisites</span>
-          <span class="lp-sum-right"><span class="lp-sum-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m6 9 6 6 6-6"/></svg></span></span>
-        </summary>
-        <div class="lp-body">${buildList(prereqsAll, graph, panelTitleFor)}</div>
-      </details>
-
-      <details class="lp-acc lp-rel" open>
-        <summary class="lp-sum" aria-label="Toggle Related concepts section">
-          <span class="lp-sum-left">Related concepts</span>
-          <span class="lp-sum-right"><span class="lp-sum-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m6 9 6 6 6-6"/></svg></span></span>
-        </summary>
-        <div class="lp-body">${relatedListHtml}</div>
-      </details>
-
-      <div class="lp-local">
-        <div class="lp-local-row">
-          <span class="lp-local-title">Concept maps</span>
-          <div class="lp-local-actions">
-            <button class="lp-icon-btn lp-local-open" type="button" data-lp-open-map title="Open concept maps" aria-label="Open concept maps">${lpMapButtonSvg()}</button>
-          </div>
-        </div>
-        <div class="lp-body">
-          <div class="lp-mini">
-            <span class="lp-mini-note">Explore nearby concepts, prerequisites, and dependents in three connected map views.</span>
-          </div>
-          <div class="lp-fog-row">
-            <span class="lp-fog-copy">
-              <span class="lp-fog-title">Knowledge masking</span>
-              <span class="lp-fog-note">Turn on or off blur and question-mark hiding in the local map.</span>
-            </span>
-            <label class="lp-ios-switch" aria-label="Turn knowledge masking on or off">
-              <input type="checkbox" data-lp-fog-switch ${lpFogEnabled() ? 'checked' : ''}>
-              <span class="lp-ios-switch-ui" aria-hidden="true"></span>
-            </label>
-          </div>
-        </div>
-      </div>
-    `;try{lpEnsurePanelSectionChevrons(panel);}catch(_){}
+const prevUiState=old?lpSnapshotPanelUiState(old):null;const panel=old||document.createElement("div");panel.id="lp-side-panel";panel.className="lp-pending";panel.dataset.lpCurrentLoc=currentLoc;const nextPanelHtml=window.MkConceptConnections.renderPanel({forward,prereqsAll,related:relatedMerged},panelBuildList,lpFogEnabled());if(!window.MkConceptConnections.reuseEarlyPanel(panel,{forward,prereqsAll,related:relatedMerged})){panel.innerHTML=nextPanelHtml;}
+delete panel.dataset.lpEarlyShell;delete panel.dataset.lpShell;try{lpEnsurePanelSectionChevrons(panel);}catch(_){}
 try{lpRestorePanelUiState(panel,prevUiState);}catch(_){}
 try{lpBindMobileSectionSummaryTaps(panel);}catch(_){}
 if(old&&lpIsMobileSheet()){mountMobileSheet(panel,graph);}else if(old){if(isSecondaryHost(host)){if(panel.parentElement!==host)host.insertAdjacentElement("afterbegin",panel);}else{const article=document.querySelector("article.md-content__inner")||document.querySelector(".md-content__inner");const mountHost=(article&&article.parentElement)?article.parentElement:(document.querySelector("main.md-main")||document.body);if(panel.parentElement!==mountHost)mountHost.appendChild(panel);}

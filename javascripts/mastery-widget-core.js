@@ -34,7 +34,7 @@ function mwIsVisibleBox(el){if(!el||!el.getBoundingClientRect)return false;try{c
 function mwHeaderSearchRoot(){return document.querySelector('.md-header .md-search')||document.querySelector('.md-search')||null;}
 function mwFocusedInSearch(root){try{const activeEl=document.activeElement;return!!(activeEl&&activeEl.closest&&activeEl.closest('.md-search')&&(!root||root.contains(activeEl)));}catch(_){return false;}}
 function mwHasExplicitRating(rec){return!!(rec&&typeof rec.m==="number"&&[0,1,2,3].includes(rec.m));}
-function mwLevelLabel(m){if(m===3)return"Mastered";if(m===2)return"Clear";if(m===1)return"Unclear";if(m===0)return"Unknown";return"Not rated";}
+function mwLevelLabel(m){if(m===3)return"Mastered";if(m===2)return"Clear";if(m===1)return"Partial";if(m===0)return"Unknown";return"Not rated";}
 function mwGetFirstPageTag(){const meta=document.querySelector('meta[name="tags"]')||document.querySelector('meta[property="tags"]');const content=(meta&&meta.getAttribute("content"))?meta.getAttribute("content"):"";if(content){const t=content.split(",").map((x)=>x.trim()).filter(Boolean)[0];if(t)return t;}
 const tagEl=document.querySelector(".md-tag");const t2=tagEl?(tagEl.textContent||"").trim():"";return t2||"";}
 function mwRectCenter(r){return{x:r.left+r.width/2,y:r.top+r.height/2};}

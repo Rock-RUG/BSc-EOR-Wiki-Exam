@@ -253,7 +253,7 @@ syncMasteryUI();window.addEventListener("conceptMasteryChanged",syncMasteryUI);i
     </div>
   `;document.body.appendChild(wrap);function toCourse(id){const parts=String(id).split("/");parts.pop();const course=parts.length?parts[parts.length-1]:"";return course;}
 function toConcept(rec,id){if(rec.title)return rec.title;const file=String(id).split("/").pop()||"";return file.replace(/\.html$/i,"").replace(/-/g," ");}
-function mLabel(m){if(m===3)return"Mastered";if(m===2)return"Familiar";if(m===1)return"Unclear";if(m===0)return"Unknown";return"";}
+function mLabel(m){if(m===3)return"Mastered";if(m===2)return"Clear";if(m===1)return"Partial";if(m===0)return"Unknown";return"";}
 function render(){const all=(window.ConceptMastery&&window.ConceptMastery._readAll)?window.ConceptMastery._readAll():{};const entries=Object.entries(all||{}).map(([id,raw])=>[id,window.ConceptMastery.get(id)]);entries.sort((a,b)=>{const ca=toCourse(a[0]);const cb=toCourse(b[0]);if(ca!==cb)return ca.localeCompare(cb);return toConcept(a[1],a[0]).localeCompare(toConcept(b[1],b[0]));});const counts={full:0,know:0,fuzzy:0,dont:0};for(const[,rec]of entries){const c=rec&&rec.counts?rec.counts:null;if(c){counts.full+=c.full||0;counts.know+=c.know||0;counts.fuzzy+=c.fuzzy||0;counts.dont+=c.dont||0;}}
 document.getElementById("cm-summary").innerHTML=`Concepts: ${entries.length} · Ratings (`+`${crIcon(3, 16)}${counts.full} ${crIcon(2, 16)}${counts.know} ${crIcon(1, 16)}${counts.fuzzy} ${crIcon(0, 16)}${counts.dont}`+`)`;const tb=document.getElementById("cm-tbody");tb.innerHTML=entries.map(([id,rec])=>{const c=(rec&&rec.counts)?rec.counts:{full:0,know:0,fuzzy:0,dont:0};const last=rec&&rec.lastReviewed?new Date(rec.lastReviewed).toLocaleString():"";const cur=rec&&typeof rec.m==="number"?rec.m:"";return`
         <tr style="border-bottom:1px solid var(--md-default-fg-color--lightest);">
@@ -267,9 +267,9 @@ document.getElementById("cm-summary").innerHTML=`Concepts: ${entries.length} · 
           <td style="padding:10px;">
             <select class="cm-level" data-id="${id}" style="padding:4px 8px;border-radius:10px;">
               <option value="" ${cur==="" ? "selected":""}>-</option>
-              <option value="3" ${cur===3 ? "selected":""}>Fully</option>
-              <option value="2" ${cur===2 ? "selected":""}>Familiar</option>
-              <option value="1" ${cur===1 ? "selected":""}>Unclear</option>
+              <option value="3" ${cur===3 ? "selected":""}>Mastered</option>
+              <option value="2" ${cur===2 ? "selected":""}>Clear</option>
+              <option value="1" ${cur===1 ? "selected":""}>Partial</option>
               <option value="0" ${cur===0 ? "selected":""}>Unknown</option>
             </select>
           </td>
