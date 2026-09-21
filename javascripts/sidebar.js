@@ -508,14 +508,14 @@ html.mk-sidebar-sort-ready .md-sidebar--primary .msb-group-head__btn[aria-expand
   transform:rotate(90deg) !important;
 }
 
-/* Desktop/tablet native drawer fallback: when Material's own drawer is used,
-   make the open/close movement use the same continuous 1000ms timing as the
-   custom mobile surface.  The custom mobile drawer below is still the visible
-   drawer on phone-sized viewports. */
+/* Desktop rail geometry may transition, but opacity/visibility must not:
+   the initial page gate changes both and would otherwise create a second
+   one-second reveal after the rest of the page is already visible. Mobile
+   drawer movement remains owned by its separate breakpoint below. */
 @media (min-width: 76.1876em){
   html.mk-sidebar-sort-ready .md-sidebar--primary{
-    -webkit-transition-property:-webkit-transform, transform, opacity, visibility !important;
-    transition-property:-webkit-transform, transform, opacity, visibility !important;
+    -webkit-transition-property:-webkit-transform, transform !important;
+    transition-property:-webkit-transform, transform !important;
     -webkit-transition-duration:1000ms !important;
     transition-duration:1000ms !important;
     -webkit-transition-timing-function:cubic-bezier(.2,0,0,1) !important;
