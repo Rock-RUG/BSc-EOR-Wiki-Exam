@@ -745,8 +745,10 @@ function placePanel(panel,trigger){if(!panel||!trigger)return;panel.classList.ad
 let ph=Math.ceil(panel.getBoundingClientRect().height||panel.offsetHeight||panel.scrollHeight||80);if(ph>availableH){panel.style.maxHeight=`${availableH}px`;ph=availableH;}
 let left=Math.round(r.left);let top=Math.round(r.bottom+6);const parentRect=panel.classList.contains("mk-rt-mobile-year-course-panel")&&panel.__mkRtParentRect?panel.__mkRtParentRect:null;if(parentRect&&view.width>760){left=Math.round(Number(parentRect.right||0)+6);top=Math.round(Number(parentRect.top||r.top));if(left+pw>view.right-gap)left=Math.round(Number(parentRect.left||r.left)-pw-6);}else{const belowTop=Math.round(r.bottom+6);const aboveTop=Math.round(r.top-ph-6);const spaceBelow=view.bottom-gap-belowTop;const spaceAbove=aboveTop-(view.top+gap);top=(ph>spaceBelow&&spaceAbove>spaceBelow)?aboveTop:belowTop;}
 left=clampNumber(left,view.left+gap,view.right-gap-pw);top=clampNumber(top,view.top+gap,view.bottom-gap-ph);panel.style.left=`${left}px`;panel.style.top=`${top}px`;panel.style.visibility="visible";}
-function openPanelNow(panel,trigger,pinned){if(!panel||!trigger)return;closeOpenPanel();state.openPanel=panel;state.openTrigger=trigger;state.pinned=!!pinned;trigger.setAttribute("aria-expanded","true");placePanel(panel,trigger);try{paintShopDiscountBadge();}catch(_){}}
-function queueHoverOpen(panel,trigger){if(!canUseHoverDropdown())return;if(state.pinned)return;try{if(state.hoverCloseTimer)window.clearTimeout(state.hoverCloseTimer);}catch(_){}
+function openPanelNow(panel,trigger,pinned){if(!panel||!trigger)return;try{window.__mkMarkInteractionBusy&&window.__mkMarkInteractionBusy(300);}catch(_){}
+closeOpenPanel();state.openPanel=panel;state.openTrigger=trigger;state.pinned=!!pinned;trigger.setAttribute("aria-expanded","true");placePanel(panel,trigger);try{paintShopDiscountBadge();}catch(_){}}
+function queueHoverOpen(panel,trigger){if(!canUseHoverDropdown())return;if(state.pinned)return;try{window.__mkMarkInteractionBusy&&window.__mkMarkInteractionBusy(300);}catch(_){}
+try{if(state.hoverCloseTimer)window.clearTimeout(state.hoverCloseTimer);}catch(_){}
 state.hoverCloseTimer=0;if(state.openPanel===panel&&panel.classList.contains("mk-rt-open")){placePanel(panel,trigger);return;}
 try{if(state.hoverOpenTimer)window.clearTimeout(state.hoverOpenTimer);}catch(_){}
 state.hoverOpenTimer=window.setTimeout(()=>{state.hoverOpenTimer=0;openPanelNow(panel,trigger);},45);}
