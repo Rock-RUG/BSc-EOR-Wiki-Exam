@@ -2434,17 +2434,10 @@ body[data-md-color-scheme="slate"] article.md-content__inner .lp-h1-route-arrow{
       }
       #lp-mobile-backdrop.lp-open{ display:block; }
 
-      /* At page end the real footer masks the collapsed fixed sheet without any
-         scroll listener or root-class toggle. An opened sheet/backdrop remains
-         above the footer so modal behaviour is unchanged. */
+      /* The fixed mobile panel stays above document content, including the
+         footer, in both collapsed and expanded states. Only the opened modal
+         raises its backdrop; no scroll-driven layer or visibility changes. */
       @media (max-width: 900px), (pointer: coarse){
-        .md-footer,
-        footer.md-footer,
-        body > footer{
-          position:relative !important;
-          z-index:9998 !important;
-          isolation:isolate !important;
-        }
         #lp-mobile-backdrop.lp-open{ z-index:9999; }
         #lp-mobile-sheet.lp-expanded,
         #lp-mobile-sheet.lp-animating{ z-index:10000; }
