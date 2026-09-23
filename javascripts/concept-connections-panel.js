@@ -65,7 +65,7 @@ function renderPanel({forward,prereqsAll,related},renderList,fogEnabled){return`
           <div class="lp-fog-row">
             <span class="lp-fog-copy">
               <span class="lp-fog-title">Knowledge masking</span>
-              <span class="lp-fog-note">Fog of war for the concept map: learn concepts to explore it and find treasure.</span>
+              <span class="lp-fog-note">Hide unfamiliar titles. Expand Nearby to reveal new concepts and, with a connected account, get a chance to find treasure.</span>
             </span>
             <label class="lp-ios-switch" aria-label="Turn knowledge masking on or off">
               <input type="checkbox" data-lp-fog-switch ${fogEnabled ? 'checked' : ''}>
