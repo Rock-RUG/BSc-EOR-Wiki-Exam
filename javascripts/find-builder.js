@@ -811,7 +811,7 @@ const isMobile=!!(window.matchMedia&&window.matchMedia("(max-width: 600px)").mat
         <span class="fb-ghost__chip fb-ghost__op">AND</span>
         <span class="fb-ghost__chip fb-ghost__term">limit</span>
       </div>
-    `;const ghostHintText=`Add a keyword to start. Use ← and → to move query items, or drag a keyword.`;const __nowMs=Date.now();const __suppressPoolEmpty=__nowMs<(state.suppressPoolHintUntil||0);const __suppressBoardEmpty=__nowMs<(state.suppressBoardHintUntil||0);const placeholderHtml=`
+    `;const ghostHintText=`Add a keyword; move it with arrows or drag.`;const __nowMs=Date.now();const __suppressPoolEmpty=__nowMs<(state.suppressPoolHintUntil||0);const __suppressBoardEmpty=__nowMs<(state.suppressBoardHintUntil||0);const placeholderHtml=`
     <div class="fb-board__placeholder fb-ghost fb-hint${__suppressBoardEmpty ? " fb-hint--pending" : ""}" data-fb-empty-hint="board">
       <strong class="fb-example-label">Example query</strong>
       ${ghostLineHtml}
@@ -843,7 +843,7 @@ const isMobile=!!(window.matchMedia&&window.matchMedia("(max-width: 600px)").mat
 
     <div class="fb-panel fb-panel--board">
       <div class="fb-panel__head"><div class="fb-panel__title">Query panel</div></div>
-      ${hasExpr ? '<p class="fb-move-help">Use ← and → to move any item. Click an insertion slot to choose where the next keyword goes.</p>' : ''}
+      ${hasExpr ? '<p class="fb-move-help">Move items with ←/→; choose a slot to insert.</p>' : ''}
       <div class="fb-board">
         <div class="fb-board__inner ${hasExpr ? "has-expr" : "is-empty"}" data-board-inner="1">
           ${
