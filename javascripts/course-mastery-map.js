@@ -44,21 +44,21 @@ function metricValueCard(label,value,helper){return`
         <div class="cmm-metric__helper">${escapeHtml(helper)}</div>
       </div>
     `;}
-function buildCourseDiagnosticHead(score){const hasScore=Number.isFinite(Number(score));const pct=hasScore?Math.max(0,Math.min(100,Math.round(Number(score)))):null;return`
+function buildCourseDiagnosticHead(score,rated){const hasScore=Number.isFinite(Number(score));const pct=hasScore?Math.max(0,Math.min(100,Math.round(Number(score)))):null;const unrated=rated===0;const scoreExplanation=unrated?`No direct ratings yet. Mastery readiness ${pct}% can reflect visits and other activity.`:`Course mastery readiness ${pct}%. Lower scores mark lecture units and concepts to review first.`;return`
       <div class="cmm-head">
         <div class="cmm-head__row">
           ${hasScore ? `
             <div class="cmm-headreadiness-wrap">
-              <button type="button" class="cmm-headreadiness cmm-headreadiness--orb" data-cmm-course-readiness-info="1" style="${escapeHtml(readinessToneStyle(pct))}" aria-label="${escapeHtml(`Course mastery readiness ${pct}%. Lower scores mark lecture units and concepts to review first.`)}">
-                <strong>${escapeHtml(String(pct))}%</strong>
-                <span>Course mastery</span>
+              <button type="button" class="cmm-headreadiness cmm-headreadiness--orb${unrated?' is-unrated':''}" data-cmm-course-readiness-info="1" style="${unrated?'':escapeHtml(readinessToneStyle(pct))}" aria-label="${escapeHtml(scoreExplanation)}">
+                <strong>${unrated?'Unrated':`${escapeHtml(String(pct))}%`}</strong>
+                <span>${unrated?`${escapeHtml(String(pct))}% readiness`:'Course mastery'}</span>
               </button>
-              <div class="cmm-readiness-help" hidden>Lower mastery readiness marks the lecture units and concepts to review first.</div>
+              <div class="cmm-readiness-help" hidden>${escapeHtml(scoreExplanation)}</div>
             </div>
           ` : ''}
           <div class="cmm-headcopy">
             <div class="cmm-title" id="${PANEL_ID}-title">Course diagnostics</div>
-            <div class="cmm-sub">A course view of visited, rated, unrated, and low-readiness concepts. Separate from prerequisite readiness.</div>
+            <div class="cmm-sub">Readiness can reflect visits and other activity; direct ratings are shown separately. Separate from prerequisite readiness.</div>
           </div>
         </div>
       </div>
@@ -156,7 +156,8 @@ function lectureStatusCounts(lecture){const concepts=Array.isArray(lecture&&lect
 return counts;}
 function pctOf(part,total){const denom=Math.max(0,safeNum(total));if(!denom)return 0;return Math.max(0,Math.min(100,Math.round((Math.max(0,safeNum(part))/denom)*100)));}
 function lectureMetricForLecture(metric,lecture){const c=lectureStatusCounts(lecture);const label=lecture&&lecture.label?lecture.label:`${unitNounFromType(lecture && lecture.unitType)} ${lecture && lecture.lectureNum ? lecture.lectureNum : ''}`.trim();const lectureNum=safeNum(lecture&&lecture.lectureNum);const readiness=clampPct((lecture&&lecture.readinessAvg)??(lecture&&lecture.avgPct));let pct=0;let count=0;let denom=c.total;let meta='';let toneValue=50;let display='';if(metric.key==='readinessHigh'){pct=readiness;count=readiness;denom=c.total;toneValue=readiness;display=`${pct}%`;meta=`Highest average mastery readiness across ${c.total} concepts`;}else if(metric.key==='readinessLow'){pct=readiness;count=100-readiness;denom=c.total;toneValue=readiness;display=`${pct}%`;meta=`Lowest average mastery readiness across ${c.total} concepts`;}else if(metric.key==='mastered'){count=c.mastered;denom=c.total;pct=pctOf(count,denom);toneValue=pct;display=`${pct}%`;meta=`Highest mastered share: ${count}/${denom} concepts`;}else if(metric.key==='strong'){count=c.clear+c.mastered;denom=c.total;pct=pctOf(count,denom);toneValue=pct;display=`${pct}%`;meta=`Highest clear or mastered share: ${count}/${denom} concepts`;}else if(metric.key==='fuzzy'){count=c.fuzzy;denom=c.total;pct=pctOf(count,denom);toneValue=100-pct;display=`${pct}%`;meta=`Highest Partial share: ${count}/${denom} concepts`;}else if(metric.key==='visitedOnly'){count=c.visitedOnly;denom=c.visited;pct=pctOf(count,denom);toneValue=100-pct;display=`${pct}%`;meta=denom?`Highest visited but unrated share: ${count}/${denom} visited concepts`:'No visited concepts yet';}else if(metric.key==='notVisited'){count=c.notVisited;denom=c.total;pct=pctOf(count,denom);toneValue=100-pct;display=`${pct}%`;meta=`Highest not visited share: ${count}/${denom} concepts`;}else if(metric.key==='aiQuizCount'){count=c.aiQuiz;denom=Math.max(1,safeNum(metric.maxCount));pct=pctOf(count,denom);toneValue=count>0?86:25;display=String(count);meta=count===1?'1 completed AI concept check in this learning unit':`${count} completed AI concept checks in this learning unit`;}else if(metric.key==='directMasteryCount'){count=c.directMastery;denom=Math.max(1,safeNum(metric.maxCount));pct=pctOf(count,denom);toneValue=count>0?86:25;display=String(count);meta=count===1?'1 direct mastery rating submitted in this learning unit':`${count} direct mastery ratings submitted in this learning unit`;}
-return{lecture,label,lectureNum,pct,count,denom,meta,toneValue,display};}
+const unratedReadiness=c.rated===0&&(metric.key==='readinessHigh'||metric.key==='readinessLow');if(unratedReadiness){display='Unrated';meta=`No direct ratings yet; mastery readiness ${readiness}% can reflect visits and other activity.`;}
+return{lecture,label,lectureNum,pct,count,denom,meta,toneValue,display,unratedReadiness};}
 function lectureHighlightRow(metric,allLectures){const candidates=(Array.isArray(allLectures)?allLectures:[]).map((lecture)=>lectureMetricForLecture(metric,lecture)).filter((item)=>item.lecture&&item.denom>0&&(!metric.requirePositive||item.count>0)).sort((a,b)=>{if(metric.sort==='asc'){if(a.pct!==b.pct)return a.pct-b.pct;if(b.count!==a.count)return b.count-a.count;}else{if(b.pct!==a.pct)return b.pct-a.pct;if(b.count!==a.count)return b.count-a.count;}
 return safeNum(a.lectureNum)-safeNum(b.lectureNum);});const item=candidates[0]||null;if(!item){const zeroLabel=metric.key==='aiQuizCount'||metric.key==='directMasteryCount'?'0':'0%';return`
         <div class="cmm-vizrow cmm-vizrow--static">
@@ -168,11 +169,11 @@ return safeNum(a.lectureNum)-safeNum(b.lectureNum);});const item=candidates[0]||
           <span class="cmm-vizrow__meta">${escapeHtml(metric.empty || 'Open concepts to build this view.')}</span>
         </div>
       `;}
-const width=Math.max(0,Math.min(100,safeNum(item.pct)));const fillStyle=`${readinessToneStyle(item.toneValue)}width:${escapeHtml(String(width))}%`;return`
+const width=Math.max(0,Math.min(100,safeNum(item.pct)));const toneStyle=item.unratedReadiness?'':readinessToneStyle(item.toneValue);const fillStyle=`${toneStyle}width:${escapeHtml(String(width))}%`;return`
       <button type="button" class="cmm-vizrow" data-cmm-jump-lecture="${escapeHtml(String(item.lectureNum))}">
         <span class="cmm-vizrow__head">
           <span class="cmm-vizrow__award">${escapeHtml(metric.award)}</span>
-          <span class="cmm-vizrow__score" style="${escapeHtml(readinessToneStyle(item.toneValue))}">${escapeHtml(item.display)}</span>
+          <span class="cmm-vizrow__score" style="${escapeHtml(toneStyle)}">${escapeHtml(item.display)}</span>
         </span>
         <span class="cmm-vizrow__lecture">${escapeHtml(item.label)}</span>
         <span class="cmm-vizbar"><span class="cmm-vizbar__fill" style="${escapeHtml(fillStyle)}"></span></span>
@@ -225,12 +226,12 @@ function buildConceptStateHistogram(diagnosis){const items=diagnosis&&Array.isAr
         </div>
       </section>
     `;}
-function buildHeatmapRow(lecture,diagnosis){const diag=(diagnosis&&diagnosis.lectureDiagnostics||[]).find((item)=>item.lectureNum===lecture.lectureNum)||null;const tone=diag?diag.tone:lectureHeatTone(lecture);const score=Math.max(0,Math.min(100,safeNum((diag&&diag.readinessAvg)??lecture.readinessAvg)));const concepts=Array.isArray(lecture.concepts)?lecture.concepts:[];return`
-      <div class="cmm-row ${tone}">
+function buildHeatmapRow(lecture,diagnosis){const diag=(diagnosis&&diagnosis.lectureDiagnostics||[]).find((item)=>item.lectureNum===lecture.lectureNum)||null;const unrated=safeNum(lecture&&lecture.rated)===0;const tone=unrated?'':(diag?diag.tone:lectureHeatTone(lecture));const score=Math.max(0,Math.min(100,safeNum((diag&&diag.readinessAvg)??lecture.readinessAvg)));const concepts=Array.isArray(lecture.concepts)?lecture.concepts:[];return`
+      <div class="cmm-row ${unrated ? 'is-unrated' : tone}">
         <button type="button" class="cmm-row__label" data-cmm-jump-lecture="${escapeHtml(String(lecture.lectureNum))}">
           <span class="cmm-row__title">${escapeHtml(lecture.label)}</span>
           <span class="cmm-row__meta">
-            <span class="cmm-row__meta-line">${escapeHtml(`${lecture.weak} low-rated`)}</span>
+            <span class="cmm-row__meta-line">${escapeHtml(unrated ? 'No ratings yet' : `${lecture.weak} low-rated`)}</span>
             <span class="cmm-row__meta-line">${escapeHtml(`${lecture.total-lecture.rated} unrated`)}</span>
             <span class="cmm-row__scroll-hint" hidden>Scroll tiles ↔</span>
           </span>
@@ -244,7 +245,7 @@ function buildHeatmapRow(lecture,diagnosis){const diag=(diagnosis&&diagnosis.lec
             return `
               <button
                 type="button"
-                class="cmm-tile ${levelClass(rec)} ${isActive?'is-active':''}"
+                 class="cmm-tile ${levelClass(rec)} ${!isExplicitRating(rec)?'is-unrated':''} ${isActive?'is-active':''}"
                 data-cmm-select-concept="${escapeHtml(concept.location)}"
                 title="${escapeHtml(tileTitle)}"
                 aria-label="${escapeHtml(tileTitle)}"
@@ -257,7 +258,7 @@ function buildHeatmapRow(lecture,diagnosis){const diag=(diagnosis&&diagnosis.lec
           }).join('')}
         </div>
         <div class="cmm-row__risk">
-          <span class="cmm-riskchip" style="${escapeHtml(readinessToneStyle(score))}" title="${escapeHtml(`${lecture.label} · ${readinessValueLabel(score)}`)}">${escapeHtml(String(score))}%</span><span class="cmm-row__risklabel">Mastery readiness</span>
+          <span class="cmm-riskchip${unrated ? ' is-unrated' : ''}" style="${unrated ? '' : escapeHtml(readinessToneStyle(score))}" title="${escapeHtml(unrated ? `${lecture.label} · No direct ratings yet · ${readinessValueLabel(score)}; visits can contribute` : `${lecture.label} · ${readinessValueLabel(score)}`)}">${unrated ? 'Unrated' : `${escapeHtml(String(score))}%`}</span><span class="cmm-row__risklabel">${unrated ? `${escapeHtml(String(score))}% readiness` : 'Mastery readiness'}</span>
         </div>
       </div>
     `;}
@@ -530,6 +531,17 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         line-height:.96;
         font-weight:900;
         letter-spacing:-.02em;
+      }
+      #${PANEL_ID} .cmm-headreadiness.is-unrated{
+        --cmm-readiness-bg:color-mix(in srgb, var(--md-default-bg-color) 78%, var(--md-default-fg-color) 22%);
+        --cmm-readiness-fg:var(--md-default-fg-color);
+        --cmm-readiness-border:color-mix(in srgb, var(--md-default-fg-color) 28%, transparent);
+      }
+      #${PANEL_ID} .cmm-headreadiness.is-unrated strong{
+        max-width:100%;
+        font-size:.86rem !important;
+        letter-spacing:-.04em;
+        white-space:nowrap;
       }
       #${PANEL_ID} .cmm-headcopy{
         min-width:0;
@@ -933,6 +945,15 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         box-shadow: inset 0 0 0 1px rgba(255,255,255,.28), 0 4px 10px rgba(0,0,0,.05);
         transition: transform .14s ease, box-shadow .18s ease, border-color .18s ease;
       }
+      #${PANEL_ID} .cmm-tile.is-unrated{
+        border-color:color-mix(in srgb, var(--md-default-fg-color) 28%, transparent);
+        background:color-mix(in srgb, var(--md-default-bg-color) 88%, var(--md-default-fg-color) 12%);
+        color:var(--md-default-fg-color);
+      }
+      #${PANEL_ID} .cmm-tile.is-unrated.is-visit{
+        border-color:color-mix(in srgb, var(--md-default-fg-color) 45%, transparent);
+        background:color-mix(in srgb, var(--md-default-bg-color) 76%, var(--md-default-fg-color) 24%);
+      }
       #${PANEL_ID} .cmm-tile.is-active{
         transform: translateY(-1px) scale(1.06);
         box-shadow: inset 0 0 0 1px rgba(255,255,255,.36), 0 8px 18px rgba(0,0,0,.10);
@@ -964,6 +985,12 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         padding:.24rem .48rem;
         font-size:.78rem;
         font-weight:800;
+      }
+      #${PANEL_ID} .cmm-riskchip.is-unrated,
+      #${PANEL_ID} .cmm-lecture__score.is-unrated{
+        border-color:color-mix(in srgb, var(--md-default-fg-color) 28%, transparent);
+        background:color-mix(in srgb, var(--md-default-bg-color) 84%, var(--md-default-fg-color) 16%);
+        color:var(--md-default-fg-color);
       }
       #${PANEL_ID} .cmm-row__risklabel{
         font-size:.66rem;
@@ -1940,6 +1967,9 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         #${PANEL_ID} .cmm-headreadiness span{
           font-size:.43rem !important;
         }
+        #${PANEL_ID} .cmm-headreadiness.is-unrated strong{
+          font-size:.70rem !important;
+        }
         #${PANEL_ID} .cmm-title{
           font-size:1.05rem !important;
           line-height:1.12 !important;
@@ -2788,8 +2818,8 @@ function buildConceptRow(concept){const rec=concept.record;const cls=levelClass(
         <span class="cmm-state ${cls}">${escapeHtml(levelLabel(rec))}</span>
       </div>
     `;}
-function buildLectureCard(lecture){const filtered=lecture.concepts.filter(matchesFilters);const lectureKey=String(lecture.lectureNum);const isOpen=state.expandedLecture.has(lectureKey);const tone=lectureHeatTone(lecture);const readinessAvg=Math.max(0,Math.min(100,safeNum(lecture&&lecture.readinessAvg)));const counts=lectureStatusCounts(lecture);const totalConcepts=Math.max(0,safeNum(counts.total)||safeNum(lecture&&lecture.total));const unvisited=Math.max(0,safeNum(counts.notVisited));const visitedUnrated=Math.max(0,safeNum(counts.visitedOnly));const lowRated=Math.max(0,safeNum(counts.unknown)+safeNum(counts.fuzzy));const facts=[`${totalConcepts} concepts`,`${unvisited} unvisited`,`${lowRated} low-rated`,];return`
-      <section class="cmm-lecture ${tone} ${isOpen ? 'is-open' : ''}" data-lecture="${lectureKey}">
+function buildLectureCard(lecture){const filtered=lecture.concepts.filter(matchesFilters);const lectureKey=String(lecture.lectureNum);const isOpen=state.expandedLecture.has(lectureKey);const tone=safeNum(lecture&&lecture.rated)===0?'':lectureHeatTone(lecture);const readinessAvg=Math.max(0,Math.min(100,safeNum(lecture&&lecture.readinessAvg)));const counts=lectureStatusCounts(lecture);const totalConcepts=Math.max(0,safeNum(counts.total)||safeNum(lecture&&lecture.total));const unvisited=Math.max(0,safeNum(counts.notVisited));const lowRated=Math.max(0,safeNum(counts.unknown)+safeNum(counts.fuzzy));const unrated=counts.rated===0;const facts=[`${totalConcepts} concepts`,`${unvisited} unvisited`,unrated?'No ratings yet':`${lowRated} low-rated`,];return`
+      <section class="cmm-lecture ${unrated ? 'is-unrated' : tone} ${isOpen ? 'is-open' : ''}" data-lecture="${lectureKey}">
         <button type="button" class="cmm-lecture__btn" data-cmm-lecture-toggle="${lectureKey}" aria-expanded="${isOpen ? 'true' : 'false'}">
           <div class="cmm-lecture__left">
             <div class="cmm-lecture__title">${escapeHtml(lecture.label)}</div>
@@ -2797,7 +2827,7 @@ function buildLectureCard(lecture){const filtered=lecture.concepts.filter(matche
           <div class="cmm-lecture__facts" aria-label="${escapeHtml(`${lecture.label} status summary`)}">
             ${facts.map((text) => `<span class="cmm-lecture__fact">${escapeHtml(text)}</span>`).join('')}
           </div>
-          <span class="cmm-lecture__score" style="${escapeHtml(readinessToneStyle(readinessAvg))}" title="${escapeHtml(`${lecture.label} · Mastery readiness ${readinessAvg}%`)}"><span class="cmm-lecture__scorelabel">Mastery readiness</span><strong>${escapeHtml(String(readinessAvg))}%</strong></span>
+          <span class="cmm-lecture__score${unrated ? ' is-unrated' : ''}" style="${unrated ? '' : escapeHtml(readinessToneStyle(readinessAvg))}" title="${escapeHtml(unrated ? `${lecture.label} · No direct ratings yet · Mastery readiness ${readinessAvg}%; visits can contribute` : `${lecture.label} · Mastery readiness ${readinessAvg}%`)}"><span class="cmm-lecture__scorelabel">${unrated ? `${escapeHtml(String(readinessAvg))}% readiness` : 'Mastery readiness'}</span><strong>${unrated ? 'Unrated' : `${escapeHtml(String(readinessAvg))}%`}</strong></span>
           <span class="cmm-lecture__chev" aria-hidden="true">${chevronSvg()}</span>
         </button>
         <div class="cmm-lecture__body" ${isOpen ? '' : 'hidden'}>
@@ -2828,7 +2858,7 @@ async function renderMap(anchor,panel){if(!anchor||!panel)return;const seq=++sta
         </div>
         <div class="cmm-lectures">${allLecturesHtml || '<div class="cmm-error">No concept pages were found for this course yet.</div>'}</div>
       `;panel.innerHTML=`
-        ${buildCourseDiagnosticHead(diagnosis.courseReadinessAvg)}
+        ${buildCourseDiagnosticHead(diagnosis.courseReadinessAvg, totals.rated)}
         <div class="cmm-body">${panelBody}</div>
       `;cmmSyncTileScrollHints(panel);if(focusAttr&&state.open&&document.activeElement===document.body){const restored=Array.from(panel.querySelectorAll(`[${focusAttr}]`)).find(node=>node.getAttribute(focusAttr)===focusValue);if(restored){try{restored.focus({preventScroll:true});}catch(_){}
 cmmRevealFocusedTile(restored);}}

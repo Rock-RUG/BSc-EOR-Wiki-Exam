@@ -719,8 +719,10 @@ container.innerHTML=`
     <div class="sr-empty">
       <p>No results found.</p>
       ${hintText ? `<p class="sr-hint">${escapeHtml(hintText)}</p>` : ""}
+      <p>Try a broader term or remove one condition, then run the search again.</p>
+      <div class="wf-view-actions"><button type="button" class="sr-empty-edit" aria-controls="wf-query-editor">Edit query</button></div>
     </div>
-  `;}
+  `;container.querySelector('.sr-empty-edit')?.addEventListener('click',event=>{event.stopPropagation();document.querySelector('.wiki-finder [data-wf-edit]')?.click();});}
 let __fbMobileIntroTipsResizeBound=false;function fbEnsureMobileIntroTipsStyles(){}
 function fbIsFindIntroTitleText(raw){const text=fbCleanFindIntroTitleText(raw);return text==="search & filter"||text==="concept finder"||text.includes("search & filter")||text.includes("concept finder");}
 function fbFindIntroH1(article){const h1=article&&article.querySelector?article.querySelector("h1"):null;if(!h1)return null;return fbIsFindIntroTitleText(h1.textContent||"")?h1:null;}
