@@ -2349,7 +2349,7 @@ html[data-md-color-scheme="slate"] #mk-sidebar-drawer-ghost-floor{
   z-index:2147483200 !important;
   background:transparent !important;
   opacity:1 !important;
-  pointer-events:auto !important;
+  pointer-events:none !important;
   touch-action:none !important;
   -webkit-transform:translateZ(0) !important;
   transform:translateZ(0) !important;
@@ -2391,6 +2391,12 @@ html[data-md-color-scheme="slate"] #mk-mobile-drawer-backdrop-blur{
     opacity:0 !important;
     pointer-events:none !important;
     transition:none !important;
+  }
+  /* While the panel slides out the backdrop only paints.  Catching taps there
+     swallowed the next deliberate tap on the page (the concept-map button, a
+     link) for the whole slide; the click shield still absorbs the closing tap. */
+  html:has(#mk-mobile-unified-sidebar-surface.is-closing) #mk-mobile-drawer-backdrop-blur{
+    pointer-events:none !important;
   }
   /* Material's own drawer overlay stacks a 54% black veil UNDER the blur layer,
      which flattens the page into a solid grey slab (content silhouettes vanish)
@@ -3520,13 +3526,16 @@ html.mk-sidebar-sort-ready .md-sidebar--primary .msb-group-head__btn[aria-expand
 }
 
 `;(document.head||document.documentElement).appendChild(style);}
-function bindMobileDrawerGlobalSuppressOnce(){if(runtime.mobileDrawerGlobalSuppressBound)return;runtime.mobileDrawerGlobalSuppressBound=true;const suppress=function(event){try{const now=(window.performance&&typeof window.performance.now==='function')?window.performance.now():Date.now();if(now>(runtime.mobileDrawerSuppressUntil||0))return;const target=event&&event.target instanceof Element?event.target:null;if(target&&target.closest&&target.closest('.md-header, .md-tabs, #mk-mobile-unified-sidebar-surface'))return;swallowMobileDrawerBackdropEvent(event);}catch(_){}};const eventNames=['click','dblclick','auxclick','mousedown','mouseup','pointerdown','pointerup'];runtime.mobileDrawerGlobalSuppressHandler=suppress;runtime.mobileDrawerGlobalSuppressEvents=eventNames;eventNames.forEach(function(eventName){try{document.addEventListener(eventName,suppress,{capture:true,passive:false});}catch(_){}});}
+function bindMobileDrawerGlobalSuppressOnce(){if(runtime.mobileDrawerGlobalSuppressBound)return;runtime.mobileDrawerGlobalSuppressBound=true;const suppress=function(event){try{const now=(window.performance&&typeof window.performance.now==='function')?window.performance.now():Date.now();if(now>(runtime.mobileDrawerSuppressUntil||0))return;if(event.type==='pointerdown'||event.type==='keydown'||(event.type==='touchstart'&&!window.PointerEvent)){releaseMobileDrawerClickShield();return;}
+const target=event&&event.target instanceof Element?event.target:null;if(target&&target.closest&&target.closest('.md-header, .md-tabs, #mk-mobile-unified-sidebar-surface'))return;swallowMobileDrawerBackdropEvent(event);}catch(_){}};const eventNames=['click','dblclick','auxclick','mousedown','mouseup','pointerdown','pointerup','touchstart','keydown'];runtime.mobileDrawerGlobalSuppressHandler=suppress;runtime.mobileDrawerGlobalSuppressEvents=eventNames;eventNames.forEach(function(eventName){try{document.addEventListener(eventName,suppress,{capture:true,passive:false});}catch(_){}});}
 function unbindMobileDrawerGlobalSuppress(){const suppress=runtime.mobileDrawerGlobalSuppressHandler;const eventNames=runtime.mobileDrawerGlobalSuppressEvents||[];if(typeof suppress==='function'){eventNames.forEach(function(eventName){try{document.removeEventListener(eventName,suppress,true);}catch(_){}});}
 runtime.mobileDrawerGlobalSuppressHandler=null;runtime.mobileDrawerGlobalSuppressEvents=null;runtime.mobileDrawerGlobalSuppressBound=false;}
+function releaseMobileDrawerClickShield(){if(runtime.mobileDrawerShieldTimer)window.clearTimeout(runtime.mobileDrawerShieldTimer);runtime.mobileDrawerShieldTimer=0;runtime.mobileDrawerSuppressUntil=0;unbindMobileDrawerGlobalSuppress();const node=document.getElementById('mk-mobile-drawer-click-shield');if(node instanceof HTMLElement){node.classList.remove('is-active');node.style.removeProperty('pointer-events');}}
 function activateMobileDrawerClickShield(durationMs){const shield=document.getElementById('mk-mobile-drawer-click-shield');const ms=Math.max(260,Number(durationMs)||900);try{const now=(window.performance&&typeof window.performance.now==='function')?window.performance.now():Date.now();runtime.mobileDrawerSuppressUntil=now+ms;}catch(_){runtime.mobileDrawerSuppressUntil=Date.now()+ms;}
-bindMobileDrawerGlobalSuppressOnce();if(shield instanceof HTMLElement){shield.classList.add('is-active');shield.style.pointerEvents='auto';}
-if(runtime.mobileDrawerShieldTimer)window.clearTimeout(runtime.mobileDrawerShieldTimer);runtime.mobileDrawerShieldTimer=window.setTimeout(function(){runtime.mobileDrawerShieldTimer=0;runtime.mobileDrawerSuppressUntil=0;unbindMobileDrawerGlobalSuppress();const node=document.getElementById('mk-mobile-drawer-click-shield');if(node instanceof HTMLElement){node.classList.remove('is-active');node.style.removeProperty('pointer-events');}},ms);}
-function closeMobileDrawerFromBackdrop(event){swallowMobileDrawerBackdropEvent(event);activateMobileDrawerClickShield(960);const toggle=drawerToggle();if(toggle instanceof HTMLInputElement){if(toggle.checked){toggle.checked=false;try{toggle.dispatchEvent(new Event('change',{bubbles:true}));}catch(_){}}else{try{closeUnifiedCustomDrawerSurface();}catch(_){}}}else{try{closeUnifiedCustomDrawerSurface();}catch(_){}}}
+bindMobileDrawerGlobalSuppressOnce();if(shield instanceof HTMLElement){shield.classList.add('is-active');shield.style.pointerEvents='none';}
+if(runtime.mobileDrawerShieldTimer)window.clearTimeout(runtime.mobileDrawerShieldTimer);runtime.mobileDrawerShieldTimer=window.setTimeout(releaseMobileDrawerClickShield,ms);}
+function absorbDrawerClosingTap(){activateMobileDrawerClickShield(450);}
+function closeMobileDrawerFromBackdrop(event){swallowMobileDrawerBackdropEvent(event);activateMobileDrawerClickShield(450);const toggle=drawerToggle();if(toggle instanceof HTMLInputElement){if(toggle.checked){toggle.checked=false;try{toggle.dispatchEvent(new Event('change',{bubbles:true}));}catch(_){}}else{try{closeUnifiedCustomDrawerSurface();}catch(_){}}}else{try{closeUnifiedCustomDrawerSurface();}catch(_){}}}
 function bindMobileDrawerClickProtection(backdrop,clickShield){if(backdrop instanceof HTMLElement&&backdrop.dataset.msbBackdropBound!=='1'){backdrop.dataset.msbBackdropBound='1';['pointerdown','mousedown','touchstart','click'].forEach(function(eventName){try{backdrop.addEventListener(eventName,closeMobileDrawerFromBackdrop,{capture:true,passive:false});}catch(_){}});['pointerup','mouseup','touchend','touchcancel','pointercancel','touchmove','pointermove'].forEach(function(eventName){try{backdrop.addEventListener(eventName,swallowMobileDrawerBackdropEvent,{capture:true,passive:false});}catch(_){}});}
 if(clickShield instanceof HTMLElement&&clickShield.dataset.msbShieldBound!=='1'){clickShield.dataset.msbShieldBound='1';['click','dblclick','auxclick','mousedown','mouseup','pointerdown','pointerup','touchstart','touchmove','touchend'].forEach(function(eventName){try{clickShield.addEventListener(eventName,swallowMobileDrawerBackdropEvent,{capture:true,passive:false});}catch(_){}});}}
 function ensureDrawerGapPatchNodes(){ensureDrawerGapPatchStyles();const root=document.body||document.documentElement;if(!root)return{};let top=document.getElementById('mk-sidebar-drawer-gap-top');if(!top){top=document.createElement('div');top.id='mk-sidebar-drawer-gap-top';root.appendChild(top);}
@@ -3676,14 +3685,14 @@ surface.classList.remove('is-setup');try{void surface.offsetWidth;}catch(_){}
 unifiedDrawerState.isOpen=true;cancelUnifiedDrawerOpenStage();unifiedDrawerState.openStageTimer=window.setTimeout(function(){unifiedDrawerState.openStageTimer=0;unifiedDrawerState.openRaf=window.requestAnimationFrame(function(){unifiedDrawerState.openRaf=0;if(!unifiedDrawerState.isOpen)return;if(!isDrawerOpen())return;surface.classList.add('is-open');setDrawerBlurRamp(true);});},unifiedDrawerMotionEnabled()?180:0);return true;}
 surface.classList.remove('is-setup');if(!unifiedDrawerState.openStageTimer&&!unifiedDrawerState.openRaf){surface.classList.add('is-open');setDrawerBlurRamp(true);}
 unifiedDrawerState.isOpen=true;return true;}
-cancelUnifiedDrawerOpenStage();setDrawerBlurRamp(false);if(opts.animateClose){surface.classList.remove('is-setup');surface.classList.add('is-closing');html().classList.add('msb-unified-mobile-drawer-visible');try{void surface.offsetWidth;}catch(_){}
+cancelUnifiedDrawerOpenStage();setDrawerBlurRamp(false);if(opts.animateClose){surface.classList.remove('is-setup');surface.classList.add('is-closing');absorbDrawerClosingTap();html().classList.add('msb-unified-mobile-drawer-visible');try{void surface.offsetWidth;}catch(_){}
 surface.classList.remove('is-open');}else{surface.classList.remove('is-open','is-closing');surface.classList.add('is-setup');try{void surface.offsetWidth;}catch(_){}}
 unifiedDrawerState.isOpen=false;return true;}
 function isUnifiedCustomDrawerClosing(){const surface=document.getElementById('mk-mobile-unified-sidebar-surface');return!!(surface instanceof HTMLElement&&surface.classList.contains('is-closing')&&unifiedDrawerState.hideTimer);}
 function closeUnifiedCustomDrawerSurface(){const surface=document.getElementById('mk-mobile-unified-sidebar-surface');if(!(surface instanceof HTMLElement)){hideUnifiedCustomDrawerSurface();return false;}
 if(surface.classList.contains('is-closing')&&(unifiedDrawerState.hideTimer||unifiedDrawerState.closeEndHandler)){return true;}
 cancelUnifiedDrawerHideTimer();if(!surface.classList.contains('is-ready')){hideUnifiedCustomDrawerSurface();return false;}
-cancelUnifiedDrawerOpenStage();html().classList.add('msb-unified-mobile-drawer-visible');surface.classList.add('is-ready');surface.classList.remove('is-setup');surface.classList.add('is-closing');try{void surface.offsetWidth;}catch(_){}
+cancelUnifiedDrawerOpenStage();html().classList.add('msb-unified-mobile-drawer-visible');surface.classList.add('is-ready');surface.classList.remove('is-setup');surface.classList.add('is-closing');absorbDrawerClosingTap();try{void surface.offsetWidth;}catch(_){}
 const hadOpenClass=surface.classList.contains('is-open');surface.classList.remove('is-open');setDrawerBlurRamp(false);unifiedDrawerState.isOpen=false;unifiedDrawerState.preopenUntil=0;let finalized=false;const finalize=function(){if(finalized)return;finalized=true;cancelUnifiedDrawerHideTimer();try{surface.classList.remove('is-closing','is-open','is-scrolling','is-ready');surface.classList.add('is-setup');html().classList.remove('msb-unified-mobile-drawer-visible');setDrawerBlurRamp(false);hideMobileDrawerBackdropBlur();}catch(_){}};if(unifiedDrawerMotionEnabled()&&hadOpenClass){const onEnd=function(ev){if(ev&&ev.target!==surface)return;if(ev&&ev.propertyName&&ev.propertyName.indexOf('transform')===-1)return;try{surface.removeEventListener('transitionend',onEnd);}catch(_){}
 if(unifiedDrawerState.closeEndHandler===onEnd)unifiedDrawerState.closeEndHandler=null;finalize();};unifiedDrawerState.closeEndHandler=onEnd;try{surface.addEventListener('transitionend',onEnd);}catch(_){}
 unifiedDrawerState.hideTimer=window.setTimeout(finalize,1600);}else{unifiedDrawerState.hideTimer=window.setTimeout(finalize,hadOpenClass?1030:50);}

@@ -64,10 +64,12 @@ try{html.classList.add(PRELOAD_CLASS);html.classList.remove(READY_CLASS);}catch(
 return true;}
 function setReady(){revealImmediately();}
 function onUserScrollish(){userInteractedThisNav=true;doReveal();}
-function onScrollGuard(){if(!isWithinInputWatch()){uninstallScrollGuard();return;}
-if(scrollYNow()>8)onUserScrollish();}
+let scrollGuardFrame=0;function onScrollGuard(){if(!isWithinInputWatch()){uninstallScrollGuard();return;}
+if(scrollGuardFrame)return;try{scrollGuardFrame=requestAnimationFrame(()=>{scrollGuardFrame=0;if(installedScrollGuard&&isWithinInputWatch()&&scrollYNow()>8)onUserScrollish();});}catch(_){if(scrollYNow()>8)onUserScrollish();}}
 function onGuardKeydown(ev){const key=ev&&ev.key;if(key==="PageDown"||key==="PageUp"||key==="ArrowDown"||key==="ArrowUp"||key==="Home"||key==="End"||key===" "){onUserScrollish();}}
-function uninstallScrollGuard(){if(!installedScrollGuard)return;installedScrollGuard=false;if(scrollGuardExpiryTimer){try{window.clearTimeout(scrollGuardExpiryTimer);}catch(_){}
+function uninstallScrollGuard(){if(scrollGuardFrame){try{cancelAnimationFrame(scrollGuardFrame);}catch(_){}
+scrollGuardFrame=0;}
+if(!installedScrollGuard)return;installedScrollGuard=false;if(scrollGuardExpiryTimer){try{window.clearTimeout(scrollGuardExpiryTimer);}catch(_){}
 scrollGuardExpiryTimer=0;}
 try{window.removeEventListener("scroll",onScrollGuard,true);}catch(_){}
 try{document.removeEventListener("scroll",onScrollGuard,true);}catch(_){}
@@ -101,7 +103,9 @@ try{window.addEventListener("lp:panel-ready",onSignal);}catch(_){}
 try{obs=new MutationObserver(check);currentObserver=obs;obs.observe(document.documentElement||document.body,{childList:true,subtree:true});}catch(_){}
 try{timer=window.setTimeout(release,2200);}catch(_){timer=0;}
 check();}
-function beginAndReveal(reason){++navSeq;disconnectObserver();const currentUrl=currentUrlNoHash();const sameUrlDocumentRefresh=String(reason||"")==="document$"&&currentUrl&&currentUrl===lastBeginUrl;const isDocumentNavigation=String(reason||"")==="document$"&&!sameUrlDocumentRefresh;lastBeginUrl=currentUrl||lastBeginUrl;try{html.toggleAttribute("data-rk-concept-page",earlyLooksConceptPage());}catch(_){}
+function beginAndReveal(reason){++navSeq;disconnectObserver();if(scrollGuardFrame){try{cancelAnimationFrame(scrollGuardFrame);}catch(_){}
+scrollGuardFrame=0;}
+const currentUrl=currentUrlNoHash();const sameUrlDocumentRefresh=String(reason||"")==="document$"&&currentUrl&&currentUrl===lastBeginUrl;const isDocumentNavigation=String(reason||"")==="document$"&&!sameUrlDocumentRefresh;lastBeginUrl=currentUrl||lastBeginUrl;try{html.toggleAttribute("data-rk-concept-page",earlyLooksConceptPage());}catch(_){}
 userInteractedThisNav=false;currentGuardUntil=safeNow()+(String(reason||"")==="document$"?INSTANT_INPUT_WATCH_MS:INITIAL_INPUT_WATCH_MS);installScrollGuardOnce();if((String(reason||"")!=="initial"&&!isDocumentNavigation)||sameUrlDocumentRefresh||isFindPage()||isSameFindTopSearchInPlaceFlow()||shouldBypassPreloadHide()){doReveal();return;}
 preloadRevealed=false;preloadHolds.clear();try{html.classList.add(ACTIVE_CLASS);}catch(_){}
 addPreload();if(preloadRevealed)return;preloadHolds.add(BOOT_HOLD);if(hardCapTimer)clearTimeout(hardCapTimer);hardCapTimer=window.setTimeout(doReveal,HARD_CAP_MS);releaseBootHoldWhenSettled();}
