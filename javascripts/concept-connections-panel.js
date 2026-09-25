@@ -22,7 +22,7 @@ function masterySvg(name,size){const s=Number(size||18)||18;const icons={"shield
 function mapButtonSvg(){return`
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14.11 5.55a2 2 0 0 0 1.78 0l3.66-1.83A1 1 0 0 1 21 4.62v12.76a1 1 0 0 1-.55.9l-4.56 2.27a2 2 0 0 1-1.78 0l-4.22-2.1a2 2 0 0 0-1.78 0l-3.66 1.83A1 1 0 0 1 3 19.38V6.62a1 1 0 0 1 .55-.9l4.56-2.27a2 2 0 0 1 1.78 0z"/><path d="M15 5.76v15"/><path d="M9 3.24v15"/></svg>
     `;}
-function renderPanel({forward,prereqsAll,related},renderList,fogEnabled){return`
+function renderPanel({forward,prereqsAll,related},renderList){return`
       <div class="lp-head">
         <div class="lp-title">Concept connections</div>
       </div>
@@ -62,16 +62,6 @@ function renderPanel({forward,prereqsAll,related},renderList,fogEnabled){return`
           <div class="lp-mini">
             <span class="lp-mini-note">Explore nearby concepts, prerequisites, and dependents in three connected map views.</span>
           </div>
-          <div class="lp-fog-row">
-            <span class="lp-fog-copy">
-              <span class="lp-fog-title">Knowledge masking</span>
-              <span class="lp-fog-note">Hide unfamiliar titles. Expand Nearby to reveal new concepts and, with a connected account, get a chance to find treasure.</span>
-            </span>
-            <label class="lp-ios-switch" aria-label="Turn knowledge masking on or off">
-              <input type="checkbox" data-lp-fog-switch ${fogEnabled ? 'checked' : ''}>
-              <span class="lp-ios-switch-ui" aria-hidden="true"></span>
-            </label>
-          </div>
         </div>
       </div>
     `;}
@@ -90,7 +80,6 @@ function getBootstrapGraph(rel){const data=readBootstrap(rel);return data?{panel
 function readRelated(siteRoot){const article=document.querySelector("article.md-content__inner");if(!article)return[];const heading=Array.from(article.querySelectorAll("h2,h3")).find(el=>{return/^related(?: concepts)?$/i.test(cleanTitle(el.textContent).replace(/[^\p{L}\p{N}\s]/gu,""));});const out=[],seen=new Set();for(let el=heading&&heading.nextElementSibling;el;el=el.nextElementSibling){if(/^H[23]$/.test(el.tagName))break;for(const link of el.querySelectorAll("a[href]")){const url=new URL(link.getAttribute("href"),document.baseURI);if(url.origin!==siteRoot.origin||!url.pathname.startsWith(siteRoot.pathname))continue;const loc=url.pathname.slice(siteRoot.pathname.length);if(!loc.endsWith(".html")||loc.endsWith("/index.html")||seen.has(loc))continue;seen.add(loc);const math=link.querySelector(".katex, .arithmatex, math, mjx-container");const annotation=math&&math.querySelector('annotation[encoding="application/x-tex"]');const title=math&&annotation?null:cleanTitle(link.textContent);out.push({loc,title,titleHtml:link.innerHTML});}}
 return out;}
 function bootstrapModel(snapshot,engine,relatedItems,titleFor){const graph={panelOnly:true,nodes:snapshot.nodes,prereqOf:snapshot.prereqsByLoc,dependents:{[snapshot.loc]:snapshot.dependents}};const forward=engine.rankDependents(graph,snapshot.loc,titleFor).filter(it=>it.m!==3).slice(0,6);const prereqsAll=engine.suggestBackfill(graph,snapshot.loc,99,titleFor);const bodyByLoc=new Map(relatedItems.map(it=>[canon(it.loc),it]));const related=filterRelated(uniq([...relatedItems.map(it=>it.loc),...snapshot.related]).map(loc=>{const body=bodyByLoc.get(canon(loc));return{loc,title:(body&&body.title)||titleFor(loc),titleHtml:(body&&body.titleHtml)||""};}),forward,prereqsAll,snapshot.loc,titleFor);return{graph,forward,prereqsAll,related};}
-function hydrateEarlyPanel(panel,rel){if(!panel||panel.dataset.lpEarlyShell!=="1")return false;try{if(document.documentElement.classList.contains("mk-startup-learning-path-off"))return false;if(!window.ConceptMastery)return false;const snapshot=readBootstrap(rel);if(!snapshot)return false;const script=document.querySelector('script[src*="concept-connections-panel.js"]');const siteRoot=new URL("../",new URL(script.getAttribute("src"),document.baseURI));const titles=titleHtmlMap(),getMastery=masteryReader();const titleFor=createTitleResolver(snapshot);const engine=createEngine({getMastery,nodeTitle:(_graph,loc)=>titleFor(loc),statusIcon:statusFor,titleDisplay:(_graph,loc,text)=>({text,html:titles.get(loc)||""}),toAbsoluteUrl:loc=>new URL(loc,siteRoot).href+"#top"});const model=bootstrapModel(snapshot,engine,readRelated(siteRoot),titleFor);let fog=false;try{fog=localStorage.getItem("lp_map_fog_enabled_v1")!=="0";}catch(_){}
-const next=signature(model,getMastery);if(panel.__lpFirstPaintSignature!==next)panel.innerHTML=renderPanel(model,items=>engine.buildList(items,model.graph,titleFor),fog);panel.__lpFirstPaintSignature=next;panel.dataset.lpFirstPaintContent="1";panel.classList.add("lp-first-paint-content");panel.removeAttribute("aria-busy");panel.querySelectorAll("[data-lp-open-map], [data-lp-fog-switch]").forEach(el=>{el.disabled=true;});return true;}catch(_){return false;}}
-function reuseEarlyPanel(panel,model){if(!panel.__lpFirstPaintSignature||panel.__lpFirstPaintSignature!==signature(model,masteryReader()))return false;panel.querySelectorAll("[data-lp-open-map], [data-lp-fog-switch]").forEach(el=>{el.disabled=false;});delete panel.__lpFirstPaintSignature;return true;}
+function hydrateEarlyPanel(panel,rel){if(!panel||panel.dataset.lpEarlyShell!=="1")return false;try{if(document.documentElement.classList.contains("mk-startup-learning-path-off"))return false;if(!window.ConceptMastery)return false;const snapshot=readBootstrap(rel);if(!snapshot)return false;const script=document.querySelector('script[src*="concept-connections-panel.js"]');const siteRoot=new URL("../",new URL(script.getAttribute("src"),document.baseURI));const titles=titleHtmlMap(),getMastery=masteryReader();const titleFor=createTitleResolver(snapshot);const engine=createEngine({getMastery,nodeTitle:(_graph,loc)=>titleFor(loc),statusIcon:statusFor,titleDisplay:(_graph,loc,text)=>({text,html:titles.get(loc)||""}),toAbsoluteUrl:loc=>new URL(loc,siteRoot).href+"#top"});const model=bootstrapModel(snapshot,engine,readRelated(siteRoot),titleFor);const next=signature(model,getMastery);if(panel.__lpFirstPaintSignature!==next)panel.innerHTML=renderPanel(model,items=>engine.buildList(items,model.graph,titleFor));panel.__lpFirstPaintSignature=next;panel.dataset.lpFirstPaintContent="1";panel.classList.add("lp-first-paint-content");panel.removeAttribute("aria-busy");panel.querySelectorAll("[data-lp-open-map]").forEach(el=>{el.disabled=true;});return true;}catch(_){return false;}}
+function reuseEarlyPanel(panel,model){if(!panel.__lpFirstPaintSignature||panel.__lpFirstPaintSignature!==signature(model,masteryReader()))return false;panel.querySelectorAll("[data-lp-open-map]").forEach(el=>{el.disabled=false;});delete panel.__lpFirstPaintSignature;return true;}
 window.MkConceptConnections={createEngine,renderPanel,filterRelated,createTitleResolver,statusFor,bootstrapModel,readBootstrap,getBootstrapGraph,hydrateEarlyPanel,reuseEarlyPanel,titleHtmlMap};})();
