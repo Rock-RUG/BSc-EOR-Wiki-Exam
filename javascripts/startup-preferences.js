@@ -23,7 +23,7 @@ return(isConceptRoute()||admin)?all:[];}
 return all;}
 function routeScriptNames(prefs){const p=prefs||readPrefs();const names=[];const path=String(window.location.pathname||"").toLowerCase().replace(/\/+$/,"");const add=(...items)=>items.forEach((name)=>{if(name&&names.indexOf(name)<0)names.push(name);});try{if((path.endsWith("/find.html")||path==="find.html")&&document.getElementById("search-form")&&document.getElementById("search-results")){add("search-results.js","find-builder-core.js","find-builder.js");if(!window.__mkExamMode)add("study-sets-core.js","study-session-core.js","study-session.js","study-sets.js");}
 if(document.querySelector(".course-search")){add("course-search-core.js","course-search.js");}
-if(hasCourseMasteryMap()){if(isEnabled("mastery",p))add("concept-mastery.js");add("course-mastery-map-core.js","course-mastery-map.js");}
+if(hasCourseMasteryMap()){if(isEnabled("mastery",p))add("concept-mastery.js");add("map-teaching-units.js","course-mastery-map-core.js","course-mastery-map.js");}
 if((path.endsWith("/custom-random.html")||path==="custom-random.html")&&document.getElementById("custom-random-app")){add("custom-random.js");}
 let customRandomArrival=false;try{customRandomArrival=sessionStorage.getItem("random_custom_nav_flag_v1")==="1";}catch(_){}
 if(isConceptRoute()&&customRandomArrival)add("custom-random-banner.js");if(!window.__mkExamMode&&isConceptRoute()&&/^study-session-[A-Za-z0-9_-]{8,100}$/.test(new URLSearchParams(window.location.search||"").get("study-session")||"")){add("study-sets-core.js","study-session-core.js","study-session.js");}
