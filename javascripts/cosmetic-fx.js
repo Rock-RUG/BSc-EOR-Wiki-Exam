@@ -5,9 +5,12 @@ function ensureStyles(){if(document.getElementById(STYLE_ID))return;const style=
       @keyframes mk-shop-particle{to{transform:translate(var(--dx),var(--dy)) rotate(var(--rot,160deg)) scale(.35);opacity:0}}
       /* Markers and their animated glow extend above and below the 8px track.
          Paint containment would clip them even with a high z-index. Keep the
-         layout/style boundary. Paint above raised header/search chrome (2600),
-         below menus and dialogs (3000+); the overlay remains non-interactive. */
+         layout/style boundary. The non-interactive bar sits above page chrome;
+         it steps aside while search is open so neither marker nor percentage
+         overlaps the dropdown. */
       #${PROGRESS_ID}{position:fixed;z-index:2147482800;left:0;right:0;top:var(--mk-reading-bar-top,2.4rem);height:8px;pointer-events:none;background:color-mix(in srgb,var(--md-default-fg-color) 14%,var(--md-default-bg-color));box-shadow:0 1px 0 rgba(255,255,255,.42),0 3px 10px rgba(15,23,42,.16);contain:layout style;overflow:visible}
+      /* The header search dropdown outranks the reading bar: step aside while it is open. */
+      #__search:checked~#${PROGRESS_ID},html.mk-hsf-open #${PROGRESS_ID}{visibility:hidden}
       #${PROGRESS_ID}>span{display:block;position:relative;width:0;height:100%}
       #${PROGRESS_ID}>span::after{content:"◆";position:absolute;right:-11px;top:50%;display:grid;place-items:center;width:22px;height:22px;transform:translateY(-50%);font:900 15px/1 "Segoe UI Emoji",sans-serif;filter:drop-shadow(0 2px 5px rgba(15,23,42,.35))}
       #${PROGRESS_ID}>b{position:absolute;right:10px;top:12px;padding:.13rem .34rem;border-radius:999px;color:var(--md-default-fg-color);background:color-mix(in srgb,var(--md-default-bg-color) 94%,transparent);border:1px solid color-mix(in srgb,var(--md-default-fg-color) 14%,transparent);box-shadow:0 4px 12px rgba(15,23,42,.14);font:850 10px/1 system-ui}
