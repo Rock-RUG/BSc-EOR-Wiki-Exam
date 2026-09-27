@@ -751,11 +751,10 @@ let left=Math.round(r.left);let top=Math.round(r.bottom+6);const parentRect=pane
 left=clampNumber(left,view.left+gap,view.right-gap-pw);top=clampNumber(top,view.top+gap,view.bottom-gap-ph);panel.style.left=`${left}px`;panel.style.top=`${top}px`;panel.style.visibility="visible";}
 function openPanelNow(panel,trigger,pinned){if(!panel||!trigger)return;try{window.__mkMarkInteractionBusy&&window.__mkMarkInteractionBusy(300);}catch(_){}
 closeOpenPanel();state.openPanel=panel;state.openTrigger=trigger;state.pinned=!!pinned;trigger.setAttribute("aria-expanded","true");placePanel(panel,trigger);try{paintShopDiscountBadge();}catch(_){}}
-function queueHoverOpen(panel,trigger){if(!canUseHoverDropdown())return;if(state.pinned)return;try{window.__mkMarkInteractionBusy&&window.__mkMarkInteractionBusy(300);}catch(_){}
-try{if(state.hoverCloseTimer)window.clearTimeout(state.hoverCloseTimer);}catch(_){}
+function queueHoverOpen(panel,trigger){if(!canUseHoverDropdown())return;if(state.pinned)return;try{if(state.hoverCloseTimer)window.clearTimeout(state.hoverCloseTimer);}catch(_){}
 state.hoverCloseTimer=0;if(state.openPanel===panel&&panel.classList.contains("mk-rt-open")){placePanel(panel,trigger);return;}
 try{if(state.hoverOpenTimer)window.clearTimeout(state.hoverOpenTimer);}catch(_){}
-state.hoverOpenTimer=window.setTimeout(()=>{state.hoverOpenTimer=0;openPanelNow(panel,trigger);},45);}
+state.hoverOpenTimer=0;openPanelNow(panel,trigger);}
 function queueHoverClose(){if(!canUseHoverDropdown())return;try{if(state.hoverOpenTimer)window.clearTimeout(state.hoverOpenTimer);}catch(_){}
 state.hoverOpenTimer=0;if(state.pinned)return;try{if(state.hoverCloseTimer)window.clearTimeout(state.hoverCloseTimer);}catch(_){}
 state.hoverCloseTimer=window.setTimeout(()=>{state.hoverCloseTimer=0;if(state.pinned||isInOpenMenu(document.activeElement))return;const flyout=document.getElementById("rf-year-course-popover-v4");if(flyout&&flyout.matches(":hover"))return;closeOpenPanel();},280);}
