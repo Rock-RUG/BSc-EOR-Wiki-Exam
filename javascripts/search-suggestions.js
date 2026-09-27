@@ -393,7 +393,7 @@ function ensureStyles(){if(STATE.styleReady&&document.getElementById("mk-custom-
 
       .mk-search-suggest__head {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
         align-items: baseline;
         gap: .35rem .9rem;
       }
@@ -418,13 +418,16 @@ function ensureStyles(){if(STATE.styleReady&&document.getElementById("mk-custom-
 
       .mk-search-suggest__meta {
         justify-self: end;
+        min-width: 0;
+        max-width: 100%;
         margin: 0;
         color: var(--md-default-fg-color--light);
         font-size: .78rem;
         line-height: 1.35;
         font-weight: 500;
         text-align: right;
-        white-space: nowrap;
+        white-space: normal;
+        overflow-wrap: anywhere;
       }
 
       .mk-search-suggest__detail {
