@@ -1,6 +1,7 @@
 (()=>{"use strict";const root=document.documentElement;const STYLE_ID="mk-shop-extras-style-v1";const PROGRESS_ID="mk-shop-reading-progress";const BGM_PLAYER_ID="mk-bgm-player";const BGM_STATE_KEY="mk_bgm_player_state_v1";function cosmeticFeatureEnabled(){return!window.__mkExamMode&&root.getAttribute("data-mk-startup-account")!=="off"&&!root.classList.contains("mk-startup-account-off");}
 function ensureStyles(){if(document.getElementById(STYLE_ID))return;const style=document.createElement("style");style.id=STYLE_ID;style.textContent=`
       .mk-shop-fx-layer{position:fixed;inset:0;z-index:2147483500;overflow:hidden;pointer-events:none}
+      .mk-shop-fx-layer:empty{display:none}
       .mk-shop-fx-particle{position:fixed;left:var(--x);top:var(--y);font-size:var(--size,20px);filter:drop-shadow(0 0 7px var(--glow,#fff));animation:mk-shop-particle .9s ease-out forwards}
       @keyframes mk-shop-particle{to{transform:translate(var(--dx),var(--dy)) rotate(var(--rot,160deg)) scale(.35);opacity:0}}
       /* Markers and their animated glow extend above and below the 8px track.
