@@ -473,7 +473,7 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         box-shadow: var(--shadow-soft, 0 10px 26px rgba(0,0,0,.10)) !important;
       }
       #${PANEL_ID}{
-        --cmm-panel-bg: #f2f3f5;
+        --cmm-panel-bg: var(--mk-surface-material, #f2f3f5);
         margin: 0;
         border-radius: 22px;
         border: 1px solid rgba(0,0,0,.10);
@@ -1645,13 +1645,13 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
       }
       html[data-md-color-scheme="default"] #${PANEL_ID},
       body[data-md-color-scheme="default"] #${PANEL_ID}{
-        --cmm-panel-bg: #f2f3f5;
-        background: #f2f3f5 !important;
+        --cmm-panel-bg: var(--mk-surface-material, #f2f3f5);
+        background: var(--mk-surface-material, #f2f3f5) !important;
       }
       html[data-md-color-scheme="slate"] #${PANEL_ID},
       body[data-md-color-scheme="slate"] #${PANEL_ID}{
-        --cmm-panel-bg: #242832;
-        background: #242832 !important;
+        --cmm-panel-bg: var(--mk-surface-material, #242832);
+        background: var(--mk-surface-material, #242832) !important;
         border-color: rgba(255,255,255,.10);
       }
       html[data-md-color-scheme="slate"] #${PANEL_ID} .cmm-head,
@@ -1883,13 +1883,13 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         }
         [data-md-color-scheme="default"] #${PANEL_ID},
         body[data-md-color-scheme="default"] #${PANEL_ID}{
-          --cmm-panel-bg:#f2f3f5;
-          background:#f2f3f5 !important;
+          --cmm-panel-bg:var(--mk-surface-material, #f2f3f5);
+          background:var(--mk-surface-material, #f2f3f5) !important;
         }
         [data-md-color-scheme="slate"] #${PANEL_ID},
         body[data-md-color-scheme="slate"] #${PANEL_ID}{
-          --cmm-panel-bg:#242832;
-          background:#242832 !important;
+          --cmm-panel-bg:var(--mk-surface-material, #242832);
+          background:var(--mk-surface-material, #242832) !important;
         }
       }
 
@@ -2620,13 +2620,13 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         }
         [data-md-color-scheme="default"] #${PANEL_ID},
         body[data-md-color-scheme="default"] #${PANEL_ID}{
-          --cmm-panel-bg:#f2f3f5;
-          background:#f2f3f5 !important;
+          --cmm-panel-bg:var(--mk-surface-material, #f2f3f5);
+          background:var(--mk-surface-material, #f2f3f5) !important;
         }
         [data-md-color-scheme="slate"] #${PANEL_ID},
         body[data-md-color-scheme="slate"] #${PANEL_ID}{
-          --cmm-panel-bg:#242832;
-          background:#242832 !important;
+          --cmm-panel-bg:var(--mk-surface-material, #242832);
+          background:var(--mk-surface-material, #242832) !important;
         }
       }
 
