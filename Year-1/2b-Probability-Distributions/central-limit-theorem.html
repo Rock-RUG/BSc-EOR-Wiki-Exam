@@ -5,10 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="Central limit theorem (CLT): for iid X1,X2,… with mean μ and variance σ^2&gt;0, the sample mean Xn=1n∑i=1^n Xi satisfies" name="description"/>
+<meta content="Let X1,X2,… be iid with mean μ and finite positive variance 0&lt;σ^2&lt;∞. Then the sample mean Xn=1n∑i=1^n Xi satisfies" name="description"/>
 <link href="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/central-limit-theorem.html" rel="canonical"/>
-<link href="cdf-realizability.html" rel="prev"/>
-<link href="change-of-variables-1d.html" rel="next"/>
+<link href="cauchy-schwarz-inequality.html" rel="prev"/>
+<link href="chebyshev-inequality.html" rel="next"/>
 <link href="../../assets/logo-navbar.svg" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
 <title>Central Limit Theorem - BSc EOR Wiki (Exam Mode)</title>
@@ -34,13 +34,13 @@
 <meta content="website" property="og:type"/>
 <meta content="BSc EOR Wiki (Exam Mode)" property="og:site_name"/>
 <meta content="Central Limit Theorem - BSc EOR Wiki (Exam Mode)" property="og:title"/>
-<meta content="Central limit theorem (CLT): for iid X1,X2,… with mean μ and variance σ^2&gt;0, the sample mean Xn=1n∑i=1^n Xi satisfies" property="og:description"/>
+<meta content="Let X1,X2,… be iid with mean μ and finite positive variance 0&lt;σ^2&lt;∞. Then the sample mean Xn=1n∑i=1^n Xi satisfies" property="og:description"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/central-limit-theorem.html" property="og:url"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/assets/logo-navbar.png" property="og:image"/>
 <meta content="BSc EOR Wiki logo" property="og:image:alt"/>
 <meta content="summary" name="twitter:card"/>
 <meta content="Central Limit Theorem - BSc EOR Wiki (Exam Mode)" name="twitter:title"/>
-<meta content="Central limit theorem (CLT): for iid X1,X2,… with mean μ and variance σ^2&gt;0, the sample mean Xn=1n∑i=1^n Xi satisfies" name="twitter:description"/>
+<meta content="Let X1,X2,… be iid with mean μ and finite positive variance 0&lt;σ^2&lt;∞. Then the sample mean Xn=1n∑i=1^n Xi satisfies" name="twitter:description"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/assets/logo-navbar.png" name="twitter:image"/>
 <meta content="BSc EOR Wiki logo" name="twitter:image:alt"/>
 <script id="mk-search-index-network-cache">
@@ -87,9 +87,9 @@
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=b0d836228334";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=bb21a0954911";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=b0d836228334";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=bb21a0954911";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -740,35 +740,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="2d-lotus-continuous.html">
-<span class="md-ellipsis">
-    
-  
-    2D LOTUS (Continuous)
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="2d-lotus-discrete.html">
-<span class="md-ellipsis">
-    
-  
-    2D LOTUS (Discrete)
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="adams-law-with-extra-conditioning.html">
 <span class="md-ellipsis">
     
   
-    Adam's Law with Extra Conditioning
+    Adam’s Law with Extra Conditioning
   
 
     
@@ -780,7 +756,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Adam's Law
+    Adam’s Law: Total Expectation
   
 
     
@@ -800,11 +776,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="bayes-lotp-four-forms.html">
+<a class="md-nav__link" href="bayes-and-total-probability-four-forms.html">
 <span class="md-ellipsis">
     
   
-    Bayes and LOTP: Four Forms
+    Bayes and Total Probability: Four Forms
   
 
     
@@ -828,19 +804,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Cauchy-Schwarz Inequality (Probability Distributions)
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="cdf-realizability.html">
-<span class="md-ellipsis">
-    
-  
-    CDF Realizability
+    Cauchy–Schwarz Inequality for Random Variables
   
 
     
@@ -877,10 +841,46 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#definition">
+<a class="md-nav__link" href="#theorem">
 <span class="md-ellipsis">
       
-        Definition
+        Theorem
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#interpretation">
+<span class="md-ellipsis">
+      
+        Interpretation
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#key-results">
+<span class="md-ellipsis">
+      
+        Key Results
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#examples">
+<span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prerequisites">
+<span class="md-ellipsis">
+      
+        Prerequisites
       
     </span>
 </a>
@@ -907,11 +907,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="change-of-variables-1d.html">
+<a class="md-nav__link" href="chebyshev-inequality.html">
 <span class="md-ellipsis">
     
   
-    Change of Variables (1D)
+    Chebyshev Inequality
   
 
     
@@ -931,11 +931,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="chicken-egg.html">
+<a class="md-nav__link" href="chicken-egg-theorem.html">
 <span class="md-ellipsis">
     
   
-    Chicken-Egg Poisson Splitting
+    Chicken–Egg Theorem
   
 
     
@@ -943,11 +943,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="conditional-cdf.html">
+<a class="md-nav__link" href="conditional-cumulative-distribution-function.html">
 <span class="md-ellipsis">
     
   
-    Conditional CDF
+    Conditional Cumulative Distribution Function
   
 
     
@@ -991,11 +991,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="conditional-expectation-given-an-event.html">
+<a class="md-nav__link" href="conditional-probability-density-function.html">
 <span class="md-ellipsis">
     
   
-    Conditional Expectation Given an Event
+    Conditional Probability Density Function
   
 
     
@@ -1003,23 +1003,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="conditional-pdf.html">
+<a class="md-nav__link" href="conditional-probability-mass-function.html">
 <span class="md-ellipsis">
     
   
-    Conditional PDF
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="conditional-pmf.html">
-<span class="md-ellipsis">
-    
-  
-    Conditional PMF
+    Conditional Probability Mass Function
   
 
     
@@ -1099,11 +1087,23 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="convergence-in-probability.html">
+<span class="md-ellipsis">
+    
+  
+    Convergence in Probability
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="convolution.html">
 <span class="md-ellipsis">
     
   
-    Convolution
+    Convolution of Independent Random Variables
   
 
     
@@ -1151,31 +1151,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Eve's Law
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="expectation-continuous.html">
-<span class="md-ellipsis">
-    
-  
-    Expectation of a Continuous Random Variable
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="expectation-discrete.html">
-<span class="md-ellipsis">
-    
-  
-    Expectation of a Discrete Random Variable
+    Eve’s Law: Total Variance
   
 
     
@@ -1207,6 +1183,18 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="generalized-markov-inequality.html">
+<span class="md-ellipsis">
+    
+  
+    Generalized Markov Inequality
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="geometric-series.html">
 <span class="md-ellipsis">
     
@@ -1219,35 +1207,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="independence-continuous.html">
+<a class="md-nav__link" href="jensen-inequality.html">
 <span class="md-ellipsis">
     
   
-    Independence for Continuous Random Variables
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="independence-discrete.html">
-<span class="md-ellipsis">
-    
-  
-    Independence for Discrete Random Variables
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="jensens-inequality.html">
-<span class="md-ellipsis">
-    
-  
-    Jensen's Inequality
+    Jensen Inequality
   
 
     
@@ -1259,7 +1223,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Joint CDF (Continuous)
+    Joint CDF of Continuous Random Variables
   
 
     
@@ -1271,7 +1235,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Joint CDF (Discrete)
+    Joint CDF of Discrete Random Variables
   
 
     
@@ -1279,11 +1243,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="joint-pdf-continuous.html">
+<a class="md-nav__link" href="joint-probability-density-function.html">
 <span class="md-ellipsis">
     
   
-    Joint PDF (Continuous)
+    Joint Probability Density Function
   
 
     
@@ -1291,11 +1255,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="joint-pmf-discrete.html">
+<a class="md-nav__link" href="joint-probability-mass-function.html">
 <span class="md-ellipsis">
     
   
-    Joint PMF (Discrete)
+    Joint Probability Mass Function
   
 
     
@@ -1303,11 +1267,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="law-of-total-expectation.html">
+<a class="md-nav__link" href="law-of-total-expectation-partition.html">
 <span class="md-ellipsis">
     
   
-    Law of Total Expectation
+    Law of Total Expectation over a Partition
   
 
     
@@ -1315,11 +1279,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="law-of-total-probability-with-extra-conditioning.html">
+<a class="md-nav__link" href="lotus-two-dimensional-continuous.html">
 <span class="md-ellipsis">
     
   
-    Law of Total Probability with Extra Conditioning
+    Two-Dimensional LOTUS for Continuous Variables
   
 
     
@@ -1327,11 +1291,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="lotus-continuous.html">
+<a class="md-nav__link" href="lotus-two-dimensional-discrete.html">
 <span class="md-ellipsis">
     
   
-    LOTUS for Continuous Random Variables
+    Two-Dimensional LOTUS for Discrete Variables
   
 
     
@@ -1339,11 +1303,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="lotus-discrete.html">
+<a class="md-nav__link" href="marginal-probability-density-function.html">
 <span class="md-ellipsis">
     
   
-    LOTUS for Discrete Random Variables
+    Marginal Probability Density Function
   
 
     
@@ -1351,35 +1315,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="marginal-pdf.html">
+<a class="md-nav__link" href="marginal-probability-mass-function.html">
 <span class="md-ellipsis">
     
   
-    Marginal PDF
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="marginal-pmf.html">
-<span class="md-ellipsis">
-    
-  
-    Marginal PMF
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="markov-inequality.html">
-<span class="md-ellipsis">
-    
-  
-    Markov's Inequality
+    Marginal Probability Mass Function
   
 
     
@@ -1391,7 +1331,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    MGF Location-Scale Formula
+    Location and Scale Property of the MGF
   
 
     
@@ -1399,23 +1339,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="mgf-moments.html">
+<a class="md-nav__link" href="mgf-of-an-independent-sum.html">
 <span class="md-ellipsis">
     
   
-    MGF Moments
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="mgf-of-a-sum.html">
-<span class="md-ellipsis">
-    
-  
-    MGF of a Sum
+    MGF of an Independent Sum
   
 
     
@@ -1427,7 +1355,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    MGF Uniqueness
+    Uniqueness of Moment Generating Functions
   
 
     
@@ -1440,6 +1368,18 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
     
   
     Moment Generating Function
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="moments-from-the-mgf.html">
+<span class="md-ellipsis">
+    
+  
+    Moments from the MGF
   
 
     
@@ -1495,6 +1435,18 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="sample-mean.html">
+<span class="md-ellipsis">
+    
+  
+    Sample Mean
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="strong-law-of-large-numbers.html">
 <span class="md-ellipsis">
     
@@ -1507,11 +1459,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="sum-of-iid-uniforms.html">
+<a class="md-nav__link" href="sum-of-two-iid-uniforms.html">
 <span class="md-ellipsis">
     
   
-    Sum of IID Uniforms
+    Sum of Two IID Uniform Variables
   
 
     
@@ -1547,7 +1499,31 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Taylor Series (Probability Distributions)
+    Taylor Series for the Exponential Function
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="total-probability-with-extra-conditioning.html">
+<span class="md-ellipsis">
+    
+  
+    Total Probability with Extra Conditioning
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="weak-law-of-large-numbers.html">
+<span class="md-ellipsis">
+    
+  
+    Weak Law of Large Numbers
   
 
     
@@ -1626,10 +1602,46 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#definition">
+<a class="md-nav__link" href="#theorem">
 <span class="md-ellipsis">
       
-        Definition
+        Theorem
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#interpretation">
+<span class="md-ellipsis">
+      
+        Interpretation
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#key-results">
+<span class="md-ellipsis">
+      
+        Key Results
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#examples">
+<span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prerequisites">
+<span class="md-ellipsis">
+      
+        Prerequisites
       
     </span>
 </a>
@@ -1664,11 +1676,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-tag">pd-week08</span>
 </nav>
 <h1 id="central-limit-theorem">Central Limit Theorem<a class="headerlink" href="#central-limit-theorem" title="Permanent link">¶</a></h1>
-<h2 id="definition"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 7h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H9zm2 2v6h2V9zM3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm2 0v14h14V5z"></path></svg></span> Definition<a class="headerlink" href="#definition" title="Permanent link">¶</a></h2>
-<p><strong>Central limit theorem (CLT)</strong>: for iid <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>X</mi><mn>2</mn></msub><mo separator="true">,</mo><mo>…</mo></mrow><annotation encoding="application/x-tex">X_1,X_2,\ldots</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span></span></span></span></span> with mean <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">μ</span></span></span></span></span> and variance <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>σ</mi><mn>2</mn></msup><mo>&gt;</mo><mn>0</mn><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">\sigma^2&gt;0,</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8532em;vertical-align:-0.0391em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">σ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">0</span><span class="mpunct">,</span></span></span></span></span> the sample mean <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>X</mi><mo>ˉ</mo></mover><mi>n</mi></msub><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>X</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\bar X_n=\frac{1}{n}\sum_{i=1}^n X_i</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.9701em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8043em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span> satisfies</p>
-<div class="arithmatex arithmatex-prerendered arithmatex-display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnalign="right" columnspacing="" rowspacing="0.25em"><mtr><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mfrac><mrow><msub><mover accent="true"><mi>X</mi><mo>ˉ</mo></mover><mi>n</mi></msub><mo>−</mo><mi>μ</mi></mrow><mrow><mi>σ</mi><mi mathvariant="normal">/</mi><msqrt><mi>n</mi></msqrt></mrow></mfrac><mover><mo minsize="3.0em" stretchy="true">→</mo><mpadded lspace="0.3em" width="+0.6em"><mi>d</mi></mpadded></mover><mi mathvariant="script">N</mi><mrow><mo fence="true">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo fence="true">)</mo></mrow><mi mathvariant="normal">.</mi></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{align*}
-\frac{\bar X_n-\mu}{\sigma/\sqrt{n}}\xrightarrow{d}\Norm{0,1}.
-\end{align*}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:2.4374em;vertical-align:-0.9687em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.4687em;"><span style="top:-3.4687em;"><span class="pstrut" style="height:3.4971em;"></span><span class="mord"><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.4971em;"><span style="top:-2.3097em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">σ</span><span class="mord">/</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8003em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord mathnormal">n</span></span></span><span style="top:-2.7603em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg height="1.08em" preserveaspectratio="xMinYMin slice" viewbox="0 0 400000 1080" width="400em" xmlns="http://www.w3.org/2000/svg"><path d="M95,702
+<h2 id="theorem"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.42 5.29c-1.1-.1-2.07.71-2.17 1.82L10 10h2.82v2h-3l-.44 5.07A4.001 4.001 0 0 1 2 18.83l1.5-1.5c.33 1.05 1.46 1.64 2.5 1.3.78-.24 1.33-.93 1.4-1.74L7.82 12h-3v-2H8l.27-3.07a4.01 4.01 0 0 1 4.33-3.65c1.26.11 2.4.81 3.06 1.89l-1.5 1.5c-.25-.77-.93-1.31-1.74-1.38M22 13.65l-1.41-1.41-2.83 2.83-2.83-2.83-1.43 1.41 2.85 2.85-2.85 2.81 1.43 1.41 2.83-2.83 2.83 2.83L22 19.31l-2.83-2.81z"></path></svg></span> Theorem<a class="headerlink" href="#theorem" title="Permanent link">¶</a></h2>
+<p>Let <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>X</mi><mn>2</mn></msub><mo separator="true">,</mo><mo>…</mo></mrow><annotation encoding="application/x-tex">X_1,X_2,\ldots</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span></span></span></span></span> be iid with mean <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">μ</span></span></span></span></span> and <strong>finite positive variance</strong> <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><msup><mi>σ</mi><mn>2</mn></msup><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">0&lt;\sigma^2&lt;\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6835em;vertical-align:-0.0391em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8532em;vertical-align:-0.0391em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">σ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span></span>. Then the sample mean <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>X</mi><mo>ˉ</mo></mover><mi>n</mi></msub><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>X</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\bar X_n=\frac{1}{n}\sum_{i=1}^n X_i</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.9701em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8043em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span> satisfies</p>
+<div class="arithmatex arithmatex-prerendered arithmatex-display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnalign="right" columnspacing="" rowspacing="0.25em"><mtr><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mfrac><mrow><msub><mover accent="true"><mi>X</mi><mo>ˉ</mo></mover><mi>n</mi></msub><mo>−</mo><mi>μ</mi></mrow><mrow><mi>σ</mi><mi mathvariant="normal">/</mi><msqrt><mi>n</mi></msqrt></mrow></mfrac><mover><mo minsize="3.0em" stretchy="true">→</mo><mpadded lspace="0.3em" width="+0.6em"><mi>d</mi></mpadded></mover><mi mathvariant="script">N</mi><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+\frac{\bar X_n-\mu}{\sigma/\sqrt{n}}\xrightarrow{d}\mathcal{N}(0,1).
+\end{aligned}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:2.4374em;vertical-align:-0.9687em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.4687em;"><span style="top:-3.4687em;"><span class="pstrut" style="height:3.4971em;"></span><span class="mord"><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.4971em;"><span style="top:-2.3097em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">σ</span><span class="mord">/</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8003em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord mathnormal">n</span></span></span><span style="top:-2.7603em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg height="1.08em" preserveaspectratio="xMinYMin slice" viewbox="0 0 400000 1080" width="400em" xmlns="http://www.w3.org/2000/svg"><path d="M95,702
 c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
 c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
 c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
@@ -1685,11 +1697,11 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
  39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85
 -40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5
 -12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67
- 151.7 139 205zm0 0v40h399900v-40z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathcal" style="margin-right:0.1474em;">N</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">.</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9687em;"><span></span></span></span></span></span></span></span></span></span></span></span></div>
-<p>Equivalently, for the sum <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>X</mi><mi>i</mi></msub><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">S_n=\sum_{i=1}^n X_i,</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.104em;vertical-align:-0.2997em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8043em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span></span></span></span></span></p>
-<div class="arithmatex arithmatex-prerendered arithmatex-display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnalign="right" columnspacing="" rowspacing="0.25em"><mtr><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mfrac><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>−</mo><mi>n</mi><mi>μ</mi></mrow><mrow><mi>σ</mi><msqrt><mi>n</mi></msqrt></mrow></mfrac><mover><mo minsize="3.0em" stretchy="true">→</mo><mpadded lspace="0.3em" width="+0.6em"><mi>d</mi></mpadded></mover><mi mathvariant="script">N</mi><mrow><mo fence="true">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo fence="true">)</mo></mrow><mi mathvariant="normal">.</mi></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{align*}
-\frac{S_n-n\mu}{\sigma\sqrt{n}}\xrightarrow{d}\Norm{0,1}.
-\end{align*}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:2.2903em;vertical-align:-0.8952em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3952em;"><span style="top:-3.3952em;"><span class="pstrut" style="height:3.3603em;"></span><span class="mord"><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.3097em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">σ</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8003em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord mathnormal">n</span></span></span><span style="top:-2.7603em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg height="1.08em" preserveaspectratio="xMinYMin slice" viewbox="0 0 400000 1080" width="400em" xmlns="http://www.w3.org/2000/svg"><path d="M95,702
+ 151.7 139 205zm0 0v40h399900v-40z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathcal" style="margin-right:0.1474em;">N</span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord">.</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9687em;"><span></span></span></span></span></span></span></span></span></span></span></span></div>
+<p>Equivalently, for the sum <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>X</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">S_n=\sum_{i=1}^n X_i</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.104em;vertical-align:-0.2997em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8043em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span>,</p>
+<div class="arithmatex arithmatex-prerendered arithmatex-display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnalign="right" columnspacing="" rowspacing="0.25em"><mtr><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mfrac><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>−</mo><mi>n</mi><mi>μ</mi></mrow><mrow><mi>σ</mi><msqrt><mi>n</mi></msqrt></mrow></mfrac><mover><mo minsize="3.0em" stretchy="true">→</mo><mpadded lspace="0.3em" width="+0.6em"><mi>d</mi></mpadded></mover><mi mathvariant="script">N</mi><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo><mi mathvariant="normal">.</mi></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+\frac{S_n-n\mu}{\sigma\sqrt{n}}\xrightarrow{d}\mathcal{N}(0,1).
+\end{aligned}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:2.2903em;vertical-align:-0.8952em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3952em;"><span style="top:-3.3952em;"><span class="pstrut" style="height:3.3603em;"></span><span class="mord"><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.3097em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">σ</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8003em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord mathnormal">n</span></span></span><span style="top:-2.7603em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg height="1.08em" preserveaspectratio="xMinYMin slice" viewbox="0 0 400000 1080" width="400em" xmlns="http://www.w3.org/2000/svg"><path d="M95,702
 c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
 c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
 c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
@@ -1706,22 +1718,57 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
  39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85
 -40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5
 -12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67
- 151.7 139 205zm0 0v40h399900v-40z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathcal" style="margin-right:0.1474em;">N</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">.</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8952em;"><span></span></span></span></span></span></span></span></span></span></span></span></div>
+ 151.7 139 205zm0 0v40h399900v-40z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathcal" style="margin-right:0.1474em;">N</span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord">.</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8952em;"><span></span></span></span></span></span></span></span></span></span></span></span></div>
+<p>Here <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">N</mi><mo stretchy="false">(</mo><mi>μ</mi><mo separator="true">,</mo><mi>v</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal{N}(\mu,v)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.1474em;">N</span><span class="mopen">(</span><span class="mord mathnormal">μ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span><span class="mclose">)</span></span></span></span></span> denotes a normal distribution with mean <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">μ</span></span></span></span></span> and variance <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">v</span></span></span></span></span>, and <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Φ</mi></mrow><annotation encoding="application/x-tex">\Phi</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Φ</span></span></span></span></span> is the standard normal CDF.</p>
 <hr/>
+<h2 id="interpretation"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 3c3.9 0 7 3.1 7 7 0 2.8-1.6 5.2-4 6.3V21H9v-3H8c-1.1 0-2-.9-2-2v-3H4.5c-.4 0-.7-.5-.4-.8L6 9.7C6.2 5.9 9.2 3 13 3m0-2C8.4 1 4.6 4.4 4.1 8.9L2.5 11c-.6.8-.6 1.8-.2 2.6.4.7 1 1.2 1.7 1.3V16c0 1.9 1.3 3.4 3 3.9V23h11v-5.5c2.5-1.7 4-4.4 4-7.5 0-5-4-9-9-9m1 13h-2v-1h2zm1.6-4.5c-.3.4-.6.8-1.1 1.1V12h-3v-1.4c-1.4-.8-1.9-2.7-1.1-4.1s2.7-1.9 4.1-1.1 1.9 2.7 1.1 4.1"></path></svg></span> Interpretation<a class="headerlink" href="#interpretation" title="Permanent link">¶</a></h2>
+<p>The properly centered and scaled fluctuations of an iid sum approach a standard normal distribution. This gives approximate probabilities for sums and averages.</p>
+<p><img alt="Central Limit Theorem" src="../../assets/svg/central-limit-theorem.svg"/></p>
+<hr/>
+<h2 id="key-results"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m8.58 17.25.92-3.89-3-2.58 3.95-.37L12 6.8l1.55 3.65 3.95.33-3 2.58.92 3.89L12 15.19zM12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8"></path></svg></span> Key Results<a class="headerlink" href="#key-results" title="Permanent link">¶</a></h2>
+<ul>
+<li>For large <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span>, <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">S_n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span> is approximately <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">N</mi><mo stretchy="false">(</mo><mi>n</mi><mi>μ</mi><mo separator="true">,</mo><mi>n</mi><msup><mi>σ</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal{N}(n\mu,n\sigma^2)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.1474em;">N</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mord mathnormal">μ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">n</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">σ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span> and <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>X</mi><mo>ˉ</mo></mover><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\bar X_n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.9701em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span> approximately <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">N</mi><mo stretchy="false">(</mo><mi>μ</mi><mo separator="true">,</mo><msup><mi>σ</mi><mn>2</mn></msup><mi mathvariant="normal">/</mi><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal{N}(\mu,\sigma^2/n)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.1474em;">N</span><span class="mopen">(</span><span class="mord mathnormal">μ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">σ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord">/</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span>.</li>
+<li>The finite-sample approximation is not an exact normality claim; iid normal observations are a special case where the standardized sum is exactly normal.</li>
+</ul>
+<hr/>
+<h2 id="examples"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.06 9 .94.94L5.92 19H5v-.92zm3.6-6c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29m-3.6 3.19L3 17.25V21h3.75L17.81 9.94z"></path></svg></span> Examples<a class="headerlink" href="#examples" title="Permanent link">¶</a></h2>
+<ul>
+<li>For <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn></mrow><annotation encoding="application/x-tex">100</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">100</span></span></span></span></span> iid <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Exp</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Exp}(1)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop"><span class="mord mathrm">Exp</span></span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span> observations, <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">P</mi><mo stretchy="false">(</mo><msub><mover accent="true"><mi>X</mi><mo>ˉ</mo></mover><mn>100</mn></msub><mo>≤</mo><mn>1.1</mn><mo stretchy="false">)</mo><mo>≈</mo><mi mathvariant="normal">Φ</mi><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mn>1.1</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>0.1</mn><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">Φ</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>≈</mo><mn>0.8413</mn></mrow><annotation encoding="application/x-tex">\mathbb{P}(\bar X_{100}\le1.1)\approx\Phi((1.1-1)/0.1)=\Phi(1)\approx0.8413</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1.0701em;vertical-align:-0.25em;"></span><span class="mord mathbb">P</span><span class="mopen">(</span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">100</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1.1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">Φ</span><span class="mopen">((</span><span class="mord">1.1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord">/0.1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">Φ</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.8413</span></span></span></span></span>.</li>
+<li>For <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>400</mn></mrow><annotation encoding="application/x-tex">400</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">400</span></span></span></span></span> independent fair die rolls, the sum has mean <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1400</mn></mrow><annotation encoding="application/x-tex">1400</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1400</span></span></span></span></span> and standard deviation <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><mn>400</mn><mo stretchy="false">(</mo><mn>35</mn><mi mathvariant="normal">/</mi><mn>12</mn><mo stretchy="false">)</mo></mrow></msqrt><mo>≈</mo><mn>34.16</mn></mrow><annotation encoding="application/x-tex">\sqrt{400(35/12)}\approx34.16</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1.24em;vertical-align:-0.305em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.935em;"><span class="svg-align" style="top:-3.2em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord" style="padding-left:1em;"><span class="mord">400</span><span class="mopen">(</span><span class="mord">35/12</span><span class="mclose">)</span></span></span><span style="top:-2.895em;"><span class="pstrut" style="height:3.2em;"></span><span class="hide-tail" style="min-width:1.02em;height:1.28em;"><svg height="1.28em" preserveaspectratio="xMinYMin slice" viewbox="0 0 400000 1296" width="400em" xmlns="http://www.w3.org/2000/svg"><path d="M263,681c0.7,0,18,39.7,52,119
+c34,79.3,68.167,158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120
+c340,-704.7,510.7,-1060.3,512,-1067
+l0 -0
+c4.7,-7.3,11,-11,19,-11
+H40000v40H1012.3
+s-271.3,567,-271.3,567c-38.7,80.7,-84,175,-136,283c-52,108,-89.167,185.3,-111.5,232
+c-22.3,46.7,-33.8,70.3,-34.5,71c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1
+s-109,-253,-109,-253c-72.7,-168,-109.3,-252,-110,-252c-10.7,8,-22,16.7,-34,26
+c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26s76,-59,76,-59s76,-60,76,-60z
+M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.305em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">34.16</span></span></span></span></span>; <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">P</mi><mo stretchy="false">(</mo><msub><mi>S</mi><mn>400</mn></msub><mo>≤</mo><mn>1434</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{P}(S_{400}\le1434)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbb">P</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">400</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1434</span><span class="mclose">)</span></span></span></span></span> is approximately <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Φ</mi><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mn>1434.5</mn><mo>−</mo><mn>1400</mn><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>34.16</mn><mo stretchy="false">)</mo><mo>≈</mo><mn>0.8438</mn></mrow><annotation encoding="application/x-tex">\Phi((1434.5-1400)/34.16)\approx0.8438</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">Φ</span><span class="mopen">((</span><span class="mord">1434.5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1400</span><span class="mclose">)</span><span class="mord">/34.16</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.8438</span></span></span></span></span> with continuity correction.</li>
+</ul>
+<hr/>
+<h2 id="prerequisites"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 18h-2v-8l-3.5 3.5-1.42-1.42L12 6.16l5.92 5.92-1.42 1.42L13 10zM12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8"></path></svg></span> Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
+<ul>
+<li><a href="../1b-Probability-Theory-for-EOR/iid-random-variables.html">IID Random Variables</a></li>
+<li><a href="sample-mean.html">Sample Mean</a></li>
+<li><a href="../1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html">Variance and Standard Deviation</a></li>
+<li><a href="convergence-in-distribution.html">Convergence in Distribution</a></li>
+<li><a href="../1b-Probability-Theory-for-EOR/standard-normal-distribution.html">Standard Normal Distribution</a></li>
+</ul>
 <h2 id="related-concepts"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 17c-.14 0-.26 0-.39.04L17.5 13.8c.45-.45.75-1.09.75-1.8a2.5 2.5 0 0 0-2.5-2.5c-.14 0-.25 0-.4.04L13.74 6.3c.47-.46.76-1.09.76-1.8a2.5 2.5 0 0 0-5 0c0 .7.29 1.34.76 1.79L8.65 9.54c-.15-.04-.26-.04-.4-.04a2.5 2.5 0 0 0-2.5 2.5c0 .71.29 1.34.75 1.79l-1.61 3.25C4.76 17 4.64 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .38-.04l1.63 3.25c-.47.45-.76 1.09-.76 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.8c.45-.45.75-1.09.75-1.8 0-.7-.29-1.33-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21a2.5 2.5 0 0 0 1.75 4.29c.13 0 .25 0 .38-.04l1.63 3.25c-.47.45-.76 1.09-.76 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5m-15 3.5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1m8.5-1c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1M7.25 12c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1M11 4.5c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1m3.75 7.5c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1m4.75 8.5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1"></path></svg></span> Related Concepts<a class="headerlink" href="#related-concepts" title="Permanent link">¶</a></h2>
 <ul>
-<li><a href="normal-approximation-to-binomial.html">Normal Approximation to the Binomial</a></li>
+<li><a href="weak-law-of-large-numbers.html">Weak Law of Large Numbers</a></li>
+<li><a href="strong-law-of-large-numbers.html">Strong Law of Large Numbers</a></li>
+<li><a href="continuity-correction.html">Continuity Correction</a></li>
 </ul>
-<hr/>
 <h2 id="sources"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20.7c0 .46.1.9.27 1.3H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6.11c-.32-.07-.66-.11-1-.11s-.68.04-1 .11V4h-5v8l-2.5-2.25L8 12V4H6v16h7zm10-3.4v3.5c0 .6-.6 1.2-1.3 1.2h-5.5c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2v-1.5c0-1.4 1.4-2.5 2.8-2.5s2.8 1.1 2.8 2.5V16c.6 0 1.2.6 1.2 1.3m-2.5-2.8c0-.8-.7-1.3-1.5-1.3s-1.5.5-1.5 1.3V16h3z"></path></svg></span> Sources<a class="headerlink" href="#sources" title="Permanent link">¶</a></h2>
 <ul>
-<li>Probability Distributions - Week 8 - Key concepts</li>
+<li>Nicky van Foreest · Probability Distributions · Week 8</li>
 </ul>
 <p><span class="search-aliases" data-nosnippet="">
-Aliases: Central Limit Theorem, Central limit theorem (CLT), CLT
-Symbols: mu, sigma, square root, sum
+Symbols: infinity, mu, phi, sigma, square root, sum
 </span></p>
-<p class="mk-last-updated">Last updated: 27 July 2026 22:43</p><meta content="false" name="mk-concept-ai-mcq"/><script id="mk-concept-connections-data" type="application/json">{"kind":"concept-connections-panel-v1","readinessMaxDepth":2,"loc":"Year-1/2b-Probability-Distributions/central-limit-theorem.html","nodes":{"Year-1/2b-Probability-Distributions/central-limit-theorem.html":{"title":"Central Limit Theorem","courseName":"2b-Probability-Distributions","coursePath":"Year-1/2b-Probability-Distributions","curriculumStatus":"current","aiMcq":true},"Year-1/2b-Probability-Distributions/normal-approximation-to-binomial.html":{"title":"Normal Approximation to the Binomial","courseName":"2b-Probability-Distributions","coursePath":"Year-1/2b-Probability-Distributions","curriculumStatus":"current","aiMcq":true}},"titleLocs":["Year-1/2b-Probability-Distributions/central-limit-theorem.html","Year-1/2b-Probability-Distributions/normal-approximation-to-binomial.html"],"prereqsByLoc":{"Year-1/2b-Probability-Distributions/central-limit-theorem.html":[]},"dependents":[],"related":["Year-1/2b-Probability-Distributions/normal-approximation-to-binomial.html"]}</script><template id="mk-concept-connections-titles"><span data-lp-title-loc="Year-1/2b-Probability-Distributions/central-limit-theorem.html">Central Limit Theorem</span><span data-lp-title-loc="Year-1/2b-Probability-Distributions/normal-approximation-to-binomial.html">Normal Approximation to the Binomial</span></template>
+<p class="mk-last-updated">Last updated: 4 October 2026 01:16</p><meta content="false" name="mk-concept-ai-mcq"/><script id="mk-concept-connections-data" type="application/json">{"kind":"concept-connections-panel-v1","readinessMaxDepth":2,"loc":"Year-1/2b-Probability-Distributions/central-limit-theorem.html","nodes":{"Year-1/2b-Probability-Distributions/central-limit-theorem.html":{"title":"Central Limit Theorem","courseName":"2b-Probability-Distributions","coursePath":"Year-1/2b-Probability-Distributions","curriculumStatus":"current","aiMcq":true},"Year-1/2b-Probability-Distributions/normal-approximation-to-binomial.html":{"title":"Normal Approximation to the Binomial","courseName":"2b-Probability-Distributions","coursePath":"Year-1/2b-Probability-Distributions","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html":{"title":"IID Random Variables","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/2b-Probability-Distributions/sample-mean.html":{"title":"Sample Mean","courseName":"2b-Probability-Distributions","coursePath":"Year-1/2b-Probability-Distributions","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html":{"title":"Variance and Standard Deviation","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/2b-Probability-Distributions/convergence-in-distribution.html":{"title":"Convergence in Distribution","courseName":"2b-Probability-Distributions","coursePath":"Year-1/2b-Probability-Distributions","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/standard-normal-distribution.html":{"title":"Standard Normal Distribution (Probability Theory for EOR)","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/2b-Probability-Distributions/weak-law-of-large-numbers.html":{"title":"Weak Law of Large Numbers","courseName":"2b-Probability-Distributions","coursePath":"Year-1/2b-Probability-Distributions","curriculumStatus":"current","aiMcq":true},"Year-1/2b-Probability-Distributions/strong-law-of-large-numbers.html":{"title":"Strong Law of Large Numbers","courseName":"2b-Probability-Distributions","coursePath":"Year-1/2b-Probability-Distributions","curriculumStatus":"current","aiMcq":true},"Year-1/2b-Probability-Distributions/continuity-correction.html":{"title":"Continuity Correction","courseName":"2b-Probability-Distributions","coursePath":"Year-1/2b-Probability-Distributions","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/addition-and-sum.html":{"title":"Addition and Sum","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/limit-of-a-sequence.html":{"title":"Limit of a Sequence","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html":{"title":"Cumulative Distribution Function (Probability Theory for EOR)","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/distribution.html":{"title":"Distribution","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/expectation.html":{"title":"Expectation","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html":{"title":"Independent Random Variables","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/normal-distribution.html":{"title":"Normal Distribution","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/random-variable.html":{"title":"Random Variable","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true}},"titleLocs":["Year-1/2b-Probability-Distributions/central-limit-theorem.html","Year-1/2b-Probability-Distributions/normal-approximation-to-binomial.html","Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html","Year-1/2b-Probability-Distributions/sample-mean.html","Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html","Year-1/2b-Probability-Distributions/convergence-in-distribution.html","Year-1/1b-Probability-Theory-for-EOR/standard-normal-distribution.html","Year-1/2b-Probability-Distributions/weak-law-of-large-numbers.html","Year-1/2b-Probability-Distributions/strong-law-of-large-numbers.html","Year-1/2b-Probability-Distributions/continuity-correction.html"],"prereqsByLoc":{"Year-1/2b-Probability-Distributions/central-limit-theorem.html":["Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html","Year-1/2b-Probability-Distributions/sample-mean.html","Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html","Year-1/2b-Probability-Distributions/convergence-in-distribution.html","Year-1/1b-Probability-Theory-for-EOR/standard-normal-distribution.html"],"Year-1/2b-Probability-Distributions/normal-approximation-to-binomial.html":["Year-1/1b-Probability-Theory-for-EOR/binomial-distribution.html","Year-1/2b-Probability-Distributions/central-limit-theorem.html"],"Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html":["Year-1/1b-Probability-Theory-for-EOR/random-variable.html","Year-1/1b-Probability-Theory-for-EOR/distribution.html","Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html"],"Year-1/1b-Probability-Theory-for-EOR/standard-normal-distribution.html":["Year-1/1b-Probability-Theory-for-EOR/normal-distribution.html"],"Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html":["Year-1/1b-Probability-Theory-for-EOR/expectation.html","Year-1/1b-Probability-Theory-for-EOR/random-variable.html"],"Year-1/2b-Probability-Distributions/convergence-in-distribution.html":["Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html","Year-1/1a-Math-I-Calculus/limit-of-a-sequence.html"],"Year-1/2b-Probability-Distributions/sample-mean.html":["Year-1/1a-Math-I-Calculus/addition-and-sum.html","Year-1/1b-Probability-Theory-for-EOR/random-variable.html"]},"dependents":["Year-1/2b-Probability-Distributions/normal-approximation-to-binomial.html"],"related":["Year-1/2b-Probability-Distributions/weak-law-of-large-numbers.html","Year-1/2b-Probability-Distributions/strong-law-of-large-numbers.html","Year-1/2b-Probability-Distributions/continuity-correction.html"]}</script><template id="mk-concept-connections-titles"><span data-lp-title-loc="Year-1/2b-Probability-Distributions/central-limit-theorem.html">Central Limit Theorem</span><span data-lp-title-loc="Year-1/2b-Probability-Distributions/normal-approximation-to-binomial.html">Normal Approximation to the Binomial</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html">IID Random Variables</span><span data-lp-title-loc="Year-1/2b-Probability-Distributions/sample-mean.html">Sample Mean</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html">Variance and Standard Deviation</span><span data-lp-title-loc="Year-1/2b-Probability-Distributions/convergence-in-distribution.html">Convergence in Distribution</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/standard-normal-distribution.html">Standard Normal Distribution (Probability Theory for EOR)</span><span data-lp-title-loc="Year-1/2b-Probability-Distributions/weak-law-of-large-numbers.html">Weak Law of Large Numbers</span><span data-lp-title-loc="Year-1/2b-Probability-Distributions/strong-law-of-large-numbers.html">Strong Law of Large Numbers</span><span data-lp-title-loc="Year-1/2b-Probability-Distributions/continuity-correction.html">Continuity Correction</span></template>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -1761,7 +1808,7 @@ Symbols: mu, sigma, square root, sum
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
 <script src="../../javascripts/wiki-explain.js?h=82c2b3f065ce"></script>
 <script src="../../javascripts/concept-connections-panel.js?h=e33f13488ffc"></script>
-<script src="../../javascripts/startup-preferences.js?h=b0d836228334"></script>
+<script src="../../javascripts/startup-preferences.js?h=bb21a0954911"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=9fa5ab51c2d9"></script>
 <script src="../../javascripts/ui-guard.js?h=07c4a92fdd9f"></script>
