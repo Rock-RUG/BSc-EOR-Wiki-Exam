@@ -30,7 +30,7 @@ return map;}
 function writeAll(obj){const context=mmAccountContext();if(!mmAccountContextIsCurrent(context))return false;let saved=false;try{if(window.ConceptMastery&&typeof window.ConceptMastery._writeAll==="function"){saved=window.ConceptMastery._writeAll(obj||{},{requirePersistence:true})===true;}else{const payload=JSON.stringify(obj||{});localStorage.setItem(LS_KEY,payload);saved=localStorage.getItem(LS_KEY)===payload;}}catch(_){}
 if(!saved||!mmAccountContextIsCurrent(context))return false;try{window.dispatchEvent(new CustomEvent("conceptMasteryChanged",{detail:{source:"mastery-manager"}}));}catch(_){}
 return true;}
-function managerWriteFailed(){try{window.alert("The change could not be fully saved in this browser. Please retry when local storage is available.");}catch(_){}}
+function managerWriteFailed(){try{(window.MkDialog?window.MkDialog.alert:window.alert)("The change could not be fully saved in this browser. Please retry when local storage is available.");}catch(_){}}
 function readQuizSessions(){if(window.__mkExamMode)return{};const local=mmReadStoredMap(AIQ_KEY);if(window.MkAccountData&&typeof window.MkAccountData.getLearningHistorySnapshot==="function")return window.MkAccountData.getLearningHistorySnapshot().quizSessions;return local;}
 function validLevel(m){return[0,1,2,3].includes(Number(m));}
 function historyKind(h){const kind=String(h&&(h.kind||h.type||h.event||h.action)||"").toLowerCase().trim();if(kind==="view"||kind==="visit"||kind==="seen")return"view";return"mastery";}

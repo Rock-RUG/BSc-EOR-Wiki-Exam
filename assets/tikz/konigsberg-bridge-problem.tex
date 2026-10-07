@@ -1,0 +1,27 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+\begin{document}
+% Königsberg: four land areas and seven bridges become a multigraph with degrees 5, 3, 3, 3;
+% all odd, so no closed walk crosses every bridge exactly once.
+\begin{tikzpicture}[every node/.style={font=\small}, v/.style={draw, circle, fill=blue!10, minimum size=8mm, inner sep=0pt}]
+	\node[v] (A) at (0,0) {$A$};
+	\node[v] (B) at (0,2.4) {$B$};
+	\node[v] (C) at (0,-2.4) {$C$};
+	\node[v] (D) at (3.4,0) {$D$};
+	\draw[thick] (A) to[bend left=30] (B);
+	\draw[thick] (A) to[bend right=30] (B);
+	\draw[thick] (A) to[bend left=30] (C);
+	\draw[thick] (A) to[bend right=30] (C);
+	\draw[thick] (A) -- (D);
+	\draw[thick] (B) -- (D);
+	\draw[thick] (C) -- (D);
+	\node[red!70!black, left=6pt of A] {$\deg A=5$};
+	\node[red!70!black, above=3pt of B] {$\deg B=3$};
+	\node[red!70!black, below=3pt of C] {$\deg C=3$};
+	\node[red!70!black, above=4pt of D] {$\deg D=3$};
+	\node[anchor=north, align=flush center, text width=10cm] at (1.2,-3.4) {Vertices are the land areas (island $A$, banks $B$, $C$, area $D$); edges are the seven bridges (parallel edges allowed). Four odd-degree vertices: no Euler tour, and not even an open trail (that needs exactly $0$ or $2$ odd vertices). Euler's 1736 argument is the first result of graph theory.};
+\end{tikzpicture}
+\end{document}

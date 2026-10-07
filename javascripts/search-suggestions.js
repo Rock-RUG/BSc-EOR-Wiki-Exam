@@ -25,7 +25,7 @@ function fileBaseFromLocation(location){const loc=safePath(location);const file=
 function asStringList(x){if(!x)return[];if(Array.isArray(x))return x.map(String).filter(Boolean);if(typeof x==="string")return[x];return[];}
 function getTagsFromDoc(d){const out=[];out.push(...asStringList(d&&d.tags));out.push(...asStringList(d&&d.tag));out.push(...asStringList(d&&d.meta&&d.meta.tags));out.push(...asStringList(d&&d.meta&&d.meta.tag));out.push(...asStringList(d&&d.meta&&d.meta["tags"]));return out.map((s)=>String(s).trim()).filter(Boolean);}
 function splitAliasPieces(raw){const src=normaliseText(stripMarkdownLinkTargets(stripHtml(String(raw||"")))).replace(/\u00a0/g," ");if(!src)return[];return src.split(/\s*(?:,|;|•|·|\|)\s*/).map((s)=>String(s||"").trim()).filter(Boolean);}
-function extractAliasesFromText(raw){const htmlish=String(raw||"");if(!htmlish)return[];const withBreaks=htmlish.replace(/<br\s*\/?>/gi,"\n").replace(/<\/(?:p|div|li|tr|td|th|h[1-6])>/gi,"\n");const plain=stripMarkdownLinkTargets(stripHtml(withBreaks)).replace(/\u00a0/g," ");if(!plain)return[];const out=[];const re=/(?:^|\n|\|)\s*aliases?\s*:\s*([^\n|]+)/ig;let m;while((m=re.exec(plain))){out.push(...splitAliasPieces(m[1]||""));}
+function extractAliasesFromText(raw){const htmlish=String(raw||"");if(!htmlish)return[];const withBreaks=htmlish.replace(/<br\s*\/?>/gi,"\n").replace(/<\/(?:p|div|li|tr|td|th|h[1-6])>/gi,"\n");const plain=stripMarkdownLinkTargets(stripHtml(withBreaks)).replace(/\u00a0/g," ");if(!plain)return[];const out=[];const re=/(?:^|\n|\|)\s*aliases?\s*:\s*([^\n|]+)/ig;let m;while((m=re.exec(plain))){out.push(...splitAliasPieces(String(m[1]||"").split(/\bsymbols?\s*:/i)[0]));}
 return out;}
 function getAliasesFromDoc(d){const raw=[];raw.push(...asStringList(d&&d.aliases));raw.push(...asStringList(d&&d.alias));raw.push(...asStringList(d&&d.meta&&d.meta.aliases));raw.push(...asStringList(d&&d.meta&&d.meta.alias));raw.push(...asStringList(d&&d.meta&&d.meta["aliases"]));const out=[];for(const item of raw)out.push(...splitAliasPieces(item));out.push(...extractAliasesFromText(d&&d.text));const seen=new Set();const deduped=[];for(const item of out){const s=String(item||"").trim();if(!s)continue;const key=s.toLowerCase();if(seen.has(key))continue;seen.add(key);deduped.push(s);}
 return deduped;}
@@ -142,7 +142,7 @@ out+=ch;i+=1;}
 return out;}
 function hasBalancedInlineMathDelimiters(s){const src=String(s||"");if(!src)return true;const count=(re)=>{const m=src.match(re);return m?m.length:0;};if(count(/\\\(/g)!==count(/\\\)/g))return false;if(count(/\\\[/g)!==count(/\\\]/g))return false;if(count(/\$\$/g)%2!==0)return false;const singleDollarCount=count(/(^|[^\\$])\$(?!\$)/g);if(singleDollarCount%2!==0)return false;const beginNames=Array.from(src.matchAll(/\\begin\{([^}]+)\}/g)).map((x)=>x[1]);const endNames=Array.from(src.matchAll(/\\end\{([^}]+)\}/g)).map((x)=>x[1]);if(beginNames.length!==endNames.length)return false;for(let i=0;i<beginNames.length;i+=1){if(beginNames[i]!==endNames[i])return false;}
 return true;}
-function snippetSafeForMathRender(snippet){const src=String(snippet||"");if(!src)return true;if(!containsMathMarkup(src))return true;return hasBalancedInlineMathDelimiters(src);}
+function snippetSafeForMathRender(snippet){const src=String(snippet||"");if(!src)return true;if(!containsMathMarkup(src))return true;const begins=(src.match(/\\begin\{/g)||[]).length,ends=(src.match(/\\end\{/g)||[]).length;if(begins!==ends)return false;return hasBalancedInlineMathDelimiters(src);}
 function normaliseMathSegmentForRender(raw){const src=String(raw||"").trim();if(!src)return"";if(/^\\begin\{[a-zA-Z*]+\}[\s\S]*\\end\{[a-zA-Z*]+\}$/.test(src)){return`\\[${src}\\]`;}
 return src;}
 function renderBareLatexMathSegment(segment,query){let math=String(segment||"").trim();if(!math)return"";math=normaliseMathSegmentForRender(math);if(!hasExplicitMathDelimiters(math)){math=`\\(${math}\\)`;}
@@ -183,9 +183,11 @@ const bodyText=cleanSearchBodyText(String((doc&&doc.text)||""));if(fieldHasAnyQu
 return parts.join("");}
 function addQueryToHistory(query){const q=String(query||"").trim();if(!q)return;const STORAGE_KEY="mk_search_history_v1";const MAX_ITEMS=12;try{const raw=localStorage.getItem(STORAGE_KEY);const arr=raw?JSON.parse(raw):[];const list=Array.isArray(arr)?arr.filter(Boolean).map(String):[];const next=[q,...list.filter((x)=>String(x||"").trim().toLowerCase()!==q.toLowerCase())].slice(0,MAX_ITEMS);localStorage.setItem(STORAGE_KEY,JSON.stringify(next));}catch(_){}}
 function getVisibleSuggestionItems(input){const box=ensureCustomContainer(input);if(!box||box.hidden)return[];return Array.from(box.querySelectorAll(".mk-search-suggest__item"));}
-function clearActiveSuggestion(input){const items=getVisibleSuggestionItems(input);items.forEach((el)=>{el.classList.remove("is-active");try{el.setAttribute("aria-selected","false");}catch(_){}});STATE.activeInput=input||null;STATE.activeIndex=-1;STATE.activeQuery=input?String(input.value||"").trim():"";return null;}
-function setActiveSuggestionIndex(input,idx,opts){const items=getVisibleSuggestionItems(input);if(!items.length)return clearActiveSuggestion(input);let nextIdx=Number(idx);if(!Number.isFinite(nextIdx))nextIdx=-1;nextIdx=Math.max(-1,Math.min(items.length-1,nextIdx));const allowScroll=!(opts&&opts.scroll===false);items.forEach((el,i)=>{const active=i===nextIdx;el.classList.toggle("is-active",active);try{el.setAttribute("aria-selected",active?"true":"false");}catch(_){}
-if(active&&allowScroll){try{el.scrollIntoView({block:"nearest",inline:"nearest"});}catch(_){}}});STATE.activeInput=input||null;STATE.activeIndex=nextIdx;STATE.activeQuery=input?String(input.value||"").trim():"";return nextIdx>=0?items[nextIdx]:null;}
+function clearActiveSuggestion(input){const items=getVisibleSuggestionItems(input);items.forEach((el)=>{el.classList.remove("is-active");try{el.setAttribute("aria-selected","false");}catch(_){}});STATE.activeInput=input||null;STATE.activeIndex=-1;STATE.activeQuery=input?String(input.value||"").trim():"";STATE.activeViaKeyboard=false;try{if(input)input.removeAttribute("aria-activedescendant");}catch(_){}
+return null;}
+window.__mkSearchSuggestions=Object.assign(window.__mkSearchSuggestions||{},{keyboardActiveHref(input){if(!STATE.activeViaKeyboard)return"";const active=getActiveSuggestionItem(input);return active?String(active.getAttribute("href")||"").trim():"";},rememberQuery(query){addQueryToHistory(query);}});function setActiveSuggestionIndex(input,idx,opts){const items=getVisibleSuggestionItems(input);if(!items.length)return clearActiveSuggestion(input);let nextIdx=Number(idx);if(!Number.isFinite(nextIdx))nextIdx=-1;nextIdx=Math.max(-1,Math.min(items.length-1,nextIdx));const allowScroll=!(opts&&opts.scroll===false);items.forEach((el,i)=>{const active=i===nextIdx;el.classList.toggle("is-active",active);try{el.setAttribute("aria-selected",active?"true":"false");}catch(_){}
+if(active&&allowScroll){try{el.scrollIntoView({block:"nearest",inline:"nearest"});}catch(_){}}});STATE.activeInput=input||null;STATE.activeIndex=nextIdx;STATE.activeViaKeyboard=allowScroll&&nextIdx>=0;try{if(input){input.setAttribute("role","combobox");input.setAttribute("aria-autocomplete","list");input.setAttribute("aria-expanded",items.length?"true":"false");const active=nextIdx>=0?items[nextIdx]:null;if(active){if(!active.id)active.id="mk-search-suggest-opt-"+nextIdx;input.setAttribute("aria-activedescendant",active.id);}else input.removeAttribute("aria-activedescendant");}}catch(_){}
+STATE.activeQuery=input?String(input.value||"").trim():"";return nextIdx>=0?items[nextIdx]:null;}
 function getActiveSuggestionItem(input){const items=getVisibleSuggestionItems(input);if(!items.length)return null;const q=input?String(input.value||"").trim():"";if(STATE.activeInput!==input||STATE.activeQuery!==q){return null;}
 const idx=Number(STATE.activeIndex);if(Number.isFinite(idx)&&idx>=0&&idx<items.length)return items[idx];return items.find((el)=>el.classList.contains("is-active"))||null;}
 function moveActiveSuggestion(input,delta){const items=getVisibleSuggestionItems(input);if(!items.length)return null;const q=input?String(input.value||"").trim():"";let idx=-1;if(STATE.activeInput===input&&STATE.activeQuery===q&&Number.isFinite(STATE.activeIndex)){idx=Number(STATE.activeIndex);}
@@ -327,6 +329,9 @@ function ensureStyles(){if(STATE.styleReady&&document.getElementById("mk-custom-
         font-size: .92rem;
         line-height: 1.45;
       }
+      .mk-search-suggest__empty strong { color: var(--md-default-fg-color); }
+      .mk-search-suggest__empty-help { display: block; margin-top: .35rem; font-size: .82rem; }
+      .mk-search-suggest__empty-help a { color: var(--md-typeset-a-color, var(--md-accent-fg-color)); text-decoration: underline; }
 
       .mk-search-suggest__scroll {
         max-height: min(72vh, calc(100dvh - 5.75rem));
@@ -672,11 +677,14 @@ function renderCorrectionNoticeHtml(rawQuery,suggestedQuery){const raw=String(ra
         <strong class="mk-search-suggest__notice-query mk-search-suggest__notice-query--accent">${escapeHtml(suggested)}</strong>
       </div>
     `;}
+function emptyResultsHtml(rawQuery){const q=String(rawQuery||"").trim();let finder="";try{const root=window.__md_scope&&window.__md_scope.pathname?new URL(String(window.__md_scope.pathname),window.location.origin):new URL("./",document.baseURI);finder=new URL("find.html?q="+encodeURIComponent(q)+"#search-results",root).toString();}catch(_){}
+return`<div class="mk-search-suggest__empty">No matching pages for <strong>${escapeHtml(q)}</strong>.
+      <span class="mk-search-suggest__empty-help">Try a shorter or different word. Year 2 and Year 3 notes are still being written.${finder ? ` <a href="${escapeHtml(finder)}">Search the full notes in Concept Finder</a>` : ""}</span></div>`;}
 async function renderCustomResults(input,hits,query,seq,opts){const box=ensureCustomContainer(input);if(!box)return;const o=opts||{};const q=String(query||"").trim();const rawQuery=String(o.rawQuery||q).trim();const noticeHtml=String(o.noticeHtml||"");if(!q){clearCustomResults(input);return;}
 const list=Array.isArray(hits)?hits.slice(0,MAX_RESULTS):[];box.hidden=false;if(!list.length){box.innerHTML=`
         <div class="mk-search-suggest__panel">
           ${noticeHtml}
-          <div class="mk-search-suggest__empty">No matching pages</div>
+          ${emptyResultsHtml(rawQuery)}
         </div>
       `;return;}
 const html=list.map((hit)=>{const d=hit.doc||{};const href=toAbsoluteUrl(d.location);const titleHtml=renderTitleHtml(d,q);const metaHtml=renderMetaHtml(d,q);const detailHtml=renderDetailHtml(d,q);return`

@@ -1,0 +1,18 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+
+\begin{document}
+% y2 <= y1 ("decision 2 only if decision 1"): of the four yes/no combinations exactly one is
+% excluded, namely decision 2 yes while decision 1 is no.
+\begin{tikzpicture}[every node/.style={font=\small}]
+	\matrix (T) [matrix of nodes, nodes={minimum width=2.3cm, minimum height=8mm, anchor=center, draw=gray!50}, column sep=-\pgflinewidth, row sep=-\pgflinewidth] at (0,0) {
+		|[fill=gray!15]| & |[fill=gray!15]| $y_2=0$ & |[fill=gray!15]| $y_2=1$ \\
+		|[fill=gray!15]| $y_1=0$ & |[fill=green!20]| allowed & |[fill=red!25]| forbidden \\
+		|[fill=gray!15]| $y_1=1$ & |[fill=green!20]| allowed & |[fill=green!20]| allowed \\
+	};
+	\node[anchor=south] at (T.north) {$y_2\le y_1$: decision 2 (e.g. warehouse) needs decision 1 (factory)};
+	\node[anchor=north, align=flush center, text width=10cm] at ([yshift=-4pt]T.south) {$(0,1)$ is the only excluded cell: the inequality forbids one combination and does not force decision 2 when decision 1 is yes. Other logical links: $y_1+y_2\ge1$ (if 1 is no then 2 must be yes); $y_3\le y_1$, $y_3\le y_2$ (3 needs both 1 and 2); $y_1-y_2+y_3\le1$ ($(1,0)$ forces $y_3=0$).};
+\end{tikzpicture}
+\end{document}

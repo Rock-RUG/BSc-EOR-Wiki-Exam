@@ -20,11 +20,11 @@ if(!modal.__lpRelatedDirty){modal.__lpRelatedRefreshScheduled=false;return;}
 modal.__lpRelatedRefreshScheduled=false;modal.__lpRelatedDirty=false;modal.__lpRelatedRefreshedAt=lpLocalMapInteractionNow();try{renderLocalMapModal(graph);}
 catch(_){modal.__lpRelatedDirty=true;}};try{if(typeof window.requestIdleCallback==="function"){modal.__lpRelatedRefreshIdleId=window.requestIdleCallback(refresh,{timeout:1200});}else{modal.__lpRelatedRefreshIdleId=window.requestAnimationFrame(refresh);}}catch(_){retry(96);}};retry(LP_MAP_REFRESH_QUIET_MS+40);}catch(_){}}
 function lpOfferGuidedRoutesUnlock(source){return lpOfferUnlock(LP_GUIDED_ROUTES_ITEM_ID,LP_GUIDED_ROUTES_NAME,LP_GUIDED_ROUTES_PRICE,source||"guided-routes");}
-let __lpUnlockPromptBusy=false;function lpOfferUnlock(itemId,itemName,price,source){try{if(__lpUnlockPromptBusy)return Promise.resolve({ok:false,busy:true});const api=lp3dShopApi();if(lpShopItemOwned(itemId))return Promise.resolve({ok:true,alreadyOwned:true});if(!api||typeof api.buyShopItem!=='function'){window.alert('The shop is still loading. Please try again in a moment.');return Promise.resolve({ok:false,error:'shop_loading'});}
-const balance=lpCurrencyBalance();if(balance+1e-9<Number(price||0)){window.alert(`${itemName} needs ${price} EORbits. You currently have ${Math.round(balance * 10) / 10}.`);return Promise.resolve({ok:false,error:'insufficient_funds'});}
-__lpUnlockPromptBusy=true;const ok=window.confirm(`Unlock ${itemName} for ${price} EORbits?`);__lpUnlockPromptBusy=false;if(!ok)return Promise.resolve({ok:false,cancelled:true});return api.buyShopItem(itemId,{source:source||itemId}).then((res)=>{if(!res||res.ok===false){window.alert(res&&res.error==='insufficient_funds'?'Not enough EORbits.':'Unlock failed. Please try again.');return res||{ok:false};}
+let __lpUnlockPromptBusy=false;async function lpOfferUnlock(itemId,itemName,price,source){try{if(__lpUnlockPromptBusy)return Promise.resolve({ok:false,busy:true});const api=lp3dShopApi();if(lpShopItemOwned(itemId))return Promise.resolve({ok:true,alreadyOwned:true});if(!api||typeof api.buyShopItem!=='function'){(window.MkDialog?window.MkDialog.alert:window.alert)('The shop is still loading. Please try again in a moment.');return Promise.resolve({ok:false,error:'shop_loading'});}
+const balance=lpCurrencyBalance();if(balance+1e-9<Number(price||0)){(window.MkDialog?window.MkDialog.alert:window.alert)(`${itemName} needs ${price} EORbits. You currently have ${Math.round(balance * 10) / 10}.`);return Promise.resolve({ok:false,error:'insufficient_funds'});}
+__lpUnlockPromptBusy=true;const ok=await(window.MkDialog?window.MkDialog.confirm(`Unlock ${itemName} for ${price} EORbits?`):window.confirm(`Unlock ${itemName} for ${price} EORbits?`));__lpUnlockPromptBusy=false;if(!ok)return Promise.resolve({ok:false,cancelled:true});return api.buyShopItem(itemId,{source:source||itemId}).then((res)=>{if(!res||res.ok===false){(window.MkDialog?window.MkDialog.alert:window.alert)(res&&res.error==='insufficient_funds'?'Not enough EORbits.':'Unlock failed. Please try again.');return res||{ok:false};}
 try{window.dispatchEvent(new CustomEvent('mk-shop-inventory-change',{detail:{itemId,source:source||itemId}}));}catch(_){}
-return res;});}catch(err){__lpUnlockPromptBusy=false;try{window.alert(String(err&&err.message||err||'Unlock failed.'));}catch(_){}
+return res;});}catch(err){__lpUnlockPromptBusy=false;try{(window.MkDialog?window.MkDialog.alert:window.alert)(String(err&&err.message||err||'Unlock failed.'));}catch(_){}
 return Promise.resolve({ok:false,error:String(err&&err.message||err)});}}
 function lp3dOfferQuickBuy(btn){return lpOfferUnlock(LP_3D_LOCAL_MAP_ITEM_ID,LP_3D_LOCAL_MAP_NAME,LP_3D_LOCAL_MAP_PRICE,'local-map-3d-toggle');}
 function lpRecordXpActivity(metric,detail){try{const d=Object.assign({source:"learning-path",path:currentRelPath?currentRelPath():location.pathname},detail||{});if(window.MkXpActivity&&typeof window.MkXpActivity.record==="function"){window.MkXpActivity.record(metric,d);return;}
@@ -1071,6 +1071,14 @@ function injectStylesOnce(){if(document.getElementById("lp-style-v2"))return;con
     drop-shadow(0 0 10px rgba(220,229,242,.38))
     drop-shadow(0 0 18px rgba(220,229,242,.24));
 }
+/* The pale silver above is for dark pages; on light rows it vanished. */
+:is(html,body)[data-md-color-scheme="default"] #lp-side-panel .lp-rank[data-lp-state="m2"],
+:is(html,body)[data-md-color-scheme="default"] #lp-side-panel a.lp-row:hover .lp-rank[data-lp-state="m2"]{
+  color: rgba(96, 107, 121, .99);
+  filter:
+    drop-shadow(0 1px 0 rgba(255,255,255,.9))
+    drop-shadow(0 0 5px rgba(148,163,184,.45));
+}
 #lp-side-panel a.lp-row:hover .lp-rank[data-lp-state="m3"]{
   filter:
     drop-shadow(0 0 5px rgba(234,188,62,.42))
@@ -1952,6 +1960,7 @@ body[data-md-color-scheme="slate"] article.md-content__inner .lp-h1-route-arrow{
 }
 #lp-map-modal .lp-zoombar .lp-hop{ min-width:4.6rem; text-align:center; }
 #lp-map-modal .lp-zoombar .lp-btn{ flex: 0 0 auto; }
+#lp-map-modal .lp-zoombar :is(.lp-zoom-dec,.lp-zoom-inc,.lp-zoom-reset){ display:inline-grid; place-items:center; min-width:36px; min-height:36px; padding:0; }
 #lp-map-modal .lp-ctrl-group.lp-zoombar{ padding:7px 12px; }
 #lp-map-modal input.lp-zoomrange{
   flex:1 1 auto;
@@ -3748,11 +3757,11 @@ modal.innerHTML=`
         </div>
         <div class="lp-mzoom">
           <div class="lp-ctrl-group lp-zoombar lp-zoomctrl" data-ctrl-zoom>
-            <button class="lp-btn lp-zoom-dec" type="button" aria-label="Zoom out" title="Zoom out" data-zoom-dec>-</button>
+            <button class="lp-btn lp-zoom-dec" type="button" aria-label="Zoom out" title="Zoom out" data-zoom-dec><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/></svg></button>
             <input class="lp-zoomrange lp-zoom-range" type="range" min="30" max="200" step="1" value="100" aria-label="Zoom" data-zoom-range>
             <div class="lp-hop lp-zoom-label" data-zoom-label>100%</div>
-            <button class="lp-btn lp-zoom-inc" type="button" aria-label="Zoom in" title="Zoom in" data-zoom-inc>+</button>
-            <button class="lp-btn lp-zoom-reset" type="button" aria-label="Reset zoom" title="Reset zoom" data-zoom-reset>Reset</button>
+            <button class="lp-btn lp-zoom-inc" type="button" aria-label="Zoom in" title="Zoom in" data-zoom-inc><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M12 5v14"/></svg></button>
+            <button class="lp-btn lp-zoom-reset" type="button" aria-label="Reset zoom" title="Reset zoom" data-zoom-reset><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg></button>
           </div>
         </div>
       </div>
@@ -4119,7 +4128,7 @@ return state.revealedRouteNodes;}
 function lpH1StudyRouteRevealKey(state,loc){const key=lpCanonKey(loc||'');if(!key)return false;if(lpSharedRevealHas(key))return true;return lpH1StudyRouteRevealSetForState(state).has(key);}
 function lpH1StudyRouteNodeMaskMode(opts,loc,depth){const cfgMode=lpRouteMapMode(opts&&opts.mode);const key=lpCanonKey(loc||"");const targetKey=lpCanonKey((opts&&opts.target)||currentRelPath());const revealed=opts&&opts.revealedRouteNodes instanceof Set?opts.revealedRouteNodes:new Set();if(!lpFogEnabled())return"none";if(!key)return"none";if(targetKey&&key===targetKey)return"none";if(revealed.has(key))return"none";if(lpWasVisited(loc))return"none";if(cfgMode===LP_ROUTE_MAP_MODE.FROM_HERE){return Number(depth)>1?"weak":"none";}
 return"full";}
-function lpMapTabHelperText(kind,isPhone){const phone=typeof isPhone==="boolean"?isPhone:!!__lpIsPhoneTouch();if(String(kind||"")==="local"){const controls=phone?"Tap a nearby concept to choose Expand map or Open page.":"Hover a nearby concept to choose Expand map or Open page.";return controls+" Expansions last until you close the map."+(window.__mkExamMode?"":" With a connected account, revealing new concepts can uncover treasure. Each expanded concept gives one chance per UTC day. Open chests before midnight UTC. Odds, guardians and rewards: Site guide → Map treasures.");}
+function lpMapTabHelperText(kind,isPhone){const phone=typeof isPhone==="boolean"?isPhone:!!__lpIsPhoneTouch();if(String(kind||"")==="local"){const controls=phone?"Tap a nearby concept to choose Expand map or Open page.":"Hover a nearby concept to choose Expand map or Open page.";const legend=" With Masking on, concepts you have not explored yet show as ???; turn Masking off to see every name. The % on a concept is its prerequisite readiness.";return controls+" Expansions last until you close the map."+legend+(window.__mkExamMode?"":" With a connected account, revealing new concepts can uncover treasure. Each expanded concept gives one chance per UTC day. Open chests before midnight UTC. Odds, guardians and rewards: Site guide → Map treasures.");}
 return phone?"Prerequisites and Dependents show the two directions. Search using the field above, or tap a node to find a learning path. Tap Start guided study to begin along the path.":"Click a node to find a learning path. Click Start guided study to begin along the path.";}
 function lpMapTipsIsPhone(root){try{return!!(__lpIsPhoneTouch()||(window.matchMedia&&window.matchMedia('(max-width: 900px)').matches));}catch(_){return false;}}
 function lpMapTipsSet(root,kind){try{if(!root||!root.querySelector)return;const phone=lpMapTipsIsPhone(root);const btn=root.querySelector('[data-lp-map-tip-toggle]');const panel=root.querySelector('[data-lp-map-helper-panel]');const textEl=btn&&btn.querySelector?btn.querySelector('.lp-map-tipbtn-text, .lp-h1sg-tipbtn-text'):null;const text=lpMapTabHelperText(kind,phone);if(panel)panel.textContent=text;if(btn){btn.setAttribute('aria-label','Map tips');btn.setAttribute('title','Map tips');}
@@ -4463,11 +4472,11 @@ function ensureH1StudyStartModal(){let modal=document.getElementById("lp-h1sg-mo
           <button class="lp-h1sg-docklaunch" type="button" hidden data-lp-h1sg-dock-launch title="Begin the selected learning path">Start guided study</button>
           <div class="lp-mzoom">
             <div class="lp-ctrl-group lp-zoombar lp-zoomctrl">
-              <button class="lp-btn lp-zoom-dec" type="button" aria-label="Zoom out" title="Zoom out" data-lp-h1sg-zoom-dec>-</button>
+              <button class="lp-btn lp-zoom-dec" type="button" aria-label="Zoom out" title="Zoom out" data-lp-h1sg-zoom-dec><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/></svg></button>
               <input class="lp-zoomrange lp-zoom-range" type="range" min="30" max="200" step="1" value="100" aria-label="Zoom" data-lp-h1sg-zoom-range>
               <div class="lp-hop lp-zoom-label" data-lp-h1sg-zoom-label>100%</div>
-              <button class="lp-btn lp-zoom-inc" type="button" aria-label="Zoom in" title="Zoom in" data-lp-h1sg-zoom-inc>+</button>
-              <button class="lp-btn lp-zoom-reset" type="button" aria-label="Reset zoom" title="Reset zoom" data-lp-h1sg-zoom-reset>Reset</button>
+              <button class="lp-btn lp-zoom-inc" type="button" aria-label="Zoom in" title="Zoom in" data-lp-h1sg-zoom-inc><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M12 5v14"/></svg></button>
+              <button class="lp-btn lp-zoom-reset" type="button" aria-label="Reset zoom" title="Reset zoom" data-lp-h1sg-zoom-reset><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg></button>
             </div>
           </div>
         </div>
@@ -4545,11 +4554,11 @@ function ensureH1StudyStartStyles(){if(document.getElementById("lp-h1sg-style-v8
         --lp-master-gold-fill-bottom: rgba(240, 208, 108, .82);
         --lp-master-gold-glow-soft: rgba(235, 191, 65, .42);
         --lp-master-gold-glow-strong: rgba(235, 191, 65, .74);
-        --lp-know-silver-border: rgba(146, 156, 171, .98);
-        --lp-know-silver-fill-top: rgba(248, 250, 253, .98);
-        --lp-know-silver-fill-bottom: rgba(222, 228, 236, .92);
-        --lp-know-silver-glow-soft: rgba(164, 173, 189, .16);
-        --lp-know-silver-glow-strong: rgba(164, 173, 189, .28);
+        --lp-know-silver-border: rgba(110, 121, 136, .98);
+        --lp-know-silver-fill-top: rgba(252, 253, 254, .98);
+        --lp-know-silver-fill-bottom: rgba(207, 214, 223, .94);
+        --lp-know-silver-glow-soft: rgba(148, 163, 184, .22);
+        --lp-know-silver-glow-strong: rgba(148, 163, 184, .34);
       }
       html[data-md-color-scheme="slate"] #lp-h1sg-modal,
       body[data-md-color-scheme="slate"] #lp-h1sg-modal{
@@ -8543,17 +8552,12 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
     `;(document.head||document.documentElement).appendChild(st);}catch(_){}})();(function(){try{if(document.getElementById('lp-route-icon-currentcolor-v27'))return;const st=document.createElement('style');st.id='lp-route-icon-currentcolor-v27';st.textContent=`
       html[data-md-color-scheme="slate"] .lp-routebar svg,
       html[data-md-color-scheme="slate"] .lp-routebar svg *,
-      html[data-md-color-scheme="slate"] [class*="guided"] svg,
-      html[data-md-color-scheme="slate"] [class*="guided"] svg *,
       body[data-md-color-scheme="slate"] .lp-routebar svg,
-      body[data-md-color-scheme="slate"] .lp-routebar svg *,
-      body[data-md-color-scheme="slate"] [class*="guided"] svg,
-      body[data-md-color-scheme="slate"] [class*="guided"] svg *{
+      body[data-md-color-scheme="slate"] .lp-routebar svg *{
         color:#fff !important;
         stroke:#fff !important;
       }
-      html[data-md-color-scheme="slate"] .lp-routebar svg [fill]:not([fill="none"]),
-      html[data-md-color-scheme="slate"] [class*="guided"] svg [fill]:not([fill="none"]){
+      html[data-md-color-scheme="slate"] .lp-routebar svg [fill]:not([fill="none"]){
         fill:#fff !important;
       }
     `;(document.head||document.documentElement).appendChild(st);}catch(_){}})();(function(){"use strict";const STYLE_ID="lp-local-map-default-blur-v72";const FOG_KEY="lp_map_fog_enabled_v1";const MAP_IDS=["lp-map-modal","lp-h1sg-modal"];const PHONE_MQ="(pointer: coarse), (max-width: 900px)";const BACKDROP={wide:{bg:"rgba(0,0,0,.46)",filter:"blur(6px) saturate(1.04)"},phone:{bg:"rgba(0,0,0,.62)",filter:"none"}};function backdropForViewport(){try{if(window.matchMedia&&window.matchMedia(PHONE_MQ).matches)return BACKDROP.phone;}catch(_){}

@@ -24,7 +24,7 @@ function withTimeout(promise,ms){return new Promise(function(resolve,reject){let
 function groupStorageKey(scope,groupId){const year=scope&&scope.yearSeg?scope.yearSeg:"";const course=scope&&scope.courseSeg?scope.courseSeg:"";return[scope&&scope.kind||"",year,course,groupId||""].join("|");}
 function isSameCourseScope(left,right){return!!(left&&right&&left.kind==="course"&&right.kind==="course"&&left.yearSeg===right.yearSeg&&left.courseSeg===right.courseSeg);}
 function unifiedCloneUsesYearOverview(root){if(!(root instanceof HTMLElement))return false;return!!root.querySelector('[data-msb-clone-list-kind="course-overview"]');}
-function blockLabelFromIndex(index){const n=Math.floor(index/2)+1;const suffix=index%2===0?"A":"B";return"Block "+n+suffix;}
+function blockLabelFromIndex(index){const n=Math.floor(index/2)+1;const suffix=index%2===0?"a":"b";return"Block "+n+suffix;}
 function isMobileViewport(){try{return!!(window.matchMedia&&window.matchMedia("(max-width: 76.1875em)").matches);}catch(_){return false;}}
 function drawerToggle(){return document.querySelector('input[data-md-toggle="drawer"], input#__drawer');}
 function pageScrollXNow(){try{return Math.max(0,Number(window.scrollX)||0,Number(window.pageXOffset)||0,Number(document.documentElement&&document.documentElement.scrollLeft)||0,Number(document.body&&document.body.scrollLeft)||0);}catch(_){return 0;}}
