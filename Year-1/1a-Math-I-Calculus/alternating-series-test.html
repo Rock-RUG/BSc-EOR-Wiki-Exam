@@ -28,6 +28,7 @@
 <link href="../../stylesheets/wiki-mastery-manager.css?h=37ecce6d5b99" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-guides.css?h=2f1935c9ddee" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-explain.css?h=bcda2e4537fe" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-manipulate.css?h=1e2a8ecb3dff" rel="stylesheet"/>
 <link href="../../stylesheets/search-history.css?h=49fa7cf4d796" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-interactions.css?h=0be8ea3a7d54" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -114,9 +115,9 @@
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=1b10c4141593";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=d34266fd3d46";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=1b10c4141593";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=d34266fd3d46";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -2659,6 +2660,9 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <p>The alternating series test provides a practical criterion for determining convergence based on monotonicity and decay of terms.</p>
 <p>It captures the idea that decreasing oscillations eventually stabilise around a finite value.</p>
 <p><img alt="Partial sums of an alternating series zigzagging around their limit S in ever smaller steps, with the step from the fifth to the sixth partial sum marked as the term a6." class="mk-fig" src="../../assets/svg/alternating-series-test.svg" style="width:clamp(31.72em,100%,37.69em);max-width:100%;height:auto"/></p>
+<div class="mk-manip" data-mk-manip='{"scene":"alternating"}'>
+<p>Step through the partial sums: each one overshoots the sum from the other side, and the next step is exactly the next term <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>N</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">a_{N+1}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6389em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.109em;">N</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span></span></span></span></span>.</p>
+</div>
 <hr/>
 <h2 id="key-results"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m8.58 17.25.92-3.89-3-2.58 3.95-.37L12 6.8l1.55 3.65 3.95.33-3 2.58.92 3.89L12 15.19zM12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8"></path></svg></span> Key Results<a class="headerlink" href="#key-results" title="Permanent link">¶</a></h2>
 <ul>
@@ -2690,7 +2694,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 Aliases: Leibniz test, Leibniz's alternating series test
 Symbols: infinity, sum
 </span></p>
-<p class="mk-last-updated">Last updated: 7 October 2026 15:18</p><meta content="true" name="mk-concept-ai-mcq"/><script id="mk-concept-connections-data" type="application/json">{"kind":"concept-connections-panel-v1","readinessMaxDepth":2,"loc":"Year-1/1a-Math-I-Calculus/alternating-series-test.html","nodes":{"Year-1/1a-Math-I-Calculus/alternating-series-test.html":{"title":"Alternating Series Test","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/alternating-series.html":{"title":"Alternating Series","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/monotone-sequence.html":{"title":"Monotone Sequence","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/comparison-test-for-series.html":{"title":"Comparison Test for Series","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/infinite-series.html":{"title":"Infinite Series","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/inequality.html":{"title":"Inequality","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true}},"titleLocs":["Year-1/1a-Math-I-Calculus/alternating-series-test.html","Year-1/1a-Math-I-Calculus/alternating-series.html","Year-1/1a-Math-I-Calculus/monotone-sequence.html","Year-1/1a-Math-I-Calculus/comparison-test-for-series.html","Year-1/1a-Math-I-Calculus/infinite-series.html"],"prereqsByLoc":{"Year-1/1a-Math-I-Calculus/alternating-series-test.html":["Year-1/1a-Math-I-Calculus/alternating-series.html","Year-1/1a-Math-I-Calculus/monotone-sequence.html"],"Year-1/1a-Math-I-Calculus/alternating-series.html":["Year-1/1a-Math-I-Calculus/infinite-series.html"],"Year-1/1a-Math-I-Calculus/monotone-sequence.html":["Year-1/1a-Math-I-Calculus/inequality.html"]},"dependents":[],"related":["Year-1/1a-Math-I-Calculus/comparison-test-for-series.html","Year-1/1a-Math-I-Calculus/infinite-series.html"]}</script><template id="mk-concept-connections-titles"><span data-lp-title-loc="Year-1/1a-Math-I-Calculus/alternating-series-test.html">Alternating Series Test</span><span data-lp-title-loc="Year-1/1a-Math-I-Calculus/alternating-series.html">Alternating Series</span><span data-lp-title-loc="Year-1/1a-Math-I-Calculus/monotone-sequence.html">Monotone Sequence</span><span data-lp-title-loc="Year-1/1a-Math-I-Calculus/comparison-test-for-series.html">Comparison Test for Series</span><span data-lp-title-loc="Year-1/1a-Math-I-Calculus/infinite-series.html">Infinite Series</span></template>
+<p class="mk-last-updated">Last updated: 7 October 2026 20:12</p><meta content="true" name="mk-concept-ai-mcq"/><script id="mk-concept-connections-data" type="application/json">{"kind":"concept-connections-panel-v1","readinessMaxDepth":2,"loc":"Year-1/1a-Math-I-Calculus/alternating-series-test.html","nodes":{"Year-1/1a-Math-I-Calculus/alternating-series-test.html":{"title":"Alternating Series Test","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/alternating-series.html":{"title":"Alternating Series","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/monotone-sequence.html":{"title":"Monotone Sequence","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/comparison-test-for-series.html":{"title":"Comparison Test for Series","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/infinite-series.html":{"title":"Infinite Series","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/inequality.html":{"title":"Inequality","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true}},"titleLocs":["Year-1/1a-Math-I-Calculus/alternating-series-test.html","Year-1/1a-Math-I-Calculus/alternating-series.html","Year-1/1a-Math-I-Calculus/monotone-sequence.html","Year-1/1a-Math-I-Calculus/comparison-test-for-series.html","Year-1/1a-Math-I-Calculus/infinite-series.html"],"prereqsByLoc":{"Year-1/1a-Math-I-Calculus/alternating-series-test.html":["Year-1/1a-Math-I-Calculus/alternating-series.html","Year-1/1a-Math-I-Calculus/monotone-sequence.html"],"Year-1/1a-Math-I-Calculus/alternating-series.html":["Year-1/1a-Math-I-Calculus/infinite-series.html"],"Year-1/1a-Math-I-Calculus/monotone-sequence.html":["Year-1/1a-Math-I-Calculus/inequality.html"]},"dependents":[],"related":["Year-1/1a-Math-I-Calculus/comparison-test-for-series.html","Year-1/1a-Math-I-Calculus/infinite-series.html"]}</script><template data-search-exclude="" id="mk-concept-connections-titles"><span data-lp-title-loc="Year-1/1a-Math-I-Calculus/alternating-series-test.html">Alternating Series Test</span><span data-lp-title-loc="Year-1/1a-Math-I-Calculus/alternating-series.html">Alternating Series</span><span data-lp-title-loc="Year-1/1a-Math-I-Calculus/monotone-sequence.html">Monotone Sequence</span><span data-lp-title-loc="Year-1/1a-Math-I-Calculus/comparison-test-for-series.html">Comparison Test for Series</span><span data-lp-title-loc="Year-1/1a-Math-I-Calculus/infinite-series.html">Infinite Series</span></template>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -2728,9 +2732,9 @@ Symbols: infinity, sum
 <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="../../javascripts/exam-mode.js?h=09b295110531"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
-<script src="../../javascripts/wiki-explain.js?h=995f02c0aa3e"></script>
+<script src="../../javascripts/wiki-explain.js?h=8900cebd6651"></script>
 <script src="../../javascripts/concept-connections-panel.js?h=9e86bc5150a0"></script>
-<script src="../../javascripts/startup-preferences.js?h=1b10c4141593"></script>
+<script src="../../javascripts/startup-preferences.js?h=d34266fd3d46"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=bdadfef125e5"></script>
 <script src="../../javascripts/ui-guard.js?h=2b70bc85f389"></script>
@@ -2744,7 +2748,7 @@ Symbols: infinity, sum
 <script src="../../javascripts/mathjax.js?h=955261a88d2e"></script>
 <script src="../../javascripts/preload-guard.js?h=5e42effda2c3"></script>
 <script src="../../javascripts/random.js?h=0129e8886b95"></script>
-<script src="../../javascripts/random-tabs.js?h=f86c9620b8f9"></script>
+<script src="../../javascripts/random-tabs.js?h=0f9157501a04"></script>
 <script src="../../javascripts/search-enter.js?h=880ac786d8d6"></script>
 <script src="../../javascripts/concept-fold.js?h=858f3fba2235"></script>
 <script src="../../javascripts/tag-search-links.js?h=84cb5c2dd87f"></script>
@@ -2754,5 +2758,7 @@ Symbols: infinity, sum
 <script src="../../javascripts/wiki-guide-account.js?h=2327db54a4ff"></script>
 <script src="../../javascripts/wiki-guides.js?h=c9a5569dce89"></script>
 <script src="../../javascripts/wiki-explain-content.js?h=e749a36cd985"></script>
+<script src="../../javascripts/wiki-manipulate.js?h=530469b1dbcd"></script>
+<script src="../../javascripts/wiki-manipulate-scenes.js?h=8849f6828595"></script>
 </body>
 </html>

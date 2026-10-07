@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1791388589566,
+  "generatedAt": 1791397366815,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -39,6 +39,13 @@
     },
     "find.html": {
       "title": "Concept Finder",
+      "courseName": "",
+      "coursePath": "",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "galaxy.html": {
+      "title": "Concept Galaxy",
       "courseName": "",
       "coursePath": "",
       "curriculumStatus": "current",
@@ -5078,6 +5085,7 @@
     "contributors.html": [],
     "custom-random.html": [],
     "find.html": [],
+    "galaxy.html": [],
     "random.html": [],
     "trending.html": [],
     "Year-1/index.html": [],
@@ -7847,6 +7855,7 @@
     "contributors.html": [],
     "custom-random.html": [],
     "find.html": [],
+    "galaxy.html": [],
     "random.html": [],
     "trending.html": [],
     "Year-1/index.html": [],
@@ -10351,6 +10360,7 @@
     "contributors.html": [],
     "custom-random.html": [],
     "find.html": [],
+    "galaxy.html": [],
     "random.html": [],
     "trending.html": [],
     "Year-1/index.html": [],
