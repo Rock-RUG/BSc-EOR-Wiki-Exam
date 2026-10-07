@@ -125,17 +125,33 @@ function ensureStyles(){if(document.getElementById(IDS.style))return;const st=do
   -webkit-tap-highlight-color:transparent;
   transition:color 125ms ease, opacity 125ms ease;
 }
-/* Hover is a state layer from wiki-interactions.css (an accent ink on the
-   coloured header was hard to read); header skins keep the accent ink. */
-:where(html[data-mk-header-skin]) #${IDS.shell} a.mk-rt-link:hover,
+/* Hover is a state layer from wiki-interactions.css. These states used to
+   switch to the accent ink, which themes set to a dark brand colour: about
+   1.8:1 on Forest's photo header and dark blue on Sky's blue one (the Year
+   panel opens on hover, so every reader met it). They keep the tab's own ink
+   and mark the state with an underline in that ink instead. */
+:where(html[data-mk-header-skin], html[data-mk-interface-theme]) #${IDS.shell} a.mk-rt-link:hover,
 #${IDS.shell} a.mk-rt-link:focus-visible,
-:where(html[data-mk-header-skin]) #${IDS.shell} button.mk-rt-trigger:hover,
+:where(html[data-mk-header-skin], html[data-mk-interface-theme]) #${IDS.shell} button.mk-rt-trigger:hover,
 #${IDS.shell} button.mk-rt-trigger:focus-visible,
 #${IDS.shell} button.mk-rt-trigger[aria-expanded="true"]{
-  color:var(--md-accent-fg-color) !important;
   opacity:1;
+  text-decoration:underline 2px currentColor !important;
+  text-underline-offset:.4em;
   background:transparent !important;
   box-shadow:none !important;
+}
+/* Theme headers choose their own ink (white at .96 or a dark ink on paper
+   headers); the .86 white above measured 4.0:1 on Sky and 4.2:1 on Sage. A
+   white state layer would lighten those mid-tone headers further, so themed
+   headers use only the underline. */
+:where(html[data-mk-interface-theme]) #${IDS.shell} a.mk-rt-link,
+:where(html[data-mk-interface-theme]) #${IDS.shell} button.mk-rt-trigger{
+  color:inherit;
+}
+:where(html[data-mk-interface-theme]) #${IDS.shell} a.mk-rt-link::before,
+:where(html[data-mk-interface-theme]) #${IDS.shell} button.mk-rt-trigger::before{
+  display:none !important;
 }
 #${IDS.shell} a.mk-rt-link.mk-rt-active,
 #${IDS.shell} button.mk-rt-trigger.mk-rt-active{
@@ -160,7 +176,7 @@ function ensureStyles(){if(document.getElementById(IDS.style))return;const st=do
 }
 #${IDS.shell} button.mk-rt-trigger[aria-expanded="true"] .mk-rt-chevron{
   transform:rotate(180deg);
-  color:var(--md-accent-fg-color);
+  color:inherit;
   opacity:1;
 }
 #${IDS.shell} .mk-rt-chevron svg{
@@ -493,21 +509,17 @@ html[data-mk-dropdown-skin="dropdown_glass"] #year-dropdown-panel.md-random-drop
   }
 
   /* Touch devices can keep :hover/:focus after the first tap. Keep closed
-     dropdown tabs in their normal colour, and use the accent colour only
-     while the panel is actually open. */
+     dropdown tabs plain; only the open panel is underlined. */
   #${IDS.shell} button.mk-rt-trigger:hover,
   #${IDS.shell} button.mk-rt-trigger:focus,
   #${IDS.shell} button.mk-rt-trigger:focus-visible{
-    color:var(--md-primary-bg-color--light, rgba(255,255,255,.72)) !important;
+    text-decoration:none !important;
     background:transparent !important;
     box-shadow:none !important;
     outline:0 !important;
   }
   #${IDS.shell} button.mk-rt-trigger[aria-expanded="true"]{
-    color:var(--md-accent-fg-color) !important;
-  }
-  #${IDS.shell} button.mk-rt-trigger[aria-expanded="true"] .mk-rt-chevron{
-    color:var(--md-accent-fg-color) !important;
+    text-decoration:underline 2px currentColor !important;
   }
   .mk-rt-panel{
     font-size:.74rem;
