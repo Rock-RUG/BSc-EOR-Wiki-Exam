@@ -16,20 +16,21 @@
 <link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link href="../../stylesheets/fonts-vendor.css?h=6f3b200e55fb" rel="stylesheet"/>
 <link href="../../stylesheets/katex-vendor.css?h=810f682352aa" rel="stylesheet"/>
-<link href="../../stylesheets/katex-fast.css?h=29ac38851d7d" rel="stylesheet"/>
-<link href="../../stylesheets/extra.css?h=3501dbac86e9" rel="stylesheet"/>
+<link href="../../stylesheets/katex-fast.css?h=96bc13ba3ce4" rel="stylesheet"/>
+<link href="../../stylesheets/extra.css?h=8dd866ec980a" rel="stylesheet"/>
 <link href="../../stylesheets/concept-connections-panel.css?h=5cd8f9434e51" rel="stylesheet"/>
-<link href="../../stylesheets/mastery-widget.css?h=103eadc9540d" rel="stylesheet"/>
+<link href="../../stylesheets/mastery-widget.css?h=3017ae465244" rel="stylesheet"/>
 <link href="../../stylesheets/course-status.css?h=4224c998406e" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-surfaces.css?h=7ad714b84385" rel="stylesheet"/>
-<link href="../../stylesheets/theme-surfaces.css?h=9cfb2886da02" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-community.css?h=80aa016d4162" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-maps.css?h=19fc4bee9b6b" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-mastery-manager.css?h=37ecce6d5b99" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-guides.css?h=2f1935c9ddee" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-explain.css?h=bcda2e4537fe" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-surfaces.css?h=36463b7db6e1" rel="stylesheet"/>
+<link href="../../stylesheets/theme-surfaces.css?h=9cfb2886da02" rel="stylesheet" media="(forced-colors: active)" data-mk-css-gate="theme"/>
+<link href="../../stylesheets/wiki-community.css?h=bf04506951f8" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-maps.css?h=e3f715120b0c" rel="stylesheet" media="not all" data-mk-css-gate="maps"/>
+<link href="../../stylesheets/wiki-mastery-manager.css?h=3c2334d129df" rel="stylesheet" media="not all" data-mk-css-gate="manager"/>
+<link href="../../stylesheets/wiki-guides.css?h=5d824a9db4ed" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-explain.css?h=a4aa9511cb34" rel="stylesheet"/>
 <link href="../../stylesheets/search-history.css?h=49fa7cf4d796" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-interactions.css?h=0be8ea3a7d54" rel="stylesheet"/>
+<link href="../../stylesheets/learning-path.css?h=e3be35a19977" rel="stylesheet" media="not all" data-mk-css-gate="lp"/>
+<link href="../../stylesheets/wiki-interactions.css?h=27fd0fdbe29b" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <style id="mk-mobile-fixed-chrome-early">
 @media (max-width: 900px), (pointer: coarse){
@@ -38,13 +39,22 @@
   html.mk-mobile-fixed-chrome .md-tabs{position:fixed!important;top:var(--mk-mobile-header-h,54px)!important;left:0!important;right:0!important;z-index:10039!important}
   html.mk-mobile-fixed-chrome .md-container{padding-top:var(--mk-mobile-chrome-h,102px)!important}
   html.mk-mobile-fixed-chrome .md-main{margin-top:0!important}
+  
+  html.mk-mobile-fixed-chrome .md-top{top:calc(var(--mk-mobile-chrome-h,102px) + 12px)!important;z-index:10038!important}
 }
+
+.md-top[hidden]{visibility:hidden}
 </style>
 <script>
 (function(){try{
   var mm=window.matchMedia;if(!mm||!mm("(pointer: coarse)").matches)return;
   if(mm("(min-width: 768px)").matches&&mm("(min-height: 700px)").matches)return;
   document.documentElement.classList.add("mk-mobile-fixed-chrome");
+}catch(_){}})();
+
+(function(){try{
+  var saved=typeof __md_get==="function"?__md_get("__palette"):null;
+  if(saved&&saved.color&&saved.color.scheme==="slate")document.documentElement.setAttribute("data-mk-boot-scheme","slate");
 }catch(_){}})();
 </script>
 <script id="mk-complete-css-gate">
@@ -56,6 +66,35 @@
   window.MkCompleteThemeCss={activate:function(kind){set("main",true);if(kind==="profile")set("profile",true);},sync:sync};
   sync();
   try{new MutationObserver(sync).observe(root,{attributes:true,attributeFilter:["data-mk-theme-edition","data-mk-public-profile-theme-edition"]});}catch(_){}
+})();
+</script>
+<script id="mk-deferred-css-gate">
+(function(){
+  var root=document.documentElement,on=Object.create(null);
+  function activate(group){
+    group=String(group||"");if(!group||on[group])return;on[group]=true;
+    var list=document.querySelectorAll('link[rel~="stylesheet"][data-mk-css-gate~="'+group+'"]');
+    for(var i=0;i<list.length;i++){if(list[i].media!=="all")list[i].media="all";}
+  }
+  function sync(){if(!on.theme&&(root.hasAttribute("data-mk-interface-theme")||root.hasAttribute("data-mk-image-interface-theme")))activate("theme");}
+  window.MkDeferredCss={activate:activate,active:function(group){return !!on[group];}};
+  sync();
+  try{new MutationObserver(sync).observe(root,{attributes:true,attributeFilter:["data-mk-interface-theme","data-mk-image-interface-theme"]});}catch(_){}
+})();
+</script>
+<style id="mk-theme-switching-css">html.mk-theme-switching *,html.mk-theme-switching *::before,html.mk-theme-switching *::after{transition:none!important}</style>
+<script id="mk-theme-switching-gate">
+(function(){
+  var root=document.documentElement,timer=0;
+  function done(){timer=0;root.classList.remove("mk-theme-switching");}
+  function hold(){
+    if(!root.classList.contains("mk-theme-switching"))root.classList.add("mk-theme-switching");
+    clearTimeout(timer);
+    try{requestAnimationFrame(function(){requestAnimationFrame(function(){clearTimeout(timer);timer=setTimeout(done,60);});});}catch(_){}
+    timer=setTimeout(done,600);
+  }
+  window.MkThemeSwitching={hold:hold};
+  document.addEventListener("change",function(e){var t=e&&e.target;if(t&&t.name==="__palette")hold();},true);
 })();
 </script>
 <meta content="website" property="og:type"/>
@@ -76,12 +115,46 @@
 (function () {
   if (!window.XMLHttpRequest || window.__mkMaterialSearchIndexPromises) return;
   var pending = window.__mkMaterialSearchIndexPromises = Object.create(null);
-  var original = XMLHttpRequest.prototype.open;
+  var original = XMLHttpRequest.prototype.open, originalSend = XMLHttpRequest.prototype.send;
+  // QA-102: Material requests the ~2 MB index as soon as it boots. Hold that
+  // one send() until search intent (header search hover/focus/tap, Material's
+  // / s f shortcuts, a ?q= or ?h= URL) or until a page script asks for the
+  // index through __mkFetchJsonShared (Finder, course search, random...).
+  // The request object, its listeners and the shared cache stay unchanged.
+  var released = false, held = [];
+  function release(reason) {
+    if (released) return;
+    released = true;
+    window.__mkSearchIndexRelease = String(reason || 'demand');
+    held.splice(0).forEach(function (call) { try { originalSend.apply(call[0], call[1]); } catch (_) {} });
+    unbind();
+  }
+  window.__mkSearchIndexDemand = release;
+  try { var params = new URLSearchParams(location.search); if (params.get('q') || params.get('h')) release('query'); } catch (_) {}
+  var SEARCH = '.md-search, label[for="__search"], #__search, [data-md-component="search"], [data-md-toggle="search"]';
+  function near(event) { var t = event && event.target; try { return !!(t && t.closest && t.closest(SEARCH)); } catch (_) { return false; } }
+  function onPointer(event) { if (near(event)) release('intent'); }
+  function onKey(event) {
+    if (near(event)) { release('intent'); return; }
+    var t = event && event.target, key = String(event && event.key || '');
+    if (event.ctrlKey || event.metaKey || event.altKey) return;
+    if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName || ''))) return;
+    if (key === '/' || key === 's' || key === 'f' || key === 'S' || key === 'F') release('shortcut');
+  }
+  function onChange(event) { var t = event && event.target; if (t && t.id === '__search' && t.checked) release('intent'); }
+  var EVENTS = [['pointerover', onPointer], ['pointerdown', onPointer], ['touchstart', onPointer], ['focusin', onPointer], ['keydown', onKey], ['change', onChange]];
+  function unbind() { try { EVENTS.forEach(function (pair) { document.removeEventListener(pair[0], pair[1], true); }); } catch (_) {} }
+  try { if (!released) EVENTS.forEach(function (pair) { document.addEventListener(pair[0], pair[1], { capture: true, passive: true }); }); } catch (_) {}
+  if (originalSend) XMLHttpRequest.prototype.send = function () {
+    if (this.__mkHoldSearchIndex && !released) { held.push([this, arguments]); return; }
+    return originalSend.apply(this, arguments);
+  };
   XMLHttpRequest.prototype.open = function (method, input) {
     var result = original.apply(this, arguments), url;
     try { url = new URL(input, document.baseURI); } catch (_) { return result; }
     if (String(method).toUpperCase() !== 'GET' || url.origin !== location.origin || !/\/search\/search_index\.json$/.test(url.pathname)) return result;
     var xhr = this, key = url.href;
+    xhr.__mkHoldSearchIndex = true;
     var task = new Promise(function (resolve, reject) {
       xhr.addEventListener('load', function () {
         if (xhr.status < 200 || xhr.status >= 300) { reject(new Error('Search index unavailable')); return; }
@@ -102,6 +175,7 @@
 </script>
 <link as="font" crossorigin="anonymous" href="../../stylesheets/fonts/KaTeX_Main-Regular.woff2" rel="preload" type="font/woff2"/>
 <link as="font" crossorigin="anonymous" href="../../stylesheets/fonts/KaTeX_Math-Italic.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="anonymous" href="../../stylesheets/fonts/KaTeX_AMS-Regular.woff2" rel="preload" type="font/woff2"/>
 <!-- Start sidebar metadata early when its feature is enabled. A static preload
      would still download it in Lite mode, where the sorter has no consumer. -->
 <script id="mk-sidebar-meta-prefetch-v1">
@@ -110,13 +184,14 @@
   try{var p=JSON.parse(localStorage.getItem("mk_startup_features_v1")||"{}");if(p&&p.sidebarSort===false)enabled=false;}catch(_){}
   try{var f=window.__mkForcedStartupPrefs;if(f&&typeof f.sidebarSort==="boolean")enabled=f.sidebarSort;}catch(_){}
   enabled=true;
+  
   if(!enabled)return;
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=6a453f71af25";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=d83b21ba42a3";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=6a453f71af25";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=d83b21ba42a3";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -189,6 +264,11 @@
   // Read the mounted shell as well as listening for its event: navigation may
   // finish before this gate starts, or remain mounted across history restores.
   function tabsReady(){try{if(!document.querySelector(".md-tabs__list"))return true;var nav=document.getElementById("mk-random-tabs-shadow");return !!(nav&&nav.getAttribute("data-mk-nav-ready")==="1");}catch(_){return false;}}
+  // The hard reveal can fire before random-tabs.js has built the site tabs; the
+  // native Material tabs (with internal pages) then flashed for up to a few
+  // seconds (QA-011). Keep them invisible, height intact, until the custom
+  // tabs are ready or 3 s pass.
+  function holdNativeTabs(){try{if(tabsReady())return;root.classList.add("mk-native-tabs-wait");var done=function(){root.classList.remove("mk-native-tabs-wait");window.removeEventListener("mk:random-tabs-ready",done);};window.addEventListener("mk:random-tabs-ready",done);setTimeout(done,3000);}catch(_){}}
   function shellReady(){try{return !!document.querySelector(".md-container,.md-main,.md-content");}catch(_){return false;}}
   function isDesktopSidebar(){try{return !!(window.matchMedia&&window.matchMedia("(min-width: 960px)").matches);}catch(_){return false;}}
   function shouldGateDesktopSidebar(ms){try{if(!concept())return false;if(!window.matchMedia||!window.matchMedia("(min-width: 76.1876em)").matches)return false;var s=document.querySelector(".md-sidebar--primary");if(s)return true;return ms<720;}catch(_){return false;}}
@@ -202,7 +282,7 @@
   function clearFindFx(){try{var r=document.getElementById("search-results");if(r)r.classList.remove("fb-preblur");var fb=document.getElementById("find-builder");if(fb)fb.classList.remove("fb-dream-active","fb-undo-bump","fb-redo-bump");document.querySelectorAll("#search-results .csr-cols,#search-results .csr-list,#search-results .csr-foot,#find-builder .fb-board,#find-builder .fb-hint").forEach(function(el){el.style.filter="";el.style.opacity="";el.style.transform="";el.classList.remove("fb-hint--pending","fb-hint--reveal");});}catch(_){} }
   function clearFindSearchResidue(){if(!isFind())return;clearFindFx();var active=isHeaderSearchActive();root.classList.toggle("mk-header-search-open",!!active);if(active)return;try{var toggle=document.querySelector('input.md-toggle[data-md-toggle="search"], input#__search, #__search');if(toggle)toggle.checked=false;document.querySelectorAll('.md-header .md-search.md-search--active').forEach(function(el){el.classList.remove('md-search--active');});root.classList.remove('md-search--active');if(document.body)document.body.classList.remove('md-search--active');document.querySelectorAll('.md-header .md-search__output,.md-header .md-search__overlay,.md-header .mk-search-history,.md-header .mk-search-suggest').forEach(function(el){try{el.style.display='none';el.style.pointerEvents='none';el.style.opacity='0';el.setAttribute('aria-hidden','true');}catch(_){}});var bd=document.getElementById('mk-mobile-search-backdrop');if(bd){bd.dataset.mkFindHidden='1';bd.style.display='none';bd.style.opacity='0';bd.style.backdropFilter='none';bd.style.webkitBackdropFilter='none';}}catch(_){} }
   function blank(reason){markKind();ensureCover();lastReason=reason||"";forceTopThisBoot=shouldForceTop(lastReason);lastScrollSig="";stableScrollFrames=0;clearFindSearchResidue();topDirty=true;forceTopNow();armTopFix();root.classList.remove("mk-app-ready","mk-first-paint-release","mk-tabs-ready","mk-sidebar-sort-centered");root.classList.add("mk-app-booting","mk-nav-pending","mk-startup-no-motion","mk-tabs-boot","mk-sidebar-sort-boot","mk-scroll-stabilizing");if(reason==="find"||isFind())root.classList.add("mk-find-booting","mk-find-entering");}
-  function revealCommit(n){if(n!==id||reveal.completed===n)return;reveal.completed=n;reveal.queued=0;cancelRevealWork();clearTimeout(timer);clearTimeout(hard);clearFindSearchResidue();forceTopNow();markKind();root.classList.add("mk-app-ready","mk-first-paint-release","mk-tabs-ready");removeCoverSoon(n);root.classList.remove("mk-app-booting","mk-nav-pending","mk-tabs-boot","mk-sidebar-sort-boot","mk-find-booting","mk-find-entering","mk-scroll-stabilizing");forceTopNow();[0,60].forEach(function(ms){topTimers.push(setTimeout(function(){if(n===id)forceTopNow();},ms));});revealCleanup=setTimeout(function(){if(n===id){revealCleanup=0;root.classList.remove("mk-startup-no-motion","mk-first-paint-release");cancelTopTimers();}},90);}
+  function revealCommit(n){if(n!==id||reveal.completed===n)return;reveal.completed=n;reveal.queued=0;cancelRevealWork();clearTimeout(timer);clearTimeout(hard);clearFindSearchResidue();forceTopNow();markKind();root.classList.add("mk-app-ready","mk-first-paint-release","mk-tabs-ready");holdNativeTabs();removeCoverSoon(n);root.classList.remove("mk-app-booting","mk-nav-pending","mk-tabs-boot","mk-sidebar-sort-boot","mk-find-booting","mk-find-entering","mk-scroll-stabilizing");forceTopNow();[0,60].forEach(function(ms){topTimers.push(setTimeout(function(){if(n===id)forceTopNow();},ms));});revealCleanup=setTimeout(function(){if(n===id){revealCleanup=0;root.classList.remove("mk-startup-no-motion","mk-first-paint-release");cancelTopTimers();}},90);}
   /* Each navigation commits once. Late component readiness signals and the
      competing timer must not restart document-wide animation suppression after
      cleanup. A HIDDEN tab never paints, so requestAnimationFrame
@@ -236,11 +316,16 @@
 <style id="mk-unified-first-paint-css-v12-fast-release">
 html.mk-app-booting,html.mk-app-booting body{background:var(--md-default-bg-color,#fff)!important;overflow-anchor:none!important;scroll-behavior:auto!important;overscroll-behavior:none!important}
 html.mk-app-booting::before,html.mk-app-booting body::before,#mk-first-paint-cover{content:"";position:fixed!important;top:calc(-1 * env(safe-area-inset-top,0px) - 120px)!important;left:calc(-1 * env(safe-area-inset-left,0px) - 120px)!important;right:calc(-1 * env(safe-area-inset-right,0px) - 120px)!important;bottom:calc(-1 * env(safe-area-inset-bottom,0px) - 80vh)!important;min-height:calc(100dvh + 80vh + env(safe-area-inset-bottom,0px) + 240px)!important;z-index:2147483647!important;background:var(--md-default-bg-color,#fff)!important;pointer-events:none!important;display:block!important;visibility:visible!important;opacity:1!important;transform:translateZ(0)!important;contain:paint!important}
+html.mk-app-booting:is([data-mk-boot-scheme="slate"],[data-mk-color-scheme="slate"]),html.mk-app-booting:is([data-mk-boot-scheme="slate"],[data-mk-color-scheme="slate"])::before{background:#1e2129!important}
+html.mk-app-booting :is(#wiki-explain-root,#wiki-guide-root){visibility:hidden!important}
 html.mk-app-booting .md-header,html.mk-app-booting .md-tabs{visibility:hidden!important;opacity:0!important}
+html.mk-native-tabs-wait .md-tabs__list{visibility:hidden!important}
 html.mk-app-booting .md-container,html.mk-app-booting .md-main,html.mk-app-booting .md-content,html.mk-app-booting .md-sidebar,html.mk-app-booting .md-footer,html.mk-app-booting .md-dialog,html.mk-app-booting .md-search{visibility:hidden!important;opacity:0!important;transition:none!important;animation:none!important;overflow-anchor:none!important}
 html.mk-app-ready #mk-first-paint-cover,html:not(.mk-app-booting) #mk-first-paint-cover{display:none!important;opacity:0!important;visibility:hidden!important}
 html.mk-startup-no-motion *,html.mk-startup-no-motion *:before,html.mk-startup-no-motion *:after,html.mk-first-paint-release *,html.mk-first-paint-release *:before,html.mk-first-paint-release *:after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
 #find-builder.fb-dream-active .fb-board,#search-results.fb-preblur,#search-results.fb-preblur .csr-cols,#search-results.fb-preblur .csr-list,#search-results.fb-preblur .csr-foot,html.mk-find-page #find-builder .fb-board,html.mk-find-page #search-results .csr-cols,html.mk-find-page #search-results .csr-list,html.mk-find-page #search-results .csr-foot,html.mk-find-page .fb-hint--pending{filter:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;opacity:1!important;transform:none!important;transition:none!important;animation:none!important}
+/* QA-030: the Finder drops both sidebars (body.trending-page, extra.css) once find-builder.js runs; apply it from the first frame so content does not jump from the nav column to the left edge. */
+html.mk-find-page .md-sidebar--primary,html.mk-find-page .md-sidebar--secondary{display:none!important}html.mk-find-page .md-content{grid-column:1/-1!important}
 html.mk-find-page:not(.mk-header-search-open) #mk-mobile-search-backdrop{display:none!important;opacity:0!important;visibility:hidden!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:transparent!important;pointer-events:none!important}
 html.mk-find-page:not(.mk-header-search-open):not(.md-search--active):not(.mk-hsf-open) .md-header .md-search__overlay,html.mk-find-page:not(.mk-header-search-open):not(.md-search--active):not(.mk-hsf-open) .md-header .md-search__output,html.mk-find-page:not(.mk-header-search-open):not(.md-search--active):not(.mk-hsf-open) .md-header .mk-search-history,html.mk-find-page:not(.mk-header-search-open):not(.md-search--active):not(.mk-hsf-open) .md-header .mk-search-suggest{display:none!important;opacity:0!important;visibility:hidden!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;pointer-events:none!important}
 html.rk-preload .md-header,html.rk-loading .md-header,html:not(.rk-ready) .md-header,html.rk-preload .md-tabs,html.rk-loading .md-tabs,html:not(.rk-ready) .md-tabs,html.rk-preload .md-container,html.rk-loading .md-container,html:not(.rk-ready) .md-container,html.rk-preload .md-main,html.rk-loading .md-main,html.rk-preload .md-content,html.rk-loading .md-content{opacity:1!important;visibility:visible!important;pointer-events:auto!important;animation:none!important;transition:none!important}
@@ -920,7 +1005,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Conditional Variance (Probability Theory for EOR)
+    Conditional Variance Given an Event
   
 
     
@@ -1328,7 +1413,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Multiplication Rule
+    Multiplication Rule for Counting
   
 
     
@@ -1400,7 +1485,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Partition (Probability Theory for EOR)
+    Partition of a Set
   
 
     
@@ -1412,7 +1497,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Permutation (Probability Theory for EOR)
+    k-Permutation
   
 
     
@@ -1556,7 +1641,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Standard Normal Distribution (Probability Theory for EOR)
+    Standard Normal Distribution
   
 
     
@@ -1967,7 +2052,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-tag">curriculum-current</span>
 <span class="md-tag">pt-week01</span>
 </nav>
-<h1 id="complement-of-an-event">Complement of an Event<a class="headerlink" href="#complement-of-an-event" title="Permanent link">¶</a></h1>
+<h1 id="complement-of-an-event">Complement of an Event<a class="headerlink" href="#complement-of-an-event" title="Permanent link">¶</a></h1><div aria-hidden="true" class="mw-slot" data-mw-slot=""></div><script>(function(s){try{var r=document.documentElement,p=String(location.pathname||""),k=p.indexOf("Year-"),rel=k<0?"":p.slice(k),c=false;if(!rel||r.classList.contains("mk-startup-mastery-off")){s.setAttribute("data-mw-slot","off");return;}try{c=localStorage.getItem("mw_widget_hidden_v1")==="1";}catch(_){}if(!c){var f=false;try{f=sessionStorage.getItem("mw_widget_force_open_v1:"+rel)==="1";}catch(_){}if(!f){try{var a=JSON.parse(localStorage.getItem("concept_mastery_v1")||"{}"),x=a&&typeof a==="object"&&!Array.isArray(a)?a[rel]:null,v=x&&x.m,u=!!(x&&(x.unrated===true||String(x.state||"").toLowerCase()==="unrated"));v=typeof v==="number"||(typeof v==="string"&&v.trim()!=="")?Number(v):null;c=!!(x&&!u&&[0,1,2,3].indexOf(v)>=0);}catch(_){}}}s.setAttribute("data-mw-slot",c?"line":"box");}catch(_){}})(document.currentScript&&document.currentScript.previousElementSibling);</script>
 <h2 id="definition"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 7h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H9zm2 2v6h2V9zM3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm2 0v14h14V5z"></path></svg></span> Definition<a class="headerlink" href="#definition" title="Permanent link">¶</a></h2>
 <p>Let <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span></span> be an <a href="event.html">event</a> in a <a href="sample-space.html">sample space</a> <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0576em;">S</span></span></span></span></span>. The <strong>complement</strong> of <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span></span>, denoted <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mi>c</mi></msup></mrow><annotation encoding="application/x-tex">A^c</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">c</span></span></span></span></span></span></span></span></span></span></span></span>, is the event</p>
 <div class="arithmatex arithmatex-prerendered arithmatex-display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mi>c</mi></msup><mo>=</mo><mo stretchy="false">{</mo><mi>ω</mi><mo>∈</mo><mi>S</mi><mo>:</mo><mi>ω</mi><mo mathvariant="normal">∉</mo><mi>A</mi><mo stretchy="false">}</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">A^c=\{\omega\in S:\omega\notin A\}.</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.7144em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7144em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">c</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal" style="margin-right:0.0359em;">ω</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">ω</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mord"><span class="mrel">∈</span></span><span class="mord vbox"><span class="thinbox"><span class="llap"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="inner"><span class="mord"><span class="mord">/</span><span class="mspace" style="margin-right:0.0556em;"></span></span></span><span class="fix"></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mclose">}</span><span class="mord">.</span></span></span></span></span></div>
@@ -2007,10 +2092,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li>Probability Theory for EOR · Week 1 </li>
 </ul>
 <p><span class="search-aliases" data-nosnippet="">
-Aliases: complement rule, event complement
+Aliases: complementary event, event complement
+Keywords: complement rule
 Symbols: element of, empty set, intersection, omega, union
 </span></p>
-<p class="mk-last-updated">Last updated: 7 October 2026 15:18</p><meta content="true" name="mk-concept-ai-mcq"/><script id="mk-concept-connections-data" type="application/json">{"kind":"concept-connections-panel-v1","readinessMaxDepth":2,"loc":"Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html","nodes":{"Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html":{"title":"Complement of an Event","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/birthday-problem.html":{"title":"Birthday Problem","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/event.html":{"title":"Event","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/complement.html":{"title":"Complement","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/sample-space.html":{"title":"Sample Space","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/axioms-of-probability.html":{"title":"Axioms of Probability","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/union-and-intersection-of-events.html":{"title":"Union and Intersection of Events","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/probability-function.html":{"title":"Probability Function","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/difference-set.html":{"title":"Difference Set","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/set.html":{"title":"Set","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/subset.html":{"title":"Subset","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/outcome.html":{"title":"Outcome","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true}},"titleLocs":["Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html","Year-1/1b-Probability-Theory-for-EOR/birthday-problem.html","Year-1/1b-Probability-Theory-for-EOR/event.html","Year-1/1a-Math-I-Calculus/complement.html","Year-1/1b-Probability-Theory-for-EOR/sample-space.html","Year-1/1b-Probability-Theory-for-EOR/axioms-of-probability.html","Year-1/1b-Probability-Theory-for-EOR/union-and-intersection-of-events.html","Year-1/1b-Probability-Theory-for-EOR/probability-function.html"],"prereqsByLoc":{"Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html":["Year-1/1b-Probability-Theory-for-EOR/event.html","Year-1/1a-Math-I-Calculus/complement.html","Year-1/1b-Probability-Theory-for-EOR/sample-space.html"],"Year-1/1b-Probability-Theory-for-EOR/birthday-problem.html":["Year-1/1b-Probability-Theory-for-EOR/naive-probability.html","Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html"],"Year-1/1a-Math-I-Calculus/complement.html":["Year-1/1a-Math-I-Calculus/set.html","Year-1/1a-Math-I-Calculus/difference-set.html"],"Year-1/1b-Probability-Theory-for-EOR/event.html":["Year-1/1b-Probability-Theory-for-EOR/sample-space.html","Year-1/1a-Math-I-Calculus/subset.html","Year-1/1a-Math-I-Calculus/set.html"],"Year-1/1b-Probability-Theory-for-EOR/sample-space.html":["Year-1/1a-Math-I-Calculus/set.html","Year-1/1b-Probability-Theory-for-EOR/outcome.html"]},"dependents":["Year-1/1b-Probability-Theory-for-EOR/birthday-problem.html"],"related":["Year-1/1b-Probability-Theory-for-EOR/axioms-of-probability.html","Year-1/1b-Probability-Theory-for-EOR/union-and-intersection-of-events.html","Year-1/1b-Probability-Theory-for-EOR/probability-function.html"]}</script><template data-search-exclude="" id="mk-concept-connections-titles"><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html">Complement of an Event</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/birthday-problem.html">Birthday Problem</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/event.html">Event</span><span data-lp-title-loc="Year-1/1a-Math-I-Calculus/complement.html">Complement</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/sample-space.html">Sample Space</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/axioms-of-probability.html">Axioms of Probability</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/union-and-intersection-of-events.html">Union and Intersection of Events</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/probability-function.html">Probability Function</span></template>
+<p class="mk-last-updated">Last updated: 8 October 2026 18:38</p><meta content="true" name="mk-concept-ai-mcq"/><script id="mk-concept-connections-data" type="application/json">{"kind":"concept-connections-panel-v1","readinessMaxDepth":2,"loc":"Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html","nodes":{"Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html":{"title":"Complement of an Event","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/birthday-problem.html":{"title":"Birthday Problem","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/event.html":{"title":"Event","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/complement.html":{"title":"Complement","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/sample-space.html":{"title":"Sample Space","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/axioms-of-probability.html":{"title":"Axioms of Probability","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/union-and-intersection-of-events.html":{"title":"Union and Intersection of Events","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/probability-function.html":{"title":"Probability Function","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/difference-set.html":{"title":"Difference Set","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/set.html":{"title":"Set","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/subset.html":{"title":"Subset","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/outcome.html":{"title":"Outcome","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true}},"titleLocs":["Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html","Year-1/1b-Probability-Theory-for-EOR/birthday-problem.html","Year-1/1b-Probability-Theory-for-EOR/event.html","Year-1/1a-Math-I-Calculus/complement.html","Year-1/1b-Probability-Theory-for-EOR/sample-space.html","Year-1/1b-Probability-Theory-for-EOR/axioms-of-probability.html","Year-1/1b-Probability-Theory-for-EOR/union-and-intersection-of-events.html","Year-1/1b-Probability-Theory-for-EOR/probability-function.html"],"prereqsByLoc":{"Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html":["Year-1/1b-Probability-Theory-for-EOR/event.html","Year-1/1a-Math-I-Calculus/complement.html","Year-1/1b-Probability-Theory-for-EOR/sample-space.html"],"Year-1/1b-Probability-Theory-for-EOR/birthday-problem.html":["Year-1/1b-Probability-Theory-for-EOR/naive-probability.html","Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html"],"Year-1/1a-Math-I-Calculus/complement.html":["Year-1/1a-Math-I-Calculus/set.html","Year-1/1a-Math-I-Calculus/difference-set.html"],"Year-1/1b-Probability-Theory-for-EOR/event.html":["Year-1/1b-Probability-Theory-for-EOR/sample-space.html","Year-1/1a-Math-I-Calculus/subset.html","Year-1/1a-Math-I-Calculus/set.html"],"Year-1/1b-Probability-Theory-for-EOR/sample-space.html":["Year-1/1a-Math-I-Calculus/set.html","Year-1/1b-Probability-Theory-for-EOR/outcome.html"]},"dependents":["Year-1/1b-Probability-Theory-for-EOR/birthday-problem.html"],"related":["Year-1/1b-Probability-Theory-for-EOR/axioms-of-probability.html","Year-1/1b-Probability-Theory-for-EOR/union-and-intersection-of-events.html","Year-1/1b-Probability-Theory-for-EOR/probability-function.html"]}</script><template data-search-exclude="" id="mk-concept-connections-titles"><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html">Complement of an Event</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/birthday-problem.html">Birthday Problem</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/event.html">Event</span><span data-lp-title-loc="Year-1/1a-Math-I-Calculus/complement.html">Complement</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/sample-space.html">Sample Space</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/axioms-of-probability.html">Axioms of Probability</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/union-and-intersection-of-events.html">Union and Intersection of Events</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/probability-function.html">Probability Function</span></template>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -2049,30 +2135,30 @@ Symbols: element of, empty set, intersection, omega, union
 <script src="../../javascripts/exam-mode.js?h=09b295110531"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
 <script src="../../javascripts/wiki-explain.js?h=8900cebd6651"></script>
-<script src="../../javascripts/concept-connections-panel.js?h=9e86bc5150a0"></script>
-<script src="../../javascripts/startup-preferences.js?h=6a453f71af25"></script>
+<script src="../../javascripts/concept-connections-panel.js?h=6762a20ee407"></script>
+<script src="../../javascripts/startup-preferences.js?h=d83b21ba42a3"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=bdadfef125e5"></script>
-<script src="../../javascripts/ui-guard.js?h=2b70bc85f389"></script>
+<script src="../../javascripts/ui-guard.js?h=0df90b8838a2"></script>
 <script src="../../javascripts/a11y-landmarks.js?h=f9b5b9aefde5"></script>
 <script src="../../javascripts/fuzzy-core.js?h=eff81b2b18b8"></script>
-<script src="../../javascripts/nl-query-core.js?h=a3f5d61d2868"></script>
-<script src="../../javascripts/search-suggestions.js?h=50ea63bdddfa"></script>
+<script src="../../javascripts/nl-query-core.js?h=c6f0b7f77910"></script>
+<script src="../../javascripts/search-suggestions.js?h=b966c98c1972"></script>
 <script src="../../javascripts/search-history.js?h=a1367948fc13"></script>
 <script src="../../javascripts/header-search-stabilizer.js?h=cdd630b06fd3"></script>
-<script src="../../javascripts/concept-hover-preview.js?h=e99332f3773f"></script>
-<script src="../../javascripts/mathjax.js?h=955261a88d2e"></script>
+<script src="../../javascripts/concept-hover-preview.js?h=2170e87fe157"></script>
+<script src="../../javascripts/mathjax.js?h=871ca0664c65"></script>
 <script src="../../javascripts/preload-guard.js?h=5e42effda2c3"></script>
-<script src="../../javascripts/random.js?h=0129e8886b95"></script>
+<script src="../../javascripts/random.js?h=13e72e32a905"></script>
 <script src="../../javascripts/random-tabs.js?h=24ac4a0abe77"></script>
-<script src="../../javascripts/search-enter.js?h=880ac786d8d6"></script>
+<script src="../../javascripts/search-enter.js?h=5ef1fb6b67da"></script>
 <script src="../../javascripts/concept-fold.js?h=858f3fba2235"></script>
 <script src="../../javascripts/tag-search-links.js?h=84cb5c2dd87f"></script>
 <script src="../../javascripts/logo-lightbox.js?h=fda4850b9a41"></script>
-<script src="../../javascripts/figure-source.js?h=8f88441f2ddb"></script>
-<script src="../../javascripts/wiki-guide-pages.js?h=04d6dae00363"></script>
+<script src="../../javascripts/figure-source.js?h=a0c757c3364d"></script>
+<script src="../../javascripts/wiki-guide-pages.js?h=0759937c8655"></script>
 <script src="../../javascripts/wiki-guide-account.js?h=2327db54a4ff"></script>
-<script src="../../javascripts/wiki-guides.js?h=c9a5569dce89"></script>
+<script src="../../javascripts/wiki-guides.js?h=74b29b68f079"></script>
 <script src="../../javascripts/wiki-explain-content.js?h=e749a36cd985"></script>
 </body>
 </html>

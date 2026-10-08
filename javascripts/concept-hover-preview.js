@@ -304,26 +304,23 @@ function ensureStyles(){if(document.getElementById(STYLE_ID))return;const st=doc
         color:var(--md-default-fg-color, #1c1f26);
         border:1px solid rgba(255,255,255,.24);
         border-top:1px solid color-mix(in srgb, var(--mk-chp-accent) 65%, rgba(255,255,255,.45));
-        background:rgba(248,250,255,.975);
+        /* Opaque: the article and right column showed through the card (QA-059). */
+        background:rgb(248,250,255);
         box-shadow:
           0 24px 68px rgba(15, 23, 42, .22),
           0 8px 24px rgba(15, 23, 42, .12),
           inset 0 1px 0 rgba(255,255,255,.58);
-        backdrop-filter:blur(14px) saturate(1.12);
-        -webkit-backdrop-filter:blur(14px) saturate(1.12);
       }
       html[data-md-color-scheme="slate"] #${POPUP_ID} .mk-chp-card,
       body[data-md-color-scheme="slate"] #${POPUP_ID} .mk-chp-card{
         color:rgba(244,247,255,.96);
         border-color:rgba(255,255,255,.12);
         border-top-color:color-mix(in srgb, var(--mk-chp-accent) 72%, rgba(255,255,255,.12));
-        background:linear-gradient(180deg, rgba(5, 9, 17, .992), rgba(7, 11, 20, .982));
+        background:linear-gradient(180deg, rgb(5, 9, 17), rgb(7, 11, 20));
         box-shadow:
           0 30px 82px rgba(0,0,0,.44),
           0 12px 30px rgba(0,0,0,.24),
           inset 0 1px 0 rgba(255,255,255,.13);
-        backdrop-filter:blur(16px) saturate(1.12) brightness(.82);
-        -webkit-backdrop-filter:blur(16px) saturate(1.12) brightness(.82);
       }
       #${POPUP_ID} .mk-chp-card::before{
         content:"";

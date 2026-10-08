@@ -43,8 +43,9 @@ function ensureRuntimeStyle(){if(document.getElementById(RUNTIME_STYLE_ID))retur
         content:"↔ Scroll equation · focus and use arrow keys";
         display:block; position:sticky; left:0;
         width:fit-content; max-width:100%; white-space:normal;
-        padding-top:.35rem; font:500 .65rem/1.4 var(--md-text-font-family, sans-serif);
-        opacity:.72;
+        padding-top:.35rem; font:600 .65rem/1.4 var(--md-text-font-family, sans-serif);
+        /* Easier to notice: wide displays showed only their first half (QA-022). */
+        color:var(--md-accent-fg-color, var(--md-typeset-a-color));
       }
       [data-mk-math-scroll="1"]:focus-visible{
         outline:2px solid var(--md-accent-fg-color, #2563eb); outline-offset:2px;

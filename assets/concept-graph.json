@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1791414870519,
+  "generatedAt": 1791477877964,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -73,7 +73,7 @@
       "aiMcq": true
     },
     "Year-1/1a-Introduction-to-Data-Analytics/index.html": {
-      "title": "Introduction to Data Analytics",
+      "title": "Introduction to Data Analytics { .ch-title }",
       "courseName": "1a-Introduction-to-Data-Analytics",
       "coursePath": "Year-1/1a-Introduction-to-Data-Analytics",
       "curriculumStatus": "current",
@@ -437,7 +437,7 @@
       "aiMcq": false
     },
     "Year-1/1a-Math-I-Calculus/geometric-series.html": {
-      "title": "Geometric Series (Math I: Calculus)",
+      "title": "Geometric Series",
       "courseName": "1a-Math-I-Calculus",
       "coursePath": "Year-1/1a-Math-I-Calculus",
       "curriculumStatus": "current",
@@ -822,7 +822,7 @@
       "aiMcq": true
     },
     "Year-1/1a-Math-I-Calculus/partition-and-regular-subdivision.html": {
-      "title": "Partition and Regular Subdivision",
+      "title": "Partition of an Interval",
       "courseName": "1a-Math-I-Calculus",
       "coursePath": "Year-1/1a-Math-I-Calculus",
       "curriculumStatus": "current",
@@ -1704,7 +1704,7 @@
       "aiMcq": true
     },
     "Year-1/1a-OR-Modelling/nonnegativity-constraint.html": {
-      "title": "Nonnegativity Constraint (OR Modelling)",
+      "title": "Nonnegativity Constraint",
       "courseName": "1a-OR-Modelling",
       "coursePath": "Year-1/1a-OR-Modelling",
       "curriculumStatus": "current",
@@ -1795,7 +1795,7 @@
       "aiMcq": true
     },
     "Year-1/1a-OR-Modelling/path.html": {
-      "title": "Path (OR Modelling)",
+      "title": "Path in a Network",
       "courseName": "1a-OR-Modelling",
       "coursePath": "Year-1/1a-OR-Modelling",
       "curriculumStatus": "current",
@@ -1900,7 +1900,7 @@
       "aiMcq": true
     },
     "Year-1/1a-OR-Modelling/shadow-price.html": {
-      "title": "Shadow Price (OR Modelling)",
+      "title": "Shadow Price in Linear Programming",
       "courseName": "1a-OR-Modelling",
       "coursePath": "Year-1/1a-OR-Modelling",
       "curriculumStatus": "current",
@@ -1978,13 +1978,6 @@
     },
     "Year-1/1a-OR-Modelling/spanning-tree.html": {
       "title": "Spanning Tree",
-      "courseName": "1a-OR-Modelling",
-      "coursePath": "Year-1/1a-OR-Modelling",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/1a-OR-Modelling/standard-normal-distribution.html": {
-      "title": "Standard Normal Distribution (OR Modelling)",
       "courseName": "1a-OR-Modelling",
       "coursePath": "Year-1/1a-OR-Modelling",
       "curriculumStatus": "current",
@@ -2236,7 +2229,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Math-II-Linear-Algebra/cauchy-schwarz-inequality.html": {
-      "title": "Cauchy-Schwarz Inequality (Math II: Linear Algebra)",
+      "title": "Cauchy-Schwarz Inequality",
       "courseName": "1b-Math-II-Linear-Algebra",
       "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
       "curriculumStatus": "current",
@@ -2537,7 +2530,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Math-II-Linear-Algebra/euclidean-space.html": {
-      "title": "Euclidean Space (Math II: Linear Algebra)",
+      "title": "Euclidean Space",
       "courseName": "1b-Math-II-Linear-Algebra",
       "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
       "curriculumStatus": "current",
@@ -2614,7 +2607,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html": {
-      "title": "Hyperplane (Math II: Linear Algebra)",
+      "title": "Hyperplane",
       "courseName": "1b-Math-II-Linear-Algebra",
       "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
       "curriculumStatus": "current",
@@ -2817,7 +2810,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Math-II-Linear-Algebra/permutation.html": {
-      "title": "Permutation (Math II: Linear Algebra)",
+      "title": "Permutation",
       "courseName": "1b-Math-II-Linear-Algebra",
       "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
       "curriculumStatus": "current",
@@ -2872,15 +2865,8 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
-    "Year-1/1b-Math-II-Linear-Algebra/projection-matrix.html": {
-      "title": "Projection Matrix",
-      "courseName": "1b-Math-II-Linear-Algebra",
-      "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
     "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html": {
-      "title": "Quadratic Form (Math II: Linear Algebra)",
+      "title": "Quadratic Form",
       "courseName": "1b-Math-II-Linear-Algebra",
       "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
       "curriculumStatus": "current",
@@ -2895,6 +2881,13 @@
     },
     "Year-1/1b-Math-II-Linear-Algebra/rank.html": {
       "title": "Rank",
+      "courseName": "1b-Math-II-Linear-Algebra",
+      "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html": {
+      "title": "Real Coordinate Space",
       "courseName": "1b-Math-II-Linear-Algebra",
       "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
       "curriculumStatus": "current",
@@ -3041,7 +3034,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html": {
-      "title": "Vector Norm",
+      "title": "Euclidean Norm",
       "courseName": "1b-Math-II-Linear-Algebra",
       "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
       "curriculumStatus": "current",
@@ -3160,7 +3153,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/conditional-variance.html": {
-      "title": "Conditional Variance (Probability Theory for EOR)",
+      "title": "Conditional Variance Given an Event",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -3398,7 +3391,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/multiplication-rule.html": {
-      "title": "Multiplication Rule",
+      "title": "Multiplication Rule for Counting",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -3440,14 +3433,14 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/partition.html": {
-      "title": "Partition (Probability Theory for EOR)",
+      "title": "Partition of a Set",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/permutation.html": {
-      "title": "Permutation (Probability Theory for EOR)",
+      "title": "k-Permutation",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -3531,7 +3524,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/standard-normal-distribution.html": {
-      "title": "Standard Normal Distribution (Probability Theory for EOR)",
+      "title": "Standard Normal Distribution",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -3629,14 +3622,14 @@
       "aiMcq": true
     },
     "Year-1/1b-Programming-for-EOR/index.html": {
-      "title": "Programming for EOR",
+      "title": "Programming for EOR { .ch-title }",
       "courseName": "1b-Programming-for-EOR",
       "coursePath": "Year-1/1b-Programming-for-EOR",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/2a-Finance-for-EOR/index.html": {
-      "title": "Finance for EOR",
+      "title": "Finance for EOR { .ch-title }",
       "courseName": "2a-Finance-for-EOR",
       "coursePath": "Year-1/2a-Finance-for-EOR",
       "curriculumStatus": "current",
@@ -3650,7 +3643,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/accumulation-point.html": {
-      "title": "Accumulation Point",
+      "title": "Accumulation Point in a Metric Space",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -3664,7 +3657,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html": {
-      "title": "Affine Transformation and Linearity",
+      "title": "Affine Map",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -3789,13 +3782,6 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
-    "Year-1/2a-Math-III-Analysis/euclidean-space.html": {
-      "title": "Euclidean Space (Math III: Analysis)",
-      "courseName": "2a-Math-III-Analysis",
-      "coursePath": "Year-1/2a-Math-III-Analysis",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
     "Year-1/2a-Math-III-Analysis/exterior-of-a-set.html": {
       "title": "Exterior of a Set",
       "courseName": "2a-Math-III-Analysis",
@@ -3804,7 +3790,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/extreme-value-theorem-generalized-version.html": {
-      "title": "Extreme Value Theorem Generalized Version",
+      "title": "Extreme Value Theorem on Compact Sets",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -3852,15 +3838,8 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
-    "Year-1/2a-Math-III-Analysis/hyperplane.html": {
-      "title": "Hyperplane (Math III: Analysis)",
-      "courseName": "2a-Math-III-Analysis",
-      "coursePath": "Year-1/2a-Math-III-Analysis",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
     "Year-1/2a-Math-III-Analysis/image-and-preimage.html": {
-      "title": "Image and Preimage",
+      "title": "Image and Preimage of a Set",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -3881,7 +3860,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/intermediate-value-theorem-generalized-version.html": {
-      "title": "Intermediate Value Theorem Generalized Version",
+      "title": "Intermediate Value Theorem on Connected Sets",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -3903,13 +3882,6 @@
     },
     "Year-1/2a-Math-III-Analysis/limit-superior-and-limit-inferior.html": {
       "title": "Limit Superior and Limit Inferior",
-      "courseName": "2a-Math-III-Analysis",
-      "coursePath": "Year-1/2a-Math-III-Analysis",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/2a-Math-III-Analysis/linear-transformation.html": {
-      "title": "Linear Transformation",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -3986,7 +3958,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/path.html": {
-      "title": "Path (Math III: Analysis)",
+      "title": "Path in a Metric Space",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -4013,13 +3985,6 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
-    "Year-1/2a-Math-III-Analysis/quadratic-form.html": {
-      "title": "Quadratic Form (Math III: Analysis)",
-      "courseName": "2a-Math-III-Analysis",
-      "coursePath": "Year-1/2a-Math-III-Analysis",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
     "Year-1/2a-Math-III-Analysis/radius-and-interval-of-convergence.html": {
       "title": "Radius and Interval of Convergence",
       "courseName": "2a-Math-III-Analysis",
@@ -4036,13 +4001,6 @@
     },
     "Year-1/2a-Math-III-Analysis/real-analytic-function.html": {
       "title": "Real Analytic Function",
-      "courseName": "2a-Math-III-Analysis",
-      "coursePath": "Year-1/2a-Math-III-Analysis",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/2a-Math-III-Analysis/real-coordinate-space.html": {
-      "title": "Real Coordinate Space",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -4084,7 +4042,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/taylor-series.html": {
-      "title": "Taylor Series (Math III: Analysis)",
+      "title": "Taylor Series",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -4112,7 +4070,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/total-derivative-as-a-linear-transformation.html": {
-      "title": "Total Derivative as a Linear Transformation",
+      "title": "Total Derivative as a Linear Map",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -4182,7 +4140,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Microeconomics-for-EOR/index.html": {
-      "title": "Microeconomics for EOR",
+      "title": "Microeconomics for EOR { .ch-title }",
       "courseName": "2a-Microeconomics-for-EOR",
       "coursePath": "Year-1/2a-Microeconomics-for-EOR",
       "curriculumStatus": "current",
@@ -4266,7 +4224,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Math-IV-Multivariate-Calculus/global-maximum-and-minimum.html": {
-      "title": "Global Maximum and Minimum",
+      "title": "Global Maximum and Minimum on $\\mathbb R^n$",
       "courseName": "2b-Math-IV-Multivariate-Calculus",
       "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
       "curriculumStatus": "current",
@@ -4364,7 +4322,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Math-IV-Multivariate-Calculus/local-maximum-and-minimum.html": {
-      "title": "Local Maximum and Minimum",
+      "title": "Local Maximum and Minimum on $\\mathbb R^n$",
       "courseName": "2b-Math-IV-Multivariate-Calculus",
       "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
       "curriculumStatus": "current",
@@ -4421,13 +4379,6 @@
     },
     "Year-1/2b-Math-IV-Multivariate-Calculus/nondegenerate-constraint-qualification.html": {
       "title": "Nondegenerate Constraint Qualification",
-      "courseName": "2b-Math-IV-Multivariate-Calculus",
-      "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
-    "Year-1/2b-Math-IV-Multivariate-Calculus/nonnegativity-constraint.html": {
-      "title": "Nonnegativity Constraint (Math IV: Multivariate Calculus)",
       "courseName": "2b-Math-IV-Multivariate-Calculus",
       "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
       "curriculumStatus": "current",
@@ -4490,7 +4441,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Math-IV-Multivariate-Calculus/shadow-price.html": {
-      "title": "Shadow Price (Math IV: Multivariate Calculus)",
+      "title": "Shadow Price in Constrained Optimization",
       "courseName": "2b-Math-IV-Multivariate-Calculus",
       "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
       "curriculumStatus": "current",
@@ -4776,13 +4727,6 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
-    "Year-1/2b-Probability-Distributions/geometric-series.html": {
-      "title": "Geometric Series (Probability Distributions)",
-      "courseName": "2b-Probability-Distributions",
-      "coursePath": "Year-1/2b-Probability-Distributions",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
     "Year-1/2b-Probability-Distributions/jensen-inequality.html": {
       "title": "Jensen Inequality",
       "courseName": "2b-Probability-Distributions",
@@ -4951,13 +4895,6 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
-    "Year-1/2b-Probability-Distributions/taylor-series.html": {
-      "title": "Taylor Series for the Exponential Function",
-      "courseName": "2b-Probability-Distributions",
-      "coursePath": "Year-1/2b-Probability-Distributions",
-      "curriculumStatus": "current",
-      "aiMcq": true
-    },
     "Year-1/2b-Probability-Distributions/total-probability-with-extra-conditioning.html": {
       "title": "Total Probability with Extra Conditioning",
       "courseName": "2b-Probability-Distributions",
@@ -4973,7 +4910,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Statistical-Modelling-for-EOR/index.html": {
-      "title": "Statistical Modelling for EOR",
+      "title": "Statistical Modelling for EOR { .ch-title }",
       "courseName": "2b-Statistical-Modelling-for-EOR",
       "coursePath": "Year-1/2b-Statistical-Modelling-for-EOR",
       "curriculumStatus": "current",
@@ -4987,84 +4924,84 @@
       "aiMcq": true
     },
     "Year-2/1a-Macroeconomics-for-EOR/index.html": {
-      "title": "Macroeconomics for EOR",
+      "title": "Macroeconomics for EOR { .ch-title }",
       "courseName": "1a-Macroeconomics-for-EOR",
       "coursePath": "Year-2/1a-Macroeconomics-for-EOR",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/index.html": {
-      "title": "Math V: Advanced Linear Algebra",
+      "title": "Math V: Advanced Linear Algebra { .ch-title }",
       "courseName": "1a-Math-V-Advanced-Linear-Algebra",
       "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/1a-Statistical-Inference/index.html": {
-      "title": "Statistical Inference",
+      "title": "Statistical Inference { .ch-title }",
       "courseName": "1a-Statistical-Inference",
       "coursePath": "Year-2/1a-Statistical-Inference",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/1b-Linear-Models-in-Statistics/index.html": {
-      "title": "Linear Models in Statistics",
+      "title": "Linear Models in Statistics { .ch-title }",
       "courseName": "1b-Linear-Models-in-Statistics",
       "coursePath": "Year-2/1b-Linear-Models-in-Statistics",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/1b-Math-VI-Convexity-and-Optimization/index.html": {
-      "title": "Math VI: Convexity and Optimization",
+      "title": "Math VI: Convexity and Optimization { .ch-title }",
       "courseName": "1b-Math-VI-Convexity-and-Optimization",
       "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/1b-Stochastic-Operations-Research/index.html": {
-      "title": "Stochastic Operations Research",
+      "title": "Stochastic Operations Research { .ch-title }",
       "courseName": "1b-Stochastic-Operations-Research",
       "coursePath": "Year-2/1b-Stochastic-Operations-Research",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/2a-Discrete-Operations-Research/index.html": {
-      "title": "Discrete Operations Research",
+      "title": "Discrete Operations Research { .ch-title }",
       "courseName": "2a-Discrete-Operations-Research",
       "coursePath": "Year-2/2a-Discrete-Operations-Research",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/2a-Introduction-to-Econometrics/index.html": {
-      "title": "Introduction to Econometrics",
+      "title": "Introduction to Econometrics { .ch-title }",
       "courseName": "2a-Introduction-to-Econometrics",
       "coursePath": "Year-2/2a-Introduction-to-Econometrics",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/index.html": {
-      "title": "Life Insurance",
+      "title": "Life Insurance { .ch-title }",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/2b-Dynamic-Econometrics/index.html": {
-      "title": "Dynamic Econometrics",
+      "title": "Dynamic Econometrics { .ch-title }",
       "courseName": "2b-Dynamic-Econometrics",
       "coursePath": "Year-2/2b-Dynamic-Econometrics",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/2b-Game-Theory/index.html": {
-      "title": "Game Theory",
+      "title": "Game Theory { .ch-title }",
       "courseName": "2b-Game-Theory",
       "coursePath": "Year-2/2b-Game-Theory",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/index.html": {
-      "title": "Risk Insurance",
+      "title": "Risk Insurance { .ch-title }",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
@@ -5950,8 +5887,7 @@
       "Year-1/1a-OR-Modelling/constraint.html"
     ],
     "Year-1/1a-OR-Modelling/normal-demand-distribution.html": [
-      "Year-1/1a-OR-Modelling/continuous-newsvendor-rule.html",
-      "Year-1/1a-OR-Modelling/standard-normal-distribution.html"
+      "Year-1/1a-OR-Modelling/continuous-newsvendor-rule.html"
     ],
     "Year-1/1a-OR-Modelling/objective-coefficient-range.html": [
       "Year-1/1a-OR-Modelling/sensitivity-analysis.html",
@@ -6086,7 +6022,6 @@
     "Year-1/1a-OR-Modelling/spanning-tree.html": [
       "Year-1/1a-OR-Modelling/tree.html"
     ],
-    "Year-1/1a-OR-Modelling/standard-normal-distribution.html": [],
     "Year-1/1a-OR-Modelling/surplus-variable.html": [
       "Year-1/1a-OR-Modelling/constraint.html",
       "Year-1/1a-OR-Modelling/nonnegativity-constraint.html"
@@ -6589,9 +6524,6 @@
       "Year-1/1a-Math-I-Calculus/set.html",
       "Year-1/1a-Math-I-Calculus/subset.html"
     ],
-    "Year-1/1b-Math-II-Linear-Algebra/projection-matrix.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/subspace.html"
-    ],
     "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html": [
       "Year-1/1b-Math-II-Linear-Algebra/matrix-product.html",
       "Year-1/1b-Math-II-Linear-Algebra/transpose.html",
@@ -6604,6 +6536,12 @@
     "Year-1/1b-Math-II-Linear-Algebra/rank.html": [
       "Year-1/1b-Math-II-Linear-Algebra/matrix.html",
       "Year-1/1b-Math-II-Linear-Algebra/range-of-a-linear-map.html"
+    ],
+    "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html": [
+      "Year-1/1a-Math-I-Calculus/cartesian-coordinate-system.html",
+      "Year-1/1b-Math-II-Linear-Algebra/vector-space.html",
+      "Year-1/1b-Math-II-Linear-Algebra/coordinate.html",
+      "Year-1/1b-Math-II-Linear-Algebra/vector.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/ring.html": [
       "Year-1/1b-Math-II-Linear-Algebra/abelian-group.html",
@@ -7105,7 +7043,7 @@
       "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html"
     ],
     "Year-1/2a-Math-III-Analysis/discrete-metric.html": [
-      "Year-1/2a-Math-III-Analysis/real-coordinate-space.html",
+      "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html",
       "Year-1/2a-Math-III-Analysis/metric-and-metric-space.html"
     ],
     "Year-1/2a-Math-III-Analysis/equivalent-formulation-of-continuity.html": [
@@ -7116,12 +7054,6 @@
     ],
     "Year-1/2a-Math-III-Analysis/equivalent-norms.html": [
       "Year-1/2a-Math-III-Analysis/norm-and-normed-vector-space.html",
-      "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html",
-      "Year-1/1b-Math-II-Linear-Algebra/vector-space.html"
-    ],
-    "Year-1/2a-Math-III-Analysis/euclidean-space.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/euclidean-space.html",
-      "Year-1/1b-Math-II-Linear-Algebra/inner-product.html",
       "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html",
       "Year-1/1b-Math-II-Linear-Algebra/vector-space.html"
     ],
@@ -7161,12 +7093,6 @@
       "Year-1/1b-Math-II-Linear-Algebra/field.html",
       "Year-1/1b-Math-II-Linear-Algebra/vector-space.html"
     ],
-    "Year-1/2a-Math-III-Analysis/hyperplane.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/vector-space.html",
-      "Year-1/1b-Math-II-Linear-Algebra/subspace.html",
-      "Year-1/1b-Math-II-Linear-Algebra/dimension.html",
-      "Year-1/1b-Math-II-Linear-Algebra/linear-map.html"
-    ],
     "Year-1/2a-Math-III-Analysis/image-and-preimage.html": [
       "Year-1/1a-Math-I-Calculus/domain.html",
       "Year-1/1a-Math-I-Calculus/codomain.html"
@@ -7198,15 +7124,8 @@
       "Year-1/1a-Math-I-Calculus/infimum.html",
       "Year-1/1a-Math-I-Calculus/limit-of-a-sequence.html"
     ],
-    "Year-1/2a-Math-III-Analysis/linear-transformation.html": [
-      "Year-1/2a-Math-III-Analysis/homogeneous-function.html",
-      "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html",
-      "Year-1/1b-Math-II-Linear-Algebra/linear-map.html",
-      "Year-1/1b-Math-II-Linear-Algebra/vector-space.html",
-      "Year-1/1b-Math-II-Linear-Algebra/matrix.html"
-    ],
     "Year-1/2a-Math-III-Analysis/maximum-norm.html": [
-      "Year-1/2a-Math-III-Analysis/real-coordinate-space.html",
+      "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html",
       "Year-1/2a-Math-III-Analysis/norm-and-normed-vector-space.html",
       "Year-1/2a-Math-III-Analysis/metric-and-metric-space.html",
       "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html"
@@ -7264,12 +7183,6 @@
       "Year-1/1a-Math-I-Calculus/monomial-and-power-function.html",
       "Year-1/2a-Math-III-Analysis/infinite-series-of-functions.html"
     ],
-    "Year-1/2a-Math-III-Analysis/quadratic-form.html": [
-      "Year-1/2a-Math-III-Analysis/homogeneous-polynomial.html",
-      "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html",
-      "Year-1/1b-Math-II-Linear-Algebra/symmetric-matrix.html",
-      "Year-1/1b-Math-II-Linear-Algebra/matrix.html"
-    ],
     "Year-1/2a-Math-III-Analysis/radius-and-interval-of-convergence.html": [
       "Year-1/2a-Math-III-Analysis/power-series.html"
     ],
@@ -7279,12 +7192,6 @@
     "Year-1/2a-Math-III-Analysis/real-analytic-function.html": [
       "Year-1/2a-Math-III-Analysis/open-and-closed-sets-in-a-metric-space.html",
       "Year-1/2a-Math-III-Analysis/convergence-of-power-series.html"
-    ],
-    "Year-1/2a-Math-III-Analysis/real-coordinate-space.html": [
-      "Year-1/1a-Math-I-Calculus/cartesian-coordinate-system.html",
-      "Year-1/1b-Math-II-Linear-Algebra/vector-space.html",
-      "Year-1/1b-Math-II-Linear-Algebra/coordinate.html",
-      "Year-1/1b-Math-II-Linear-Algebra/vector.html"
     ],
     "Year-1/2a-Math-III-Analysis/root-test.html": [
       "Year-1/1a-Math-I-Calculus/infinite-series.html",
@@ -7299,7 +7206,7 @@
       "Year-1/2a-Math-III-Analysis/metric-and-metric-space.html"
     ],
     "Year-1/2a-Math-III-Analysis/taxicab-metric.html": [
-      "Year-1/2a-Math-III-Analysis/real-coordinate-space.html",
+      "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html",
       "Year-1/2a-Math-III-Analysis/metric-and-metric-space.html",
       "Year-1/2a-Math-III-Analysis/norm-and-normed-vector-space.html",
       "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html"
@@ -7327,9 +7234,8 @@
       "Year-1/1a-Math-I-Calculus/finite-and-infinite-sets.html"
     ],
     "Year-1/2a-Math-III-Analysis/total-derivative-as-a-linear-transformation.html": [
-      "Year-1/2a-Math-III-Analysis/linear-transformation.html",
-      "Year-1/2a-Math-III-Analysis/convergence-in-a-metric-space.html",
       "Year-1/1b-Math-II-Linear-Algebra/linear-map.html",
+      "Year-1/2a-Math-III-Analysis/convergence-in-a-metric-space.html",
       "Year-1/1b-Math-II-Linear-Algebra/matrix.html"
     ],
     "Year-1/2a-Math-III-Analysis/uniform-continuity-between-metric-spaces.html": [
@@ -7382,7 +7288,7 @@
       "Year-1/1b-Math-II-Linear-Algebra/matrix.html"
     ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/bordered-matrix-test.html": [
-      "Year-1/2a-Math-III-Analysis/quadratic-form.html",
+      "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html",
       "Year-1/1b-Math-II-Linear-Algebra/rank.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/principal-minors-and-sylvesters-criterion.html"
     ],
@@ -7400,7 +7306,7 @@
       "Year-1/1a-Math-I-Calculus/function.html"
     ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html": [
-      "Year-1/2a-Math-III-Analysis/real-coordinate-space.html",
+      "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html",
       "Year-1/1b-Math-II-Linear-Algebra/vector.html"
     ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/envelope-theorem-for-constrained-optimization.html": [
@@ -7518,10 +7424,6 @@
       "Year-1/1b-Math-II-Linear-Algebra/rank.html",
       "Year-1/2a-Math-III-Analysis/jacobian-matrix.html"
     ],
-    "Year-1/2b-Math-IV-Multivariate-Calculus/nonnegativity-constraint.html": [
-      "Year-1/1a-Math-I-Calculus/inequality.html",
-      "Year-1/2a-Math-III-Analysis/real-coordinate-space.html"
-    ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/parametric-constrained-optimization-problem.html": [
       "Year-1/2b-Math-IV-Multivariate-Calculus/method-of-lagrange-for-equality-constraints.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/method-of-lagrange-for-inequality-constrained-maximization.html"
@@ -7535,7 +7437,7 @@
       "Year-1/1b-Math-II-Linear-Algebra/definite-matrix.html"
     ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/quadratic-form-on-a-constraint-set.html": [
-      "Year-1/2a-Math-III-Analysis/quadratic-form.html",
+      "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/independent-linear-constraint-system.html",
       "Year-1/1b-Math-II-Linear-Algebra/definite-matrix.html"
     ],
@@ -7569,7 +7471,7 @@
     ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/tensor-contraction-for-taylor-terms.html": [
       "Year-1/2b-Math-IV-Multivariate-Calculus/third-order-derivative-tensor.html",
-      "Year-1/2a-Math-III-Analysis/quadratic-form.html"
+      "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html"
     ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/third-order-derivative-tensor.html": [
       "Year-1/2b-Math-IV-Multivariate-Calculus/higher-order-partial-derivative.html",
@@ -7724,10 +7626,6 @@
       "Year-1/1b-Probability-Theory-for-EOR/expectation.html",
       "Year-1/1a-Math-I-Calculus/inequality.html"
     ],
-    "Year-1/2b-Probability-Distributions/geometric-series.html": [
-      "Year-1/1a-Math-I-Calculus/infinite-series.html",
-      "Year-1/1a-Math-I-Calculus/limit-of-a-sequence.html"
-    ],
     "Year-1/2b-Probability-Distributions/jensen-inequality.html": [
       "Year-1/1b-Probability-Theory-for-EOR/expectation.html",
       "Year-1/1a-Math-I-Calculus/convexity-and-concavity.html"
@@ -7816,11 +7714,6 @@
     "Year-1/2b-Probability-Distributions/taking-out-what-is-known.html": [
       "Year-1/2b-Probability-Distributions/conditional-expectation-given-a-random-variable.html"
     ],
-    "Year-1/2b-Probability-Distributions/taylor-series.html": [
-      "Year-1/1a-Math-I-Calculus/infinite-series.html",
-      "Year-1/1a-Math-I-Calculus/exponential-function.html",
-      "Year-1/1a-Math-I-Calculus/factorial.html"
-    ],
     "Year-1/2b-Probability-Distributions/total-probability-with-extra-conditioning.html": [
       "Year-1/1b-Probability-Theory-for-EOR/law-of-total-probability.html",
       "Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html"
@@ -7903,7 +7796,7 @@
     "Year-1/1a-Math-I-Calculus/cartesian-coordinate-system.html": [
       "Year-1/1a-Math-I-Calculus/graph-of-a-function.html",
       "Year-1/1b-Math-II-Linear-Algebra/complex-plane-cartesian-coordinate-system.html",
-      "Year-1/2a-Math-III-Analysis/real-coordinate-space.html"
+      "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html"
     ],
     "Year-1/1a-Math-I-Calculus/cauchy-sequence.html": [],
     "Year-1/1a-Math-I-Calculus/chain-rule.html": [
@@ -8029,8 +7922,7 @@
       "Year-1/1b-Probability-Theory-for-EOR/normal-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html",
       "Year-1/2b-Probability-Distributions/exponential-limit.html",
-      "Year-1/2b-Probability-Distributions/moment-generating-function.html",
-      "Year-1/2b-Probability-Distributions/taylor-series.html"
+      "Year-1/2b-Probability-Distributions/moment-generating-function.html"
     ],
     "Year-1/1a-Math-I-Calculus/exponentiation-and-power.html": [
       "Year-1/1a-Math-I-Calculus/exponential-function.html",
@@ -8048,8 +7940,7 @@
     "Year-1/1a-Math-I-Calculus/factorial.html": [
       "Year-1/1a-Math-I-Calculus/gamma-function.html",
       "Year-1/1b-Probability-Theory-for-EOR/binomial-coefficient.html",
-      "Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html",
-      "Year-1/2b-Probability-Distributions/taylor-series.html"
+      "Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html"
     ],
     "Year-1/1a-Math-I-Calculus/finite-and-infinite-sets.html": [
       "Year-1/1a-Math-I-Calculus/infinity.html",
@@ -8161,7 +8052,6 @@
       "Year-1/2b-Math-IV-Multivariate-Calculus/binding-and-nonbinding-constraints.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/complementary-slackness.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/kuhn-tucker-lagrangian.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/nonnegativity-constraint.html",
       "Year-1/2b-Probability-Distributions/chebyshev-inequality.html",
       "Year-1/2b-Probability-Distributions/generalized-markov-inequality.html"
     ],
@@ -8177,9 +8067,7 @@
       "Year-1/1a-Math-I-Calculus/p-series.html",
       "Year-1/2a-Math-III-Analysis/infinite-series-of-functions.html",
       "Year-1/2a-Math-III-Analysis/ratio-test.html",
-      "Year-1/2a-Math-III-Analysis/root-test.html",
-      "Year-1/2b-Probability-Distributions/geometric-series.html",
-      "Year-1/2b-Probability-Distributions/taylor-series.html"
+      "Year-1/2a-Math-III-Analysis/root-test.html"
     ],
     "Year-1/1a-Math-I-Calculus/infinity.html": [],
     "Year-1/1a-Math-I-Calculus/inflection-point.html": [],
@@ -8266,8 +8154,7 @@
       "Year-1/2b-Probability-Distributions/almost-sure-convergence.html",
       "Year-1/2b-Probability-Distributions/convergence-in-distribution.html",
       "Year-1/2b-Probability-Distributions/convergence-in-probability.html",
-      "Year-1/2b-Probability-Distributions/exponential-limit.html",
-      "Year-1/2b-Probability-Distributions/geometric-series.html"
+      "Year-1/2b-Probability-Distributions/exponential-limit.html"
     ],
     "Year-1/1a-Math-I-Calculus/local-extremum.html": [
       "Year-1/1a-Math-I-Calculus/first-order-condition.html",
@@ -8945,9 +8832,6 @@
     "Year-1/1a-OR-Modelling/spanning-tree.html": [
       "Year-1/1a-OR-Modelling/minimum-spanning-tree.html"
     ],
-    "Year-1/1a-OR-Modelling/standard-normal-distribution.html": [
-      "Year-1/1a-OR-Modelling/normal-demand-distribution.html"
-    ],
     "Year-1/1a-OR-Modelling/surplus-variable.html": [
       "Year-1/1a-OR-Modelling/artificial-variable.html"
     ],
@@ -9116,7 +9000,7 @@
     "Year-1/1b-Math-II-Linear-Algebra/continuum-hypothesis.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/coordinate.html": [
       "Year-1/1b-Math-II-Linear-Algebra/origin.html",
-      "Year-1/2a-Math-III-Analysis/real-coordinate-space.html"
+      "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/countable-and-uncountable-sets.html": [
       "Year-1/1b-Math-II-Linear-Algebra/cantors-diagonal-argument.html",
@@ -9152,8 +9036,7 @@
     "Year-1/1b-Math-II-Linear-Algebra/diagonalizable-matrix.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/dimension.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-linear-maps.html",
-      "Year-1/2a-Math-III-Analysis/hyperplane.html"
+      "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-linear-maps.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/direct-sum.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/distance-between-point-and-line.html": [],
@@ -9182,9 +9065,7 @@
     "Year-1/1b-Math-II-Linear-Algebra/euclidean-distance.html": [
       "Year-1/1b-Math-II-Linear-Algebra/distance-between-point-and-line.html"
     ],
-    "Year-1/1b-Math-II-Linear-Algebra/euclidean-space.html": [
-      "Year-1/2a-Math-III-Analysis/euclidean-space.html"
-    ],
+    "Year-1/1b-Math-II-Linear-Algebra/euclidean-space.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/eulers-formula.html": [
       "Year-1/1b-Math-II-Linear-Algebra/eulers-identity.html"
     ],
@@ -9239,7 +9120,6 @@
       "Year-1/1b-Math-II-Linear-Algebra/orthogonal-vectors.html",
       "Year-1/1b-Math-II-Linear-Algebra/point-normal-equation-of-a-plane.html",
       "Year-1/2a-Math-III-Analysis/directional-derivative.html",
-      "Year-1/2a-Math-III-Analysis/euclidean-space.html",
       "Year-1/2a-Math-III-Analysis/gradient.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/invariant-subspace.html": [],
@@ -9275,9 +9155,7 @@
       "Year-1/1b-Math-II-Linear-Algebra/linear-operator.html",
       "Year-1/1b-Math-II-Linear-Algebra/range-of-a-linear-map.html",
       "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html",
-      "Year-1/2a-Math-III-Analysis/hyperplane.html",
       "Year-1/2a-Math-III-Analysis/jacobian-matrix.html",
-      "Year-1/2a-Math-III-Analysis/linear-transformation.html",
       "Year-1/2a-Math-III-Analysis/total-derivative-as-a-linear-transformation.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/linear-operator.html": [
@@ -9332,8 +9210,6 @@
       "Year-1/1b-Math-II-Linear-Algebra/upper-triangular-matrix.html",
       "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html",
       "Year-1/2a-Math-III-Analysis/jacobian-matrix.html",
-      "Year-1/2a-Math-III-Analysis/linear-transformation.html",
-      "Year-1/2a-Math-III-Analysis/quadratic-form.html",
       "Year-1/2a-Math-III-Analysis/total-derivative-as-a-linear-transformation.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/bordered-hessian-matrix.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/hessian-matrix.html",
@@ -9378,11 +9254,12 @@
     "Year-1/1b-Math-II-Linear-Algebra/power-set.html": [
       "Year-1/1b-Math-II-Linear-Algebra/cantors-theorem.html"
     ],
-    "Year-1/1b-Math-II-Linear-Algebra/projection-matrix.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html": [
       "Year-1/1b-Math-II-Linear-Algebra/definite-matrix.html",
-      "Year-1/2a-Math-III-Analysis/quadratic-form.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/hessian-matrix.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/bordered-matrix-test.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/hessian-matrix.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/quadratic-form-on-a-constraint-set.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/tensor-contraction-for-taylor-terms.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/range-of-a-linear-map.html": [
       "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-linear-maps.html",
@@ -9394,6 +9271,12 @@
       "Year-1/2b-Math-IV-Multivariate-Calculus/jacobian-rank-local-behavior-theorem.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/local-injectivity-surjectivity-and-bijectivity.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/nondegenerate-constraint-qualification.html"
+    ],
+    "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html": [
+      "Year-1/2a-Math-III-Analysis/discrete-metric.html",
+      "Year-1/2a-Math-III-Analysis/maximum-norm.html",
+      "Year-1/2a-Math-III-Analysis/taxicab-metric.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/ring.html": [
       "Year-1/1b-Math-II-Linear-Algebra/field.html"
@@ -9428,10 +9311,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html",
       "Year-1/1b-Math-II-Linear-Algebra/invariant-subspace.html",
       "Year-1/1b-Math-II-Linear-Algebra/kernel.html",
-      "Year-1/1b-Math-II-Linear-Algebra/projection-matrix.html",
       "Year-1/1b-Math-II-Linear-Algebra/range-of-a-linear-map.html",
-      "Year-1/1b-Math-II-Linear-Algebra/sum-of-subspaces.html",
-      "Year-1/2a-Math-III-Analysis/hyperplane.html"
+      "Year-1/1b-Math-II-Linear-Algebra/sum-of-subspaces.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/sum-of-subspaces.html": [
       "Year-1/1b-Math-II-Linear-Algebra/direct-sum.html"
@@ -9439,8 +9320,7 @@
     "Year-1/1b-Math-II-Linear-Algebra/symmetric-group.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/symmetric-matrix.html": [
       "Year-1/1b-Math-II-Linear-Algebra/definite-matrix.html",
-      "Year-1/1b-Math-II-Linear-Algebra/definiteness-and-eigenvalues.html",
-      "Year-1/2a-Math-III-Analysis/quadratic-form.html"
+      "Year-1/1b-Math-II-Linear-Algebra/definiteness-and-eigenvalues.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/system-of-linear-equations.html": [
       "Year-1/1b-Math-II-Linear-Algebra/augmented-matrix.html",
@@ -9472,7 +9352,6 @@
       "Year-1/1b-Math-II-Linear-Algebra/triangle-inequality-vector-norm.html",
       "Year-1/2a-Math-III-Analysis/directional-derivative.html",
       "Year-1/2a-Math-III-Analysis/equivalent-norms.html",
-      "Year-1/2a-Math-III-Analysis/euclidean-space.html",
       "Year-1/2a-Math-III-Analysis/maximum-norm.html",
       "Year-1/2a-Math-III-Analysis/norm-and-normed-vector-space.html",
       "Year-1/2a-Math-III-Analysis/p-norm-and-p-metric.html",
@@ -9489,6 +9368,7 @@
       "Year-1/1b-Math-II-Linear-Algebra/linear-map.html",
       "Year-1/1b-Math-II-Linear-Algebra/linear-operator.html",
       "Year-1/1b-Math-II-Linear-Algebra/linear-span.html",
+      "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html",
       "Year-1/1b-Math-II-Linear-Algebra/scalar-multiplication.html",
       "Year-1/1b-Math-II-Linear-Algebra/spanning-list.html",
       "Year-1/1b-Math-II-Linear-Algebra/subspace.html",
@@ -9497,15 +9377,11 @@
       "Year-1/1b-Math-II-Linear-Algebra/zero-vector.html",
       "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html",
       "Year-1/2a-Math-III-Analysis/equivalent-norms.html",
-      "Year-1/2a-Math-III-Analysis/euclidean-space.html",
       "Year-1/2a-Math-III-Analysis/homogeneous-polynomial.html",
-      "Year-1/2a-Math-III-Analysis/hyperplane.html",
       "Year-1/2a-Math-III-Analysis/level-set-and-level-curve.html",
-      "Year-1/2a-Math-III-Analysis/linear-transformation.html",
       "Year-1/2a-Math-III-Analysis/monomial-on-rn.html",
       "Year-1/2a-Math-III-Analysis/norm-and-normed-vector-space.html",
-      "Year-1/2a-Math-III-Analysis/polynomial-on-rn.html",
-      "Year-1/2a-Math-III-Analysis/real-coordinate-space.html"
+      "Year-1/2a-Math-III-Analysis/polynomial-on-rn.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/vector.html": [
       "Year-1/1b-Math-II-Linear-Algebra/inner-product.html",
@@ -9513,11 +9389,11 @@
       "Year-1/1b-Math-II-Linear-Algebra/parametric-representation-of-a-line.html",
       "Year-1/1b-Math-II-Linear-Algebra/plane.html",
       "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html",
+      "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html",
       "Year-1/1b-Math-II-Linear-Algebra/system-of-linear-equations.html",
       "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html",
       "Year-1/2a-Math-III-Analysis/directional-derivative.html",
       "Year-1/2a-Math-III-Analysis/gradient.html",
-      "Year-1/2a-Math-III-Analysis/real-coordinate-space.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/third-order-derivative-tensor.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/velocity-vector-of-a-curve.html"
@@ -9850,9 +9726,7 @@
     "Year-1/2a-Math-III-Analysis/index.html": [],
     "Year-1/2a-Math-III-Analysis/accumulation-point.html": [],
     "Year-1/2a-Math-III-Analysis/adherent-point-and-closure-of-a-set.html": [],
-    "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html": [
-      "Year-1/2a-Math-III-Analysis/linear-transformation.html"
-    ],
+    "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html": [],
     "Year-1/2a-Math-III-Analysis/big-o-and-little-o-notations.html": [],
     "Year-1/2a-Math-III-Analysis/bolzano-weierstrass-theorem.html": [],
     "Year-1/2a-Math-III-Analysis/boundary-of-a-set.html": [
@@ -9902,7 +9776,6 @@
     "Year-1/2a-Math-III-Analysis/discrete-metric.html": [],
     "Year-1/2a-Math-III-Analysis/equivalent-formulation-of-continuity.html": [],
     "Year-1/2a-Math-III-Analysis/equivalent-norms.html": [],
-    "Year-1/2a-Math-III-Analysis/euclidean-space.html": [],
     "Year-1/2a-Math-III-Analysis/exterior-of-a-set.html": [
       "Year-1/2a-Math-III-Analysis/boundary-of-a-set.html"
     ],
@@ -9924,13 +9797,9 @@
     "Year-1/2a-Math-III-Analysis/heine-borel-theorem.html": [],
     "Year-1/2a-Math-III-Analysis/heine-cantor-theorem.html": [],
     "Year-1/2a-Math-III-Analysis/homogeneous-function.html": [
-      "Year-1/2a-Math-III-Analysis/homogeneous-polynomial.html",
-      "Year-1/2a-Math-III-Analysis/linear-transformation.html"
+      "Year-1/2a-Math-III-Analysis/homogeneous-polynomial.html"
     ],
-    "Year-1/2a-Math-III-Analysis/homogeneous-polynomial.html": [
-      "Year-1/2a-Math-III-Analysis/quadratic-form.html"
-    ],
-    "Year-1/2a-Math-III-Analysis/hyperplane.html": [],
+    "Year-1/2a-Math-III-Analysis/homogeneous-polynomial.html": [],
     "Year-1/2a-Math-III-Analysis/image-and-preimage.html": [
       "Year-1/2a-Math-III-Analysis/equivalent-formulation-of-continuity.html",
       "Year-1/2a-Math-III-Analysis/level-set-and-level-curve.html"
@@ -9961,9 +9830,6 @@
     ],
     "Year-1/2a-Math-III-Analysis/limit-superior-and-limit-inferior.html": [
       "Year-1/2a-Math-III-Analysis/root-test.html"
-    ],
-    "Year-1/2a-Math-III-Analysis/linear-transformation.html": [
-      "Year-1/2a-Math-III-Analysis/total-derivative-as-a-linear-transformation.html"
     ],
     "Year-1/2a-Math-III-Analysis/maximum-norm.html": [],
     "Year-1/2a-Math-III-Analysis/metric-and-metric-space.html": [
@@ -10028,24 +9894,12 @@
     "Year-1/2a-Math-III-Analysis/power-series.html": [
       "Year-1/2a-Math-III-Analysis/radius-and-interval-of-convergence.html"
     ],
-    "Year-1/2a-Math-III-Analysis/quadratic-form.html": [
-      "Year-1/2b-Math-IV-Multivariate-Calculus/bordered-matrix-test.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/quadratic-form-on-a-constraint-set.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/tensor-contraction-for-taylor-terms.html"
-    ],
     "Year-1/2a-Math-III-Analysis/radius-and-interval-of-convergence.html": [
       "Year-1/2a-Math-III-Analysis/convergence-of-power-series.html"
     ],
     "Year-1/2a-Math-III-Analysis/ratio-test.html": [],
     "Year-1/2a-Math-III-Analysis/real-analytic-function.html": [
       "Year-1/2a-Math-III-Analysis/taylor-series.html"
-    ],
-    "Year-1/2a-Math-III-Analysis/real-coordinate-space.html": [
-      "Year-1/2a-Math-III-Analysis/discrete-metric.html",
-      "Year-1/2a-Math-III-Analysis/maximum-norm.html",
-      "Year-1/2a-Math-III-Analysis/taxicab-metric.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/nonnegativity-constraint.html"
     ],
     "Year-1/2a-Math-III-Analysis/root-test.html": [],
     "Year-1/2a-Math-III-Analysis/sequentially-compact-set.html": [
@@ -10177,7 +10031,6 @@
       "Year-1/2b-Math-IV-Multivariate-Calculus/method-of-lagrange-for-equality-constraints.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/method-of-lagrange-for-inequality-constrained-maximization.html"
     ],
-    "Year-1/2b-Math-IV-Multivariate-Calculus/nonnegativity-constraint.html": [],
     "Year-1/2b-Math-IV-Multivariate-Calculus/parametric-constrained-optimization-problem.html": [
       "Year-1/2b-Math-IV-Multivariate-Calculus/value-function.html"
     ],
@@ -10285,7 +10138,6 @@
     "Year-1/2b-Probability-Distributions/generalized-markov-inequality.html": [
       "Year-1/2b-Probability-Distributions/chernoff-bound.html"
     ],
-    "Year-1/2b-Probability-Distributions/geometric-series.html": [],
     "Year-1/2b-Probability-Distributions/jensen-inequality.html": [],
     "Year-1/2b-Probability-Distributions/joint-cdf-continuous.html": [],
     "Year-1/2b-Probability-Distributions/joint-cdf-discrete.html": [],
@@ -10334,7 +10186,6 @@
     "Year-1/2b-Probability-Distributions/sum-of-two-iid-uniforms.html": [],
     "Year-1/2b-Probability-Distributions/survivor-function.html": [],
     "Year-1/2b-Probability-Distributions/taking-out-what-is-known.html": [],
-    "Year-1/2b-Probability-Distributions/taylor-series.html": [],
     "Year-1/2b-Probability-Distributions/total-probability-with-extra-conditioning.html": [],
     "Year-1/2b-Probability-Distributions/weak-law-of-large-numbers.html": [],
     "Year-1/2b-Statistical-Modelling-for-EOR/index.html": [],
@@ -10955,7 +10806,7 @@
       "Year-1/1a-Math-I-Calculus/supremum.html",
       "Year-1/1a-Math-I-Calculus/inequality.html",
       "Year-1/1a-Math-I-Calculus/limit-of-a-sequence.html",
-      "Year-1/2a-Math-III-Analysis/euclidean-space.html",
+      "Year-1/1b-Math-II-Linear-Algebra/euclidean-space.html",
       "Year-1/1a-Math-I-Calculus/cauchy-sequence.html",
       "Year-1/1b-Math-II-Linear-Algebra/field.html"
     ],
@@ -11485,6 +11336,7 @@
       "Year-1/1a-OR-Modelling/slack-variable.html"
     ],
     "Year-1/1a-OR-Modelling/normal-demand-distribution.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/standard-normal-distribution.html",
       "Year-1/1a-OR-Modelling/uniform-demand-distribution.html",
       "Year-1/1a-OR-Modelling/weibull-demand-distribution.html"
     ],
@@ -11650,10 +11502,6 @@
       "Year-1/1a-OR-Modelling/minimum-spanning-tree.html",
       "Year-1/1a-OR-Modelling/dijkstra-prim-method.html",
       "Year-1/1a-OR-Modelling/kruskal-method.html"
-    ],
-    "Year-1/1a-OR-Modelling/standard-normal-distribution.html": [
-      "Year-1/1a-OR-Modelling/normal-demand-distribution.html",
-      "Year-1/1a-OR-Modelling/continuous-newsvendor-rule.html"
     ],
     "Year-1/1a-OR-Modelling/surplus-variable.html": [
       "Year-1/1a-OR-Modelling/slack-variable.html",
@@ -12054,7 +11902,8 @@
     "Year-1/1b-Math-II-Linear-Algebra/euclidean-space.html": [
       "Year-1/1b-Math-II-Linear-Algebra/coordinate.html",
       "Year-1/1b-Math-II-Linear-Algebra/euclidean-distance.html",
-      "Year-1/1b-Math-II-Linear-Algebra/inner-product.html"
+      "Year-1/1b-Math-II-Linear-Algebra/inner-product.html",
+      "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/eulers-formula.html": [
       "Year-1/1b-Math-II-Linear-Algebra/complex-exponentiation.html",
@@ -12121,7 +11970,6 @@
       "Year-1/1b-Math-II-Linear-Algebra/plane.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/idempotent-matrix.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/projection-matrix.html",
       "Year-1/1b-Math-II-Linear-Algebra/linear-operator.html",
       "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html",
       "Year-1/1b-Math-II-Linear-Algebra/diagonalizable-matrix.html"
@@ -12140,7 +11988,7 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/inner-product.html": [
       "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html",
-      "Year-1/1b-Math-II-Linear-Algebra/projection-matrix.html",
+      "Year-1/1b-Math-II-Linear-Algebra/idempotent-matrix.html",
       "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html",
       "Year-1/1b-Math-II-Linear-Algebra/coordinate.html",
       "Year-1/1b-Math-II-Linear-Algebra/euclidean-space.html"
@@ -12247,7 +12095,7 @@
       "Year-1/1b-Math-II-Linear-Algebra/inner-product.html",
       "Year-1/1b-Math-II-Linear-Algebra/distance-between-point-and-line.html",
       "Year-1/1b-Math-II-Linear-Algebra/skew-lines.html",
-      "Year-1/2a-Math-III-Analysis/hyperplane.html"
+      "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/origin.html": [
       "Year-1/1b-Math-II-Linear-Algebra/euclidean-space.html",
@@ -12258,7 +12106,7 @@
       "Year-1/1b-Math-II-Linear-Algebra/angle-between-vectors.html",
       "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html",
       "Year-1/1b-Math-II-Linear-Algebra/cauchy-schwarz-inequality.html",
-      "Year-1/1b-Math-II-Linear-Algebra/projection-matrix.html"
+      "Year-1/1b-Math-II-Linear-Algebra/idempotent-matrix.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/parametric-representation-of-a-line.html": [
       "Year-1/1b-Math-II-Linear-Algebra/plane.html",
@@ -12287,15 +12135,14 @@
       "Year-1/1b-Math-II-Linear-Algebra/parametric-representation-of-a-line.html",
       "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html",
       "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html",
-      "Year-1/1b-Math-II-Linear-Algebra/skew-lines.html",
-      "Year-1/2a-Math-III-Analysis/hyperplane.html"
+      "Year-1/1b-Math-II-Linear-Algebra/skew-lines.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/point-normal-equation-of-a-plane.html": [
       "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html",
       "Year-1/1b-Math-II-Linear-Algebra/distance-between-point-and-line.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/polar-coordinate-system.html": [
-      "Year-1/2a-Math-III-Analysis/real-coordinate-space.html",
+      "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html",
       "Year-1/1b-Math-II-Linear-Algebra/2-argument-arctangent.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/polynomial-greatest-common-divisor.html": [
@@ -12311,13 +12158,6 @@
       "Year-1/1b-Math-II-Linear-Algebra/continuum-hypothesis.html",
       "Year-1/1b-Probability-Theory-for-EOR/sample-space.html",
       "Year-1/1b-Math-II-Linear-Algebra/aleph-null.html"
-    ],
-    "Year-1/1b-Math-II-Linear-Algebra/projection-matrix.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/inner-product.html",
-      "Year-1/1b-Math-II-Linear-Algebra/orthogonal-vectors.html",
-      "Year-1/1b-Math-II-Linear-Algebra/linear-map.html",
-      "Year-1/1b-Math-II-Linear-Algebra/matrix-product.html",
-      "Year-1/1b-Math-II-Linear-Algebra/idempotent-matrix.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html": [
       "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html",
@@ -12338,6 +12178,10 @@
       "Year-1/1b-Math-II-Linear-Algebra/kernel.html",
       "Year-1/1b-Math-II-Linear-Algebra/linear-independence.html",
       "Year-1/1b-Math-II-Linear-Algebra/row-echelon-form.html"
+    ],
+    "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/euclidean-space.html",
+      "Year-1/1b-Math-II-Linear-Algebra/polar-coordinate-system.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/ring.html": [
       "Year-1/1b-Math-II-Linear-Algebra/group.html",
@@ -12614,7 +12458,7 @@
     "Year-1/1b-Probability-Theory-for-EOR/first-success-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/geometric-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/memoryless-property.html",
-      "Year-1/2b-Probability-Distributions/geometric-series.html"
+      "Year-1/1a-Math-I-Calculus/geometric-series.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/folded-normal-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/transformation-of-a-continuous-random-variable.html",
@@ -12641,7 +12485,7 @@
       "Year-1/1b-Probability-Theory-for-EOR/first-success-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/memoryless-property.html",
       "Year-1/1b-Probability-Theory-for-EOR/negative-binomial-distribution.html",
-      "Year-1/2b-Probability-Distributions/geometric-series.html"
+      "Year-1/1a-Math-I-Calculus/geometric-series.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/half-life.html": [
       "Year-1/1b-Probability-Theory-for-EOR/arrival-rate.html"
@@ -12802,7 +12646,7 @@
       "Year-1/1b-Probability-Theory-for-EOR/expectation.html",
       "Year-1/2b-Probability-Distributions/poisson-splitting.html",
       "Year-1/2b-Probability-Distributions/conditioning-trick-for-variance.html",
-      "Year-1/2b-Probability-Distributions/taylor-series.html",
+      "Year-1/2a-Math-III-Analysis/taylor-series.html",
       "Year-1/2b-Probability-Distributions/exponential-limit.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/poisson-process.html": [
@@ -12957,8 +12801,7 @@
       "Year-1/1b-Math-II-Linear-Algebra/determinant.html",
       "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html",
       "Year-1/1b-Math-II-Linear-Algebra/parametric-representation-of-a-line.html",
-      "Year-1/1b-Math-II-Linear-Algebra/plane.html",
-      "Year-1/2a-Math-III-Analysis/hyperplane.html"
+      "Year-1/1b-Math-II-Linear-Algebra/plane.html"
     ],
     "Year-1/2a-Math-III-Analysis/big-o-and-little-o-notations.html": [
       "Year-1/1a-Math-I-Calculus/asymptotic-equivalence.html",
@@ -12991,7 +12834,7 @@
       "Year-1/2a-Math-III-Analysis/open-and-closed-sets-in-a-metric-space.html"
     ],
     "Year-1/2a-Math-III-Analysis/complete-metric-space.html": [
-      "Year-1/2a-Math-III-Analysis/euclidean-space.html"
+      "Year-1/1b-Math-II-Linear-Algebra/euclidean-space.html"
     ],
     "Year-1/2a-Math-III-Analysis/connected-and-disconnected-sets.html": [
       "Year-1/2a-Math-III-Analysis/path-connectedness.html",
@@ -13033,12 +12876,6 @@
       "Year-1/2a-Math-III-Analysis/strongly-equivalent-metrics.html",
       "Year-1/2a-Math-III-Analysis/topologically-equivalent-metrics.html"
     ],
-    "Year-1/2a-Math-III-Analysis/euclidean-space.html": [
-      "Year-1/2a-Math-III-Analysis/complete-metric-space.html",
-      "Year-1/1b-Math-II-Linear-Algebra/euclidean-distance.html",
-      "Year-1/2a-Math-III-Analysis/real-coordinate-space.html",
-      "Year-1/1a-Math-I-Calculus/real-number.html"
-    ],
     "Year-1/2a-Math-III-Analysis/exterior-of-a-set.html": [
       "Year-1/2a-Math-III-Analysis/interior-of-a-set.html"
     ],
@@ -13066,13 +12903,8 @@
       "Year-1/2a-Math-III-Analysis/partial-derivative.html"
     ],
     "Year-1/2a-Math-III-Analysis/homogeneous-polynomial.html": [
-      "Year-1/2a-Math-III-Analysis/linear-transformation.html",
+      "Year-1/1b-Math-II-Linear-Algebra/linear-map.html",
       "Year-1/2a-Math-III-Analysis/monomial-on-rn.html"
-    ],
-    "Year-1/2a-Math-III-Analysis/hyperplane.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/plane.html",
-      "Year-1/1b-Math-II-Linear-Algebra/normal-vector.html",
-      "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html"
     ],
     "Year-1/2a-Math-III-Analysis/image-and-preimage.html": [
       "Year-1/1a-Math-I-Calculus/range.html",
@@ -13097,16 +12929,10 @@
     "Year-1/2a-Math-III-Analysis/level-set-and-level-curve.html": [
       "Year-1/2a-Math-III-Analysis/gradient.html",
       "Year-1/2a-Math-III-Analysis/directional-derivative.html",
-      "Year-1/2a-Math-III-Analysis/hyperplane.html"
+      "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html"
     ],
     "Year-1/2a-Math-III-Analysis/limit-superior-and-limit-inferior.html": [
       "Year-1/2a-Math-III-Analysis/accumulation-point.html"
-    ],
-    "Year-1/2a-Math-III-Analysis/linear-transformation.html": [
-      "Year-1/2a-Math-III-Analysis/quadratic-form.html",
-      "Year-1/2a-Math-III-Analysis/homogeneous-polynomial.html",
-      "Year-1/2a-Math-III-Analysis/monomial-on-rn.html",
-      "Year-1/2a-Math-III-Analysis/polynomial-on-rn.html"
     ],
     "Year-1/2a-Math-III-Analysis/maximum-norm.html": [
       "Year-1/2a-Math-III-Analysis/p-norm-and-p-metric.html",
@@ -13118,9 +12944,9 @@
       "Year-1/1b-Math-II-Linear-Algebra/complex-absolute-value.html"
     ],
     "Year-1/2a-Math-III-Analysis/monomial-on-rn.html": [
-      "Year-1/2a-Math-III-Analysis/linear-transformation.html",
+      "Year-1/1b-Math-II-Linear-Algebra/linear-map.html",
       "Year-1/2a-Math-III-Analysis/homogeneous-polynomial.html",
-      "Year-1/2a-Math-III-Analysis/quadratic-form.html"
+      "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html"
     ],
     "Year-1/2a-Math-III-Analysis/norm-and-normed-vector-space.html": [
       "Year-1/2a-Math-III-Analysis/p-norm-and-p-metric.html",
@@ -13166,8 +12992,8 @@
       "Year-1/2b-Probability-Distributions/convergence-in-probability.html"
     ],
     "Year-1/2a-Math-III-Analysis/polynomial-on-rn.html": [
-      "Year-1/2a-Math-III-Analysis/linear-transformation.html",
-      "Year-1/2a-Math-III-Analysis/quadratic-form.html"
+      "Year-1/1b-Math-II-Linear-Algebra/linear-map.html",
+      "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html"
     ],
     "Year-1/2a-Math-III-Analysis/power-series.html": [
       "Year-1/2a-Math-III-Analysis/convergence-of-power-series.html",
@@ -13175,11 +13001,6 @@
       "Year-1/2a-Math-III-Analysis/taylor-series.html",
       "Year-1/1a-Math-I-Calculus/polynomial.html",
       "Year-1/2a-Math-III-Analysis/weierstrass-approximation-theorem.html"
-    ],
-    "Year-1/2a-Math-III-Analysis/quadratic-form.html": [
-      "Year-1/2a-Math-III-Analysis/linear-transformation.html",
-      "Year-1/2a-Math-III-Analysis/monomial-on-rn.html",
-      "Year-1/2a-Math-III-Analysis/polynomial-on-rn.html"
     ],
     "Year-1/2a-Math-III-Analysis/radius-and-interval-of-convergence.html": [
       "Year-1/2a-Math-III-Analysis/ratio-test.html",
@@ -13192,10 +13013,6 @@
     "Year-1/2a-Math-III-Analysis/real-analytic-function.html": [
       "Year-1/1a-Math-I-Calculus/differentiability-class.html",
       "Year-1/2a-Math-III-Analysis/power-series.html"
-    ],
-    "Year-1/2a-Math-III-Analysis/real-coordinate-space.html": [
-      "Year-1/2a-Math-III-Analysis/euclidean-space.html",
-      "Year-1/1b-Math-II-Linear-Algebra/polar-coordinate-system.html"
     ],
     "Year-1/2a-Math-III-Analysis/root-test.html": [
       "Year-1/2a-Math-III-Analysis/ratio-test.html",
@@ -13299,7 +13116,7 @@
     "Year-1/2b-Math-IV-Multivariate-Calculus/complementary-slackness.html": [
       "Year-1/2b-Math-IV-Multivariate-Calculus/kuhn-tucker-conditions-with-nonnegativity-constraints.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/method-of-lagrange-for-inequality-constrained-maximization.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/nonnegativity-constraint.html",
+      "Year-1/1a-OR-Modelling/nonnegativity-constraint.html",
       "Year-1/1a-OR-Modelling/slack-variable.html"
     ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/convex-and-concave-functions-on-rn.html": [
@@ -13418,17 +13235,12 @@
       "Year-1/1a-Math-I-Calculus/inverse-function-theorem.html"
     ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/multivariate-taylor-approximations.html": [
-      "Year-1/2a-Math-III-Analysis/quadratic-form.html",
+      "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/higher-order-partial-derivative.html"
     ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/nondegenerate-constraint-qualification.html": [
       "Year-1/2b-Math-IV-Multivariate-Calculus/method-of-lagrange-for-mixed-constraints.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/general-method-of-lagrange.html"
-    ],
-    "Year-1/2b-Math-IV-Multivariate-Calculus/nonnegativity-constraint.html": [
-      "Year-1/2b-Math-IV-Multivariate-Calculus/kuhn-tucker-conditions-with-nonnegativity-constraints.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/complementary-slackness.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/kuhn-tucker-lagrangian.html"
     ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/parametric-constrained-optimization-problem.html": [
       "Year-1/2b-Math-IV-Multivariate-Calculus/value-function.html",
@@ -13650,10 +13462,6 @@
     "Year-1/2b-Probability-Distributions/generalized-markov-inequality.html": [
       "Year-1/2b-Probability-Distributions/chebyshev-inequality.html"
     ],
-    "Year-1/2b-Probability-Distributions/geometric-series.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/geometric-distribution.html",
-      "Year-1/1b-Probability-Theory-for-EOR/first-success-distribution.html"
-    ],
     "Year-1/2b-Probability-Distributions/jensen-inequality.html": [
       "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html",
       "Year-1/2b-Probability-Distributions/moment-generating-function.html"
@@ -13716,7 +13524,7 @@
       "Year-1/2b-Probability-Distributions/mgf-location-scale.html"
     ],
     "Year-1/2b-Probability-Distributions/moment-generating-function.html": [
-      "Year-1/2b-Probability-Distributions/taylor-series.html",
+      "Year-1/2a-Math-III-Analysis/taylor-series.html",
       "Year-1/1b-Probability-Theory-for-EOR/bernoulli-distribution.html",
       "Year-1/2b-Probability-Distributions/jensen-inequality.html"
     ],
@@ -13763,10 +13571,6 @@
     "Year-1/2b-Probability-Distributions/taking-out-what-is-known.html": [
       "Year-1/2b-Probability-Distributions/adams-law.html",
       "Year-1/2b-Probability-Distributions/eves-law.html"
-    ],
-    "Year-1/2b-Probability-Distributions/taylor-series.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html",
-      "Year-1/2b-Probability-Distributions/moment-generating-function.html"
     ],
     "Year-1/2b-Probability-Distributions/total-probability-with-extra-conditioning.html": [
       "Year-1/2b-Probability-Distributions/adams-law-with-extra-conditioning.html"
