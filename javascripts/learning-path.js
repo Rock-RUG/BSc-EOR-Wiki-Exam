@@ -3426,67 +3426,18 @@ document.addEventListener("DOMContentSwitch",ensureStyles);window.addEventListen
     padding: 0 12px !important;
   }
 
-  /* Continuous all-around shadow with no abrupt outer boundary. */
+  /* Chrome: the dock variables in learning-path.css (scheme and theme aware)
+     own the opaque paper, 1px border, top highlight and soft shadow. Shadows
+     are box-shadow only: a filter drop-shadow chain on a fixed element cost
+     a GPU pass per scrolled frame. */
   #lp-mobile-sheet .lp-msheet{
     position: relative !important;
-    border-width: 1.25px !important;
-    box-shadow:
-      0 0 0 1px rgba(255,255,255,.30),
-      0 0 0 1.35px rgba(15,23,42,.08) !important;
-    filter:
-      drop-shadow(0 0 1px rgba(15,23,42,.05))
-      drop-shadow(0 0 6px rgba(15,23,42,.05))
-      drop-shadow(0 4px 12px rgba(15,23,42,.05))
-      drop-shadow(0 10px 22px rgba(15,23,42,.045))
-      drop-shadow(0 18px 34px rgba(15,23,42,.03)) !important;
-    -webkit-filter:
-      drop-shadow(0 0 1px rgba(15,23,42,.05))
-      drop-shadow(0 0 6px rgba(15,23,42,.05))
-      drop-shadow(0 4px 12px rgba(15,23,42,.05))
-      drop-shadow(0 10px 22px rgba(15,23,42,.045))
-      drop-shadow(0 18px 34px rgba(15,23,42,.03)) !important;
-  }
-
-  html[data-md-color-scheme="default"] #lp-mobile-sheet .lp-msheet,
-  body[data-md-color-scheme="default"] #lp-mobile-sheet .lp-msheet{
-    background: #fff !important;
-    border-color: rgba(27,31,36,.16) !important;
-    box-shadow:
-      0 0 0 1px rgba(255,255,255,.66),
-      0 0 0 1.45px rgba(27,31,36,.10) !important;
-    filter:
-      drop-shadow(0 0 1px rgba(15,23,42,.045))
-      drop-shadow(0 0 6px rgba(15,23,42,.045))
-      drop-shadow(0 4px 12px rgba(15,23,42,.045))
-      drop-shadow(0 10px 22px rgba(15,23,42,.04))
-      drop-shadow(0 18px 34px rgba(15,23,42,.026)) !important;
-    -webkit-filter:
-      drop-shadow(0 0 1px rgba(15,23,42,.045))
-      drop-shadow(0 0 6px rgba(15,23,42,.045))
-      drop-shadow(0 4px 12px rgba(15,23,42,.045))
-      drop-shadow(0 10px 22px rgba(15,23,42,.04))
-      drop-shadow(0 18px 34px rgba(15,23,42,.026)) !important;
-  }
-
-  html[data-md-color-scheme="slate"] #lp-mobile-sheet .lp-msheet,
-  body[data-md-color-scheme="slate"] #lp-mobile-sheet .lp-msheet{
-    background: rgb(31,35,41) !important;
-    border-color: rgba(255,255,255,.16) !important;
-    box-shadow:
-      0 0 0 1px rgba(255,255,255,.06),
-      0 0 0 1.3px rgba(255,255,255,.10) !important;
-    filter:
-      drop-shadow(0 0 1px rgba(0,0,0,.16))
-      drop-shadow(0 0 6px rgba(0,0,0,.16))
-      drop-shadow(0 4px 12px rgba(0,0,0,.18))
-      drop-shadow(0 10px 22px rgba(0,0,0,.18))
-      drop-shadow(0 18px 34px rgba(0,0,0,.13)) !important;
-    -webkit-filter:
-      drop-shadow(0 0 1px rgba(0,0,0,.16))
-      drop-shadow(0 0 6px rgba(0,0,0,.16))
-      drop-shadow(0 4px 12px rgba(0,0,0,.18))
-      drop-shadow(0 10px 22px rgba(0,0,0,.18))
-      drop-shadow(0 18px 34px rgba(0,0,0,.13)) !important;
+    border-width: 1px !important;
+    border-color: var(--lp-dock-line, rgba(27,31,36,.15)) !important;
+    background: var(--lp-dock-bg, #fff) !important;
+    box-shadow: var(--lp-dock-shadow, 0 6px 16px rgba(15,23,42,.10), 0 18px 40px rgba(15,23,42,.12)) !important;
+    filter: none !important;
+    -webkit-filter: none !important;
   }
 
   /* The reused inner side-panel must not create a second glow layer. */
@@ -5063,14 +5014,7 @@ try{document.addEventListener("mk:map-opened",syncOpenMap);}catch(_){}})();(func
   html body #lp-mobile-sheet .lp-msheet{
     filter:none !important;
     -webkit-filter:none !important;
-    box-shadow:
-      0 0 0 1px rgba(255,255,255,.30),
-      0 0 0 1.35px rgba(15,23,42,.08),
-      0 0 1px rgba(15,23,42,.05),
-      0 0 6px rgba(15,23,42,.05),
-      0 4px 12px rgba(15,23,42,.05),
-      0 10px 22px rgba(15,23,42,.045),
-      0 18px 34px rgba(15,23,42,.03) !important;
+    box-shadow: var(--lp-dock-shadow, 0 6px 16px rgba(15,23,42,.10), 0 18px 40px rgba(15,23,42,.12)) !important;
   }
   html body #lp-mobile-sheet .lp-msheet-title{font-size:14px !important;line-height:1.2 !important;}
   html body #lp-mobile-sheet .lp-msheet-sub{font-size:12px !important;}
