@@ -22,6 +22,5 @@
 		\addplot[blue, thick, domain=0.001:1, samples=200] {exp(-1/x)};
 		\node[anchor=north east] at (axis description cs:0.99,0.99) {$f(x)=\begin{dcases}\mathrm{e}^{-1/x}, & x>0,\\ 0, & x\le0\end{dcases}$};
 	\end{axis}
-	\node[anchor=north, align=flush center, text width=8cm] at ([yshift=-2pt]current axis.outer south) {Every derivative of $f$ at $0$ is $0$, so its Taylor series at $0$ is the zero series, yet $f(x)>0$ for $x>0$: $f$ is infinitely differentiable but not real analytic at $0$.};
 \end{tikzpicture}
 \end{document}

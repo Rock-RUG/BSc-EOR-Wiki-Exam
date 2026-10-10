@@ -18,6 +18,5 @@
 	\foreach \p in {(50,0),(80,0),(0,100),(40,40)} {\draw[red, thick] \p circle (2.4pt);}
 	\node[red!70!black, font=\small, anchor=west] at (43,42) {basic but infeasible ($s_1=-20$)};
 	\node[red!70!black, font=\small, anchor=north] at (65,-3) {$(50,0)$, $(80,0)$: some $s_i<0$};
-	\node[anchor=north, align=flush center, text width=10cm] at (50,-14) {BFS: a basic solution with all $x_j\ge0$ and $s_i\ge0$, i.e. a corner of $F$; the simplex method only visits BFSs; degenerate BFS: a basic variable equal to $0$};
-\end{tikzpicture}
+	\end{tikzpicture}
 \end{document}

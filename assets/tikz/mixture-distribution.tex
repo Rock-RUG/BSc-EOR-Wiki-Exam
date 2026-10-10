@@ -21,6 +21,6 @@
 		\addplot[blue, very thick, domain=-4:4.4] {0.4*exp(-(x+1.5)^2/(2*0.36))/(0.6*sqrt(2*pi))+0.6*exp(-(x-1.5)^2/(2*0.64))/(0.8*sqrt(2*pi))};
 		\addlegendentry{mixture $f=0.4f_1+0.6f_2$}
 	\end{axis}
-	\node[anchor=north, font=\small, align=flush center, text width=9.6cm] at ([yshift=-2pt]current axis.outer south) {First pick the component $Z$ (with $\mathbb{P}(Z=1)=0.4$), then draw $X$ from that component. The density of $X$ is the weighted average of the component densities};
+	
 \end{tikzpicture}
 \end{document}

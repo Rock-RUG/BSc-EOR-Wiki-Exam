@@ -21,6 +21,5 @@
 	\draw[->, very thick, red] (A) -- (C) node[midway, below left] {$2/5$};
 	\draw[->, very thick, red] (C) -- (E) node[midway, below] {$0/4$};
 	\draw[->, very thick, red] (E) -- (F) node[midway, below right] {$0/3$};
-	\node[anchor=north, align=flush center, text width=10cm] at (3.5,-2.2) {Flow/capacity on each edge, current flow value $5$. Along $A\!-\!C\!-\!E\!-\!F$ (red) the residual capacities are $3,4,3$, so the bottleneck is $\delta=\min(3,4,3)=3$: adding $3$ raises the flow value from $5$ to $8$. An augmenting path uses only edges with positive residual capacity (forward spare capacity or backward cancellation); no augmenting path left $\iff$ the flow is maximal.};
-\end{tikzpicture}
+	\end{tikzpicture}
 \end{document}

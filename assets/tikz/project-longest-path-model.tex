@@ -19,6 +19,5 @@
 	\draw[->, very thick, red] (n3) -- (T) node[midway, above, font=\small] {$E$: $2$};
 	\draw[->, thick, gray] (n2) to[bend right=35] node[midway, below, font=\small] {$F$: $6$} (T);
 	\foreach \n/\e/\p in {S/0/{left}, n1/3/{above}, n2/2/{below}, n3/7/{above}, T/9/{right}} {\node[blue!70!black, font=\small, \p=4pt of \n] {earliest $\e$};}
-	\node[anchor=north, align=flush center, text width=10cm] at (3.6,-2.4) {An activity starts only when all activities into its start vertex are finished, so earliest times are longest-path lengths: $S\!-\!2\!-\!3\!-\!T$ has $2+5+2=9$ (critical, no slack), $S\!-\!2\!-\!T$ has $8$. It is solved as a shortest path with negated lengths (no cycles).};
-\end{tikzpicture}
+	\end{tikzpicture}
 \end{document}

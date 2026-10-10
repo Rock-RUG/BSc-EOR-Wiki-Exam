@@ -17,6 +17,5 @@
 	\foreach \i/\j in {1/2, 2/1, 2/2, 2/3, 3/2} {\draw[->, gray] (r\i) -- (c\j);}
 	\draw[->, green!50!black, very thick] (S) -- (r1); \draw[->, green!50!black, very thick] (r1) -- (c2); \draw[->, green!50!black, very thick] (c2) -- (T);
 	\draw[->, green!50!black, very thick] (S) -- (r2); \draw[->, green!50!black, very thick] (r2) -- (c1); \draw[->, green!50!black, very thick] (c1) -- (T);
-	\node[anchor=north, align=flush center, text width=10cm] at (3.8,-1.9) {Middle edges only where the reduced cost is $0$: $(1,2),(2,1),(2,2),(2,3),(3,2)$. All capacities are $1$, so each row and column is used at most once; max flow $2$ $=$ maximum zero matching $<3$, so the Hungarian algorithm must create more zeros. The min cut gives the minimum zero cover.};
-\end{tikzpicture}
+	\end{tikzpicture}
 \end{document}

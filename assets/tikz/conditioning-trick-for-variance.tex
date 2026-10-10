@@ -19,6 +19,6 @@
 		\addplot[ycomb, red, very thick, mark=*, mark size=1.6pt] coordinates {(0.1,0.0498) (1.1,0.1494) (2.1,0.2240) (3.1,0.2240) (4.1,0.1680) (5.1,0.1008) (6.1,0.0504) (7.1,0.0216) (8.1,0.0081) (9.1,0.0027)};
 		\addlegendentry{$X=3$: mean $3$, variance $3$}
 	\end{axis}
-	\node[anchor=north, font=\small, align=flush center, text width=9.6cm] at ([yshift=-2pt]current axis.outer south) {$X\in\{1,3\}$ equally likely and $Y\mid X\sim\operatorname{Pois}(X)$. Within the cases: $\mathbb{E}[\operatorname{Var}(Y\mid X)]=\tfrac{1+3}2=2$. Between the case means $1$ and $3$: $\operatorname{Var}(\mathbb{E}[Y\mid X])=1$. Hence $\operatorname{Var}(Y)=2+1=3$, without finding the distribution of $Y$};
+	
 \end{tikzpicture}
 \end{document}

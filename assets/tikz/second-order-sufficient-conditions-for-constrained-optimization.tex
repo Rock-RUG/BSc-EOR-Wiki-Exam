@@ -19,6 +19,5 @@
 	\draw[->, red, very thick] (2.0,1.4) -- (2.64,2.04) node[above, lab, yshift=1pt] {$\nabla f$};
 	\fill[green!50!black] (2.0,1.4) circle (2.5pt);
 	\node[green!40!black, anchor=north east, font=\small] at (1.93,1.33) {$x^\ast$};
-	\node[anchor=north, align=flush center, text width=10cm] at (2.65,-0.5) {first-order candidate $x^\ast$: $\nabla f\parallel\nabla h$, the level set of $f$ touches $h(x)=c$. Second-order check on the tangent directions $T=\{h: Dh(x^\ast)h=0\}$ (plus the binding inequalities): $h^{\top}D^2_{xx}L(x^\ast,\lambda^\ast)h<0$ for all $h\in T\setminus\{0\}$ $\Rightarrow$ strict local max; $>0$ $\Rightarrow$ strict local min; checked via the last $n-r$ leading principal minors of the bordered Hessian};
 \end{tikzpicture}
 \end{document}

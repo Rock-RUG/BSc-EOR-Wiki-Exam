@@ -15,6 +15,5 @@
 	\draw[->, thick] (it) -- (q);
 	\draw[->, thick] (q) -- (o) node[midway, right] {yes};
 	\draw[->, thick] (q.east) -- ++(0.8,0) |- (it.east) node[pos=0.25, right] {no};
-	\node[anchor=north, align=flush center, text width=10cm] at (0,-4.8) {Simplex: pivot until no negative reduced cost; shortest path: label a vertex per step until the target is labelled; augmenting paths: augment until no path remains; dynamic programming: one stage per step. A heuristic follows the same loop but stops without an optimality guarantee. An iteration need not improve the objective (degenerate pivot): the stopping condition is what certifies the result.};
-\end{tikzpicture}
+	\end{tikzpicture}
 \end{document}

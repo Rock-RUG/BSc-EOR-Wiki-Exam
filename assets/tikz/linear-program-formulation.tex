@@ -12,6 +12,5 @@
 	\node[st, fill=green!12] (s4) at (0,-4.5) {4. write the objective function\\ $\max z=3x_s+2x_t$};
 	\node[st, fill=green!12] (s5) at (0,-6.0) {5. write the constraints\\ $2x_s+x_t\le100$, $x_s+x_t\le80$, $x_s\le40$, $x\ge0$};
 	\foreach \a/\b in {s1/s2, s2/s3, s3/s4, s4/s5} {\draw[->, thick] (\a) -- (\b);}
-	\node[anchor=north, align=flush center, text width=10cm] at (0,-6.75) {Checks along the way: every variable has a unit and a meaning; objective and constraints are linear in $x$; each resource or requirement gives one row; sign and integrality restrictions are stated; the solution is interpreted back in words.};
-\end{tikzpicture}
+	\end{tikzpicture}
 \end{document}

@@ -19,6 +19,5 @@
 		\addplot3[surf, shader=faceted, faceted color=green!50!black, colormap={pale}{color=(green!8) color=(green!45)}, samples=14, domain=-1.2:1.2, domain y=-1.2:1.2, z buffer=sort] {x^2-y^2};
 		\node[font=\small, anchor=north, yshift=-8pt] at (axis cs:0,0,-2.3) {$f=x_1^2-x_2^2$};
 	\end{axis}
-	\node[anchor=north, align=flush center, text width=10cm, font=\small, yshift=-22pt] at (p2.south) {On an open convex $C$: $f$ convex $\iff$ $H_f(x)$ positive semidefinite for all $x\in C$; concave $\iff$ negative semidefinite; an indefinite Hessian anywhere rules out both.};
 \end{tikzpicture}
 \end{document}

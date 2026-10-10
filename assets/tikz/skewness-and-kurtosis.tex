@@ -31,6 +31,6 @@
 		\addplot[red, very thick, domain=-4.4:4.4] {exp(-abs(x)*sqrt(2))/sqrt(2)};
 		\addlegendentry{Laplace: excess $3$}
 	\end{axis}
-	\node[anchor=north, font=\small, align=flush center, text width=10cm] at ([yshift=-2pt]$(p1.outer south)!0.5!(p2.outer south)$) {Skewness $=\mathbb{E}\big[\big(\tfrac{X-\mu}{\sigma}\big)^3\big]$ and kurtosis $=\mathbb{E}\big[\big(\tfrac{X-\mu}{\sigma}\big)^4\big]$ describe shape, not location or scale. Right panel: both densities have variance $1$, yet the Laplace law (excess kurtosis $3$, heavy tails) puts more probability far from the mean.};
+	
 \end{tikzpicture}
 \end{document}

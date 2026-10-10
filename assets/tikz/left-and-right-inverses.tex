@@ -19,7 +19,7 @@
 		\draw[->, green!50!black, thick, dashed] (2.85,-0.05) to[bend right=10] (0.15,-0.55);
 		\node[blue] at (1.5,1.85) {$f$ injective};
 		\node[green!40!black, anchor=north] at (1.5,-1.75) {$\ell$ with $\ell\circ f=\mathrm{id}_A$};
-		\node[anchor=north, align=flush center, text width=4.6cm] at (1.5,-2.25) {left inverse: send each image back; unused points of $B$ go anywhere};
+		\node[anchor=north] at (1.5,-2.25) {left inverse};
 	\end{scope}
 	\begin{scope}[xshift=6.0cm]
 		\draw[thick, blue!60!black] (0,0) ellipse (0.7 and 1.6); \node[blue!60!black, anchor=south] at (0,1.65) {$A$};
@@ -33,8 +33,7 @@
 		\draw[->, green!50!black, thick, dashed] (2.85,-0.65) to[bend left=25] (0.15,-0.95);
 		\node[blue] at (1.5,1.85) {$f$ surjective};
 		\node[green!40!black, anchor=north] at (1.5,-1.75) {$r$ with $f\circ r=\mathrm{id}_B$};
-		\node[anchor=north, align=flush center, text width=4.6cm] at (1.5,-2.25) {right inverse: pick one preimage for every point of $B$};
+		\node[anchor=north] at (1.5,-2.25) {right inverse};
 	\end{scope}
-	\node[anchor=north, align=flush center, text width=10.4cm] at (4.5,-3.85) {$f$ has a left inverse $\iff$ injective, a right inverse $\iff$ surjective, both $\iff$ bijective, and then $\ell=r=f^{-1}$. For matrices: full column rank gives the left inverse $(A^{\top}A)^{-1}A^{\top}$, full row rank the right inverse $A^{\top}(AA^{\top})^{-1}$.};
 \end{tikzpicture}
 \end{document}

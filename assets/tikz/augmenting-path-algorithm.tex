@@ -13,6 +13,5 @@
 	\node[st, fill=blue!10] (s3) at (0,-3.9) {path $A\!-\!C\!-\!D\!-\!F$: residuals $2,2,2$, $\delta=2$; value $8$};
 	\node[st, fill=green!12] (s4) at (0,-5.2) {no augmenting path left ($D\!-\!F$, $E\!-\!F$ saturated):\\ maximum flow $8$};
 	\foreach \a/\b in {s0/s1, s1/s2, s2/s3, s3/s4} {\draw[->, thick] (\a) -- (\b);}
-	\node[anchor=north, align=flush center, text width=10cm] at (0,-6.0) {Each augmentation finds a source-to-sink path in the residual network, computes its bottleneck $\delta$, adds $\delta$ on forward edges and subtracts it on backward ones, and updates the residual capacities. With integer capacities the value rises by at least $1$ per step, so the method terminates.};
-\end{tikzpicture}
+	\end{tikzpicture}
 \end{document}

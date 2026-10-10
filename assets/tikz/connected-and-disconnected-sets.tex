@@ -12,10 +12,10 @@
 	\fill[blue!60!black] plot[smooth cycle, tension=0.8] coordinates {(0.8,0.2) (1.3,0.5) (1.8,0.1) (1.6,-0.4) (1.0,-0.4)};
 	\node[blue!60!black] at (-1.1,1.15) {$\boldsymbol{U}$};
 	\node[red!60!black] at (1.3,1.15) {$\boldsymbol{V}$};
-	\node[anchor=north, align=center] at (0.1,-1.1) {disconnected: $\boldsymbol{E}$ (dark) $\subseteq\boldsymbol{U}\cup\boldsymbol{V}$,\\ $\boldsymbol{U}\cap\boldsymbol{V}=\varnothing$, both parts non-empty};
+	\node[anchor=north] at (0.1,-1.1) {disconnected};
 	\begin{scope}[xshift=6.3cm]
 		\fill[blue!60!black] plot[smooth cycle, tension=0.9] coordinates {(-1.4,0.2) (-0.6,0.7) (0.4,0.5) (1.2,0.1) (0.6,-0.5) (-0.5,-0.3) (-1.2,-0.5)};
-		\node[anchor=north, align=center] at (0,-1.1) {connected: $\boldsymbol{E}$ cannot be split\\ by two disjoint open sets};
+		\node[anchor=north] at (0,-1.1) {connected};
 	\end{scope}
 \end{tikzpicture}
 \end{document}

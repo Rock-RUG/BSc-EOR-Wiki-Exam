@@ -21,6 +21,6 @@
 		\addplot[green!50!black, very thick, domain=0:3.1] {exp(-3*x)};
 		\addlegendentry{$\mathbb{P}(\min>t)=\mathrm{e}^{-3t}$, rate $3$}
 	\end{axis}
-	\node[anchor=north, font=\small, align=flush center, text width=9.6cm] at ([yshift=-2pt]current axis.outer south) {The minimum exceeds $t$ only if both do: $\mathbb{P}(\min(X_1,X_2)>t)=\mathrm{e}^{-t}\,\mathrm{e}^{-2t}=\mathrm{e}^{-3t}$, again exponential, with the rates added. Moreover $\mathbb{P}(X_1\text{ is the minimum})=\dfrac{\lambda_1}{\lambda_1+\lambda_2}=\tfrac13$};
+	
 \end{tikzpicture}
 \end{document}

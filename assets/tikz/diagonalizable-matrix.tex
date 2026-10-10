@@ -14,7 +14,7 @@
 		\draw[red, thick] (-1.9,1.9) -- (1.5,-1.5);
 		\draw[->, blue, very thick] (0,0) -- (1,1) node[right] {$p_1$ ($\lambda=3$)};
 		\draw[->, red, very thick] (0,0) -- (1,-1) node[right] {$p_2$ ($\lambda=1$)};
-		\node[anchor=north, align=flush center, text width=5cm] at (0.2,-1.7) {$A=\begin{pmatrix}2&1\\1&2\end{pmatrix}$: two independent eigenvectors $\Rightarrow$ diagonalizable, $P^{-1}AP=\operatorname{diag}(3,1)$};
+		\node[anchor=north] at (0.2,-1.7) {diagonalizable};
 	\end{scope}
 	\begin{scope}[xshift=5.6cm]
 		\draw[->] (-1.8,0) -- (2.4,0);
@@ -23,7 +23,7 @@
 		\draw[->, blue, very thick] (0,0) -- (1,0) node[below] {$p_1$ ($\lambda=1$)};
 		\draw[->, green!50!black, very thick] (0,0) -- (0,1.2) node[left] {$e_2$};
 		\draw[->, green!50!black, thick, dashed] (0,0) -- (1.2,1.2) node[right] {$Ae_2$};
-		\node[anchor=north, align=flush center, text width=5cm] at (0.2,-1.7) {shear $A=\begin{pmatrix}1&1\\0&1\end{pmatrix}$: $Ae_2$ is not a multiple of $e_2$, only one eigen-direction $\Rightarrow$ defective, not diagonalizable};
+		\node[anchor=north] at (0.2,-1.7) {not diagonalizable};
 	\end{scope}
 \end{tikzpicture}
 \end{document}

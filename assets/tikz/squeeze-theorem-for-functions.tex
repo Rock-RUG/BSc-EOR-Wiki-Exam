@@ -26,6 +26,5 @@
 		\addplot[blue, domain=-0.2:0.2, samples=1500] {x^2*sin(deg(1/x))};
 		\addlegendentry{$x^2\sin(1/x)$}
 	\end{axis}
-	\node[anchor=north, align=flush center, text width=9.6cm] at ([yshift=-2pt]current bounding box.south) {$-x^2\le x^2\sin(1/x)\le x^2$ and both bounds tend to $0$, so $x^2\sin(1/x)\to0$ as $x\to0$.};
 \end{tikzpicture}
 \end{document}

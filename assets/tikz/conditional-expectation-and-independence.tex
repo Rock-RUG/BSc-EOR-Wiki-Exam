@@ -32,6 +32,6 @@
 		\draw[red, very thick] (axis cs:0,0) -- (axis cs:1.05,0);
 		\node[font=\small, anchor=south] at (axis cs:0.55,1.38) {$X=Y^2$: dependent};
 	\end{axis}
-	\node[anchor=north, font=\small, align=flush center, text width=9.6cm] at ([yshift=-2pt]$(dice.outer south)!0.5!(par.outer south)$) {Red: the conditional mean $\mathbb{E}[Y\mid X=x]$. Independence makes it constant ($3.5$ for the dice). The converse fails: for $Y\sim\operatorname{Unif}(-1,1)$ and $X=Y^2$ it is $0$ for every $x$ (the values $\pm\sqrt x$ are equally likely), yet $X$ and $Y$ are dependent};
+	
 \end{tikzpicture}
 \end{document}

@@ -14,6 +14,5 @@
 	\draw[->] (r) -- (a); \draw[->] (r) -- (b); \draw[->] (r) -- (c);
 	\foreach \n in {a,b,c} {\node[red!70!black, anchor=north] at (\n.south) {pruned (fathomed)};}
 	\node[nd, fill=blue!8, text width=9cm] (d) at (0,-4.6) {otherwise: fractional and $z_R>L$ $\Rightarrow$ branch on a fractional variable};
-	\node[anchor=north, align=flush center, text width=10cm] at (0,-5.3) {Pruning keeps the tree small: only nodes that might still contain a better integer solution are split. For minimisation the bound test reads $z_R\ge$ incumbent.};
-\end{tikzpicture}
+	\end{tikzpicture}
 \end{document}

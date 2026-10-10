@@ -20,6 +20,5 @@
 	\draw[red, very thick, dashed] (A) to[bend right=20] (C);
 	\node[red!70!black, below left=2pt of A] {$\deg A=3$};
 	\node[red!70!black, above right=2pt of C] {$\deg C=3$};
-	\node[anchor=north, align=flush center, text width=10cm] at (1.5,-0.9) {Odd vertices: $A$ and $C$. Their cheapest connection is the direct edge, length $4$ (dashed: the duplicated edge), versus $2+3=5$ via $D$ or $3+2=5$ via $B$. Route length $=$ all edges $+$ duplicates $=14+4=18$.\\[2pt] General recipe: find the odd vertices, pair them by a minimum-weight perfect matching on shortest-path distances, add those paths as extra edges, then run the Euler tour algorithm.};
-\end{tikzpicture}
+	\end{tikzpicture}
 \end{document}

@@ -17,6 +17,5 @@
 	\draw (0.03,1) -- (-0.03,1) node[left, font=\small] {$1$};
 	\draw[blue, thick, domain=0.78:7.3, samples=150] plot (\x,{1/\x});
 	\node[blue!70!black, anchor=west] at (0.9,1.22) {$y=\frac1x$};
-	\node[anchor=north, align=flush center, text width=8.6cm] at (3.7,-0.3) {The rectangles have areas $1,\frac12,\frac13,\dots$ and lie above the graph, so $\displaystyle\sum_{n=1}^{N}\frac1n\ge\int_1^{N+1}\frac{\mathrm{d}x}{x}$, which tends to $\infty$.};
 \end{tikzpicture}
 \end{document}

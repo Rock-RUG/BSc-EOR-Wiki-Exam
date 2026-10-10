@@ -23,6 +23,5 @@
 	\draw[->, thick] (6.85,0) -- (7.65,0);
 	\matrix (D) [matrix of math nodes, nodes={minimum size=6.5mm, anchor=center, draw=gray!50}, column sep=-\pgflinewidth, row sep=-\pgflinewidth] at (8.7,0) {|[fill=green!25]| 0 & 0 & 1 \\ 0 & 1 & |[fill=green!25]| 0 \\ 0 & |[fill=green!25]| 0 & 0 \\};
 	\node[anchor=south] at (D.north) {$3$ independent zeros};
-	\node[anchor=north, align=flush center, text width=10.4cm] at (4.35,-1.65) {Uncovered entries $-1$, doubly covered entries $+1$ (those covered once stay). The zero assignment $(1,1),(2,3),(3,2)$ is optimal for the original matrix, with cost $4+7+1=12$: row and column shifts change every assignment by the same amount.};
-\end{tikzpicture}
+	\end{tikzpicture}
 \end{document}

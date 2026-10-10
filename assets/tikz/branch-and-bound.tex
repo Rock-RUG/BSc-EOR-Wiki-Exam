@@ -15,6 +15,5 @@
 	\node[nd, fill=red!10] (ab) at (-0.7,-4.4) {$x_1\ge4$\\ infeasible ($x_1\le3.5$)\\ pruned};
 	\draw[->] (r) -- (a); \draw[->] (r) -- (b);
 	\draw[->] (a) -- (aa); \draw[->] (a) -- (ab);
-	\node[anchor=north, align=flush center, text width=10.4cm] at (-0.5,-5.4) {Branch: split a subproblem on a fractional variable ($x_2\le\lfloor1.25\rfloor$ or $x_2\ge\lceil1.25\rceil$). Bound: each node's LP value bounds all integer solutions below it; prune nodes that cannot beat the incumbent.};
-\end{tikzpicture}
+	\end{tikzpicture}
 \end{document}

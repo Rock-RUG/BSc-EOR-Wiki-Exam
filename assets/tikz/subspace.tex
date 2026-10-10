@@ -17,7 +17,7 @@
 		\draw[->, red, very thick] (0,0) -- (-0.4,0.8) node[above] {$u_2$};
 		\draw[->, green!50!black, thick] (0,0) -- (1.1,0.3) node[right] {$u_1+u_2$};
 		\fill (0,0) circle (1.5pt) node[below right] {$0$};
-		\node[anchor=north, align=flush center, text width=4.4cm] at (0.2,-1.7) {plane through $0$: a subspace ($0\in U$; sums and multiples stay in $U$)};
+	\node[anchor=north] at (0.2,-1.7) {subspace};
 	\end{scope}
 	\begin{scope}[xshift=5.6cm]
 		\draw[->] (0,0) -- (3.0,0) node[right] {$x_1$};
@@ -28,7 +28,7 @@
 		\fill (0,0) circle (1.5pt) node[below right] {$0\notin U$};
 		\draw[->, blue, very thick] (0,0) -- (0.6,1.2) node[left] {$u$};
 		\draw[->, blue!50, very thick, dashed] (0,0) -- (1.2,2.4) node[above] {$2u\notin U$};
-		\node[anchor=north, align=flush center, text width=4.4cm] at (0.2,-1.7) {shifted plane: not a subspace (misses $0$, not closed under scaling)};
+		\node[anchor=north] at (0.2,-1.7) {not a subspace};
 	\end{scope}
 \end{tikzpicture}
 \end{document}
