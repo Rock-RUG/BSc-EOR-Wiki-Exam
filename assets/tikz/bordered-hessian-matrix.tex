@@ -12,6 +12,5 @@
 		|[fill=red!15]| Dg(x^\ast)^{\top} & |[fill=blue!15]| D^2_{xx}L(x^\ast,\lambda^\ast) \\
 	};
 	\node[anchor=south] at (H.north) {$\overline{H}$: size $(m+n)\times(m+n)$};
-	\node[anchor=north, align=flush center, text width=10.2cm] at ([yshift=-4pt]H.south) {Blocks: $m\times m$ zeros (grey); the $m\times n$ border holds the constraint gradients (red); the $n\times n$ block is the Hessian of $L$ in $x$ (blue).\\[2pt] Second-order test for $m$ equality constraints in $n$ variables: inspect the signs of the last $n-m$ leading principal minors of $\overline{H}$ (alternating, starting with $(-1)^{m+1}$, for a max; all $(-1)^m$ for a min). It checks the curvature of $L$ only along directions tangent to the constraints.};
 \end{tikzpicture}
 \end{document}

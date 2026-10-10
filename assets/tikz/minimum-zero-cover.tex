@@ -11,6 +11,5 @@
 	\draw[red, very thick] (Cm-2-1.west) -- (Cm-2-3.east);
 	\draw[red, very thick] (Cm-1-2.north) -- (Cm-3-2.south);
 	\node[anchor=south, font=\small, align=center] at (Cm.north) {zeros in blue,\\ cover lines in red};
-		\node[anchor=north, align=flush center, text width=10cm] at (0,-1.4) {Maximum number of independent zeros: $2$ (e.g. $(1,2)$, $(2,1)$) $=$ minimum number of covering lines (K\"onig). Procedure: mark rows without an assigned zero, then columns with zeros in marked rows, then rows assigned in those columns; cover unmarked rows and marked columns. Here $2<3$ lines: subtract the smallest uncovered value from all uncovered entries, add it where lines cross, and repeat; once $n$ lines are needed, an optimal zero assignment exists.};
 \end{tikzpicture}
 \end{document}
