@@ -3,6 +3,7 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 
+\usepackage{dsfont}
 \begin{document}
 % The pointwise inequality behind Markov: for a nonnegative nondecreasing f, the step
 % f(a) 1{x >= a} lies below f(x) everywhere. Shown for f(x) = x and f(x) = x^2/a.
@@ -22,7 +23,7 @@
 		\draw[red, fill=white] (axis cs:1.5,0.02) circle (2pt);
 		\node[blue, anchor=north west, font=\small] at (axis cs:2.62,2.5) {$f(x)=x$};
 		\node[blue!60, anchor=east, font=\small] at (axis cs:2.08,3.2) {$f(x)=x^2/a$};
-		\node[red, anchor=north west, font=\small] at (axis cs:2.0,1.45) {$f(a)\,\mathbf{1}_{\{x\ge a\}}$};
+		\node[red, anchor=north west, font=\small] at (axis cs:2.0,1.45) {$f(a)\,\mathds{1}_{\{x\ge a\}}$};
 	\end{axis}
 	
 \end{tikzpicture}

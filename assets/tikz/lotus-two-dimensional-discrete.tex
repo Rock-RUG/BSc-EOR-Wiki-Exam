@@ -2,6 +2,7 @@
 \usepackage{amsmath,amssymb}
 \usepackage{tikz}
 
+\usepackage{dsfont}
 \begin{document}
 % Two fair dice and g(x, y) = 1{x + y = 7}: LOTUS sums g times the joint mass over all 36 pairs;
 % only the six pairs on the anti-diagonal contribute.
@@ -21,7 +22,7 @@
 	}
 	\node[font=\small] at (3.5,-0.75) {$x$ (first die)};
 	\node[font=\small, rotate=90] at (-0.75,3.5) {$y$ (second die)};
-	\node[red!75!black, anchor=west, align=left] at (7.2,4.7) {$g(x,y)=\mathbf{1}_{\{x+y=7\}}$ equals $1$\\ on the red pairs, $0$ elsewhere};
+	\node[red!75!black, anchor=west, align=left] at (7.2,4.7) {$g(x,y)=\mathds{1}_{\{x+y=7\}}$ equals $1$\\ on the red pairs, $0$ elsewhere};
 	\node[anchor=west, align=left] at (7.2,2.4) {$\mathbb{E}[g(X,Y)]=\sum_x\sum_yg(x,y)\,\tfrac1{36}$\\[2pt] $=6\cdot\tfrac1{36}=\tfrac16=\mathbb{P}(X+Y=7)$};
 	
 \end{tikzpicture}

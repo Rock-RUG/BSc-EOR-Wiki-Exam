@@ -3,6 +3,7 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta}
 
+\usepackage{dsfont}
 \begin{document}
 % The indicator of an event A equals 1 on A and 0 elsewhere: a Bernoulli(P(A)) variable that
 % records whether A happened.
@@ -24,7 +25,7 @@
 	\draw[->, gray, thick] (-0.65,-0.9) to[bend right=22] (4.8,-0.12);
 	\fill[red] (6.8,0) circle (2pt);
 	\fill[gray] (4.8,0) circle (2pt);
-	\node[anchor=south] at (4.6,1.6) {$\mathbf 1_A(\omega)=\begin{cases}1&\omega\in A\\0&\omega\notin A\end{cases}$};
-	\node[anchor=north, align=center] at (3.0,-1.9) {$\mathbf 1_A\sim\operatorname{Bern}(\mathbb{P}(A))$: $\mathbb{E}[\mathbf 1_A]=\mathbb{P}(A)$, $\operatorname{Var}(\mathbf 1_A)=\mathbb{P}(A)(1-\mathbb{P}(A))$;\\ $\mathbf 1_{A\cap B}=\mathbf 1_A\mathbf 1_B$, $\mathbf 1_{A^c}=1-\mathbf 1_A$};
+	\node[anchor=south] at (4.6,1.6) {$\mathds{1}_A(\omega)=\begin{cases}1&\omega\in A\\0&\omega\notin A\end{cases}$};
+	\node[anchor=north, align=center] at (3.0,-1.9) {$\mathds{1}_A\sim\operatorname{Bern}(\mathbb{P}(A))$: $\mathbb{E}[\mathds{1}_A]=\mathbb{P}(A)$, $\operatorname{Var}(\mathds{1}_A)=\mathbb{P}(A)(1-\mathbb{P}(A))$;\\ $\mathds{1}_{A\cap B}=\mathds{1}_A\mathds{1}_B$, $\mathds{1}_{A^c}=1-\mathds{1}_A$};
 \end{tikzpicture}
 \end{document}
