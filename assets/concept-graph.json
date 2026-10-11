@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1791655878005,
+  "generatedAt": 1791698746732,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -8322,10 +8322,12 @@
       "Year-1/1b-Probability-Theory-for-EOR/expectation.html"
     ],
     "Year-2/2a-Life-Insurance/actuarial-survival-probabilities.html": [
-      "Year-2/2a-Life-Insurance/future-lifetime.html"
+      "Year-2/2a-Life-Insurance/future-lifetime.html",
+      "Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html"
     ],
     "Year-2/2a-Life-Insurance/annuity-certain.html": [
-      "Year-2/2a-Life-Insurance/actuarial-present-value.html"
+      "Year-2/2a-Life-Insurance/actuarial-present-value.html",
+      "Year-1/1a-Math-I-Calculus/geometric-series.html"
     ],
     "Year-2/2a-Life-Insurance/constant-force-interpolation.html": [
       "Year-2/2a-Life-Insurance/life-table.html",
@@ -8358,11 +8360,14 @@
     ],
     "Year-2/2a-Life-Insurance/force-of-mortality.html": [
       "Year-2/2a-Life-Insurance/future-lifetime.html",
-      "Year-1/2b-Probability-Distributions/survivor-function.html"
+      "Year-1/2b-Probability-Distributions/survivor-function.html",
+      "Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html",
+      "Year-1/1a-Math-I-Calculus/derivative-and-differentiability.html"
     ],
     "Year-2/2a-Life-Insurance/future-lifetime.html": [
       "Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html",
-      "Year-1/2b-Probability-Distributions/survivor-function.html"
+      "Year-1/2b-Probability-Distributions/survivor-function.html",
+      "Year-1/1b-Probability-Theory-for-EOR/continuous-random-variable.html"
     ],
     "Year-2/2a-Life-Insurance/future-loss-random-variable.html": [
       "Year-2/2a-Life-Insurance/actuarial-present-value.html",
@@ -8400,7 +8405,8 @@
       "Year-2/2a-Life-Insurance/force-of-mortality.html"
     ],
     "Year-2/2a-Life-Insurance/prospective-policy-value.html": [
-      "Year-2/2a-Life-Insurance/future-loss-random-variable.html"
+      "Year-2/2a-Life-Insurance/future-loss-random-variable.html",
+      "Year-1/2b-Probability-Distributions/conditional-expectation-given-a-random-variable.html"
     ],
     "Year-2/2a-Life-Insurance/pure-endowment.html": [
       "Year-2/2a-Life-Insurance/actuarial-present-value.html",
@@ -8419,7 +8425,9 @@
     ],
     "Year-2/2a-Life-Insurance/uniform-distribution-of-deaths.html": [
       "Year-2/2a-Life-Insurance/life-table.html",
-      "Year-2/2a-Life-Insurance/curtate-future-lifetime.html"
+      "Year-2/2a-Life-Insurance/curtate-future-lifetime.html",
+      "Year-1/1b-Probability-Theory-for-EOR/uniform-distribution.html",
+      "Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html"
     ],
     "Year-2/2a-Life-Insurance/varying-life-annuity.html": [
       "Year-2/2a-Life-Insurance/whole-life-annuity-due.html",
@@ -8431,7 +8439,8 @@
     "Year-2/2a-Life-Insurance/whole-life-annuity-due.html": [
       "Year-2/2a-Life-Insurance/annuity-certain.html",
       "Year-2/2a-Life-Insurance/pure-endowment.html",
-      "Year-2/2a-Life-Insurance/curtate-future-lifetime.html"
+      "Year-2/2a-Life-Insurance/curtate-future-lifetime.html",
+      "Year-1/1b-Probability-Theory-for-EOR/indicator-random-variable.html"
     ],
     "Year-2/2a-Life-Insurance/whole-life-annuity-immediate.html": [
       "Year-2/2a-Life-Insurance/whole-life-annuity-due.html"
@@ -8445,7 +8454,8 @@
     "Year-2/2b-Game-Theory/index.html": [],
     "Year-2/2b-Risk-Insurance/index.html": [],
     "Year-2/2b-Risk-Insurance/absolute-risk-aversion.html": [
-      "Year-2/2b-Risk-Insurance/expected-utility-and-risk-aversion.html"
+      "Year-2/2b-Risk-Insurance/expected-utility-and-risk-aversion.html",
+      "Year-1/1a-Math-I-Calculus/higher-order-derivative.html"
     ],
     "Year-2/2b-Risk-Insurance/bonus-malus-system.html": [
       "Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html",
@@ -8453,7 +8463,8 @@
     ],
     "Year-2/2b-Risk-Insurance/bonus-malus-transition-matrix.html": [
       "Year-2/2b-Risk-Insurance/bonus-malus-system.html",
-      "Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html"
+      "Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html",
+      "Year-1/1b-Math-II-Linear-Algebra/matrix-product.html"
     ],
     "Year-2/2b-Risk-Insurance/censored-loss-likelihood.html": [
       "Year-2/2b-Risk-Insurance/maximum-likelihood-estimation.html",
@@ -8465,7 +8476,8 @@
     ],
     "Year-2/2b-Risk-Insurance/collective-risk-model.html": [
       "Year-2/2b-Risk-Insurance/individual-risk-model.html",
-      "Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html"
+      "Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html",
+      "Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html"
     ],
     "Year-2/2b-Risk-Insurance/compound-poisson-distribution.html": [
       "Year-2/2b-Risk-Insurance/compound-risk-distribution.html",
@@ -8482,11 +8494,13 @@
     "Year-2/2b-Risk-Insurance/compound-risk-distribution.html": [
       "Year-2/2b-Risk-Insurance/collective-risk-model.html",
       "Year-2/2b-Risk-Insurance/probability-generating-function.html",
-      "Year-1/2b-Probability-Distributions/convolution.html"
+      "Year-1/2b-Probability-Distributions/convolution.html",
+      "Year-1/2b-Probability-Distributions/adams-law.html",
+      "Year-1/2b-Probability-Distributions/conditioning-trick-for-variance.html"
     ],
     "Year-2/2b-Risk-Insurance/convex-order.html": [
       "Year-2/2b-Risk-Insurance/stop-loss-order.html",
-      "Year-2/2b-Risk-Insurance/expected-utility-and-risk-aversion.html"
+      "Year-1/1a-Math-I-Calculus/convexity-and-concavity.html"
     ],
     "Year-2/2b-Risk-Insurance/cumulant-generating-function.html": [
       "Year-1/2b-Probability-Distributions/moment-generating-function.html",
@@ -8494,7 +8508,8 @@
     ],
     "Year-2/2b-Risk-Insurance/expected-utility-and-risk-aversion.html": [
       "Year-1/2b-Probability-Distributions/jensen-inequality.html",
-      "Year-1/1b-Probability-Theory-for-EOR/expectation.html"
+      "Year-1/1b-Probability-Theory-for-EOR/expectation.html",
+      "Year-1/1a-Math-I-Calculus/convexity-and-concavity.html"
     ],
     "Year-2/2b-Risk-Insurance/expected-value-premium-principle.html": [
       "Year-2/2b-Risk-Insurance/premium-principle-properties.html"
@@ -8528,7 +8543,8 @@
     "Year-2/2b-Risk-Insurance/individual-risk-model.html": [
       "Year-1/1b-Probability-Theory-for-EOR/indicator-random-variable.html",
       "Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html",
-      "Year-1/2b-Probability-Distributions/convolution.html"
+      "Year-1/2b-Probability-Distributions/convolution.html",
+      "Year-1/1b-Probability-Theory-for-EOR/bernoulli-distribution.html"
     ],
     "Year-2/2b-Risk-Insurance/information-criteria-for-risk-models.html": [
       "Year-2/2b-Risk-Insurance/maximum-likelihood-estimation.html",
@@ -8539,7 +8555,8 @@
       "Year-2/2b-Risk-Insurance/absolute-risk-aversion.html"
     ],
     "Year-2/2b-Risk-Insurance/loimaranta-efficiency.html": [
-      "Year-2/2b-Risk-Insurance/stationary-bonus-malus-premium.html"
+      "Year-2/2b-Risk-Insurance/stationary-bonus-malus-premium.html",
+      "Year-1/1a-Math-I-Calculus/derivative-and-differentiability.html"
     ],
     "Year-2/2b-Risk-Insurance/loss-elimination-ratio.html": [
       "Year-2/2b-Risk-Insurance/ordinary-deductible.html",
@@ -8547,11 +8564,13 @@
     ],
     "Year-2/2b-Risk-Insurance/maximum-claim-in-a-portfolio.html": [
       "Year-2/2b-Risk-Insurance/probability-generating-function.html",
-      "Year-2/2b-Risk-Insurance/collective-risk-model.html"
+      "Year-2/2b-Risk-Insurance/collective-risk-model.html",
+      "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html"
     ],
     "Year-2/2b-Risk-Insurance/maximum-likelihood-estimation.html": [
       "Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html",
-      "Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html"
+      "Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html",
+      "Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html"
     ],
     "Year-2/2b-Risk-Insurance/mixed-discrete-continuous-loss.html": [
       "Year-1/1b-Probability-Theory-for-EOR/mixture-distribution.html",
@@ -8560,7 +8579,8 @@
     "Year-2/2b-Risk-Insurance/optimal-bonus-malus-relativities.html": [
       "Year-2/2b-Risk-Insurance/stationary-bonus-malus-premium.html",
       "Year-1/2b-Probability-Distributions/conditional-expectation-given-a-random-variable.html",
-      "Year-1/2b-Probability-Distributions/covariance.html"
+      "Year-1/2b-Probability-Distributions/covariance.html",
+      "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html"
     ],
     "Year-2/2b-Risk-Insurance/ordinary-deductible.html": [
       "Year-1/2b-Probability-Distributions/survivor-function.html",
@@ -8588,17 +8608,20 @@
       "Year-2/2b-Risk-Insurance/stop-loss-order.html"
     ],
     "Year-2/2b-Risk-Insurance/probability-generating-function.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html",
-      "Year-1/2b-Probability-Distributions/moment-generating-function.html"
+      "Year-1/2b-Probability-Distributions/moment-generating-function.html",
+      "Year-1/1b-Probability-Theory-for-EOR/discrete-random-variable.html",
+      "Year-1/1b-Probability-Theory-for-EOR/expectation.html"
     ],
     "Year-2/2b-Risk-Insurance/rating-factors-and-interactions.html": [
       "Year-2/2b-Risk-Insurance/poisson-regression.html",
-      "Year-2/2b-Risk-Insurance/exposure-offset.html"
+      "Year-2/2b-Risk-Insurance/exposure-offset.html",
+      "Year-1/1b-Probability-Theory-for-EOR/indicator-random-variable.html"
     ],
     "Year-2/2b-Risk-Insurance/risk-orders-under-aggregation.html": [
       "Year-2/2b-Risk-Insurance/stochastic-order.html",
       "Year-2/2b-Risk-Insurance/stop-loss-order.html",
-      "Year-2/2b-Risk-Insurance/compound-risk-distribution.html"
+      "Year-2/2b-Risk-Insurance/compound-risk-distribution.html",
+      "Year-2/2b-Risk-Insurance/exponential-order.html"
     ],
     "Year-2/2b-Risk-Insurance/second-order-stochastic-dominance.html": [
       "Year-2/2b-Risk-Insurance/expected-utility-and-risk-aversion.html",
@@ -8614,7 +8637,8 @@
       "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html"
     ],
     "Year-2/2b-Risk-Insurance/stationary-bonus-malus-premium.html": [
-      "Year-2/2b-Risk-Insurance/bonus-malus-transition-matrix.html"
+      "Year-2/2b-Risk-Insurance/bonus-malus-transition-matrix.html",
+      "Year-1/1b-Math-II-Linear-Algebra/standard-form-of-a-linear-system.html"
     ],
     "Year-2/2b-Risk-Insurance/stochastic-order.html": [
       "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html",
@@ -8622,7 +8646,6 @@
     ],
     "Year-2/2b-Risk-Insurance/stop-loss-order.html": [
       "Year-2/2b-Risk-Insurance/stop-loss-transform.html",
-      "Year-2/2b-Risk-Insurance/thicker-tailed-order.html",
       "Year-1/2b-Probability-Distributions/jensen-inequality.html"
     ],
     "Year-2/2b-Risk-Insurance/stop-loss-separation-theorem.html": [
@@ -8747,7 +8770,9 @@
     ],
     "Year-1/1a-Math-I-Calculus/convexity-and-concavity.html": [
       "Year-1/1a-Math-I-Calculus/inflection-point.html",
-      "Year-1/2b-Probability-Distributions/jensen-inequality.html"
+      "Year-1/2b-Probability-Distributions/jensen-inequality.html",
+      "Year-2/2b-Risk-Insurance/convex-order.html",
+      "Year-2/2b-Risk-Insurance/expected-utility-and-risk-aversion.html"
     ],
     "Year-1/1a-Math-I-Calculus/critical-point.html": [
       "Year-1/2b-Math-IV-Multivariate-Calculus/saddle-point.html",
@@ -8776,7 +8801,9 @@
       "Year-1/1a-Math-I-Calculus/one-sided-derivative.html",
       "Year-1/1a-Math-I-Calculus/rolles-theorem.html",
       "Year-1/1a-Math-I-Calculus/stationary-point.html",
-      "Year-1/1b-Probability-Theory-for-EOR/transformation-of-a-continuous-random-variable.html"
+      "Year-1/1b-Probability-Theory-for-EOR/transformation-of-a-continuous-random-variable.html",
+      "Year-2/2a-Life-Insurance/force-of-mortality.html",
+      "Year-2/2b-Risk-Insurance/loimaranta-efficiency.html"
     ],
     "Year-1/1a-Math-I-Calculus/difference-set.html": [
       "Year-1/1a-Math-I-Calculus/complement.html"
@@ -8910,7 +8937,9 @@
     "Year-1/1a-Math-I-Calculus/gamma-function.html": [
       "Year-1/2b-Probability-Distributions/gamma-distribution.html"
     ],
-    "Year-1/1a-Math-I-Calculus/geometric-series.html": [],
+    "Year-1/1a-Math-I-Calculus/geometric-series.html": [
+      "Year-2/2a-Life-Insurance/annuity-certain.html"
+    ],
     "Year-1/1a-Math-I-Calculus/global-extremum.html": [
       "Year-1/1a-Math-I-Calculus/extreme-value-theorem.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/global-maximum-and-minimum.html"
@@ -8926,7 +8955,8 @@
       "Year-1/1a-Math-I-Calculus/differentiability-class.html",
       "Year-1/1a-Math-I-Calculus/second-order-condition.html",
       "Year-1/2a-Math-III-Analysis/taylors-theorem.html",
-      "Year-1/2b-Probability-Distributions/moments-from-the-mgf.html"
+      "Year-1/2b-Probability-Distributions/moments-from-the-mgf.html",
+      "Year-2/2b-Risk-Insurance/absolute-risk-aversion.html"
     ],
     "Year-1/1a-Math-I-Calculus/horizontal-asymptote.html": [],
     "Year-1/1a-Math-I-Calculus/identity-function.html": [
@@ -10087,7 +10117,8 @@
     "Year-1/1b-Math-II-Linear-Algebra/matrix-product.html": [
       "Year-1/1b-Math-II-Linear-Algebra/idempotent-matrix.html",
       "Year-1/1b-Math-II-Linear-Algebra/inverse-matrix.html",
-      "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html"
+      "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html",
+      "Year-2/2b-Risk-Insurance/bonus-malus-transition-matrix.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/matrix-scalar-multiplication.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/matrix.html": [
@@ -10214,7 +10245,8 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/spanning-list.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/standard-form-of-a-linear-system.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/homogeneous-system.html"
+      "Year-1/1b-Math-II-Linear-Algebra/homogeneous-system.html",
+      "Year-2/2b-Risk-Insurance/stationary-bonus-malus-premium.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/subspace.html": [
       "Year-1/1b-Math-II-Linear-Algebra/direct-sum.html",
@@ -10326,7 +10358,8 @@
     "Year-1/1b-Probability-Theory-for-EOR/bernoulli-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/binomial-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/first-success-distribution.html",
-      "Year-1/1b-Probability-Theory-for-EOR/geometric-distribution.html"
+      "Year-1/1b-Probability-Theory-for-EOR/geometric-distribution.html",
+      "Year-2/2b-Risk-Insurance/individual-risk-model.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/binomial-coefficient.html": [
       "Year-1/1b-Probability-Theory-for-EOR/binomial-distribution.html",
@@ -10362,6 +10395,7 @@
       "Year-1/2b-Probability-Distributions/conditional-density-given-an-event.html",
       "Year-1/2b-Probability-Distributions/conditional-probability-mass-function.html",
       "Year-1/2b-Probability-Distributions/total-probability-with-extra-conditioning.html",
+      "Year-2/2a-Life-Insurance/actuarial-survival-probabilities.html",
       "Year-2/2a-Life-Insurance/future-lifetime.html",
       "Year-2/2b-Risk-Insurance/bonus-malus-transition-matrix.html",
       "Year-2/2b-Risk-Insurance/ordinary-deductible.html"
@@ -10373,7 +10407,8 @@
       "Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html",
       "Year-1/1b-Probability-Theory-for-EOR/rayleigh-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/transformation-of-a-continuous-random-variable.html",
-      "Year-1/1b-Probability-Theory-for-EOR/uniform-distribution.html"
+      "Year-1/1b-Probability-Theory-for-EOR/uniform-distribution.html",
+      "Year-2/2a-Life-Insurance/future-lifetime.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/counting.html": [
       "Year-1/1b-Probability-Theory-for-EOR/multiplication-rule.html",
@@ -10391,6 +10426,7 @@
       "Year-1/2b-Probability-Distributions/joint-cdf-discrete.html",
       "Year-1/2b-Probability-Distributions/survivor-function.html",
       "Year-2/2b-Risk-Insurance/grouped-data-likelihood.html",
+      "Year-2/2b-Risk-Insurance/maximum-claim-in-a-portfolio.html",
       "Year-2/2b-Risk-Insurance/mixed-discrete-continuous-loss.html",
       "Year-2/2b-Risk-Insurance/stochastic-order.html"
     ],
@@ -10398,7 +10434,8 @@
       "Year-1/1b-Probability-Theory-for-EOR/bernoulli-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/discrete-uniform-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html",
-      "Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html"
+      "Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html",
+      "Year-2/2b-Risk-Insurance/probability-generating-function.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/discrete-uniform-distribution.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/disjoint-events.html": [
@@ -10446,6 +10483,7 @@
       "Year-2/2a-Life-Insurance/expectation-of-life.html",
       "Year-2/2b-Risk-Insurance/expected-utility-and-risk-aversion.html",
       "Year-2/2b-Risk-Insurance/premium-principle-properties.html",
+      "Year-2/2b-Risk-Insurance/probability-generating-function.html",
       "Year-2/2b-Risk-Insurance/stop-loss-transform.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/exponential-distribution.html": [
@@ -10468,7 +10506,8 @@
       "Year-1/2b-Probability-Distributions/central-limit-theorem.html",
       "Year-1/2b-Probability-Distributions/density-of-an-order-statistic.html",
       "Year-1/2b-Probability-Distributions/strong-law-of-large-numbers.html",
-      "Year-1/2b-Probability-Distributions/weak-law-of-large-numbers.html"
+      "Year-1/2b-Probability-Distributions/weak-law-of-large-numbers.html",
+      "Year-2/2b-Risk-Insurance/collective-risk-model.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/inclusion-exclusion-principle.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/independent-events.html": [
@@ -10488,6 +10527,7 @@
       "Year-1/2b-Probability-Distributions/convolution.html",
       "Year-1/2b-Probability-Distributions/mgf-of-an-independent-sum.html",
       "Year-1/2b-Probability-Distributions/poisson-merging.html",
+      "Year-2/2a-Life-Insurance/uniform-distribution-of-deaths.html",
       "Year-2/2b-Risk-Insurance/collective-risk-model.html",
       "Year-2/2b-Risk-Insurance/individual-risk-model.html",
       "Year-2/2b-Risk-Insurance/maximum-likelihood-estimation.html"
@@ -10495,7 +10535,9 @@
     "Year-1/1b-Probability-Theory-for-EOR/indicator-random-variable.html": [
       "Year-1/1b-Probability-Theory-for-EOR/fundamental-bridge.html",
       "Year-2/2a-Life-Insurance/varying-life-annuity.html",
-      "Year-2/2b-Risk-Insurance/individual-risk-model.html"
+      "Year-2/2a-Life-Insurance/whole-life-annuity-due.html",
+      "Year-2/2b-Risk-Insurance/individual-risk-model.html",
+      "Year-2/2b-Risk-Insurance/rating-factors-and-interactions.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/law-of-total-probability.html": [
       "Year-1/1b-Probability-Theory-for-EOR/bayes-rule.html",
@@ -10551,8 +10593,7 @@
       "Year-1/2b-Probability-Distributions/poisson-merging.html",
       "Year-2/2b-Risk-Insurance/bonus-malus-system.html",
       "Year-2/2b-Risk-Insurance/compound-poisson-distribution.html",
-      "Year-2/2b-Risk-Insurance/poisson-regression.html",
-      "Year-2/2b-Risk-Insurance/probability-generating-function.html"
+      "Year-2/2b-Risk-Insurance/poisson-regression.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/poisson-process.html": [
       "Year-1/1b-Probability-Theory-for-EOR/arrival-rate.html",
@@ -10570,6 +10611,7 @@
       "Year-1/2b-Probability-Distributions/density-of-an-order-statistic.html",
       "Year-1/2b-Probability-Distributions/gamma-distribution.html",
       "Year-1/2b-Probability-Distributions/joint-probability-density-function.html",
+      "Year-2/2a-Life-Insurance/force-of-mortality.html",
       "Year-2/2b-Risk-Insurance/maximum-likelihood-estimation.html",
       "Year-2/2b-Risk-Insurance/single-crossing-order-criteria.html"
     ],
@@ -10588,7 +10630,8 @@
       "Year-1/1b-Probability-Theory-for-EOR/first-success-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/geometric-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/mode.html",
-      "Year-1/2b-Probability-Distributions/joint-probability-mass-function.html"
+      "Year-1/2b-Probability-Distributions/joint-probability-mass-function.html",
+      "Year-2/2b-Risk-Insurance/maximum-likelihood-estimation.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/prosecutors-fallacy.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/quantile-function.html": [
@@ -10640,7 +10683,8 @@
     "Year-1/1b-Probability-Theory-for-EOR/transformation-of-a-continuous-random-variable.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/uniform-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/universality-of-the-uniform.html",
-      "Year-1/2b-Probability-Distributions/sum-of-two-iid-uniforms.html"
+      "Year-1/2b-Probability-Distributions/sum-of-two-iid-uniforms.html",
+      "Year-2/2a-Life-Insurance/uniform-distribution-of-deaths.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/unimodal-and-multimodal-distribution.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/union-and-intersection-of-events.html": [
@@ -10661,6 +10705,7 @@
       "Year-1/2b-Probability-Distributions/weak-law-of-large-numbers.html",
       "Year-2/2a-Life-Insurance/insurance-present-value-variance.html",
       "Year-2/2b-Risk-Insurance/coinsurance.html",
+      "Year-2/2b-Risk-Insurance/optimal-bonus-malus-relativities.html",
       "Year-2/2b-Risk-Insurance/standard-deviation-premium-principle.html",
       "Year-2/2b-Risk-Insurance/variance-premium-principle.html"
     ],
@@ -11011,7 +11056,8 @@
     "Year-1/2b-Probability-Distributions/adams-law-with-extra-conditioning.html": [],
     "Year-1/2b-Probability-Distributions/adams-law.html": [
       "Year-1/2b-Probability-Distributions/adams-law-with-extra-conditioning.html",
-      "Year-1/2b-Probability-Distributions/eves-law.html"
+      "Year-1/2b-Probability-Distributions/eves-law.html",
+      "Year-2/2b-Risk-Insurance/compound-risk-distribution.html"
     ],
     "Year-1/2b-Probability-Distributions/almost-sure-convergence.html": [
       "Year-1/2b-Probability-Distributions/strong-law-of-large-numbers.html"
@@ -11037,6 +11083,7 @@
       "Year-1/2b-Probability-Distributions/conditional-expectation-and-independence.html",
       "Year-1/2b-Probability-Distributions/conditional-variance-given-a-random-variable.html",
       "Year-1/2b-Probability-Distributions/taking-out-what-is-known.html",
+      "Year-2/2a-Life-Insurance/prospective-policy-value.html",
       "Year-2/2b-Risk-Insurance/generalised-linear-model.html",
       "Year-2/2b-Risk-Insurance/optimal-bonus-malus-relativities.html"
     ],
@@ -11055,7 +11102,9 @@
     "Year-1/2b-Probability-Distributions/conditional-variance-given-a-random-variable.html": [
       "Year-1/2b-Probability-Distributions/eves-law.html"
     ],
-    "Year-1/2b-Probability-Distributions/conditioning-trick-for-variance.html": [],
+    "Year-1/2b-Probability-Distributions/conditioning-trick-for-variance.html": [
+      "Year-2/2b-Risk-Insurance/compound-risk-distribution.html"
+    ],
     "Year-1/2b-Probability-Distributions/continuity-correction.html": [],
     "Year-1/2b-Probability-Distributions/continuous-bayes-rule.html": [],
     "Year-1/2b-Probability-Distributions/continuous-law-of-total-probability.html": [
@@ -11304,12 +11353,13 @@
     ],
     "Year-2/2b-Risk-Insurance/expected-utility-and-risk-aversion.html": [
       "Year-2/2b-Risk-Insurance/absolute-risk-aversion.html",
-      "Year-2/2b-Risk-Insurance/convex-order.html",
       "Year-2/2b-Risk-Insurance/insurance-indifference-premiums.html",
       "Year-2/2b-Risk-Insurance/second-order-stochastic-dominance.html"
     ],
     "Year-2/2b-Risk-Insurance/expected-value-premium-principle.html": [],
-    "Year-2/2b-Risk-Insurance/exponential-order.html": [],
+    "Year-2/2b-Risk-Insurance/exponential-order.html": [
+      "Year-2/2b-Risk-Insurance/risk-orders-under-aggregation.html"
+    ],
     "Year-2/2b-Risk-Insurance/exponential-premium-principle.html": [],
     "Year-2/2b-Risk-Insurance/exposure-offset.html": [
       "Year-2/2b-Risk-Insurance/rating-factors-and-interactions.html"
@@ -11400,8 +11450,7 @@
       "Year-2/2b-Risk-Insurance/stop-loss-order.html"
     ],
     "Year-2/2b-Risk-Insurance/thicker-tailed-order.html": [
-      "Year-2/2b-Risk-Insurance/single-crossing-order-criteria.html",
-      "Year-2/2b-Risk-Insurance/stop-loss-order.html"
+      "Year-2/2b-Risk-Insurance/single-crossing-order-criteria.html"
     ],
     "Year-2/2b-Risk-Insurance/truncated-loss-likelihood.html": [],
     "Year-2/2b-Risk-Insurance/variance-premium-principle.html": [],
@@ -14796,7 +14845,8 @@
     "Year-2/2a-Life-Insurance/index.html": [],
     "Year-2/2a-Life-Insurance/actuarial-present-value.html": [
       "Year-2/2a-Life-Insurance/whole-life-insurance.html",
-      "Year-2/2a-Life-Insurance/insurance-present-value-variance.html"
+      "Year-2/2a-Life-Insurance/insurance-present-value-variance.html",
+      "Year-2/2b-Risk-Insurance/expected-value-premium-principle.html"
     ],
     "Year-2/2a-Life-Insurance/actuarial-survival-probabilities.html": [
       "Year-2/2a-Life-Insurance/life-table.html",
@@ -14811,7 +14861,8 @@
     ],
     "Year-2/2a-Life-Insurance/continuous-life-annuity.html": [
       "Year-2/2a-Life-Insurance/expectation-of-life.html",
-      "Year-2/2a-Life-Insurance/life-annuity-payment-frequency.html"
+      "Year-2/2a-Life-Insurance/life-annuity-payment-frequency.html",
+      "Year-2/2a-Life-Insurance/temporary-life-annuity.html"
     ],
     "Year-2/2a-Life-Insurance/curtate-future-lifetime.html": [
       "Year-2/2a-Life-Insurance/expectation-of-life.html",
@@ -14823,7 +14874,8 @@
     ],
     "Year-2/2a-Life-Insurance/deferred-life-insurance.html": [
       "Year-2/2a-Life-Insurance/term-life-insurance.html",
-      "Year-2/2a-Life-Insurance/deferred-life-annuity.html"
+      "Year-2/2a-Life-Insurance/deferred-life-annuity.html",
+      "Year-2/2a-Life-Insurance/prospective-policy-value.html"
     ],
     "Year-2/2a-Life-Insurance/endowment-insurance.html": [
       "Year-2/2a-Life-Insurance/insurance-present-value-variance.html",
@@ -14840,20 +14892,25 @@
     "Year-2/2a-Life-Insurance/future-lifetime.html": [
       "Year-2/2a-Life-Insurance/actuarial-survival-probabilities.html",
       "Year-2/2a-Life-Insurance/force-of-mortality.html",
-      "Year-2/2a-Life-Insurance/curtate-future-lifetime.html"
+      "Year-2/2a-Life-Insurance/curtate-future-lifetime.html",
+      "Year-2/2a-Life-Insurance/makeham-mortality-law.html",
+      "Year-2/2a-Life-Insurance/select-and-ultimate-mortality.html"
     ],
     "Year-2/2a-Life-Insurance/future-loss-random-variable.html": [
       "Year-2/2a-Life-Insurance/prospective-policy-value.html"
     ],
     "Year-2/2a-Life-Insurance/guaranteed-life-annuity.html": [
-      "Year-2/2a-Life-Insurance/temporary-life-annuity.html"
+      "Year-2/2a-Life-Insurance/temporary-life-annuity.html",
+      "Year-2/2a-Life-Insurance/varying-life-annuity.html"
     ],
     "Year-2/2a-Life-Insurance/insurance-payment-frequency.html": [
       "Year-2/2a-Life-Insurance/life-annuity-payment-frequency.html"
     ],
     "Year-2/2a-Life-Insurance/insurance-present-value-variance.html": [
       "Year-2/2a-Life-Insurance/endowment-insurance.html",
-      "Year-2/2a-Life-Insurance/whole-life-annuity-due.html"
+      "Year-2/2a-Life-Insurance/whole-life-annuity-due.html",
+      "Year-2/2a-Life-Insurance/varying-life-annuity.html",
+      "Year-2/2a-Life-Insurance/varying-life-insurance-benefits.html"
     ],
     "Year-2/2a-Life-Insurance/life-annuity-payment-frequency.html": [
       "Year-2/2a-Life-Insurance/continuous-life-annuity.html",
@@ -14868,7 +14925,8 @@
     ],
     "Year-2/2a-Life-Insurance/life-table.html": [
       "Year-2/2a-Life-Insurance/uniform-distribution-of-deaths.html",
-      "Year-2/2a-Life-Insurance/select-and-ultimate-mortality.html"
+      "Year-2/2a-Life-Insurance/select-and-ultimate-mortality.html",
+      "Year-2/2a-Life-Insurance/makeham-mortality-law.html"
     ],
     "Year-2/2a-Life-Insurance/makeham-mortality-law.html": [
       "Year-2/2a-Life-Insurance/future-lifetime.html",
@@ -14880,7 +14938,8 @@
     ],
     "Year-2/2a-Life-Insurance/pure-endowment.html": [
       "Year-2/2a-Life-Insurance/endowment-insurance.html",
-      "Year-2/2a-Life-Insurance/deferred-life-annuity.html"
+      "Year-2/2a-Life-Insurance/deferred-life-annuity.html",
+      "Year-2/2a-Life-Insurance/term-life-insurance.html"
     ],
     "Year-2/2a-Life-Insurance/select-and-ultimate-mortality.html": [
       "Year-2/2a-Life-Insurance/future-lifetime.html",
@@ -14888,20 +14947,24 @@
     ],
     "Year-2/2a-Life-Insurance/temporary-life-annuity.html": [
       "Year-2/2a-Life-Insurance/deferred-life-annuity.html",
-      "Year-2/2a-Life-Insurance/continuous-life-annuity.html"
+      "Year-2/2a-Life-Insurance/continuous-life-annuity.html",
+      "Year-2/2a-Life-Insurance/guaranteed-life-annuity.html"
     ],
     "Year-2/2a-Life-Insurance/term-life-insurance.html": [
       "Year-2/2a-Life-Insurance/pure-endowment.html",
       "Year-2/2a-Life-Insurance/endowment-insurance.html",
-      "Year-2/2a-Life-Insurance/deferred-life-insurance.html"
+      "Year-2/2a-Life-Insurance/deferred-life-insurance.html",
+      "Year-2/2a-Life-Insurance/actuarial-survival-probabilities.html"
     ],
     "Year-2/2a-Life-Insurance/uniform-distribution-of-deaths.html": [
       "Year-2/2a-Life-Insurance/constant-force-interpolation.html",
-      "Year-2/2a-Life-Insurance/insurance-payment-frequency.html"
+      "Year-2/2a-Life-Insurance/insurance-payment-frequency.html",
+      "Year-2/2a-Life-Insurance/expectation-of-life.html"
     ],
     "Year-2/2a-Life-Insurance/varying-life-annuity.html": [
       "Year-2/2a-Life-Insurance/insurance-present-value-variance.html",
-      "Year-2/2a-Life-Insurance/guaranteed-life-annuity.html"
+      "Year-2/2a-Life-Insurance/guaranteed-life-annuity.html",
+      "Year-2/2a-Life-Insurance/varying-life-insurance-benefits.html"
     ],
     "Year-2/2a-Life-Insurance/varying-life-insurance-benefits.html": [
       "Year-2/2a-Life-Insurance/insurance-present-value-variance.html",
@@ -14910,14 +14973,17 @@
     "Year-2/2a-Life-Insurance/whole-life-annuity-due.html": [
       "Year-2/2a-Life-Insurance/whole-life-annuity-immediate.html",
       "Year-2/2a-Life-Insurance/temporary-life-annuity.html",
-      "Year-2/2a-Life-Insurance/continuous-life-annuity.html"
+      "Year-2/2a-Life-Insurance/continuous-life-annuity.html",
+      "Year-2/2a-Life-Insurance/insurance-present-value-variance.html",
+      "Year-2/2a-Life-Insurance/life-insurance-recursions.html"
     ],
     "Year-2/2a-Life-Insurance/whole-life-annuity-immediate.html": [
       "Year-2/2a-Life-Insurance/temporary-life-annuity.html"
     ],
     "Year-2/2a-Life-Insurance/whole-life-insurance.html": [
       "Year-2/2a-Life-Insurance/term-life-insurance.html",
-      "Year-2/2a-Life-Insurance/life-insurance-recursions.html"
+      "Year-2/2a-Life-Insurance/life-insurance-recursions.html",
+      "Year-2/2a-Life-Insurance/select-and-ultimate-mortality.html"
     ],
     "Year-2/2b-Dynamic-Econometrics/index.html": [],
     "Year-2/2b-Game-Theory/index.html": [],
@@ -14935,7 +15001,8 @@
     ],
     "Year-2/2b-Risk-Insurance/censored-loss-likelihood.html": [
       "Year-2/2b-Risk-Insurance/policy-limit.html",
-      "Year-2/2b-Risk-Insurance/truncated-loss-likelihood.html"
+      "Year-2/2b-Risk-Insurance/truncated-loss-likelihood.html",
+      "Year-2/2b-Risk-Insurance/grouped-data-likelihood.html"
     ],
     "Year-2/2b-Risk-Insurance/coinsurance.html": [
       "Year-2/2b-Risk-Insurance/policy-limit.html",
@@ -14948,7 +15015,11 @@
     "Year-2/2b-Risk-Insurance/compound-poisson-distribution.html": [
       "Year-2/2b-Risk-Insurance/compound-poisson-superposition.html",
       "Year-2/2b-Risk-Insurance/compound-poisson-process.html",
-      "Year-1/2b-Probability-Distributions/poisson-splitting.html"
+      "Year-1/2b-Probability-Distributions/poisson-splitting.html",
+      "Year-2/2b-Risk-Insurance/collective-risk-model.html",
+      "Year-2/2b-Risk-Insurance/cumulant-generating-function.html",
+      "Year-2/2b-Risk-Insurance/maximum-claim-in-a-portfolio.html",
+      "Year-2/2b-Risk-Insurance/risk-orders-under-aggregation.html"
     ],
     "Year-2/2b-Risk-Insurance/compound-poisson-process.html": [
       "Year-2/2b-Risk-Insurance/maximum-claim-in-a-portfolio.html"
@@ -14963,20 +15034,26 @@
     ],
     "Year-2/2b-Risk-Insurance/convex-order.html": [
       "Year-2/2b-Risk-Insurance/thicker-tailed-order.html",
-      "Year-2/2b-Risk-Insurance/second-order-stochastic-dominance.html"
+      "Year-2/2b-Risk-Insurance/second-order-stochastic-dominance.html",
+      "Year-2/2b-Risk-Insurance/expected-utility-and-risk-aversion.html",
+      "Year-2/2b-Risk-Insurance/standard-deviation-premium-principle.html",
+      "Year-2/2b-Risk-Insurance/variance-premium-principle.html"
     ],
     "Year-2/2b-Risk-Insurance/cumulant-generating-function.html": [
       "Year-2/2b-Risk-Insurance/exponential-premium-principle.html",
-      "Year-2/2b-Risk-Insurance/compound-poisson-distribution.html"
+      "Year-2/2b-Risk-Insurance/compound-poisson-distribution.html",
+      "Year-2/2b-Risk-Insurance/probability-generating-function.html"
     ],
     "Year-2/2b-Risk-Insurance/expected-utility-and-risk-aversion.html": [
       "Year-2/2b-Risk-Insurance/absolute-risk-aversion.html",
-      "Year-2/2b-Risk-Insurance/insurance-indifference-premiums.html"
+      "Year-2/2b-Risk-Insurance/insurance-indifference-premiums.html",
+      "Year-2/2b-Risk-Insurance/convex-order.html"
     ],
     "Year-2/2b-Risk-Insurance/expected-value-premium-principle.html": [
       "Year-2/2b-Risk-Insurance/variance-premium-principle.html",
       "Year-2/2b-Risk-Insurance/exponential-premium-principle.html",
-      "Year-2/2a-Life-Insurance/actuarial-present-value.html"
+      "Year-2/2a-Life-Insurance/actuarial-present-value.html",
+      "Year-2/2b-Risk-Insurance/zero-utility-premium.html"
     ],
     "Year-2/2b-Risk-Insurance/exponential-order.html": [
       "Year-2/2b-Risk-Insurance/exponential-premium-principle.html",
@@ -14984,7 +15061,11 @@
     ],
     "Year-2/2b-Risk-Insurance/exponential-premium-principle.html": [
       "Year-2/2b-Risk-Insurance/exponential-order.html",
-      "Year-2/2b-Risk-Insurance/zero-utility-premium.html"
+      "Year-2/2b-Risk-Insurance/zero-utility-premium.html",
+      "Year-2/2b-Risk-Insurance/absolute-risk-aversion.html",
+      "Year-2/2b-Risk-Insurance/expected-value-premium-principle.html",
+      "Year-2/2b-Risk-Insurance/pareto-loss-model.html",
+      "Year-2/2b-Risk-Insurance/premium-principle-properties.html"
     ],
     "Year-2/2b-Risk-Insurance/exposure-offset.html": [
       "Year-2/2b-Risk-Insurance/rating-factors-and-interactions.html",
@@ -15008,7 +15089,8 @@
     ],
     "Year-2/2b-Risk-Insurance/individual-risk-model.html": [
       "Year-2/2b-Risk-Insurance/collective-risk-model.html",
-      "Year-2/2b-Risk-Insurance/mixed-discrete-continuous-loss.html"
+      "Year-2/2b-Risk-Insurance/mixed-discrete-continuous-loss.html",
+      "Year-2/2b-Risk-Insurance/risk-orders-under-aggregation.html"
     ],
     "Year-2/2b-Risk-Insurance/information-criteria-for-risk-models.html": [
       "Year-2/2b-Risk-Insurance/rating-factors-and-interactions.html",
@@ -15026,7 +15108,8 @@
       "Year-2/2b-Risk-Insurance/policy-limit.html"
     ],
     "Year-2/2b-Risk-Insurance/maximum-claim-in-a-portfolio.html": [
-      "Year-2/2b-Risk-Insurance/compound-poisson-distribution.html"
+      "Year-2/2b-Risk-Insurance/compound-poisson-distribution.html",
+      "Year-2/2b-Risk-Insurance/compound-poisson-process.html"
     ],
     "Year-2/2b-Risk-Insurance/maximum-likelihood-estimation.html": [
       "Year-2/2b-Risk-Insurance/grouped-data-likelihood.html",
@@ -15035,7 +15118,9 @@
     ],
     "Year-2/2b-Risk-Insurance/mixed-discrete-continuous-loss.html": [
       "Year-2/2b-Risk-Insurance/ordinary-deductible.html",
-      "Year-2/2b-Risk-Insurance/policy-limit.html"
+      "Year-2/2b-Risk-Insurance/policy-limit.html",
+      "Year-2/2b-Risk-Insurance/franchise-deductible.html",
+      "Year-2/2b-Risk-Insurance/individual-risk-model.html"
     ],
     "Year-2/2b-Risk-Insurance/optimal-bonus-malus-relativities.html": [
       "Year-2/2b-Risk-Insurance/loimaranta-efficiency.html"
@@ -15043,11 +15128,14 @@
     "Year-2/2b-Risk-Insurance/ordinary-deductible.html": [
       "Year-2/2b-Risk-Insurance/stop-loss-transform.html",
       "Year-2/2b-Risk-Insurance/franchise-deductible.html",
-      "Year-2/2b-Risk-Insurance/loss-elimination-ratio.html"
+      "Year-2/2b-Risk-Insurance/loss-elimination-ratio.html",
+      "Year-2/2b-Risk-Insurance/hunger-for-bonus.html",
+      "Year-2/2b-Risk-Insurance/mixed-discrete-continuous-loss.html"
     ],
     "Year-2/2b-Risk-Insurance/overdispersion-in-count-models.html": [
       "Year-2/2b-Risk-Insurance/generalised-linear-model.html",
-      "Year-2/2b-Risk-Insurance/information-criteria-for-risk-models.html"
+      "Year-2/2b-Risk-Insurance/information-criteria-for-risk-models.html",
+      "Year-2/2b-Risk-Insurance/exposure-offset.html"
     ],
     "Year-2/2b-Risk-Insurance/pareto-loss-model.html": [
       "Year-2/2b-Risk-Insurance/stop-loss-transform.html",
@@ -15060,25 +15148,30 @@
     ],
     "Year-2/2b-Risk-Insurance/policy-limit.html": [
       "Year-2/2b-Risk-Insurance/mixed-discrete-continuous-loss.html",
-      "Year-2/2b-Risk-Insurance/coinsurance.html"
+      "Year-2/2b-Risk-Insurance/coinsurance.html",
+      "Year-2/2b-Risk-Insurance/censored-loss-likelihood.html",
+      "Year-2/2b-Risk-Insurance/loss-elimination-ratio.html"
     ],
     "Year-2/2b-Risk-Insurance/premium-principle-properties.html": [
       "Year-2/2b-Risk-Insurance/expected-value-premium-principle.html",
       "Year-2/2b-Risk-Insurance/variance-premium-principle.html",
       "Year-2/2b-Risk-Insurance/standard-deviation-premium-principle.html",
       "Year-2/2b-Risk-Insurance/exponential-premium-principle.html",
-      "Year-2/2b-Risk-Insurance/zero-utility-premium.html"
+      "Year-2/2b-Risk-Insurance/zero-utility-premium.html",
+      "Year-2/2b-Risk-Insurance/coinsurance.html"
     ],
     "Year-2/2b-Risk-Insurance/probability-generating-function.html": [
       "Year-2/2b-Risk-Insurance/compound-risk-distribution.html",
-      "Year-2/2b-Risk-Insurance/cumulant-generating-function.html"
+      "Year-2/2b-Risk-Insurance/cumulant-generating-function.html",
+      "Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html"
     ],
     "Year-2/2b-Risk-Insurance/rating-factors-and-interactions.html": [
       "Year-2/2b-Risk-Insurance/information-criteria-for-risk-models.html"
     ],
     "Year-2/2b-Risk-Insurance/risk-orders-under-aggregation.html": [
       "Year-2/2b-Risk-Insurance/individual-risk-model.html",
-      "Year-2/2b-Risk-Insurance/compound-poisson-distribution.html"
+      "Year-2/2b-Risk-Insurance/compound-poisson-distribution.html",
+      "Year-2/2b-Risk-Insurance/stop-loss-separation-theorem.html"
     ],
     "Year-2/2b-Risk-Insurance/second-order-stochastic-dominance.html": [
       "Year-2/2b-Risk-Insurance/stochastic-order.html",
@@ -15093,24 +15186,32 @@
     ],
     "Year-2/2b-Risk-Insurance/stationary-bonus-malus-premium.html": [
       "Year-2/2b-Risk-Insurance/loimaranta-efficiency.html",
-      "Year-2/2b-Risk-Insurance/optimal-bonus-malus-relativities.html"
+      "Year-2/2b-Risk-Insurance/optimal-bonus-malus-relativities.html",
+      "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html"
     ],
     "Year-2/2b-Risk-Insurance/stochastic-order.html": [
       "Year-2/2b-Risk-Insurance/thicker-tailed-order.html",
       "Year-2/2b-Risk-Insurance/stop-loss-order.html",
-      "Year-2/2b-Risk-Insurance/single-crossing-order-criteria.html"
+      "Year-2/2b-Risk-Insurance/single-crossing-order-criteria.html",
+      "Year-2/2b-Risk-Insurance/second-order-stochastic-dominance.html"
     ],
     "Year-2/2b-Risk-Insurance/stop-loss-order.html": [
       "Year-2/2b-Risk-Insurance/convex-order.html",
       "Year-2/2b-Risk-Insurance/exponential-order.html",
-      "Year-2/2b-Risk-Insurance/risk-orders-under-aggregation.html"
+      "Year-2/2b-Risk-Insurance/risk-orders-under-aggregation.html",
+      "Year-2/2b-Risk-Insurance/thicker-tailed-order.html",
+      "Year-2/2b-Risk-Insurance/second-order-stochastic-dominance.html",
+      "Year-2/2b-Risk-Insurance/single-crossing-order-criteria.html",
+      "Year-2/2b-Risk-Insurance/stochastic-order.html"
     ],
     "Year-2/2b-Risk-Insurance/stop-loss-separation-theorem.html": [
       "Year-2/2b-Risk-Insurance/risk-orders-under-aggregation.html"
     ],
     "Year-2/2b-Risk-Insurance/stop-loss-transform.html": [
       "Year-2/2b-Risk-Insurance/stop-loss-order.html",
-      "Year-2/2b-Risk-Insurance/policy-limit.html"
+      "Year-2/2b-Risk-Insurance/policy-limit.html",
+      "Year-2/2b-Risk-Insurance/franchise-deductible.html",
+      "Year-2/2b-Risk-Insurance/pareto-loss-model.html"
     ],
     "Year-2/2b-Risk-Insurance/thicker-tailed-order.html": [
       "Year-2/2b-Risk-Insurance/stop-loss-order.html",
@@ -15123,7 +15224,8 @@
     ],
     "Year-2/2b-Risk-Insurance/variance-premium-principle.html": [
       "Year-2/2b-Risk-Insurance/standard-deviation-premium-principle.html",
-      "Year-2/2b-Risk-Insurance/convex-order.html"
+      "Year-2/2b-Risk-Insurance/convex-order.html",
+      "Year-2/2b-Risk-Insurance/expected-value-premium-principle.html"
     ],
     "Year-2/2b-Risk-Insurance/zero-utility-premium.html": [
       "Year-2/2b-Risk-Insurance/exponential-premium-principle.html",
