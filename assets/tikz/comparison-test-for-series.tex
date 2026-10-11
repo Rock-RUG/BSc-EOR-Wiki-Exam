@@ -18,7 +18,7 @@
 		clip=false,
 		width=8.6cm, height=5.2cm
 		]
-		\addplot[fill=red!25, draw=red!70!black, samples at={1,...,9}] {1/x};
+		\addplot[fill=red!25, draw=red!70!black, samples at={1,...,9}] {1/x^2};
 		\addplot[fill=blue!45, draw=blue!70!black, bar width=5pt, samples at={1,...,9}] {1/(x*(x+1))};
 		\node[red!70!black, anchor=west, font=\small] at (axis cs:4,0.75) {$b_n$ (the larger terms)};
 		\node[blue!70!black, anchor=west, font=\small] at (axis cs:4,0.6) {$a_n\le b_n$};

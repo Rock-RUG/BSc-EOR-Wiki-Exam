@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1791698746732,
+  "generatedAt": 1791723652012,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -2334,14 +2334,14 @@
       "aiMcq": true
     },
     "Year-1/1b-Math-II-Linear-Algebra/complex-plane-cartesian-coordinate-system.html": {
-      "title": "Complex Plane (Cartesian Coordinate System)",
+      "title": "Cartesian Representation of Complex Numbers",
       "courseName": "1b-Math-II-Linear-Algebra",
       "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/1b-Math-II-Linear-Algebra/complex-plane-polar-coordinate-system.html": {
-      "title": "Complex Plane (Polar Coordinate System)",
+      "title": "Polar Representation of Complex Numbers",
       "courseName": "1b-Math-II-Linear-Algebra",
       "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
       "curriculumStatus": "current",
@@ -3068,6 +3068,13 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-1/1b-Probability-Theory-for-EOR/absolutely-continuous-distribution.html": {
+      "title": "Absolutely Continuous Distribution",
+      "courseName": "1b-Probability-Theory-for-EOR",
+      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
+      "curriculumStatus": "current",
+      "aiMcq": false
+    },
     "Year-1/1b-Probability-Theory-for-EOR/arrival-rate.html": {
       "title": "Arrival Rate",
       "courseName": "1b-Probability-Theory-for-EOR",
@@ -3446,6 +3453,13 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-1/1b-Probability-Theory-for-EOR/point-mass.html": {
+      "title": "Point Mass",
+      "courseName": "1b-Probability-Theory-for-EOR",
+      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
+      "curriculumStatus": "current",
+      "aiMcq": false
+    },
     "Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html": {
       "title": "Poisson Distribution",
       "courseName": "1b-Probability-Theory-for-EOR",
@@ -3489,7 +3503,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/quantile-function.html": {
-      "title": "Quantile Function (Generalized Inverse CDF)",
+      "title": "Quantile Function",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -4991,224 +5005,224 @@
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/actuarial-survival-probabilities.html": {
       "title": "Actuarial Survival and Death Probabilities",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/annuity-certain.html": {
       "title": "Annuity Certain",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/constant-force-interpolation.html": {
       "title": "Constant Force Within a Year of Age",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/continuous-life-annuity.html": {
       "title": "Continuous Life Annuity",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/curtate-future-lifetime.html": {
       "title": "Curtate Future Lifetime",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/deferred-life-annuity.html": {
       "title": "Deferred Life Annuity",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/deferred-life-insurance.html": {
       "title": "Deferred Life Insurance",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/endowment-insurance.html": {
       "title": "Endowment Insurance",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/expectation-of-life.html": {
       "title": "Complete and Curtate Expectation of Life",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/force-of-mortality.html": {
       "title": "Force of Mortality",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/future-lifetime.html": {
       "title": "Future Lifetime",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/future-loss-random-variable.html": {
       "title": "Future Loss Random Variable",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/guaranteed-life-annuity.html": {
       "title": "Guaranteed Life Annuity",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/insurance-payment-frequency.html": {
       "title": "Death Benefits Payable at Fractional-Year Boundaries",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/insurance-present-value-variance.html": {
       "title": "Variance of an Insurance Present Value",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/life-annuity-payment-frequency.html": {
       "title": "Life Annuities Payable Several Times a Year",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/life-insurance-equivalence-principle.html": {
       "title": "Equivalence Principle for Life Insurance Premiums",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/life-insurance-recursions.html": {
       "title": "Life Insurance Valuation Recursions",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/life-table.html": {
       "title": "Life Table",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/makeham-mortality-law.html": {
       "title": "Makeham's Mortality Law",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/prospective-policy-value.html": {
       "title": "Prospective Policy Value",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/pure-endowment.html": {
       "title": "Pure Endowment",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/select-and-ultimate-mortality.html": {
       "title": "Select and Ultimate Mortality",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/temporary-life-annuity.html": {
       "title": "Temporary Life Annuity",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/term-life-insurance.html": {
       "title": "Term Life Insurance",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/uniform-distribution-of-deaths.html": {
       "title": "Uniform Distribution of Deaths",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/varying-life-annuity.html": {
       "title": "Varying Life Annuity Payments",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/varying-life-insurance-benefits.html": {
       "title": "Varying Life Insurance Benefits",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/whole-life-annuity-due.html": {
       "title": "Whole Life Annuity Due",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/whole-life-annuity-immediate.html": {
       "title": "Whole Life Annuity Immediate",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2a-Life-Insurance/whole-life-insurance.html": {
       "title": "Whole Life Insurance",
       "courseName": "2a-Life-Insurance",
       "coursePath": "Year-2/2a-Life-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Dynamic-Econometrics/index.html": {
       "title": "Dynamic Econometrics { .ch-title }",
@@ -5236,357 +5250,357 @@
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/bonus-malus-system.html": {
       "title": "Bonus-Malus System",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/bonus-malus-transition-matrix.html": {
       "title": "Bonus-Malus Transition Matrix",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/censored-loss-likelihood.html": {
       "title": "Likelihood for Censored Loss Data",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/coinsurance.html": {
       "title": "Coinsurance",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/collective-risk-model.html": {
       "title": "Collective Risk Model",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/compound-poisson-distribution.html": {
       "title": "Compound Poisson Distribution",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/compound-poisson-process.html": {
       "title": "Compound Poisson Process",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/compound-poisson-superposition.html": {
       "title": "Superposition of Compound Poisson Risks",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/compound-risk-distribution.html": {
       "title": "Compound Risk Distribution",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/convex-order.html": {
       "title": "Convex Order and More Dangerous Risks",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/cumulant-generating-function.html": {
       "title": "Cumulant Generating Function",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/expected-utility-and-risk-aversion.html": {
       "title": "Expected Utility and Risk Aversion",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/expected-value-premium-principle.html": {
       "title": "Expected Value Premium Principle",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/exponential-order.html": {
       "title": "Exponential Order",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/exponential-premium-principle.html": {
       "title": "Exponential Premium Principle",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/exposure-offset.html": {
       "title": "Exposure Offset in Claim-Frequency Models",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/franchise-deductible.html": {
       "title": "Franchise Deductible",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/generalised-linear-model.html": {
       "title": "Generalised Linear Model",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/grouped-data-likelihood.html": {
       "title": "Likelihood for Grouped Loss Data",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/hunger-for-bonus.html": {
       "title": "Hunger for Bonus",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/individual-risk-model.html": {
       "title": "Individual Risk Model",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/information-criteria-for-risk-models.html": {
       "title": "Information Criteria for Risk Models",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/insurance-indifference-premiums.html": {
       "title": "Insurance Indifference Premiums",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/loimaranta-efficiency.html": {
       "title": "Loimaranta Efficiency",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/loss-elimination-ratio.html": {
       "title": "Loss Elimination Ratio",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/maximum-claim-in-a-portfolio.html": {
       "title": "Maximum Claim in a Portfolio",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/maximum-likelihood-estimation.html": {
       "title": "Maximum Likelihood Estimation",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/mixed-discrete-continuous-loss.html": {
       "title": "Mixed Discrete and Continuous Loss Distribution",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/optimal-bonus-malus-relativities.html": {
       "title": "Optimal Bonus-Malus Relativities",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/ordinary-deductible.html": {
       "title": "Ordinary Deductible",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/overdispersion-in-count-models.html": {
       "title": "Overdispersion in Count Models",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/pareto-loss-model.html": {
       "title": "Pareto Loss Model",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/poisson-regression.html": {
       "title": "Poisson Regression",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/policy-limit.html": {
       "title": "Policy Limit",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/premium-principle-properties.html": {
       "title": "Premium Principles and Their Properties",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/probability-generating-function.html": {
       "title": "Probability Generating Function",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/rating-factors-and-interactions.html": {
       "title": "Rating Factors and Interactions in Insurance GLMs",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/risk-orders-under-aggregation.html": {
       "title": "Risk Orders Under Aggregation",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/second-order-stochastic-dominance.html": {
       "title": "Second-Order Stochastic Dominance",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/single-crossing-order-criteria.html": {
       "title": "Crossing Criteria for Risk Orders",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/standard-deviation-premium-principle.html": {
       "title": "Standard Deviation Premium Principle",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/stationary-bonus-malus-premium.html": {
       "title": "Stationary Bonus-Malus Distribution and Premium",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/stochastic-order.html": {
       "title": "Stochastic Order",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/stop-loss-order.html": {
       "title": "Stop-Loss Order",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/stop-loss-separation-theorem.html": {
       "title": "Stop-Loss Separation Theorem",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/stop-loss-transform.html": {
       "title": "Stop-Loss Transform and Reinsurance",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/thicker-tailed-order.html": {
       "title": "Thicker-Tailed Comparison",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/truncated-loss-likelihood.html": {
       "title": "Likelihood for Truncated Loss Data",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/variance-premium-principle.html": {
       "title": "Variance Premium Principle",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/zero-utility-premium.html": {
       "title": "Zero-Utility Premium",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
-      "aiMcq": false
+      "aiMcq": true
     },
     "Year-3/index.html": {
       "title": "Year 3",
@@ -7215,6 +7229,11 @@
       "Year-1/1b-Math-II-Linear-Algebra/vector-addition.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/index.html": [],
+    "Year-1/1b-Probability-Theory-for-EOR/absolutely-continuous-distribution.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/distribution.html",
+      "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html",
+      "Year-1/1a-Math-I-Calculus/definite-integral.html"
+    ],
     "Year-1/1b-Probability-Theory-for-EOR/arrival-rate.html": [
       "Year-1/1b-Probability-Theory-for-EOR/poisson-process.html"
     ],
@@ -7269,6 +7288,7 @@
       "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/continuous-random-variable.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/absolutely-continuous-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/random-variable.html",
       "Year-1/1a-Math-I-Calculus/definite-integral.html"
     ],
@@ -7444,6 +7464,10 @@
     "Year-1/1b-Probability-Theory-for-EOR/permutation.html": [
       "Year-1/1a-Math-I-Calculus/set.html"
     ],
+    "Year-1/1b-Probability-Theory-for-EOR/point-mass.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/distribution.html",
+      "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html"
+    ],
     "Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/discrete-random-variable.html",
       "Year-1/1a-Math-I-Calculus/factorial.html",
@@ -7455,6 +7479,7 @@
       "Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/absolutely-continuous-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/continuous-random-variable.html",
       "Year-1/1a-Math-I-Calculus/definite-integral.html",
       "Year-1/1a-Math-I-Calculus/riemann-integral.html"
@@ -8365,6 +8390,7 @@
       "Year-1/1a-Math-I-Calculus/derivative-and-differentiability.html"
     ],
     "Year-2/2a-Life-Insurance/future-lifetime.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/absolutely-continuous-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html",
       "Year-1/2b-Probability-Distributions/survivor-function.html",
       "Year-1/1b-Probability-Theory-for-EOR/continuous-random-variable.html"
@@ -8541,6 +8567,7 @@
       "Year-2/2b-Risk-Insurance/stationary-bonus-malus-premium.html"
     ],
     "Year-2/2b-Risk-Insurance/individual-risk-model.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/point-mass.html",
       "Year-1/1b-Probability-Theory-for-EOR/indicator-random-variable.html",
       "Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html",
       "Year-1/2b-Probability-Distributions/convolution.html",
@@ -8573,6 +8600,8 @@
       "Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html"
     ],
     "Year-2/2b-Risk-Insurance/mixed-discrete-continuous-loss.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/point-mass.html",
+      "Year-1/1b-Probability-Theory-for-EOR/absolutely-continuous-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/mixture-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html"
     ],
@@ -8600,6 +8629,7 @@
       "Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html"
     ],
     "Year-2/2b-Risk-Insurance/policy-limit.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/point-mass.html",
       "Year-2/2b-Risk-Insurance/ordinary-deductible.html",
       "Year-2/2b-Risk-Insurance/stop-loss-transform.html"
     ],
@@ -8628,6 +8658,7 @@
       "Year-2/2b-Risk-Insurance/convex-order.html"
     ],
     "Year-2/2b-Risk-Insurance/single-crossing-order-criteria.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/absolutely-continuous-distribution.html",
       "Year-2/2b-Risk-Insurance/stochastic-order.html",
       "Year-2/2b-Risk-Insurance/thicker-tailed-order.html",
       "Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html"
@@ -8782,6 +8813,7 @@
       "Year-1/1a-Math-I-Calculus/fundamental-theorem-of-calculus-part-2.html",
       "Year-1/1a-Math-I-Calculus/improper-integral.html",
       "Year-1/1a-Math-I-Calculus/integration-by-parts.html",
+      "Year-1/1b-Probability-Theory-for-EOR/absolutely-continuous-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/continuous-random-variable.html",
       "Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html",
       "Year-1/2b-Probability-Distributions/joint-probability-density-function.html"
@@ -10348,6 +10380,13 @@
       "Year-1/1b-Math-II-Linear-Algebra/subspace.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/index.html": [],
+    "Year-1/1b-Probability-Theory-for-EOR/absolutely-continuous-distribution.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/continuous-random-variable.html",
+      "Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html",
+      "Year-2/2a-Life-Insurance/future-lifetime.html",
+      "Year-2/2b-Risk-Insurance/mixed-discrete-continuous-loss.html",
+      "Year-2/2b-Risk-Insurance/single-crossing-order-criteria.html"
+    ],
     "Year-1/1b-Probability-Theory-for-EOR/arrival-rate.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/axioms-of-probability.html": [
       "Year-1/1b-Probability-Theory-for-EOR/probability-function.html"
@@ -10416,7 +10455,9 @@
       "Year-1/1b-Probability-Theory-for-EOR/stars-and-bars.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/absolutely-continuous-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/median.html",
+      "Year-1/1b-Probability-Theory-for-EOR/point-mass.html",
       "Year-1/1b-Probability-Theory-for-EOR/quantile-function.html",
       "Year-1/1b-Probability-Theory-for-EOR/universality-of-the-uniform.html",
       "Year-1/2b-Probability-Distributions/conditional-cumulative-distribution-function.html",
@@ -10443,10 +10484,12 @@
       "Year-1/1b-Probability-Theory-for-EOR/partition.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/distribution.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/absolutely-continuous-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html",
       "Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html",
       "Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html",
       "Year-1/1b-Probability-Theory-for-EOR/mixture-distribution.html",
+      "Year-1/1b-Probability-Theory-for-EOR/point-mass.html",
       "Year-1/1b-Probability-Theory-for-EOR/summary-measures-of-a-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/support-of-a-random-variable.html",
       "Year-1/1b-Probability-Theory-for-EOR/symmetric-distribution.html",
@@ -10587,6 +10630,11 @@
       "Year-1/2b-Probability-Distributions/law-of-total-expectation-partition.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/permutation.html": [],
+    "Year-1/1b-Probability-Theory-for-EOR/point-mass.html": [
+      "Year-2/2b-Risk-Insurance/individual-risk-model.html",
+      "Year-2/2b-Risk-Insurance/mixed-discrete-continuous-loss.html",
+      "Year-2/2b-Risk-Insurance/policy-limit.html"
+    ],
     "Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/poisson-process.html",
       "Year-1/2b-Probability-Distributions/chicken-egg-theorem.html",
@@ -13567,6 +13615,11 @@
       "Year-1/1b-Math-II-Linear-Algebra/scalar-multiplication.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/index.html": [],
+    "Year-1/1b-Probability-Theory-for-EOR/absolutely-continuous-distribution.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/continuous-random-variable.html",
+      "Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html",
+      "Year-1/1b-Probability-Theory-for-EOR/point-mass.html"
+    ],
     "Year-1/1b-Probability-Theory-for-EOR/arrival-rate.html": [
       "Year-1/1b-Probability-Theory-for-EOR/half-life.html",
       "Year-1/1b-Probability-Theory-for-EOR/exponential-distribution.html",
@@ -13891,6 +13944,11 @@
       "Year-1/1b-Probability-Theory-for-EOR/counting.html",
       "Year-1/1a-Math-I-Calculus/factorial.html",
       "Year-1/1b-Probability-Theory-for-EOR/multiplication-rule.html"
+    ],
+    "Year-1/1b-Probability-Theory-for-EOR/point-mass.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/discrete-random-variable.html",
+      "Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html",
+      "Year-1/1b-Probability-Theory-for-EOR/absolutely-continuous-distribution.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/exponential-distribution.html",

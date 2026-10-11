@@ -187,9 +187,9 @@
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=1056600b7513";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=9f3265b7b195";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=1056600b7513";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=9f3265b7b195";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -772,6 +772,18 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="absolutely-continuous-distribution.html">
+<span class="md-ellipsis">
+    
+  
+    Absolutely Continuous Distribution
+  
+
+    
+  </span>
+</a>
+</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="arrival-rate.html">
 <span class="md-ellipsis">
@@ -1421,6 +1433,18 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="point-mass.html">
+<span class="md-ellipsis">
+    
+  
+    Point Mass
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="poisson-distribution.html">
 <span class="md-ellipsis">
     
@@ -1497,7 +1521,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Quantile Function (Generalized Inverse CDF)
+    Quantile Function
   
 
     
@@ -2053,7 +2077,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </nav>
 <h1 id="unimodal-and-multimodal-distribution">Unimodal and Multimodal Distribution<a class="headerlink" href="#unimodal-and-multimodal-distribution" title="Permanent link">¶</a></h1><div aria-hidden="true" class="mw-slot" data-mw-slot=""></div><script>(function(s){try{var r=document.documentElement,p=String(location.pathname||""),k=p.indexOf("Year-"),rel=k<0?"":p.slice(k),c=false;if(!rel||r.classList.contains("mk-startup-mastery-off")){s.setAttribute("data-mw-slot","off");return;}try{c=localStorage.getItem("mw_widget_hidden_v1")==="1";}catch(_){}if(!c){var f=false;try{f=sessionStorage.getItem("mw_widget_force_open_v1:"+rel)==="1";}catch(_){}if(!f){try{var a=JSON.parse(localStorage.getItem("concept_mastery_v1")||"{}"),x=a&&typeof a==="object"&&!Array.isArray(a)?a[rel]:null,v=x&&x.m,u=!!(x&&(x.unrated===true||String(x.state||"").toLowerCase()==="unrated"));v=typeof v==="number"||(typeof v==="string"&&v.trim()!=="")?Number(v):null;c=!!(x&&!u&&[0,1,2,3].indexOf(v)>=0);}catch(_){}}}s.setAttribute("data-mw-slot",c?"line":"box");}catch(_){}})(document.currentScript&&document.currentScript.previousElementSibling);</script>
 <h2 id="definition"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 7h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H9zm2 2v6h2V9zM3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm2 0v14h14V5z"></path></svg></span> Definition<a class="headerlink" href="#definition" title="Permanent link">¶</a></h2>
-<p>A <a href="distribution.html">distribution</a> is <strong>unimodal</strong> if its probability mass function or density function has a single peak (one local maximum), and <strong>multimodal</strong> if it has several separated peaks; with two peaks it is called <strong>bimodal</strong>. Here every peak is called a mode, although only the highest peak is a <a href="mode.html">mode</a> in the strict sense of a global maximizer.</p>
+<p>A <a href="distribution.html">distribution</a> is <strong>unimodal</strong> if its <a href="probability-mass-function.html">probability mass function</a> or <a href="probability-density-function.html">density function</a> has a single peak (one local maximum), and <strong>multimodal</strong> if it has several separated peaks; with two peaks it is called <strong>bimodal</strong>. Here every peak is called a mode, although only the highest peak is a <a href="mode.html">mode</a> in the strict sense of a global maximizer.</p>
 <hr/>
 <h2 id="interpretation"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 3c3.9 0 7 3.1 7 7 0 2.8-1.6 5.2-4 6.3V21H9v-3H8c-1.1 0-2-.9-2-2v-3H4.5c-.4 0-.7-.5-.4-.8L6 9.7C6.2 5.9 9.2 3 13 3m0-2C8.4 1 4.6 4.4 4.1 8.9L2.5 11c-.6.8-.6 1.8-.2 2.6.4.7 1 1.2 1.7 1.3V16c0 1.9 1.3 3.4 3 3.9V23h11v-5.5c2.5-1.7 4-4.4 4-7.5 0-5-4-9-9-9m1 13h-2v-1h2zm1.6-4.5c-.3.4-.6.8-1.1 1.1V12h-3v-1.4c-1.4-.8-1.9-2.7-1.1-4.1s2.7-1.9 4.1-1.1 1.9 2.7 1.1 4.1"></path></svg></span> Interpretation<a class="headerlink" href="#interpretation" title="Permanent link">¶</a></h2>
 <p>A unimodal distribution has one main peak. A multimodal distribution has several peaks, which may indicate several groups or mechanisms.</p>
@@ -2089,7 +2113,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <p><span class="search-aliases" data-nosnippet="">
 Keywords: unimodal distribution, multimodal distribution, bimodal distribution
 </span></p>
-<p class="mk-last-updated">Last updated: 8 October 2026 18:38</p><meta content="true" name="mk-concept-ai-mcq"/><script id="mk-concept-connections-data" type="application/json">{"kind":"concept-connections-panel-v1","readinessMaxDepth":2,"loc":"Year-1/1b-Probability-Theory-for-EOR/unimodal-and-multimodal-distribution.html","nodes":{"Year-1/1b-Probability-Theory-for-EOR/unimodal-and-multimodal-distribution.html":{"title":"Unimodal and Multimodal Distribution","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/mode.html":{"title":"Mode","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/distribution.html":{"title":"Distribution","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/mixture-distribution.html":{"title":"Mixture Distribution","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html":{"title":"Probability Density Function","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/probability-function.html":{"title":"Probability Function","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html":{"title":"Probability Mass Function","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/random-variable.html":{"title":"Random Variable","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true}},"titleLocs":["Year-1/1b-Probability-Theory-for-EOR/unimodal-and-multimodal-distribution.html","Year-1/1b-Probability-Theory-for-EOR/mode.html","Year-1/1b-Probability-Theory-for-EOR/distribution.html","Year-1/1b-Probability-Theory-for-EOR/mixture-distribution.html"],"prereqsByLoc":{"Year-1/1b-Probability-Theory-for-EOR/unimodal-and-multimodal-distribution.html":["Year-1/1b-Probability-Theory-for-EOR/mode.html","Year-1/1b-Probability-Theory-for-EOR/distribution.html"],"Year-1/1b-Probability-Theory-for-EOR/distribution.html":["Year-1/1b-Probability-Theory-for-EOR/random-variable.html","Year-1/1b-Probability-Theory-for-EOR/probability-function.html"],"Year-1/1b-Probability-Theory-for-EOR/mode.html":["Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html","Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html"]},"dependents":[],"related":["Year-1/1b-Probability-Theory-for-EOR/mixture-distribution.html"]}</script><template data-search-exclude="" id="mk-concept-connections-titles"><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/unimodal-and-multimodal-distribution.html">Unimodal and Multimodal Distribution</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/mode.html">Mode</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/distribution.html">Distribution</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/mixture-distribution.html">Mixture Distribution</span></template>
+<p class="mk-last-updated">Last updated: 11 October 2026 14:53</p><meta content="true" name="mk-concept-ai-mcq"/><script id="mk-concept-connections-data" type="application/json">{"kind":"concept-connections-panel-v1","readinessMaxDepth":2,"loc":"Year-1/1b-Probability-Theory-for-EOR/unimodal-and-multimodal-distribution.html","nodes":{"Year-1/1b-Probability-Theory-for-EOR/unimodal-and-multimodal-distribution.html":{"title":"Unimodal and Multimodal Distribution","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/mode.html":{"title":"Mode","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/distribution.html":{"title":"Distribution","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/mixture-distribution.html":{"title":"Mixture Distribution","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html":{"title":"Probability Density Function","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/probability-function.html":{"title":"Probability Function","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html":{"title":"Probability Mass Function","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/random-variable.html":{"title":"Random Variable","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true}},"titleLocs":["Year-1/1b-Probability-Theory-for-EOR/unimodal-and-multimodal-distribution.html","Year-1/1b-Probability-Theory-for-EOR/mode.html","Year-1/1b-Probability-Theory-for-EOR/distribution.html","Year-1/1b-Probability-Theory-for-EOR/mixture-distribution.html"],"prereqsByLoc":{"Year-1/1b-Probability-Theory-for-EOR/unimodal-and-multimodal-distribution.html":["Year-1/1b-Probability-Theory-for-EOR/mode.html","Year-1/1b-Probability-Theory-for-EOR/distribution.html"],"Year-1/1b-Probability-Theory-for-EOR/distribution.html":["Year-1/1b-Probability-Theory-for-EOR/random-variable.html","Year-1/1b-Probability-Theory-for-EOR/probability-function.html"],"Year-1/1b-Probability-Theory-for-EOR/mode.html":["Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html","Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html"]},"dependents":[],"related":["Year-1/1b-Probability-Theory-for-EOR/mixture-distribution.html"]}</script><template data-search-exclude="" id="mk-concept-connections-titles"><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/unimodal-and-multimodal-distribution.html">Unimodal and Multimodal Distribution</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/mode.html">Mode</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/distribution.html">Distribution</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/mixture-distribution.html">Mixture Distribution</span></template>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -2129,7 +2153,7 @@ Keywords: unimodal distribution, multimodal distribution, bimodal distribution
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
 <script src="../../javascripts/wiki-explain.js?h=8900cebd6651"></script>
 <script src="../../javascripts/concept-connections-panel.js?h=6762a20ee407"></script>
-<script src="../../javascripts/startup-preferences.js?h=1056600b7513"></script>
+<script src="../../javascripts/startup-preferences.js?h=9f3265b7b195"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=bdadfef125e5"></script>
 <script src="../../javascripts/ui-guard.js?h=36b89791cb6b"></script>
