@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1791750786240,
+  "generatedAt": 1791760871114,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -8495,7 +8495,7 @@
     ],
     "Year-2/2a-Life-Insurance/prospective-policy-value.html": [
       "Year-2/2a-Life-Insurance/future-loss-random-variable.html",
-      "Year-1/2b-Probability-Distributions/conditional-expectation-given-a-random-variable.html"
+      "Year-1/1b-Probability-Theory-for-EOR/conditional-expectation.html"
     ],
     "Year-2/2a-Life-Insurance/pure-endowment.html": [
       "Year-2/2a-Life-Insurance/actuarial-present-value.html",
@@ -10499,7 +10499,8 @@
     ],
     "Year-1/1b-Probability-Theory-for-EOR/conditional-expectation.html": [
       "Year-1/1b-Probability-Theory-for-EOR/conditional-variance.html",
-      "Year-1/2b-Probability-Distributions/law-of-total-expectation-partition.html"
+      "Year-1/2b-Probability-Distributions/law-of-total-expectation-partition.html",
+      "Year-2/2a-Life-Insurance/prospective-policy-value.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/conditional-independence.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html": [
@@ -11213,7 +11214,6 @@
       "Year-1/2b-Probability-Distributions/conditional-expectation-and-independence.html",
       "Year-1/2b-Probability-Distributions/conditional-variance-given-a-random-variable.html",
       "Year-1/2b-Probability-Distributions/taking-out-what-is-known.html",
-      "Year-2/2a-Life-Insurance/prospective-policy-value.html",
       "Year-2/2b-Risk-Insurance/generalised-linear-model.html",
       "Year-2/2b-Risk-Insurance/optimal-bonus-malus-relativities.html"
     ],
