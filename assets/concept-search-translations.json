@@ -1,0 +1,6441 @@
+{
+  "version": 1,
+  "languages": {
+    "zh": "中文",
+    "nl": "Nederlands",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español",
+    "it": "Italiano",
+    "pl": "Polski",
+    "ro": "Română"
+  },
+  "concepts": [
+    {
+      "title": "Absolute Value",
+      "names": {
+        "zh": [
+          "绝对值",
+          "絕對值"
+        ],
+        "nl": [
+          "absolute waarde"
+        ],
+        "de": [
+          "Absolutbetrag"
+        ],
+        "fr": [
+          "valeur absolue"
+        ],
+        "es": [
+          "valor absoluto"
+        ],
+        "it": [
+          "valore assoluto"
+        ],
+        "pl": [
+          "wartość bezwzględna"
+        ],
+        "ro": [
+          "valoare absolută"
+        ]
+      }
+    },
+    {
+      "title": "Antiderivative",
+      "names": {
+        "zh": [
+          "原函数",
+          "原函數"
+        ],
+        "nl": [
+          "primitieve functie"
+        ],
+        "de": [
+          "Stammfunktion"
+        ],
+        "fr": [
+          "primitive"
+        ],
+        "es": [
+          "primitiva"
+        ],
+        "it": [
+          "primitiva"
+        ],
+        "pl": [
+          "funkcja pierwotna"
+        ],
+        "ro": [
+          "primitivă"
+        ]
+      }
+    },
+    {
+      "title": "Chain Rule",
+      "names": {
+        "zh": [
+          "链式法则",
+          "鏈式法則"
+        ],
+        "nl": [
+          "kettingregel"
+        ],
+        "de": [
+          "Kettenregel"
+        ],
+        "fr": [
+          "règle de dérivation des fonctions composées"
+        ],
+        "es": [
+          "regla de la cadena"
+        ],
+        "it": [
+          "regola della catena"
+        ],
+        "pl": [
+          "reguła łańcuchowa"
+        ],
+        "ro": [
+          "regula derivării funcțiilor compuse"
+        ]
+      }
+    },
+    {
+      "title": "Codomain",
+      "names": {
+        "zh": [
+          "陪域"
+        ],
+        "nl": [
+          "codomein"
+        ],
+        "de": [
+          "Zielmenge"
+        ],
+        "fr": [
+          "ensemble d'arrivée"
+        ],
+        "es": [
+          "codominio"
+        ],
+        "it": [
+          "codominio"
+        ],
+        "pl": [
+          "przeciwdziedzina"
+        ],
+        "ro": [
+          "codomeniu"
+        ]
+      }
+    },
+    {
+      "title": "Composition of Functions",
+      "names": {
+        "zh": [
+          "复合函数",
+          "複合函數"
+        ],
+        "nl": [
+          "samenstelling van functies"
+        ],
+        "de": [
+          "Komposition von Funktionen"
+        ],
+        "fr": [
+          "composition de fonctions"
+        ],
+        "es": [
+          "composición de funciones"
+        ],
+        "it": [
+          "composizione di funzioni"
+        ],
+        "pl": [
+          "złożenie funkcji"
+        ],
+        "ro": [
+          "compunerea funcțiilor"
+        ]
+      }
+    },
+    {
+      "title": "Constant Function",
+      "names": {
+        "zh": [
+          "常函数",
+          "常函數"
+        ],
+        "nl": [
+          "constante functie"
+        ],
+        "de": [
+          "konstante Funktion"
+        ],
+        "fr": [
+          "fonction constante"
+        ],
+        "es": [
+          "función constante"
+        ],
+        "it": [
+          "funzione costante"
+        ],
+        "pl": [
+          "funkcja stała"
+        ],
+        "ro": [
+          "funcție constantă"
+        ]
+      }
+    },
+    {
+      "title": "Continuity",
+      "names": {
+        "zh": [
+          "连续性",
+          "連續性"
+        ],
+        "nl": [
+          "continuïteit"
+        ],
+        "de": [
+          "Stetigkeit"
+        ],
+        "fr": [
+          "continuité"
+        ],
+        "es": [
+          "continuidad"
+        ],
+        "it": [
+          "continuità"
+        ],
+        "pl": [
+          "ciągłość"
+        ],
+        "ro": [
+          "continuitate"
+        ]
+      }
+    },
+    {
+      "title": "Critical Point",
+      "names": {
+        "zh": [
+          "临界点",
+          "臨界點"
+        ],
+        "nl": [
+          "kritiek punt"
+        ],
+        "de": [
+          "kritischer Punkt"
+        ],
+        "fr": [
+          "point critique"
+        ],
+        "es": [
+          "punto crítico"
+        ],
+        "it": [
+          "punto critico"
+        ],
+        "pl": [
+          "punkt krytyczny"
+        ],
+        "ro": [
+          "punct critic"
+        ]
+      }
+    },
+    {
+      "title": "Definite Integral",
+      "names": {
+        "zh": [
+          "定积分",
+          "定積分"
+        ],
+        "nl": [
+          "bepaalde integraal"
+        ],
+        "de": [
+          "bestimmtes Integral"
+        ],
+        "fr": [
+          "intégrale définie"
+        ],
+        "es": [
+          "integral definida"
+        ],
+        "it": [
+          "integrale definito"
+        ],
+        "pl": [
+          "całka oznaczona"
+        ],
+        "ro": [
+          "integrală definită"
+        ]
+      }
+    },
+    {
+      "title": "Derivative and Differentiability",
+      "names": {
+        "zh": [
+          "导数",
+          "導數",
+          "可微性"
+        ],
+        "nl": [
+          "afgeleide",
+          "differentieerbaarheid"
+        ],
+        "de": [
+          "Ableitung",
+          "Differenzierbarkeit"
+        ],
+        "fr": [
+          "dérivée",
+          "dérivabilité"
+        ],
+        "es": [
+          "derivada",
+          "diferenciabilidad"
+        ],
+        "it": [
+          "derivata",
+          "differenziabilità"
+        ],
+        "pl": [
+          "pochodna",
+          "różniczkowalność"
+        ],
+        "ro": [
+          "derivată",
+          "derivabilitate"
+        ]
+      }
+    },
+    {
+      "title": "Difference Set",
+      "names": {
+        "zh": [
+          "差集"
+        ],
+        "nl": [
+          "verschil van verzamelingen"
+        ],
+        "de": [
+          "Differenzmenge"
+        ],
+        "fr": [
+          "différence d'ensembles"
+        ],
+        "es": [
+          "diferencia de conjuntos"
+        ],
+        "it": [
+          "differenza di insiemi"
+        ],
+        "pl": [
+          "różnica zbiorów"
+        ],
+        "ro": [
+          "diferența mulțimilor"
+        ]
+      }
+    },
+    {
+      "title": "Differential",
+      "names": {
+        "zh": [
+          "微分"
+        ],
+        "nl": [
+          "differentiaal"
+        ],
+        "de": [
+          "Differential"
+        ],
+        "fr": [
+          "différentielle"
+        ],
+        "es": [
+          "diferencial"
+        ],
+        "it": [
+          "differenziale"
+        ],
+        "pl": [
+          "różniczka"
+        ],
+        "ro": [
+          "diferențială"
+        ]
+      }
+    },
+    {
+      "title": "Disjoint Sets",
+      "names": {
+        "zh": [
+          "不相交集合"
+        ],
+        "nl": [
+          "disjuncte verzamelingen"
+        ],
+        "de": [
+          "disjunkte Mengen"
+        ],
+        "fr": [
+          "ensembles disjoints"
+        ],
+        "es": [
+          "conjuntos disjuntos"
+        ],
+        "it": [
+          "insiemi disgiunti"
+        ],
+        "pl": [
+          "zbiory rozłączne"
+        ],
+        "ro": [
+          "mulțimi disjuncte"
+        ]
+      }
+    },
+    {
+      "title": "Domain",
+      "names": {
+        "zh": [
+          "定义域",
+          "定義域"
+        ],
+        "nl": [
+          "domein"
+        ],
+        "de": [
+          "Definitionsbereich"
+        ],
+        "fr": [
+          "domaine de définition"
+        ],
+        "es": [
+          "dominio"
+        ],
+        "it": [
+          "dominio"
+        ],
+        "pl": [
+          "dziedzina"
+        ],
+        "ro": [
+          "domeniu de definiție"
+        ]
+      }
+    },
+    {
+      "title": "Empty Set",
+      "names": {
+        "zh": [
+          "空集"
+        ],
+        "nl": [
+          "lege verzameling"
+        ],
+        "de": [
+          "leere Menge"
+        ],
+        "fr": [
+          "ensemble vide"
+        ],
+        "es": [
+          "conjunto vacío"
+        ],
+        "it": [
+          "insieme vuoto"
+        ],
+        "pl": [
+          "zbiór pusty"
+        ],
+        "ro": [
+          "mulțime vidă"
+        ]
+      }
+    },
+    {
+      "title": "Euler's Number",
+      "names": {
+        "zh": [
+          "欧拉数",
+          "歐拉數",
+          "自然常数",
+          "自然常數"
+        ],
+        "nl": [
+          "getal van Euler"
+        ],
+        "de": [
+          "Eulersche Zahl"
+        ],
+        "fr": [
+          "nombre d'Euler"
+        ],
+        "es": [
+          "número de Euler"
+        ],
+        "it": [
+          "numero di Eulero"
+        ],
+        "pl": [
+          "liczba Eulera"
+        ],
+        "ro": [
+          "numărul lui Euler"
+        ]
+      }
+    },
+    {
+      "title": "Exponential Function",
+      "names": {
+        "zh": [
+          "指数函数",
+          "指數函數"
+        ],
+        "nl": [
+          "exponentiële functie"
+        ],
+        "de": [
+          "Exponentialfunktion"
+        ],
+        "fr": [
+          "fonction exponentielle"
+        ],
+        "es": [
+          "función exponencial"
+        ],
+        "it": [
+          "funzione esponenziale"
+        ],
+        "pl": [
+          "funkcja wykładnicza"
+        ],
+        "ro": [
+          "funcție exponențială"
+        ]
+      }
+    },
+    {
+      "title": "Extreme Value Theorem",
+      "names": {
+        "zh": [
+          "最值定理",
+          "极值定理",
+          "極值定理"
+        ],
+        "nl": [
+          "extreme-waardestelling"
+        ],
+        "de": [
+          "Extremwertsatz"
+        ],
+        "fr": [
+          "théorème des valeurs extrêmes"
+        ],
+        "es": [
+          "teorema del valor extremo"
+        ],
+        "it": [
+          "teorema di Weierstrass sugli estremi"
+        ],
+        "pl": [
+          "twierdzenie o osiąganiu kresów"
+        ],
+        "ro": [
+          "teorema valorilor extreme"
+        ]
+      }
+    },
+    {
+      "title": "Factorial",
+      "names": {
+        "zh": [
+          "阶乘",
+          "階乘"
+        ],
+        "nl": [
+          "faculteit"
+        ],
+        "de": [
+          "Fakultät"
+        ],
+        "fr": [
+          "factorielle"
+        ],
+        "es": [
+          "factorial"
+        ],
+        "it": [
+          "fattoriale"
+        ],
+        "pl": [
+          "silnia"
+        ],
+        "ro": [
+          "factorial"
+        ]
+      }
+    },
+    {
+      "title": "Function",
+      "names": {
+        "zh": [
+          "函数",
+          "函數"
+        ],
+        "nl": [
+          "functie"
+        ],
+        "de": [
+          "Funktion"
+        ],
+        "fr": [
+          "fonction"
+        ],
+        "es": [
+          "función"
+        ],
+        "it": [
+          "funzione"
+        ],
+        "pl": [
+          "funkcja"
+        ],
+        "ro": [
+          "funcție"
+        ]
+      }
+    },
+    {
+      "title": "Gamma Function",
+      "names": {
+        "zh": [
+          "伽马函数",
+          "伽馬函數"
+        ],
+        "nl": [
+          "gammafunctie"
+        ],
+        "de": [
+          "Gammafunktion"
+        ],
+        "fr": [
+          "fonction gamma"
+        ],
+        "es": [
+          "función gamma"
+        ],
+        "it": [
+          "funzione gamma"
+        ],
+        "pl": [
+          "funkcja gamma"
+        ],
+        "ro": [
+          "funcția gamma"
+        ]
+      }
+    },
+    {
+      "title": "Geometric Series",
+      "names": {
+        "zh": [
+          "几何级数",
+          "幾何級數",
+          "等比级数",
+          "等比級數"
+        ],
+        "nl": [
+          "meetkundige reeks"
+        ],
+        "de": [
+          "geometrische Reihe"
+        ],
+        "fr": [
+          "série géométrique"
+        ],
+        "es": [
+          "serie geométrica"
+        ],
+        "it": [
+          "serie geometrica"
+        ],
+        "pl": [
+          "szereg geometryczny"
+        ],
+        "ro": [
+          "serie geometrică"
+        ]
+      }
+    },
+    {
+      "title": "Harmonic Series",
+      "names": {
+        "zh": [
+          "调和级数",
+          "調和級數"
+        ],
+        "nl": [
+          "harmonische reeks"
+        ],
+        "de": [
+          "harmonische Reihe"
+        ],
+        "fr": [
+          "série harmonique"
+        ],
+        "es": [
+          "serie armónica"
+        ],
+        "it": [
+          "serie armonica"
+        ],
+        "pl": [
+          "szereg harmoniczny"
+        ],
+        "ro": [
+          "serie armonică"
+        ]
+      }
+    },
+    {
+      "title": "Identity Function",
+      "names": {
+        "zh": [
+          "恒等函数",
+          "恆等函數"
+        ],
+        "nl": [
+          "identiteitsfunctie"
+        ],
+        "de": [
+          "Identitätsfunktion"
+        ],
+        "fr": [
+          "fonction identité"
+        ],
+        "es": [
+          "función identidad"
+        ],
+        "it": [
+          "funzione identità"
+        ],
+        "pl": [
+          "funkcja identycznościowa"
+        ],
+        "ro": [
+          "funcție identitate"
+        ]
+      }
+    },
+    {
+      "title": "Improper Integral",
+      "names": {
+        "zh": [
+          "反常积分",
+          "反常積分",
+          "广义积分",
+          "廣義積分"
+        ],
+        "nl": [
+          "oneigenlijke integraal"
+        ],
+        "de": [
+          "uneigentliches Integral"
+        ],
+        "fr": [
+          "intégrale impropre"
+        ],
+        "es": [
+          "integral impropia"
+        ],
+        "it": [
+          "integrale improprio"
+        ],
+        "pl": [
+          "całka niewłaściwa"
+        ],
+        "ro": [
+          "integrală improprie"
+        ]
+      }
+    },
+    {
+      "title": "Indefinite Integral",
+      "names": {
+        "zh": [
+          "不定积分",
+          "不定積分"
+        ],
+        "nl": [
+          "onbepaalde integraal"
+        ],
+        "de": [
+          "unbestimmtes Integral"
+        ],
+        "fr": [
+          "intégrale indéfinie"
+        ],
+        "es": [
+          "integral indefinida"
+        ],
+        "it": [
+          "integrale indefinito"
+        ],
+        "pl": [
+          "całka nieoznaczona"
+        ],
+        "ro": [
+          "integrală nedefinită"
+        ]
+      }
+    },
+    {
+      "title": "Indicator Function",
+      "names": {
+        "zh": [
+          "示性函数",
+          "示性函數",
+          "指示函数",
+          "指示函數"
+        ],
+        "nl": [
+          "indicatorfunctie"
+        ],
+        "de": [
+          "Indikatorfunktion"
+        ],
+        "fr": [
+          "fonction indicatrice"
+        ],
+        "es": [
+          "función indicadora"
+        ],
+        "it": [
+          "funzione indicatrice"
+        ],
+        "pl": [
+          "funkcja wskaźnikowa"
+        ],
+        "ro": [
+          "funcție indicator"
+        ]
+      }
+    },
+    {
+      "title": "Inequality",
+      "names": {
+        "zh": [
+          "不等式"
+        ],
+        "nl": [
+          "ongelijkheid"
+        ],
+        "de": [
+          "Ungleichung"
+        ],
+        "fr": [
+          "inégalité"
+        ],
+        "es": [
+          "desigualdad"
+        ],
+        "it": [
+          "disuguaglianza"
+        ],
+        "pl": [
+          "nierówność"
+        ],
+        "ro": [
+          "inegalitate"
+        ]
+      }
+    },
+    {
+      "title": "Infimum",
+      "names": {
+        "zh": [
+          "下确界",
+          "下確界"
+        ],
+        "nl": [
+          "infimum"
+        ],
+        "de": [
+          "Infimum"
+        ],
+        "fr": [
+          "borne inférieure"
+        ],
+        "es": [
+          "ínfimo"
+        ],
+        "it": [
+          "estremo inferiore"
+        ],
+        "pl": [
+          "kres dolny"
+        ],
+        "ro": [
+          "infimum"
+        ]
+      }
+    },
+    {
+      "title": "Infinite Series",
+      "names": {
+        "zh": [
+          "无穷级数",
+          "無窮級數"
+        ],
+        "nl": [
+          "oneindige reeks"
+        ],
+        "de": [
+          "unendliche Reihe"
+        ],
+        "fr": [
+          "série infinie"
+        ],
+        "es": [
+          "serie infinita"
+        ],
+        "it": [
+          "serie infinita"
+        ],
+        "pl": [
+          "szereg nieskończony"
+        ],
+        "ro": [
+          "serie infinită"
+        ]
+      }
+    },
+    {
+      "title": "Infinity",
+      "names": {
+        "zh": [
+          "无穷大",
+          "無窮大"
+        ],
+        "nl": [
+          "oneindig"
+        ],
+        "de": [
+          "Unendlichkeit"
+        ],
+        "fr": [
+          "infini"
+        ],
+        "es": [
+          "infinito"
+        ],
+        "it": [
+          "infinito"
+        ],
+        "pl": [
+          "nieskończoność"
+        ],
+        "ro": [
+          "infinit"
+        ]
+      }
+    },
+    {
+      "title": "Inflection Point",
+      "names": {
+        "zh": [
+          "拐点",
+          "拐點"
+        ],
+        "nl": [
+          "buigpunt"
+        ],
+        "de": [
+          "Wendepunkt"
+        ],
+        "fr": [
+          "point d'inflexion"
+        ],
+        "es": [
+          "punto de inflexión"
+        ],
+        "it": [
+          "punto di flesso"
+        ],
+        "pl": [
+          "punkt przegięcia"
+        ],
+        "ro": [
+          "punct de inflexiune"
+        ]
+      }
+    },
+    {
+      "title": "Injective Function",
+      "names": {
+        "zh": [
+          "单射",
+          "單射",
+          "单射函数",
+          "單射函數"
+        ],
+        "nl": [
+          "injectieve functie"
+        ],
+        "de": [
+          "injektive Funktion"
+        ],
+        "fr": [
+          "fonction injective"
+        ],
+        "es": [
+          "función inyectiva"
+        ],
+        "it": [
+          "funzione iniettiva"
+        ],
+        "pl": [
+          "funkcja różnowartościowa"
+        ],
+        "ro": [
+          "funcție injectivă"
+        ]
+      }
+    },
+    {
+      "title": "Integer",
+      "names": {
+        "zh": [
+          "整数",
+          "整數"
+        ],
+        "nl": [
+          "geheel getal"
+        ],
+        "de": [
+          "ganze Zahl"
+        ],
+        "fr": [
+          "nombre entier"
+        ],
+        "es": [
+          "número entero"
+        ],
+        "it": [
+          "numero intero"
+        ],
+        "pl": [
+          "liczba całkowita"
+        ],
+        "ro": [
+          "număr întreg"
+        ]
+      }
+    },
+    {
+      "title": "Integrand",
+      "names": {
+        "zh": [
+          "被积函数",
+          "被積函數"
+        ],
+        "nl": [
+          "integrand"
+        ],
+        "de": [
+          "Integrand"
+        ],
+        "fr": [
+          "intégrande"
+        ],
+        "es": [
+          "integrando"
+        ],
+        "it": [
+          "integranda"
+        ],
+        "pl": [
+          "funkcja podcałkowa"
+        ],
+        "ro": [
+          "funcție integrandă"
+        ]
+      }
+    },
+    {
+      "title": "Integration by Parts",
+      "names": {
+        "zh": [
+          "分部积分",
+          "分部積分"
+        ],
+        "nl": [
+          "partiële integratie"
+        ],
+        "de": [
+          "partielle Integration"
+        ],
+        "fr": [
+          "intégration par parties"
+        ],
+        "es": [
+          "integración por partes"
+        ],
+        "it": [
+          "integrazione per parti"
+        ],
+        "pl": [
+          "całkowanie przez części"
+        ],
+        "ro": [
+          "integrare prin părți"
+        ]
+      }
+    },
+    {
+      "title": "Intermediate Value Theorem",
+      "names": {
+        "zh": [
+          "介值定理",
+          "中间值定理",
+          "中間值定理"
+        ],
+        "nl": [
+          "tussenwaardestelling"
+        ],
+        "de": [
+          "Zwischenwertsatz"
+        ],
+        "fr": [
+          "théorème des valeurs intermédiaires"
+        ],
+        "es": [
+          "teorema del valor intermedio"
+        ],
+        "it": [
+          "teorema dei valori intermedi"
+        ],
+        "pl": [
+          "twierdzenie o wartości pośredniej"
+        ],
+        "ro": [
+          "teorema valorilor intermediare"
+        ]
+      }
+    },
+    {
+      "title": "Intersection of Sets",
+      "names": {
+        "zh": [
+          "交集"
+        ],
+        "nl": [
+          "doorsnede van verzamelingen"
+        ],
+        "de": [
+          "Schnittmenge"
+        ],
+        "fr": [
+          "intersection d'ensembles"
+        ],
+        "es": [
+          "intersección de conjuntos"
+        ],
+        "it": [
+          "intersezione di insiemi"
+        ],
+        "pl": [
+          "przecięcie zbiorów"
+        ],
+        "ro": [
+          "intersecția mulțimilor"
+        ]
+      }
+    },
+    {
+      "title": "Interval",
+      "names": {
+        "zh": [
+          "区间",
+          "區間"
+        ],
+        "nl": [
+          "interval"
+        ],
+        "de": [
+          "Intervall"
+        ],
+        "fr": [
+          "intervalle"
+        ],
+        "es": [
+          "intervalo"
+        ],
+        "it": [
+          "intervallo"
+        ],
+        "pl": [
+          "przedział"
+        ],
+        "ro": [
+          "interval"
+        ]
+      }
+    },
+    {
+      "title": "Inverse Function Theorem",
+      "names": {
+        "zh": [
+          "反函数定理",
+          "反函數定理"
+        ],
+        "nl": [
+          "inversefunctiestelling"
+        ],
+        "de": [
+          "Satz über die Umkehrfunktion"
+        ],
+        "fr": [
+          "théorème d'inversion locale"
+        ],
+        "es": [
+          "teorema de la función inversa"
+        ],
+        "it": [
+          "teorema della funzione inversa"
+        ],
+        "pl": [
+          "twierdzenie o funkcji odwrotnej"
+        ],
+        "ro": [
+          "teorema funcției inverse"
+        ]
+      }
+    },
+    {
+      "title": "Irrational Number",
+      "names": {
+        "zh": [
+          "无理数",
+          "無理數"
+        ],
+        "nl": [
+          "irrationaal getal"
+        ],
+        "de": [
+          "irrationale Zahl"
+        ],
+        "fr": [
+          "nombre irrationnel"
+        ],
+        "es": [
+          "número irracional"
+        ],
+        "it": [
+          "numero irrazionale"
+        ],
+        "pl": [
+          "liczba niewymierna"
+        ],
+        "ro": [
+          "număr irațional"
+        ]
+      }
+    },
+    {
+      "title": "L'Hôpital's Rule",
+      "names": {
+        "zh": [
+          "洛必达法则",
+          "洛必達法則"
+        ],
+        "nl": [
+          "regel van l'Hôpital"
+        ],
+        "de": [
+          "Regel von de l'Hospital"
+        ],
+        "fr": [
+          "règle de l'Hôpital"
+        ],
+        "es": [
+          "regla de l'Hôpital"
+        ],
+        "it": [
+          "regola di de l'Hôpital"
+        ],
+        "pl": [
+          "reguła de l'Hospitala"
+        ],
+        "ro": [
+          "regula lui l'Hôpital"
+        ]
+      }
+    },
+    {
+      "title": "Limit of a Sequence",
+      "names": {
+        "zh": [
+          "数列极限",
+          "數列極限"
+        ],
+        "nl": [
+          "limiet van een rij"
+        ],
+        "de": [
+          "Grenzwert einer Folge"
+        ],
+        "fr": [
+          "limite d'une suite"
+        ],
+        "es": [
+          "límite de una sucesión"
+        ],
+        "it": [
+          "limite di una successione"
+        ],
+        "pl": [
+          "granica ciągu"
+        ],
+        "ro": [
+          "limita unui șir"
+        ]
+      }
+    },
+    {
+      "title": "Local Extremum",
+      "names": {
+        "zh": [
+          "局部极值",
+          "局部極值"
+        ],
+        "nl": [
+          "lokaal extremum"
+        ],
+        "de": [
+          "lokales Extremum"
+        ],
+        "fr": [
+          "extremum local"
+        ],
+        "es": [
+          "extremo local"
+        ],
+        "it": [
+          "estremo locale"
+        ],
+        "pl": [
+          "ekstremum lokalne"
+        ],
+        "ro": [
+          "extrem local"
+        ]
+      }
+    },
+    {
+      "title": "Logarithm and Logarithmic Function",
+      "names": {
+        "zh": [
+          "对数",
+          "對數",
+          "对数函数",
+          "對數函數"
+        ],
+        "nl": [
+          "logaritme",
+          "logaritmische functie"
+        ],
+        "de": [
+          "Logarithmus",
+          "Logarithmusfunktion"
+        ],
+        "fr": [
+          "logarithme",
+          "fonction logarithme"
+        ],
+        "es": [
+          "logaritmo",
+          "función logarítmica"
+        ],
+        "it": [
+          "logaritmo",
+          "funzione logaritmica"
+        ],
+        "pl": [
+          "logarytm",
+          "funkcja logarytmiczna"
+        ],
+        "ro": [
+          "logaritm",
+          "funcție logaritmică"
+        ]
+      }
+    },
+    {
+      "title": "Lower Bound",
+      "names": {
+        "zh": [
+          "下界"
+        ],
+        "nl": [
+          "ondergrens"
+        ],
+        "de": [
+          "untere Schranke"
+        ],
+        "fr": [
+          "minorant"
+        ],
+        "es": [
+          "cota inferior"
+        ],
+        "it": [
+          "minorante"
+        ],
+        "pl": [
+          "ograniczenie dolne"
+        ],
+        "ro": [
+          "minorant"
+        ]
+      }
+    },
+    {
+      "title": "Mean Value Theorem",
+      "names": {
+        "zh": [
+          "中值",
+          "中值定理",
+          "均值定理",
+          "拉格朗日中值定理",
+          "微分中值定理"
+        ],
+        "nl": [
+          "middelwaardestelling"
+        ],
+        "de": [
+          "Mittelwertsatz"
+        ],
+        "fr": [
+          "théorème des accroissements finis"
+        ],
+        "es": [
+          "teorema del valor medio"
+        ],
+        "it": [
+          "teorema del valor medio",
+          "teorema di Lagrange"
+        ],
+        "pl": [
+          "twierdzenie Lagrange'a o wartości średniej"
+        ],
+        "ro": [
+          "teorema lui Lagrange",
+          "teorema de medie a lui Lagrange"
+        ]
+      }
+    },
+    {
+      "title": "Monotone Function",
+      "names": {
+        "zh": [
+          "单调函数",
+          "單調函數"
+        ],
+        "nl": [
+          "monotone functie"
+        ],
+        "de": [
+          "monotone Funktion"
+        ],
+        "fr": [
+          "fonction monotone"
+        ],
+        "es": [
+          "función monótona"
+        ],
+        "it": [
+          "funzione monotona"
+        ],
+        "pl": [
+          "funkcja monotoniczna"
+        ],
+        "ro": [
+          "funcție monotonă"
+        ]
+      }
+    },
+    {
+      "title": "Monotone Sequence",
+      "names": {
+        "zh": [
+          "单调数列",
+          "單調數列"
+        ],
+        "nl": [
+          "monotone rij"
+        ],
+        "de": [
+          "monotone Folge"
+        ],
+        "fr": [
+          "suite monotone"
+        ],
+        "es": [
+          "sucesión monótona"
+        ],
+        "it": [
+          "successione monotona"
+        ],
+        "pl": [
+          "ciąg monotoniczny"
+        ],
+        "ro": [
+          "șir monoton"
+        ]
+      }
+    },
+    {
+      "title": "Natural Number",
+      "names": {
+        "zh": [
+          "自然数",
+          "自然數"
+        ],
+        "nl": [
+          "natuurlijk getal"
+        ],
+        "de": [
+          "natürliche Zahl"
+        ],
+        "fr": [
+          "nombre naturel"
+        ],
+        "es": [
+          "número natural"
+        ],
+        "it": [
+          "numero naturale"
+        ],
+        "pl": [
+          "liczba naturalna"
+        ],
+        "ro": [
+          "număr natural"
+        ]
+      }
+    },
+    {
+      "title": "Polynomial",
+      "names": {
+        "zh": [
+          "多项式",
+          "多項式"
+        ],
+        "nl": [
+          "polynoom"
+        ],
+        "de": [
+          "Polynom"
+        ],
+        "fr": [
+          "polynôme"
+        ],
+        "es": [
+          "polinomio"
+        ],
+        "it": [
+          "polinomio"
+        ],
+        "pl": [
+          "wielomian"
+        ],
+        "ro": [
+          "polinom"
+        ]
+      }
+    },
+    {
+      "title": "Proper Subset",
+      "names": {
+        "zh": [
+          "真子集"
+        ],
+        "nl": [
+          "echte deelverzameling"
+        ],
+        "de": [
+          "echte Teilmenge"
+        ],
+        "fr": [
+          "sous-ensemble strict"
+        ],
+        "es": [
+          "subconjunto propio"
+        ],
+        "it": [
+          "sottoinsieme proprio"
+        ],
+        "pl": [
+          "podzbiór właściwy"
+        ],
+        "ro": [
+          "submulțime proprie"
+        ]
+      }
+    },
+    {
+      "title": "Rational Function",
+      "names": {
+        "zh": [
+          "有理函数",
+          "有理函數"
+        ],
+        "nl": [
+          "rationale functie"
+        ],
+        "de": [
+          "rationale Funktion"
+        ],
+        "fr": [
+          "fonction rationnelle"
+        ],
+        "es": [
+          "función racional"
+        ],
+        "it": [
+          "funzione razionale"
+        ],
+        "pl": [
+          "funkcja wymierna"
+        ],
+        "ro": [
+          "funcție rațională"
+        ]
+      }
+    },
+    {
+      "title": "Rational Number",
+      "names": {
+        "zh": [
+          "有理数",
+          "有理數"
+        ],
+        "nl": [
+          "rationaal getal"
+        ],
+        "de": [
+          "rationale Zahl"
+        ],
+        "fr": [
+          "nombre rationnel"
+        ],
+        "es": [
+          "número racional"
+        ],
+        "it": [
+          "numero razionale"
+        ],
+        "pl": [
+          "liczba wymierna"
+        ],
+        "ro": [
+          "număr rațional"
+        ]
+      }
+    },
+    {
+      "title": "Real Number",
+      "names": {
+        "zh": [
+          "实数",
+          "實數"
+        ],
+        "nl": [
+          "reëel getal"
+        ],
+        "de": [
+          "reelle Zahl"
+        ],
+        "fr": [
+          "nombre réel"
+        ],
+        "es": [
+          "número real"
+        ],
+        "it": [
+          "numero reale"
+        ],
+        "pl": [
+          "liczba rzeczywista"
+        ],
+        "ro": [
+          "număr real"
+        ]
+      }
+    },
+    {
+      "title": "Riemann Integral",
+      "names": {
+        "zh": [
+          "黎曼积分",
+          "黎曼積分"
+        ],
+        "nl": [
+          "Riemannintegraal"
+        ],
+        "de": [
+          "Riemann-Integral"
+        ],
+        "fr": [
+          "intégrale de Riemann"
+        ],
+        "es": [
+          "integral de Riemann"
+        ],
+        "it": [
+          "integrale di Riemann"
+        ],
+        "pl": [
+          "całka Riemanna"
+        ],
+        "ro": [
+          "integrală Riemann"
+        ]
+      }
+    },
+    {
+      "title": "Riemann Sum",
+      "names": {
+        "zh": [
+          "黎曼和"
+        ],
+        "nl": [
+          "Riemannsom"
+        ],
+        "de": [
+          "Riemannsumme"
+        ],
+        "fr": [
+          "somme de Riemann"
+        ],
+        "es": [
+          "suma de Riemann"
+        ],
+        "it": [
+          "somma di Riemann"
+        ],
+        "pl": [
+          "suma Riemanna"
+        ],
+        "ro": [
+          "sumă Riemann"
+        ]
+      }
+    },
+    {
+      "title": "Rolle’s Theorem",
+      "names": {
+        "zh": [
+          "罗尔定理",
+          "羅爾定理"
+        ],
+        "nl": [
+          "stelling van Rolle"
+        ],
+        "de": [
+          "Satz von Rolle"
+        ],
+        "fr": [
+          "théorème de Rolle"
+        ],
+        "es": [
+          "teorema de Rolle"
+        ],
+        "it": [
+          "teorema di Rolle"
+        ],
+        "pl": [
+          "twierdzenie Rolle'a"
+        ],
+        "ro": [
+          "teorema lui Rolle"
+        ]
+      }
+    },
+    {
+      "title": "Sequence",
+      "names": {
+        "zh": [
+          "数列",
+          "數列",
+          "序列"
+        ],
+        "nl": [
+          "rij"
+        ],
+        "de": [
+          "Folge"
+        ],
+        "fr": [
+          "suite"
+        ],
+        "es": [
+          "sucesión"
+        ],
+        "it": [
+          "successione"
+        ],
+        "pl": [
+          "ciąg"
+        ],
+        "ro": [
+          "șir"
+        ]
+      }
+    },
+    {
+      "title": "Set",
+      "names": {
+        "zh": [
+          "集合"
+        ],
+        "nl": [
+          "verzameling"
+        ],
+        "de": [
+          "Menge"
+        ],
+        "fr": [
+          "ensemble"
+        ],
+        "es": [
+          "conjunto"
+        ],
+        "it": [
+          "insieme"
+        ],
+        "pl": [
+          "zbiór"
+        ],
+        "ro": [
+          "mulțime"
+        ]
+      }
+    },
+    {
+      "title": "Stationary Point",
+      "names": {
+        "zh": [
+          "驻点",
+          "駐點"
+        ],
+        "nl": [
+          "stationair punt"
+        ],
+        "de": [
+          "stationärer Punkt"
+        ],
+        "fr": [
+          "point stationnaire"
+        ],
+        "es": [
+          "punto estacionario"
+        ],
+        "it": [
+          "punto stazionario"
+        ],
+        "pl": [
+          "punkt stacjonarny"
+        ],
+        "ro": [
+          "punct staționar"
+        ]
+      }
+    },
+    {
+      "title": "Subsequence",
+      "names": {
+        "zh": [
+          "子数列",
+          "子數列"
+        ],
+        "nl": [
+          "deelrij"
+        ],
+        "de": [
+          "Teilfolge"
+        ],
+        "fr": [
+          "sous-suite"
+        ],
+        "es": [
+          "subsucesión"
+        ],
+        "it": [
+          "sottosuccessione"
+        ],
+        "pl": [
+          "podciąg"
+        ],
+        "ro": [
+          "subșir"
+        ]
+      }
+    },
+    {
+      "title": "Subset",
+      "names": {
+        "zh": [
+          "子集"
+        ],
+        "nl": [
+          "deelverzameling"
+        ],
+        "de": [
+          "Teilmenge"
+        ],
+        "fr": [
+          "sous-ensemble"
+        ],
+        "es": [
+          "subconjunto"
+        ],
+        "it": [
+          "sottoinsieme"
+        ],
+        "pl": [
+          "podzbiór"
+        ],
+        "ro": [
+          "submulțime"
+        ]
+      }
+    },
+    {
+      "title": "Supremum",
+      "names": {
+        "zh": [
+          "上确界",
+          "上確界"
+        ],
+        "nl": [
+          "supremum"
+        ],
+        "de": [
+          "Supremum"
+        ],
+        "fr": [
+          "borne supérieure"
+        ],
+        "es": [
+          "supremo"
+        ],
+        "it": [
+          "estremo superiore"
+        ],
+        "pl": [
+          "kres górny"
+        ],
+        "ro": [
+          "supremum"
+        ]
+      }
+    },
+    {
+      "title": "Surjective Function",
+      "names": {
+        "zh": [
+          "满射",
+          "滿射",
+          "满射函数",
+          "滿射函數"
+        ],
+        "nl": [
+          "surjectieve functie"
+        ],
+        "de": [
+          "surjektive Funktion"
+        ],
+        "fr": [
+          "fonction surjective"
+        ],
+        "es": [
+          "función sobreyectiva"
+        ],
+        "it": [
+          "funzione suriettiva"
+        ],
+        "pl": [
+          "funkcja surjektywna"
+        ],
+        "ro": [
+          "funcție surjectivă"
+        ]
+      }
+    },
+    {
+      "title": "Triangle Inequality",
+      "names": {
+        "zh": [
+          "三角不等式"
+        ],
+        "nl": [
+          "driehoeksongelijkheid"
+        ],
+        "de": [
+          "Dreiecksungleichung"
+        ],
+        "fr": [
+          "inégalité triangulaire"
+        ],
+        "es": [
+          "desigualdad triangular"
+        ],
+        "it": [
+          "disuguaglianza triangolare"
+        ],
+        "pl": [
+          "nierówność trójkąta"
+        ],
+        "ro": [
+          "inegalitatea triunghiului"
+        ]
+      }
+    },
+    {
+      "title": "Trigonometric Functions",
+      "names": {
+        "zh": [
+          "三角函数",
+          "三角函數"
+        ],
+        "nl": [
+          "goniometrische functies"
+        ],
+        "de": [
+          "trigonometrische Funktionen"
+        ],
+        "fr": [
+          "fonctions trigonométriques"
+        ],
+        "es": [
+          "funciones trigonométricas"
+        ],
+        "it": [
+          "funzioni trigonometriche"
+        ],
+        "pl": [
+          "funkcje trygonometryczne"
+        ],
+        "ro": [
+          "funcții trigonometrice"
+        ]
+      }
+    },
+    {
+      "title": "Union of Sets",
+      "names": {
+        "zh": [
+          "并集",
+          "並集"
+        ],
+        "nl": [
+          "vereniging van verzamelingen"
+        ],
+        "de": [
+          "Vereinigungsmenge"
+        ],
+        "fr": [
+          "réunion d'ensembles"
+        ],
+        "es": [
+          "unión de conjuntos"
+        ],
+        "it": [
+          "unione di insiemi"
+        ],
+        "pl": [
+          "suma zbiorów"
+        ],
+        "ro": [
+          "reuniunea mulțimilor"
+        ]
+      }
+    },
+    {
+      "title": "Upper Bound",
+      "names": {
+        "zh": [
+          "上界"
+        ],
+        "nl": [
+          "bovengrens"
+        ],
+        "de": [
+          "obere Schranke"
+        ],
+        "fr": [
+          "majorant"
+        ],
+        "es": [
+          "cota superior"
+        ],
+        "it": [
+          "maggiorante"
+        ],
+        "pl": [
+          "ograniczenie górne"
+        ],
+        "ro": [
+          "majorant"
+        ]
+      }
+    },
+    {
+      "title": "Algorithm",
+      "names": {
+        "zh": [
+          "算法"
+        ],
+        "nl": [
+          "algoritme"
+        ],
+        "de": [
+          "Algorithmus"
+        ],
+        "fr": [
+          "algorithme"
+        ],
+        "es": [
+          "algoritmo"
+        ],
+        "it": [
+          "algoritmo"
+        ],
+        "pl": [
+          "algorytm"
+        ],
+        "ro": [
+          "algoritm"
+        ]
+      }
+    },
+    {
+      "title": "Assignment Problem",
+      "names": {
+        "zh": [
+          "指派问题",
+          "指派問題",
+          "分配问题",
+          "分配問題"
+        ],
+        "nl": [
+          "toewijzingsprobleem"
+        ],
+        "de": [
+          "Zuordnungsproblem"
+        ],
+        "fr": [
+          "problème d'affectation"
+        ],
+        "es": [
+          "problema de asignación"
+        ],
+        "it": [
+          "problema di assegnamento"
+        ],
+        "pl": [
+          "problem przydziału"
+        ],
+        "ro": [
+          "problema de atribuire"
+        ]
+      }
+    },
+    {
+      "title": "Basic Feasible Solution",
+      "names": {
+        "zh": [
+          "基本可行解"
+        ],
+        "nl": [
+          "toelaatbare basisoplossing"
+        ],
+        "de": [
+          "zulässige Basislösung"
+        ],
+        "fr": [
+          "solution de base réalisable"
+        ],
+        "es": [
+          "solución básica factible"
+        ],
+        "it": [
+          "soluzione di base ammissibile"
+        ],
+        "pl": [
+          "bazowe rozwiązanie dopuszczalne"
+        ],
+        "ro": [
+          "soluție de bază fezabilă"
+        ]
+      }
+    },
+    {
+      "title": "Binary Variable",
+      "names": {
+        "zh": [
+          "二元变量",
+          "二元變量"
+        ],
+        "nl": [
+          "binaire variabele"
+        ],
+        "de": [
+          "binäre Variable"
+        ],
+        "fr": [
+          "variable binaire"
+        ],
+        "es": [
+          "variable binaria"
+        ],
+        "it": [
+          "variabile binaria"
+        ],
+        "pl": [
+          "zmienna binarna"
+        ],
+        "ro": [
+          "variabilă binară"
+        ]
+      }
+    },
+    {
+      "title": "Branch-and-Bound",
+      "names": {
+        "zh": [
+          "分支定界法"
+        ],
+        "nl": [
+          "branch-and-bound",
+          "vertakken en begrenzen"
+        ],
+        "de": [
+          "Branch-and-Bound",
+          "Verzweigen und Beschränken"
+        ],
+        "fr": [
+          "séparation et évaluation"
+        ],
+        "es": [
+          "ramificación y acotación"
+        ],
+        "it": [
+          "branch and bound"
+        ],
+        "pl": [
+          "metoda podziału i ograniczeń"
+        ],
+        "ro": [
+          "metoda ramificării și mărginirii"
+        ]
+      }
+    },
+    {
+      "title": "Constraint",
+      "names": {
+        "zh": [
+          "约束",
+          "約束"
+        ],
+        "nl": [
+          "restrictie"
+        ],
+        "de": [
+          "Nebenbedingung"
+        ],
+        "fr": [
+          "contrainte"
+        ],
+        "es": [
+          "restricción"
+        ],
+        "it": [
+          "vincolo"
+        ],
+        "pl": [
+          "ograniczenie"
+        ],
+        "ro": [
+          "restricție"
+        ]
+      }
+    },
+    {
+      "title": "Decision Variable",
+      "names": {
+        "zh": [
+          "决策变量",
+          "決策變量"
+        ],
+        "nl": [
+          "beslissingsvariabele"
+        ],
+        "de": [
+          "Entscheidungsvariable"
+        ],
+        "fr": [
+          "variable de décision"
+        ],
+        "es": [
+          "variable de decisión"
+        ],
+        "it": [
+          "variabile decisionale"
+        ],
+        "pl": [
+          "zmienna decyzyjna"
+        ],
+        "ro": [
+          "variabilă de decizie"
+        ]
+      }
+    },
+    {
+      "title": "Dynamic Programming",
+      "names": {
+        "zh": [
+          "动态规划",
+          "動態規劃"
+        ],
+        "nl": [
+          "dynamisch programmeren"
+        ],
+        "de": [
+          "dynamische Programmierung"
+        ],
+        "fr": [
+          "programmation dynamique"
+        ],
+        "es": [
+          "programación dinámica"
+        ],
+        "it": [
+          "programmazione dinamica"
+        ],
+        "pl": [
+          "programowanie dynamiczne"
+        ],
+        "ro": [
+          "programare dinamică"
+        ]
+      }
+    },
+    {
+      "title": "Feasible Region",
+      "names": {
+        "zh": [
+          "可行域"
+        ],
+        "nl": [
+          "toelaatbaar gebied"
+        ],
+        "de": [
+          "zulässiger Bereich"
+        ],
+        "fr": [
+          "région réalisable"
+        ],
+        "es": [
+          "región factible"
+        ],
+        "it": [
+          "regione ammissibile"
+        ],
+        "pl": [
+          "obszar dopuszczalny"
+        ],
+        "ro": [
+          "regiune fezabilă"
+        ]
+      }
+    },
+    {
+      "title": "Feasible Solution",
+      "names": {
+        "zh": [
+          "可行解"
+        ],
+        "nl": [
+          "toelaatbare oplossing"
+        ],
+        "de": [
+          "zulässige Lösung"
+        ],
+        "fr": [
+          "solution réalisable"
+        ],
+        "es": [
+          "solución factible"
+        ],
+        "it": [
+          "soluzione ammissibile"
+        ],
+        "pl": [
+          "rozwiązanie dopuszczalne"
+        ],
+        "ro": [
+          "soluție fezabilă"
+        ]
+      }
+    },
+    {
+      "title": "Hungarian Algorithm",
+      "names": {
+        "zh": [
+          "匈牙利算法"
+        ],
+        "nl": [
+          "Hongaars algoritme"
+        ],
+        "de": [
+          "ungarischer Algorithmus"
+        ],
+        "fr": [
+          "algorithme hongrois"
+        ],
+        "es": [
+          "algoritmo húngaro"
+        ],
+        "it": [
+          "algoritmo ungherese"
+        ],
+        "pl": [
+          "algorytm węgierski"
+        ],
+        "ro": [
+          "algoritmul ungar"
+        ]
+      }
+    },
+    {
+      "title": "Integer Linear Programming",
+      "names": {
+        "zh": [
+          "整数线性规划",
+          "整數線性規劃"
+        ],
+        "nl": [
+          "geheeltallig lineair programmeren"
+        ],
+        "de": [
+          "ganzzahlige lineare Optimierung"
+        ],
+        "fr": [
+          "programmation linéaire en nombres entiers"
+        ],
+        "es": [
+          "programación lineal entera"
+        ],
+        "it": [
+          "programmazione lineare intera"
+        ],
+        "pl": [
+          "programowanie liniowe całkowitoliczbowe"
+        ],
+        "ro": [
+          "programare liniară în numere întregi"
+        ]
+      }
+    },
+    {
+      "title": "Linear Programming",
+      "names": {
+        "zh": [
+          "线性规划",
+          "線性規劃"
+        ],
+        "nl": [
+          "lineair programmeren"
+        ],
+        "de": [
+          "lineare Programmierung",
+          "lineare Optimierung"
+        ],
+        "fr": [
+          "programmation linéaire"
+        ],
+        "es": [
+          "programación lineal"
+        ],
+        "it": [
+          "programmazione lineare"
+        ],
+        "pl": [
+          "programowanie liniowe"
+        ],
+        "ro": [
+          "programare liniară"
+        ]
+      }
+    },
+    {
+      "title": "Maximum Flow Problem",
+      "names": {
+        "zh": [
+          "最大流问题",
+          "最大流問題"
+        ],
+        "nl": [
+          "maximale-stroomprobleem"
+        ],
+        "de": [
+          "Maximalflussproblem"
+        ],
+        "fr": [
+          "problème de flot maximum"
+        ],
+        "es": [
+          "problema de flujo máximo"
+        ],
+        "it": [
+          "problema del flusso massimo"
+        ],
+        "pl": [
+          "problem maksymalnego przepływu"
+        ],
+        "ro": [
+          "problema fluxului maxim"
+        ]
+      }
+    },
+    {
+      "title": "Minimum Spanning Tree",
+      "names": {
+        "zh": [
+          "最小生成树",
+          "最小生成樹"
+        ],
+        "nl": [
+          "minimale opspannende boom"
+        ],
+        "de": [
+          "minimaler Spannbaum"
+        ],
+        "fr": [
+          "arbre couvrant minimal"
+        ],
+        "es": [
+          "árbol de expansión mínimo"
+        ],
+        "it": [
+          "albero ricoprente minimo"
+        ],
+        "pl": [
+          "minimalne drzewo rozpinające"
+        ],
+        "ro": [
+          "minim arbore de acoperire"
+        ]
+      }
+    },
+    {
+      "title": "Objective Function",
+      "names": {
+        "zh": [
+          "目标函数",
+          "目標函數"
+        ],
+        "nl": [
+          "doelfunctie"
+        ],
+        "de": [
+          "Zielfunktion"
+        ],
+        "fr": [
+          "fonction objectif"
+        ],
+        "es": [
+          "función objetivo"
+        ],
+        "it": [
+          "funzione obiettivo"
+        ],
+        "pl": [
+          "funkcja celu"
+        ],
+        "ro": [
+          "funcție obiectiv"
+        ]
+      }
+    },
+    {
+      "title": "Optimal Solution",
+      "names": {
+        "zh": [
+          "最优解",
+          "最優解"
+        ],
+        "nl": [
+          "optimale oplossing"
+        ],
+        "de": [
+          "optimale Lösung"
+        ],
+        "fr": [
+          "solution optimale"
+        ],
+        "es": [
+          "solución óptima"
+        ],
+        "it": [
+          "soluzione ottima"
+        ],
+        "pl": [
+          "rozwiązanie optymalne"
+        ],
+        "ro": [
+          "soluție optimă"
+        ]
+      }
+    },
+    {
+      "title": "Operations Research",
+      "names": {
+        "zh": [
+          "运筹学",
+          "運籌學"
+        ],
+        "nl": [
+          "operationeel onderzoek"
+        ],
+        "de": [
+          "Operations Research",
+          "Unternehmensforschung"
+        ],
+        "fr": [
+          "recherche opérationnelle"
+        ],
+        "es": [
+          "investigación de operaciones"
+        ],
+        "it": [
+          "ricerca operativa"
+        ],
+        "pl": [
+          "badania operacyjne"
+        ],
+        "ro": [
+          "cercetare operațională"
+        ]
+      }
+    },
+    {
+      "title": "Sensitivity Analysis",
+      "names": {
+        "zh": [
+          "敏感性分析",
+          "灵敏度分析",
+          "靈敏度分析"
+        ],
+        "nl": [
+          "gevoeligheidsanalyse"
+        ],
+        "de": [
+          "Sensitivitätsanalyse"
+        ],
+        "fr": [
+          "analyse de sensibilité"
+        ],
+        "es": [
+          "análisis de sensibilidad"
+        ],
+        "it": [
+          "analisi di sensibilità"
+        ],
+        "pl": [
+          "analiza wrażliwości"
+        ],
+        "ro": [
+          "analiză de sensibilitate"
+        ]
+      }
+    },
+    {
+      "title": "Shortest Path Problem",
+      "names": {
+        "zh": [
+          "最短路径问题",
+          "最短路徑問題"
+        ],
+        "nl": [
+          "kortste-padprobleem"
+        ],
+        "de": [
+          "Kürzeste-Wege-Problem"
+        ],
+        "fr": [
+          "problème du plus court chemin"
+        ],
+        "es": [
+          "problema del camino más corto"
+        ],
+        "it": [
+          "problema del cammino minimo"
+        ],
+        "pl": [
+          "problem najkrótszej ścieżki"
+        ],
+        "ro": [
+          "problema drumului minim"
+        ]
+      }
+    },
+    {
+      "title": "Simplex Method",
+      "names": {
+        "zh": [
+          "单纯形法",
+          "單純形法"
+        ],
+        "nl": [
+          "simplexmethode"
+        ],
+        "de": [
+          "Simplexverfahren"
+        ],
+        "fr": [
+          "méthode du simplexe"
+        ],
+        "es": [
+          "método símplex"
+        ],
+        "it": [
+          "metodo del simplesso"
+        ],
+        "pl": [
+          "metoda simpleks"
+        ],
+        "ro": [
+          "metoda simplex"
+        ]
+      }
+    },
+    {
+      "title": "Slack Variable",
+      "names": {
+        "zh": [
+          "松弛变量",
+          "鬆弛變量"
+        ],
+        "nl": [
+          "slackvariabele"
+        ],
+        "de": [
+          "Schlupfvariable"
+        ],
+        "fr": [
+          "variable d'écart"
+        ],
+        "es": [
+          "variable de holgura"
+        ],
+        "it": [
+          "variabile di scarto"
+        ],
+        "pl": [
+          "zmienna luzu"
+        ],
+        "ro": [
+          "variabilă de abatere"
+        ]
+      }
+    },
+    {
+      "title": "Transportation Problem",
+      "names": {
+        "zh": [
+          "运输问题",
+          "運輸問題"
+        ],
+        "nl": [
+          "transportprobleem"
+        ],
+        "de": [
+          "Transportproblem"
+        ],
+        "fr": [
+          "problème de transport"
+        ],
+        "es": [
+          "problema de transporte"
+        ],
+        "it": [
+          "problema di trasporto"
+        ],
+        "pl": [
+          "problem transportowy"
+        ],
+        "ro": [
+          "problema de transport"
+        ]
+      }
+    },
+    {
+      "title": "Vehicle Routing Problem",
+      "names": {
+        "zh": [
+          "车辆路径问题",
+          "車輛路徑問題"
+        ],
+        "nl": [
+          "voertuigrouteringsprobleem"
+        ],
+        "de": [
+          "Tourenplanungsproblem"
+        ],
+        "fr": [
+          "problème de tournées de véhicules"
+        ],
+        "es": [
+          "problema de rutas de vehículos"
+        ],
+        "it": [
+          "problema di instradamento dei veicoli"
+        ],
+        "pl": [
+          "problem trasowania pojazdów"
+        ],
+        "ro": [
+          "problema rutării vehiculelor"
+        ]
+      }
+    },
+    {
+      "title": "Basis",
+      "names": {
+        "zh": [
+          "基",
+          "基底"
+        ],
+        "nl": [
+          "basis"
+        ],
+        "de": [
+          "Basis"
+        ],
+        "fr": [
+          "base"
+        ],
+        "es": [
+          "base"
+        ],
+        "it": [
+          "base"
+        ],
+        "pl": [
+          "baza"
+        ],
+        "ro": [
+          "bază"
+        ]
+      }
+    },
+    {
+      "title": "Cartesian Product",
+      "names": {
+        "zh": [
+          "笛卡尔积",
+          "笛卡爾積"
+        ],
+        "nl": [
+          "cartesisch product"
+        ],
+        "de": [
+          "kartesisches Produkt"
+        ],
+        "fr": [
+          "produit cartésien"
+        ],
+        "es": [
+          "producto cartesiano"
+        ],
+        "it": [
+          "prodotto cartesiano"
+        ],
+        "pl": [
+          "iloczyn kartezjański"
+        ],
+        "ro": [
+          "produs cartezian"
+        ]
+      }
+    },
+    {
+      "title": "Cauchy-Schwarz Inequality",
+      "names": {
+        "zh": [
+          "柯西施瓦茨不等式"
+        ],
+        "nl": [
+          "ongelijkheid van Cauchy-Schwarz"
+        ],
+        "de": [
+          "Cauchy-Schwarz-Ungleichung"
+        ],
+        "fr": [
+          "inégalité de Cauchy-Schwarz"
+        ],
+        "es": [
+          "desigualdad de Cauchy-Schwarz"
+        ],
+        "it": [
+          "disuguaglianza di Cauchy-Schwarz"
+        ],
+        "pl": [
+          "nierówność Cauchy'ego-Schwarza"
+        ],
+        "ro": [
+          "inegalitatea Cauchy-Schwarz"
+        ]
+      }
+    },
+    {
+      "title": "Characteristic Polynomial",
+      "names": {
+        "zh": [
+          "特征多项式",
+          "特徵多項式"
+        ],
+        "nl": [
+          "karakteristieke polynoom"
+        ],
+        "de": [
+          "charakteristisches Polynom"
+        ],
+        "fr": [
+          "polynôme caractéristique"
+        ],
+        "es": [
+          "polinomio característico"
+        ],
+        "it": [
+          "polinomio caratteristico"
+        ],
+        "pl": [
+          "wielomian charakterystyczny"
+        ],
+        "ro": [
+          "polinom caracteristic"
+        ]
+      }
+    },
+    {
+      "title": "Complex Conjugate",
+      "names": {
+        "zh": [
+          "复共轭",
+          "複共軛",
+          "共轭复数",
+          "共軛複數"
+        ],
+        "nl": [
+          "complex geconjugeerde"
+        ],
+        "de": [
+          "komplex konjugierte Zahl"
+        ],
+        "fr": [
+          "conjugué complexe"
+        ],
+        "es": [
+          "conjugado complejo"
+        ],
+        "it": [
+          "coniugato complesso"
+        ],
+        "pl": [
+          "liczba sprzężona"
+        ],
+        "ro": [
+          "conjugat complex"
+        ]
+      }
+    },
+    {
+      "title": "Complex Number",
+      "names": {
+        "zh": [
+          "复数",
+          "複數"
+        ],
+        "nl": [
+          "complex getal"
+        ],
+        "de": [
+          "komplexe Zahl"
+        ],
+        "fr": [
+          "nombre complexe"
+        ],
+        "es": [
+          "número complejo"
+        ],
+        "it": [
+          "numero complesso"
+        ],
+        "pl": [
+          "liczba zespolona"
+        ],
+        "ro": [
+          "număr complex"
+        ]
+      }
+    },
+    {
+      "title": "Determinant",
+      "names": {
+        "zh": [
+          "行列式"
+        ],
+        "nl": [
+          "determinant"
+        ],
+        "de": [
+          "Determinante"
+        ],
+        "fr": [
+          "déterminant"
+        ],
+        "es": [
+          "determinante"
+        ],
+        "it": [
+          "determinante"
+        ],
+        "pl": [
+          "wyznacznik"
+        ],
+        "ro": [
+          "determinant"
+        ]
+      }
+    },
+    {
+      "title": "Diagonal Matrix",
+      "names": {
+        "zh": [
+          "对角矩阵",
+          "對角矩陣"
+        ],
+        "nl": [
+          "diagonaalmatrix"
+        ],
+        "de": [
+          "Diagonalmatrix"
+        ],
+        "fr": [
+          "matrice diagonale"
+        ],
+        "es": [
+          "matriz diagonal"
+        ],
+        "it": [
+          "matrice diagonale"
+        ],
+        "pl": [
+          "macierz diagonalna"
+        ],
+        "ro": [
+          "matrice diagonală"
+        ]
+      }
+    },
+    {
+      "title": "Diagonalization",
+      "names": {
+        "zh": [
+          "对角化",
+          "對角化"
+        ],
+        "nl": [
+          "diagonalisatie"
+        ],
+        "de": [
+          "Diagonalisierung"
+        ],
+        "fr": [
+          "diagonalisation"
+        ],
+        "es": [
+          "diagonalización"
+        ],
+        "it": [
+          "diagonalizzazione"
+        ],
+        "pl": [
+          "diagonalizacja"
+        ],
+        "ro": [
+          "diagonalizare"
+        ]
+      }
+    },
+    {
+      "title": "Dimension",
+      "names": {
+        "zh": [
+          "维数",
+          "維數",
+          "维度",
+          "維度"
+        ],
+        "nl": [
+          "dimensie"
+        ],
+        "de": [
+          "Dimension"
+        ],
+        "fr": [
+          "dimension"
+        ],
+        "es": [
+          "dimensión"
+        ],
+        "it": [
+          "dimensione"
+        ],
+        "pl": [
+          "wymiar"
+        ],
+        "ro": [
+          "dimensiune"
+        ]
+      }
+    },
+    {
+      "title": "Eigenvalue and Eigenvector",
+      "names": {
+        "zh": [
+          "特征值",
+          "特徵值",
+          "特征向量",
+          "特徵向量"
+        ],
+        "nl": [
+          "eigenwaarde",
+          "eigenvector"
+        ],
+        "de": [
+          "Eigenwert",
+          "Eigenvektor"
+        ],
+        "fr": [
+          "valeur propre",
+          "vecteur propre"
+        ],
+        "es": [
+          "valor propio",
+          "vector propio"
+        ],
+        "it": [
+          "autovalore",
+          "autovettore"
+        ],
+        "pl": [
+          "wartość własna",
+          "wektor własny"
+        ],
+        "ro": [
+          "valoare proprie",
+          "vector propriu"
+        ]
+      }
+    },
+    {
+      "title": "Equivalence Relation",
+      "names": {
+        "zh": [
+          "等价关系",
+          "等價關係"
+        ],
+        "nl": [
+          "equivalentierelatie"
+        ],
+        "de": [
+          "Äquivalenzrelation"
+        ],
+        "fr": [
+          "relation d'équivalence"
+        ],
+        "es": [
+          "relación de equivalencia"
+        ],
+        "it": [
+          "relazione di equivalenza"
+        ],
+        "pl": [
+          "relacja równoważności"
+        ],
+        "ro": [
+          "relație de echivalență"
+        ]
+      }
+    },
+    {
+      "title": "Euclidean Distance",
+      "names": {
+        "zh": [
+          "欧氏距离",
+          "歐氏距離",
+          "欧几里得距离",
+          "歐幾里得距離"
+        ],
+        "nl": [
+          "euclidische afstand"
+        ],
+        "de": [
+          "euklidischer Abstand"
+        ],
+        "fr": [
+          "distance euclidienne"
+        ],
+        "es": [
+          "distancia euclídea"
+        ],
+        "it": [
+          "distanza euclidea"
+        ],
+        "pl": [
+          "odległość euklidesowa"
+        ],
+        "ro": [
+          "distanță euclidiană"
+        ]
+      }
+    },
+    {
+      "title": "Euclidean Space",
+      "names": {
+        "zh": [
+          "欧氏空间",
+          "歐氏空間"
+        ],
+        "nl": [
+          "euclidische ruimte"
+        ],
+        "de": [
+          "euklidischer Raum"
+        ],
+        "fr": [
+          "espace euclidien"
+        ],
+        "es": [
+          "espacio euclídeo"
+        ],
+        "it": [
+          "spazio euclideo"
+        ],
+        "pl": [
+          "przestrzeń euklidesowa"
+        ],
+        "ro": [
+          "spațiu euclidian"
+        ]
+      }
+    },
+    {
+      "title": "Gauss-Jordan Elimination",
+      "names": {
+        "zh": [
+          "高斯约旦消元",
+          "高斯約旦消元"
+        ],
+        "nl": [
+          "Gauss-Jordan-eliminatie"
+        ],
+        "de": [
+          "Gauß-Jordan-Elimination"
+        ],
+        "fr": [
+          "élimination de Gauss-Jordan"
+        ],
+        "es": [
+          "eliminación de Gauss-Jordan"
+        ],
+        "it": [
+          "eliminazione di Gauss-Jordan"
+        ],
+        "pl": [
+          "eliminacja Gaussa-Jordana"
+        ],
+        "ro": [
+          "eliminare Gauss-Jordan"
+        ]
+      }
+    },
+    {
+      "title": "Group",
+      "names": {
+        "zh": [
+          "群"
+        ],
+        "nl": [
+          "groep"
+        ],
+        "de": [
+          "Gruppe"
+        ],
+        "fr": [
+          "groupe"
+        ],
+        "es": [
+          "grupo"
+        ],
+        "it": [
+          "gruppo"
+        ],
+        "pl": [
+          "grupa"
+        ],
+        "ro": [
+          "grup"
+        ]
+      }
+    },
+    {
+      "title": "Hyperplane",
+      "names": {
+        "zh": [
+          "超平面"
+        ],
+        "nl": [
+          "hypervlak"
+        ],
+        "de": [
+          "Hyperebene"
+        ],
+        "fr": [
+          "hyperplan"
+        ],
+        "es": [
+          "hiperplano"
+        ],
+        "it": [
+          "iperpiano"
+        ],
+        "pl": [
+          "hiperpłaszczyzna"
+        ],
+        "ro": [
+          "hiperplan"
+        ]
+      }
+    },
+    {
+      "title": "Identity Matrix",
+      "names": {
+        "zh": [
+          "单位矩阵",
+          "單位矩陣"
+        ],
+        "nl": [
+          "eenheidsmatrix"
+        ],
+        "de": [
+          "Einheitsmatrix"
+        ],
+        "fr": [
+          "matrice identité"
+        ],
+        "es": [
+          "matriz identidad"
+        ],
+        "it": [
+          "matrice identità"
+        ],
+        "pl": [
+          "macierz jednostkowa"
+        ],
+        "ro": [
+          "matrice identitate"
+        ]
+      }
+    },
+    {
+      "title": "Imaginary Unit",
+      "names": {
+        "zh": [
+          "虚数单位",
+          "虛數單位"
+        ],
+        "nl": [
+          "imaginaire eenheid"
+        ],
+        "de": [
+          "imaginäre Einheit"
+        ],
+        "fr": [
+          "unité imaginaire"
+        ],
+        "es": [
+          "unidad imaginaria"
+        ],
+        "it": [
+          "unità immaginaria"
+        ],
+        "pl": [
+          "jednostka urojona"
+        ],
+        "ro": [
+          "unitate imaginară"
+        ]
+      }
+    },
+    {
+      "title": "Inner Product",
+      "names": {
+        "zh": [
+          "内积",
+          "內積"
+        ],
+        "nl": [
+          "inproduct"
+        ],
+        "de": [
+          "inneres Produkt"
+        ],
+        "fr": [
+          "produit scalaire"
+        ],
+        "es": [
+          "producto interno"
+        ],
+        "it": [
+          "prodotto interno"
+        ],
+        "pl": [
+          "iloczyn skalarny"
+        ],
+        "ro": [
+          "produs scalar"
+        ]
+      }
+    },
+    {
+      "title": "Jordan Normal Form",
+      "names": {
+        "zh": [
+          "约旦标准形",
+          "約旦標準形"
+        ],
+        "nl": [
+          "Jordan-normaalvorm"
+        ],
+        "de": [
+          "Jordansche Normalform"
+        ],
+        "fr": [
+          "forme normale de Jordan"
+        ],
+        "es": [
+          "forma canónica de Jordan"
+        ],
+        "it": [
+          "forma normale di Jordan"
+        ],
+        "pl": [
+          "postać Jordana"
+        ],
+        "ro": [
+          "forma normală Jordan"
+        ]
+      }
+    },
+    {
+      "title": "Kernel",
+      "names": {
+        "zh": [
+          "核",
+          "零空间",
+          "零空間"
+        ],
+        "nl": [
+          "kern"
+        ],
+        "de": [
+          "Kern"
+        ],
+        "fr": [
+          "noyau"
+        ],
+        "es": [
+          "núcleo"
+        ],
+        "it": [
+          "nucleo"
+        ],
+        "pl": [
+          "jądro"
+        ],
+        "ro": [
+          "nucleu"
+        ]
+      }
+    },
+    {
+      "title": "Linear Combination",
+      "names": {
+        "zh": [
+          "线性组合",
+          "線性組合"
+        ],
+        "nl": [
+          "lineaire combinatie"
+        ],
+        "de": [
+          "Linearkombination"
+        ],
+        "fr": [
+          "combinaison linéaire"
+        ],
+        "es": [
+          "combinación lineal"
+        ],
+        "it": [
+          "combinazione lineare"
+        ],
+        "pl": [
+          "kombinacja liniowa"
+        ],
+        "ro": [
+          "combinație liniară"
+        ]
+      }
+    },
+    {
+      "title": "Linear Dependence and Independence",
+      "names": {
+        "zh": [
+          "线性相关",
+          "線性相關",
+          "线性无关",
+          "線性無關"
+        ],
+        "nl": [
+          "lineaire afhankelijkheid",
+          "lineaire onafhankelijkheid"
+        ],
+        "de": [
+          "lineare Abhängigkeit",
+          "lineare Unabhängigkeit"
+        ],
+        "fr": [
+          "dépendance linéaire",
+          "indépendance linéaire"
+        ],
+        "es": [
+          "dependencia lineal",
+          "independencia lineal"
+        ],
+        "it": [
+          "dipendenza lineare",
+          "indipendenza lineare"
+        ],
+        "pl": [
+          "zależność liniowa",
+          "niezależność liniowa"
+        ],
+        "ro": [
+          "dependență liniară",
+          "independență liniară"
+        ]
+      }
+    },
+    {
+      "title": "Linear Map",
+      "names": {
+        "zh": [
+          "线性映射",
+          "線性映射"
+        ],
+        "nl": [
+          "lineaire afbeelding"
+        ],
+        "de": [
+          "lineare Abbildung"
+        ],
+        "fr": [
+          "application linéaire"
+        ],
+        "es": [
+          "aplicación lineal"
+        ],
+        "it": [
+          "applicazione lineare"
+        ],
+        "pl": [
+          "odwzorowanie liniowe"
+        ],
+        "ro": [
+          "aplicație liniară"
+        ]
+      }
+    },
+    {
+      "title": "Linear Operator",
+      "names": {
+        "zh": [
+          "线性算子",
+          "線性算子"
+        ],
+        "nl": [
+          "lineaire operator"
+        ],
+        "de": [
+          "linearer Operator"
+        ],
+        "fr": [
+          "opérateur linéaire"
+        ],
+        "es": [
+          "operador lineal"
+        ],
+        "it": [
+          "operatore lineare"
+        ],
+        "pl": [
+          "operator liniowy"
+        ],
+        "ro": [
+          "operator liniar"
+        ]
+      }
+    },
+    {
+      "title": "LU Decomposition",
+      "names": {
+        "zh": [
+          "LU分解"
+        ],
+        "nl": [
+          "LU-decompositie"
+        ],
+        "de": [
+          "LU-Zerlegung"
+        ],
+        "fr": [
+          "décomposition LU"
+        ],
+        "es": [
+          "descomposición LU"
+        ],
+        "it": [
+          "decomposizione LU"
+        ],
+        "pl": [
+          "rozkład LU"
+        ],
+        "ro": [
+          "descompunere LU"
+        ]
+      }
+    },
+    {
+      "title": "Matrix",
+      "names": {
+        "zh": [
+          "矩阵",
+          "矩陣"
+        ],
+        "nl": [
+          "matrix"
+        ],
+        "de": [
+          "Matrix"
+        ],
+        "fr": [
+          "matrice"
+        ],
+        "es": [
+          "matriz"
+        ],
+        "it": [
+          "matrice"
+        ],
+        "pl": [
+          "macierz"
+        ],
+        "ro": [
+          "matrice"
+        ]
+      }
+    },
+    {
+      "title": "Permutation",
+      "names": {
+        "zh": [
+          "排列",
+          "置换",
+          "置換"
+        ],
+        "nl": [
+          "permutatie"
+        ],
+        "de": [
+          "Permutation"
+        ],
+        "fr": [
+          "permutation"
+        ],
+        "es": [
+          "permutación"
+        ],
+        "it": [
+          "permutazione"
+        ],
+        "pl": [
+          "permutacja"
+        ],
+        "ro": [
+          "permutare"
+        ]
+      }
+    },
+    {
+      "title": "Power Set",
+      "names": {
+        "zh": [
+          "幂集",
+          "冪集"
+        ],
+        "nl": [
+          "machtsverzameling"
+        ],
+        "de": [
+          "Potenzmenge"
+        ],
+        "fr": [
+          "ensemble des parties"
+        ],
+        "es": [
+          "conjunto potencia"
+        ],
+        "it": [
+          "insieme delle parti"
+        ],
+        "pl": [
+          "zbiór potęgowy"
+        ],
+        "ro": [
+          "mulțimea părților"
+        ]
+      }
+    },
+    {
+      "title": "Quadratic Form",
+      "names": {
+        "zh": [
+          "二次型"
+        ],
+        "nl": [
+          "kwadratische vorm"
+        ],
+        "de": [
+          "quadratische Form"
+        ],
+        "fr": [
+          "forme quadratique"
+        ],
+        "es": [
+          "forma cuadrática"
+        ],
+        "it": [
+          "forma quadratica"
+        ],
+        "pl": [
+          "forma kwadratowa"
+        ],
+        "ro": [
+          "formă pătratică"
+        ]
+      }
+    },
+    {
+      "title": "Rank",
+      "names": {
+        "zh": [
+          "秩"
+        ],
+        "nl": [
+          "rang"
+        ],
+        "de": [
+          "Rang"
+        ],
+        "fr": [
+          "rang"
+        ],
+        "es": [
+          "rango"
+        ],
+        "it": [
+          "rango"
+        ],
+        "pl": [
+          "rząd macierzy"
+        ],
+        "ro": [
+          "rang"
+        ]
+      }
+    },
+    {
+      "title": "Subspace",
+      "names": {
+        "zh": [
+          "子空间",
+          "子空間"
+        ],
+        "nl": [
+          "deelruimte"
+        ],
+        "de": [
+          "Unterraum"
+        ],
+        "fr": [
+          "sous-espace"
+        ],
+        "es": [
+          "subespacio"
+        ],
+        "it": [
+          "sottospazio"
+        ],
+        "pl": [
+          "podprzestrzeń"
+        ],
+        "ro": [
+          "subspațiu"
+        ]
+      }
+    },
+    {
+      "title": "Symmetric Matrix",
+      "names": {
+        "zh": [
+          "对称矩阵",
+          "對稱矩陣"
+        ],
+        "nl": [
+          "symmetrische matrix"
+        ],
+        "de": [
+          "symmetrische Matrix"
+        ],
+        "fr": [
+          "matrice symétrique"
+        ],
+        "es": [
+          "matriz simétrica"
+        ],
+        "it": [
+          "matrice simmetrica"
+        ],
+        "pl": [
+          "macierz symetryczna"
+        ],
+        "ro": [
+          "matrice simetrică"
+        ]
+      }
+    },
+    {
+      "title": "System of Linear Equations",
+      "names": {
+        "zh": [
+          "线性方程组",
+          "線性方程組"
+        ],
+        "nl": [
+          "stelsel lineaire vergelijkingen"
+        ],
+        "de": [
+          "lineares Gleichungssystem"
+        ],
+        "fr": [
+          "système d'équations linéaires"
+        ],
+        "es": [
+          "sistema de ecuaciones lineales"
+        ],
+        "it": [
+          "sistema di equazioni lineari"
+        ],
+        "pl": [
+          "układ równań liniowych"
+        ],
+        "ro": [
+          "sistem de ecuații liniare"
+        ]
+      }
+    },
+    {
+      "title": "Trace",
+      "names": {
+        "zh": [
+          "迹",
+          "跡"
+        ],
+        "nl": [
+          "spoor"
+        ],
+        "de": [
+          "Spur"
+        ],
+        "fr": [
+          "trace"
+        ],
+        "es": [
+          "traza"
+        ],
+        "it": [
+          "traccia"
+        ],
+        "pl": [
+          "ślad macierzy"
+        ],
+        "ro": [
+          "urma matricei"
+        ]
+      }
+    },
+    {
+      "title": "Transpose",
+      "names": {
+        "zh": [
+          "转置",
+          "轉置"
+        ],
+        "nl": [
+          "getransponeerde"
+        ],
+        "de": [
+          "Transponierte"
+        ],
+        "fr": [
+          "transposée"
+        ],
+        "es": [
+          "transpuesta"
+        ],
+        "it": [
+          "trasposta"
+        ],
+        "pl": [
+          "transpozycja"
+        ],
+        "ro": [
+          "transpusă"
+        ]
+      }
+    },
+    {
+      "title": "Vector Space",
+      "names": {
+        "zh": [
+          "向量空间",
+          "向量空間"
+        ],
+        "nl": [
+          "vectorruimte"
+        ],
+        "de": [
+          "Vektorraum"
+        ],
+        "fr": [
+          "espace vectoriel"
+        ],
+        "es": [
+          "espacio vectorial"
+        ],
+        "it": [
+          "spazio vettoriale"
+        ],
+        "pl": [
+          "przestrzeń wektorowa"
+        ],
+        "ro": [
+          "spațiu vectorial"
+        ]
+      }
+    },
+    {
+      "title": "Vector",
+      "names": {
+        "zh": [
+          "向量"
+        ],
+        "nl": [
+          "vector"
+        ],
+        "de": [
+          "Vektor"
+        ],
+        "fr": [
+          "vecteur"
+        ],
+        "es": [
+          "vector"
+        ],
+        "it": [
+          "vettore"
+        ],
+        "pl": [
+          "wektor"
+        ],
+        "ro": [
+          "vector"
+        ]
+      }
+    },
+    {
+      "title": "Zero Vector",
+      "names": {
+        "zh": [
+          "零向量"
+        ],
+        "nl": [
+          "nulvector"
+        ],
+        "de": [
+          "Nullvektor"
+        ],
+        "fr": [
+          "vecteur nul"
+        ],
+        "es": [
+          "vector nulo"
+        ],
+        "it": [
+          "vettore nullo"
+        ],
+        "pl": [
+          "wektor zerowy"
+        ],
+        "ro": [
+          "vector nul"
+        ]
+      }
+    },
+    {
+      "title": "Bayes Rule",
+      "names": {
+        "zh": [
+          "贝叶斯公式",
+          "貝葉斯公式",
+          "贝叶斯定理",
+          "貝葉斯定理"
+        ],
+        "nl": [
+          "regel van Bayes"
+        ],
+        "de": [
+          "Satz von Bayes"
+        ],
+        "fr": [
+          "théorème de Bayes"
+        ],
+        "es": [
+          "teorema de Bayes"
+        ],
+        "it": [
+          "teorema di Bayes"
+        ],
+        "pl": [
+          "twierdzenie Bayesa"
+        ],
+        "ro": [
+          "teorema lui Bayes"
+        ]
+      }
+    },
+    {
+      "title": "Bernoulli Distribution",
+      "names": {
+        "zh": [
+          "伯努利分布"
+        ],
+        "nl": [
+          "Bernoulliverdeling"
+        ],
+        "de": [
+          "Bernoulli-Verteilung"
+        ],
+        "fr": [
+          "loi de Bernoulli"
+        ],
+        "es": [
+          "distribución de Bernoulli"
+        ],
+        "it": [
+          "distribuzione di Bernoulli"
+        ],
+        "pl": [
+          "rozkład Bernoulliego"
+        ],
+        "ro": [
+          "distribuție Bernoulli"
+        ]
+      }
+    },
+    {
+      "title": "Binomial Coefficient",
+      "names": {
+        "zh": [
+          "二项式系数",
+          "二項式係數"
+        ],
+        "nl": [
+          "binomiaalcoëfficiënt"
+        ],
+        "de": [
+          "Binomialkoeffizient"
+        ],
+        "fr": [
+          "coefficient binomial"
+        ],
+        "es": [
+          "coeficiente binomial"
+        ],
+        "it": [
+          "coefficiente binomiale"
+        ],
+        "pl": [
+          "współczynnik dwumianowy"
+        ],
+        "ro": [
+          "coeficient binomial"
+        ]
+      }
+    },
+    {
+      "title": "Binomial Distribution",
+      "names": {
+        "zh": [
+          "二项分布",
+          "二項分布"
+        ],
+        "nl": [
+          "binomiale verdeling"
+        ],
+        "de": [
+          "Binomialverteilung"
+        ],
+        "fr": [
+          "loi binomiale"
+        ],
+        "es": [
+          "distribución binomial"
+        ],
+        "it": [
+          "distribuzione binomiale"
+        ],
+        "pl": [
+          "rozkład dwumianowy"
+        ],
+        "ro": [
+          "distribuție binomială"
+        ]
+      }
+    },
+    {
+      "title": "Conditional Probability",
+      "names": {
+        "zh": [
+          "条件概率",
+          "條件概率",
+          "条件机率",
+          "條件機率"
+        ],
+        "nl": [
+          "voorwaardelijke kans"
+        ],
+        "de": [
+          "bedingte Wahrscheinlichkeit"
+        ],
+        "fr": [
+          "probabilité conditionnelle"
+        ],
+        "es": [
+          "probabilidad condicional"
+        ],
+        "it": [
+          "probabilità condizionata"
+        ],
+        "pl": [
+          "prawdopodobieństwo warunkowe"
+        ],
+        "ro": [
+          "probabilitate condiționată"
+        ]
+      }
+    },
+    {
+      "title": "Continuous Random Variable",
+      "names": {
+        "zh": [
+          "连续随机变量",
+          "連續隨機變量"
+        ],
+        "nl": [
+          "continue toevalsvariabele"
+        ],
+        "de": [
+          "stetige Zufallsvariable"
+        ],
+        "fr": [
+          "variable aléatoire continue"
+        ],
+        "es": [
+          "variable aleatoria continua"
+        ],
+        "it": [
+          "variabile aleatoria continua"
+        ],
+        "pl": [
+          "ciągła zmienna losowa"
+        ],
+        "ro": [
+          "variabilă aleatoare continuă"
+        ]
+      }
+    },
+    {
+      "title": "Cumulative Distribution Function",
+      "names": {
+        "zh": [
+          "累积分布函数",
+          "累積分布函數",
+          "分布函数",
+          "分布函數"
+        ],
+        "nl": [
+          "cumulatieve verdelingsfunctie"
+        ],
+        "de": [
+          "Verteilungsfunktion"
+        ],
+        "fr": [
+          "fonction de répartition"
+        ],
+        "es": [
+          "función de distribución acumulada"
+        ],
+        "it": [
+          "funzione di ripartizione"
+        ],
+        "pl": [
+          "dystrybuanta"
+        ],
+        "ro": [
+          "funcție de repartiție"
+        ]
+      }
+    },
+    {
+      "title": "Discrete Random Variable",
+      "names": {
+        "zh": [
+          "离散随机变量",
+          "離散隨機變量"
+        ],
+        "nl": [
+          "discrete toevalsvariabele"
+        ],
+        "de": [
+          "diskrete Zufallsvariable"
+        ],
+        "fr": [
+          "variable aléatoire discrète"
+        ],
+        "es": [
+          "variable aleatoria discreta"
+        ],
+        "it": [
+          "variabile aleatoria discreta"
+        ],
+        "pl": [
+          "dyskretna zmienna losowa"
+        ],
+        "ro": [
+          "variabilă aleatoare discretă"
+        ]
+      }
+    },
+    {
+      "title": "Event",
+      "names": {
+        "zh": [
+          "事件"
+        ],
+        "nl": [
+          "gebeurtenis"
+        ],
+        "de": [
+          "Ereignis"
+        ],
+        "fr": [
+          "événement"
+        ],
+        "es": [
+          "suceso"
+        ],
+        "it": [
+          "evento"
+        ],
+        "pl": [
+          "zdarzenie"
+        ],
+        "ro": [
+          "eveniment"
+        ]
+      }
+    },
+    {
+      "title": "Expectation",
+      "names": {
+        "zh": [
+          "期望",
+          "数学期望",
+          "數學期望",
+          "期望值"
+        ],
+        "nl": [
+          "verwachtingswaarde"
+        ],
+        "de": [
+          "Erwartungswert"
+        ],
+        "fr": [
+          "espérance mathématique"
+        ],
+        "es": [
+          "esperanza matemática"
+        ],
+        "it": [
+          "valore atteso"
+        ],
+        "pl": [
+          "wartość oczekiwana"
+        ],
+        "ro": [
+          "valoare așteptată",
+          "speranță matematică"
+        ]
+      }
+    },
+    {
+      "title": "Exponential Distribution",
+      "names": {
+        "zh": [
+          "指数分布",
+          "指數分布"
+        ],
+        "nl": [
+          "exponentiële verdeling"
+        ],
+        "de": [
+          "Exponentialverteilung"
+        ],
+        "fr": [
+          "loi exponentielle"
+        ],
+        "es": [
+          "distribución exponencial"
+        ],
+        "it": [
+          "distribuzione esponenziale"
+        ],
+        "pl": [
+          "rozkład wykładniczy"
+        ],
+        "ro": [
+          "distribuție exponențială"
+        ]
+      }
+    },
+    {
+      "title": "Geometric Distribution",
+      "names": {
+        "zh": [
+          "几何分布",
+          "幾何分布"
+        ],
+        "nl": [
+          "geometrische verdeling"
+        ],
+        "de": [
+          "geometrische Verteilung"
+        ],
+        "fr": [
+          "loi géométrique"
+        ],
+        "es": [
+          "distribución geométrica"
+        ],
+        "it": [
+          "distribuzione geometrica"
+        ],
+        "pl": [
+          "rozkład geometryczny"
+        ],
+        "ro": [
+          "distribuție geometrică"
+        ]
+      }
+    },
+    {
+      "title": "Hypergeometric Distribution",
+      "names": {
+        "zh": [
+          "超几何分布",
+          "超幾何分布"
+        ],
+        "nl": [
+          "hypergeometrische verdeling"
+        ],
+        "de": [
+          "hypergeometrische Verteilung"
+        ],
+        "fr": [
+          "loi hypergéométrique"
+        ],
+        "es": [
+          "distribución hipergeométrica"
+        ],
+        "it": [
+          "distribuzione ipergeometrica"
+        ],
+        "pl": [
+          "rozkład hipergeometryczny"
+        ],
+        "ro": [
+          "distribuție hipergeometrică"
+        ]
+      }
+    },
+    {
+      "title": "Independent Events",
+      "names": {
+        "zh": [
+          "独立事件",
+          "獨立事件"
+        ],
+        "nl": [
+          "onafhankelijke gebeurtenissen"
+        ],
+        "de": [
+          "unabhängige Ereignisse"
+        ],
+        "fr": [
+          "événements indépendants"
+        ],
+        "es": [
+          "sucesos independientes"
+        ],
+        "it": [
+          "eventi indipendenti"
+        ],
+        "pl": [
+          "zdarzenia niezależne"
+        ],
+        "ro": [
+          "evenimente independente"
+        ]
+      }
+    },
+    {
+      "title": "Independent Random Variables",
+      "names": {
+        "zh": [
+          "独立随机变量",
+          "獨立隨機變量"
+        ],
+        "nl": [
+          "onafhankelijke toevalsvariabelen"
+        ],
+        "de": [
+          "unabhängige Zufallsvariablen"
+        ],
+        "fr": [
+          "variables aléatoires indépendantes"
+        ],
+        "es": [
+          "variables aleatorias independientes"
+        ],
+        "it": [
+          "variabili aleatorie indipendenti"
+        ],
+        "pl": [
+          "niezależne zmienne losowe"
+        ],
+        "ro": [
+          "variabile aleatoare independente"
+        ]
+      }
+    },
+    {
+      "title": "Law of Total Probability",
+      "names": {
+        "zh": [
+          "全概率公式",
+          "全機率公式"
+        ],
+        "nl": [
+          "wet van totale kans"
+        ],
+        "de": [
+          "Satz der totalen Wahrscheinlichkeit"
+        ],
+        "fr": [
+          "formule des probabilités totales"
+        ],
+        "es": [
+          "ley de la probabilidad total"
+        ],
+        "it": [
+          "formula della probabilità totale"
+        ],
+        "pl": [
+          "wzór na prawdopodobieństwo całkowite"
+        ],
+        "ro": [
+          "formula probabilității totale"
+        ]
+      }
+    },
+    {
+      "title": "Lognormal Distribution",
+      "names": {
+        "zh": [
+          "对数正态分布",
+          "對數常態分布",
+          "對數正態分布"
+        ],
+        "nl": [
+          "lognormale verdeling"
+        ],
+        "de": [
+          "Lognormalverteilung"
+        ],
+        "fr": [
+          "loi log-normale"
+        ],
+        "es": [
+          "distribución lognormal"
+        ],
+        "it": [
+          "distribuzione lognormale"
+        ],
+        "pl": [
+          "rozkład lognormalny"
+        ],
+        "ro": [
+          "distribuție lognormală"
+        ]
+      }
+    },
+    {
+      "title": "Median",
+      "names": {
+        "zh": [
+          "中位数",
+          "中位數"
+        ],
+        "nl": [
+          "mediaan"
+        ],
+        "de": [
+          "Median"
+        ],
+        "fr": [
+          "médiane"
+        ],
+        "es": [
+          "mediana"
+        ],
+        "it": [
+          "mediana"
+        ],
+        "pl": [
+          "mediana"
+        ],
+        "ro": [
+          "mediană"
+        ]
+      }
+    },
+    {
+      "title": "Memoryless Property",
+      "names": {
+        "zh": [
+          "无记忆性",
+          "無記憶性"
+        ],
+        "nl": [
+          "geheugenloosheid"
+        ],
+        "de": [
+          "Gedächtnislosigkeit"
+        ],
+        "fr": [
+          "propriété sans mémoire"
+        ],
+        "es": [
+          "propiedad de falta de memoria"
+        ],
+        "it": [
+          "proprietà di assenza di memoria"
+        ],
+        "pl": [
+          "własność braku pamięci"
+        ],
+        "ro": [
+          "proprietate de lipsă a memoriei"
+        ]
+      }
+    },
+    {
+      "title": "Mode",
+      "names": {
+        "zh": [
+          "众数",
+          "眾數"
+        ],
+        "nl": [
+          "modus"
+        ],
+        "de": [
+          "Modalwert"
+        ],
+        "fr": [
+          "mode"
+        ],
+        "es": [
+          "moda"
+        ],
+        "it": [
+          "moda"
+        ],
+        "pl": [
+          "dominanta"
+        ],
+        "ro": [
+          "mod"
+        ]
+      }
+    },
+    {
+      "title": "Negative Binomial Distribution",
+      "names": {
+        "zh": [
+          "负二项分布",
+          "負二項分布"
+        ],
+        "nl": [
+          "negatief-binomiale verdeling"
+        ],
+        "de": [
+          "negative Binomialverteilung"
+        ],
+        "fr": [
+          "loi binomiale négative"
+        ],
+        "es": [
+          "distribución binomial negativa"
+        ],
+        "it": [
+          "distribuzione binomiale negativa"
+        ],
+        "pl": [
+          "rozkład ujemny dwumianowy"
+        ],
+        "ro": [
+          "distribuție binomială negativă"
+        ]
+      }
+    },
+    {
+      "title": "Normal Distribution",
+      "names": {
+        "zh": [
+          "正态分布",
+          "正態分布",
+          "常态分布",
+          "常態分布",
+          "高斯分布"
+        ],
+        "nl": [
+          "normale verdeling"
+        ],
+        "de": [
+          "Normalverteilung"
+        ],
+        "fr": [
+          "loi normale"
+        ],
+        "es": [
+          "distribución normal"
+        ],
+        "it": [
+          "distribuzione normale"
+        ],
+        "pl": [
+          "rozkład normalny"
+        ],
+        "ro": [
+          "distribuție normală"
+        ]
+      }
+    },
+    {
+      "title": "Order Statistic",
+      "names": {
+        "zh": [
+          "顺序统计量",
+          "順序統計量",
+          "次序统计量",
+          "次序統計量"
+        ],
+        "nl": [
+          "ordestatistiek"
+        ],
+        "de": [
+          "Ordnungsstatistik"
+        ],
+        "fr": [
+          "statistique d'ordre"
+        ],
+        "es": [
+          "estadístico de orden"
+        ],
+        "it": [
+          "statistica d'ordine"
+        ],
+        "pl": [
+          "statystyka pozycyjna"
+        ],
+        "ro": [
+          "statistică de ordine"
+        ]
+      }
+    },
+    {
+      "title": "Poisson Distribution",
+      "names": {
+        "zh": [
+          "泊松分布",
+          "卜瓦松分布"
+        ],
+        "nl": [
+          "Poissonverdeling"
+        ],
+        "de": [
+          "Poisson-Verteilung"
+        ],
+        "fr": [
+          "loi de Poisson"
+        ],
+        "es": [
+          "distribución de Poisson"
+        ],
+        "it": [
+          "distribuzione di Poisson"
+        ],
+        "pl": [
+          "rozkład Poissona"
+        ],
+        "ro": [
+          "distribuție Poisson"
+        ]
+      }
+    },
+    {
+      "title": "Poisson Process",
+      "names": {
+        "zh": [
+          "泊松过程",
+          "泊松過程"
+        ],
+        "nl": [
+          "Poissonproces"
+        ],
+        "de": [
+          "Poisson-Prozess"
+        ],
+        "fr": [
+          "processus de Poisson"
+        ],
+        "es": [
+          "proceso de Poisson"
+        ],
+        "it": [
+          "processo di Poisson"
+        ],
+        "pl": [
+          "proces Poissona"
+        ],
+        "ro": [
+          "proces Poisson"
+        ]
+      }
+    },
+    {
+      "title": "Probability Density Function",
+      "names": {
+        "zh": [
+          "概率密度函数",
+          "概率密度函數",
+          "機率密度函數"
+        ],
+        "nl": [
+          "kansdichtheidsfunctie"
+        ],
+        "de": [
+          "Wahrscheinlichkeitsdichtefunktion"
+        ],
+        "fr": [
+          "densité de probabilité"
+        ],
+        "es": [
+          "función de densidad de probabilidad"
+        ],
+        "it": [
+          "densità di probabilità"
+        ],
+        "pl": [
+          "gęstość prawdopodobieństwa"
+        ],
+        "ro": [
+          "densitate de probabilitate"
+        ]
+      }
+    },
+    {
+      "title": "Probability Mass Function",
+      "names": {
+        "zh": [
+          "概率质量函数",
+          "概率質量函數",
+          "機率質量函數"
+        ],
+        "nl": [
+          "kansmassafunctie"
+        ],
+        "de": [
+          "Wahrscheinlichkeitsfunktion"
+        ],
+        "fr": [
+          "fonction de masse de probabilité"
+        ],
+        "es": [
+          "función de masa de probabilidad"
+        ],
+        "it": [
+          "funzione di massa di probabilità"
+        ],
+        "pl": [
+          "funkcja masy prawdopodobieństwa"
+        ],
+        "ro": [
+          "funcție de masă de probabilitate"
+        ]
+      }
+    },
+    {
+      "title": "Random Variable",
+      "names": {
+        "zh": [
+          "随机变量",
+          "隨機變量"
+        ],
+        "nl": [
+          "toevalsvariabele",
+          "stochastische variabele"
+        ],
+        "de": [
+          "Zufallsvariable"
+        ],
+        "fr": [
+          "variable aléatoire"
+        ],
+        "es": [
+          "variable aleatoria"
+        ],
+        "it": [
+          "variabile aleatoria"
+        ],
+        "pl": [
+          "zmienna losowa"
+        ],
+        "ro": [
+          "variabilă aleatoare"
+        ]
+      }
+    },
+    {
+      "title": "Sample Space",
+      "names": {
+        "zh": [
+          "样本空间",
+          "樣本空間"
+        ],
+        "nl": [
+          "uitkomstenruimte"
+        ],
+        "de": [
+          "Ergebnisraum"
+        ],
+        "fr": [
+          "espace des issues"
+        ],
+        "es": [
+          "espacio muestral"
+        ],
+        "it": [
+          "spazio campionario"
+        ],
+        "pl": [
+          "przestrzeń zdarzeń elementarnych"
+        ],
+        "ro": [
+          "spațiu de rezultate"
+        ]
+      }
+    },
+    {
+      "title": "Standard Normal Distribution",
+      "names": {
+        "zh": [
+          "标准正态分布",
+          "標準正態分布",
+          "標準常態分布"
+        ],
+        "nl": [
+          "standaardnormale verdeling"
+        ],
+        "de": [
+          "Standardnormalverteilung"
+        ],
+        "fr": [
+          "loi normale centrée réduite"
+        ],
+        "es": [
+          "distribución normal estándar"
+        ],
+        "it": [
+          "distribuzione normale standard"
+        ],
+        "pl": [
+          "standardowy rozkład normalny"
+        ],
+        "ro": [
+          "distribuție normală standard"
+        ]
+      }
+    },
+    {
+      "title": "Stochastic Process",
+      "names": {
+        "zh": [
+          "随机过程",
+          "隨機過程"
+        ],
+        "nl": [
+          "stochastisch proces"
+        ],
+        "de": [
+          "stochastischer Prozess"
+        ],
+        "fr": [
+          "processus stochastique"
+        ],
+        "es": [
+          "proceso estocástico"
+        ],
+        "it": [
+          "processo stocastico"
+        ],
+        "pl": [
+          "proces stochastyczny"
+        ],
+        "ro": [
+          "proces stocastic"
+        ]
+      }
+    },
+    {
+      "title": "Uniform Distribution",
+      "names": {
+        "zh": [
+          "均匀分布",
+          "均勻分布"
+        ],
+        "nl": [
+          "uniforme verdeling"
+        ],
+        "de": [
+          "Gleichverteilung"
+        ],
+        "fr": [
+          "loi uniforme"
+        ],
+        "es": [
+          "distribución uniforme"
+        ],
+        "it": [
+          "distribuzione uniforme"
+        ],
+        "pl": [
+          "rozkład jednostajny"
+        ],
+        "ro": [
+          "distribuție uniformă"
+        ]
+      }
+    },
+    {
+      "title": "Variance and Standard Deviation",
+      "names": {
+        "zh": [
+          "方差",
+          "标准差",
+          "標準差",
+          "變異數"
+        ],
+        "nl": [
+          "variantie",
+          "standaardafwijking"
+        ],
+        "de": [
+          "Varianz",
+          "Standardabweichung"
+        ],
+        "fr": [
+          "variance",
+          "écart-type"
+        ],
+        "es": [
+          "varianza",
+          "desviación estándar"
+        ],
+        "it": [
+          "varianza",
+          "deviazione standard"
+        ],
+        "pl": [
+          "wariancja",
+          "odchylenie standardowe"
+        ],
+        "ro": [
+          "varianță",
+          "abatere standard"
+        ]
+      }
+    },
+    {
+      "title": "Central Limit Theorem",
+      "names": {
+        "zh": [
+          "中心极限定理",
+          "中心極限定理"
+        ],
+        "nl": [
+          "centrale limietstelling"
+        ],
+        "de": [
+          "zentraler Grenzwertsatz"
+        ],
+        "fr": [
+          "théorème central limite"
+        ],
+        "es": [
+          "teorema central del límite"
+        ],
+        "it": [
+          "teorema del limite centrale"
+        ],
+        "pl": [
+          "centralne twierdzenie graniczne"
+        ],
+        "ro": [
+          "teorema limită centrală"
+        ]
+      }
+    },
+    {
+      "title": "Chebyshev Inequality",
+      "names": {
+        "zh": [
+          "切比雪夫不等式"
+        ],
+        "nl": [
+          "ongelijkheid van Chebyshev"
+        ],
+        "de": [
+          "Tschebyscheff-Ungleichung"
+        ],
+        "fr": [
+          "inégalité de Tchebychev"
+        ],
+        "es": [
+          "desigualdad de Chebyshev"
+        ],
+        "it": [
+          "disuguaglianza di Chebyshev"
+        ],
+        "pl": [
+          "nierówność Czebyszewa"
+        ],
+        "ro": [
+          "inegalitatea lui Cebîșev"
+        ]
+      }
+    },
+    {
+      "title": "Correlation",
+      "names": {
+        "zh": [
+          "相关",
+          "相關",
+          "相关性",
+          "相關性"
+        ],
+        "nl": [
+          "correlatie"
+        ],
+        "de": [
+          "Korrelation"
+        ],
+        "fr": [
+          "corrélation"
+        ],
+        "es": [
+          "correlación"
+        ],
+        "it": [
+          "correlazione"
+        ],
+        "pl": [
+          "korelacja"
+        ],
+        "ro": [
+          "corelație"
+        ]
+      }
+    },
+    {
+      "title": "Covariance",
+      "names": {
+        "zh": [
+          "协方差",
+          "協方差",
+          "共变异数",
+          "共變異數"
+        ],
+        "nl": [
+          "covariantie"
+        ],
+        "de": [
+          "Kovarianz"
+        ],
+        "fr": [
+          "covariance"
+        ],
+        "es": [
+          "covarianza"
+        ],
+        "it": [
+          "covarianza"
+        ],
+        "pl": [
+          "kowariancja"
+        ],
+        "ro": [
+          "covarianță"
+        ]
+      }
+    },
+    {
+      "title": "Gamma Distribution",
+      "names": {
+        "zh": [
+          "伽马分布",
+          "伽馬分布"
+        ],
+        "nl": [
+          "gammaverdeling"
+        ],
+        "de": [
+          "Gamma-Verteilung"
+        ],
+        "fr": [
+          "loi gamma"
+        ],
+        "es": [
+          "distribución gamma"
+        ],
+        "it": [
+          "distribuzione gamma"
+        ],
+        "pl": [
+          "rozkład gamma"
+        ],
+        "ro": [
+          "distribuție gamma"
+        ]
+      }
+    },
+    {
+      "title": "Jensen Inequality",
+      "names": {
+        "zh": [
+          "詹森不等式",
+          "琴生不等式"
+        ],
+        "nl": [
+          "ongelijkheid van Jensen"
+        ],
+        "de": [
+          "Jensensche Ungleichung"
+        ],
+        "fr": [
+          "inégalité de Jensen"
+        ],
+        "es": [
+          "desigualdad de Jensen"
+        ],
+        "it": [
+          "disuguaglianza di Jensen"
+        ],
+        "pl": [
+          "nierówność Jensena"
+        ],
+        "ro": [
+          "inegalitatea lui Jensen"
+        ]
+      }
+    },
+    {
+      "title": "Moment Generating Function",
+      "names": {
+        "zh": [
+          "矩母函数",
+          "矩母函數",
+          "矩生成函数",
+          "矩生成函數"
+        ],
+        "nl": [
+          "momentgenererende functie"
+        ],
+        "de": [
+          "momenterzeugende Funktion"
+        ],
+        "fr": [
+          "fonction génératrice des moments"
+        ],
+        "es": [
+          "función generadora de momentos"
+        ],
+        "it": [
+          "funzione generatrice dei momenti"
+        ],
+        "pl": [
+          "funkcja tworząca momenty"
+        ],
+        "ro": [
+          "funcție generatoare de momente"
+        ]
+      }
+    },
+    {
+      "title": "Multinomial Distribution",
+      "names": {
+        "zh": [
+          "多项分布",
+          "多項分布"
+        ],
+        "nl": [
+          "multinomiale verdeling"
+        ],
+        "de": [
+          "Multinomialverteilung"
+        ],
+        "fr": [
+          "loi multinomiale"
+        ],
+        "es": [
+          "distribución multinomial"
+        ],
+        "it": [
+          "distribuzione multinomiale"
+        ],
+        "pl": [
+          "rozkład wielomianowy"
+        ],
+        "ro": [
+          "distribuție multinomială"
+        ]
+      }
+    },
+    {
+      "title": "Sample Mean",
+      "names": {
+        "zh": [
+          "样本均值",
+          "樣本均值",
+          "样本平均数",
+          "樣本平均數"
+        ],
+        "nl": [
+          "steekproefgemiddelde"
+        ],
+        "de": [
+          "Stichprobenmittelwert"
+        ],
+        "fr": [
+          "moyenne empirique"
+        ],
+        "es": [
+          "media muestral"
+        ],
+        "it": [
+          "media campionaria"
+        ],
+        "pl": [
+          "średnia z próby"
+        ],
+        "ro": [
+          "media eșantionului"
+        ]
+      }
+    },
+    {
+      "title": "Strong Law of Large Numbers",
+      "names": {
+        "zh": [
+          "强大数定律",
+          "強大數定律"
+        ],
+        "nl": [
+          "sterke wet van de grote aantallen"
+        ],
+        "de": [
+          "starkes Gesetz der großen Zahlen"
+        ],
+        "fr": [
+          "loi forte des grands nombres"
+        ],
+        "es": [
+          "ley fuerte de los grandes números"
+        ],
+        "it": [
+          "legge forte dei grandi numeri"
+        ],
+        "pl": [
+          "mocne prawo wielkich liczb"
+        ],
+        "ro": [
+          "legea tare a numerelor mari"
+        ]
+      }
+    },
+    {
+      "title": "Weak Law of Large Numbers",
+      "names": {
+        "zh": [
+          "弱大数定律",
+          "弱大數定律"
+        ],
+        "nl": [
+          "zwakke wet van de grote aantallen"
+        ],
+        "de": [
+          "schwaches Gesetz der großen Zahlen"
+        ],
+        "fr": [
+          "loi faible des grands nombres"
+        ],
+        "es": [
+          "ley débil de los grandes números"
+        ],
+        "it": [
+          "legge debole dei grandi numeri"
+        ],
+        "pl": [
+          "słabe prawo wielkich liczb"
+        ],
+        "ro": [
+          "legea slabă a numerelor mari"
+        ]
+      }
+    },
+    {
+      "title": "Compact Set",
+      "names": {
+        "zh": [
+          "紧集",
+          "緊集"
+        ],
+        "nl": [
+          "compacte verzameling"
+        ],
+        "de": [
+          "kompakte Menge"
+        ],
+        "fr": [
+          "ensemble compact"
+        ],
+        "es": [
+          "conjunto compacto"
+        ],
+        "it": [
+          "insieme compatto"
+        ],
+        "pl": [
+          "zbiór zwarty"
+        ],
+        "ro": [
+          "mulțime compactă"
+        ]
+      }
+    },
+    {
+      "title": "Complete Metric Space",
+      "names": {
+        "zh": [
+          "完备度量空间",
+          "完備度量空間"
+        ],
+        "nl": [
+          "volledige metrische ruimte"
+        ],
+        "de": [
+          "vollständiger metrischer Raum"
+        ],
+        "fr": [
+          "espace métrique complet"
+        ],
+        "es": [
+          "espacio métrico completo"
+        ],
+        "it": [
+          "spazio metrico completo"
+        ],
+        "pl": [
+          "przestrzeń metryczna zupełna"
+        ],
+        "ro": [
+          "spațiu metric complet"
+        ]
+      }
+    },
+    {
+      "title": "Directional Derivative",
+      "names": {
+        "zh": [
+          "方向导数",
+          "方向導數"
+        ],
+        "nl": [
+          "richtingsafgeleide"
+        ],
+        "de": [
+          "Richtungsableitung"
+        ],
+        "fr": [
+          "dérivée directionnelle"
+        ],
+        "es": [
+          "derivada direccional"
+        ],
+        "it": [
+          "derivata direzionale"
+        ],
+        "pl": [
+          "pochodna kierunkowa"
+        ],
+        "ro": [
+          "derivată direcțională"
+        ]
+      }
+    },
+    {
+      "title": "Gradient",
+      "names": {
+        "zh": [
+          "梯度"
+        ],
+        "nl": [
+          "gradiënt"
+        ],
+        "de": [
+          "Gradient"
+        ],
+        "fr": [
+          "gradient"
+        ],
+        "es": [
+          "gradiente"
+        ],
+        "it": [
+          "gradiente"
+        ],
+        "pl": [
+          "gradient"
+        ],
+        "ro": [
+          "gradient"
+        ]
+      }
+    },
+    {
+      "title": "Jacobian Matrix",
+      "names": {
+        "zh": [
+          "雅可比矩阵",
+          "雅可比矩陣"
+        ],
+        "nl": [
+          "Jacobiaanmatrix"
+        ],
+        "de": [
+          "Jacobi-Matrix"
+        ],
+        "fr": [
+          "matrice jacobienne"
+        ],
+        "es": [
+          "matriz jacobiana"
+        ],
+        "it": [
+          "matrice jacobiana"
+        ],
+        "pl": [
+          "macierz Jacobiego"
+        ],
+        "ro": [
+          "matrice jacobiană"
+        ]
+      }
+    },
+    {
+      "title": "Metric and Metric Space",
+      "names": {
+        "zh": [
+          "度量",
+          "度量空间",
+          "度量空間"
+        ],
+        "nl": [
+          "metriek",
+          "metrische ruimte"
+        ],
+        "de": [
+          "Metrik",
+          "metrischer Raum"
+        ],
+        "fr": [
+          "distance",
+          "espace métrique"
+        ],
+        "es": [
+          "métrica",
+          "espacio métrico"
+        ],
+        "it": [
+          "metrica",
+          "spazio metrico"
+        ],
+        "pl": [
+          "metryka",
+          "przestrzeń metryczna"
+        ],
+        "ro": [
+          "metrică",
+          "spațiu metric"
+        ]
+      }
+    },
+    {
+      "title": "Partial Derivative",
+      "names": {
+        "zh": [
+          "偏导数",
+          "偏導數"
+        ],
+        "nl": [
+          "partiële afgeleide"
+        ],
+        "de": [
+          "partielle Ableitung"
+        ],
+        "fr": [
+          "dérivée partielle"
+        ],
+        "es": [
+          "derivada parcial"
+        ],
+        "it": [
+          "derivata parziale"
+        ],
+        "pl": [
+          "pochodna cząstkowa"
+        ],
+        "ro": [
+          "derivată parțială"
+        ]
+      }
+    },
+    {
+      "title": "Pointwise Convergence",
+      "names": {
+        "zh": [
+          "逐点收敛",
+          "逐點收斂"
+        ],
+        "nl": [
+          "puntsgewijze convergentie"
+        ],
+        "de": [
+          "punktweise Konvergenz"
+        ],
+        "fr": [
+          "convergence simple"
+        ],
+        "es": [
+          "convergencia puntual"
+        ],
+        "it": [
+          "convergenza puntuale"
+        ],
+        "pl": [
+          "zbieżność punktowa"
+        ],
+        "ro": [
+          "convergență punctuală"
+        ]
+      }
+    },
+    {
+      "title": "Power Series",
+      "names": {
+        "zh": [
+          "幂级数",
+          "冪級數"
+        ],
+        "nl": [
+          "machtreeks"
+        ],
+        "de": [
+          "Potenzreihe"
+        ],
+        "fr": [
+          "série entière"
+        ],
+        "es": [
+          "serie de potencias"
+        ],
+        "it": [
+          "serie di potenze"
+        ],
+        "pl": [
+          "szereg potęgowy"
+        ],
+        "ro": [
+          "serie de puteri"
+        ]
+      }
+    },
+    {
+      "title": "Ratio Test",
+      "names": {
+        "zh": [
+          "比值判别法",
+          "比值判別法"
+        ],
+        "nl": [
+          "quotiëntcriterium"
+        ],
+        "de": [
+          "Quotientenkriterium"
+        ],
+        "fr": [
+          "critère de d'Alembert"
+        ],
+        "es": [
+          "criterio del cociente"
+        ],
+        "it": [
+          "criterio del rapporto"
+        ],
+        "pl": [
+          "kryterium d'Alemberta"
+        ],
+        "ro": [
+          "criteriul raportului"
+        ]
+      }
+    },
+    {
+      "title": "Root Test",
+      "names": {
+        "zh": [
+          "根值判别法",
+          "根值判別法"
+        ],
+        "nl": [
+          "wortelcriterium"
+        ],
+        "de": [
+          "Wurzelkriterium"
+        ],
+        "fr": [
+          "critère de Cauchy"
+        ],
+        "es": [
+          "criterio de la raíz"
+        ],
+        "it": [
+          "criterio della radice"
+        ],
+        "pl": [
+          "kryterium Cauchy'ego"
+        ],
+        "ro": [
+          "criteriul rădăcinii"
+        ]
+      }
+    },
+    {
+      "title": "Taylor Polynomial",
+      "names": {
+        "zh": [
+          "泰勒多项式",
+          "泰勒多項式"
+        ],
+        "nl": [
+          "Taylorpolynoom"
+        ],
+        "de": [
+          "Taylorpolynom"
+        ],
+        "fr": [
+          "polynôme de Taylor"
+        ],
+        "es": [
+          "polinomio de Taylor"
+        ],
+        "it": [
+          "polinomio di Taylor"
+        ],
+        "pl": [
+          "wielomian Taylora"
+        ],
+        "ro": [
+          "polinom Taylor"
+        ]
+      }
+    },
+    {
+      "title": "Taylor Series",
+      "names": {
+        "zh": [
+          "泰勒级数",
+          "泰勒級數"
+        ],
+        "nl": [
+          "Taylorreeks"
+        ],
+        "de": [
+          "Taylorreihe"
+        ],
+        "fr": [
+          "série de Taylor"
+        ],
+        "es": [
+          "serie de Taylor"
+        ],
+        "it": [
+          "serie di Taylor"
+        ],
+        "pl": [
+          "szereg Taylora"
+        ],
+        "ro": [
+          "serie Taylor"
+        ]
+      }
+    },
+    {
+      "title": "Taylor's Theorem",
+      "names": {
+        "zh": [
+          "泰勒定理"
+        ],
+        "nl": [
+          "stelling van Taylor"
+        ],
+        "de": [
+          "Satz von Taylor"
+        ],
+        "fr": [
+          "théorème de Taylor"
+        ],
+        "es": [
+          "teorema de Taylor"
+        ],
+        "it": [
+          "teorema di Taylor"
+        ],
+        "pl": [
+          "twierdzenie Taylora"
+        ],
+        "ro": [
+          "teorema lui Taylor"
+        ]
+      }
+    },
+    {
+      "title": "Topology and Topological Space",
+      "names": {
+        "zh": [
+          "拓扑",
+          "拓撲",
+          "拓扑空间",
+          "拓撲空間"
+        ],
+        "nl": [
+          "topologie",
+          "topologische ruimte"
+        ],
+        "de": [
+          "Topologie",
+          "topologischer Raum"
+        ],
+        "fr": [
+          "topologie",
+          "espace topologique"
+        ],
+        "es": [
+          "topología",
+          "espacio topológico"
+        ],
+        "it": [
+          "topologia",
+          "spazio topologico"
+        ],
+        "pl": [
+          "topologia",
+          "przestrzeń topologiczna"
+        ],
+        "ro": [
+          "topologie",
+          "spațiu topologic"
+        ]
+      }
+    },
+    {
+      "title": "Uniform Continuity",
+      "names": {
+        "zh": [
+          "一致连续",
+          "一致連續"
+        ],
+        "nl": [
+          "uniforme continuïteit"
+        ],
+        "de": [
+          "gleichmäßige Stetigkeit"
+        ],
+        "fr": [
+          "continuité uniforme"
+        ],
+        "es": [
+          "continuidad uniforme"
+        ],
+        "it": [
+          "continuità uniforme"
+        ],
+        "pl": [
+          "ciągłość jednostajna"
+        ],
+        "ro": [
+          "continuitate uniformă"
+        ]
+      }
+    },
+    {
+      "title": "Uniform Convergence",
+      "names": {
+        "zh": [
+          "一致收敛",
+          "一致收斂"
+        ],
+        "nl": [
+          "uniforme convergentie"
+        ],
+        "de": [
+          "gleichmäßige Konvergenz"
+        ],
+        "fr": [
+          "convergence uniforme"
+        ],
+        "es": [
+          "convergencia uniforme"
+        ],
+        "it": [
+          "convergenza uniforme"
+        ],
+        "pl": [
+          "zbieżność jednostajna"
+        ],
+        "ro": [
+          "convergență uniformă"
+        ]
+      }
+    },
+    {
+      "title": "Hessian Matrix",
+      "names": {
+        "zh": [
+          "海森矩阵",
+          "海森矩陣",
+          "黑塞矩阵",
+          "黑塞矩陣"
+        ],
+        "nl": [
+          "Hessiaanmatrix"
+        ],
+        "de": [
+          "Hesse-Matrix"
+        ],
+        "fr": [
+          "matrice hessienne"
+        ],
+        "es": [
+          "matriz hessiana"
+        ],
+        "it": [
+          "matrice hessiana"
+        ],
+        "pl": [
+          "macierz Hessego"
+        ],
+        "ro": [
+          "matrice hessiană"
+        ]
+      }
+    },
+    {
+      "title": "Implicit Function Theorem",
+      "names": {
+        "zh": [
+          "隐函数定理",
+          "隱函數定理"
+        ],
+        "nl": [
+          "impliciete-functiestelling"
+        ],
+        "de": [
+          "Satz über implizite Funktionen"
+        ],
+        "fr": [
+          "théorème des fonctions implicites"
+        ],
+        "es": [
+          "teorema de la función implícita"
+        ],
+        "it": [
+          "teorema della funzione implicita"
+        ],
+        "pl": [
+          "twierdzenie o funkcji uwikłanej"
+        ],
+        "ro": [
+          "teorema funcției implicite"
+        ]
+      }
+    },
+    {
+      "title": "Lagrange Multiplier",
+      "names": {
+        "zh": [
+          "拉格朗日乘子"
+        ],
+        "nl": [
+          "Lagrange-multiplicator"
+        ],
+        "de": [
+          "Lagrange-Multiplikator"
+        ],
+        "fr": [
+          "multiplicateur de Lagrange"
+        ],
+        "es": [
+          "multiplicador de Lagrange"
+        ],
+        "it": [
+          "moltiplicatore di Lagrange"
+        ],
+        "pl": [
+          "mnożnik Lagrange'a"
+        ],
+        "ro": [
+          "multiplicator Lagrange"
+        ]
+      }
+    },
+    {
+      "title": "Lagrangian Function",
+      "names": {
+        "zh": [
+          "拉格朗日函数",
+          "拉格朗日函數"
+        ],
+        "nl": [
+          "Lagrangefunctie"
+        ],
+        "de": [
+          "Lagrange-Funktion"
+        ],
+        "fr": [
+          "fonction lagrangienne"
+        ],
+        "es": [
+          "función lagrangiana"
+        ],
+        "it": [
+          "funzione lagrangiana"
+        ],
+        "pl": [
+          "funkcja Lagrange'a"
+        ],
+        "ro": [
+          "funcție Lagrange"
+        ]
+      }
+    },
+    {
+      "title": "Saddle Point",
+      "names": {
+        "zh": [
+          "鞍点",
+          "鞍點"
+        ],
+        "nl": [
+          "zadelpunt"
+        ],
+        "de": [
+          "Sattelpunkt"
+        ],
+        "fr": [
+          "point selle"
+        ],
+        "es": [
+          "punto de silla"
+        ],
+        "it": [
+          "punto di sella"
+        ],
+        "pl": [
+          "punkt siodłowy"
+        ],
+        "ro": [
+          "punct de șa"
+        ]
+      }
+    },
+    {
+      "title": "Maximum Likelihood Estimation",
+      "names": {
+        "zh": [
+          "最大似然估计",
+          "最大似然估計",
+          "极大似然估计",
+          "極大似然估計"
+        ],
+        "nl": [
+          "maximumlikelihoodschatting"
+        ],
+        "de": [
+          "Maximum-Likelihood-Schätzung"
+        ],
+        "fr": [
+          "estimation du maximum de vraisemblance"
+        ],
+        "es": [
+          "estimación por máxima verosimilitud"
+        ],
+        "it": [
+          "stima di massima verosimiglianza"
+        ],
+        "pl": [
+          "estymacja największej wiarygodności"
+        ],
+        "ro": [
+          "estimare de maximă verosimilitate"
+        ]
+      }
+    },
+    {
+      "title": "Generalized Linear Model",
+      "names": {
+        "zh": [
+          "广义线性模型",
+          "廣義線性模型"
+        ],
+        "nl": [
+          "gegeneraliseerd lineair model"
+        ],
+        "de": [
+          "verallgemeinertes lineares Modell"
+        ],
+        "fr": [
+          "modèle linéaire généralisé"
+        ],
+        "es": [
+          "modelo lineal generalizado"
+        ],
+        "it": [
+          "modello lineare generalizzato"
+        ],
+        "pl": [
+          "uogólniony model liniowy"
+        ],
+        "ro": [
+          "model liniar generalizat"
+        ]
+      }
+    },
+    {
+      "title": "Poisson Regression",
+      "names": {
+        "zh": [
+          "泊松回归",
+          "泊松迴歸"
+        ],
+        "nl": [
+          "Poissonregressie"
+        ],
+        "de": [
+          "Poisson-Regression"
+        ],
+        "fr": [
+          "régression de Poisson"
+        ],
+        "es": [
+          "regresión de Poisson"
+        ],
+        "it": [
+          "regressione di Poisson"
+        ],
+        "pl": [
+          "regresja Poissona"
+        ],
+        "ro": [
+          "regresie Poisson"
+        ]
+      }
+    },
+    {
+      "title": "Exponential Family",
+      "names": {
+        "zh": [
+          "指数族",
+          "指數族"
+        ],
+        "nl": [
+          "exponentiële familie"
+        ],
+        "de": [
+          "Exponentialfamilie"
+        ],
+        "fr": [
+          "famille exponentielle"
+        ],
+        "es": [
+          "familia exponencial"
+        ],
+        "it": [
+          "famiglia esponenziale"
+        ],
+        "pl": [
+          "rodzina wykładnicza"
+        ],
+        "ro": [
+          "familie exponențială"
+        ]
+      }
+    },
+    {
+      "title": "Probability Generating Function",
+      "names": {
+        "zh": [
+          "概率生成函数",
+          "概率生成函數",
+          "概率母函数",
+          "概率母函數"
+        ],
+        "nl": [
+          "kansgenererende functie"
+        ],
+        "de": [
+          "wahrscheinlichkeitserzeugende Funktion"
+        ],
+        "fr": [
+          "fonction génératrice des probabilités"
+        ],
+        "es": [
+          "función generadora de probabilidades"
+        ],
+        "it": [
+          "funzione generatrice delle probabilità"
+        ],
+        "pl": [
+          "funkcja tworząca prawdopodobieństwa"
+        ],
+        "ro": [
+          "funcție generatoare de probabilități"
+        ]
+      }
+    },
+    {
+      "title": "Compound Poisson Process",
+      "names": {
+        "zh": [
+          "复合泊松过程",
+          "複合泊松過程"
+        ],
+        "nl": [
+          "samengesteld Poissonproces"
+        ],
+        "de": [
+          "zusammengesetzter Poisson-Prozess"
+        ],
+        "fr": [
+          "processus de Poisson composé"
+        ],
+        "es": [
+          "proceso de Poisson compuesto"
+        ],
+        "it": [
+          "processo di Poisson composto"
+        ],
+        "pl": [
+          "złożony proces Poissona"
+        ],
+        "ro": [
+          "proces Poisson compus"
+        ]
+      }
+    },
+    {
+      "title": "Whole Life Insurance",
+      "names": {
+        "zh": [
+          "终身寿险",
+          "終身壽險"
+        ],
+        "nl": [
+          "levenslange overlijdensverzekering"
+        ],
+        "de": [
+          "lebenslange Todesfallversicherung"
+        ],
+        "fr": [
+          "assurance vie entière"
+        ],
+        "es": [
+          "seguro de vida entera"
+        ],
+        "it": [
+          "assicurazione vita intera"
+        ],
+        "pl": [
+          "ubezpieczenie na całe życie"
+        ],
+        "ro": [
+          "asigurare de viață pe întreaga viață"
+        ]
+      }
+    },
+    {
+      "title": "Term Life Insurance",
+      "names": {
+        "zh": [
+          "定期寿险",
+          "定期壽險"
+        ],
+        "nl": [
+          "tijdelijke overlijdensverzekering"
+        ],
+        "de": [
+          "Risikolebensversicherung"
+        ],
+        "fr": [
+          "assurance temporaire décès"
+        ],
+        "es": [
+          "seguro temporal de vida"
+        ],
+        "it": [
+          "assicurazione temporanea caso morte"
+        ],
+        "pl": [
+          "terminowe ubezpieczenie na życie"
+        ],
+        "ro": [
+          "asigurare temporară de viață"
+        ]
+      }
+    },
+    {
+      "title": "Life Table",
+      "names": {
+        "zh": [
+          "生命表",
+          "寿命表",
+          "壽命表"
+        ],
+        "nl": [
+          "sterftetafel"
+        ],
+        "de": [
+          "Sterbetafel"
+        ],
+        "fr": [
+          "table de mortalité"
+        ],
+        "es": [
+          "tabla de mortalidad"
+        ],
+        "it": [
+          "tavola di mortalità"
+        ],
+        "pl": [
+          "tablica trwania życia"
+        ],
+        "ro": [
+          "tabelă de mortalitate"
+        ]
+      }
+    },
+    {
+      "title": "Force of Mortality",
+      "names": {
+        "zh": [
+          "死亡力",
+          "死亡强度",
+          "死亡強度"
+        ],
+        "nl": [
+          "sterfte-intensiteit"
+        ],
+        "de": [
+          "Sterbeintensität"
+        ],
+        "fr": [
+          "force de mortalité"
+        ],
+        "es": [
+          "fuerza de mortalidad"
+        ],
+        "it": [
+          "intensità di mortalità"
+        ],
+        "pl": [
+          "intensywność śmiertelności"
+        ],
+        "ro": [
+          "intensitate de mortalitate"
+        ]
+      }
+    },
+    {
+      "title": "Collective Risk Model",
+      "names": {
+        "zh": [
+          "集体风险模型",
+          "集體風險模型"
+        ],
+        "nl": [
+          "collectief risicomodel"
+        ],
+        "de": [
+          "kollektives Risikomodell"
+        ],
+        "fr": [
+          "modèle de risque collectif"
+        ],
+        "es": [
+          "modelo de riesgo colectivo"
+        ],
+        "it": [
+          "modello collettivo di rischio"
+        ],
+        "pl": [
+          "zbiorowy model ryzyka"
+        ],
+        "ro": [
+          "model colectiv de risc"
+        ]
+      }
+    },
+    {
+      "title": "Individual Risk Model",
+      "names": {
+        "zh": [
+          "个体风险模型",
+          "個體風險模型"
+        ],
+        "nl": [
+          "individueel risicomodel"
+        ],
+        "de": [
+          "individuelles Risikomodell"
+        ],
+        "fr": [
+          "modèle de risque individuel"
+        ],
+        "es": [
+          "modelo de riesgo individual"
+        ],
+        "it": [
+          "modello individuale di rischio"
+        ],
+        "pl": [
+          "indywidualny model ryzyka"
+        ],
+        "ro": [
+          "model individual de risc"
+        ]
+      }
+    }
+  ]
+}

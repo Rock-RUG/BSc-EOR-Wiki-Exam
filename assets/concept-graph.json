@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1791760871114,
+  "generatedAt": 1791803945885,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -73,7 +73,7 @@
       "aiMcq": true
     },
     "Year-1/1a-Introduction-to-Data-Analytics/index.html": {
-      "title": "Introduction to Data Analytics { .ch-title }",
+      "title": "Introduction to Data Analytics",
       "courseName": "1a-Introduction-to-Data-Analytics",
       "coursePath": "Year-1/1a-Introduction-to-Data-Analytics",
       "curriculumStatus": "current",
@@ -402,7 +402,7 @@
       "aiMcq": true
     },
     "Year-1/1a-Math-I-Calculus/first-order-condition.html": {
-      "title": "First Order Condition",
+      "title": "First-Order Condition",
       "courseName": "1a-Math-I-Calculus",
       "coursePath": "Year-1/1a-Math-I-Calculus",
       "curriculumStatus": "current",
@@ -465,7 +465,7 @@
       "aiMcq": true
     },
     "Year-1/1a-Math-I-Calculus/higher-order-derivative.html": {
-      "title": "Higher-order Derivative",
+      "title": "Higher-Order Derivative",
       "courseName": "1a-Math-I-Calculus",
       "coursePath": "Year-1/1a-Math-I-Calculus",
       "curriculumStatus": "current",
@@ -787,21 +787,21 @@
       "aiMcq": true
     },
     "Year-1/1a-Math-I-Calculus/one-sided-continuity.html": {
-      "title": "One-sided Continuity",
+      "title": "One-Sided Continuity",
       "courseName": "1a-Math-I-Calculus",
       "coursePath": "Year-1/1a-Math-I-Calculus",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/1a-Math-I-Calculus/one-sided-derivative.html": {
-      "title": "One-sided Derivative",
+      "title": "One-Sided Derivative",
       "courseName": "1a-Math-I-Calculus",
       "coursePath": "Year-1/1a-Math-I-Calculus",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/1a-Math-I-Calculus/one-sided-limit.html": {
-      "title": "One-sided Limit",
+      "title": "One-Sided Limit",
       "courseName": "1a-Math-I-Calculus",
       "coursePath": "Year-1/1a-Math-I-Calculus",
       "curriculumStatus": "current",
@@ -906,7 +906,7 @@
       "aiMcq": true
     },
     "Year-1/1a-Math-I-Calculus/second-order-condition.html": {
-      "title": "Second Order Condition",
+      "title": "Second-Order Condition",
       "courseName": "1a-Math-I-Calculus",
       "coursePath": "Year-1/1a-Math-I-Calculus",
       "curriculumStatus": "current",
@@ -2096,7 +2096,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Math-II-Linear-Algebra/2-argument-arctangent.html": {
-      "title": "2-argument Arctangent",
+      "title": "2-Argument Arctangent",
       "courseName": "1b-Math-II-Linear-Algebra",
       "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
       "curriculumStatus": "current",
@@ -3293,7 +3293,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html": {
-      "title": "IID Random Variables",
+      "title": "Independent and Identically Distributed Random Variables",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -3636,14 +3636,14 @@
       "aiMcq": true
     },
     "Year-1/1b-Programming-for-EOR/index.html": {
-      "title": "Programming for EOR { .ch-title }",
+      "title": "Programming for EOR",
       "courseName": "1b-Programming-for-EOR",
       "coursePath": "Year-1/1b-Programming-for-EOR",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/2a-Finance-for-EOR/index.html": {
-      "title": "Finance for EOR { .ch-title }",
+      "title": "Finance for EOR",
       "courseName": "2a-Finance-for-EOR",
       "coursePath": "Year-1/2a-Finance-for-EOR",
       "curriculumStatus": "current",
@@ -3734,7 +3734,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Math-III-Analysis/connected-and-disconnected-sets.html": {
-      "title": "Connected and Disconnected Set",
+      "title": "Connected and Disconnected Sets",
       "courseName": "2a-Math-III-Analysis",
       "coursePath": "Year-1/2a-Math-III-Analysis",
       "curriculumStatus": "current",
@@ -4154,7 +4154,7 @@
       "aiMcq": true
     },
     "Year-1/2a-Microeconomics-for-EOR/index.html": {
-      "title": "Microeconomics for EOR { .ch-title }",
+      "title": "Microeconomics for EOR",
       "courseName": "2a-Microeconomics-for-EOR",
       "coursePath": "Year-1/2a-Microeconomics-for-EOR",
       "curriculumStatus": "current",
@@ -4287,7 +4287,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Math-IV-Multivariate-Calculus/jacobian-rank-local-behavior-theorem.html": {
-      "title": "Jacobian Rank Local Behavior Theorem",
+      "title": "Jacobian Rank Local Behaviour Theorem",
       "courseName": "2b-Math-IV-Multivariate-Calculus",
       "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
       "curriculumStatus": "current",
@@ -4357,7 +4357,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Math-IV-Multivariate-Calculus/method-of-lagrange-for-inequality-constrained-maximization.html": {
-      "title": "Method of Lagrange for Inequality-constrained Maximization",
+      "title": "Method of Lagrange for Inequality-Constrained Maximization",
       "courseName": "2b-Math-IV-Multivariate-Calculus",
       "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
       "curriculumStatus": "current",
@@ -4441,14 +4441,14 @@
       "aiMcq": true
     },
     "Year-1/2b-Math-IV-Multivariate-Calculus/second-order-partial-derivative.html": {
-      "title": "Second-order Partial Derivative",
+      "title": "Second-Order Partial Derivative",
       "courseName": "2b-Math-IV-Multivariate-Calculus",
       "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-1/2b-Math-IV-Multivariate-Calculus/second-order-sufficient-conditions-for-constrained-optimization.html": {
-      "title": "Second-order Sufficient Conditions for Constrained Optimization",
+      "title": "Second-Order Sufficient Conditions for Constrained Optimization",
       "courseName": "2b-Math-IV-Multivariate-Calculus",
       "coursePath": "Year-1/2b-Math-IV-Multivariate-Calculus",
       "curriculumStatus": "current",
@@ -4924,7 +4924,7 @@
       "aiMcq": true
     },
     "Year-1/2b-Statistical-Modelling-for-EOR/index.html": {
-      "title": "Statistical Modelling for EOR { .ch-title }",
+      "title": "Statistical Modelling for EOR",
       "courseName": "2b-Statistical-Modelling-for-EOR",
       "coursePath": "Year-1/2b-Statistical-Modelling-for-EOR",
       "curriculumStatus": "current",
@@ -4938,56 +4938,56 @@
       "aiMcq": true
     },
     "Year-2/1a-Macroeconomics-for-EOR/index.html": {
-      "title": "Macroeconomics for EOR { .ch-title }",
+      "title": "Macroeconomics for EOR",
       "courseName": "1a-Macroeconomics-for-EOR",
       "coursePath": "Year-2/1a-Macroeconomics-for-EOR",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/index.html": {
-      "title": "Math V: Advanced Linear Algebra { .ch-title }",
+      "title": "Math V: Advanced Linear Algebra",
       "courseName": "1a-Math-V-Advanced-Linear-Algebra",
       "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/1a-Statistical-Inference/index.html": {
-      "title": "Statistical Inference { .ch-title }",
+      "title": "Statistical Inference",
       "courseName": "1a-Statistical-Inference",
       "coursePath": "Year-2/1a-Statistical-Inference",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/1b-Linear-Models-in-Statistics/index.html": {
-      "title": "Linear Models in Statistics { .ch-title }",
+      "title": "Linear Models in Statistics",
       "courseName": "1b-Linear-Models-in-Statistics",
       "coursePath": "Year-2/1b-Linear-Models-in-Statistics",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/1b-Math-VI-Convexity-and-Optimization/index.html": {
-      "title": "Math VI: Convexity and Optimization { .ch-title }",
+      "title": "Math VI: Convexity and Optimization",
       "courseName": "1b-Math-VI-Convexity-and-Optimization",
       "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/1b-Stochastic-Operations-Research/index.html": {
-      "title": "Stochastic Operations Research { .ch-title }",
+      "title": "Stochastic Operations Research",
       "courseName": "1b-Stochastic-Operations-Research",
       "coursePath": "Year-2/1b-Stochastic-Operations-Research",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/2a-Discrete-Operations-Research/index.html": {
-      "title": "Discrete Operations Research { .ch-title }",
+      "title": "Discrete Operations Research",
       "courseName": "2a-Discrete-Operations-Research",
       "coursePath": "Year-2/2a-Discrete-Operations-Research",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/2a-Introduction-to-Econometrics/index.html": {
-      "title": "Introduction to Econometrics { .ch-title }",
+      "title": "Introduction to Econometrics",
       "courseName": "2a-Introduction-to-Econometrics",
       "coursePath": "Year-2/2a-Introduction-to-Econometrics",
       "curriculumStatus": "current",
@@ -5225,14 +5225,14 @@
       "aiMcq": true
     },
     "Year-2/2b-Dynamic-Econometrics/index.html": {
-      "title": "Dynamic Econometrics { .ch-title }",
+      "title": "Dynamic Econometrics",
       "courseName": "2b-Dynamic-Econometrics",
       "coursePath": "Year-2/2b-Dynamic-Econometrics",
       "curriculumStatus": "current",
       "aiMcq": true
     },
     "Year-2/2b-Game-Theory/index.html": {
-      "title": "Game Theory { .ch-title }",
+      "title": "Game Theory",
       "courseName": "2b-Game-Theory",
       "coursePath": "Year-2/2b-Game-Theory",
       "curriculumStatus": "current",
@@ -5379,7 +5379,7 @@
       "aiMcq": true
     },
     "Year-2/2b-Risk-Insurance/generalised-linear-model.html": {
-      "title": "Generalised Linear Model",
+      "title": "Generalized Linear Model",
       "courseName": "2b-Risk-Insurance",
       "coursePath": "Year-2/2b-Risk-Insurance",
       "curriculumStatus": "current",
@@ -14355,7 +14355,8 @@
     ],
     "Year-1/2a-Math-III-Analysis/maximum-norm.html": [
       "Year-1/2a-Math-III-Analysis/p-norm-and-p-metric.html",
-      "Year-1/2a-Math-III-Analysis/taxicab-metric.html"
+      "Year-1/2a-Math-III-Analysis/taxicab-metric.html",
+      "Year-1/2a-Math-III-Analysis/uniform-norm.html"
     ],
     "Year-1/2a-Math-III-Analysis/metric-and-metric-space.html": [
       "Year-1/2a-Math-III-Analysis/norm-and-normed-vector-space.html",
@@ -14498,7 +14499,8 @@
     ],
     "Year-1/2a-Math-III-Analysis/uniform-norm.html": [
       "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html",
-      "Year-1/2a-Math-III-Analysis/uniform-convergence.html"
+      "Year-1/2a-Math-III-Analysis/uniform-convergence.html",
+      "Year-1/2a-Math-III-Analysis/maximum-norm.html"
     ],
     "Year-1/2a-Math-III-Analysis/union-and-intersection-of-closed-sets.html": [
       "Year-1/2a-Math-III-Analysis/union-and-intersection-of-open-sets.html"

@@ -238,7 +238,7 @@ clearStatus();state.expr=[TERM(q)];state.cursor=state.expr.length;try{state.toke
 state.simpleQuery=q;const input=document.getElementById("fb-simple-input");if(input)input.value=q;const message=document.getElementById("fb-simple-status");if(message)message.textContent="";render();}
 async function fbTryRankedHandoff(q,opts){const api=window.__findSearchV2;if(!api||typeof api.runRankedSet!=="function"||typeof api.isRankedHandoffQuery!=="function"||!api.isRankedHandoffQuery(q))return false;const same=(r)=>r&&String(r.query||"").trim().replace(/\s+/g," ")===q;let ranked=opts&&same(opts.ranked)?opts.ranked:null;if(!ranked){const suggestions=window.__mkSearchSuggestions;if(!suggestions||typeof suggestions.rankQuery!=="function")return false;try{ranked=await suggestions.rankQuery(q);}catch(_){ranked=null;}
 if(!same(ranked))return false;}
-const locs=Array.isArray(ranked.locations)?ranked.locations:[];if(!locs.length&&!ranked.uncovered)return false;if(api.runRankedSet(q,locs,{label:ranked.label,uncovered:ranked.uncovered})===false)return false;fbMirrorRankedHandoff(q);return true;}
+const locs=Array.isArray(ranked.locations)?ranked.locations:[];if(!locs.length&&!ranked.uncovered&&!ranked.nameOnly)return false;if(api.runRankedSet(q,locs,{label:ranked.label,uncovered:ranked.uncovered,nameOnly:ranked.nameOnly})===false)return false;fbMirrorRankedHandoff(q);return true;}
 function fbRunSearchFallbackFromAutofill(){try{if(!state||!Array.isArray(state.expr)||!state.expr.length)return false;const norm=normalizeNodesToTokens(state.expr);const exprText=tokensToExprText(norm);if(!exprText)return false;try{clearStatus();}catch(_){}
 try{render();}catch(_){}
 try{fbStartRunSearchFx();}catch(_){}
@@ -805,12 +805,46 @@ function fbEnsureSimpleSearchUi(){const editor=document.getElementById("wf-query
 const input=ui.querySelector("#fb-simple-input"),simple=ui.querySelector("#fb-simple-search"),toggle=ui.querySelector("#fb-search-mode"),message=ui.querySelector("#fb-simple-status");simple.dataset.fbBound="1";input.value=state.simpleQuery||(state.expr.length===1&&state.expr[0].t==="TERM"?state.expr[0].v:"");const setMode=(advanced,focusInput)=>{editor.dataset.fbSearchMode=advanced?"advanced":"simple";simple.hidden=advanced;ui.querySelector('#fb-advanced-draft-note').hidden=!advanced;toggle.setAttribute("aria-expanded",String(advanced));toggle.textContent=advanced?"← Simple search":"Advanced query · AND, OR, saved keywords";const title=editor.querySelector(".wf-editor-heading h2");if(title)title.textContent=advanced?"Build an advanced query":"Find a concept";editor.setAttribute("aria-label",advanced?"Build an advanced query":"Find a concept");if(advanced)fbPublishDraftExpr();else{const api=window.__findSearchV2;if(api&&api.setDraftExpr)api.setDraftExpr(fbSimpleExpr(input.value));}
 if(focusInput)(advanced?document.getElementById("search-input"):input)?.focus();};toggle.addEventListener("click",()=>setMode(editor.dataset.fbSearchMode!=="advanced",true));input.addEventListener("input",()=>{state.simpleQuery=input.value;const api=window.__findSearchV2;if(api&&api.setDraftExpr)api.setDraftExpr(fbSimpleExpr(input.value));});const runSimple=(expression,api,note)=>{if(api.setDraftExpr)api.setDraftExpr(expression);const accepted=api.runLogicExpr(expression);message.textContent=accepted===false?"Search could not run. Try again.":(note||"");return accepted;};simple.addEventListener("submit",event=>{event.preventDefault();event.stopPropagation();const expression=fbSimpleExpr(input.value),api=window.__findSearchV2;if(!expression){message.textContent="Enter a concept, course code or lecture tag to search.";input.focus();return;}
 if(!api||typeof api.runLogicExpr!=="function"){message.textContent="Search is still loading. Try again shortly.";return;}
-if(!fbConsumeGuestAction("search",{query:expression,source:"concept-finder-simple",dedupeMs:2500}))return;const request=state.runRequest=(Number(state.runRequest)||0)+1;state.simpleQuery=input.value;const typed=String(input.value||"").trim().replace(/\s+/g," ");const scriptNote=/[a-z0-9]/i.test(typed)?"":"The notes are written in English: try the English name of the concept.";const nl=window.__mkNlQuery;const uncovered=nl&&typeof nl.uncoveredTopic==="function"?nl.uncoveredTopic(typed):null;if(uncovered&&typeof api.runRankedSet==="function"){if(api.setDraftExpr)api.setDraftExpr(expression);if(api.runRankedSet(typed,null,{uncovered})!==false){message.textContent="";return;}}
+if(!fbConsumeGuestAction("search",{query:expression,source:"concept-finder-simple",dedupeMs:2500}))return;const request=state.runRequest=(Number(state.runRequest)||0)+1;state.simpleQuery=input.value;const typed=String(input.value||"").trim().replace(/\s+/g," ");const runOriginalSearch=()=>{const scriptNote=/[a-z0-9]/i.test(typed)?"":"The notes are written in English: try the English name of the concept.";const nl=window.__mkNlQuery;const uncovered=nl&&typeof nl.uncoveredTopic==="function"?nl.uncoveredTopic(typed):null;if(uncovered&&typeof api.runRankedSet==="function"){if(api.setDraftExpr)api.setDraftExpr(expression);if(api.runRankedSet(typed,null,{uncovered})!==false){message.textContent="";return;}}
 const reading=nl&&typeof nl.analyze==="function"?nl.analyze(typed):null;if(!reading||!(reading.strong||reading.natural)){runSimple(expression,api,scriptNote);return;}
 message.textContent="Reading your question…";Promise.resolve(fbNaturalTermsFor(typed,()=>state.runRequest===request)).then(terms=>{if(state.runRequest!==request)return;if(!terms||!terms.length){runSimple(expression,api);return;}
-const rewritten=terms.length===2?tokensToExprText([{k:"TERM",v:terms[0]},{k:"OP",v:"OR"},{k:"TERM",v:terms[1]}]):fbSimpleExpr(terms[0]);if(runSimple(rewritten,api,`Searching for ${terms.join(" or ")}, read from your question. `)===false)return;const asTyped=document.createElement("button");asTyped.type="button";asTyped.className="fb-simple-astyped";asTyped.textContent="Search as typed";asTyped.addEventListener("click",()=>{state.runRequest=(Number(state.runRequest)||0)+1;runSimple(expression,api,"");input.focus();});message.appendChild(asTyped);},()=>{if(state.runRequest===request)runSimple(expression,api);});});setMode(state.expr.length>1,false);}
+const rewritten=terms.length===2?tokensToExprText([{k:"TERM",v:terms[0]},{k:"OP",v:"OR"},{k:"TERM",v:terms[1]}]):fbSimpleExpr(terms[0]);if(runSimple(rewritten,api,`Searching for ${terms.join(" or ")}, read from your question. `)===false)return;const asTyped=document.createElement("button");asTyped.type="button";asTyped.className="fb-simple-astyped";asTyped.textContent="Search as typed";asTyped.addEventListener("click",()=>{state.runRequest=(Number(state.runRequest)||0)+1;runSimple(expression,api,"");input.focus();});message.appendChild(asTyped);},()=>{if(state.runRequest===request)runSimple(expression,api);});};const multilingual=window.__mkSearchSuggestions;if(!multilingual||typeof multilingual.matchMultilingualNames!=="function"){runOriginalSearch();return;}
+message.textContent="Matching concept names…";Promise.resolve(multilingual.matchMultilingualNames(typed)).then(matched=>{if(state.runRequest!==request||String(input.value||"").trim().replace(/\s+/g," ")!==typed)return;if(matched&&matched.nameOnly&&typeof api.runRankedSet==="function"){if(api.setDraftExpr)api.setDraftExpr(expression);if(api.runRankedSet(typed,matched.locations,{label:matched.label,nameOnly:true})!==false){message.textContent="";return;}}
+runOriginalSearch();},()=>{if(state.runRequest===request){message.textContent="Search could not load. Try again.";}});});setMode(state.expr.length>1,false);}
 function fbMoveQueryNode(index,direction){const next=index+direction;if(!Number.isInteger(index)||![-1,1].includes(direction)||index<0||next<0||index>=state.expr.length||next>=state.expr.length)return false;pushHistory();const moved=state.expr.splice(index,1)[0];state.expr.splice(next,0,moved);state.cursor=next+1;setStatus("ok",nodeLabel(moved)+" moved to position "+(next+1)+". Run search to apply the new order.");render();const host=document.getElementById("find-builder");const control=host&&host.querySelector('[data-move-index="'+next+'"][data-move="'+direction+'"]:not(:disabled)');const fallback=host&&host.querySelector('[data-del="'+next+'"]');if(control||fallback)(control||fallback).focus();return true;}
-function render(){state.tokens=readTokens();try{fbEnsureExprNodeIds(state.expr);}catch(_){}
+function fbQueryCheckOnce(expr){const nodes=Array.isArray(expr)?expr:[];const word=(n)=>n.t==="TERM"?`“${String(n.v || "").trim()}”`:n.t==="OP"?n.v:n.t==="LP"?"(":")";const opens=[];let expect="VALUE";for(let i=0;i<nodes.length;i++){const n=nodes[i],prev=i>0?nodes[i-1]:null;if(expect==="VALUE"){if(n.t==="TERM"){expect="OP";continue;}
+if(n.t==="LP"){opens.push(i);continue;}
+if(n.t==="OP"){if(!prev)return{msg:`A query cannot start with ${n.v}.`,fixes:[{label:`Remove ${n.v}`,remove:[i]}]};return{msg:`${word(prev)} is followed by ${n.v}; a keyword is missing between them.`,fixes:[{label:`Remove ${n.v}`,remove:[i]}]};}
+if(n.t==="RP"){if(prev&&prev.t==="LP")return{msg:"These brackets are empty.",fixes:[{label:"Remove ( )",remove:[i-1,i]}]};if(prev&&prev.t==="OP")return{msg:`${prev.v} needs a keyword after it.`,fixes:[{label:`Remove ${prev.v}`,remove:[i-1]}]};return{msg:"A closing bracket has nothing to close.",fixes:[{label:"Remove )",remove:[i]}]};}}else{if(n.t==="OP"){expect="VALUE";continue;}
+if(n.t==="RP"){if(!opens.length)return{msg:"This closing bracket has no matching opening bracket.",fixes:[{label:"Remove )",remove:[i]}]};opens.pop();continue;}
+return{msg:`${word(prev)} and ${word(n)} need a logic word between them.`,fixes:[{label:"Join with AND",insert:{at:i,op:"AND"}},{label:"Join with OR",insert:{at:i,op:"OR"}}]};}}
+if(!nodes.length)return null;const last=nodes[nodes.length-1];if(expect!=="OP"){if(last.t==="OP")return{msg:`${last.v} needs a keyword after it.`,fixes:[{label:`Remove ${last.v}`,remove:[nodes.length-1]}]};if(last.t==="LP")return{msg:"The last opening bracket is empty.",fixes:[{label:"Remove (",remove:[nodes.length-1]}]};}
+if(opens.length){const fixes=[{label:opens.length>1?`Close ${opens.length} brackets`:"Add )",insert:{at:nodes.length,rp:opens.length}}];return{msg:opens.length>1?`${opens.length} brackets are still open.`:"A bracket is still open.",fixes};}
+return null;}
+function fbApplyQueryFix(expr,fix){const out=(Array.isArray(expr)?expr:[]).slice();if(!fix)return out;if(Array.isArray(fix.remove)){fix.remove.slice().sort((a,b)=>b-a).forEach((i)=>{if(i>=0&&i<out.length)out.splice(i,1);});}else if(fix.insert){const at=clamp(Number(fix.insert.at)||0,0,out.length);if(fix.insert.op)out.splice(at,0,OP(fix.insert.op));else for(let k=0;k<(Number(fix.insert.rp)||1);k++)out.splice(at+k,0,RP());}
+return out;}
+function fbQueryParse(expr){let i=0;const nodes=expr;function primary(){const n=nodes[i];if(!n)return null;if(n.t==="TERM"){i++;return{t:"TERM",v:String(n.v||"").trim()};}
+if(n.t==="LP"){i++;const inner=orExpr();if(!nodes[i]||nodes[i].t!=="RP")return null;i++;return inner;}
+return null;}
+function chain(op,next){const items=[next()];if(!items[0])return null;while(nodes[i]&&nodes[i].t==="OP"&&nodes[i].v===op){i++;const r=next();if(!r)return null;items.push(r);}
+return items.length===1?items[0]:{t:op,items};}
+const andExpr=()=>chain("AND",primary);const orExpr=()=>chain("OR",andExpr);const ast=orExpr();return ast&&i===nodes.length?ast:null;}
+function fbQueryAnalyze(expr){const nodes=(Array.isArray(expr)?expr:[]).filter((n)=>n&&(isTerm(n)||isOp(n)||isLP(n)||isRP(n)));const first=fbQueryCheckOnce(nodes);if(!first)return{ok:nodes.length>0,ast:nodes.length?fbQueryParse(nodes):null,fixes:[]};let draft=nodes,steps=0;for(;steps<40;steps++){const issue=fbQueryCheckOnce(draft);if(!issue)break;draft=fbApplyQueryFix(draft,issue.fixes[0]);}
+return{ok:false,msg:first.msg,fixes:first.fixes,fixAllSteps:fbQueryCheckOnce(draft)?0:steps};}
+function fbQueryDescribeHtml(ast){const list=(parts,joiner)=>parts.length===2?`${parts[0]} <b>${joiner}</b> ${parts[1]}`:`${parts.slice(0, -1).join(", ")} <b>${joiner}</b> ${parts[parts.length - 1]}`;const say=(node,parent)=>{if(!node)return"";if(node.t==="TERM")return`<q>${escapeHtml(node.v)}</q>`;const parts=node.items.map((child)=>say(child,node.t));if(node.t==="AND"){const s=parts.length===2?list(parts,"and"):`all of ${list(parts, "and")}`;return parent==="OR"?`(${s})`:s;}
+const s=parts.length===2?`either ${list(parts, "or")}`:`any of ${list(parts, "or")}`;return parent==="AND"?`${s},`:s;};if(!ast)return"Ready to search.";const sentence=say(ast,null).replace(/,$/,"");return`Finds notes that mention ${sentence}.`;}
+function fbRunQueryFix(fix){if(!fix)return Promise.resolve(false);const needsLogic=!!(fix.insert&&fix.insert.op);return Promise.resolve(needsLogic?fbEnsureLogicUnlocked("find-builder-fix"):true).then((ok)=>{if(!ok)return false;const boardFirst=fbCaptureBoardChipRects();pushHistory();state.expr=fbApplyQueryFix(state.expr.filter((n)=>n&&(isTerm(n)||isOp(n)||isLP(n)||isRP(n))),fix);state.cursor=state.expr.length;clearStatus();render();try{fbPlayBoardFlip(boardFirst);}catch(_){}
+return true;});}
+function fbRunQueryFixAll(){let draft=state.expr.filter((n)=>n&&(isTerm(n)||isOp(n)||isLP(n)||isRP(n))),needsLogic=false;for(let steps=0;steps<40;steps++){const issue=fbQueryCheckOnce(draft);if(!issue)break;if(issue.fixes[0].insert&&issue.fixes[0].insert.op)needsLogic=true;draft=fbApplyQueryFix(draft,issue.fixes[0]);}
+return Promise.resolve(needsLogic?fbEnsureLogicUnlocked("find-builder-fix"):true).then((ok)=>{if(!ok)return false;const boardFirst=fbCaptureBoardChipRects();pushHistory();state.expr=draft;state.cursor=state.expr.length;setStatus("ok","Query repaired. Check the reading below, then run the search.");render();try{fbPlayBoardFlip(boardFirst);}catch(_){}
+return true;});}
+function fbMoveQueryNodeTo(from,gap){if(!Number.isInteger(from)||from<0||from>=state.expr.length)return false;let to=clamp(Number(gap)||0,0,state.expr.length);if(to===from||to===from+1)return false;const boardFirst=fbCaptureBoardChipRects();pushHistory();const moved=state.expr.splice(from,1)[0];if(to>from)to-=1;state.expr.splice(to,0,moved);state.cursor=to+1;clearStatus();render();try{fbPlayBoardFlip(boardFirst);}catch(_){}
+return true;}
+function fbInsertQueryNodeAt(node,gap,fromEl){if(!node)return false;const boardFirst=fbCaptureBoardChipRects();const fromRect=(()=>{try{return fromEl?fromEl.getBoundingClientRect():null;}catch(_){return null;}})();state.cursor=clamp(Number(gap)||0,0,state.expr.length);const nodeId=node.__fbid||"";insertAtCursorNode(node);try{if(nodeId&&fromRect)state.animHideNodeIds.add(nodeId);}catch(_){}
+clearStatus();render();if(fromRect){try{fbRunPoolTokenInsertAnimation({token:nodeLabel(node),nodeId,fromRect,styleSourceEl:node.t==="TERM"?null:fromEl,boardFirst});}catch(_){}}else{try{fbPlayBoardFlip(boardFirst);}catch(_){}}
+return true;}
+function render(){state.tokens=readTokens();if(state.expr.some((n)=>n&&n.t==="TERM"&&!String(n.v||"").trim())){state.expr=state.expr.filter((n)=>!(n&&n.t==="TERM"&&!String(n.v||"").trim()));}
+try{fbEnsureExprNodeIds(state.expr);}catch(_){}
 try{if(fbPrefersReducedMotion()){if(state.animHideTokens&&state.animHideTokens.size)state.animHideTokens.clear();if(state.animHideNodeIds&&state.animHideNodeIds.size)state.animHideNodeIds.clear();}}catch(_){}
 try{writeExpr(state.expr);}catch{}
 const host=ensureFindBuilderHost();if(!host)return;state.cursor=clamp(state.cursor,0,state.expr.length);const hasExpr=state.expr.length>0;const hasTokenList=state.tokens.length>0;const canUndo=state.history.length>0;const canClear=hasExpr;const canRun=hasExpr;const canRedo=state.future.length>0;const statusHtml=state.lastMsg?`<div id="fb-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" class="fb-status ${
@@ -821,22 +855,27 @@ const host=ensureFindBuilderHost();if(!host)return;state.cursor=clamp(state.curs
           : ""
       }">${escapeHtml(state.lastMsg)}</div>`:`<div id="fb-status" role="status" aria-live="polite" aria-atomic="true" class="fb-status"></div>`;const tokenButtons=state.tokens.map((t,idx)=>{const safe=escapeHtml(t);const __tokKey=String(t||"").trim().replace(/\s+/g," ");const isHidden=!!(state.animHideTokens&&state.animHideTokens.has(__tokKey));const wrapStyle=isHidden?`style="opacity:0; visibility:hidden; transform:scale(.98);"`:"";return`
         <div class="fb-tokenwrap" data-idx="${idx}" ${wrapStyle}>
-          <button class="fb-tokenbtn" type="button" ${hasTokenList ? "" : "disabled"} title="${safe}">
-            <span class="fb-tokenbtn__text">${safe}</span>
+          <button class="fb-tokenbtn" type="button" data-fb-drag="pool" ${hasTokenList ? "" : "disabled"} title="Add ${safe} at the caret, or drag it into the query" aria-label="Add keyword ${safe} to the query">
+            <span class="fb-tokenbtn__grip" aria-hidden="true"></span><span class="fb-tokenbtn__text">${safe}</span>
           </button>
-          <button class="fb-tokenbtn__x" type="button" title="Remove token: ${safe}" aria-label="Remove token: ${safe}">×</button>
+          <button class="fb-tokenbtn__x" type="button" title="Remove keyword: ${safe}" aria-label="Remove token: ${safe}">×</button>
         </div>
-      `;}).join("");let boardHtml="";for(let i=0;i<=state.expr.length;i++){const isCursor=i===state.cursor;boardHtml+=`
-      <button class="fb-slot ${isCursor ? "is-cursor" : ""}" type="button" data-slot="${i}" aria-label="Insert at position ${i + 1} of ${state.expr.length + 1}">
-        <span class="fb-caret">${isCursor ? "|" : ""}</span>
+      `;}).join("");const __pairOf=new Array(state.expr.length).fill(-1),__depthOf=new Array(state.expr.length).fill(0);(()=>{const open=[];for(let k=0;k<state.expr.length;k++){const n=state.expr[k];if(n&&n.t==="LP"){__depthOf[k]=open.length;open.push(k);}
+else if(n&&n.t==="RP"&&open.length){const o=open.pop();__pairOf[o]=o;__pairOf[k]=o;__depthOf[k]=open.length;}
+else __depthOf[k]=open.length;}})();const __kindName=(n)=>n.t==="TERM"?"Keyword":n.t==="OP"?"Operator":n.t==="LP"?"Opening bracket":"Closing bracket";let boardHtml="";for(let i=0;i<=state.expr.length;i++){const isCursor=i===state.cursor;boardHtml+=`
+      <button class="fb-slot ${isCursor ? "is-cursor" : ""}" type="button" data-slot="${i}" aria-label="Insert at position ${i + 1} of ${state.expr.length + 1}"${isCursor ? ' aria-current="true"' : ""}>
+        <span class="fb-caret" aria-hidden="true">${isCursor ? "|" : ""}</span>
       </button>
-    `;if(i<state.expr.length){const n=state.expr[i];const txt=escapeHtml(nodeLabel(n));let cls="fb-chip";if(n.t==="TERM")cls+=" fb-chip--term";else if(n.t==="OP")cls+=" fb-chip--op";else if(n.t==="LP"||n.t==="RP")cls+=" fb-chip--paren";const __nid=String(n.__fbid||"");const __hideChip=!!(state.animHideNodeIds&&__nid&&state.animHideNodeIds.has(__nid));const __chipStyle=__hideChip?`style="opacity:0; visibility:hidden; transform:scale(.98);"`:"";boardHtml+=`
-        <span class="${cls}" data-chip="${i}" data-expr-idx="${i}" data-fb-node="${escapeHtml(n.__fbid || '')}" ${__chipStyle}>
+    `;if(i<state.expr.length){const n=state.expr[i];const txt=escapeHtml(nodeLabel(n));let cls="fb-chip";let kind="term";if(n.t==="TERM")cls+=" fb-chip--term";else if(n.t==="OP"){kind=String(n.v||"").toLowerCase();cls+=" fb-chip--op fb-chip--"+kind;}
+else if(n.t==="LP"||n.t==="RP"){kind=n.t==="LP"?"lp":"rp";cls+=" fb-chip--paren fb-depth-"+(__depthOf[i]%4)+(__pairOf[i]<0?" fb-chip--unpaired":"");}
+const __nid=String(n.__fbid||"");const __hideChip=!!(state.animHideNodeIds&&__nid&&state.animHideNodeIds.has(__nid));const __chipStyle=__hideChip?`style="opacity:0; visibility:hidden; transform:scale(.98);"`:"";const __pairAttr=__pairOf[i]>=0?` data-fb-pair="${__pairOf[i]}"`:"";boardHtml+=`
+        <span class="${cls}" data-chip="${i}" data-expr-idx="${i}" data-fb-node="${escapeHtml(n.__fbid || '')}" data-fb-kind="${kind}" data-fb-drag="chip"${__pairAttr} tabindex="0" role="group" aria-label="${__kindName(n)} ${txt}, position ${i + 1} of ${state.expr.length}. Drag, or Alt plus arrow keys to move; Delete to remove." ${__chipStyle}>
+          <span class="fb-chip__grip" aria-hidden="true"></span>
           <span class="fb-chip__text">${txt}</span>
           <span class="fb-chip__controls">
-          <button class="fb-chip__move" type="button" data-move-index="${i}" data-move="-1" ${i === 0 ? "disabled" : ""} aria-label="Move ${txt} at position ${i + 1} left">←</button>
-          <button class="fb-chip__move" type="button" data-move-index="${i}" data-move="1" ${i === state.expr.length - 1 ? "disabled" : ""} aria-label="Move ${txt} at position ${i + 1} right">→</button>
-          <button class="fb-chip__x" type="button" data-del="${i}" aria-label="Delete ${txt} at position ${i + 1}">×</button>
+          <button class="fb-chip__move" type="button" data-move-index="${i}" data-move="-1" ${i === 0 ? "disabled" : ""} aria-label="Move ${txt} at position ${i + 1} left" title="Move left (Alt+←)">←</button>
+          <button class="fb-chip__move" type="button" data-move-index="${i}" data-move="1" ${i === state.expr.length - 1 ? "disabled" : ""} aria-label="Move ${txt} at position ${i + 1} right" title="Move right (Alt+→)">→</button>
+          <button class="fb-chip__x" type="button" data-del="${i}" aria-label="Delete ${txt} at position ${i + 1}" title="Remove">×</button>
           </span>
         </span>
       `;}}
@@ -846,7 +885,7 @@ const isMobile=!!(window.matchMedia&&window.matchMedia("(max-width: 600px)").mat
         <span class="fb-ghost__chip fb-ghost__op">AND</span>
         <span class="fb-ghost__chip fb-ghost__term">limit</span>
       </div>
-    `;const ghostHintText=`Add a keyword; move it with arrows or drag.`;const __nowMs=Date.now();const __suppressPoolEmpty=__nowMs<(state.suppressPoolHintUntil||0);const __suppressBoardEmpty=__nowMs<(state.suppressBoardHintUntil||0);const placeholderHtml=`
+    `;const ghostHintText=`Click a keyword or drag it here, then join keywords with AND / OR.`;const __nowMs=Date.now();const __suppressPoolEmpty=__nowMs<(state.suppressPoolHintUntil||0);const __suppressBoardEmpty=__nowMs<(state.suppressBoardHintUntil||0);const placeholderHtml=`
     <div class="fb-board__placeholder fb-ghost fb-hint${__suppressBoardEmpty ? " fb-hint--pending" : ""}" data-fb-empty-hint="board">
       <strong class="fb-example-label">Example query</strong>
       ${ghostLineHtml}
@@ -854,17 +893,23 @@ const isMobile=!!(window.matchMedia&&window.matchMedia("(max-width: 600px)").mat
       <div class="fb-ghost__hint">${escapeHtml(ghostHintText)}</div>
     </div>
   `;const placeholderHeightHtml=placeholderHtml.replace(/<button[^>]*data-fb-example[^>]*>[^<]*<\/button>/,"").replace('class="fb-board__placeholder ','aria-hidden="true" class="fb-board__placeholder fb-board__placeholder--height-ghost ').replace('data-fb-empty-hint="board"','data-fb-empty-hint="board-height"');const clearTokensBtnHtml=`
-          <button id="fb-clear-tokens" class="fb-btn fb-btn--ghost fb-tokens__clear" type="button" ${hasTokenList ? "" : "disabled"}>
+          <button id="fb-clear-tokens" class="fb-btn fb-btn--ghost fb-tokens__clear" type="button" ${hasTokenList ? "" : "disabled"} title="Remove every saved keyword">
             <span class="fb-clear__x" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M10 11v6"/><path d="M14 11v6"/></svg></span>
-            <span class="fb-clear__txt">Clear tokens</span>
+            <span class="fb-clear__txt">Clear all</span>
           </button>
-        `;const poolEmptyHtml=`<div class="fb-tokens__empty fb-hint${__suppressPoolEmpty ? " fb-hint--pending" : ""}" data-fb-empty-hint="pool">Your saved keywords and tags.</div>`;host.innerHTML=`
+        `;const poolEmptyHtml=`<div class="fb-tokens__empty fb-hint${__suppressPoolEmpty ? " fb-hint--pending" : ""}" data-fb-empty-hint="pool">Keywords you add above are kept here. Click one to place it at the caret, or drag it into your query.</div>`;const check=fbQueryAnalyze(state.expr);state.queryFixes=check.fixes||[];let checkHtml="";if(!hasExpr){checkHtml=`<div class="fb-qs-check" data-fb-check="empty"><span class="fb-qs-check__icon" aria-hidden="true"></span><span class="fb-qs-check__text">Start with a keyword. Join keywords with <b>AND</b> (both) or <b>OR</b> (either); use brackets to group.</span></div>`;}else if(check.ok){checkHtml=`<div class="fb-qs-check" data-fb-check="ok"><span class="fb-qs-check__icon" aria-hidden="true"></span><span class="fb-qs-check__text">${fbQueryDescribeHtml(check.ast)}</span></div>`;}else{const fixButtons=(check.fixes||[]).map((f,k)=>`<button type="button" class="fb-btn fb-qs-fix" data-fb-fix="${k}">${escapeHtml(f.label)}</button>`).join("");const fixAll=check.fixAllSteps>1?`<button type="button" class="fb-btn fb-qs-fix fb-qs-fix--all" data-fb-fix-all>Fix all</button>`:"";checkHtml=`<div class="fb-qs-check" data-fb-check="bad"><span class="fb-qs-check__icon" aria-hidden="true"></span><span class="fb-qs-check__text">${escapeHtml(check.msg)}</span>${fixButtons || fixAll ? `<span class="fb-qs-check__fixes">${fixButtons}${fixAll}</span>` : ""}</div>`;}
+const tile=(id,label,hint,title,kind)=>`<button id="${id}" class="fb-btn fb-btn--op fb-qs-tile fb-qs-tile--${kind}" type="button" data-fb-drag="tile" data-fb-tile="${kind}" title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}"><span class="fb-qs-tile__word">${escapeHtml(label)}</span><span class="fb-qs-tile__hint" aria-hidden="true">${escapeHtml(hint)}</span></button>`;const paletteHtml=`<div class="fb-actions__mid fb-qs-palette" role="group" aria-label="Logic words">
+        ${tile("fb-and", "AND", "both", "AND: notes must contain both sides", "and")}
+        ${tile("fb-or", "OR", "either", "OR: notes may contain either side", "or")}
+        ${tile("fb-lp", "(", "group", "Opening bracket: start a group", "lp")}
+        ${tile("fb-rp", ")", "close", "Closing bracket: end a group", "rp")}
+      </div>`;const poolTitleHtml=`Keywords${hasTokenList ? ` <span class="fb-qs-count">${state.tokens.length}</span>` : ""}`;host.innerHTML=`
     <div id="fb-fuzzy-note"></div>
 
     <div class="fb-panel fb-panel--pool">
       <div class="fb-tokens">
         <div class="fb-tokens__head">
-          <div class="fb-tokens__title">Token pool</div>
+          <div class="fb-tokens__title">${poolTitleHtml}</div>
           ${isMobile ? clearTokensBtnHtml : ""}
         </div>
         <div class="fb-tokens__row">
@@ -877,8 +922,8 @@ const isMobile=!!(window.matchMedia&&window.matchMedia("(max-width: 600px)").mat
     </div>
 
     <div class="fb-panel fb-panel--board">
-      <div class="fb-panel__head"><div class="fb-panel__title">Query panel</div></div>
-      ${hasExpr ? '<p class="fb-move-help">Move items with ←/→; choose a slot to insert.</p>' : ''}
+      <div class="fb-panel__head"><div class="fb-panel__title">Your query</div>${hasExpr ? '<p class="fb-move-help">Drag pieces to reorder · drag out to remove · click a gap to move the caret</p>' : ''}</div>
+      ${paletteHtml}
       <div class="fb-board">
         <div class="fb-board__inner ${hasExpr ? "has-expr" : "is-empty"}" data-board-inner="1">
           ${
@@ -889,20 +934,14 @@ const isMobile=!!(window.matchMedia&&window.matchMedia("(max-width: 600px)").mat
         </div>
       </div>
 
+      ${checkHtml}
       ${statusHtml}
 
       <div class="fb-actions">
         <div class="fb-actions__left">
-          ${buttonHtml({ id: "fb-clear", label: "Clear", disabled: !canClear })}
           ${buttonHtml({ id: "fb-undo", label: "Undo", disabled: !canUndo })}
           ${buttonHtml({ id: "fb-redo", label: "Redo", disabled: !canRedo })}
-        </div>
-
-        <div class="fb-actions__mid">
-          ${buttonHtml({ id: "fb-and", label: "AND", disabled: false, kind: "op" })}
-          ${buttonHtml({ id: "fb-or", label: "OR", disabled: false, kind: "op" })}
-          ${buttonHtml({ id: "fb-lp", label: "(", disabled: false, kind: "op" })}
-          ${buttonHtml({ id: "fb-rp", label: ")", disabled: false, kind: "op" })}
+          ${buttonHtml({ id: "fb-clear", label: "Clear", disabled: !canClear })}
         </div>
 
         <div class="fb-actions__right">
@@ -913,7 +952,6 @@ const isMobile=!!(window.matchMedia&&window.matchMedia("(max-width: 600px)").mat
 `;fbApplyFuzzyNoteDom(host);try{ensureFindSpeechBubbleFix();}catch(_){}
 try{fbMaybeShowEnterCorrectionNote();}catch(_){}
 try{fbScheduleThemeForegroundSync();}catch(_){}
-try{fbNormalizeOpButtons(host);}catch(_){}
 try{fbMarkLockedLogicButtons(host);}catch(_){}
 bind(host);fbPublishDraftExpr();}
 function fbPublishDraftExpr(){const api=window.__findSearchV2;if(!api||typeof api.setDraftExpr!=="function")return;api.setDraftExpr(tokensToExprText(normalizeNodesToTokens(state.expr)));}
@@ -959,47 +997,41 @@ try{const chips=Array.from(host.querySelectorAll(".fb-chip--term"));for(const c 
 try{wrap.style.opacity="0";wrap.style.pointerEvents="none";}catch(_){}
 const nextTokens=state.tokens.slice();nextTokens.splice(idx,1);let nextExpr=state.expr;if(target){nextExpr=state.expr.filter((n)=>{if(!n||n.t!=="TERM")return true;return norm(n.v)!==target;});}
 const willPoolEmpty=nextTokens.length===0;const willBoardEmpty=(state.expr&&state.expr.length>0)&&nextExpr.length===0;if(willPoolEmpty||willBoardEmpty){fbSuppressEmptyHints({pool:willPoolEmpty,board:willBoardEmpty,delayMs:FB_DISSOLVE_MS_DEFAULT+FB_HINT_DELAY_AFTER_DISSOLVE_MS,});}
-pushHistory();state.tokens=nextTokens;writeTokens(nextTokens);state.expr=nextExpr;state.cursor=clamp(state.cursor,0,state.expr.length);clearStatus();window.setTimeout(()=>{render();focusPanelSoon();},20);});}});(function initDragV4Once(){if(host.__fb_drag_v4_init)return;host.__fb_drag_v4_init=true;const DRAG_THRESHOLD_PX=6;let drag=null;function termSlots(){const slots=[];for(let i=0;i<state.expr.length;i++){const n=state.expr[i];if(n&&n.t==="TERM")slots.push(i);}
-return slots;}
-function moveTermValue(fromExprIdx,toExprIdx){if(fromExprIdx===toExprIdx)return;const slots=termSlots();const fromPos=slots.indexOf(fromExprIdx);const toPos=slots.indexOf(toExprIdx);if(fromPos<0||toPos<0)return;pushHistory();const values=slots.map(i=>state.expr[i].v);const picked=values.splice(fromPos,1)[0];values.splice(toPos,0,picked);for(let k=0;k<slots.length;k++){state.expr[slots[k]].v=values[k];}
-state.cursor=clamp(state.cursor,0,state.expr.length);render();}
-function cleanupAfterMove(){for(let i=1;i<state.expr.length;){const a=state.expr[i-1],b=state.expr[i];const aEmpty=a&&a.t==="TERM"&&!String(a.v||"").trim();const bEmpty=b&&b.t==="TERM"&&!String(b.v||"").trim();if(aEmpty&&bEmpty){state.expr.splice(i,1);continue;}
-i++;}
-const hasParen=state.expr.some(n=>n&&(n.t==="LP"||n.t==="RP"));const opCount=state.expr.reduce((acc,n)=>acc+(n&&n.t==="OP"?1:0),0);if(!hasParen&&opCount===1){state.expr=state.expr.filter(n=>!(n&&n.t==="TERM"&&!String(n.v||"").trim()));state.cursor=clamp(state.cursor,0,state.expr.length);return;}
-const nonEmptyTerms=state.expr.filter(n=>n&&n.t==="TERM"&&String(n.v||"").trim());if(nonEmptyTerms.length<=1){state.expr=state.expr.filter(n=>!(n&&n.t==="TERM"&&!String(n.v||"").trim()));state.cursor=clamp(state.cursor,0,state.expr.length);return;}
-for(let i=0;i<state.expr.length;){const n=state.expr[i];const isEmptyTerm=n&&n.t==="TERM"&&!String(n.v||"").trim();if(!isEmptyTerm){i++;continue;}
-const prev=i>0?state.expr[i-1]:null;const next=i+1<state.expr.length?state.expr[i+1]:null;const prevIsOpish=!prev||(prev.t==="OP"||prev.t==="LP");const nextIsOpish=!next||(next.t==="OP"||next.t==="RP");if(next&&next.t==="OP"&&prevIsOpish){state.expr.splice(i,1);continue;}
-if(prev&&prev.t==="OP"&&nextIsOpish){state.expr.splice(i,1);continue;}
-i++;}
-state.cursor=clamp(state.cursor,0,state.expr.length);}
-function moveTermToSlot(fromExprIdx,slotIdx){const fromNode=state.expr[fromExprIdx];if(!fromNode||fromNode.t!=="TERM")return;const val=String(fromNode.v||"").trim();if(!val)return;let idx=Number(slotIdx);if(!Number.isFinite(idx))return;idx=Math.max(0,Math.min(state.expr.length,idx));pushHistory();fromNode.v="";state.expr.splice(idx,0,{t:"TERM",v:val});cleanupAfterMove();state.cursor=clamp(state.cursor,0,state.expr.length);render();}
-function withinBoard(el){return!!(el&&el.closest&&el.closest('[data-board-inner="1"]'));}
-function clearDropVisual(){host.querySelectorAll(".fb-drop-target").forEach(el=>el.classList.remove("fb-drop-target"));}
-function setDropVisual(el){clearDropVisual();if(el)el.classList.add("fb-drop-target");}
-function removeGhost(){if(drag&&drag.ghost&&drag.ghost.parentNode)drag.ghost.remove();if(drag)drag.ghost=null;}
-function cleanup(commit){if(!drag)return;document.body.style.userSelect="";const fromEl=host.querySelector(`.fb-chip[data-expr-idx="${drag.fromExprIdx}"]`);if(fromEl)fromEl.classList.remove("fb-dragging");clearDropVisual();removeGhost();if(drag.raf)cancelAnimationFrame(drag.raf);const shouldCommit=commit&&drag.active;const fromIdx=drag.fromExprIdx;const kind=drag.toKind;const toExprIdx=drag.toExprIdx;const toSlotIdx=drag.toSlotIdx;drag=null;if(!shouldCommit)return;if(kind==="term"&&toExprIdx!=null&&Number.isFinite(toExprIdx)){moveTermValue(fromIdx,toExprIdx);return;}
-if((kind==="slot"||kind==="end")&&toSlotIdx!=null&&Number.isFinite(toSlotIdx)){moveTermToSlot(fromIdx,toSlotIdx);return;}
-document.removeEventListener("mousemove",onMove,true);document.removeEventListener("mouseup",onUp,true);document.removeEventListener("touchmove",onTouchMove,{capture:true});document.removeEventListener("touchend",onTouchEnd,true);document.removeEventListener("touchcancel",onTouchEnd,true);window.removeEventListener("blur",onCancel,true);document.removeEventListener("visibilitychange",onVis,true);}
-function createGhost(fromEl){const g=fromEl.cloneNode(true);g.classList.add("fb-ghost");g.style.position="fixed";g.style.left="0px";g.style.top="0px";g.style.zIndex="9999";g.style.pointerEvents="none";g.style.opacity="0.88";g.style.boxShadow="0 14px 30px rgba(0,0,0,.35)";return g;}
-function updateGhost(x,y){if(!drag||!drag.ghost)return;drag.ghost.style.transform=`translate(${x + drag.offsetX}px, ${y + drag.offsetY}px)`;}
-function pickDropTarget(clientX,clientY){const el=document.elementFromPoint(clientX,clientY);if(!el)return{kind:"",exprIdx:null,slotIdx:null,el:null};const chip=el.closest?el.closest(".fb-chip"):null;if(chip&&withinBoard(chip)){const idx=Number(chip.getAttribute("data-expr-idx"));if(Number.isFinite(idx)&&state.expr[idx]&&state.expr[idx].t==="TERM"){return{kind:"term",exprIdx:idx,slotIdx:null,el:chip};}}
-const slot=el.closest?el.closest(".fb-slot"):null;if(slot&&withinBoard(slot)){const slotIdx=Number(slot.getAttribute("data-slot"));if(Number.isFinite(slotIdx)){return{kind:"slot",exprIdx:null,slotIdx,el:slot};}}
-const inner=el.closest?el.closest('[data-board-inner="1"]'):null;if(inner){return{kind:"end",exprIdx:null,slotIdx:state.expr.length,el:inner};}
-return{kind:"",exprIdx:null,slotIdx:null,el:null};}
-function scheduleHitTest(){if(!drag||drag.raf)return;drag.raf=requestAnimationFrame(()=>{drag.raf=null;if(!drag)return;const tgt=pickDropTarget(drag.lastX,drag.lastY);drag.toKind=tgt.kind;drag.toExprIdx=tgt.exprIdx;drag.toSlotIdx=tgt.slotIdx;drag.dropEl=tgt.el;setDropVisual(tgt.el);});}
-function startIfNeeded(clientX,clientY){const dx=clientX-drag.startX;const dy=clientY-drag.startY;const dist=Math.hypot(dx,dy);if(drag.active||dist>=DRAG_THRESHOLD_PX){if(!drag.active){drag.active=true;const fromEl=host.querySelector(`.fb-chip[data-expr-idx="${drag.fromExprIdx}"]`);if(!fromEl){cleanup(false);return false;}
-fromEl.classList.add("fb-dragging");const rect=fromEl.getBoundingClientRect();drag.offsetX=-(rect.width/2);drag.offsetY=-(rect.height/2);drag.ghost=createGhost(fromEl);document.body.appendChild(drag.ghost);document.body.style.userSelect="none";}
-return true;}
-return false;}
-function onMove(ev){if(!drag)return;drag.lastX=ev.clientX;drag.lastY=ev.clientY;if(!startIfNeeded(ev.clientX,ev.clientY))return;ev.preventDefault();updateGhost(ev.clientX,ev.clientY);scheduleHitTest();}
-function onUp(){cleanup(true);}
-function onCancel(){cleanup(false);}
-function onVis(){if(document.visibilityState!=="visible")cleanup(false);}
-function getTouchXY(ev){const t=(ev.touches&&ev.touches[0])||(ev.changedTouches&&ev.changedTouches[0]);if(!t)return null;return{x:t.clientX,y:t.clientY};}
-function onTouchMove(ev){if(!drag)return;const xy=getTouchXY(ev);if(!xy)return;drag.lastX=xy.x;drag.lastY=xy.y;if(!startIfNeeded(xy.x,xy.y))return;ev.preventDefault();updateGhost(xy.x,xy.y);scheduleHitTest();}
-function onTouchEnd(){cleanup(true);}
-function tryBeginFromEventTarget(tgt,clientX,clientY){if(tgt&&tgt.closest&&tgt.closest("button"))return false;const chip=tgt&&tgt.closest?tgt.closest(".fb-chip"):null;if(!chip)return false;if(!withinBoard(chip))return false;const idx=Number(chip.getAttribute("data-expr-idx"));if(!Number.isFinite(idx))return false;const node=state.expr[idx];if(!node||node.t!=="TERM")return false;if(!String(node.v||"").trim())return false;if(!String(node.v||"").trim())return false;if(drag)cleanup(false);drag={fromExprIdx:idx,startX:clientX,startY:clientY,lastX:clientX,lastY:clientY,active:false,ghost:null,offsetX:0,offsetY:0,raf:null,toExprIdx:null,dropEl:null,};document.addEventListener("mousemove",onMove,true);document.addEventListener("mouseup",onUp,true);document.addEventListener("touchmove",onTouchMove,{capture:true,passive:false});document.addEventListener("touchend",onTouchEnd,true);document.addEventListener("touchcancel",onTouchEnd,true);window.addEventListener("blur",onCancel,true);document.addEventListener("visibilitychange",onVis,true);return true;}
-host.addEventListener("mousedown",(ev)=>{if(ev.button!==0)return;tryBeginFromEventTarget(ev.target,ev.clientX,ev.clientY);});host.addEventListener("touchstart",(ev)=>{const xy=getTouchXY(ev);if(!xy)return;tryBeginFromEventTarget(ev.target,xy.x,xy.y);},{passive:true});host.addEventListener("dragstart",(ev)=>{if(ev.target&&ev.target.closest&&ev.target.closest(".fb-chip"))ev.preventDefault();});})();const runBtn=host.querySelector("#fb-run");if(runBtn&&state.lastMsg)runBtn.setAttribute("aria-describedby","fb-status");if(runBtn){runBtn.addEventListener("click",async()=>{if(!state.expr.length)return;const norm=normalizeNodesToTokens(state.expr);const exprText=tokensToExprText(norm);const requestId=state.runRequest=(Number(state.runRequest)||0)+1;const sourceUrl=window.location.href;const isCurrent=()=>state.runRequest===requestId&&window.location.href===sourceUrl&&document.getElementById("find-builder")===host&&tokensToExprText(normalizeNodesToTokens(state.expr))===exprText;try{const raw=(state.fuzzyNote&&state.fuzzyNote.payload)?state.fuzzyNote.payload:"";if(raw){const data=JSON.parse(raw);if(data&&data.forExprText&&data.forExprText!==exprText){fbHideFuzzyNote();}}}catch(_){}
+pushHistory();state.tokens=nextTokens;writeTokens(nextTokens);state.expr=nextExpr;state.cursor=clamp(state.cursor,0,state.expr.length);clearStatus();window.setTimeout(()=>{render();focusPanelSoon();},20);});}});host.querySelectorAll("[data-fb-fix]").forEach((btn)=>btn.addEventListener("click",()=>{const fix=(state.queryFixes||[])[Number(btn.getAttribute("data-fb-fix"))];fbRunQueryFix(fix).then((done)=>{if(done)focusPanelSoon();});}));host.querySelectorAll("[data-fb-fix-all]").forEach((btn)=>btn.addEventListener("click",()=>{fbRunQueryFixAll().then((done)=>{if(done)document.getElementById("fb-run")?.focus();});}));(function initStudioDragOnce(){if(host.__fbStudioDragInit)return;host.__fbStudioDragInit=true;const DRAG_THRESHOLD_PX=6,TOUCH_HOLD_MS=240,TOUCH_SLOP_PX=9;const TILE_LABEL={and:"AND",or:"OR",lp:"(",rp:")"};let drag=null;const boardInner=()=>host.querySelector('[data-board-inner="1"]');function sourceOf(target){if(!target||!target.closest)return null;if(target.closest(".fb-chip__controls,.fb-tokenbtn__x,.fb-slot"))return null;const el=target.closest("[data-fb-drag]");if(!el||!host.contains(el)||el.disabled)return null;const type=el.getAttribute("data-fb-drag");if(type==="chip"){const idx=Number(el.getAttribute("data-expr-idx"));return state.expr[idx]?{type,el,idx,label:nodeLabel(state.expr[idx])}:null;}
+if(type==="pool"){const wrap=el.closest(".fb-tokenwrap");const token=wrap?state.tokens[Number(wrap.getAttribute("data-idx"))]:"";return token?{type,el,token,label:token}:null;}
+if(type==="tile"){const kind=el.getAttribute("data-fb-tile");return TILE_LABEL[kind]?{type,el,kind,label:TILE_LABEL[kind]}:null;}
+return null;}
+function gapAt(x,y){const inner=boardInner();if(!inner)return null;const r=inner.getBoundingClientRect(),pad=28;if(x<r.left-pad||x>r.right+pad||y<r.top-pad||y>r.bottom+pad)return null;const chips=Array.from(inner.querySelectorAll(".fb-chip[data-expr-idx]"));for(const c of chips){const cr=c.getBoundingClientRect(),idx=Number(c.getAttribute("data-expr-idx"));if(y<cr.top-4||(y<=cr.bottom+4&&x<cr.left+cr.width/2))return{gap:idx,chip:c,side:"before"};}
+return{gap:state.expr.length,chip:chips[chips.length-1]||null,side:"after"};}
+function showDrop(hit){const inner=boardInner();if(!inner)return;let mark=inner.querySelector(".fb-qs-drop");inner.classList.toggle("fb-qs-dropping",!!hit);inner.classList.toggle("fb-qs-remove-hint",!hit&&!!drag&&drag.src.type==="chip");if(!hit||!hit.chip){if(mark)mark.hidden=true;return;}
+if(!mark){mark=document.createElement("span");mark.className="fb-qs-drop";mark.setAttribute("aria-hidden","true");inner.appendChild(mark);}
+const ir=inner.getBoundingClientRect(),cr=hit.chip.getBoundingClientRect();const left=hit.side==="before"?cr.left-ir.left-4:cr.right-ir.left+2;mark.hidden=false;mark.style.transform=`translate(${Math.round(left + inner.scrollLeft)}px, ${Math.round(cr.top - ir.top + inner.scrollTop)}px)`;mark.style.height=Math.round(cr.height)+"px";}
+function makeGhost(src){const g=src.el.cloneNode(true);g.classList.add("fb-qs-ghost");g.classList.remove("fb-dragging");g.removeAttribute("id");g.removeAttribute("tabindex");g.removeAttribute("style");g.setAttribute("aria-hidden","true");g.querySelectorAll("[id],button").forEach((n)=>{n.removeAttribute("id");n.setAttribute("tabindex","-1");});try{const cs=getComputedStyle(src.el);["color","backgroundColor","backgroundImage","borderTopColor","borderTopStyle","borderTopWidth","borderRadius","fontFamily","fontSize","fontWeight","letterSpacing","paddingTop","paddingRight","paddingBottom","paddingLeft","minHeight","gap"].forEach((k)=>{g.style[k]=cs[k];});g.style.borderColor=cs.borderTopColor;g.style.borderStyle=cs.borderTopStyle;g.style.borderWidth=cs.borderTopWidth;g.style.display="inline-flex";g.style.alignItems="center";g.style.boxSizing="border-box";}catch(_){}
+const shell=document.createElement("div");shell.className="fb-qs-ghost-shell";shell.appendChild(g);document.body.appendChild(shell);return shell;}
+function moveGhost(x,y){if(!drag||!drag.ghost)return;drag.ghost.style.transform=`translate(${Math.round(x - drag.grabX)}px, ${Math.round(y - drag.grabY)}px)`;}
+function activate(){if(!drag||drag.active)return;drag.active=true;const r=drag.src.el.getBoundingClientRect();drag.grabX=clamp(drag.startX-r.left,0,r.width);drag.grabY=clamp(drag.startY-r.top,0,r.height);drag.ghost=makeGhost(drag.src);drag.ghost.style.width=Math.ceil(r.width)+"px";drag.src.el.classList.add("fb-dragging");host.classList.add("fb-qs-is-dragging");document.documentElement.classList.add("fb-qs-dragging-doc");try{if(drag.pointerType==="touch"&&navigator.vibrate)navigator.vibrate(8);}catch(_){}
+moveGhost(drag.lastX,drag.lastY);update();}
+function update(){if(!drag||!drag.active)return;drag.raf=0;const hit=gapAt(drag.lastX,drag.lastY);drag.hit=hit;showDrop(hit);if(drag.ghost)drag.ghost.classList.toggle("is-removing",!hit&&drag.src.type==="chip");}
+function detach(){document.removeEventListener("pointermove",onMove,true);document.removeEventListener("pointerup",onUp,true);document.removeEventListener("pointercancel",onCancel,true);document.removeEventListener("touchmove",onTouchMove,{capture:true});document.removeEventListener("keydown",onKey,true);window.removeEventListener("blur",onWindowBlur,true);}
+function finish(commit){if(!drag)return;const d=drag;drag=null;detach();if(d.holdTimer)clearTimeout(d.holdTimer);if(d.raf)cancelAnimationFrame(d.raf);if(d.ghost)d.ghost.remove();try{d.src.el.classList.remove("fb-dragging");}catch(_){}
+host.classList.remove("fb-qs-is-dragging");document.documentElement.classList.remove("fb-qs-dragging-doc");const inner=boardInner();if(inner){inner.classList.remove("fb-qs-dropping","fb-qs-remove-hint");const m=inner.querySelector(".fb-qs-drop");if(m)m.remove();}
+if(!d.active)return;const swallow=(ev)=>{ev.preventDefault();ev.stopPropagation();};host.addEventListener("click",swallow,{capture:true,once:true});window.setTimeout(()=>host.removeEventListener("click",swallow,true),0);if(!commit)return;const src=d.src,hit=gapAt(d.lastX,d.lastY);if(src.type==="chip"){if(!hit){const btn=src.el.querySelector("[data-del]");if(btn)window.setTimeout(()=>{if(btn.isConnected)btn.click();},0);return;}
+fbMoveQueryNodeTo(src.idx,hit.gap);return;}
+if(!hit)return;if(src.type==="pool"){fbInsertQueryNodeAt(TERM(src.token),hit.gap,null);return;}
+const make={and:()=>OP("AND"),or:()=>OP("OR"),lp:()=>LP(),rp:()=>RP()}[src.kind];const gate=(src.kind==="and"||src.kind==="or")?fbEnsureLogicUnlocked("find-builder-"+src.kind):Promise.resolve(true);Promise.resolve(gate).then((ok)=>{if(ok&&host.isConnected)fbInsertQueryNodeAt(make(),hit.gap,null);});}
+function onMove(ev){if(!drag||ev.pointerId!==drag.pointerId)return;drag.lastX=ev.clientX;drag.lastY=ev.clientY;const dist=Math.hypot(ev.clientX-drag.startX,ev.clientY-drag.startY);if(!drag.active){if(drag.pointerType==="touch"){if(dist>TOUCH_SLOP_PX)finish(false);return;}
+if(dist<DRAG_THRESHOLD_PX)return;activate();}
+ev.preventDefault();moveGhost(ev.clientX,ev.clientY);if(!drag.raf)drag.raf=requestAnimationFrame(update);}
+function onTouchMove(ev){if(drag&&drag.active&&ev.cancelable)ev.preventDefault();}
+function onUp(ev){if(!drag||ev.pointerId!==drag.pointerId)return;drag.lastX=ev.clientX;drag.lastY=ev.clientY;finish(true);}
+function onCancel(){finish(false);}
+function onWindowBlur(ev){if(ev.target===window)finish(false);}
+function onKey(ev){if(ev.key==="Escape"&&drag){ev.preventDefault();finish(false);}}
+host.addEventListener("pointerdown",(ev)=>{if(ev.button!==0||ev.isPrimary===false)return;const src=sourceOf(ev.target);if(!src)return;if(drag)finish(false);drag={src,pointerId:ev.pointerId,pointerType:ev.pointerType||"mouse",startX:ev.clientX,startY:ev.clientY,lastX:ev.clientX,lastY:ev.clientY,active:false,ghost:null,hit:null,raf:0,holdTimer:0};if(drag.pointerType==="touch"){drag.holdTimer=window.setTimeout(()=>{if(drag&&drag.src===src)activate();},TOUCH_HOLD_MS);}
+document.addEventListener("pointermove",onMove,true);document.addEventListener("pointerup",onUp,true);document.addEventListener("pointercancel",onCancel,true);document.addEventListener("touchmove",onTouchMove,{capture:true,passive:false});document.addEventListener("keydown",onKey,true);window.addEventListener("blur",onWindowBlur,true);});host.addEventListener("dragstart",(ev)=>{if(ev.target&&ev.target.closest&&ev.target.closest("[data-fb-drag]"))ev.preventDefault();});host.addEventListener("contextmenu",(ev)=>{if(drag&&drag.pointerType==="touch")ev.preventDefault();});host.addEventListener("keydown",(ev)=>{const chip=ev.target&&ev.target.classList&&ev.target.classList.contains("fb-chip")?ev.target:null;if(!chip||!host.contains(chip))return;const idx=Number(chip.getAttribute("data-expr-idx"));if(!Number.isInteger(idx))return;const focusChip=(i)=>{const el=host.querySelector(`.fb-chip[data-expr-idx="${i}"]`);if(el)el.focus();};if(ev.altKey&&(ev.key==="ArrowLeft"||ev.key==="ArrowRight")){ev.preventDefault();const dir=ev.key==="ArrowLeft"?-1:1;if(fbMoveQueryNode(idx,dir))focusChip(idx+dir);return;}
+if(ev.key==="Delete"||ev.key==="Backspace"){ev.preventDefault();const btn=chip.querySelector("[data-del]");if(btn){btn.focus();btn.click();}
+return;}
+if(ev.key==="ArrowLeft"||ev.key==="ArrowRight"){ev.preventDefault();focusChip(clamp(idx+(ev.key==="ArrowLeft"?-1:1),0,state.expr.length-1));}});host.addEventListener("click",(ev)=>{const chip=ev.target&&ev.target.closest?ev.target.closest(".fb-chip"):null;if(!chip||!host.contains(chip)||ev.target.closest("button"))return;const on=!chip.classList.contains("is-selected");host.querySelectorAll(".fb-chip.is-selected").forEach((el)=>el.classList.remove("is-selected"));chip.classList.toggle("is-selected",on);});const pairHot=(ev,on)=>{const chip=ev.target&&ev.target.closest?ev.target.closest(".fb-chip[data-fb-pair]"):null;if(!chip||!host.contains(chip))return;const pair=chip.getAttribute("data-fb-pair");host.querySelectorAll(`.fb-chip[data-fb-pair="${pair}"]`).forEach((el)=>el.classList.toggle("fb-pair-hot",on));};host.addEventListener("pointerover",(ev)=>pairHot(ev,true));host.addEventListener("pointerout",(ev)=>pairHot(ev,false));host.addEventListener("focusin",(ev)=>pairHot(ev,true));host.addEventListener("focusout",(ev)=>pairHot(ev,false));})();const runBtn=host.querySelector("#fb-run");if(runBtn&&state.lastMsg)runBtn.setAttribute("aria-describedby","fb-status");if(runBtn){runBtn.addEventListener("click",async()=>{if(!state.expr.length)return;const norm=normalizeNodesToTokens(state.expr);const exprText=tokensToExprText(norm);const requestId=state.runRequest=(Number(state.runRequest)||0)+1;const sourceUrl=window.location.href;const isCurrent=()=>state.runRequest===requestId&&window.location.href===sourceUrl&&document.getElementById("find-builder")===host&&tokensToExprText(normalizeNodesToTokens(state.expr))===exprText;try{const raw=(state.fuzzyNote&&state.fuzzyNote.payload)?state.fuzzyNote.payload:"";if(raw){const data=JSON.parse(raw);if(data&&data.forExprText&&data.forExprText!==exprText){fbHideFuzzyNote();}}}catch(_){}
 const v=validateTokens(norm);if(!v.ok){setStatus("bad","Query not run. "+v.msg);render();const status=host.querySelector("#fb-status");if(status)status.focus();return;}
 if(!fbConsumeGuestAction("search",{query:exprText,source:"concept-finder-run",dedupeMs:2500}))return;try{const terms=norm.filter(t=>t.k==="TERM").map(t=>String(t.v||"").trim()).filter(Boolean);const uniqueTerms=Array.from(new Set(terms.map(s=>s.toLowerCase())));const hasLogic=norm.some(t=>t.k==="OP"||t.k==="LP"||t.k==="RP");const stream=norm.map(t=>{if(t.k==="TERM")return{term:String(t.v||"").trim().toLowerCase()};if(t.k==="OP")return t.v;if(t.k==="LP")return"(";if(t.k==="RP")return")";return null;}).filter(Boolean);const indexJson=await fbLoadIndex();if(!isCurrent())return;const pageDocs=fbAggregateDocsToPages((indexJson&&indexJson.docs)?indexJson.docs:[]);const rpn=fbToRPN(stream);const termCounts=new Map();for(const t of uniqueTerms)termCounts.set(t,0);let combinedCount=0;for(const d of pageDocs){const extraTags=Array.isArray(d.tags)?d.tags.join(" "):"";const extraAliases=Array.isArray(d.aliases)?d.aliases.join(" "):"";const hay=fbNormaliseForSearch(`${d.title} ${d.text} ${d.location} ${extraTags} ${extraAliases}`);const termMatches=(termLower)=>fbTermMatchesHay(termLower,hay,d);for(const t of uniqueTerms){if(termMatches(t))termCounts.set(t,(termCounts.get(t)||0)+1);}
 if(fbEvalRPN(rpn,termMatches))combinedCount+=1;}
@@ -1042,7 +1074,7 @@ try{old.replaceWith(b);}catch(_){try{old.parentNode&&old.parentNode.replaceChild
 btnInsert=b;}}catch(_){}
 const bar=document.createElement("div");bar.className="fb-addtoken-bar";const actions=document.createElement("div");actions.className="fb-addtoken-actions";try{form.insertBefore(bar,input);}catch(_){form.prepend(bar);}
 bar.appendChild(input);bar.appendChild(actions);let btnPool=form.querySelector("#add-token-pool");if(!btnPool){btnPool=document.createElement("button");btnPool.type="button";btnPool.id="add-token-pool";btnPool.className=btnInsert.className||"";}
-actions.appendChild(btnPool);actions.appendChild(btnInsert);fbDecorateAddTokenCta(btnPool,"Add to pool");fbDecorateAddTokenCta(btnInsert,"Add to pool & panel");try{btnPool.dataset.fbAddMode="pool";}catch(_){}
+actions.appendChild(btnPool);actions.appendChild(btnInsert);fbDecorateAddTokenCta(btnPool,"Save keyword");fbDecorateAddTokenCta(btnInsert,"Add to query");try{btnPool.dataset.fbAddMode="pool";}catch(_){}
 try{btnInsert.dataset.fbAddMode="insert";}catch(_){}
 try{if(!btnInsert.id)btnInsert.id="add-token";}catch(_){}
 form.dataset.fbAddSplitV1="1";}
