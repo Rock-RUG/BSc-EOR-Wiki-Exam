@@ -20,10 +20,10 @@
     \addplot[blue, very thick, domain=0:60] {0.02*exp(-0.05*x)};
     \draw[orange!90!black, thick, dashed] (axis cs:10,0) -- (axis cs:10,0.0215);
     \node[red!70!black, align=center] at (axis cs:5,0.0058) {term\\APV};
-    \node[red!70!black, anchor=west] at (axis cs:12,0.0172) {$\int_0^{10}v^tf_x(t)\,dt\approx0.15739$};
+    \node[red!70!black, anchor=west] at (axis cs:12,0.0172) {$\int_0^{10}v^tf_x(t)\,\mathrm{d}t\approx0.15739$};
     \draw[red!70!black, ->] (axis cs:13,0.0158) -- (axis cs:7,0.0105);
-    \node[gray!70!black, anchor=west, align=left] at (axis cs:24,0.0092) {death after $n$: benefit $0$\\remaining area $0.4e^{-0.5}\approx0.24261$};
-    \node[blue!70!black, anchor=south west] at (axis cs:44,0.0028) {$0.02e^{-0.05t}$};
+    \node[gray!70!black, anchor=west, align=left] at (axis cs:24,0.0092) {death after $n$: benefit $0$\\remaining area $0.4\mathrm{e}^{-0.5}\approx0.24261$};
+    \node[blue!70!black, anchor=south west] at (axis cs:44,0.0028) {$0.02\mathrm{e}^{-0.05t}$};
   \end{axis}
 \end{tikzpicture}
 \end{document}

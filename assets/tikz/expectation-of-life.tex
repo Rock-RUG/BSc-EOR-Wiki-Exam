@@ -17,8 +17,8 @@
     \addplot[fill=red!25, draw=none, domain=0:30, samples=100] {exp(-0.1*x)} \closedcycle;
     \addplot[fill=blue!15, draw=blue!50, thin, const plot mark right, samples at={0,1,...,30}] {exp(-0.1*x)} \closedcycle;
     \addplot[blue, very thick, domain=0:30, samples=100] {exp(-0.1*x)};
-    \node[blue!70!black, anchor=west] at (axis cs:12,0.88) {${}_tp_x=e^{-0.1t}$};
-    \node[blue!70!black, anchor=west] at (axis cs:12,0.74) {$\mathring e_x=\int_0^\infty{}_tp_x\,dt=10$ (area)};
+    \node[blue!70!black, anchor=west] at (axis cs:12,0.88) {${}_tp_x=\mathrm{e}^{-0.1t}$};
+    \node[blue!70!black, anchor=west] at (axis cs:12,0.74) {$\mathring e_x=\int_0^\infty{}_tp_x\,\mathrm{d}t=10$ (area)};
     \node[blue!70!black, anchor=west] at (axis cs:12,0.6) {$e_x=\sum_{k\ge1}{}_kp_x\approx9.508$ (bars)};
     \node[red!70!black, anchor=west] at (axis cs:12,0.46) {$\mathring e_x-e_x\approx0.492$ (gaps)};
   \end{axis}

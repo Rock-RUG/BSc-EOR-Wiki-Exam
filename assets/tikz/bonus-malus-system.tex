@@ -11,8 +11,8 @@
   \node[blue!70!black, below=1mm, align=center] at (lo.south) {after a\\claim-free year};
   \node[blue!70!black, below=1mm, align=center] at (hi.south) {after a year\\with claims};
   % transitions
-  \draw[->, thick, red!70!black] (lo) to[bend left=30] node[above, align=center] {$N_t\ge1$: $1-e^{-\lambda}$} (hi);
-  \draw[->, thick, green!50!black] (hi) to[bend left=30] node[below] {$N_t=0$: $e^{-\lambda}$} (lo);
+  \draw[->, thick, red!70!black] (lo) to[bend left=30] node[above, align=center] {$N_t\ge1$: $1-\mathrm{e}^{-\lambda}$} (hi);
+  \draw[->, thick, green!50!black] (hi) to[bend left=30] node[below] {$N_t=0$: $\mathrm{e}^{-\lambda}$} (lo);
   \draw[->, thick, green!50!black] (lo.north west) to[out=135, in=180, looseness=1.0] (0,1.25) to[out=0, in=45, looseness=1.0] (lo.north east);
   \node[green!50!black, anchor=south] at (0,1.25) {$N_t=0$};
   \draw[->, thick, red!70!black] (hi.north west) to[out=135, in=180, looseness=1.0] (4.4,1.25) to[out=0, in=45, looseness=1.0] (hi.north east);

@@ -2,8 +2,8 @@
 \usepackage{amsmath,amssymb}
 \usetikzlibrary{arrows.meta,calc}
 \begin{document}
-% Histories of the twice-repeated prisoner's dilemma: h^1 is empty; the four stage-1 action
-% profiles give the four stage-2 histories h^2 = (C,C), (C,D), (D,C), (D,D); each of the 1 + 4 = 5
+% Histories of the twice-repeated prisoner's dilemma (stages t = 0, 1): h^0 is empty; the four stage-0 action
+% profiles give the four histories h^1 = (C,C), (C,D), (D,C), (D,D); each of the 1 + 4 = 5
 % non-terminal histories starts a subgame (shaded: the 4 proper subgames).
 \begin{tikzpicture}[font=\small, >={Latex[length=2mm]},
     dec/.style={circle, fill, inner sep=1.6pt}]
@@ -25,9 +25,9 @@
   }
   \node[dec] at (0,0) {};
   % labels
-  \node[anchor=south] at (0,0.05) {$h^1=\varnothing$};
-  \node[anchor=east] at (-3.42,-1.5) {$h^2$};
-  \node[anchor=east, gray!60!black] at (-4.0,0) {stage 1};
-  \node[anchor=east, gray!60!black] at (-4.0,-1.5) {stage 2};
+  \node[anchor=south] at (0,0.05) {$h^0=\varnothing$};
+  \node[anchor=east] at (-3.42,-1.5) {$h^1$};
+  \node[anchor=east, gray!60!black] at (-4.0,0) {stage $t=0$};
+  \node[anchor=east, gray!60!black] at (-4.0,-1.5) {stage $t=1$};
 \end{tikzpicture}
 \end{document}

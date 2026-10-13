@@ -9,7 +9,7 @@
 \begin{tikzpicture}[font=\small, >={Latex[length=2mm]}]
   \begin{axis}[
     axis lines=left, xmin=0, xmax=360, ymin=0, ymax=1.12,
-    xtick={100}, xticklabels={$d=100$}, ytick={0.368,1}, yticklabels={$e^{-1}$,$1$},
+    xtick={100}, xticklabels={$d=100$}, ytick={0.368,1}, yticklabels={$\mathrm{e}^{-1}$,$1$},
     xlabel={$t$}, ylabel={$\bar F_X(t)$},
     xlabel style={at={(axis description cs:1,0)}, anchor=west},
     ylabel style={rotate=-90, at={(axis description cs:0,1)}, anchor=south},
@@ -19,10 +19,10 @@
     \addplot[blue, very thick, domain=0:350] {exp(-0.01*x)};
     \draw[orange!90!black, thick, dashed] (axis cs:100,0) -- (axis cs:100,1.02);
     \draw[gray!60, thin, dashed] (axis cs:0,0.368) -- (axis cs:100,0.368);
-    \node[blue!70!black, align=center] at (axis cs:50,0.2) {$\mathbb E[\min(X,d)]$\\$\approx63.2$};
+    \node[blue!70!black, align=center] at (axis cs:50,0.2) {$\mathbb{E}[\min(X,d)]$\\$\approx63.2$};
     \draw[red!70!black, ->] (axis cs:250,0.3) -- (axis cs:185,0.07);
     \node[red!70!black, anchor=south] at (axis cs:250,0.3) {$\pi_X(d)\approx36.8$};
-    \node[blue!70!black, anchor=south west] at (axis cs:118,0.45) {$\bar F_X(t)=e^{-0.01t}$};
+    \node[blue!70!black, anchor=south west] at (axis cs:118,0.45) {$\bar F_X(t)=\mathrm{e}^{-0.01t}$};
     \node[green!50!black, anchor=west] at (axis cs:160,0.85) {$\operatorname{LER}(100)=\dfrac{63.2}{100}\approx0.632$};
   \end{axis}
 \end{tikzpicture}

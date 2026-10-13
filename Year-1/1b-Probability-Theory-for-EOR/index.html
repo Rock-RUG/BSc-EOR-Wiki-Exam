@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="Shared PT and PD concepts have one canonical page here. The shared pages retain both courses’ tags and source references;" name="description"/>
+<meta content="Shared Probability Theory and Probability Distributions concepts have one canonical page here." name="description"/>
 <link href="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/1b-Probability-Theory-for-EOR/index.html" rel="canonical"/>
 <link href="../1b-Math-II-Linear-Algebra/zero-vector.html" rel="prev"/>
 <link href="absolutely-continuous-distribution.html" rel="next"/>
@@ -26,12 +26,12 @@
 <link href="../../stylesheets/wiki-community.css?h=bf04506951f8" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-maps.css?h=e3f715120b0c" rel="stylesheet" media="not all" data-mk-css-gate="maps"/>
 <link href="../../stylesheets/wiki-mastery-manager.css?h=3c2334d129df" rel="stylesheet" media="not all" data-mk-css-gate="manager"/>
-<link href="../../stylesheets/course-home.css?h=61d1bcb9b969" rel="stylesheet"/>
+<link href="../../stylesheets/course-home.css?h=1418d5b7b520" rel="stylesheet"/>
 <link href="../../stylesheets/course-atlas.css?h=5889408143d3" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-guides.css?h=a3c9ec9a8403" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-explain.css?h=1120073dd99e" rel="stylesheet"/>
 <link href="../../stylesheets/search-history.css?h=49fa7cf4d796" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-interactions.css?h=33c0975f38ca" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-interactions.css?h=ba9898c08bf6" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <style id="mk-mobile-fixed-chrome-early">
 @media (max-width: 900px), (pointer: coarse){
@@ -101,13 +101,13 @@
 <meta content="website" property="og:type"/>
 <meta content="BSc EOR Wiki (Exam Mode)" property="og:site_name"/>
 <meta content="Probability Theory for EOR - BSc EOR Wiki (Exam Mode)" property="og:title"/>
-<meta content="Shared PT and PD concepts have one canonical page here. The shared pages retain both courses’ tags and source references;" property="og:description"/>
+<meta content="Shared Probability Theory and Probability Distributions concepts have one canonical page here." property="og:description"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/1b-Probability-Theory-for-EOR/index.html" property="og:url"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/assets/logo-navbar.png" property="og:image"/>
 <meta content="BSc EOR Wiki logo" property="og:image:alt"/>
 <meta content="summary" name="twitter:card"/>
 <meta content="Probability Theory for EOR - BSc EOR Wiki (Exam Mode)" name="twitter:title"/>
-<meta content="Shared PT and PD concepts have one canonical page here. The shared pages retain both courses’ tags and source references;" name="twitter:description"/>
+<meta content="Shared Probability Theory and Probability Distributions concepts have one canonical page here." name="twitter:description"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/assets/logo-navbar.png" name="twitter:image"/>
 <meta content="BSc EOR Wiki logo" name="twitter:image:alt"/>
 <script id="mk-search-index-network-cache">
@@ -188,9 +188,9 @@
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=028a29ef9217";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=1dc535d06475";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=028a29ef9217";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=1dc535d06475";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -1922,199 +1922,103 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#prob-foundations-block">
+<a class="md-nav__link" href="#course-builds-on">
 <span class="md-ellipsis">
       
-        Counting and probability foundations Sample spaces, events, counting, and probability rules.
-      
-    </span>
-</a>
-<nav aria-label="Counting and probability foundations Sample spaces, events, counting, and probability rules." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#experiments-and-events">
-<span class="md-ellipsis">
-      
-        Experiments and events
+        Before you start
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#counting">
+<a class="md-nav__link" href="#course-leads-to">
 <span class="md-ellipsis">
       
-        Counting
+        Where it leads
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#probability-rules">
+<a class="md-nav__link" href="#course-units">
 <span class="md-ellipsis">
       
-        Probability rules
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#conditional-block">
-<span class="md-ellipsis">
-      
-        Conditional probability and independence Updating probabilities, partitions, and product rules.
-      
-    </span>
-</a>
-<nav aria-label="Conditional probability and independence Updating probabilities, partitions, and product rules." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#conditioning">
-<span class="md-ellipsis">
-      
-        Conditioning
+        Week by week
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#independence">
+<a class="md-nav__link" href="#week-1-sample-spaces-counting-and-naive-probability">
 <span class="md-ellipsis">
       
-        Independence
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#random-variables-block">
-<span class="md-ellipsis">
-      
-        Random variables and distributions CDFs, PMFs, PDFs, support, and distribution families.
-      
-    </span>
-</a>
-<nav aria-label="Random variables and distributions CDFs, PMFs, PDFs, support, and distribution families." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#general-concepts">
-<span class="md-ellipsis">
-      
-        General concepts
+        Week 1: Sample spaces, counting and naive probability
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#discrete-distributions">
+<a class="md-nav__link" href="#week-2-conditional-probability-and-independence">
 <span class="md-ellipsis">
       
-        Discrete distributions
+        Week 2: Conditional probability and independence
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#continuous-distributions">
+<a class="md-nav__link" href="#week-3-discrete-random-variables-and-distributions">
 <span class="md-ellipsis">
       
-        Continuous distributions
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#expectation-block">
-<span class="md-ellipsis">
-      
-        Expectation and variance Expected values, variance, and indicator tricks.
-      
-    </span>
-</a>
-<nav aria-label="Expectation and variance Expected values, variance, and indicator tricks." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#expectations-and-variance">
-<span class="md-ellipsis">
-      
-        Expectations and variance
+        Week 3: Discrete random variables and distributions
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#indicator-and-lotus-tools">
+<a class="md-nav__link" href="#week-4-expectation-and-variance">
 <span class="md-ellipsis">
       
-        Indicator and LOTUS tools
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#process-block">
-<span class="md-ellipsis">
-      
-        Continuous transformations and stochastic processes Transformations, exponential waiting times, and Poisson processes.
-      
-    </span>
-</a>
-<nav aria-label="Continuous transformations and stochastic processes Transformations, exponential waiting times, and Poisson processes." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#transformations">
-<span class="md-ellipsis">
-      
-        Transformations
+        Week 4: Expectation and variance
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#processes-and-waiting-times">
+<a class="md-nav__link" href="#week-5-continuous-random-variables-and-the-normal-distribution">
 <span class="md-ellipsis">
       
-        Processes and waiting times
+        Week 5: Continuous random variables and the normal distribution
       
     </span>
 </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#summary-block">
+<a class="md-nav__link" href="#week-6-waiting-times-poisson-processes-and-summary-measures">
 <span class="md-ellipsis">
       
-        Summary measures Mean, median, mode, and distribution shape.
-      
-    </span>
-</a>
-<nav aria-label="Summary measures Mean, median, mode, and distribution shape." class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#distribution-summaries">
-<span class="md-ellipsis">
-      
-        Distribution summaries
+        Week 6: Waiting times, Poisson processes and summary measures
       
     </span>
 </a>
 </li>
-</ul>
-</nav>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-reading">
+<span class="md-ellipsis">
+      
+        How to read this course
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-sources">
+<span class="md-ellipsis">
+      
+        Sources
+      
+    </span>
+</a>
 </li>
 </ul>
 </nav>
@@ -2152,232 +2056,195 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-tag">curriculum-current</span>
 <span class="md-tag">pt</span>
 </nav>
-<div class="rf-fold-h2" data-rf-fold="h2" style="display:none"></div>
 <h1 class="ch-title" id="probability-theory-for-eor">Probability Theory for EOR<a class="headerlink" href="#probability-theory-for-eor" title="Permanent link">¶</a></h1>
-<p class="ch-course-kicker">Block 1b · Probability and statistics</p>
+<p class="ch-course-kicker">Year 1 · Block 1b · Probability and statistics</p>
+<!-- course-home:begin -->
 <div data-course-mastery-map="pt"></div>
-<div class="ch-hub" data-course-hub="pt">
-<div class="ch-intro-panel">
-<p class="ch-intro">From sample spaces and counting to random variables, expectation and Poisson processes.</p>
-<p>Shared PT and PD concepts have one canonical page here. The shared pages retain both courses’ tags and source references; the <a href="../2b-Probability-Distributions/index.html">Probability Distributions index</a> links to them alongside its advanced topics.</p>
-<nav aria-label="Course tasks" class="ch-task-grid">
-<a class="ch-task" href="#core-blocks"><span class="ch-task-index">01 / Orient</span><strong>Browse the core blocks</strong><span>Six topic blocks, from counting to summary measures.</span><span class="ch-task-link">Core blocks →</span></a>
-<a class="ch-task" href="#course-find"><span class="ch-task-index">02 / Understand</span><strong>Find a concept</strong><span>Search within Probability Theory.</span><span class="ch-task-link">Search this course →</span></a>
-<a class="ch-task" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=pt&amp;lp_token=pt#search-results"><span class="ch-task-index">03 / Revise</span><strong>Review in Concept Finder</strong><span>Filter the course and start a focused review.</span><span class="ch-task-link">Open Concept Finder →</span></a>
-</nav>
-</div>
+<div class="course-home" data-course-home="pt">
+<section aria-label="Course overview" class="ch-overview">
+<p class="ch-lead">From sample spaces and counting to random variables, expectation and Poisson processes.</p>
+<ul class="ch-facts">
+<li><strong>6</strong> weeks </li>
+<li><strong>81</strong> concept pages </li>
+</ul>
+<nav aria-label="Course actions" class="ch-actions"><a class="ch-btn ch-btn--primary" href="#week-1">Start with Week 1</a><a class="ch-btn" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=pt&amp;lp_token=pt#search-results">Review in Concept Finder</a><a class="ch-btn" href="../../galaxy.html?course=Year-1/1b-Probability-Theory-for-EOR">See it in Galaxy</a></nav>
+</section>
 <section aria-labelledby="course-find" class="ch-search-section">
 <h2 class="ch-section-title" id="course-find">Find within this course<a class="headerlink" href="#course-find" title="Permanent link">¶</a></h2>
 <div class="course-search" data-course-token="pt">
 <form class="search-hero__form" id="course-search-form">
-<input aria-label="Search in course" autocomplete="off" class="search-hero__input" id="course-search-input" placeholder="Search in Probability Theory for EOR (for example, type 'Bayes', press Enter)" type="text"/>
+<input aria-label="Search in Probability Theory for EOR" autocomplete="off" class="search-hero__input" id="course-search-input" placeholder="Search this course, for example Bayes" type="text"/>
 <button class="search-hero__button fb-cta-btn fb-cta-btn--search" data-fb-cta-decorated="1" id="course-search-btn" type="submit"><span aria-hidden="true" class="fb-cta__ico fb-cta__ico--search"></span><span class="fb-cta__txt">Search in course</span></button>
 <button aria-label="Search in course" id="csr-mobile-submit" type="submit"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></button>
 <button aria-label="Clear search" hidden="" id="csr-mobile-clear" title="Clear search" type="button">×</button>
 </form>
 <div class="course-search-results" id="course-search-results"></div>
 </div>
-<p class="ch-search-help"><a href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=pt&amp;lp_token=pt#search-results">Open the full course in Concept Finder →</a> <span>Filter, select concepts and start a focused review there.</span></p>
+</section>
+<section aria-label="How this course connects" class="ch-connect">
+<div class="ch-connect-col">
+<h2 class="ch-section-title" id="course-builds-on">Before you start<a class="headerlink" href="#course-builds-on" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Earlier concepts these pages use most. If a step feels unfamiliar, revisit them first.</p>
+<div class="ch-connect-course"><a class="ch-connect-name" href="../../Year-1/1a-Math-I-Calculus/index.html">Math I: Calculus</a><ul class="ch-chips"><li><a href="../../Year-1/1a-Math-I-Calculus/set.html">Set</a> </li><li><a href="../../Year-1/1a-Math-I-Calculus/exponential-function.html">Exponential Function</a> </li><li><a href="../../Year-1/1a-Math-I-Calculus/definite-integral.html">Definite Integral</a> </li><li><a href="../../Year-1/1a-Math-I-Calculus/function.html">Function</a> </li><li><a href="../../Year-1/1a-Math-I-Calculus/intersection-of-sets.html">Intersection of Sets</a> </li><li><a href="../../Year-1/1a-Math-I-Calculus/factorial.html">Factorial</a> </li><li class="ch-chip-more">+16 more </li></ul></div>
+<div class="ch-connect-course"><a class="ch-connect-name" href="../../Year-1/1b-Math-II-Linear-Algebra/index.html">Math II: Linear Algebra</a><ul class="ch-chips"><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/cardinality.html">Cardinality</a> </li><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/cartesian-product.html">Cartesian Product</a> </li><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/countable-and-uncountable-sets.html">Countable and Uncountable Sets</a> </li></ul></div>
+</div>
+<div class="ch-connect-col">
+<h2 class="ch-section-title" id="course-leads-to">Where it leads<a class="headerlink" href="#course-leads-to" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Later courses on the wiki that build on these concepts.</p>
+<div class="ch-connect-course"><a class="ch-connect-name" href="../../Year-1/2b-Probability-Distributions/index.html">Probability Distributions</a><ul class="ch-chips"><li><a href="expectation.html">Expectation</a> </li><li><a href="variance-and-standard-deviation.html">Variance and Standard Deviation</a> </li><li><a href="cumulative-distribution-function.html">Cumulative Distribution Function</a> </li><li><a href="independent-random-variables.html">Independent Random Variables</a> </li><li><a href="probability-density-function.html">Probability Density Function</a> </li><li><a href="conditional-probability.html">Conditional Probability</a> </li><li class="ch-chip-more">+14 more </li></ul></div>
+<div class="ch-connect-course"><a class="ch-connect-name" href="../../Year-2/2b-Risk-Insurance/index.html">Risk Insurance</a><ul class="ch-chips"><li><a href="expectation.html">Expectation</a> </li><li><a href="variance-and-standard-deviation.html">Variance and Standard Deviation</a> </li><li><a href="cumulative-distribution-function.html">Cumulative Distribution Function</a> </li><li><a href="independent-random-variables.html">Independent Random Variables</a> </li><li><a href="mixture-distribution.html">Mixture Distribution</a> </li><li><a href="point-mass.html">Point Mass</a> </li><li class="ch-chip-more">+11 more </li></ul></div>
+<div class="ch-connect-course"><a class="ch-connect-name" href="../../Year-2/2b-Game-Theory/index.html">Game Theory</a><ul class="ch-chips"><li><a href="conditional-expectation.html">Conditional Expectation Given an Event</a> </li><li><a href="order-statistic.html">Order Statistic</a> </li><li><a href="uniform-distribution.html">Uniform Distribution</a> </li><li><a href="expectation.html">Expectation</a> </li><li><a href="bayes-rule.html">Bayes Rule</a> </li><li><a href="conditional-probability.html">Conditional Probability</a> </li><li class="ch-chip-more">+6 more </li></ul></div>
+<div class="ch-connect-course"><a class="ch-connect-name" href="../../Year-2/2a-Life-Insurance/index.html">Life Insurance</a><ul class="ch-chips"><li><a href="conditional-probability.html">Conditional Probability</a> </li><li><a href="expectation.html">Expectation</a> </li><li><a href="indicator-random-variable.html">Indicator Random Variable</a> </li><li><a href="absolutely-continuous-distribution.html">Absolutely Continuous Distribution</a> </li><li><a href="conditional-expectation.html">Conditional Expectation Given an Event</a> </li><li><a href="continuous-random-variable.html">Continuous Random Variable</a> </li><li class="ch-chip-more">+4 more </li></ul></div>
+<p class="ch-connect-also">Also: <a href="../../Year-3/2a-Stochastic-Models/index.html">Stochastic Models</a> (via Conditional Probability)</p>
+</div>
 </section>
 </div>
-<div class="ch-course-notes">
-<p>A density is fixed only up to its values on a set of zero length (zero area for joint densities), for example at finitely many points: changing it there changes no probability. Identities between densities on these pages therefore hold except possibly on such a set.</p>
-</div>
-<hr/>
-<p class="course-blocks-label" id="core-blocks">Core blocks</p>
-<h2 id="prob-foundations-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m0 2v12h7V6zm16 12V6h-1.24c.24.54.19 1.07.19 1.13-.07.67-.54 1.37-.71 1.62l-2.33 2.55 3.32-.02.01 1.22-5.2-.03-.04-1s3.05-3.23 3.2-3.52c.14-.28.71-1.95-.7-1.95-1.23.05-1.09 1.3-1.09 1.3l-1.54.01s.01-.66.38-1.31H13v12h2.58l-.01-.86.97-.01s.91-.16.92-1.05c.04-1-.81-1-.96-1-.13 0-1.07.05-1.07.87h-1.52s.04-2.06 2.59-2.06c2.6 0 2.46 2.02 2.46 2.02s.04 1.25-1.11 1.72l.52.37zM8.92 16h-1.5v-5.8l-1.8.56V9.53l3.14-1.12h.16z"></path></svg></span> Counting and probability foundations <span class="sec-sub">Sample spaces, events, counting, and probability rules.</span><a class="headerlink" href="#prob-foundations-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
+<section aria-labelledby="course-units" class="ch-route">
+<h2 class="ch-section-title" id="course-units">Week by week<a class="headerlink" href="#course-units" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Concepts appear in the week that introduces them, foundations first. Week titles summarise the concepts tagged to each week; a course name after a concept marks a page from another course used that week.</p>
+<section class="ch-unit-card" id="week-1">
+<h2 id="week-1-sample-spaces-counting-and-naive-probability">Week 1: Sample spaces, counting and naive probability<a class="headerlink" href="#week-1-sample-spaces-counting-and-naive-probability" title="Permanent link">¶</a></h2>
 <ul>
-<li>
-<h3 id="experiments-and-events">Experiments and events<a class="headerlink" href="#experiments-and-events" title="Permanent link">¶</a></h3>
-<ul>
-<li><a href="sample-space.html">Sample Space</a> </li>
-<li><a href="outcome.html">Outcome</a> </li>
-<li><a href="event.html">Event</a> </li>
-<li><a href="complement-of-an-event.html">Complement of an Event</a> </li>
-<li><a href="union-and-intersection-of-events.html">Union and Intersection of Events</a> </li>
-<li><a href="disjoint-events.html">Disjoint Events</a> </li>
-</ul>
-</li>
-<li>
-<h3 id="counting">Counting<a class="headerlink" href="#counting" title="Permanent link">¶</a></h3>
-<ul>
-<li><a href="counting.html">Counting</a> </li>
-<li><a href="multiplication-rule.html">Multiplication Rule for Counting</a> </li>
-<li><a href="permutation.html">k-Permutation</a> </li>
 <li><a href="combination.html">Combination</a> </li>
-<li><a href="binomial-coefficient.html">Binomial Coefficient</a> </li>
+<li><a href="counting.html">Counting</a> </li>
+<li><a href="permutation.html">k-Permutation</a> </li>
+<li><a href="multiplication-rule.html">Multiplication Rule for Counting</a> </li>
+<li><a href="outcome.html">Outcome</a> </li>
+<li><a href="sample-space.html">Sample Space</a> </li>
 <li><a href="stars-and-bars.html">Stars and Bars</a> </li>
+<li><a href="binomial-coefficient.html">Binomial Coefficient</a> </li>
+<li><a href="event.html">Event</a> </li>
+<li><a href="naive-probability.html">Naive Probability</a> </li>
+<li><a href="union-and-intersection-of-events.html">Union and Intersection of Events</a> </li>
+<li><a href="complement-of-an-event.html">Complement of an Event</a> </li>
+<li><a href="disjoint-events.html">Disjoint Events</a> </li>
+<li><a href="axioms-of-probability.html">Axioms of Probability</a> </li>
 <li><a href="birthday-problem.html">Birthday Problem</a> </li>
 </ul>
-</li>
-<li>
-<h3 id="probability-rules">Probability rules<a class="headerlink" href="#probability-rules" title="Permanent link">¶</a></h3>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="pt-week01" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=pt-week01&amp;lp_token=pt-week01#search-results">Review week 1 in Concept Finder</a> <span>15 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="week-2">
+<h2 id="week-2-conditional-probability-and-independence">Week 2: Conditional probability and independence<a class="headerlink" href="#week-2-conditional-probability-and-independence" title="Permanent link">¶</a></h2>
 <ul>
-<li><a href="naive-probability.html">Naive Probability</a> </li>
+<li><a href="disjoint-events.html">Disjoint Events</a> </li>
+<li><a href="partition.html">Partition of a Set</a> </li>
 <li><a href="axioms-of-probability.html">Axioms of Probability</a> </li>
 <li><a href="probability-function.html">Probability Function</a> </li>
-<li><a href="inclusion-exclusion-principle.html">Inclusion-Exclusion Principle</a> </li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<hr/>
-<h2 id="conditional-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 14c-3.36 0-4.46 1.35-4.82 2.24C9.25 16.7 10 17.76 10 19a3 3 0 0 1-3 3 3 3 0 0 1-3-3c0-1.31.83-2.42 2-2.83V7.83A2.99 2.99 0 0 1 4 5a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.31-.83 2.42-2 2.83v5.29c.88-.65 2.16-1.12 4-1.12 2.67 0 3.56-1.34 3.85-2.23A3.01 3.01 0 0 1 14 7a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.34-.88 2.5-2.09 2.86C17.65 11.29 16.68 14 13 14m-6 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"></path></svg></span> Conditional probability and independence <span class="sec-sub">Updating probabilities, partitions, and product rules.</span><a class="headerlink" href="#conditional-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="conditioning">Conditioning<a class="headerlink" href="#conditioning" title="Permanent link">¶</a></h3>
-<ul>
 <li><a href="conditional-probability.html">Conditional Probability</a> </li>
-<li><a href="bayes-rule.html">Bayes Rule</a> </li>
+<li><a href="inclusion-exclusion-principle.html">Inclusion-Exclusion Principle</a> </li>
+<li><a href="independent-events.html">Independent Events</a> </li>
 <li><a href="law-of-total-probability.html">Law of Total Probability</a> </li>
-<li><a href="partition.html">Partition of a Set</a> </li>
+<li><a href="bayes-rule.html">Bayes Rule</a> </li>
+<li><a href="conditional-independence.html">Conditional Independence</a> </li>
 <li><a href="prosecutors-fallacy.html">Prosecutors Fallacy</a> </li>
 </ul>
-</li>
-<li>
-<h3 id="independence">Independence<a class="headerlink" href="#independence" title="Permanent link">¶</a></h3>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="pt-week02" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=pt-week02&amp;lp_token=pt-week02#search-results">Review week 2 in Concept Finder</a> <span>11 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="week-3">
+<h2 id="week-3-discrete-random-variables-and-distributions">Week 3: Discrete random variables and distributions<a class="headerlink" href="#week-3-discrete-random-variables-and-distributions" title="Permanent link">¶</a></h2>
 <ul>
-<li><a href="independent-events.html">Independent Events</a> </li>
-<li><a href="conditional-independence.html">Conditional Independence</a> </li>
-<li><a href="independent-random-variables.html">Independent Random Variables</a> </li>
-<li><a href="iid-random-variables.html">Independent and Identically Distributed Random Variables</a> </li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<hr/>
-<h2 id="random-variables-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.78 3h-8.56C10.55 3 10 3.55 10 4.22V8h6v6h3.78c.67 0 1.22-.55 1.22-1.22V4.22C21 3.55 20.45 3 19.78 3m-7.34 3.67a1.23 1.23 0 1 1 0-2.46 1.23 1.23 0 0 1 1.23 1.23c0 .68-.55 1.23-1.23 1.23m6.12 6.11a1.23 1.23 0 1 1-.02-2.46c.68-.01 1.23.54 1.24 1.24-.01.67-.55 1.21-1.22 1.22m0-6.11a1.23 1.23 0 1 1-.02-2.46 1.231 1.231 0 0 1 .02 2.46M4.22 10h8.56A1.22 1.22 0 0 1 14 11.22v8.56c0 .67-.55 1.22-1.22 1.22H4.22C3.55 21 3 20.45 3 19.78v-8.56c0-.67.55-1.22 1.22-1.22m4.28 4.28c-.67 0-1.22.55-1.22 1.22s.55 1.22 1.22 1.22 1.22-.55 1.22-1.22a1.22 1.22 0 0 0-1.22-1.22m-3.06-3.06c-.67 0-1.22.55-1.22 1.22a1.22 1.22 0 0 0 1.22 1.22c.67 0 1.22-.55 1.22-1.22s-.55-1.22-1.22-1.22m6.11 6.11c-.67 0-1.22.55-1.22 1.22s.55 1.22 1.22 1.22a1.22 1.22 0 0 0 1.22-1.22c0-.67-.54-1.21-1.21-1.22z"></path></svg></span> Random variables and distributions <span class="sec-sub">CDFs, PMFs, PDFs, support, and distribution families.</span><a class="headerlink" href="#random-variables-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="general-concepts">General concepts<a class="headerlink" href="#general-concepts" title="Permanent link">¶</a></h3>
-<ul>
+<li><a href="hypergeometric-distribution.html">Hypergeometric Distribution</a> </li>
 <li><a href="random-variable.html">Random Variable</a> </li>
-<li><a href="generated-event.html">Generated Event</a> </li>
-<li><a href="distribution.html">Distribution</a> </li>
-<li><a href="support-of-a-random-variable.html">Support of a Random Variable</a> </li>
-<li><a href="cumulative-distribution-function.html">Cumulative Distribution Function</a> </li>
-<li><a href="function-of-a-random-variable.html">Function of a Random Variable</a> </li>
-<li><a href="mixture-distribution.html">Mixture Distribution</a> </li>
-<li><a href="sum-of-independent-random-variables.html">Sum of Independent Random Variables</a> </li>
-</ul>
-</li>
-<li>
-<h3 id="discrete-distributions">Discrete distributions<a class="headerlink" href="#discrete-distributions" title="Permanent link">¶</a></h3>
-<ul>
 <li><a href="discrete-random-variable.html">Discrete Random Variable</a> </li>
-<li><a href="probability-mass-function.html">Probability Mass Function</a> </li>
 <li><a href="discrete-uniform-distribution.html">Discrete Uniform Distribution</a> </li>
+<li><a href="distribution.html">Distribution</a> </li>
+<li><a href="function-of-a-random-variable.html">Function of a Random Variable</a> </li>
+<li><a href="generated-event.html">Generated Event</a> </li>
+<li><a href="independent-random-variables.html">Independent Random Variables</a> </li>
+<li><a href="indicator-random-variable.html">Indicator Random Variable</a> </li>
+<li><a href="mixture-distribution.html">Mixture Distribution</a> </li>
+<li><a href="probability-mass-function.html">Probability Mass Function</a> </li>
+<li><a href="support-of-a-random-variable.html">Support of a Random Variable</a> </li>
 <li><a href="bernoulli-distribution.html">Bernoulli Distribution</a> </li>
 <li><a href="binomial-distribution.html">Binomial Distribution</a> </li>
-<li><a href="geometric-distribution.html">Geometric Distribution</a> </li>
+<li><a href="cumulative-distribution-function.html">Cumulative Distribution Function</a> </li>
 <li><a href="first-success-distribution.html">First Success Distribution</a> </li>
+<li><a href="geometric-distribution.html">Geometric Distribution</a> </li>
+<li><a href="iid-random-variables.html">Independent and Identically Distributed Random Variables</a> </li>
 <li><a href="negative-binomial-distribution.html">Negative Binomial Distribution</a> </li>
-<li><a href="hypergeometric-distribution.html">Hypergeometric Distribution</a> </li>
-<li><a href="poisson-distribution.html">Poisson Distribution</a> </li>
 </ul>
-</li>
-<li>
-<h3 id="continuous-distributions">Continuous distributions<a class="headerlink" href="#continuous-distributions" title="Permanent link">¶</a></h3>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="pt-week03" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=pt-week03&amp;lp_token=pt-week03#search-results">Review week 3 in Concept Finder</a> <span>19 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="week-4">
+<h2 id="week-4-expectation-and-variance">Week 4: Expectation and variance<a class="headerlink" href="#week-4-expectation-and-variance" title="Permanent link">¶</a></h2>
 <ul>
-<li><a href="continuous-random-variable.html">Continuous Random Variable</a> </li>
+<li><a href="bernoulli-distribution.html">Bernoulli Distribution</a> </li>
+<li><a href="expectation.html">Expectation</a> </li>
+<li><a href="function-of-a-random-variable.html">Function of a Random Variable</a> </li>
+<li><a href="independent-random-variables.html">Independent Random Variables</a> </li>
+<li><a href="indicator-random-variable.html">Indicator Random Variable</a> </li>
+<li><a href="linearity-of-expectation.html">Linearity of Expectation</a> </li>
+<li><a href="lotus.html">LOTUS</a> </li>
+<li><a href="mixture-distribution.html">Mixture Distribution</a> </li>
+<li><a href="monotonicity-of-expectation.html">Monotonicity of Expectation</a> </li>
+<li><a href="poisson-distribution.html">Poisson Distribution</a> </li>
+<li><a href="sum-of-independent-random-variables.html">Sum of Independent Random Variables</a> </li>
+<li><a href="variance-and-standard-deviation.html">Variance and Standard Deviation</a> </li>
+<li><a href="conditional-expectation.html">Conditional Expectation Given an Event</a> </li>
+<li><a href="conditional-variance.html">Conditional Variance Given an Event</a> </li>
+<li><a href="first-success-distribution.html">First Success Distribution</a> </li>
+<li><a href="fundamental-bridge.html">Fundamental Bridge</a> </li>
+<li><a href="geometric-distribution.html">Geometric Distribution</a> </li>
+<li><a href="negative-binomial-distribution.html">Negative Binomial Distribution</a> </li>
+</ul>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="pt-week04" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=pt-week04&amp;lp_token=pt-week04#search-results">Review week 4 in Concept Finder</a> <span>18 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="week-5">
+<h2 id="week-5-continuous-random-variables-and-the-normal-distribution">Week 5: Continuous random variables and the normal distribution<a class="headerlink" href="#week-5-continuous-random-variables-and-the-normal-distribution" title="Permanent link">¶</a></h2>
+<ul>
 <li><a href="absolutely-continuous-distribution.html">Absolutely Continuous Distribution</a> </li>
+<li><a href="continuous-random-variable.html">Continuous Random Variable</a> </li>
+<li><a href="order-statistic.html">Order Statistic</a> </li>
 <li><a href="point-mass.html">Point Mass</a> </li>
 <li><a href="probability-density-function.html">Probability Density Function</a> </li>
-<li><a href="uniform-distribution.html">Uniform Distribution</a> </li>
-<li><a href="normal-distribution.html">Normal Distribution</a> </li>
-<li><a href="standard-normal-distribution.html">Standard Normal Distribution</a> </li>
-<li><a href="standardization.html">Standardization</a> </li>
-<li><a href="rayleigh-distribution.html">Rayleigh Distribution</a> </li>
-<li><a href="lognormal-distribution.html">Lognormal Distribution</a> </li>
-<li><a href="folded-normal-distribution.html">Folded Normal Distribution</a> </li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<hr/>
-<h2 id="expectation-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 6H8.83l6 6-6 6H18v2H6v-2l6-6-6-6V4h12z"></path></svg></span> Expectation and variance <span class="sec-sub">Expected values, variance, and indicator tricks.</span><a class="headerlink" href="#expectation-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="expectations-and-variance">Expectations and variance<a class="headerlink" href="#expectations-and-variance" title="Permanent link">¶</a></h3>
-<ul>
-<li><a href="expectation.html">Expectation</a> </li>
-<li><a href="linearity-of-expectation.html">Linearity of Expectation</a> </li>
-<li><a href="monotonicity-of-expectation.html">Monotonicity of Expectation</a> </li>
-<li><a href="variance-and-standard-deviation.html">Variance and Standard Deviation</a> </li>
-<li><a href="conditional-expectation.html">Conditional Expectation</a> </li>
-<li><a href="conditional-variance.html">Conditional Variance Given an Event</a> </li>
-</ul>
-</li>
-<li>
-<h3 id="indicator-and-lotus-tools">Indicator and LOTUS tools<a class="headerlink" href="#indicator-and-lotus-tools" title="Permanent link">¶</a></h3>
-<ul>
-<li><a href="indicator-random-variable.html">Indicator Random Variable</a> </li>
-<li><a href="fundamental-bridge.html">Fundamental Bridge</a> </li>
-<li><a href="lotus.html">LOTUS</a> </li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<hr/>
-<h2 id="process-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.96 11.31C10.82 8.1 11.5 6 13 6s2.18 2.1 3.04 5.31C17 14.92 18.1 19 22 19v-2c-2.2 0-3-2.46-4.03-6.2C17.08 7.46 16.15 4 13 4s-4.08 3.46-4.97 6.8C7.03 14.54 6.2 17 4 17V2H2v20h20v-2H4v-1c3.9 0 5-4.08 5.96-7.69"></path></svg></span> Continuous transformations and stochastic processes <span class="sec-sub">Transformations, exponential waiting times, and Poisson processes.</span><a class="headerlink" href="#process-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="transformations">Transformations<a class="headerlink" href="#transformations" title="Permanent link">¶</a></h3>
-<ul>
-<li><a href="transformation-of-a-continuous-random-variable.html">Transformation of a Continuous Random Variable</a> </li>
-<li><a href="universality-of-the-uniform.html">Universality of the Uniform</a> </li>
 <li><a href="quantile-function.html">Quantile Function</a> </li>
 <li><a href="random-interval.html">Random Interval</a> </li>
-<li><a href="order-statistic.html">Order Statistic</a> </li>
+<li><a href="rayleigh-distribution.html">Rayleigh Distribution</a> </li>
+<li><a href="standardization.html">Standardization</a> </li>
+<li><a href="support-of-a-random-variable.html">Support of a Random Variable</a> </li>
+<li><a href="transformation-of-a-continuous-random-variable.html">Transformation of a Continuous Random Variable</a> </li>
+<li><a href="uniform-distribution.html">Uniform Distribution</a> </li>
+<li><a href="universality-of-the-uniform.html">Universality of the Uniform and CDF Realizability</a> </li>
+<li><a href="normal-distribution.html">Normal Distribution</a> </li>
+<li><a href="standard-normal-distribution.html">Standard Normal Distribution</a> </li>
+<li><a href="folded-normal-distribution.html">Folded Normal Distribution</a> </li>
 </ul>
-</li>
-<li>
-<h3 id="processes-and-waiting-times">Processes and waiting times<a class="headerlink" href="#processes-and-waiting-times" title="Permanent link">¶</a></h3>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="pt-week05" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=pt-week05&amp;lp_token=pt-week05#search-results">Review week 5 in Concept Finder</a> <span>16 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="week-6">
+<h2 id="week-6-waiting-times-poisson-processes-and-summary-measures">Week 6: Waiting times, Poisson processes and summary measures<a class="headerlink" href="#week-6-waiting-times-poisson-processes-and-summary-measures" title="Permanent link">¶</a></h2>
 <ul>
-<li><a href="stochastic-process.html">Stochastic Process</a> </li>
-<li><a href="poisson-process.html">Poisson Process</a> </li>
-<li><a href="arrival-rate.html">Arrival Rate</a> </li>
+<li><a href="discrete-uniform-distribution.html">Discrete Uniform Distribution</a> </li>
 <li><a href="exponential-distribution.html">Exponential Distribution</a> </li>
+<li><a href="half-life.html">Half-Life</a> </li>
+<li><a href="median.html">Median</a> </li>
 <li><a href="memoryless-property.html">Memoryless Property</a> </li>
 <li><a href="minimum-of-independent-exponentials.html">Minimum of Independent Exponentials</a> </li>
-<li><a href="half-life.html">Half-Life</a> </li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<hr/>
-<h2 id="summary-block"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 22V8h4v14zm7 0V2h4v20zm7 0v-8h4v8z"></path></svg></span> Summary measures <span class="sec-sub">Mean, median, mode, and distribution shape.</span><a class="headerlink" href="#summary-block" title="Permanent link">¶</a></h2>
-<div class="course-block">
-<div class="grid cards">
-<ul>
-<li>
-<h3 id="distribution-summaries">Distribution summaries<a class="headerlink" href="#distribution-summaries" title="Permanent link">¶</a></h3>
-<ul>
-<li><a href="summary-measures-of-a-distribution.html">Summary Measures of a Distribution</a> </li>
-<li><a href="median.html">Median</a> </li>
 <li><a href="mode.html">Mode</a> </li>
-<li><a href="unimodal-and-multimodal-distribution.html">Unimodal and Multimodal Distribution</a> </li>
+<li><a href="normal-distribution.html">Normal Distribution</a> </li>
+<li><a href="poisson-distribution.html">Poisson Distribution</a> </li>
+<li><a href="stochastic-process.html">Stochastic Process</a> </li>
+<li><a href="summary-measures-of-a-distribution.html">Summary Measures of a Distribution</a> </li>
 <li><a href="symmetric-distribution.html">Symmetric Distribution</a> </li>
+<li><a href="unimodal-and-multimodal-distribution.html">Unimodal and Multimodal Distribution</a> </li>
+<li><a href="lognormal-distribution.html">Lognormal Distribution</a> </li>
+<li><a href="poisson-process.html">Poisson Process</a> </li>
+<li><a href="arrival-rate.html">Arrival Rate</a> </li>
 </ul>
-</li>
-</ul>
-</div>
-</div>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="pt-week06" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=pt-week06&amp;lp_token=pt-week06#search-results">Review week 6 in Concept Finder</a> <span>16 concepts</span></p>
+</section>
+</section>
+<!-- course-home:end -->
+<section aria-labelledby="course-reading" class="ch-reading">
+<h2 class="ch-section-title" id="course-reading">How to read this course<a class="headerlink" href="#course-reading" title="Permanent link">¶</a></h2>
+<p>Shared Probability Theory and Probability Distributions concepts have one canonical page here. Those pages keep both courses’ tags and source references, and the <a href="../2b-Probability-Distributions/index.html">Probability Distributions homepage</a> lists them in its weeks alongside its advanced topics.</p>
+<p>A density is fixed only up to its values on a set of zero length (zero area for joint densities), for example at finitely many points: changing it there changes no probability. Identities between densities on these pages therefore hold except possibly on such a set.</p>
+</section>
+<section aria-labelledby="course-sources" class="ch-sources">
+<h2 class="ch-section-title" id="course-sources">Sources<a class="headerlink" href="#course-sources" title="Permanent link">¶</a></h2>
+<!-- course-home:teaching-begin -->
+<!-- course-home:teaching-end -->
+</section>
 <!-- PROBABILITY_WEEK7_PAUSED_ENTRIES
 These entries are retained for restoration after a teaching-week/course decision.
 Chebyshev Inequality, Convergence in Probability, Weak Law of Large Numbers and Sample Mean
@@ -2402,7 +2269,7 @@ week 7 here also means adding the tag pt-week07 back to those four pages.
     -   [Sample Standardized Moment](./sample-standardized-moment.md)
     -   [Histogram](./histogram.md)
 END_PROBABILITY_WEEK7_PAUSED_ENTRIES -->
-<p class="mk-last-updated">Last updated: 12 October 2026 13:11</p>
+<p class="mk-last-updated">Last updated: 13 October 2026 13:48</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -2441,7 +2308,7 @@ END_PROBABILITY_WEEK7_PAUSED_ENTRIES -->
 <script src="../../javascripts/exam-mode.js?h=09b295110531"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
 <script src="../../javascripts/wiki-explain.js?h=8900cebd6651"></script>
-<script src="../../javascripts/startup-preferences.js?h=028a29ef9217"></script>
+<script src="../../javascripts/startup-preferences.js?h=1dc535d06475"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=39d6a6cff37d"></script>
 <script src="../../javascripts/ui-guard.js?h=52ec5f9e3afb"></script>
@@ -2463,7 +2330,7 @@ END_PROBABILITY_WEEK7_PAUSED_ENTRIES -->
 <script src="../../javascripts/tag-search-links.js?h=84cb5c2dd87f"></script>
 <script src="../../javascripts/logo-lightbox.js?h=fda4850b9a41"></script>
 <script src="../../javascripts/figure-source.js?h=62c65f7b6712"></script>
-<script src="../../javascripts/wiki-guide-pages.js?h=19a1e4233404"></script>
+<script src="../../javascripts/wiki-guide-pages.js?h=924c447ad4a2"></script>
 <script src="../../javascripts/wiki-guide-account.js?h=2327db54a4ff"></script>
 <script src="../../javascripts/wiki-guides.js?h=74b29b68f079"></script>
 <script src="../../javascripts/wiki-explain-content.js?h=656d21850670"></script>

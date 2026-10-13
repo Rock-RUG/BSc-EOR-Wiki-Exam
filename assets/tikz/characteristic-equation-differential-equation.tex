@@ -30,10 +30,10 @@
     \addplot[red!70!black, thick, dashed, domain=0:4] {exp(-x)};
     \addplot[red!70!black, thick, dashed, domain=0:4] {-exp(-x)};
     \addplot[blue, very thick, domain=0:4] {exp(-x)*cos(deg(2*x))};
-    \node[red!70!black, anchor=south west] at (axis cs:0.55,0.6) {$\pm e^{-t}$};
-    \node[blue!70!black, anchor=north west] at (axis cs:1.75,-0.5) {$e^{-t}\cos 2t$};
+    \node[red!70!black, anchor=south west] at (axis cs:0.55,0.6) {$\pm \mathrm{e}^{-t}$};
+    \node[blue!70!black, anchor=north west] at (axis cs:1.75,-0.5) {$\mathrm{e}^{-t}\cos 2t$};
   \end{axis}
   \draw[->, thick] ([xshift=0.2cm]roots.east) -- ++(0.8,0)
-    node[midway, above] {$e^{rt}$};
+    node[midway, above] {$\mathrm{e}^{rt}$};
 \end{tikzpicture}
 \end{document}

@@ -5,13 +5,13 @@
 \usetikzlibrary{arrows.meta}
 \begin{document}
 % Prisoner's dilemma T=5, R=3, P=1 under grim trigger: cooperating gives R = 3 in every period;
-% deviating gives T = 5 once and then P = 1 forever, because the opponent plays D from period 2 on.
+% deviating gives T = 5 once and then P = 1 forever, because the opponent plays D from t = 1 on (time starts at t = 0).
 % Cooperation is optimal iff 3 >= 5(1-delta) + delta, i.e. delta >= 1/2.
 \begin{tikzpicture}[font=\small, >={Latex[length=2mm]}]
   \begin{axis}[
     width=7.4cm, height=5.2cm, axis lines=left,
     xmin=0.4, xmax=6.5, ymin=0, ymax=6,
-    xtick={1,2,3,4,5,6}, xticklabels={$1$,$2$,$3$,$4$,$5$,$\cdots$},
+    xtick={1,2,3,4,5,6}, xticklabels={$0$,$1$,$2$,$3$,$4$,$\cdots$},
     ytick={1,3,5}, xlabel={$t$}, ylabel={$v_i$},
     xlabel style={anchor=west, at={(axis description cs:1,0)}},
     ylabel style={rotate=-90, anchor=south, at={(axis description cs:0,1)}},

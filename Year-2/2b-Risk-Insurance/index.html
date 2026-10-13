@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="Coverage rules and portfolio models lead to insurance-data estimation, decisions under risk, premium principles and experience rating." name="description"/>
+<meta content="These notes introduce course-specific concepts. Existing Year 1 concepts have one canonical page and are linked under Before you start." name="description"/>
 <link href="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-2/2b-Risk-Insurance/index.html" rel="canonical"/>
 <link href="../2b-Game-Theory/winner-s-curse.html" rel="prev"/>
 <link href="absolute-risk-aversion.html" rel="next"/>
@@ -26,12 +26,12 @@
 <link href="../../stylesheets/wiki-community.css?h=bf04506951f8" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-maps.css?h=e3f715120b0c" rel="stylesheet" media="not all" data-mk-css-gate="maps"/>
 <link href="../../stylesheets/wiki-mastery-manager.css?h=3c2334d129df" rel="stylesheet" media="not all" data-mk-css-gate="manager"/>
-<link href="../../stylesheets/course-home.css?h=61d1bcb9b969" rel="stylesheet"/>
+<link href="../../stylesheets/course-home.css?h=1418d5b7b520" rel="stylesheet"/>
 <link href="../../stylesheets/course-atlas.css?h=5889408143d3" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-guides.css?h=a3c9ec9a8403" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-explain.css?h=1120073dd99e" rel="stylesheet"/>
 <link href="../../stylesheets/search-history.css?h=49fa7cf4d796" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-interactions.css?h=33c0975f38ca" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-interactions.css?h=ba9898c08bf6" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <style id="mk-mobile-fixed-chrome-early">
 @media (max-width: 900px), (pointer: coarse){
@@ -101,13 +101,13 @@
 <meta content="website" property="og:type"/>
 <meta content="BSc EOR Wiki (Exam Mode)" property="og:site_name"/>
 <meta content="Risk Insurance - BSc EOR Wiki (Exam Mode)" property="og:title"/>
-<meta content="Coverage rules and portfolio models lead to insurance-data estimation, decisions under risk, premium principles and experience rating." property="og:description"/>
+<meta content="These notes introduce course-specific concepts. Existing Year 1 concepts have one canonical page and are linked under Before you start." property="og:description"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-2/2b-Risk-Insurance/index.html" property="og:url"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/assets/logo-navbar.png" property="og:image"/>
 <meta content="BSc EOR Wiki logo" property="og:image:alt"/>
 <meta content="summary" name="twitter:card"/>
 <meta content="Risk Insurance - BSc EOR Wiki (Exam Mode)" name="twitter:title"/>
-<meta content="Coverage rules and portfolio models lead to insurance-data estimation, decisions under risk, premium principles and experience rating." name="twitter:description"/>
+<meta content="These notes introduce course-specific concepts. Existing Year 1 concepts have one canonical page and are linked under Before you start." name="twitter:description"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/assets/logo-navbar.png" name="twitter:image"/>
 <meta content="BSc EOR Wiki logo" name="twitter:image:alt"/>
 <script id="mk-search-index-network-cache">
@@ -188,9 +188,9 @@
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=028a29ef9217";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=1dc535d06475";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=028a29ef9217";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=1dc535d06475";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -1555,7 +1555,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </div>
 </div>
 </div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden="">
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
@@ -1565,19 +1565,28 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#reading-this-course">
+<a class="md-nav__link" href="#course-find">
 <span class="md-ellipsis">
       
-        Reading this course
+        Find within this course
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#foundations-already-on-the-wiki">
+<a class="md-nav__link" href="#course-builds-on">
 <span class="md-ellipsis">
       
-        Foundations already on the wiki
+        Before you start
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-units">
+<span class="md-ellipsis">
+      
+        Lecture by lecture
       
     </span>
 </a>
@@ -1586,7 +1595,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <a class="md-nav__link" href="#lecture-1-insurance-coverage-transforms-and-mixed-losses">
 <span class="md-ellipsis">
       
-        Lecture 1; Insurance coverage: transforms and mixed losses
+        Lecture 1: Insurance coverage: transforms and mixed losses
       
     </span>
 </a>
@@ -1595,7 +1604,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <a class="md-nav__link" href="#lecture-2-insurance-coverage-deductibles-and-limits">
 <span class="md-ellipsis">
       
-        Lecture 2; Insurance coverage: deductibles and limits
+        Lecture 2: Insurance coverage: deductibles and limits
       
     </span>
 </a>
@@ -1604,7 +1613,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <a class="md-nav__link" href="#lecture-3-coverage-completion-and-portfolio-risk-models">
 <span class="md-ellipsis">
       
-        Lecture 3; Coverage completion and portfolio risk models
+        Lecture 3: Coverage completion and portfolio risk models
       
     </span>
 </a>
@@ -1613,7 +1622,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <a class="md-nav__link" href="#lecture-4-compound-risks-and-likelihood-foundations">
 <span class="md-ellipsis">
       
-        Lecture 4; Compound risks and likelihood foundations
+        Lecture 4: Compound risks and likelihood foundations
       
     </span>
 </a>
@@ -1622,7 +1631,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <a class="md-nav__link" href="#lecture-5-special-observation-mechanisms-and-glm-foundations">
 <span class="md-ellipsis">
       
-        Lecture 5; Special observation mechanisms and GLM foundations
+        Lecture 5: Special observation mechanisms and GLM foundations
       
     </span>
 </a>
@@ -1631,7 +1640,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <a class="md-nav__link" href="#lecture-6-claim-frequency-glms-and-rating-factors">
 <span class="md-ellipsis">
       
-        Lecture 6; Claim-frequency GLMs and rating factors
+        Lecture 6: Claim-frequency GLMs and rating factors
       
     </span>
 </a>
@@ -1640,7 +1649,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <a class="md-nav__link" href="#lecture-7-utility-theory-and-risk-aversion">
 <span class="md-ellipsis">
       
-        Lecture 7; Utility theory and risk aversion
+        Lecture 7: Utility theory and risk aversion
       
     </span>
 </a>
@@ -1649,7 +1658,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <a class="md-nav__link" href="#lecture-8-insurance-decisions-and-stochastic-order">
 <span class="md-ellipsis">
       
-        Lecture 8; Insurance decisions and stochastic order
+        Lecture 8: Insurance decisions and stochastic order
       
     </span>
 </a>
@@ -1658,7 +1667,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <a class="md-nav__link" href="#lecture-9-tail-comparisons-and-stop-loss-order">
 <span class="md-ellipsis">
       
-        Lecture 9; Tail comparisons and stop-loss order
+        Lecture 9: Tail comparisons and stop-loss order
       
     </span>
 </a>
@@ -1667,7 +1676,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <a class="md-nav__link" href="#lecture-10-dispersion-utility-dominance-and-exponential-order">
 <span class="md-ellipsis">
       
-        Lecture 10; Dispersion, utility dominance and exponential order
+        Lecture 10: Dispersion, utility dominance and exponential order
       
     </span>
 </a>
@@ -1676,7 +1685,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <a class="md-nav__link" href="#lecture-11-risk-order-consequences-and-premium-foundations">
 <span class="md-ellipsis">
       
-        Lecture 11; Risk-order consequences and premium foundations
+        Lecture 11: Risk-order consequences and premium foundations
       
     </span>
 </a>
@@ -1685,7 +1694,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <a class="md-nav__link" href="#lecture-12-premium-principles-and-bonus-malus-foundations">
 <span class="md-ellipsis">
       
-        Lecture 12; Premium principles and bonus-malus foundations
+        Lecture 12: Premium principles and bonus-malus foundations
       
     </span>
 </a>
@@ -1694,7 +1703,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <a class="md-nav__link" href="#lecture-13-bonus-malus-dynamics-and-reporting-incentives">
 <span class="md-ellipsis">
       
-        Lecture 13; Bonus-malus dynamics and reporting incentives
+        Lecture 13: Bonus-malus dynamics and reporting incentives
       
     </span>
 </a>
@@ -1703,13 +1712,22 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <a class="md-nav__link" href="#lecture-14-bonus-malus-efficiency-and-premium-scales">
 <span class="md-ellipsis">
       
-        Lecture 14; Bonus-malus efficiency and premium scales
+        Lecture 14: Bonus-malus efficiency and premium scales
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#sources">
+<a class="md-nav__link" href="#course-reading">
+<span class="md-ellipsis">
+      
+        How to read this course
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-sources">
 <span class="md-ellipsis">
       
         Sources
@@ -1754,40 +1772,58 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-tag">ri</span>
 </nav>
 <h1 class="ch-title" id="risk-insurance">Risk Insurance<a class="headerlink" href="#risk-insurance" title="Permanent link">¶</a></h1>
-<p class="ch-course-kicker" data-course-token="ri">Block 2b · Actuarial science</p>
-<p>Coverage rules and portfolio models lead to insurance-data estimation, decisions under risk, premium principles and experience rating.</p>
-<hr/>
-<h2 id="reading-this-course">Reading this course<a class="headerlink" href="#reading-this-course" title="Permanent link">¶</a></h2>
-<p>These notes introduce course-specific concepts. Existing Year 1 concepts have one canonical page and are linked as prerequisites below. The lecture sequence follows the supplied 2026 course outline; the split within chapters or parts spanning several lectures is provisional and follows the order of the notes. Concepts appear at their first planned introduction and are reused by links afterwards.</p>
-<hr/>
-<p>Week numbers are counted within this course, starting at Week 1. Course Week 5 has no lectures in the outline; the eight-week sequence contains 14 lectures across seven teaching weeks. Lecture numbers count individual classes.</p>
-<hr/>
-<div class="admonition note">
-<p class="admonition-title">Coverage boundary</p>
-<p>The premium notes also refer to other textbook premium principles without naming them. The pages cover the explicitly supplied principles; the additional textbook scope still needs checking. The supplementary stochastic-dominance handout is used with explicit loss-versus-wealth conventions.</p>
-</div>
-<hr/>
-<h2 id="foundations-already-on-the-wiki">Foundations already on the wiki<a class="headerlink" href="#foundations-already-on-the-wiki" title="Permanent link">¶</a></h2>
-<ul>
-<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/expectation.html">Expectation</a> </li>
-<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html">Conditional Probability</a> </li>
-<li><a href="../../Year-1/2b-Probability-Distributions/survivor-function.html">Survivor Function</a> </li>
-<li><a href="../../Year-1/2b-Probability-Distributions/moment-generating-function.html">Moment Generating Function</a> </li>
-<li><a href="../../Year-1/2b-Probability-Distributions/convolution.html">Convolution of Independent Random Variables</a> </li>
-<li><a href="../../Year-1/2b-Probability-Distributions/jensen-inequality.html">Jensen Inequality</a> </li>
+<p class="ch-course-kicker">Year 2 · Block 2b · Actuarial science</p>
+<!-- course-home:begin -->
+<div data-course-mastery-map="ri"></div>
+<div class="course-home" data-course-home="ri">
+<section aria-label="Course overview" class="ch-overview">
+<p class="ch-lead">Coverage rules and portfolio models lead to insurance-data estimation, decisions under risk, premium principles and experience rating.</p>
+<ul class="ch-facts">
+<li><strong>14</strong> lectures </li>
+<li><strong>52</strong> concept pages </li>
 </ul>
-<hr/>
-<h2 id="lecture-1-insurance-coverage-transforms-and-mixed-losses">Lecture 1; Insurance coverage: transforms and mixed losses<a class="headerlink" href="#lecture-1-insurance-coverage-transforms-and-mixed-losses" title="Permanent link">¶</a></h2>
-<p>Outline reference: Part 1.1 (Week 1, first lecture).</p>
+<nav aria-label="Course actions" class="ch-actions"><a class="ch-btn ch-btn--primary" href="#lecture-1">Start with Lecture 1</a><a class="ch-btn" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=ri&amp;lp_token=ri#search-results">Review in Concept Finder</a><a class="ch-btn" href="../../galaxy.html?course=Year-2/2b-Risk-Insurance">See it in Galaxy</a></nav>
+</section>
+<section aria-labelledby="course-find" class="ch-search-section">
+<h2 class="ch-section-title" id="course-find">Find within this course<a class="headerlink" href="#course-find" title="Permanent link">¶</a></h2>
+<div class="course-search" data-course-token="ri">
+<form class="search-hero__form" id="course-search-form">
+<input aria-label="Search in Risk Insurance" autocomplete="off" class="search-hero__input" id="course-search-input" placeholder="Search this course, for example deductible" type="text"/>
+<button class="search-hero__button fb-cta-btn fb-cta-btn--search" data-fb-cta-decorated="1" id="course-search-btn" type="submit"><span aria-hidden="true" class="fb-cta__ico fb-cta__ico--search"></span><span class="fb-cta__txt">Search in course</span></button>
+<button aria-label="Search in course" id="csr-mobile-submit" type="submit"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></button>
+<button aria-label="Clear search" hidden="" id="csr-mobile-clear" title="Clear search" type="button">×</button>
+</form>
+<div class="course-search-results" id="course-search-results"></div>
+</div>
+</section>
+<section aria-label="How this course connects" class="ch-connect">
+<div class="ch-connect-col">
+<h2 class="ch-section-title" id="course-builds-on">Before you start<a class="headerlink" href="#course-builds-on" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Earlier concepts these pages use most. If a step feels unfamiliar, revisit them first.</p>
+<div class="ch-connect-course"><a class="ch-connect-name" href="../../Year-1/1b-Probability-Theory-for-EOR/index.html">Probability Theory for EOR</a><ul class="ch-chips"><li><a href="../../Year-1/1b-Probability-Theory-for-EOR/expectation.html">Expectation</a> </li><li><a href="../../Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html">Conditional Probability</a> </li><li><a href="../../Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html">Variance and Standard Deviation</a> </li><li><a href="../../Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html">Cumulative Distribution Function</a> </li><li><a href="../../Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html">Independent Random Variables</a> </li><li><a href="../../Year-1/1b-Probability-Theory-for-EOR/mixture-distribution.html">Mixture Distribution</a> </li><li class="ch-chip-more">+11 more </li></ul></div>
+<div class="ch-connect-course"><a class="ch-connect-name" href="../../Year-1/2b-Probability-Distributions/index.html">Probability Distributions</a><ul class="ch-chips"><li><a href="../../Year-1/2b-Probability-Distributions/survivor-function.html">Survivor Function</a> </li><li><a href="../../Year-1/2b-Probability-Distributions/moment-generating-function.html">Moment Generating Function</a> </li><li><a href="../../Year-1/2b-Probability-Distributions/convolution.html">Convolution of Independent Random Variables</a> </li><li><a href="../../Year-1/2b-Probability-Distributions/jensen-inequality.html">Jensen Inequality</a> </li><li><a href="../../Year-1/2b-Probability-Distributions/conditional-expectation-given-a-random-variable.html">Conditional Expectation Given a Random Variable</a> </li><li><a href="../../Year-1/2b-Probability-Distributions/adams-law.html">Adam’s Law: Total Expectation</a> </li><li class="ch-chip-more">+3 more </li></ul></div>
+<div class="ch-connect-course"><a class="ch-connect-name" href="../../Year-1/1a-Math-I-Calculus/index.html">Math I: Calculus</a><ul class="ch-chips"><li><a href="../../Year-1/1a-Math-I-Calculus/convexity-and-concavity.html">Convexity and Concavity</a> </li><li><a href="../../Year-1/1a-Math-I-Calculus/derivative-and-differentiability.html">Derivative and Differentiability</a> </li><li><a href="../../Year-1/1a-Math-I-Calculus/higher-order-derivative.html">Higher-Order Derivative</a> </li></ul></div>
+<div class="ch-connect-course"><a class="ch-connect-name" href="../../Year-1/1b-Math-II-Linear-Algebra/index.html">Math II: Linear Algebra</a><ul class="ch-chips"><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/matrix-product.html">Matrix Product</a> </li><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/standard-form-of-a-linear-system.html">Standard Form of a Linear System</a> </li></ul></div>
+</div>
+</section>
+</div>
+<section aria-labelledby="course-units" class="ch-route">
+<h2 class="ch-section-title" id="course-units">Lecture by lecture<a class="headerlink" href="#course-units" title="Permanent link">¶</a></h2>
+<p class="ch-section-note">Concepts appear in the lecture that introduces them, foundations first. A course name after a concept marks a page from another course used that lecture.</p>
+<section class="ch-unit-card" id="lecture-1">
+<h2 id="lecture-1-insurance-coverage-transforms-and-mixed-losses">Lecture 1: Insurance coverage: transforms and mixed losses<a class="headerlink" href="#lecture-1-insurance-coverage-transforms-and-mixed-losses" title="Permanent link">¶</a></h2>
+<p class="ch-unit-meta">Week 1, first lecture · Outline reference: Part 1.1</p>
 <ul>
 <li><a href="probability-generating-function.html">Probability Generating Function</a> </li>
 <li><a href="cumulant-generating-function.html">Cumulant Generating Function</a> </li>
 <li><a href="mixed-discrete-continuous-loss.html">Mixed Discrete and Continuous Loss Distribution</a> </li>
 <li><a href="ordinary-deductible.html">Ordinary Deductible</a> </li>
 </ul>
-<hr/>
-<h2 id="lecture-2-insurance-coverage-deductibles-and-limits">Lecture 2; Insurance coverage: deductibles and limits<a class="headerlink" href="#lecture-2-insurance-coverage-deductibles-and-limits" title="Permanent link">¶</a></h2>
-<p>Outline reference: Part 1.1 (Week 1, second lecture).</p>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="ri-lecture01" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=ri-lecture01&amp;lp_token=ri-lecture01#search-results">Review lecture 1 in Concept Finder</a> <span>4 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="lecture-2">
+<h2 id="lecture-2-insurance-coverage-deductibles-and-limits">Lecture 2: Insurance coverage: deductibles and limits<a class="headerlink" href="#lecture-2-insurance-coverage-deductibles-and-limits" title="Permanent link">¶</a></h2>
+<p class="ch-unit-meta">Week 1, second lecture · Outline reference: Part 1.1</p>
 <ul>
 <li><a href="stop-loss-transform.html">Stop-Loss Transform and Reinsurance</a> </li>
 <li><a href="franchise-deductible.html">Franchise Deductible</a> </li>
@@ -1795,17 +1831,21 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li><a href="policy-limit.html">Policy Limit</a> </li>
 <li><a href="pareto-loss-model.html">Pareto Loss Model</a> </li>
 </ul>
-<hr/>
-<h2 id="lecture-3-coverage-completion-and-portfolio-risk-models">Lecture 3; Coverage completion and portfolio risk models<a class="headerlink" href="#lecture-3-coverage-completion-and-portfolio-risk-models" title="Permanent link">¶</a></h2>
-<p>Outline reference: Parts 1.1–1.2 (Week 2, first lecture).</p>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="ri-lecture02" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=ri-lecture02&amp;lp_token=ri-lecture02#search-results">Review lecture 2 in Concept Finder</a> <span>5 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="lecture-3">
+<h2 id="lecture-3-coverage-completion-and-portfolio-risk-models">Lecture 3: Coverage completion and portfolio risk models<a class="headerlink" href="#lecture-3-coverage-completion-and-portfolio-risk-models" title="Permanent link">¶</a></h2>
+<p class="ch-unit-meta">Week 2, first lecture · Outline reference: Parts 1.1–1.2</p>
 <ul>
 <li><a href="coinsurance.html">Coinsurance</a> </li>
 <li><a href="individual-risk-model.html">Individual Risk Model</a> </li>
 <li><a href="collective-risk-model.html">Collective Risk Model</a> </li>
 </ul>
-<hr/>
-<h2 id="lecture-4-compound-risks-and-likelihood-foundations">Lecture 4; Compound risks and likelihood foundations<a class="headerlink" href="#lecture-4-compound-risks-and-likelihood-foundations" title="Permanent link">¶</a></h2>
-<p>Outline reference: Parts 1.2–2.1 (Week 2, second lecture).</p>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="ri-lecture03" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=ri-lecture03&amp;lp_token=ri-lecture03#search-results">Review lecture 3 in Concept Finder</a> <span>3 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="lecture-4">
+<h2 id="lecture-4-compound-risks-and-likelihood-foundations">Lecture 4: Compound risks and likelihood foundations<a class="headerlink" href="#lecture-4-compound-risks-and-likelihood-foundations" title="Permanent link">¶</a></h2>
+<p class="ch-unit-meta">Week 2, second lecture · Outline reference: Parts 1.2–2.1</p>
 <ul>
 <li><a href="compound-risk-distribution.html">Compound Risk Distribution</a> </li>
 <li><a href="compound-poisson-distribution.html">Compound Poisson Distribution</a> </li>
@@ -1814,9 +1854,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li><a href="maximum-claim-in-a-portfolio.html">Maximum Claim in a Portfolio</a> </li>
 <li><a href="maximum-likelihood-estimation.html">Maximum Likelihood Estimation</a> </li>
 </ul>
-<hr/>
-<h2 id="lecture-5-special-observation-mechanisms-and-glm-foundations">Lecture 5; Special observation mechanisms and GLM foundations<a class="headerlink" href="#lecture-5-special-observation-mechanisms-and-glm-foundations" title="Permanent link">¶</a></h2>
-<p>Outline reference: Parts 2.1–2.2 (Week 3, first lecture).</p>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="ri-lecture04" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=ri-lecture04&amp;lp_token=ri-lecture04#search-results">Review lecture 4 in Concept Finder</a> <span>6 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="lecture-5">
+<h2 id="lecture-5-special-observation-mechanisms-and-glm-foundations">Lecture 5: Special observation mechanisms and GLM foundations<a class="headerlink" href="#lecture-5-special-observation-mechanisms-and-glm-foundations" title="Permanent link">¶</a></h2>
+<p class="ch-unit-meta">Week 3, first lecture · Outline reference: Parts 2.1–2.2</p>
 <ul>
 <li><a href="grouped-data-likelihood.html">Likelihood for Grouped Loss Data</a> </li>
 <li><a href="censored-loss-likelihood.html">Likelihood for Censored Loss Data</a> </li>
@@ -1824,9 +1866,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li><a href="exponential-family.html">Exponential Family</a> </li>
 <li><a href="generalised-linear-model.html">Generalized Linear Model</a> </li>
 </ul>
-<hr/>
-<h2 id="lecture-6-claim-frequency-glms-and-rating-factors">Lecture 6; Claim-frequency GLMs and rating factors<a class="headerlink" href="#lecture-6-claim-frequency-glms-and-rating-factors" title="Permanent link">¶</a></h2>
-<p>Outline reference: Part 2.2 (Week 3, second lecture).</p>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="ri-lecture05" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=ri-lecture05&amp;lp_token=ri-lecture05#search-results">Review lecture 5 in Concept Finder</a> <span>5 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="lecture-6">
+<h2 id="lecture-6-claim-frequency-glms-and-rating-factors">Lecture 6: Claim-frequency GLMs and rating factors<a class="headerlink" href="#lecture-6-claim-frequency-glms-and-rating-factors" title="Permanent link">¶</a></h2>
+<p class="ch-unit-meta">Week 3, second lecture · Outline reference: Part 2.2</p>
 <ul>
 <li><a href="poisson-regression.html">Poisson Regression</a> </li>
 <li><a href="exposure-offset.html">Exposure Offset in Claim-Frequency Models</a> </li>
@@ -1834,48 +1878,60 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li><a href="rating-factors-and-interactions.html">Rating Factors and Interactions in Insurance GLMs</a> </li>
 <li><a href="information-criteria-for-risk-models.html">Information Criteria for Risk Models</a> </li>
 </ul>
-<hr/>
-<h2 id="lecture-7-utility-theory-and-risk-aversion">Lecture 7; Utility theory and risk aversion<a class="headerlink" href="#lecture-7-utility-theory-and-risk-aversion" title="Permanent link">¶</a></h2>
-<p>Outline reference: Part 3.1 (Week 4, first lecture).</p>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="ri-lecture06" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=ri-lecture06&amp;lp_token=ri-lecture06#search-results">Review lecture 6 in Concept Finder</a> <span>5 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="lecture-7">
+<h2 id="lecture-7-utility-theory-and-risk-aversion">Lecture 7: Utility theory and risk aversion<a class="headerlink" href="#lecture-7-utility-theory-and-risk-aversion" title="Permanent link">¶</a></h2>
+<p class="ch-unit-meta">Week 4, first lecture · Outline reference: Part 3.1</p>
 <ul>
 <li><a href="expected-utility-and-risk-aversion.html">Expected Utility and Risk Aversion</a> </li>
 <li><a href="absolute-risk-aversion.html">Absolute Risk Aversion</a> </li>
 </ul>
-<hr/>
-<h2 id="lecture-8-insurance-decisions-and-stochastic-order">Lecture 8; Insurance decisions and stochastic order<a class="headerlink" href="#lecture-8-insurance-decisions-and-stochastic-order" title="Permanent link">¶</a></h2>
-<p>Outline reference: Parts 3.1–3.2 (Week 4, second lecture).</p>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="ri-lecture07" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=ri-lecture07&amp;lp_token=ri-lecture07#search-results">Review lecture 7 in Concept Finder</a> <span>2 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="lecture-8">
+<h2 id="lecture-8-insurance-decisions-and-stochastic-order">Lecture 8: Insurance decisions and stochastic order<a class="headerlink" href="#lecture-8-insurance-decisions-and-stochastic-order" title="Permanent link">¶</a></h2>
+<p class="ch-unit-meta">Week 4, second lecture · Outline reference: Parts 3.1–3.2</p>
 <ul>
 <li><a href="insurance-indifference-premiums.html">Insurance Indifference Premiums</a> </li>
 <li><a href="stochastic-order.html">Stochastic Order</a> </li>
 </ul>
-<hr/>
-<h2 id="lecture-9-tail-comparisons-and-stop-loss-order">Lecture 9; Tail comparisons and stop-loss order<a class="headerlink" href="#lecture-9-tail-comparisons-and-stop-loss-order" title="Permanent link">¶</a></h2>
-<p>Outline reference: Part 3.2 (Week 6, first lecture).</p>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="ri-lecture08" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=ri-lecture08&amp;lp_token=ri-lecture08#search-results">Review lecture 8 in Concept Finder</a> <span>2 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="lecture-9">
+<h2 id="lecture-9-tail-comparisons-and-stop-loss-order">Lecture 9: Tail comparisons and stop-loss order<a class="headerlink" href="#lecture-9-tail-comparisons-and-stop-loss-order" title="Permanent link">¶</a></h2>
+<p class="ch-unit-meta">Week 6, first lecture · Outline reference: Part 3.2</p>
 <ul>
 <li><a href="thicker-tailed-order.html">Thicker-Tailed Comparison</a> </li>
 <li><a href="single-crossing-order-criteria.html">Crossing Criteria for Risk Orders</a> </li>
 <li><a href="stop-loss-order.html">Stop-Loss Order</a> </li>
 </ul>
-<hr/>
-<h2 id="lecture-10-dispersion-utility-dominance-and-exponential-order">Lecture 10; Dispersion, utility dominance and exponential order<a class="headerlink" href="#lecture-10-dispersion-utility-dominance-and-exponential-order" title="Permanent link">¶</a></h2>
-<p>Outline reference: Part 3.2 (Week 6, second lecture).</p>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="ri-lecture09" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=ri-lecture09&amp;lp_token=ri-lecture09#search-results">Review lecture 9 in Concept Finder</a> <span>3 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="lecture-10">
+<h2 id="lecture-10-dispersion-utility-dominance-and-exponential-order">Lecture 10: Dispersion, utility dominance and exponential order<a class="headerlink" href="#lecture-10-dispersion-utility-dominance-and-exponential-order" title="Permanent link">¶</a></h2>
+<p class="ch-unit-meta">Week 6, second lecture · Outline reference: Part 3.2</p>
 <ul>
 <li><a href="convex-order.html">Convex Order and More Dangerous Risks</a> </li>
 <li><a href="second-order-stochastic-dominance.html">Second-Order Stochastic Dominance</a> </li>
 <li><a href="exponential-order.html">Exponential Order</a> </li>
 </ul>
-<hr/>
-<h2 id="lecture-11-risk-order-consequences-and-premium-foundations">Lecture 11; Risk-order consequences and premium foundations<a class="headerlink" href="#lecture-11-risk-order-consequences-and-premium-foundations" title="Permanent link">¶</a></h2>
-<p>Outline reference: Parts 3.2–4.1 (Week 7, first lecture).</p>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="ri-lecture10" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=ri-lecture10&amp;lp_token=ri-lecture10#search-results">Review lecture 10 in Concept Finder</a> <span>3 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="lecture-11">
+<h2 id="lecture-11-risk-order-consequences-and-premium-foundations">Lecture 11: Risk-order consequences and premium foundations<a class="headerlink" href="#lecture-11-risk-order-consequences-and-premium-foundations" title="Permanent link">¶</a></h2>
+<p class="ch-unit-meta">Week 7, first lecture · Outline reference: Parts 3.2–4.1</p>
 <ul>
 <li><a href="risk-orders-under-aggregation.html">Risk Orders Under Aggregation</a> </li>
 <li><a href="stop-loss-separation-theorem.html">Stop-Loss Separation Theorem</a> </li>
 <li><a href="premium-principle-properties.html">Premium Principles and Their Properties</a> </li>
 <li><a href="expected-value-premium-principle.html">Expected Value Premium Principle</a> </li>
 </ul>
-<hr/>
-<h2 id="lecture-12-premium-principles-and-bonus-malus-foundations">Lecture 12; Premium principles and bonus-malus foundations<a class="headerlink" href="#lecture-12-premium-principles-and-bonus-malus-foundations" title="Permanent link">¶</a></h2>
-<p>Outline reference: Parts 4.1–4.2 (Week 7, second lecture).</p>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="ri-lecture11" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=ri-lecture11&amp;lp_token=ri-lecture11#search-results">Review lecture 11 in Concept Finder</a> <span>4 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="lecture-12">
+<h2 id="lecture-12-premium-principles-and-bonus-malus-foundations">Lecture 12: Premium principles and bonus-malus foundations<a class="headerlink" href="#lecture-12-premium-principles-and-bonus-malus-foundations" title="Permanent link">¶</a></h2>
+<p class="ch-unit-meta">Week 7, second lecture · Outline reference: Parts 4.1–4.2</p>
 <ul>
 <li><a href="variance-premium-principle.html">Variance Premium Principle</a> </li>
 <li><a href="standard-deviation-premium-principle.html">Standard Deviation Premium Principle</a> </li>
@@ -1883,29 +1939,43 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li><a href="zero-utility-premium.html">Zero-Utility Premium</a> </li>
 <li><a href="bonus-malus-system.html">Bonus-Malus System</a> </li>
 </ul>
-<hr/>
-<h2 id="lecture-13-bonus-malus-dynamics-and-reporting-incentives">Lecture 13; Bonus-malus dynamics and reporting incentives<a class="headerlink" href="#lecture-13-bonus-malus-dynamics-and-reporting-incentives" title="Permanent link">¶</a></h2>
-<p>Outline reference: Part 4.2 (Week 8, first lecture).</p>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="ri-lecture12" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=ri-lecture12&amp;lp_token=ri-lecture12#search-results">Review lecture 12 in Concept Finder</a> <span>5 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="lecture-13">
+<h2 id="lecture-13-bonus-malus-dynamics-and-reporting-incentives">Lecture 13: Bonus-malus dynamics and reporting incentives<a class="headerlink" href="#lecture-13-bonus-malus-dynamics-and-reporting-incentives" title="Permanent link">¶</a></h2>
+<p class="ch-unit-meta">Week 8, first lecture · Outline reference: Part 4.2</p>
 <ul>
 <li><a href="bonus-malus-transition-matrix.html">Bonus-Malus Transition Matrix</a> </li>
 <li><a href="stationary-bonus-malus-premium.html">Stationary Bonus-Malus Distribution and Premium</a> </li>
 <li><a href="hunger-for-bonus.html">Hunger for Bonus</a> </li>
 </ul>
-<hr/>
-<h2 id="lecture-14-bonus-malus-efficiency-and-premium-scales">Lecture 14; Bonus-malus efficiency and premium scales<a class="headerlink" href="#lecture-14-bonus-malus-efficiency-and-premium-scales" title="Permanent link">¶</a></h2>
-<p>Outline reference: Part 4.2 (Week 8, second lecture).</p>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="ri-lecture13" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=ri-lecture13&amp;lp_token=ri-lecture13#search-results">Review lecture 13 in Concept Finder</a> <span>3 concepts</span></p>
+</section>
+<section class="ch-unit-card" id="lecture-14">
+<h2 id="lecture-14-bonus-malus-efficiency-and-premium-scales">Lecture 14: Bonus-malus efficiency and premium scales<a class="headerlink" href="#lecture-14-bonus-malus-efficiency-and-premium-scales" title="Permanent link">¶</a></h2>
+<p class="ch-unit-meta">Week 8, second lecture · Outline reference: Part 4.2</p>
 <ul>
 <li><a href="loimaranta-efficiency.html">Loimaranta Efficiency</a> </li>
 <li><a href="optimal-bonus-malus-relativities.html">Optimal Bonus-Malus Relativities</a> </li>
 </ul>
-<hr/>
-<h2 id="sources"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20.7c0 .46.1.9.27 1.3H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6.11c-.32-.07-.66-.11-1-.11s-.68.04-1 .11V4h-5v8l-2.5-2.25L8 12V4H6v16h7zm10-3.4v3.5c0 .6-.6 1.2-1.3 1.2h-5.5c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2v-1.5c0-1.4 1.4-2.5 2.8-2.5s2.8 1.1 2.8 2.5V16c.6 0 1.2.6 1.2 1.3m-2.5-2.8c0-.8-.7-1.3-1.5-1.3s-1.5.5-1.5 1.3V16h3z"></path></svg></span> Sources<a class="headerlink" href="#sources" title="Permanent link">¶</a></h2>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="ri-lecture14" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=ri-lecture14&amp;lp_token=ri-lecture14#search-results">Review lecture 14 in Concept Finder</a> <span>2 concepts</span></p>
+</section>
+</section>
+<!-- course-home:end -->
+<section aria-labelledby="course-reading" class="ch-reading">
+<h2 class="ch-section-title" id="course-reading">How to read this course<a class="headerlink" href="#course-reading" title="Permanent link">¶</a></h2>
+<p>These notes introduce course-specific concepts. Existing Year 1 concepts have one canonical page and are linked under <strong>Before you start</strong>. The lecture sequence follows the 2026 course outline: 14 lectures across seven teaching weeks, numbered by class, with no lectures in course Week 5. Concepts appear at their first introduction and are reused by links afterwards. The stochastic-dominance pages state their loss-versus-wealth convention explicitly.</p>
+</section>
+<section aria-labelledby="course-sources" class="ch-sources">
+<h2 class="ch-section-title" id="course-sources">Sources<a class="headerlink" href="#course-sources" title="Permanent link">¶</a></h2>
 <ul>
 <li>Risk Insurance · Course outline (2026) </li>
 <li>Risk Insurance · Lectures 1–14 </li>
 </ul>
-<p>These are wiki study notes based on the supplied course materials, with new illustrative calculations. They have not been reviewed by the course lecturers. AI mastery checks are available on supported concept pages; each page shows its own availability. Many concept pages also have an interactive figure whose parameters you can adjust.</p>
-<p class="mk-last-updated">Last updated: 13 October 2026 07:32</p>
+<!-- course-home:teaching-begin -->
+<!-- course-home:teaching-end -->
+</section>
+<p class="mk-last-updated">Last updated: 13 October 2026 13:48</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -1944,7 +2014,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../javascripts/exam-mode.js?h=09b295110531"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
 <script src="../../javascripts/wiki-explain.js?h=8900cebd6651"></script>
-<script src="../../javascripts/startup-preferences.js?h=028a29ef9217"></script>
+<script src="../../javascripts/startup-preferences.js?h=1dc535d06475"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=39d6a6cff37d"></script>
 <script src="../../javascripts/ui-guard.js?h=52ec5f9e3afb"></script>
@@ -1966,7 +2036,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../javascripts/tag-search-links.js?h=84cb5c2dd87f"></script>
 <script src="../../javascripts/logo-lightbox.js?h=fda4850b9a41"></script>
 <script src="../../javascripts/figure-source.js?h=62c65f7b6712"></script>
-<script src="../../javascripts/wiki-guide-pages.js?h=19a1e4233404"></script>
+<script src="../../javascripts/wiki-guide-pages.js?h=924c447ad4a2"></script>
 <script src="../../javascripts/wiki-guide-account.js?h=2327db54a4ff"></script>
 <script src="../../javascripts/wiki-guides.js?h=74b29b68f079"></script>
 <script src="../../javascripts/wiki-explain-content.js?h=656d21850670"></script>

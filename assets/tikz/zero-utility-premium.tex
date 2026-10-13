@@ -17,7 +17,7 @@
     width=8.8cm, height=5.8cm, clip=false
     ]
     \addplot[blue, very thick, domain=-0.95:2.2, samples=80] {-exp(-x)};
-    \node[blue!70!black, anchor=north east] at (axis cs:2.25,-0.32) {$u(w)=-e^{-w}$};
+    \node[blue!70!black, anchor=north east] at (axis cs:2.25,-0.32) {$u(w)=-\mathrm{e}^{-w}$};
     % reference level u(0)
     \draw[gray, thin, dashed] (axis cs:-1.1,-1) -- (axis cs:2.2,-1);
     \node[gray, anchor=south east] at (axis cs:2.2,-1) {$u(0)=-1$};
@@ -32,8 +32,8 @@
     \fill[black] (axis cs:0,-1) circle (1.6pt);
     \draw[gray!60, thin, dashed] (axis cs:0.434,-1) -- (axis cs:0.434,0);
     \draw[green!50!black, very thick, |-|] (axis cs:0,-0.1) -- (axis cs:0.434,-0.1);
-    \node[green!50!black, anchor=south west] at (axis cs:0.03,0.02) {$\Pi-\mathbb E[X]\ge0$};
-    \node[red!70!black, anchor=north west] at (axis cs:0.5,-1.05) {$\mathbb E[u(\Pi-X)]=u(0)$};
+    \node[green!50!black, anchor=south west] at (axis cs:0.03,0.02) {$\Pi-\mathbb{E}[X]\ge0$};
+    \node[red!70!black, anchor=north west] at (axis cs:0.5,-1.05) {$\mathbb{E}[u(\Pi-X)]=u(0)$};
   \end{axis}
 \end{tikzpicture}
 \end{document}
