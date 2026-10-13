@@ -13,7 +13,7 @@
   \draw[->, thick, red] (0,0) -- (-0.8507,0.5257);
   \node[anchor=north] at (0,-1.35) {unit circle $\|\boldsymbol{x}\|=1$};
   % map
-  \draw[->, thick] (1.4,0.35) -- (2.35,0.35) node[midway, above] {$\boldsymbol{A}$};
+  \draw[->, thick] (1.4,0.35) -- (2.35,0.35) node[midway, above] {$A$};
   % right: image ellipse
   \begin{scope}[shift={(4.05,0)}]
     \draw[gray!50, thin] (-1.6,0) -- (1.6,0);
@@ -21,7 +21,7 @@
     \draw[thick] plot[domain=0:360, samples=120, smooth] ({cos(\x)+sin(\x)},{sin(\x)});
     \draw[->, thick, blue] (0,0) -- (1.3764,0.8507) node[right, inner sep=3pt] {$\sigma_1\approx1.618$};
     \draw[->, thick, red] (0,0) -- (-0.3249,0.5257) node[left, inner sep=2pt, yshift=7pt] {$\sigma_2\approx0.618$};
-    \node[anchor=north] at (0,-1.35) {image $\{\boldsymbol{A}\boldsymbol{x}\}$};
+    \node[anchor=north] at (0,-1.35) {image $\{A\boldsymbol{x}\}$};
   \end{scope}
 \end{tikzpicture}
 \end{document}
