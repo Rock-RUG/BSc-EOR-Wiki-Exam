@@ -745,7 +745,7 @@ function renderCorrectionNoticeHtml(rawQuery,suggestedQuery){const raw=String(ra
         <strong class="mk-search-suggest__notice-query mk-search-suggest__notice-query--accent">${escapeHtml(suggested)}</strong>
       </div>
     `;}
-function finderUrlFor(rawQuery){const q=String(rawQuery||"").trim();try{const u=new URL(toAbsoluteUrl("find.html")||"find.html",window.location.href);if(q){u.searchParams.set("src","header_search");u.searchParams.set("q",q);}
+function finderUrlFor(rawQuery){const q=String(rawQuery||"").trim();try{const u=new URL(toAbsoluteUrl("find.html")||"find.html",window.location.href);if(q){u.searchParams.set("src","header_search");u.searchParams.set("fq",q);}
 return u.toString();}catch(_){return"";}}
 function emptyResultsHtml(rawQuery){const q=String(rawQuery||"").trim();const finder=finderUrlFor(q);return`<div class="mk-search-suggest__empty">No matching pages for <strong>${escapeHtml(q)}</strong>.
       <span class="mk-search-suggest__empty-help">Try a shorter or different word. Year 2 and Year 3 notes are still being written.${finder ? ` <a class="mk-search-suggest__finder-link" href="${escapeHtml(finder)}">Search the full notes in Concept Finder</a>` : ""}</span></div>`;}
@@ -786,9 +786,11 @@ fresh.forEach((row)=>rememberRow(row.key,row.html));const more=all.length>list.l
     `;try{box.dataset.mkQuery=rawQuery;}catch(_){}
 try{box.dataset.mkEffectiveQuery=q;}catch(_){}
 box.innerHTML=panelHtml;clearActiveSuggestion(input);}
-async function rankForQuery(rawQuery,docs,isCurrent){const current=()=>typeof isCurrent!=="function"||isCurrent();const pages=docs||[];const multilingualLookup=await getMultilingualLookup();if(!current())return null;const multilingual=multilingualLookup&&multilingualLookup.search(rawQuery,pages);if(multilingual){const noticeHtml=`<div class="mk-search-suggest__notice" role="status" aria-live="polite">${multilingual.label
+async function rankForQuery(rawQuery,docs,isCurrent){const current=()=>typeof isCurrent!=="function"||isCurrent();const pages=docs||[];const multilingualLookup=await getMultilingualLookup();if(!current())return null;const multilingual=multilingualLookup&&multilingualLookup.search(rawQuery,pages);if(multilingual){const nameHits=Array.isArray(multilingual.hits)?multilingual.hits.length:0;const noticeHtml=`<div class="mk-search-suggest__notice" role="status" aria-live="polite">${multilingual.label
         ? `<span class="mk-search-suggest__notice-label">Did you mean?</span> <strong class="mk-search-suggest__notice-query">${escapeHtml(multilingual.label)}</strong>`
-        : '<span class="mk-search-suggest__notice-label">No matching concept name.</span>'}
+        : nameHits
+          ? `<span class="mk-search-suggest__notice-label">${nameHits===1?"1 concept name matches":`${nameHits} concept names match`}</span> <strong class="mk-search-suggest__notice-query">${escapeHtml(String(rawQuery||"").trim())}</strong>`
+          : '<span class="mk-search-suggest__notice-label">No matching concept name.</span>'}
         <span class="mk-search-suggest__notice-label">Multilingual search matches titles and aliases only.</span></div>`;return{...multilingual,effectiveQuery:rawQuery,noticeHtml,uncovered:null};}
 const nl=getNlCore();const uncovered=nl&&typeof nl.uncoveredTopic==="function"?nl.uncoveredTopic(rawQuery):null;if(uncovered){let hits=[];try{hits=nl.uncoveredClosest(uncovered,pages,{limit:5})||[];}catch(_){hits=[];}
 return{effectiveQuery:uncovered.phrases[0]||rawQuery,hits,noticeHtml:renderUncoveredNoticeHtml(uncovered,hits.length),uncovered,label:""};}

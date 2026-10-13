@@ -6436,6 +6436,5297 @@
           "model individual de risc"
         ]
       }
+    },
+    {
+      "title": "Affine Subspace",
+      "names": {
+        "zh": [
+          "仿射子空间",
+          "仿射子空間"
+        ],
+        "nl": [
+          "affiene deelruimte"
+        ],
+        "de": [
+          "affiner Unterraum"
+        ],
+        "fr": [
+          "sous-espace affine"
+        ],
+        "es": [
+          "subespacio afín"
+        ],
+        "it": [
+          "sottospazio affine"
+        ],
+        "pl": [
+          "podprzestrzeń afiniczna"
+        ],
+        "ro": [
+          "subspațiu afin"
+        ]
+      }
+    },
+    {
+      "title": "Basis of Solutions of a Difference Equation",
+      "names": {
+        "zh": [
+          "差分方程的基本解组",
+          "差分方程的基本解組"
+        ],
+        "nl": [
+          "basis van oplossingen van een differentievergelijking"
+        ],
+        "de": [
+          "Fundamentalsystem einer Differenzengleichung"
+        ],
+        "fr": [
+          "système fondamental de solutions d'une équation aux différences"
+        ],
+        "es": [
+          "sistema fundamental de soluciones de una ecuación en diferencias"
+        ],
+        "it": [
+          "sistema fondamentale di soluzioni di un'equazione alle differenze"
+        ],
+        "pl": [
+          "układ fundamentalny rozwiązań równania różnicowego"
+        ],
+        "ro": [
+          "sistem fundamental de soluții al unei ecuații cu diferențe"
+        ]
+      }
+    },
+    {
+      "title": "Change of Basis",
+      "names": {
+        "zh": [
+          "基变换",
+          "基變換"
+        ],
+        "nl": [
+          "basistransformatie"
+        ],
+        "de": [
+          "Basiswechsel"
+        ],
+        "fr": [
+          "changement de base"
+        ],
+        "es": [
+          "cambio de base"
+        ],
+        "it": [
+          "cambiamento di base"
+        ],
+        "pl": [
+          "zmiana bazy"
+        ],
+        "ro": [
+          "schimbarea bazei"
+        ]
+      }
+    },
+    {
+      "title": "Characteristic Equation for a Differential Equation",
+      "names": {
+        "zh": [
+          "微分方程的特征方程",
+          "微分方程的特徵方程"
+        ],
+        "nl": [
+          "karakteristieke vergelijking van een differentiaalvergelijking"
+        ],
+        "de": [
+          "charakteristische Gleichung einer Differentialgleichung"
+        ],
+        "fr": [
+          "équation caractéristique d'une équation différentielle"
+        ],
+        "es": [
+          "ecuación característica de una ecuación diferencial"
+        ],
+        "it": [
+          "equazione caratteristica di un'equazione differenziale"
+        ],
+        "pl": [
+          "równanie charakterystyczne równania różniczkowego"
+        ],
+        "ro": [
+          "ecuația caracteristică a unei ecuații diferențiale"
+        ]
+      }
+    },
+    {
+      "title": "Characteristic Polynomial for a Difference Equation",
+      "names": {
+        "zh": [
+          "差分方程的特征多项式",
+          "差分方程的特徵多項式"
+        ],
+        "nl": [
+          "karakteristieke polynoom van een differentievergelijking"
+        ],
+        "de": [
+          "charakteristisches Polynom einer Differenzengleichung"
+        ],
+        "fr": [
+          "polynôme caractéristique d'une équation aux différences"
+        ],
+        "es": [
+          "polinomio característico de una ecuación en diferencias"
+        ],
+        "it": [
+          "polinomio caratteristico di un'equazione alle differenze"
+        ],
+        "pl": [
+          "wielomian charakterystyczny równania różnicowego"
+        ],
+        "ro": [
+          "polinomul caracteristic al unei ecuații cu diferențe"
+        ]
+      }
+    },
+    {
+      "title": "Complex Conjugate Pair of Eigenvalues",
+      "names": {
+        "zh": [
+          "共轭复特征值",
+          "共軛複特徵值"
+        ],
+        "nl": [
+          "complex geconjugeerd paar eigenwaarden"
+        ],
+        "de": [
+          "konjugiert komplexes Eigenwertpaar"
+        ],
+        "fr": [
+          "valeurs propres complexes conjuguées"
+        ],
+        "es": [
+          "valores propios complejos conjugados"
+        ],
+        "it": [
+          "autovalori complessi coniugati"
+        ],
+        "pl": [
+          "sprzężone zespolone wartości własne"
+        ],
+        "ro": [
+          "valori proprii complex conjugate"
+        ]
+      }
+    },
+    {
+      "title": "Difference Equation",
+      "names": {
+        "zh": [
+          "差分方程"
+        ],
+        "nl": [
+          "differentievergelijking"
+        ],
+        "de": [
+          "Differenzengleichung"
+        ],
+        "fr": [
+          "équation aux différences",
+          "équation de récurrence"
+        ],
+        "es": [
+          "ecuación en diferencias"
+        ],
+        "it": [
+          "equazione alle differenze"
+        ],
+        "pl": [
+          "równanie różnicowe"
+        ],
+        "ro": [
+          "ecuație cu diferențe"
+        ]
+      }
+    },
+    {
+      "title": "Differential Equation",
+      "names": {
+        "zh": [
+          "微分方程",
+          "常微分方程"
+        ],
+        "nl": [
+          "differentiaalvergelijking"
+        ],
+        "de": [
+          "Differentialgleichung",
+          "gewöhnliche Differentialgleichung"
+        ],
+        "fr": [
+          "équation différentielle"
+        ],
+        "es": [
+          "ecuación diferencial"
+        ],
+        "it": [
+          "equazione differenziale"
+        ],
+        "pl": [
+          "równanie różniczkowe"
+        ],
+        "ro": [
+          "ecuație diferențială"
+        ]
+      }
+    },
+    {
+      "title": "Equilibrium of a Differential Equation",
+      "names": {
+        "zh": [
+          "微分方程的平衡点",
+          "微分方程的平衡點"
+        ],
+        "nl": [
+          "evenwichtspunt van een differentiaalvergelijking"
+        ],
+        "de": [
+          "Gleichgewichtspunkt einer Differentialgleichung",
+          "Ruhelage"
+        ],
+        "fr": [
+          "point d'équilibre d'une équation différentielle"
+        ],
+        "es": [
+          "punto de equilibrio de una ecuación diferencial"
+        ],
+        "it": [
+          "punto di equilibrio di un'equazione differenziale"
+        ],
+        "pl": [
+          "punkt równowagi równania różniczkowego"
+        ],
+        "ro": [
+          "punct de echilibru al unei ecuații diferențiale"
+        ]
+      }
+    },
+    {
+      "title": "First-Order Differential Equation",
+      "names": {
+        "zh": [
+          "一阶微分方程",
+          "一階微分方程"
+        ],
+        "nl": [
+          "eerste-orde differentiaalvergelijking"
+        ],
+        "de": [
+          "Differentialgleichung erster Ordnung"
+        ],
+        "fr": [
+          "équation différentielle du premier ordre"
+        ],
+        "es": [
+          "ecuación diferencial de primer orden"
+        ],
+        "it": [
+          "equazione differenziale del primo ordine"
+        ],
+        "pl": [
+          "równanie różniczkowe pierwszego rzędu"
+        ],
+        "ro": [
+          "ecuație diferențială de ordinul întâi"
+        ]
+      }
+    },
+    {
+      "title": "First-Order Linear Difference Equation",
+      "names": {
+        "zh": [
+          "一阶线性差分方程",
+          "一階線性差分方程"
+        ],
+        "nl": [
+          "lineaire differentievergelijking van de eerste orde"
+        ],
+        "de": [
+          "lineare Differenzengleichung erster Ordnung"
+        ],
+        "fr": [
+          "équation aux différences linéaire du premier ordre"
+        ],
+        "es": [
+          "ecuación en diferencias lineal de primer orden"
+        ],
+        "it": [
+          "equazione alle differenze lineare del primo ordine"
+        ],
+        "pl": [
+          "liniowe równanie różnicowe pierwszego rzędu"
+        ],
+        "ro": [
+          "ecuație liniară cu diferențe de ordinul întâi"
+        ]
+      }
+    },
+    {
+      "title": "Fundamental Theorem of Linear Algebra",
+      "names": {
+        "zh": [
+          "线性代数基本定理",
+          "線性代數基本定理"
+        ],
+        "nl": [
+          "hoofdstelling van de lineaire algebra"
+        ],
+        "de": [
+          "Fundamentalsatz der linearen Algebra"
+        ],
+        "fr": [
+          "théorème fondamental de l'algèbre linéaire"
+        ],
+        "es": [
+          "teorema fundamental del álgebra lineal"
+        ],
+        "it": [
+          "teorema fondamentale dell'algebra lineare"
+        ],
+        "pl": [
+          "podstawowe twierdzenie algebry liniowej"
+        ],
+        "ro": [
+          "teorema fundamentală a algebrei liniare"
+        ]
+      }
+    },
+    {
+      "title": "General Solution of a Linear ODE",
+      "names": {
+        "zh": [
+          "线性常微分方程的通解",
+          "線性常微分方程的通解"
+        ],
+        "nl": [
+          "algemene oplossing van een lineaire differentiaalvergelijking"
+        ],
+        "de": [
+          "allgemeine Lösung einer linearen Differentialgleichung"
+        ],
+        "fr": [
+          "solution générale d'une équation différentielle linéaire"
+        ],
+        "es": [
+          "solución general de una ecuación diferencial lineal"
+        ],
+        "it": [
+          "soluzione generale di un'equazione differenziale lineare"
+        ],
+        "pl": [
+          "rozwiązanie ogólne liniowego równania różniczkowego"
+        ],
+        "ro": [
+          "soluția generală a unei ecuații diferențiale liniare"
+        ]
+      }
+    },
+    {
+      "title": "Generalized Inverse",
+      "names": {
+        "zh": [
+          "广义逆",
+          "廣義逆",
+          "广义逆矩阵",
+          "廣義逆矩陣"
+        ],
+        "nl": [
+          "gegeneraliseerde inverse"
+        ],
+        "de": [
+          "verallgemeinerte Inverse"
+        ],
+        "fr": [
+          "inverse généralisée"
+        ],
+        "es": [
+          "inversa generalizada"
+        ],
+        "it": [
+          "inversa generalizzata"
+        ],
+        "pl": [
+          "uogólniona odwrotność"
+        ],
+        "ro": [
+          "inversă generalizată"
+        ]
+      }
+    },
+    {
+      "title": "Gram-Schmidt Algorithm",
+      "names": {
+        "zh": [
+          "格拉姆-施密特正交化",
+          "施密特正交化"
+        ],
+        "nl": [
+          "Gram-Schmidtproces",
+          "Gram-Schmidtorthogonalisatie"
+        ],
+        "de": [
+          "Gram-Schmidtsches Orthogonalisierungsverfahren"
+        ],
+        "fr": [
+          "procédé de Gram-Schmidt"
+        ],
+        "es": [
+          "proceso de Gram-Schmidt"
+        ],
+        "it": [
+          "ortogonalizzazione di Gram-Schmidt"
+        ],
+        "pl": [
+          "ortogonalizacja Grama-Schmidta"
+        ],
+        "ro": [
+          "procedeul Gram-Schmidt"
+        ]
+      }
+    },
+    {
+      "title": "Higher-Order Linear Difference Equation",
+      "names": {
+        "zh": [
+          "高阶线性差分方程",
+          "高階線性差分方程"
+        ],
+        "nl": [
+          "lineaire differentievergelijking van hogere orde"
+        ],
+        "de": [
+          "lineare Differenzengleichung höherer Ordnung"
+        ],
+        "fr": [
+          "équation aux différences linéaire d'ordre supérieur"
+        ],
+        "es": [
+          "ecuación en diferencias lineal de orden superior"
+        ],
+        "it": [
+          "equazione alle differenze lineare di ordine superiore"
+        ],
+        "pl": [
+          "liniowe równanie różnicowe wyższego rzędu"
+        ],
+        "ro": [
+          "ecuație liniară cu diferențe de ordin superior"
+        ]
+      }
+    },
+    {
+      "title": "Integrating Factor",
+      "names": {
+        "zh": [
+          "积分因子",
+          "積分因子"
+        ],
+        "nl": [
+          "integrerende factor"
+        ],
+        "de": [
+          "integrierender Faktor"
+        ],
+        "fr": [
+          "facteur intégrant"
+        ],
+        "es": [
+          "factor integrante"
+        ],
+        "it": [
+          "fattore integrante"
+        ],
+        "pl": [
+          "czynnik całkujący"
+        ],
+        "ro": [
+          "factor integrant"
+        ]
+      }
+    },
+    {
+      "title": "Kronecker Product",
+      "names": {
+        "zh": [
+          "克罗内克积",
+          "克羅內克積"
+        ],
+        "nl": [
+          "Kroneckerproduct"
+        ],
+        "de": [
+          "Kronecker-Produkt"
+        ],
+        "fr": [
+          "produit de Kronecker"
+        ],
+        "es": [
+          "producto de Kronecker"
+        ],
+        "it": [
+          "prodotto di Kronecker"
+        ],
+        "pl": [
+          "iloczyn Kroneckera"
+        ],
+        "ro": [
+          "produsul Kronecker"
+        ]
+      }
+    },
+    {
+      "title": "Least Squares",
+      "names": {
+        "zh": [
+          "最小二乘法",
+          "最小平方法"
+        ],
+        "nl": [
+          "kleinste-kwadratenmethode"
+        ],
+        "de": [
+          "Methode der kleinsten Quadrate"
+        ],
+        "fr": [
+          "méthode des moindres carrés"
+        ],
+        "es": [
+          "mínimos cuadrados"
+        ],
+        "it": [
+          "metodo dei minimi quadrati"
+        ],
+        "pl": [
+          "metoda najmniejszych kwadratów"
+        ],
+        "ro": [
+          "metoda celor mai mici pătrate"
+        ]
+      }
+    },
+    {
+      "title": "Linear Vector ODE",
+      "names": {
+        "zh": [
+          "线性常微分方程组",
+          "線性常微分方程組"
+        ],
+        "nl": [
+          "lineair stelsel differentiaalvergelijkingen"
+        ],
+        "de": [
+          "lineares Differentialgleichungssystem"
+        ],
+        "fr": [
+          "système différentiel linéaire"
+        ],
+        "es": [
+          "sistema lineal de ecuaciones diferenciales"
+        ],
+        "it": [
+          "sistema lineare di equazioni differenziali"
+        ],
+        "pl": [
+          "liniowy układ równań różniczkowych"
+        ],
+        "ro": [
+          "sistem liniar de ecuații diferențiale"
+        ]
+      }
+    },
+    {
+      "title": "Matrix Exponential",
+      "names": {
+        "zh": [
+          "矩阵指数",
+          "矩陣指數"
+        ],
+        "nl": [
+          "matrixexponentiaal"
+        ],
+        "de": [
+          "Matrixexponential"
+        ],
+        "fr": [
+          "exponentielle de matrice"
+        ],
+        "es": [
+          "exponencial de una matriz"
+        ],
+        "it": [
+          "esponenziale di matrice"
+        ],
+        "pl": [
+          "eksponenta macierzy"
+        ],
+        "ro": [
+          "exponențiala unei matrice"
+        ]
+      }
+    },
+    {
+      "title": "Matrix Representation of a Linear Map",
+      "names": {
+        "zh": [
+          "线性映射的矩阵表示",
+          "線性映射的矩陣表示"
+        ],
+        "nl": [
+          "matrixvoorstelling van een lineaire afbeelding"
+        ],
+        "de": [
+          "Darstellungsmatrix",
+          "Abbildungsmatrix"
+        ],
+        "fr": [
+          "matrice d'une application linéaire"
+        ],
+        "es": [
+          "matriz asociada a una aplicación lineal"
+        ],
+        "it": [
+          "matrice associata a un'applicazione lineare"
+        ],
+        "pl": [
+          "macierz przekształcenia liniowego"
+        ],
+        "ro": [
+          "matricea unei aplicații liniare"
+        ]
+      }
+    },
+    {
+      "title": "Moore-Penrose Inverse",
+      "names": {
+        "zh": [
+          "摩尔-彭若斯广义逆",
+          "摩爾-彭若斯廣義逆",
+          "伪逆",
+          "偽逆"
+        ],
+        "nl": [
+          "Moore-Penrose-inverse",
+          "pseudo-inverse"
+        ],
+        "de": [
+          "Moore-Penrose-Inverse",
+          "Pseudoinverse"
+        ],
+        "fr": [
+          "pseudo-inverse de Moore-Penrose"
+        ],
+        "es": [
+          "pseudoinversa de Moore-Penrose"
+        ],
+        "it": [
+          "pseudo-inversa di Moore-Penrose"
+        ],
+        "pl": [
+          "pseudoodwrotność Moore'a-Penrose'a"
+        ],
+        "ro": [
+          "pseudoinversa Moore-Penrose"
+        ]
+      }
+    },
+    {
+      "title": "Orthogonal Complement",
+      "names": {
+        "zh": [
+          "正交补",
+          "正交補"
+        ],
+        "nl": [
+          "orthogonaal complement"
+        ],
+        "de": [
+          "orthogonales Komplement"
+        ],
+        "fr": [
+          "supplémentaire orthogonal"
+        ],
+        "es": [
+          "complemento ortogonal"
+        ],
+        "it": [
+          "complemento ortogonale"
+        ],
+        "pl": [
+          "dopełnienie ortogonalne"
+        ],
+        "ro": [
+          "complement ortogonal"
+        ]
+      }
+    },
+    {
+      "title": "Orthogonal Projection",
+      "names": {
+        "zh": [
+          "正交投影"
+        ],
+        "nl": [
+          "orthogonale projectie"
+        ],
+        "de": [
+          "Orthogonalprojektion"
+        ],
+        "fr": [
+          "projection orthogonale"
+        ],
+        "es": [
+          "proyección ortogonal"
+        ],
+        "it": [
+          "proiezione ortogonale"
+        ],
+        "pl": [
+          "rzut ortogonalny"
+        ],
+        "ro": [
+          "proiecție ortogonală"
+        ]
+      }
+    },
+    {
+      "title": "Particular Solution of an Inhomogeneous Linear ODE",
+      "names": {
+        "zh": [
+          "非齐次线性微分方程的特解",
+          "非齊次線性微分方程的特解"
+        ],
+        "nl": [
+          "particuliere oplossing"
+        ],
+        "de": [
+          "partikuläre Lösung"
+        ],
+        "fr": [
+          "solution particulière"
+        ],
+        "es": [
+          "solución particular"
+        ],
+        "it": [
+          "soluzione particolare"
+        ],
+        "pl": [
+          "rozwiązanie szczególne"
+        ],
+        "ro": [
+          "soluție particulară"
+        ]
+      }
+    },
+    {
+      "title": "Row Space",
+      "names": {
+        "zh": [
+          "行空间",
+          "行空間"
+        ],
+        "nl": [
+          "rijruimte"
+        ],
+        "de": [
+          "Zeilenraum"
+        ],
+        "fr": [
+          "espace des lignes"
+        ],
+        "es": [
+          "espacio fila"
+        ],
+        "it": [
+          "spazio delle righe"
+        ],
+        "pl": [
+          "przestrzeń wierszy"
+        ],
+        "ro": [
+          "spațiul liniilor"
+        ]
+      }
+    },
+    {
+      "title": "Second-Order Differential Equation",
+      "names": {
+        "zh": [
+          "二阶微分方程",
+          "二階微分方程"
+        ],
+        "nl": [
+          "tweede-orde differentiaalvergelijking"
+        ],
+        "de": [
+          "Differentialgleichung zweiter Ordnung"
+        ],
+        "fr": [
+          "équation différentielle du second ordre"
+        ],
+        "es": [
+          "ecuación diferencial de segundo orden"
+        ],
+        "it": [
+          "equazione differenziale del secondo ordine"
+        ],
+        "pl": [
+          "równanie różniczkowe drugiego rzędu"
+        ],
+        "ro": [
+          "ecuație diferențială de ordinul al doilea"
+        ]
+      }
+    },
+    {
+      "title": "Second-Order Linear Difference Equation",
+      "names": {
+        "zh": [
+          "二阶线性差分方程",
+          "二階線性差分方程"
+        ],
+        "nl": [
+          "lineaire differentievergelijking van de tweede orde"
+        ],
+        "de": [
+          "lineare Differenzengleichung zweiter Ordnung"
+        ],
+        "fr": [
+          "équation aux différences linéaire du second ordre"
+        ],
+        "es": [
+          "ecuación en diferencias lineal de segundo orden"
+        ],
+        "it": [
+          "equazione alle differenze lineare del secondo ordine"
+        ],
+        "pl": [
+          "liniowe równanie różnicowe drugiego rzędu"
+        ],
+        "ro": [
+          "ecuație liniară cu diferențe de ordinul al doilea"
+        ]
+      }
+    },
+    {
+      "title": "Similarity Transformation",
+      "names": {
+        "zh": [
+          "相似变换",
+          "相似變換",
+          "相似矩阵",
+          "相似矩陣"
+        ],
+        "nl": [
+          "gelijkvormigheidstransformatie"
+        ],
+        "de": [
+          "Ähnlichkeitstransformation"
+        ],
+        "fr": [
+          "transformation de similitude"
+        ],
+        "es": [
+          "transformación de semejanza"
+        ],
+        "it": [
+          "trasformazione di similitudine"
+        ],
+        "pl": [
+          "przekształcenie przez podobieństwo"
+        ],
+        "ro": [
+          "transformare de asemănare"
+        ]
+      }
+    },
+    {
+      "title": "Singular Value Decomposition",
+      "names": {
+        "zh": [
+          "奇异值分解",
+          "奇異值分解"
+        ],
+        "nl": [
+          "singulierewaardenontbinding"
+        ],
+        "de": [
+          "Singulärwertzerlegung"
+        ],
+        "fr": [
+          "décomposition en valeurs singulières"
+        ],
+        "es": [
+          "descomposición en valores singulares"
+        ],
+        "it": [
+          "decomposizione ai valori singolari"
+        ],
+        "pl": [
+          "rozkład według wartości osobliwych"
+        ],
+        "ro": [
+          "descompunerea în valori singulare"
+        ]
+      }
+    },
+    {
+      "title": "Singular Value",
+      "names": {
+        "zh": [
+          "奇异值",
+          "奇異值"
+        ],
+        "nl": [
+          "singuliere waarde"
+        ],
+        "de": [
+          "Singulärwert"
+        ],
+        "fr": [
+          "valeur singulière"
+        ],
+        "es": [
+          "valor singular"
+        ],
+        "it": [
+          "valore singolare"
+        ],
+        "pl": [
+          "wartość osobliwa"
+        ],
+        "ro": [
+          "valoare singulară"
+        ]
+      }
+    },
+    {
+      "title": "Stability of an Equilibrium",
+      "names": {
+        "zh": [
+          "平衡点的稳定性",
+          "平衡點的穩定性"
+        ],
+        "nl": [
+          "stabiliteit van een evenwicht"
+        ],
+        "de": [
+          "Stabilität einer Ruhelage"
+        ],
+        "fr": [
+          "stabilité d'un équilibre"
+        ],
+        "es": [
+          "estabilidad de un equilibrio"
+        ],
+        "it": [
+          "stabilità di un equilibrio"
+        ],
+        "pl": [
+          "stabilność punktu równowagi"
+        ],
+        "ro": [
+          "stabilitatea unui echilibru"
+        ]
+      }
+    },
+    {
+      "title": "Stability of Solutions of Higher-Order ODEs",
+      "names": {
+        "zh": [
+          "高阶常微分方程解的稳定性",
+          "高階常微分方程解的穩定性"
+        ],
+        "nl": [
+          "stabiliteit van oplossingen van hogere-orde differentiaalvergelijkingen"
+        ],
+        "de": [
+          "Stabilität der Lösungen von Differentialgleichungen höherer Ordnung"
+        ],
+        "fr": [
+          "stabilité des solutions d'équations différentielles d'ordre supérieur"
+        ],
+        "es": [
+          "estabilidad de soluciones de ecuaciones diferenciales de orden superior"
+        ],
+        "it": [
+          "stabilità delle soluzioni di equazioni differenziali di ordine superiore"
+        ],
+        "pl": [
+          "stabilność rozwiązań równań różniczkowych wyższego rzędu"
+        ],
+        "ro": [
+          "stabilitatea soluțiilor ecuațiilor diferențiale de ordin superior"
+        ]
+      }
+    },
+    {
+      "title": "Stability of a System of Linear Difference Equations",
+      "names": {
+        "zh": [
+          "线性差分方程组的稳定性",
+          "線性差分方程組的穩定性"
+        ],
+        "nl": [
+          "stabiliteit van een stelsel lineaire differentievergelijkingen"
+        ],
+        "de": [
+          "Stabilität linearer Differenzengleichungssysteme"
+        ],
+        "fr": [
+          "stabilité d'un système d'équations aux différences linéaires"
+        ],
+        "es": [
+          "estabilidad de un sistema de ecuaciones en diferencias lineales"
+        ],
+        "it": [
+          "stabilità di un sistema di equazioni alle differenze lineari"
+        ],
+        "pl": [
+          "stabilność układu liniowych równań różnicowych"
+        ],
+        "ro": [
+          "stabilitatea unui sistem de ecuații liniare cu diferențe"
+        ]
+      }
+    },
+    {
+      "title": "Stability of a Scalar Difference Equation",
+      "names": {
+        "zh": [
+          "差分方程的稳定性",
+          "差分方程的穩定性"
+        ],
+        "nl": [
+          "stabiliteit van een differentievergelijking"
+        ],
+        "de": [
+          "Stabilität einer Differenzengleichung"
+        ],
+        "fr": [
+          "stabilité d'une équation aux différences"
+        ],
+        "es": [
+          "estabilidad de una ecuación en diferencias"
+        ],
+        "it": [
+          "stabilità di un'equazione alle differenze"
+        ],
+        "pl": [
+          "stabilność równania różnicowego"
+        ],
+        "ro": [
+          "stabilitatea unei ecuații cu diferențe"
+        ]
+      }
+    },
+    {
+      "title": "System of Differential Equations",
+      "names": {
+        "zh": [
+          "微分方程组",
+          "微分方程組"
+        ],
+        "nl": [
+          "stelsel differentiaalvergelijkingen"
+        ],
+        "de": [
+          "Differentialgleichungssystem"
+        ],
+        "fr": [
+          "système d'équations différentielles"
+        ],
+        "es": [
+          "sistema de ecuaciones diferenciales"
+        ],
+        "it": [
+          "sistema di equazioni differenziali"
+        ],
+        "pl": [
+          "układ równań różniczkowych"
+        ],
+        "ro": [
+          "sistem de ecuații diferențiale"
+        ]
+      }
+    },
+    {
+      "title": "System of Linear Difference Equations",
+      "names": {
+        "zh": [
+          "线性差分方程组",
+          "線性差分方程組"
+        ],
+        "nl": [
+          "stelsel lineaire differentievergelijkingen"
+        ],
+        "de": [
+          "lineares Differenzengleichungssystem"
+        ],
+        "fr": [
+          "système d'équations aux différences linéaires"
+        ],
+        "es": [
+          "sistema de ecuaciones en diferencias lineales"
+        ],
+        "it": [
+          "sistema di equazioni alle differenze lineari"
+        ],
+        "pl": [
+          "układ liniowych równań różnicowych"
+        ],
+        "ro": [
+          "sistem de ecuații liniare cu diferențe"
+        ]
+      }
+    },
+    {
+      "title": "Adverse Selection",
+      "names": {
+        "zh": [
+          "逆向选择",
+          "逆向選擇"
+        ],
+        "nl": [
+          "averechtse selectie",
+          "antiselectie"
+        ],
+        "de": [
+          "adverse Selektion",
+          "Negativauslese"
+        ],
+        "fr": [
+          "antisélection",
+          "sélection adverse"
+        ],
+        "es": [
+          "selección adversa"
+        ],
+        "it": [
+          "selezione avversa"
+        ],
+        "pl": [
+          "negatywna selekcja"
+        ],
+        "ro": [
+          "selecție adversă"
+        ]
+      }
+    },
+    {
+      "title": "Backward Induction",
+      "names": {
+        "zh": [
+          "逆向归纳法",
+          "逆向歸納法"
+        ],
+        "nl": [
+          "achterwaartse inductie"
+        ],
+        "de": [
+          "Rückwärtsinduktion"
+        ],
+        "fr": [
+          "induction à rebours"
+        ],
+        "es": [
+          "inducción hacia atrás"
+        ],
+        "it": [
+          "induzione a ritroso"
+        ],
+        "pl": [
+          "indukcja wsteczna"
+        ],
+        "ro": [
+          "inducție inversă"
+        ]
+      }
+    },
+    {
+      "title": "Bayes Rule for Beliefs",
+      "names": {
+        "zh": [
+          "信念的贝叶斯更新",
+          "信念的貝葉斯更新"
+        ],
+        "nl": [
+          "Bayesiaanse bijwerking van overtuigingen"
+        ],
+        "de": [
+          "Bayessche Aktualisierung von Überzeugungen"
+        ],
+        "fr": [
+          "révision bayésienne des croyances"
+        ],
+        "es": [
+          "actualización bayesiana de creencias"
+        ],
+        "it": [
+          "aggiornamento bayesiano delle credenze"
+        ],
+        "pl": [
+          "bayesowska aktualizacja przekonań"
+        ],
+        "ro": [
+          "actualizarea bayesiană a convingerilor"
+        ]
+      }
+    },
+    {
+      "title": "Bayesian Game",
+      "names": {
+        "zh": [
+          "贝叶斯博弈",
+          "貝葉斯博弈",
+          "貝氏賽局"
+        ],
+        "nl": [
+          "Bayesiaans spel"
+        ],
+        "de": [
+          "Bayessches Spiel"
+        ],
+        "fr": [
+          "jeu bayésien"
+        ],
+        "es": [
+          "juego bayesiano"
+        ],
+        "it": [
+          "gioco bayesiano"
+        ],
+        "pl": [
+          "gra bayesowska"
+        ],
+        "ro": [
+          "joc bayesian"
+        ]
+      }
+    },
+    {
+      "title": "Bayesian Nash Equilibrium",
+      "names": {
+        "zh": [
+          "贝叶斯纳什均衡",
+          "貝葉斯納什均衡"
+        ],
+        "nl": [
+          "Bayesiaans Nash-evenwicht"
+        ],
+        "de": [
+          "Bayes-Nash-Gleichgewicht"
+        ],
+        "fr": [
+          "équilibre de Nash bayésien"
+        ],
+        "es": [
+          "equilibrio de Nash bayesiano"
+        ],
+        "it": [
+          "equilibrio di Nash bayesiano"
+        ],
+        "pl": [
+          "bayesowska równowaga Nasha"
+        ],
+        "ro": [
+          "echilibru Nash bayesian"
+        ]
+      }
+    },
+    {
+      "title": "Bertrand Duopoly",
+      "names": {
+        "zh": [
+          "伯特兰双寡头",
+          "伯特蘭雙寡頭",
+          "伯特兰模型",
+          "伯特蘭模型"
+        ],
+        "nl": [
+          "Bertrand-duopolie"
+        ],
+        "de": [
+          "Bertrand-Duopol"
+        ],
+        "fr": [
+          "duopole de Bertrand"
+        ],
+        "es": [
+          "duopolio de Bertrand"
+        ],
+        "it": [
+          "duopolio di Bertrand"
+        ],
+        "pl": [
+          "duopol Bertranda"
+        ],
+        "ro": [
+          "duopolul Bertrand"
+        ]
+      }
+    },
+    {
+      "title": "Best-Response Correspondence",
+      "names": {
+        "zh": [
+          "最优反应对应",
+          "最優反應對應"
+        ],
+        "nl": [
+          "beste-antwoordcorrespondentie"
+        ],
+        "de": [
+          "Beste-Antwort-Korrespondenz"
+        ],
+        "fr": [
+          "correspondance de meilleure réponse"
+        ],
+        "es": [
+          "correspondencia de mejor respuesta"
+        ],
+        "it": [
+          "corrispondenza di miglior risposta"
+        ],
+        "pl": [
+          "odwzorowanie najlepszej odpowiedzi"
+        ],
+        "ro": [
+          "corespondența de cel mai bun răspuns"
+        ]
+      }
+    },
+    {
+      "title": "Best Response",
+      "names": {
+        "zh": [
+          "最优反应",
+          "最優反應",
+          "最佳反应",
+          "最佳反應"
+        ],
+        "nl": [
+          "beste antwoord"
+        ],
+        "de": [
+          "beste Antwort"
+        ],
+        "fr": [
+          "meilleure réponse"
+        ],
+        "es": [
+          "mejor respuesta"
+        ],
+        "it": [
+          "miglior risposta"
+        ],
+        "pl": [
+          "najlepsza odpowiedź"
+        ],
+        "ro": [
+          "cel mai bun răspuns"
+        ]
+      }
+    },
+    {
+      "title": "Chicken Game",
+      "names": {
+        "zh": [
+          "懦夫博弈",
+          "胆小鬼博弈",
+          "膽小鬼博弈"
+        ],
+        "nl": [
+          "chickenspel"
+        ],
+        "de": [
+          "Feiglingsspiel"
+        ],
+        "fr": [
+          "jeu de la poule mouillée"
+        ],
+        "es": [
+          "juego del gallina"
+        ],
+        "it": [
+          "gioco del pollo"
+        ],
+        "pl": [
+          "gra w cykora"
+        ],
+        "ro": [
+          "jocul chicken"
+        ]
+      }
+    },
+    {
+      "title": "Common Knowledge",
+      "names": {
+        "zh": [
+          "共同知识",
+          "共同知識"
+        ],
+        "nl": [
+          "gemeenschappelijke kennis"
+        ],
+        "de": [
+          "gemeinsames Wissen"
+        ],
+        "fr": [
+          "connaissance commune"
+        ],
+        "es": [
+          "conocimiento común"
+        ],
+        "it": [
+          "conoscenza comune"
+        ],
+        "pl": [
+          "wspólna wiedza"
+        ],
+        "ro": [
+          "cunoaștere comună"
+        ]
+      }
+    },
+    {
+      "title": "Common Prior",
+      "names": {
+        "zh": [
+          "共同先验",
+          "共同先驗"
+        ],
+        "nl": [
+          "gemeenschappelijke prior"
+        ],
+        "de": [
+          "gemeinsame A-priori-Verteilung"
+        ],
+        "fr": [
+          "a priori commun"
+        ],
+        "es": [
+          "creencia a priori común"
+        ],
+        "it": [
+          "prior comune"
+        ],
+        "pl": [
+          "wspólny rozkład a priori"
+        ],
+        "ro": [
+          "distribuție a priori comună"
+        ]
+      }
+    },
+    {
+      "title": "Common-Value Auction",
+      "names": {
+        "zh": [
+          "共同价值拍卖",
+          "共同價值拍賣"
+        ],
+        "nl": [
+          "veiling met gemeenschappelijke waarde"
+        ],
+        "de": [
+          "Auktion mit gemeinsamem Wert"
+        ],
+        "fr": [
+          "enchère à valeur commune"
+        ],
+        "es": [
+          "subasta de valor común"
+        ],
+        "it": [
+          "asta a valore comune"
+        ],
+        "pl": [
+          "aukcja o wspólnej wartości"
+        ],
+        "ro": [
+          "licitație cu valoare comună"
+        ]
+      }
+    },
+    {
+      "title": "Cournot Duopoly",
+      "names": {
+        "zh": [
+          "古诺双寡头",
+          "古諾雙寡頭",
+          "古诺模型",
+          "古諾模型"
+        ],
+        "nl": [
+          "Cournot-duopolie"
+        ],
+        "de": [
+          "Cournot-Duopol"
+        ],
+        "fr": [
+          "duopole de Cournot"
+        ],
+        "es": [
+          "duopolio de Cournot"
+        ],
+        "it": [
+          "duopolio di Cournot"
+        ],
+        "pl": [
+          "duopol Cournota"
+        ],
+        "ro": [
+          "duopolul Cournot"
+        ]
+      }
+    },
+    {
+      "title": "Dutch Auction",
+      "names": {
+        "zh": [
+          "荷兰式拍卖",
+          "荷蘭式拍賣"
+        ],
+        "nl": [
+          "Hollandse veiling",
+          "veiling bij afslag"
+        ],
+        "de": [
+          "holländische Auktion"
+        ],
+        "fr": [
+          "enchère hollandaise"
+        ],
+        "es": [
+          "subasta holandesa"
+        ],
+        "it": [
+          "asta olandese"
+        ],
+        "pl": [
+          "aukcja holenderska"
+        ],
+        "ro": [
+          "licitație olandeză"
+        ]
+      }
+    },
+    {
+      "title": "English Auction",
+      "names": {
+        "zh": [
+          "英式拍卖",
+          "英式拍賣"
+        ],
+        "nl": [
+          "Engelse veiling",
+          "veiling bij opbod"
+        ],
+        "de": [
+          "englische Auktion"
+        ],
+        "fr": [
+          "enchère anglaise"
+        ],
+        "es": [
+          "subasta inglesa"
+        ],
+        "it": [
+          "asta inglese"
+        ],
+        "pl": [
+          "aukcja angielska"
+        ],
+        "ro": [
+          "licitație englezească"
+        ]
+      }
+    },
+    {
+      "title": "Expected Payoff Maximization",
+      "names": {
+        "zh": [
+          "期望收益最大化"
+        ],
+        "nl": [
+          "maximalisatie van de verwachte uitbetaling"
+        ],
+        "de": [
+          "Maximierung der erwarteten Auszahlung"
+        ],
+        "fr": [
+          "maximisation du gain espéré"
+        ],
+        "es": [
+          "maximización del pago esperado"
+        ],
+        "it": [
+          "massimizzazione del payoff atteso"
+        ],
+        "pl": [
+          "maksymalizacja oczekiwanej wypłaty"
+        ],
+        "ro": [
+          "maximizarea câștigului așteptat"
+        ]
+      }
+    },
+    {
+      "title": "Extensive-Form Game",
+      "names": {
+        "zh": [
+          "扩展式博弈",
+          "擴展式博弈",
+          "擴展式賽局"
+        ],
+        "nl": [
+          "spel in extensieve vorm"
+        ],
+        "de": [
+          "Spiel in extensiver Form"
+        ],
+        "fr": [
+          "jeu sous forme extensive"
+        ],
+        "es": [
+          "juego en forma extensiva"
+        ],
+        "it": [
+          "gioco in forma estesa"
+        ],
+        "pl": [
+          "gra w postaci ekstensywnej"
+        ],
+        "ro": [
+          "joc în formă extinsă"
+        ]
+      }
+    },
+    {
+      "title": "First-Price Auction",
+      "names": {
+        "zh": [
+          "第一价格拍卖",
+          "第一價格拍賣"
+        ],
+        "nl": [
+          "eerste-prijsveiling"
+        ],
+        "de": [
+          "Erstpreisauktion"
+        ],
+        "fr": [
+          "enchère au premier prix"
+        ],
+        "es": [
+          "subasta de primer precio"
+        ],
+        "it": [
+          "asta al primo prezzo"
+        ],
+        "pl": [
+          "aukcja pierwszej ceny"
+        ],
+        "ro": [
+          "licitație la primul preț"
+        ]
+      }
+    },
+    {
+      "title": "Folk Theorem",
+      "names": {
+        "zh": [
+          "无名氏定理",
+          "無名氏定理",
+          "民间定理",
+          "民間定理"
+        ],
+        "nl": [
+          "folkteorema"
+        ],
+        "de": [
+          "Folk-Theorem"
+        ],
+        "fr": [
+          "théorème folk"
+        ],
+        "es": [
+          "teorema folk"
+        ],
+        "it": [
+          "teorema folk"
+        ],
+        "pl": [
+          "twierdzenie ludowe"
+        ],
+        "ro": [
+          "teorema folk"
+        ]
+      }
+    },
+    {
+      "title": "Forward Induction",
+      "names": {
+        "zh": [
+          "前向归纳法",
+          "前向歸納法"
+        ],
+        "nl": [
+          "voorwaartse inductie"
+        ],
+        "de": [
+          "Vorwärtsinduktion"
+        ],
+        "fr": [
+          "induction vers l'avant"
+        ],
+        "es": [
+          "inducción hacia adelante"
+        ],
+        "it": [
+          "induzione in avanti"
+        ],
+        "pl": [
+          "indukcja w przód"
+        ],
+        "ro": [
+          "inducție înainte"
+        ]
+      }
+    },
+    {
+      "title": "Game Theory",
+      "names": {
+        "zh": [
+          "博弈论",
+          "博弈論",
+          "賽局理論",
+          "对策论",
+          "對策論"
+        ],
+        "nl": [
+          "speltheorie"
+        ],
+        "de": [
+          "Spieltheorie"
+        ],
+        "fr": [
+          "théorie des jeux"
+        ],
+        "es": [
+          "teoría de juegos"
+        ],
+        "it": [
+          "teoria dei giochi"
+        ],
+        "pl": [
+          "teoria gier"
+        ],
+        "ro": [
+          "teoria jocurilor"
+        ]
+      }
+    },
+    {
+      "title": "Grim Trigger Strategy",
+      "names": {
+        "zh": [
+          "冷酷触发策略",
+          "冷酷觸發策略"
+        ],
+        "nl": [
+          "grim-triggerstrategie"
+        ],
+        "de": [
+          "Grim-Trigger-Strategie"
+        ],
+        "fr": [
+          "stratégie grim trigger"
+        ],
+        "es": [
+          "estrategia grim trigger"
+        ],
+        "it": [
+          "strategia grim trigger"
+        ],
+        "pl": [
+          "strategia grim trigger"
+        ],
+        "ro": [
+          "strategia grim trigger"
+        ]
+      }
+    },
+    {
+      "title": "Harsanyi Purification Theorem",
+      "names": {
+        "zh": [
+          "海萨尼纯化定理",
+          "海薩尼純化定理"
+        ],
+        "nl": [
+          "zuiveringsstelling van Harsanyi"
+        ],
+        "de": [
+          "Purifikationstheorem von Harsanyi"
+        ],
+        "fr": [
+          "théorème de purification de Harsanyi"
+        ],
+        "es": [
+          "teorema de purificación de Harsanyi"
+        ],
+        "it": [
+          "teorema di purificazione di Harsanyi"
+        ],
+        "pl": [
+          "twierdzenie Harsanyiego o puryfikacji"
+        ],
+        "ro": [
+          "teorema de purificare a lui Harsanyi"
+        ]
+      }
+    },
+    {
+      "title": "Harsanyi Transformation",
+      "names": {
+        "zh": [
+          "海萨尼转换",
+          "海薩尼轉換"
+        ],
+        "nl": [
+          "Harsanyi-transformatie"
+        ],
+        "de": [
+          "Harsanyi-Transformation"
+        ],
+        "fr": [
+          "transformation de Harsanyi"
+        ],
+        "es": [
+          "transformación de Harsanyi"
+        ],
+        "it": [
+          "trasformazione di Harsanyi"
+        ],
+        "pl": [
+          "transformacja Harsanyiego"
+        ],
+        "ro": [
+          "transformarea Harsanyi"
+        ]
+      }
+    },
+    {
+      "title": "History in a Multistage Game",
+      "names": {
+        "zh": [
+          "多阶段博弈中的历史",
+          "多階段博弈中的歷史"
+        ],
+        "nl": [
+          "geschiedenis in een meertrapsspel"
+        ],
+        "de": [
+          "Spielverlauf in einem mehrstufigen Spiel"
+        ],
+        "fr": [
+          "histoire dans un jeu à plusieurs étapes"
+        ],
+        "es": [
+          "historia en un juego multietapa"
+        ],
+        "it": [
+          "storia in un gioco a più stadi"
+        ],
+        "pl": [
+          "historia w grze wieloetapowej"
+        ],
+        "ro": [
+          "istoria într-un joc în mai multe etape"
+        ]
+      }
+    },
+    {
+      "title": "Indifference Principle for Mixed Strategies",
+      "names": {
+        "zh": [
+          "混合策略无差异原则",
+          "混合策略無差異原則"
+        ],
+        "nl": [
+          "indifferentieprincipe voor gemengde strategieën"
+        ],
+        "de": [
+          "Indifferenzprinzip für gemischte Strategien"
+        ],
+        "fr": [
+          "principe d'indifférence pour les stratégies mixtes"
+        ],
+        "es": [
+          "principio de indiferencia para estrategias mixtas"
+        ],
+        "it": [
+          "principio di indifferenza per strategie miste"
+        ],
+        "pl": [
+          "zasada obojętności dla strategii mieszanych"
+        ],
+        "ro": [
+          "principiul indiferenței pentru strategii mixte"
+        ]
+      }
+    },
+    {
+      "title": "Information Set",
+      "names": {
+        "zh": [
+          "信息集",
+          "資訊集"
+        ],
+        "nl": [
+          "informatieverzameling"
+        ],
+        "de": [
+          "Informationsmenge"
+        ],
+        "fr": [
+          "ensemble d'information"
+        ],
+        "es": [
+          "conjunto de información"
+        ],
+        "it": [
+          "insieme informativo"
+        ],
+        "pl": [
+          "zbiór informacyjny"
+        ],
+        "ro": [
+          "mulțime informațională"
+        ]
+      }
+    },
+    {
+      "title": "Iterated Elimination of Strictly Dominated Strategies",
+      "names": {
+        "zh": [
+          "重复剔除严格劣策略",
+          "重複剔除嚴格劣策略"
+        ],
+        "nl": [
+          "iteratieve eliminatie van strikt gedomineerde strategieën"
+        ],
+        "de": [
+          "iterierte Elimination strikt dominierter Strategien"
+        ],
+        "fr": [
+          "élimination itérée des stratégies strictement dominées"
+        ],
+        "es": [
+          "eliminación iterada de estrategias estrictamente dominadas"
+        ],
+        "it": [
+          "eliminazione iterata delle strategie strettamente dominate"
+        ],
+        "pl": [
+          "iteracyjna eliminacja strategii ściśle zdominowanych"
+        ],
+        "ro": [
+          "eliminarea iterată a strategiilor strict dominate"
+        ]
+      }
+    },
+    {
+      "title": "Market for Lemons",
+      "names": {
+        "zh": [
+          "柠檬市场",
+          "檸檬市場"
+        ],
+        "nl": [
+          "markt voor citroenen"
+        ],
+        "de": [
+          "Markt für Zitronen"
+        ],
+        "fr": [
+          "marché des citrons"
+        ],
+        "es": [
+          "mercado de limones"
+        ],
+        "it": [
+          "mercato dei bidoni"
+        ],
+        "pl": [
+          "rynek cytryn"
+        ],
+        "ro": [
+          "piața lămâilor"
+        ]
+      }
+    },
+    {
+      "title": "Median Voter Theorem",
+      "names": {
+        "zh": [
+          "中间选民定理",
+          "中間選民定理"
+        ],
+        "nl": [
+          "mediane-kiezerstelling"
+        ],
+        "de": [
+          "Medianwählertheorem"
+        ],
+        "fr": [
+          "théorème de l'électeur médian"
+        ],
+        "es": [
+          "teorema del votante mediano"
+        ],
+        "it": [
+          "teorema dell'elettore mediano"
+        ],
+        "pl": [
+          "twierdzenie o wyborcy medianowym"
+        ],
+        "ro": [
+          "teorema alegătorului median"
+        ]
+      }
+    },
+    {
+      "title": "Mixed Strategy",
+      "names": {
+        "zh": [
+          "混合策略"
+        ],
+        "nl": [
+          "gemengde strategie"
+        ],
+        "de": [
+          "gemischte Strategie"
+        ],
+        "fr": [
+          "stratégie mixte"
+        ],
+        "es": [
+          "estrategia mixta"
+        ],
+        "it": [
+          "strategia mista"
+        ],
+        "pl": [
+          "strategia mieszana"
+        ],
+        "ro": [
+          "strategie mixtă"
+        ]
+      }
+    },
+    {
+      "title": "Multistage Game",
+      "names": {
+        "zh": [
+          "多阶段博弈",
+          "多階段博弈"
+        ],
+        "nl": [
+          "meertrapsspel"
+        ],
+        "de": [
+          "mehrstufiges Spiel"
+        ],
+        "fr": [
+          "jeu à plusieurs étapes"
+        ],
+        "es": [
+          "juego multietapa"
+        ],
+        "it": [
+          "gioco a più stadi"
+        ],
+        "pl": [
+          "gra wieloetapowa"
+        ],
+        "ro": [
+          "joc în mai multe etape"
+        ]
+      }
+    },
+    {
+      "title": "Nash Equilibrium in Mixed Strategies",
+      "names": {
+        "zh": [
+          "混合策略纳什均衡",
+          "混合策略納什均衡"
+        ],
+        "nl": [
+          "Nash-evenwicht in gemengde strategieën"
+        ],
+        "de": [
+          "Nash-Gleichgewicht in gemischten Strategien"
+        ],
+        "fr": [
+          "équilibre de Nash en stratégies mixtes"
+        ],
+        "es": [
+          "equilibrio de Nash en estrategias mixtas"
+        ],
+        "it": [
+          "equilibrio di Nash in strategie miste"
+        ],
+        "pl": [
+          "równowaga Nasha w strategiach mieszanych"
+        ],
+        "ro": [
+          "echilibru Nash în strategii mixte"
+        ]
+      }
+    },
+    {
+      "title": "Nash Equilibrium",
+      "names": {
+        "zh": [
+          "纳什均衡",
+          "納什均衡"
+        ],
+        "nl": [
+          "Nash-evenwicht"
+        ],
+        "de": [
+          "Nash-Gleichgewicht"
+        ],
+        "fr": [
+          "équilibre de Nash"
+        ],
+        "es": [
+          "equilibrio de Nash"
+        ],
+        "it": [
+          "equilibrio di Nash"
+        ],
+        "pl": [
+          "równowaga Nasha"
+        ],
+        "ro": [
+          "echilibru Nash"
+        ]
+      }
+    },
+    {
+      "title": "Nash Existence Theorem",
+      "names": {
+        "zh": [
+          "纳什均衡存在定理",
+          "納什均衡存在定理"
+        ],
+        "nl": [
+          "existentiestelling van Nash"
+        ],
+        "de": [
+          "Existenzsatz von Nash"
+        ],
+        "fr": [
+          "théorème d'existence de Nash"
+        ],
+        "es": [
+          "teorema de existencia de Nash"
+        ],
+        "it": [
+          "teorema di esistenza di Nash"
+        ],
+        "pl": [
+          "twierdzenie Nasha o istnieniu równowagi"
+        ],
+        "ro": [
+          "teorema de existență a lui Nash"
+        ]
+      }
+    },
+    {
+      "title": "Normal-Form Game",
+      "names": {
+        "zh": [
+          "标准式博弈",
+          "標準式博弈",
+          "策略式博弈"
+        ],
+        "nl": [
+          "spel in normaalvorm"
+        ],
+        "de": [
+          "Spiel in Normalform"
+        ],
+        "fr": [
+          "jeu sous forme normale"
+        ],
+        "es": [
+          "juego en forma normal"
+        ],
+        "it": [
+          "gioco in forma normale"
+        ],
+        "pl": [
+          "gra w postaci normalnej"
+        ],
+        "ro": [
+          "joc în formă normală"
+        ]
+      }
+    },
+    {
+      "title": "One-Stage Deviation Principle",
+      "names": {
+        "zh": [
+          "单阶段偏离原则",
+          "單階段偏離原則"
+        ],
+        "nl": [
+          "eenstapsafwijkingsprincipe"
+        ],
+        "de": [
+          "Prinzip der einstufigen Abweichung"
+        ],
+        "fr": [
+          "principe de déviation en une étape"
+        ],
+        "es": [
+          "principio de desviación en una etapa"
+        ],
+        "it": [
+          "principio della deviazione a uno stadio"
+        ],
+        "pl": [
+          "zasada jednoetapowego odchylenia"
+        ],
+        "ro": [
+          "principiul deviației într-o singură etapă"
+        ]
+      }
+    },
+    {
+      "title": "Pareto Efficiency",
+      "names": {
+        "zh": [
+          "帕累托效率",
+          "帕累托最优",
+          "帕累托最優"
+        ],
+        "nl": [
+          "Pareto-efficiëntie",
+          "Pareto-optimaliteit"
+        ],
+        "de": [
+          "Pareto-Effizienz",
+          "Pareto-Optimalität"
+        ],
+        "fr": [
+          "efficacité de Pareto",
+          "optimum de Pareto"
+        ],
+        "es": [
+          "eficiencia de Pareto",
+          "óptimo de Pareto"
+        ],
+        "it": [
+          "efficienza paretiana",
+          "ottimo paretiano"
+        ],
+        "pl": [
+          "efektywność w sensie Pareto",
+          "optimum Pareto"
+        ],
+        "ro": [
+          "eficiență Pareto",
+          "optim Pareto"
+        ]
+      }
+    },
+    {
+      "title": "Perfect Bayesian Equilibrium",
+      "names": {
+        "zh": [
+          "完美贝叶斯均衡",
+          "完美貝葉斯均衡"
+        ],
+        "nl": [
+          "perfect Bayesiaans evenwicht"
+        ],
+        "de": [
+          "perfektes Bayes-Gleichgewicht"
+        ],
+        "fr": [
+          "équilibre bayésien parfait"
+        ],
+        "es": [
+          "equilibrio bayesiano perfecto"
+        ],
+        "it": [
+          "equilibrio bayesiano perfetto"
+        ],
+        "pl": [
+          "doskonała równowaga bayesowska"
+        ],
+        "ro": [
+          "echilibru bayesian perfect"
+        ]
+      }
+    },
+    {
+      "title": "Pooling Equilibrium",
+      "names": {
+        "zh": [
+          "混同均衡"
+        ],
+        "nl": [
+          "pooling-evenwicht"
+        ],
+        "de": [
+          "Pooling-Gleichgewicht"
+        ],
+        "fr": [
+          "équilibre mélangeant"
+        ],
+        "es": [
+          "equilibrio agrupador"
+        ],
+        "it": [
+          "equilibrio pooling"
+        ],
+        "pl": [
+          "równowaga łącząca"
+        ],
+        "ro": [
+          "echilibru de tip pooling"
+        ]
+      }
+    },
+    {
+      "title": "Private-Value Auction",
+      "names": {
+        "zh": [
+          "私人价值拍卖",
+          "私人價值拍賣"
+        ],
+        "nl": [
+          "veiling met privéwaarden"
+        ],
+        "de": [
+          "Auktion mit privaten Werten"
+        ],
+        "fr": [
+          "enchère à valeurs privées"
+        ],
+        "es": [
+          "subasta de valores privados"
+        ],
+        "it": [
+          "asta a valori privati"
+        ],
+        "pl": [
+          "aukcja o wartościach prywatnych"
+        ],
+        "ro": [
+          "licitație cu valori private"
+        ]
+      }
+    },
+    {
+      "title": "Pure Strategy",
+      "names": {
+        "zh": [
+          "纯策略",
+          "純策略"
+        ],
+        "nl": [
+          "zuivere strategie"
+        ],
+        "de": [
+          "reine Strategie"
+        ],
+        "fr": [
+          "stratégie pure"
+        ],
+        "es": [
+          "estrategia pura"
+        ],
+        "it": [
+          "strategia pura"
+        ],
+        "pl": [
+          "strategia czysta"
+        ],
+        "ro": [
+          "strategie pură"
+        ]
+      }
+    },
+    {
+      "title": "Rational Agent",
+      "names": {
+        "zh": [
+          "理性参与人",
+          "理性參與人",
+          "理性人"
+        ],
+        "nl": [
+          "rationele actor"
+        ],
+        "de": [
+          "rationaler Akteur"
+        ],
+        "fr": [
+          "agent rationnel"
+        ],
+        "es": [
+          "agente racional"
+        ],
+        "it": [
+          "agente razionale"
+        ],
+        "pl": [
+          "racjonalny agent"
+        ],
+        "ro": [
+          "agent rațional"
+        ]
+      }
+    },
+    {
+      "title": "Repeated Game",
+      "names": {
+        "zh": [
+          "重复博弈",
+          "重複博弈",
+          "重複賽局"
+        ],
+        "nl": [
+          "herhaald spel"
+        ],
+        "de": [
+          "wiederholtes Spiel"
+        ],
+        "fr": [
+          "jeu répété"
+        ],
+        "es": [
+          "juego repetido"
+        ],
+        "it": [
+          "gioco ripetuto"
+        ],
+        "pl": [
+          "gra powtarzana"
+        ],
+        "ro": [
+          "joc repetat"
+        ]
+      }
+    },
+    {
+      "title": "Revenue Equivalence Theorem",
+      "names": {
+        "zh": [
+          "收益等价定理",
+          "收益等價定理"
+        ],
+        "nl": [
+          "opbrengstequivalentiestelling"
+        ],
+        "de": [
+          "Erlösäquivalenztheorem"
+        ],
+        "fr": [
+          "théorème d'équivalence du revenu"
+        ],
+        "es": [
+          "teorema de equivalencia de ingresos"
+        ],
+        "it": [
+          "teorema di equivalenza dei ricavi"
+        ],
+        "pl": [
+          "twierdzenie o równoważności przychodów"
+        ],
+        "ro": [
+          "teorema echivalenței veniturilor"
+        ]
+      }
+    },
+    {
+      "title": "Second-Price Auction",
+      "names": {
+        "zh": [
+          "第二价格拍卖",
+          "第二價格拍賣",
+          "维克里拍卖",
+          "維克里拍賣"
+        ],
+        "nl": [
+          "tweede-prijsveiling",
+          "Vickrey-veiling"
+        ],
+        "de": [
+          "Zweitpreisauktion",
+          "Vickrey-Auktion"
+        ],
+        "fr": [
+          "enchère au second prix",
+          "enchère de Vickrey"
+        ],
+        "es": [
+          "subasta de segundo precio",
+          "subasta de Vickrey"
+        ],
+        "it": [
+          "asta al secondo prezzo",
+          "asta di Vickrey"
+        ],
+        "pl": [
+          "aukcja drugiej ceny",
+          "aukcja Vickreya"
+        ],
+        "ro": [
+          "licitație la al doilea preț",
+          "licitație Vickrey"
+        ]
+      }
+    },
+    {
+      "title": "Separating Equilibrium",
+      "names": {
+        "zh": [
+          "分离均衡",
+          "分離均衡"
+        ],
+        "nl": [
+          "scheidend evenwicht"
+        ],
+        "de": [
+          "separierendes Gleichgewicht"
+        ],
+        "fr": [
+          "équilibre séparateur"
+        ],
+        "es": [
+          "equilibrio separador"
+        ],
+        "it": [
+          "equilibrio separante"
+        ],
+        "pl": [
+          "równowaga rozdzielająca"
+        ],
+        "ro": [
+          "echilibru separator"
+        ]
+      }
+    },
+    {
+      "title": "Sequential Rationality",
+      "names": {
+        "zh": [
+          "序贯理性",
+          "序貫理性"
+        ],
+        "nl": [
+          "sequentiële rationaliteit"
+        ],
+        "de": [
+          "sequentielle Rationalität"
+        ],
+        "fr": [
+          "rationalité séquentielle"
+        ],
+        "es": [
+          "racionalidad secuencial"
+        ],
+        "it": [
+          "razionalità sequenziale"
+        ],
+        "pl": [
+          "racjonalność sekwencyjna"
+        ],
+        "ro": [
+          "raționalitate secvențială"
+        ]
+      }
+    },
+    {
+      "title": "Signalling Game",
+      "names": {
+        "zh": [
+          "信号博弈",
+          "信號博弈",
+          "信號賽局"
+        ],
+        "nl": [
+          "signaleringsspel"
+        ],
+        "de": [
+          "Signalspiel"
+        ],
+        "fr": [
+          "jeu de signalisation"
+        ],
+        "es": [
+          "juego de señalización"
+        ],
+        "it": [
+          "gioco di segnalazione"
+        ],
+        "pl": [
+          "gra sygnalizacyjna"
+        ],
+        "ro": [
+          "joc de semnalizare"
+        ]
+      }
+    },
+    {
+      "title": "Stackelberg Competition",
+      "names": {
+        "zh": [
+          "斯塔克尔伯格竞争",
+          "斯塔克爾伯格競爭",
+          "斯塔克尔伯格模型",
+          "斯塔克爾伯格模型"
+        ],
+        "nl": [
+          "Stackelberg-concurrentie"
+        ],
+        "de": [
+          "Stackelberg-Wettbewerb",
+          "Stackelberg-Modell"
+        ],
+        "fr": [
+          "concurrence à la Stackelberg",
+          "duopole de Stackelberg"
+        ],
+        "es": [
+          "competencia de Stackelberg"
+        ],
+        "it": [
+          "concorrenza alla Stackelberg",
+          "duopolio di Stackelberg"
+        ],
+        "pl": [
+          "konkurencja Stackelberga",
+          "model Stackelberga"
+        ],
+        "ro": [
+          "concurența Stackelberg"
+        ]
+      }
+    },
+    {
+      "title": "Stage Game",
+      "names": {
+        "zh": [
+          "阶段博弈",
+          "階段博弈"
+        ],
+        "nl": [
+          "basisspel"
+        ],
+        "de": [
+          "Stufenspiel"
+        ],
+        "fr": [
+          "jeu de base"
+        ],
+        "es": [
+          "juego de etapa"
+        ],
+        "it": [
+          "gioco costituente"
+        ],
+        "pl": [
+          "gra bazowa"
+        ],
+        "ro": [
+          "joc de bază"
+        ]
+      }
+    },
+    {
+      "title": "Static Game of Complete Information",
+      "names": {
+        "zh": [
+          "完全信息静态博弈",
+          "完全信息靜態博弈",
+          "完全資訊靜態賽局"
+        ],
+        "nl": [
+          "statisch spel met volledige informatie"
+        ],
+        "de": [
+          "statisches Spiel mit vollständiger Information"
+        ],
+        "fr": [
+          "jeu statique à information complète"
+        ],
+        "es": [
+          "juego estático con información completa"
+        ],
+        "it": [
+          "gioco statico a informazione completa"
+        ],
+        "pl": [
+          "gra statyczna z pełną informacją"
+        ],
+        "ro": [
+          "joc static cu informație completă"
+        ]
+      }
+    },
+    {
+      "title": "Strategy in an Extensive-Form Game",
+      "names": {
+        "zh": [
+          "扩展式博弈中的策略",
+          "擴展式博弈中的策略"
+        ],
+        "nl": [
+          "strategie in een spel in extensieve vorm"
+        ],
+        "de": [
+          "Strategie in einem Spiel in extensiver Form"
+        ],
+        "fr": [
+          "stratégie dans un jeu sous forme extensive"
+        ],
+        "es": [
+          "estrategia en un juego en forma extensiva"
+        ],
+        "it": [
+          "strategia in un gioco in forma estesa"
+        ],
+        "pl": [
+          "strategia w grze w postaci ekstensywnej"
+        ],
+        "ro": [
+          "strategie într-un joc în formă extinsă"
+        ]
+      }
+    },
+    {
+      "title": "Strictly Dominant Strategy",
+      "names": {
+        "zh": [
+          "严格占优策略",
+          "嚴格佔優策略",
+          "嚴格優勢策略"
+        ],
+        "nl": [
+          "strikt dominante strategie"
+        ],
+        "de": [
+          "strikt dominante Strategie"
+        ],
+        "fr": [
+          "stratégie strictement dominante"
+        ],
+        "es": [
+          "estrategia estrictamente dominante"
+        ],
+        "it": [
+          "strategia strettamente dominante"
+        ],
+        "pl": [
+          "strategia ściśle dominująca"
+        ],
+        "ro": [
+          "strategie strict dominantă"
+        ]
+      }
+    },
+    {
+      "title": "Strictly Dominated Strategy",
+      "names": {
+        "zh": [
+          "严格劣策略",
+          "嚴格劣策略"
+        ],
+        "nl": [
+          "strikt gedomineerde strategie"
+        ],
+        "de": [
+          "strikt dominierte Strategie"
+        ],
+        "fr": [
+          "stratégie strictement dominée"
+        ],
+        "es": [
+          "estrategia estrictamente dominada"
+        ],
+        "it": [
+          "strategia strettamente dominata"
+        ],
+        "pl": [
+          "strategia ściśle zdominowana"
+        ],
+        "ro": [
+          "strategie strict dominată"
+        ]
+      }
+    },
+    {
+      "title": "Subgame-Perfect Nash Equilibrium",
+      "names": {
+        "zh": [
+          "子博弈完美纳什均衡",
+          "子博弈完美納什均衡",
+          "子博弈精炼纳什均衡",
+          "子博弈精煉納什均衡"
+        ],
+        "nl": [
+          "subspelperfect Nash-evenwicht"
+        ],
+        "de": [
+          "teilspielperfektes Nash-Gleichgewicht",
+          "teilspielperfektes Gleichgewicht"
+        ],
+        "fr": [
+          "équilibre de Nash parfait en sous-jeux"
+        ],
+        "es": [
+          "equilibrio de Nash perfecto en subjuegos"
+        ],
+        "it": [
+          "equilibrio di Nash perfetto nei sottogiochi"
+        ],
+        "pl": [
+          "równowaga Nasha doskonała w podgrach"
+        ],
+        "ro": [
+          "echilibru Nash perfect în subjocuri"
+        ]
+      }
+    },
+    {
+      "title": "Subgame",
+      "names": {
+        "zh": [
+          "子博弈"
+        ],
+        "nl": [
+          "subspel"
+        ],
+        "de": [
+          "Teilspiel"
+        ],
+        "fr": [
+          "sous-jeu"
+        ],
+        "es": [
+          "subjuego"
+        ],
+        "it": [
+          "sottogioco"
+        ],
+        "pl": [
+          "podgra"
+        ],
+        "ro": [
+          "subjoc"
+        ]
+      }
+    },
+    {
+      "title": "System of Beliefs",
+      "names": {
+        "zh": [
+          "信念系统",
+          "信念系統"
+        ],
+        "nl": [
+          "stelsel van overtuigingen"
+        ],
+        "de": [
+          "System von Überzeugungen"
+        ],
+        "fr": [
+          "système de croyances"
+        ],
+        "es": [
+          "sistema de creencias"
+        ],
+        "it": [
+          "sistema di credenze"
+        ],
+        "pl": [
+          "system przekonań"
+        ],
+        "ro": [
+          "sistem de convingeri"
+        ]
+      }
+    },
+    {
+      "title": "Trigger Strategy",
+      "names": {
+        "zh": [
+          "触发策略",
+          "觸發策略"
+        ],
+        "nl": [
+          "triggerstrategie"
+        ],
+        "de": [
+          "Trigger-Strategie"
+        ],
+        "fr": [
+          "stratégie de déclenchement"
+        ],
+        "es": [
+          "estrategia de gatillo"
+        ],
+        "it": [
+          "strategia trigger"
+        ],
+        "pl": [
+          "strategia wyzwalająca"
+        ],
+        "ro": [
+          "strategie de declanșare"
+        ]
+      }
+    },
+    {
+      "title": "Type",
+      "names": {
+        "zh": [
+          "参与人类型",
+          "參與人類型",
+          "类型",
+          "類型"
+        ],
+        "nl": [
+          "type van een speler"
+        ],
+        "de": [
+          "Typ eines Spielers"
+        ],
+        "fr": [
+          "type d'un joueur"
+        ],
+        "es": [
+          "tipo de un jugador"
+        ],
+        "it": [
+          "tipo di un giocatore"
+        ],
+        "pl": [
+          "typ gracza"
+        ],
+        "ro": [
+          "tipul unui jucător"
+        ]
+      }
+    },
+    {
+      "title": "Weakly Dominant Strategy",
+      "names": {
+        "zh": [
+          "弱占优策略",
+          "弱佔優策略",
+          "弱優勢策略"
+        ],
+        "nl": [
+          "zwak dominante strategie"
+        ],
+        "de": [
+          "schwach dominante Strategie"
+        ],
+        "fr": [
+          "stratégie faiblement dominante"
+        ],
+        "es": [
+          "estrategia débilmente dominante"
+        ],
+        "it": [
+          "strategia debolmente dominante"
+        ],
+        "pl": [
+          "strategia słabo dominująca"
+        ],
+        "ro": [
+          "strategie slab dominantă"
+        ]
+      }
+    },
+    {
+      "title": "Winner's Curse",
+      "names": {
+        "zh": [
+          "赢者诅咒",
+          "贏者詛咒",
+          "赢家诅咒",
+          "贏家詛咒"
+        ],
+        "nl": [
+          "vloek van de winnaar"
+        ],
+        "de": [
+          "Fluch des Gewinners"
+        ],
+        "fr": [
+          "malédiction du vainqueur"
+        ],
+        "es": [
+          "maldición del ganador"
+        ],
+        "it": [
+          "maledizione del vincitore"
+        ],
+        "pl": [
+          "przekleństwo zwycięzcy"
+        ],
+        "ro": [
+          "blestemul câștigătorului"
+        ]
+      }
+    },
+    {
+      "title": "Absolute Risk Aversion",
+      "names": {
+        "zh": [
+          "绝对风险厌恶",
+          "絕對風險厭惡",
+          "绝对风险规避",
+          "絕對風險規避"
+        ],
+        "nl": [
+          "absolute risicoaversie"
+        ],
+        "de": [
+          "absolute Risikoaversion"
+        ],
+        "fr": [
+          "aversion absolue au risque"
+        ],
+        "es": [
+          "aversión absoluta al riesgo"
+        ],
+        "it": [
+          "avversione assoluta al rischio"
+        ],
+        "pl": [
+          "bezwzględna awersja do ryzyka"
+        ],
+        "ro": [
+          "aversiune absolută la risc"
+        ]
+      }
+    },
+    {
+      "title": "Bonus-Malus System",
+      "names": {
+        "zh": [
+          "奖惩系统",
+          "獎懲系統",
+          "无赔款优待系统",
+          "無賠款優待系統"
+        ],
+        "nl": [
+          "bonus-malussysteem"
+        ],
+        "de": [
+          "Bonus-Malus-System"
+        ],
+        "fr": [
+          "système bonus-malus"
+        ],
+        "es": [
+          "sistema bonus-malus"
+        ],
+        "it": [
+          "sistema bonus-malus"
+        ],
+        "pl": [
+          "system bonus-malus"
+        ],
+        "ro": [
+          "sistem bonus-malus"
+        ]
+      }
+    },
+    {
+      "title": "Bonus-Malus Transition Matrix",
+      "names": {
+        "zh": [
+          "奖惩系统转移矩阵",
+          "獎懲系統轉移矩陣"
+        ],
+        "nl": [
+          "overgangsmatrix van een bonus-malussysteem"
+        ],
+        "de": [
+          "Übergangsmatrix eines Bonus-Malus-Systems"
+        ],
+        "fr": [
+          "matrice de transition bonus-malus"
+        ],
+        "es": [
+          "matriz de transición bonus-malus"
+        ],
+        "it": [
+          "matrice di transizione bonus-malus"
+        ],
+        "pl": [
+          "macierz przejścia systemu bonus-malus"
+        ],
+        "ro": [
+          "matricea de tranziție bonus-malus"
+        ]
+      }
+    },
+    {
+      "title": "Likelihood for Censored Loss Data",
+      "names": {
+        "zh": [
+          "删失损失数据的似然函数",
+          "刪失損失數據的似然函數"
+        ],
+        "nl": [
+          "likelihood voor gecensureerde schadedata"
+        ],
+        "de": [
+          "Likelihood für zensierte Schadendaten"
+        ],
+        "fr": [
+          "vraisemblance pour des données de sinistres censurées"
+        ],
+        "es": [
+          "verosimilitud para datos de pérdidas censurados"
+        ],
+        "it": [
+          "verosimiglianza per dati di sinistro censurati"
+        ],
+        "pl": [
+          "wiarygodność dla cenzurowanych danych o szkodach"
+        ],
+        "ro": [
+          "verosimilitatea pentru date de daune cenzurate"
+        ]
+      }
+    },
+    {
+      "title": "Coinsurance",
+      "names": {
+        "zh": [
+          "共同保险",
+          "共同保險",
+          "比例赔付",
+          "比例賠付"
+        ],
+        "nl": [
+          "procentueel eigen risico",
+          "coassurantie"
+        ],
+        "de": [
+          "prozentuale Selbstbeteiligung"
+        ],
+        "fr": [
+          "coassurance"
+        ],
+        "es": [
+          "coaseguro"
+        ],
+        "it": [
+          "scoperto"
+        ],
+        "pl": [
+          "udział własny"
+        ],
+        "ro": [
+          "coasigurare"
+        ]
+      }
+    },
+    {
+      "title": "Compound Poisson Distribution",
+      "names": {
+        "zh": [
+          "复合泊松分布",
+          "複合泊松分布",
+          "複合卜瓦松分布"
+        ],
+        "nl": [
+          "samengestelde Poissonverdeling"
+        ],
+        "de": [
+          "zusammengesetzte Poisson-Verteilung"
+        ],
+        "fr": [
+          "loi de Poisson composée"
+        ],
+        "es": [
+          "distribución de Poisson compuesta"
+        ],
+        "it": [
+          "distribuzione di Poisson composta"
+        ],
+        "pl": [
+          "złożony rozkład Poissona"
+        ],
+        "ro": [
+          "distribuție Poisson compusă"
+        ]
+      }
+    },
+    {
+      "title": "Superposition of Compound Poisson Risks",
+      "names": {
+        "zh": [
+          "复合泊松风险的叠加",
+          "複合泊松風險的疊加"
+        ],
+        "nl": [
+          "som van onafhankelijke samengestelde Poissonrisico's"
+        ],
+        "de": [
+          "Summe unabhängiger zusammengesetzter Poisson-Risiken"
+        ],
+        "fr": [
+          "somme de risques de Poisson composés indépendants"
+        ],
+        "es": [
+          "suma de riesgos de Poisson compuestos independientes"
+        ],
+        "it": [
+          "somma di rischi di Poisson composti indipendenti"
+        ],
+        "pl": [
+          "suma niezależnych złożonych ryzyk Poissona"
+        ],
+        "ro": [
+          "suma riscurilor Poisson compuse independente"
+        ]
+      }
+    },
+    {
+      "title": "Compound Risk Distribution",
+      "names": {
+        "zh": [
+          "复合分布",
+          "複合分布",
+          "随机和分布",
+          "隨機和分布"
+        ],
+        "nl": [
+          "samengestelde verdeling"
+        ],
+        "de": [
+          "zusammengesetzte Verteilung"
+        ],
+        "fr": [
+          "loi composée"
+        ],
+        "es": [
+          "distribución compuesta"
+        ],
+        "it": [
+          "distribuzione composta"
+        ],
+        "pl": [
+          "rozkład złożony"
+        ],
+        "ro": [
+          "distribuție compusă"
+        ]
+      }
+    },
+    {
+      "title": "Convex Order and More Dangerous Risks",
+      "names": {
+        "zh": [
+          "凸序",
+          "凸序与更危险的风险",
+          "凸序與更危險的風險"
+        ],
+        "nl": [
+          "convexe ordening"
+        ],
+        "de": [
+          "konvexe Ordnung"
+        ],
+        "fr": [
+          "ordre convexe"
+        ],
+        "es": [
+          "orden convexo"
+        ],
+        "it": [
+          "ordine convesso"
+        ],
+        "pl": [
+          "porządek wypukły"
+        ],
+        "ro": [
+          "ordinea convexă"
+        ]
+      }
+    },
+    {
+      "title": "Cumulant Generating Function",
+      "names": {
+        "zh": [
+          "累积量生成函数",
+          "累積量生成函數",
+          "累积量母函数",
+          "累積量母函數"
+        ],
+        "nl": [
+          "cumulantgenererende functie"
+        ],
+        "de": [
+          "kumulantenerzeugende Funktion"
+        ],
+        "fr": [
+          "fonction génératrice des cumulants"
+        ],
+        "es": [
+          "función generadora de cumulantes"
+        ],
+        "it": [
+          "funzione generatrice dei cumulanti"
+        ],
+        "pl": [
+          "funkcja generująca kumulanty"
+        ],
+        "ro": [
+          "funcția generatoare a cumulanților"
+        ]
+      }
+    },
+    {
+      "title": "Expected Utility and Risk Aversion",
+      "names": {
+        "zh": [
+          "期望效用与风险厌恶",
+          "期望效用與風險厭惡",
+          "期望效用"
+        ],
+        "nl": [
+          "verwacht nut en risicoaversie",
+          "verwacht nut"
+        ],
+        "de": [
+          "Erwartungsnutzen und Risikoaversion",
+          "Erwartungsnutzen"
+        ],
+        "fr": [
+          "utilité espérée et aversion au risque",
+          "utilité espérée"
+        ],
+        "es": [
+          "utilidad esperada y aversión al riesgo",
+          "utilidad esperada"
+        ],
+        "it": [
+          "utilità attesa e avversione al rischio",
+          "utilità attesa"
+        ],
+        "pl": [
+          "oczekiwana użyteczność i awersja do ryzyka",
+          "oczekiwana użyteczność"
+        ],
+        "ro": [
+          "utilitate așteptată și aversiune la risc",
+          "utilitate așteptată"
+        ]
+      }
+    },
+    {
+      "title": "Expected Value Premium Principle",
+      "names": {
+        "zh": [
+          "期望值保费原理",
+          "期望值保費原理"
+        ],
+        "nl": [
+          "verwachtewaardepremieprincipe"
+        ],
+        "de": [
+          "Erwartungswertprinzip"
+        ],
+        "fr": [
+          "principe de la valeur espérée"
+        ],
+        "es": [
+          "principio del valor esperado"
+        ],
+        "it": [
+          "principio del valore atteso"
+        ],
+        "pl": [
+          "zasada wartości oczekiwanej"
+        ],
+        "ro": [
+          "principiul valorii așteptate"
+        ]
+      }
+    },
+    {
+      "title": "Exponential Order",
+      "names": {
+        "zh": [
+          "指数序",
+          "指數序"
+        ],
+        "nl": [
+          "exponentiële ordening"
+        ],
+        "de": [
+          "exponentielle Ordnung"
+        ],
+        "fr": [
+          "ordre exponentiel"
+        ],
+        "es": [
+          "orden exponencial"
+        ],
+        "it": [
+          "ordine esponenziale"
+        ],
+        "pl": [
+          "porządek wykładniczy"
+        ],
+        "ro": [
+          "ordinea exponențială"
+        ]
+      }
+    },
+    {
+      "title": "Exponential Premium Principle",
+      "names": {
+        "zh": [
+          "指数保费原理",
+          "指數保費原理"
+        ],
+        "nl": [
+          "exponentieel premieprincipe"
+        ],
+        "de": [
+          "Exponentialprinzip"
+        ],
+        "fr": [
+          "principe exponentiel"
+        ],
+        "es": [
+          "principio exponencial"
+        ],
+        "it": [
+          "principio esponenziale"
+        ],
+        "pl": [
+          "wykładnicza zasada składki"
+        ],
+        "ro": [
+          "principiul exponențial al primei"
+        ]
+      }
+    },
+    {
+      "title": "Exposure Offset in Claim-Frequency Models",
+      "names": {
+        "zh": [
+          "索赔频率模型中的风险暴露偏移项",
+          "索賠頻率模型中的風險暴露偏移項"
+        ],
+        "nl": [
+          "blootstellingsoffset in schadefrequentiemodellen"
+        ],
+        "de": [
+          "Exposure-Offset in Schadenfrequenzmodellen"
+        ],
+        "fr": [
+          "offset d'exposition dans les modèles de fréquence"
+        ],
+        "es": [
+          "offset de exposición en modelos de frecuencia"
+        ],
+        "it": [
+          "offset di esposizione nei modelli di frequenza"
+        ],
+        "pl": [
+          "offset ekspozycji w modelach częstości szkód"
+        ],
+        "ro": [
+          "offset de expunere în modelele de frecvență"
+        ]
+      }
+    },
+    {
+      "title": "Franchise Deductible",
+      "names": {
+        "zh": [
+          "相对免赔额",
+          "相對免賠額"
+        ],
+        "nl": [
+          "franchise"
+        ],
+        "de": [
+          "Integralfranchise"
+        ],
+        "fr": [
+          "franchise simple"
+        ],
+        "es": [
+          "franquicia relativa"
+        ],
+        "it": [
+          "franchigia relativa"
+        ],
+        "pl": [
+          "franszyza integralna"
+        ],
+        "ro": [
+          "franșiză condiționată"
+        ]
+      }
+    },
+    {
+      "title": "Likelihood for Grouped Loss Data",
+      "names": {
+        "zh": [
+          "分组损失数据的似然函数",
+          "分組損失數據的似然函數"
+        ],
+        "nl": [
+          "likelihood voor gegroepeerde schadedata"
+        ],
+        "de": [
+          "Likelihood für gruppierte Schadendaten"
+        ],
+        "fr": [
+          "vraisemblance pour des données de sinistres groupées"
+        ],
+        "es": [
+          "verosimilitud para datos de pérdidas agrupados"
+        ],
+        "it": [
+          "verosimiglianza per dati di sinistro raggruppati"
+        ],
+        "pl": [
+          "wiarygodność dla pogrupowanych danych o szkodach"
+        ],
+        "ro": [
+          "verosimilitatea pentru date de daune grupate"
+        ]
+      }
+    },
+    {
+      "title": "Hunger for Bonus",
+      "names": {
+        "zh": [
+          "索赔抑制",
+          "索賠抑制"
+        ],
+        "nl": [
+          "hunger for bonus"
+        ],
+        "de": [
+          "Bonushunger"
+        ],
+        "fr": [
+          "soif du bonus"
+        ],
+        "es": [
+          "hunger for bonus"
+        ],
+        "it": [
+          "hunger for bonus"
+        ],
+        "pl": [
+          "hunger for bonus"
+        ],
+        "ro": [
+          "hunger for bonus"
+        ]
+      }
+    },
+    {
+      "title": "Information Criteria for Risk Models",
+      "names": {
+        "zh": [
+          "信息准则",
+          "資訊準則",
+          "信息準則"
+        ],
+        "nl": [
+          "informatiecriteria"
+        ],
+        "de": [
+          "Informationskriterien"
+        ],
+        "fr": [
+          "critères d'information"
+        ],
+        "es": [
+          "criterios de información"
+        ],
+        "it": [
+          "criteri di informazione"
+        ],
+        "pl": [
+          "kryteria informacyjne"
+        ],
+        "ro": [
+          "criterii informaționale"
+        ]
+      }
+    },
+    {
+      "title": "Insurance Indifference Premiums",
+      "names": {
+        "zh": [
+          "无差异保费",
+          "無差異保費"
+        ],
+        "nl": [
+          "indifferentiepremie"
+        ],
+        "de": [
+          "Indifferenzprämie"
+        ],
+        "fr": [
+          "prime d'indifférence"
+        ],
+        "es": [
+          "prima de indiferencia"
+        ],
+        "it": [
+          "premio di indifferenza"
+        ],
+        "pl": [
+          "składka obojętności"
+        ],
+        "ro": [
+          "prima de indiferență"
+        ]
+      }
+    },
+    {
+      "title": "Loimaranta Efficiency",
+      "names": {
+        "zh": [
+          "Loimaranta效率",
+          "奖惩系统效率",
+          "獎懲系統效率"
+        ],
+        "nl": [
+          "Loimaranta-efficiëntie"
+        ],
+        "de": [
+          "Loimaranta-Effizienz"
+        ],
+        "fr": [
+          "efficacité de Loimaranta"
+        ],
+        "es": [
+          "eficiencia de Loimaranta"
+        ],
+        "it": [
+          "efficienza di Loimaranta"
+        ],
+        "pl": [
+          "efektywność Loimaranty"
+        ],
+        "ro": [
+          "eficiența Loimaranta"
+        ]
+      }
+    },
+    {
+      "title": "Loss Elimination Ratio",
+      "names": {
+        "zh": [
+          "损失消除率",
+          "損失消除率"
+        ],
+        "nl": [
+          "loss elimination ratio"
+        ],
+        "de": [
+          "loss elimination ratio"
+        ],
+        "fr": [
+          "taux d'élimination des pertes"
+        ],
+        "es": [
+          "razón de eliminación de pérdidas"
+        ],
+        "it": [
+          "rapporto di eliminazione delle perdite"
+        ],
+        "pl": [
+          "współczynnik eliminacji strat"
+        ],
+        "ro": [
+          "rata de eliminare a pierderilor"
+        ]
+      }
+    },
+    {
+      "title": "Maximum Claim in a Portfolio",
+      "names": {
+        "zh": [
+          "组合中的最大索赔",
+          "組合中的最大索賠",
+          "最大索赔额",
+          "最大索賠額"
+        ],
+        "nl": [
+          "grootste schade in een portefeuille"
+        ],
+        "de": [
+          "Größtschaden im Bestand"
+        ],
+        "fr": [
+          "sinistre maximal d'un portefeuille"
+        ],
+        "es": [
+          "siniestro máximo de una cartera"
+        ],
+        "it": [
+          "sinistro massimo di un portafoglio"
+        ],
+        "pl": [
+          "największa szkoda w portfelu"
+        ],
+        "ro": [
+          "dauna maximă dintr-un portofoliu"
+        ]
+      }
+    },
+    {
+      "title": "Mixed Discrete and Continuous Loss Distribution",
+      "names": {
+        "zh": [
+          "离散连续混合型损失分布",
+          "離散連續混合型損失分布"
+        ],
+        "nl": [
+          "gemengde discreet-continue schadeverdeling"
+        ],
+        "de": [
+          "gemischt diskret-stetige Schadenverteilung"
+        ],
+        "fr": [
+          "loi de sinistres mixte discrète et continue"
+        ],
+        "es": [
+          "distribución de pérdidas mixta discreta y continua"
+        ],
+        "it": [
+          "distribuzione di perdita mista discreta e continua"
+        ],
+        "pl": [
+          "mieszany dyskretno-ciągły rozkład szkód"
+        ],
+        "ro": [
+          "distribuție mixtă discret-continuă a daunelor"
+        ]
+      }
+    },
+    {
+      "title": "Optimal Bonus-Malus Relativities",
+      "names": {
+        "zh": [
+          "最优奖惩系数",
+          "最優獎懲係數"
+        ],
+        "nl": [
+          "optimale bonus-malusrelativiteiten"
+        ],
+        "de": [
+          "optimale Bonus-Malus-Relativitäten"
+        ],
+        "fr": [
+          "coefficients bonus-malus optimaux"
+        ],
+        "es": [
+          "coeficientes bonus-malus óptimos"
+        ],
+        "it": [
+          "coefficienti bonus-malus ottimali"
+        ],
+        "pl": [
+          "optymalne współczynniki bonus-malus"
+        ],
+        "ro": [
+          "coeficienți bonus-malus optimi"
+        ]
+      }
+    },
+    {
+      "title": "Ordinary Deductible",
+      "names": {
+        "zh": [
+          "绝对免赔额",
+          "絕對免賠額"
+        ],
+        "nl": [
+          "eigen risico"
+        ],
+        "de": [
+          "Abzugsfranchise"
+        ],
+        "fr": [
+          "franchise absolue"
+        ],
+        "es": [
+          "deducible ordinario",
+          "franquicia absoluta"
+        ],
+        "it": [
+          "franchigia assoluta"
+        ],
+        "pl": [
+          "franszyza redukcyjna"
+        ],
+        "ro": [
+          "franșiză deductibilă"
+        ]
+      }
+    },
+    {
+      "title": "Overdispersion in Count Models",
+      "names": {
+        "zh": [
+          "计数模型中的过度离散",
+          "計數模型中的過度離散",
+          "过度离散",
+          "過度離散"
+        ],
+        "nl": [
+          "overdispersie"
+        ],
+        "de": [
+          "Überdispersion"
+        ],
+        "fr": [
+          "surdispersion"
+        ],
+        "es": [
+          "sobredispersión"
+        ],
+        "it": [
+          "sovradispersione"
+        ],
+        "pl": [
+          "nadmierna dyspersja"
+        ],
+        "ro": [
+          "supradispersie"
+        ]
+      }
+    },
+    {
+      "title": "Pareto Loss Model",
+      "names": {
+        "zh": [
+          "帕累托损失模型",
+          "帕累托損失模型",
+          "帕累托分布"
+        ],
+        "nl": [
+          "Pareto-verdeling"
+        ],
+        "de": [
+          "Pareto-Verteilung"
+        ],
+        "fr": [
+          "loi de Pareto"
+        ],
+        "es": [
+          "distribución de Pareto"
+        ],
+        "it": [
+          "distribuzione di Pareto"
+        ],
+        "pl": [
+          "rozkład Pareto"
+        ],
+        "ro": [
+          "distribuția Pareto"
+        ]
+      }
+    },
+    {
+      "title": "Policy Limit",
+      "names": {
+        "zh": [
+          "保单限额",
+          "保單限額",
+          "赔偿限额",
+          "賠償限額"
+        ],
+        "nl": [
+          "verzekerd maximum"
+        ],
+        "de": [
+          "Deckungsgrenze"
+        ],
+        "fr": [
+          "plafond de garantie"
+        ],
+        "es": [
+          "límite de la póliza"
+        ],
+        "it": [
+          "massimale"
+        ],
+        "pl": [
+          "limit odpowiedzialności"
+        ],
+        "ro": [
+          "limita de răspundere"
+        ]
+      }
+    },
+    {
+      "title": "Premium Principles and Their Properties",
+      "names": {
+        "zh": [
+          "保费原理及其性质",
+          "保費原理及其性質",
+          "保费原理",
+          "保費原理"
+        ],
+        "nl": [
+          "premieprincipes"
+        ],
+        "de": [
+          "Prämienprinzipien"
+        ],
+        "fr": [
+          "principes de calcul des primes"
+        ],
+        "es": [
+          "principios de cálculo de primas"
+        ],
+        "it": [
+          "principi di calcolo del premio"
+        ],
+        "pl": [
+          "zasady kalkulacji składek"
+        ],
+        "ro": [
+          "principii de calcul al primelor"
+        ]
+      }
+    },
+    {
+      "title": "Rating Factors and Interactions in Insurance GLMs",
+      "names": {
+        "zh": [
+          "费率因子与交互作用",
+          "費率因子與交互作用",
+          "费率因子",
+          "費率因子"
+        ],
+        "nl": [
+          "tariefkenmerken en interacties"
+        ],
+        "de": [
+          "Tarifmerkmale und Wechselwirkungen"
+        ],
+        "fr": [
+          "variables tarifaires et interactions"
+        ],
+        "es": [
+          "factores de tarificación e interacciones"
+        ],
+        "it": [
+          "fattori tariffari e interazioni"
+        ],
+        "pl": [
+          "czynniki taryfikacyjne i interakcje"
+        ],
+        "ro": [
+          "factori de tarifare și interacțiuni"
+        ]
+      }
+    },
+    {
+      "title": "Risk Orders Under Aggregation",
+      "names": {
+        "zh": [
+          "聚合下的风险序",
+          "聚合下的風險序"
+        ],
+        "nl": [
+          "risico-ordeningen onder aggregatie"
+        ],
+        "de": [
+          "Risikoordnungen unter Aggregation"
+        ],
+        "fr": [
+          "ordres de risque et agrégation"
+        ],
+        "es": [
+          "órdenes de riesgo bajo agregación"
+        ],
+        "it": [
+          "ordinamenti di rischio sotto aggregazione"
+        ],
+        "pl": [
+          "porządki ryzyka przy agregacji"
+        ],
+        "ro": [
+          "ordini de risc la agregare"
+        ]
+      }
+    },
+    {
+      "title": "Second-Order Stochastic Dominance",
+      "names": {
+        "zh": [
+          "二阶随机占优",
+          "二階隨機佔優",
+          "二阶随机优势",
+          "二階隨機優勢"
+        ],
+        "nl": [
+          "stochastische dominantie van de tweede orde"
+        ],
+        "de": [
+          "stochastische Dominanz zweiter Ordnung"
+        ],
+        "fr": [
+          "dominance stochastique d'ordre deux"
+        ],
+        "es": [
+          "dominancia estocástica de segundo orden"
+        ],
+        "it": [
+          "dominanza stocastica del secondo ordine"
+        ],
+        "pl": [
+          "dominacja stochastyczna drugiego rzędu"
+        ],
+        "ro": [
+          "dominanță stocastică de ordinul doi"
+        ]
+      }
+    },
+    {
+      "title": "Crossing Criteria for Risk Orders",
+      "names": {
+        "zh": [
+          "风险序的交叉准则",
+          "風險序的交叉準則"
+        ],
+        "nl": [
+          "kruisingscriteria voor risico-ordeningen"
+        ],
+        "de": [
+          "Kreuzungskriterien für Risikoordnungen"
+        ],
+        "fr": [
+          "critères de croisement pour les ordres de risque"
+        ],
+        "es": [
+          "criterios de cruce para órdenes de riesgo"
+        ],
+        "it": [
+          "criteri di attraversamento per ordinamenti di rischio"
+        ],
+        "pl": [
+          "kryteria przecięcia dla porządków ryzyka"
+        ],
+        "ro": [
+          "criterii de intersecție pentru ordinile de risc"
+        ]
+      }
+    },
+    {
+      "title": "Standard Deviation Premium Principle",
+      "names": {
+        "zh": [
+          "标准差保费原理",
+          "標準差保費原理"
+        ],
+        "nl": [
+          "standaardafwijkingspremieprincipe"
+        ],
+        "de": [
+          "Standardabweichungsprinzip"
+        ],
+        "fr": [
+          "principe de l'écart-type"
+        ],
+        "es": [
+          "principio de la desviación típica"
+        ],
+        "it": [
+          "principio dello scarto quadratico medio"
+        ],
+        "pl": [
+          "zasada odchylenia standardowego"
+        ],
+        "ro": [
+          "principiul abaterii standard"
+        ]
+      }
+    },
+    {
+      "title": "Stationary Bonus-Malus Distribution and Premium",
+      "names": {
+        "zh": [
+          "奖惩系统的平稳分布与保费",
+          "獎懲系統的平穩分布與保費"
+        ],
+        "nl": [
+          "stationaire verdeling van een bonus-malussysteem"
+        ],
+        "de": [
+          "stationäre Verteilung eines Bonus-Malus-Systems"
+        ],
+        "fr": [
+          "distribution stationnaire du système bonus-malus"
+        ],
+        "es": [
+          "distribución estacionaria del sistema bonus-malus"
+        ],
+        "it": [
+          "distribuzione stazionaria del sistema bonus-malus"
+        ],
+        "pl": [
+          "rozkład stacjonarny systemu bonus-malus"
+        ],
+        "ro": [
+          "distribuția staționară a sistemului bonus-malus"
+        ]
+      }
+    },
+    {
+      "title": "Stochastic Order",
+      "names": {
+        "zh": [
+          "随机序",
+          "隨機序",
+          "一阶随机占优",
+          "一階隨機佔優"
+        ],
+        "nl": [
+          "stochastische ordening",
+          "stochastische dominantie van de eerste orde"
+        ],
+        "de": [
+          "stochastische Ordnung",
+          "stochastische Dominanz erster Ordnung"
+        ],
+        "fr": [
+          "ordre stochastique",
+          "dominance stochastique d'ordre un"
+        ],
+        "es": [
+          "orden estocástico",
+          "dominancia estocástica de primer orden"
+        ],
+        "it": [
+          "ordine stocastico",
+          "dominanza stocastica del primo ordine"
+        ],
+        "pl": [
+          "porządek stochastyczny",
+          "dominacja stochastyczna pierwszego rzędu"
+        ],
+        "ro": [
+          "ordine stocastică",
+          "dominanță stocastică de ordinul întâi"
+        ]
+      }
+    },
+    {
+      "title": "Stop-Loss Order",
+      "names": {
+        "zh": [
+          "停止损失序",
+          "停止損失序"
+        ],
+        "nl": [
+          "stop-lossordening"
+        ],
+        "de": [
+          "Stop-Loss-Ordnung"
+        ],
+        "fr": [
+          "ordre stop-loss"
+        ],
+        "es": [
+          "orden stop-loss"
+        ],
+        "it": [
+          "ordine stop-loss"
+        ],
+        "pl": [
+          "porządek stop-loss"
+        ],
+        "ro": [
+          "ordinea stop-loss"
+        ]
+      }
+    },
+    {
+      "title": "Stop-Loss Separation Theorem",
+      "names": {
+        "zh": [
+          "停止损失分离定理",
+          "停止損失分離定理"
+        ],
+        "nl": [
+          "stop-loss-scheidingsstelling"
+        ],
+        "de": [
+          "Stop-Loss-Trennungssatz"
+        ],
+        "fr": [
+          "théorème de séparation stop-loss"
+        ],
+        "es": [
+          "teorema de separación stop-loss"
+        ],
+        "it": [
+          "teorema di separazione stop-loss"
+        ],
+        "pl": [
+          "twierdzenie o separacji stop-loss"
+        ],
+        "ro": [
+          "teorema de separare stop-loss"
+        ]
+      }
+    },
+    {
+      "title": "Stop-Loss Transform and Reinsurance",
+      "names": {
+        "zh": [
+          "停止损失变换与再保险",
+          "停止損失變換與再保險",
+          "停止损失再保险",
+          "停止損失再保險"
+        ],
+        "nl": [
+          "stop-lossherverzekering",
+          "stop-losspremie"
+        ],
+        "de": [
+          "Stop-Loss-Rückversicherung",
+          "Stop-Loss-Prämie"
+        ],
+        "fr": [
+          "réassurance stop-loss",
+          "prime stop-loss"
+        ],
+        "es": [
+          "reaseguro stop-loss",
+          "prima stop-loss"
+        ],
+        "it": [
+          "riassicurazione stop-loss",
+          "premio stop-loss"
+        ],
+        "pl": [
+          "reasekuracja stop-loss",
+          "składka stop-loss"
+        ],
+        "ro": [
+          "reasigurare stop-loss",
+          "prima stop-loss"
+        ]
+      }
+    },
+    {
+      "title": "Thicker-Tailed Comparison",
+      "names": {
+        "zh": [
+          "厚尾比较",
+          "厚尾比較"
+        ],
+        "nl": [
+          "vergelijking van staartdikte"
+        ],
+        "de": [
+          "Vergleich der Tailschwere"
+        ],
+        "fr": [
+          "comparaison de queues plus épaisses"
+        ],
+        "es": [
+          "comparación de colas más pesadas"
+        ],
+        "it": [
+          "confronto tra code più spesse"
+        ],
+        "pl": [
+          "porównanie grubości ogonów"
+        ],
+        "ro": [
+          "compararea cozilor mai groase"
+        ]
+      }
+    },
+    {
+      "title": "Likelihood for Truncated Loss Data",
+      "names": {
+        "zh": [
+          "截断损失数据的似然函数",
+          "截斷損失數據的似然函數"
+        ],
+        "nl": [
+          "likelihood voor afgeknotte schadedata"
+        ],
+        "de": [
+          "Likelihood für gestutzte Schadendaten"
+        ],
+        "fr": [
+          "vraisemblance pour des données de sinistres tronquées"
+        ],
+        "es": [
+          "verosimilitud para datos de pérdidas truncados"
+        ],
+        "it": [
+          "verosimiglianza per dati di sinistro troncati"
+        ],
+        "pl": [
+          "wiarygodność dla uciętych danych o szkodach"
+        ],
+        "ro": [
+          "verosimilitatea pentru date de daune trunchiate"
+        ]
+      }
+    },
+    {
+      "title": "Variance Premium Principle",
+      "names": {
+        "zh": [
+          "方差保费原理",
+          "方差保費原理",
+          "變異數保費原理"
+        ],
+        "nl": [
+          "variantiepremieprincipe"
+        ],
+        "de": [
+          "Varianzprinzip"
+        ],
+        "fr": [
+          "principe de la variance"
+        ],
+        "es": [
+          "principio de la varianza"
+        ],
+        "it": [
+          "principio della varianza"
+        ],
+        "pl": [
+          "zasada wariancji"
+        ],
+        "ro": [
+          "principiul varianței"
+        ]
+      }
+    },
+    {
+      "title": "Zero-Utility Premium",
+      "names": {
+        "zh": [
+          "零效用保费",
+          "零效用保費"
+        ],
+        "nl": [
+          "nulnutspremie"
+        ],
+        "de": [
+          "Nullnutzenprämie"
+        ],
+        "fr": [
+          "prime d'utilité nulle"
+        ],
+        "es": [
+          "prima de utilidad cero"
+        ],
+        "it": [
+          "premio a utilità zero"
+        ],
+        "pl": [
+          "składka zerowej użyteczności"
+        ],
+        "ro": [
+          "prima de utilitate zero"
+        ]
+      }
+    },
+    {
+      "title": "Actuarial Present Value",
+      "names": {
+        "zh": [
+          "精算现值",
+          "精算現值"
+        ],
+        "nl": [
+          "actuariële contante waarde"
+        ],
+        "de": [
+          "versicherungsmathematischer Barwert"
+        ],
+        "fr": [
+          "valeur actuelle probable"
+        ],
+        "es": [
+          "valor actuarial presente"
+        ],
+        "it": [
+          "valore attuale attuariale"
+        ],
+        "pl": [
+          "aktuarialna wartość obecna"
+        ],
+        "ro": [
+          "valoare actuarială prezentă"
+        ]
+      }
+    },
+    {
+      "title": "Actuarial Survival and Death Probabilities",
+      "names": {
+        "zh": [
+          "生存概率与死亡概率",
+          "生存機率與死亡機率"
+        ],
+        "nl": [
+          "overlevings- en sterftekansen"
+        ],
+        "de": [
+          "Überlebens- und Sterbewahrscheinlichkeiten"
+        ],
+        "fr": [
+          "probabilités de survie et de décès"
+        ],
+        "es": [
+          "probabilidades de supervivencia y de muerte"
+        ],
+        "it": [
+          "probabilità di sopravvivenza e di morte"
+        ],
+        "pl": [
+          "prawdopodobieństwa przeżycia i zgonu"
+        ],
+        "ro": [
+          "probabilități de supraviețuire și de deces"
+        ]
+      }
+    },
+    {
+      "title": "Annuity Certain",
+      "names": {
+        "zh": [
+          "确定年金",
+          "確定年金"
+        ],
+        "nl": [
+          "annuïteit"
+        ],
+        "de": [
+          "Zeitrente"
+        ],
+        "fr": [
+          "annuité certaine"
+        ],
+        "es": [
+          "renta cierta"
+        ],
+        "it": [
+          "rendita certa"
+        ],
+        "pl": [
+          "renta pewna"
+        ],
+        "ro": [
+          "anuitate certă"
+        ]
+      }
+    },
+    {
+      "title": "Constant Force Within a Year of Age",
+      "names": {
+        "zh": [
+          "年内常数死亡力假设",
+          "年內常數死亡力假設"
+        ],
+        "nl": [
+          "constante sterfte-intensiteit binnen een leeftijdsjaar"
+        ],
+        "de": [
+          "konstante Sterbeintensität innerhalb eines Altersjahres"
+        ],
+        "fr": [
+          "force de mortalité constante sur l'année d'âge"
+        ],
+        "es": [
+          "fuerza de mortalidad constante dentro de cada año de edad"
+        ],
+        "it": [
+          "intensità di mortalità costante nell'anno di età"
+        ],
+        "pl": [
+          "stałe natężenie zgonów w ciągu roku wieku"
+        ],
+        "ro": [
+          "forța de mortalitate constantă în cadrul unui an de vârstă"
+        ]
+      }
+    },
+    {
+      "title": "Continuous Life Annuity",
+      "names": {
+        "zh": [
+          "连续生存年金",
+          "連續生存年金"
+        ],
+        "nl": [
+          "continue lijfrente"
+        ],
+        "de": [
+          "stetige Leibrente"
+        ],
+        "fr": [
+          "rente viagère continue"
+        ],
+        "es": [
+          "renta vitalicia continua"
+        ],
+        "it": [
+          "rendita vitalizia continua"
+        ],
+        "pl": [
+          "ciągła renta życiowa"
+        ],
+        "ro": [
+          "anuitate viageră continuă"
+        ]
+      }
+    },
+    {
+      "title": "Curtate Future Lifetime",
+      "names": {
+        "zh": [
+          "整值剩余寿命",
+          "整值剩餘壽命"
+        ],
+        "nl": [
+          "afgeronde toekomstige levensduur"
+        ],
+        "de": [
+          "gestutzte Restlebensdauer"
+        ],
+        "fr": [
+          "durée de vie résiduelle entière"
+        ],
+        "es": [
+          "tiempo de vida futuro entero"
+        ],
+        "it": [
+          "vita residua intera"
+        ],
+        "pl": [
+          "całkowity dalszy czas życia"
+        ],
+        "ro": [
+          "durata viitoare de viață întreagă"
+        ]
+      }
+    },
+    {
+      "title": "Deferred Life Annuity",
+      "names": {
+        "zh": [
+          "延期生存年金"
+        ],
+        "nl": [
+          "uitgestelde lijfrente"
+        ],
+        "de": [
+          "aufgeschobene Leibrente"
+        ],
+        "fr": [
+          "rente viagère différée"
+        ],
+        "es": [
+          "renta vitalicia diferida"
+        ],
+        "it": [
+          "rendita vitalizia differita"
+        ],
+        "pl": [
+          "odroczona renta życiowa"
+        ],
+        "ro": [
+          "anuitate viageră amânată"
+        ]
+      }
+    },
+    {
+      "title": "Deferred Life Insurance",
+      "names": {
+        "zh": [
+          "延期寿险",
+          "延期壽險"
+        ],
+        "nl": [
+          "uitgestelde overlijdensverzekering"
+        ],
+        "de": [
+          "aufgeschobene Todesfallversicherung"
+        ],
+        "fr": [
+          "assurance décès différée"
+        ],
+        "es": [
+          "seguro de vida diferido"
+        ],
+        "it": [
+          "assicurazione caso morte differita"
+        ],
+        "pl": [
+          "odroczone ubezpieczenie na życie"
+        ],
+        "ro": [
+          "asigurare de deces amânată"
+        ]
+      }
+    },
+    {
+      "title": "Endowment Insurance",
+      "names": {
+        "zh": [
+          "两全保险",
+          "兩全保險"
+        ],
+        "nl": [
+          "gemengde verzekering"
+        ],
+        "de": [
+          "gemischte Versicherung"
+        ],
+        "fr": [
+          "assurance mixte"
+        ],
+        "es": [
+          "seguro mixto"
+        ],
+        "it": [
+          "assicurazione mista"
+        ],
+        "pl": [
+          "ubezpieczenie na życie i dożycie"
+        ],
+        "ro": [
+          "asigurare mixtă"
+        ]
+      }
+    },
+    {
+      "title": "Complete and Curtate Expectation of Life",
+      "names": {
+        "zh": [
+          "平均余命",
+          "平均餘命",
+          "完全平均余命",
+          "完全平均餘命"
+        ],
+        "nl": [
+          "levensverwachting"
+        ],
+        "de": [
+          "Lebenserwartung"
+        ],
+        "fr": [
+          "espérance de vie"
+        ],
+        "es": [
+          "esperanza de vida"
+        ],
+        "it": [
+          "speranza di vita"
+        ],
+        "pl": [
+          "przeciętne dalsze trwanie życia"
+        ],
+        "ro": [
+          "speranța de viață"
+        ]
+      }
+    },
+    {
+      "title": "Future Lifetime",
+      "names": {
+        "zh": [
+          "剩余寿命",
+          "剩餘壽命",
+          "未来寿命",
+          "未來壽命"
+        ],
+        "nl": [
+          "toekomstige levensduur"
+        ],
+        "de": [
+          "Restlebensdauer"
+        ],
+        "fr": [
+          "durée de vie résiduelle"
+        ],
+        "es": [
+          "tiempo de vida futuro"
+        ],
+        "it": [
+          "vita residua"
+        ],
+        "pl": [
+          "dalszy czas życia"
+        ],
+        "ro": [
+          "durata viitoare de viață"
+        ]
+      }
+    },
+    {
+      "title": "Future Loss Random Variable",
+      "names": {
+        "zh": [
+          "未来损失随机变量",
+          "未來損失隨機變量"
+        ],
+        "nl": [
+          "toekomstige-verliesvariabele"
+        ],
+        "de": [
+          "Zufallsvariable des zukünftigen Verlusts"
+        ],
+        "fr": [
+          "variable aléatoire de perte future"
+        ],
+        "es": [
+          "variable aleatoria de pérdida futura"
+        ],
+        "it": [
+          "variabile aleatoria di perdita futura"
+        ],
+        "pl": [
+          "zmienna losowa przyszłej straty"
+        ],
+        "ro": [
+          "variabila aleatoare a pierderii viitoare"
+        ]
+      }
+    },
+    {
+      "title": "Guaranteed Life Annuity",
+      "names": {
+        "zh": [
+          "保证期生存年金",
+          "保證期生存年金"
+        ],
+        "nl": [
+          "lijfrente met gegarandeerde periode"
+        ],
+        "de": [
+          "Leibrente mit Garantiezeit"
+        ],
+        "fr": [
+          "rente viagère avec période garantie"
+        ],
+        "es": [
+          "renta vitalicia con periodo garantizado"
+        ],
+        "it": [
+          "rendita vitalizia con periodo garantito"
+        ],
+        "pl": [
+          "renta życiowa z okresem gwarantowanym"
+        ],
+        "ro": [
+          "anuitate viageră cu perioadă garantată"
+        ]
+      }
+    },
+    {
+      "title": "Death Benefits Payable at Fractional-Year Boundaries",
+      "names": {
+        "zh": [
+          "分数年度末给付的死亡保险",
+          "分數年度末給付的死亡保險"
+        ],
+        "nl": [
+          "overlijdensuitkering per fractie van een jaar"
+        ],
+        "de": [
+          "unterjährige Todesfallleistung"
+        ],
+        "fr": [
+          "capital décès payable en fin de fraction d'année"
+        ],
+        "es": [
+          "prestación por fallecimiento pagadera al final de la fracción de año"
+        ],
+        "it": [
+          "capitale caso morte pagabile alla fine della frazione d'anno"
+        ],
+        "pl": [
+          "świadczenie z tytułu śmierci płatne na koniec części roku"
+        ],
+        "ro": [
+          "beneficiu de deces plătibil la sfârșitul fracțiunii de an"
+        ]
+      }
+    },
+    {
+      "title": "Variance of an Insurance Present Value",
+      "names": {
+        "zh": [
+          "保险现值的方差",
+          "保險現值的方差",
+          "保險現值的變異數"
+        ],
+        "nl": [
+          "variantie van de contante waarde van een verzekering"
+        ],
+        "de": [
+          "Varianz des Barwerts einer Versicherung"
+        ],
+        "fr": [
+          "variance de la valeur actuelle d'une assurance"
+        ],
+        "es": [
+          "varianza del valor presente de un seguro"
+        ],
+        "it": [
+          "varianza del valore attuale di un'assicurazione"
+        ],
+        "pl": [
+          "wariancja wartości obecnej ubezpieczenia"
+        ],
+        "ro": [
+          "varianța valorii prezente a unei asigurări"
+        ]
+      }
+    },
+    {
+      "title": "Life Annuities Payable Several Times a Year",
+      "names": {
+        "zh": [
+          "每年分期给付的生存年金",
+          "每年分期給付的生存年金"
+        ],
+        "nl": [
+          "lijfrente met meerdere betalingen per jaar"
+        ],
+        "de": [
+          "unterjährige Leibrente"
+        ],
+        "fr": [
+          "rente viagère fractionnée"
+        ],
+        "es": [
+          "renta vitalicia fraccionada"
+        ],
+        "it": [
+          "rendita vitalizia frazionata"
+        ],
+        "pl": [
+          "renta życiowa płatna kilka razy w roku"
+        ],
+        "ro": [
+          "anuitate viageră fracționată"
+        ]
+      }
+    },
+    {
+      "title": "Equivalence Principle for Life Insurance Premiums",
+      "names": {
+        "zh": [
+          "平衡原理",
+          "收支平衡原则",
+          "收支平衡原則"
+        ],
+        "nl": [
+          "equivalentiebeginsel"
+        ],
+        "de": [
+          "Äquivalenzprinzip"
+        ],
+        "fr": [
+          "principe d'équivalence"
+        ],
+        "es": [
+          "principio de equivalencia"
+        ],
+        "it": [
+          "principio di equivalenza"
+        ],
+        "pl": [
+          "zasada równoważności"
+        ],
+        "ro": [
+          "principiul echivalenței"
+        ]
+      }
+    },
+    {
+      "title": "Life Insurance Valuation Recursions",
+      "names": {
+        "zh": [
+          "寿险精算现值递推公式",
+          "壽險精算現值遞推公式"
+        ],
+        "nl": [
+          "recursies voor de waardering van levensverzekeringen"
+        ],
+        "de": [
+          "Rekursionsformeln für Lebensversicherungsbarwerte"
+        ],
+        "fr": [
+          "relations de récurrence pour les valeurs actuelles d'assurance vie"
+        ],
+        "es": [
+          "recursiones para la valoración de seguros de vida"
+        ],
+        "it": [
+          "relazioni ricorsive per la valutazione delle assicurazioni vita"
+        ],
+        "pl": [
+          "rekurencje wartości ubezpieczeń na życie"
+        ],
+        "ro": [
+          "recurențe pentru evaluarea asigurărilor de viață"
+        ]
+      }
+    },
+    {
+      "title": "Makeham's Mortality Law",
+      "names": {
+        "zh": [
+          "梅克汉姆死亡律",
+          "梅克漢姆死亡律",
+          "Makeham死亡律"
+        ],
+        "nl": [
+          "sterftewet van Makeham"
+        ],
+        "de": [
+          "Makehamsches Sterbegesetz",
+          "Gesetz von Makeham"
+        ],
+        "fr": [
+          "loi de Makeham"
+        ],
+        "es": [
+          "ley de Makeham"
+        ],
+        "it": [
+          "legge di Makeham"
+        ],
+        "pl": [
+          "prawo Makehama"
+        ],
+        "ro": [
+          "legea lui Makeham"
+        ]
+      }
+    },
+    {
+      "title": "Prospective Policy Value",
+      "names": {
+        "zh": [
+          "未来法准备金",
+          "未來法準備金"
+        ],
+        "nl": [
+          "prospectieve voorziening",
+          "prospectieve premiereserve"
+        ],
+        "de": [
+          "prospektive Deckungsrückstellung",
+          "prospektives Deckungskapital"
+        ],
+        "fr": [
+          "provision mathématique prospective"
+        ],
+        "es": [
+          "reserva matemática prospectiva"
+        ],
+        "it": [
+          "riserva matematica prospettiva"
+        ],
+        "pl": [
+          "rezerwa prospektywna"
+        ],
+        "ro": [
+          "rezerva prospectivă"
+        ]
+      }
+    },
+    {
+      "title": "Pure Endowment",
+      "names": {
+        "zh": [
+          "纯生存保险",
+          "純生存保險",
+          "生存保险",
+          "生存保險"
+        ],
+        "nl": [
+          "zuivere kapitaalverzekering bij leven"
+        ],
+        "de": [
+          "Erlebensfallversicherung"
+        ],
+        "fr": [
+          "capital différé"
+        ],
+        "es": [
+          "capital diferido"
+        ],
+        "it": [
+          "capitale differito"
+        ],
+        "pl": [
+          "ubezpieczenie na dożycie"
+        ],
+        "ro": [
+          "asigurare de supraviețuire"
+        ]
+      }
+    },
+    {
+      "title": "Select and Ultimate Mortality",
+      "names": {
+        "zh": [
+          "选择与终极死亡率",
+          "選擇與終極死亡率",
+          "选择表",
+          "選擇表"
+        ],
+        "nl": [
+          "selecte en ultieme sterfte"
+        ],
+        "de": [
+          "Selektions- und Schlusssterbetafel"
+        ],
+        "fr": [
+          "mortalité de sélection et mortalité ultime"
+        ],
+        "es": [
+          "mortalidad selecta y última"
+        ],
+        "it": [
+          "mortalità selezionata e ultima"
+        ],
+        "pl": [
+          "śmiertelność selekcyjna i ostateczna"
+        ],
+        "ro": [
+          "mortalitate selectă și ultimă"
+        ]
+      }
+    },
+    {
+      "title": "Temporary Life Annuity",
+      "names": {
+        "zh": [
+          "定期生存年金"
+        ],
+        "nl": [
+          "tijdelijke lijfrente"
+        ],
+        "de": [
+          "temporäre Leibrente"
+        ],
+        "fr": [
+          "rente viagère temporaire"
+        ],
+        "es": [
+          "renta vitalicia temporal"
+        ],
+        "it": [
+          "rendita vitalizia temporanea"
+        ],
+        "pl": [
+          "czasowa renta życiowa"
+        ],
+        "ro": [
+          "anuitate viageră temporară"
+        ]
+      }
+    },
+    {
+      "title": "Uniform Distribution of Deaths",
+      "names": {
+        "zh": [
+          "死亡均匀分布假设",
+          "死亡均勻分布假設"
+        ],
+        "nl": [
+          "uniforme verdeling van sterfgevallen"
+        ],
+        "de": [
+          "Gleichverteilung der Todesfälle"
+        ],
+        "fr": [
+          "répartition uniforme des décès"
+        ],
+        "es": [
+          "distribución uniforme de las muertes"
+        ],
+        "it": [
+          "distribuzione uniforme dei decessi"
+        ],
+        "pl": [
+          "jednostajny rozkład zgonów"
+        ],
+        "ro": [
+          "distribuția uniformă a deceselor"
+        ]
+      }
+    },
+    {
+      "title": "Varying Life Annuity Payments",
+      "names": {
+        "zh": [
+          "变额生存年金",
+          "變額生存年金"
+        ],
+        "nl": [
+          "variabele lijfrente"
+        ],
+        "de": [
+          "veränderliche Leibrente"
+        ],
+        "fr": [
+          "rente viagère variable"
+        ],
+        "es": [
+          "renta vitalicia variable"
+        ],
+        "it": [
+          "rendita vitalizia variabile"
+        ],
+        "pl": [
+          "renta życiowa o zmiennych płatnościach"
+        ],
+        "ro": [
+          "anuitate viageră variabilă"
+        ]
+      }
+    },
+    {
+      "title": "Varying Life Insurance Benefits",
+      "names": {
+        "zh": [
+          "变额寿险",
+          "變額壽險"
+        ],
+        "nl": [
+          "verzekering met variabele overlijdensuitkering"
+        ],
+        "de": [
+          "Todesfallversicherung mit veränderlicher Leistung"
+        ],
+        "fr": [
+          "assurance décès à capital variable"
+        ],
+        "es": [
+          "seguro de vida con prestación variable"
+        ],
+        "it": [
+          "assicurazione caso morte a capitale variabile"
+        ],
+        "pl": [
+          "ubezpieczenie na życie o zmiennej sumie"
+        ],
+        "ro": [
+          "asigurare de deces cu beneficiu variabil"
+        ]
+      }
+    },
+    {
+      "title": "Whole Life Annuity Due",
+      "names": {
+        "zh": [
+          "期初付终身生存年金",
+          "期初付終身生存年金"
+        ],
+        "nl": [
+          "levenslange lijfrente prenumerando"
+        ],
+        "de": [
+          "vorschüssige lebenslange Leibrente"
+        ],
+        "fr": [
+          "rente viagère payable d'avance"
+        ],
+        "es": [
+          "renta vitalicia anticipada"
+        ],
+        "it": [
+          "rendita vitalizia anticipata"
+        ],
+        "pl": [
+          "dożywotnia renta życiowa płatna z góry"
+        ],
+        "ro": [
+          "anuitate viageră anticipată"
+        ]
+      }
+    },
+    {
+      "title": "Whole Life Annuity Immediate",
+      "names": {
+        "zh": [
+          "期末付终身生存年金",
+          "期末付終身生存年金"
+        ],
+        "nl": [
+          "levenslange lijfrente postnumerando"
+        ],
+        "de": [
+          "nachschüssige lebenslange Leibrente"
+        ],
+        "fr": [
+          "rente viagère à terme échu"
+        ],
+        "es": [
+          "renta vitalicia vencida"
+        ],
+        "it": [
+          "rendita vitalizia posticipata"
+        ],
+        "pl": [
+          "dożywotnia renta życiowa płatna z dołu"
+        ],
+        "ro": [
+          "anuitate viageră posticipată"
+        ]
+      }
     }
   ]
 }

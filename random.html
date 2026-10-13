@@ -112,7 +112,7 @@
     unbind();
   }
   window.__mkSearchIndexDemand = release;
-  try { var params = new URLSearchParams(location.search); if (params.get('q') || params.get('h')) release('query'); } catch (_) {}
+  try { var params = new URLSearchParams(location.search); if (params.get('q') || params.get('fq') || params.get('h')) release('query'); } catch (_) {}
   var SEARCH = '.md-search, label[for="__search"], #__search, [data-md-component="search"], [data-md-toggle="search"]';
   function near(event) { var t = event && event.target; try { return !!(t && t.closest && t.closest(SEARCH)); } catch (_) { return false; } }
   function onPointer(event) { if (near(event)) release('intent'); }
@@ -169,9 +169,9 @@
   
   try{var u="assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="javascripts/sidebar-core.js?h=001bdc6a6232";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="javascripts/sidebar-core.js?h=028a29ef9217";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="javascripts/sidebar.js?h=001bdc6a6232";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="javascripts/sidebar.js?h=028a29ef9217";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -188,14 +188,32 @@
       if(!/\/find(?:\.html|\/(?:index\.html)?)?$/i.test(url.pathname)||params.get("lp_token"))return;
       var direct=String(params.get("lp_direct")||params.get("fb_direct")||"").trim().toLowerCase();
       var src=String(params.get("src")||"").trim().toLowerCase();
-      var q=String(params.get("q")||"").trim();
+      var q=String(params.get("fq")||params.get("q")||"").trim();
       if(!q||(direct!=="1"&&direct!=="true"&&src!=="lp_direct"&&src!=="learning_path"))return;
       params.set("lp_token",q);
       history.replaceState(history.state,"",url.toString());
     }catch(_){}
   }
+  // Material's search.share reads ?q= on load and OPENS the header search with
+  // that text (toggle checked + input focused). On the Finder the query is a
+  // Finder handoff, not a header search: Material opened the overlay (and the
+  // mobile keyboard), the Finder closed it again, and on a slow phone network
+  // the two fought until the header was left half-open and the page blurred.
+  // Move the Finder query to fq before Material's bundle runs; the Finder
+  // scripts read fq (and still accept q from older links).
+  function moveFinderQueryOffMaterialParam(){
+    try{
+      var url=new URL(location.href),params=url.searchParams;
+      if(!/\/find(?:\.html|\/(?:index\.html)?)?$/i.test(url.pathname)||!params.has("q"))return;
+      var q=String(params.get("q")||"").trim();
+      if(q&&!params.get("fq"))params.set("fq",q);
+      params.delete("q");
+      history.replaceState(history.state,"",url.toString());
+    }catch(_){}
+  }
   preserveLpFindToken();
-  document.addEventListener("DOMContentSwitch",preserveLpFindToken,true);
+  moveFinderQueryOffMaterialParam();
+  document.addEventListener("DOMContentSwitch",function(){preserveLpFindToken();moveFinderQueryOffMaterialParam();},true);
   var KEY="mk_startup_features_v1";
   var DEFAULTS={account:true,learningPath:true,mastery:true,aiQuiz:true,sidebarSort:true};
   function kebab(k){return String(k||"").replace(/[A-Z]/g,function(m){return "-"+m.toLowerCase();});}

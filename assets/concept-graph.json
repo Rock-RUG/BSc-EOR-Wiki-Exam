@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1791803945885,
+  "generatedAt": 1791872240198,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -4951,6 +4951,272 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/affine-subspace.html": {
+      "title": "Affine Subspace",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/basis-of-solutions-difference-equation.html": {
+      "title": "Basis of Solutions of a Difference Equation",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html": {
+      "title": "Change of Basis",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-equation-differential-equation.html": {
+      "title": "Characteristic Equation for a Differential Equation",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-polynomial-difference-equation.html": {
+      "title": "Characteristic Polynomial for a Difference Equation",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/complex-conjugate-eigenvalues.html": {
+      "title": "Complex Conjugate Pair of Eigenvalues",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/difference-equation.html": {
+      "title": "Difference Equation",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/differential-equation.html": {
+      "title": "Differential Equation",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/equilibrium-differential-equation.html": {
+      "title": "Equilibrium of a Differential Equation",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-differential-equation.html": {
+      "title": "First-Order Differential Equation",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-linear-difference-equation.html": {
+      "title": "First-Order Linear Difference Equation",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html": {
+      "title": "Fundamental Theorem of Linear Algebra",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html": {
+      "title": "General Solution of a Linear ODE",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/generalized-inverse.html": {
+      "title": "Generalized Inverse",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html": {
+      "title": "Gram-Schmidt Algorithm",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/higher-order-linear-difference-equation.html": {
+      "title": "Higher-Order Linear Difference Equation",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/integrating-factor.html": {
+      "title": "Integrating Factor",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/kronecker-product.html": {
+      "title": "Kronecker Product",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html": {
+      "title": "Least Squares",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/linear-vector-ode.html": {
+      "title": "Linear Vector ODE",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-exponential.html": {
+      "title": "Matrix Exponential",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-representation-of-a-linear-map.html": {
+      "title": "Matrix Representation of a Linear Map",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/moore-penrose-inverse.html": {
+      "title": "Moore-Penrose Inverse",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html": {
+      "title": "Orthogonal Complement",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html": {
+      "title": "Orthogonal Projection",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html": {
+      "title": "Particular Solution of an Inhomogeneous Linear ODE",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/row-space.html": {
+      "title": "Row Space",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-differential-equation.html": {
+      "title": "Second-Order Differential Equation",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-linear-difference-equation.html": {
+      "title": "Second-Order Linear Difference Equation",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/similarity-transformation.html": {
+      "title": "Similarity Transformation",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value-decomposition.html": {
+      "title": "Singular Value Decomposition",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value.html": {
+      "title": "Singular Value",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-equilibrium.html": {
+      "title": "Stability of an Equilibrium",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-higher-order-ode.html": {
+      "title": "Stability of Solutions of Higher-Order ODEs",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-linear-difference-system.html": {
+      "title": "Stability of a System of Linear Difference Equations",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-scalar-difference-equation.html": {
+      "title": "Stability of a Scalar Difference Equation",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-differential-equations.html": {
+      "title": "System of Differential Equations",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-linear-difference-equations.html": {
+      "title": "System of Linear Difference Equations",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
     "Year-2/1a-Statistical-Inference/index.html": {
       "title": "Statistical Inference",
       "courseName": "1a-Statistical-Inference",
@@ -5233,6 +5499,440 @@
     },
     "Year-2/2b-Game-Theory/index.html": {
       "title": "Game Theory",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/adverse-selection.html": {
+      "title": "Adverse Selection",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/backward-induction.html": {
+      "title": "Backward Induction",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html": {
+      "title": "Bayes Rule for Beliefs",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/bayesian-game.html": {
+      "title": "Bayesian Game",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html": {
+      "title": "Bayesian Nash Equilibrium",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/bertrand-duopoly.html": {
+      "title": "Bertrand Duopoly",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/best-response-correspondence.html": {
+      "title": "Best-Response Correspondence",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/best-response.html": {
+      "title": "Best Response",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/chicken-game.html": {
+      "title": "Chicken Game",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/common-knowledge.html": {
+      "title": "Common Knowledge",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/common-prior.html": {
+      "title": "Common Prior",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/common-value-auction.html": {
+      "title": "Common-Value Auction",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/cournot-duopoly.html": {
+      "title": "Cournot Duopoly",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/dutch-auction.html": {
+      "title": "Dutch Auction",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/english-auction.html": {
+      "title": "English Auction",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/expected-payoff-maximization.html": {
+      "title": "Expected Payoff Maximization",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/extensive-form-game.html": {
+      "title": "Extensive-Form Game",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/first-price-auction.html": {
+      "title": "First-Price Auction",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/folk-theorem.html": {
+      "title": "Folk Theorem",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/forward-induction.html": {
+      "title": "Forward Induction",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/game-theory.html": {
+      "title": "Game Theory",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/grim-trigger-strategy.html": {
+      "title": "Grim Trigger Strategy",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html": {
+      "title": "Harsanyi Purification Theorem",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/harsanyi-transformation.html": {
+      "title": "Harsanyi Transformation",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/history.html": {
+      "title": "History in a Multistage Game",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html": {
+      "title": "Indifference Principle for Mixed Strategies",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/information-set.html": {
+      "title": "Information Set",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/iterated-elimination-of-strictly-dominated-strategies.html": {
+      "title": "Iterated Elimination of Strictly Dominated Strategies",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/market-for-lemons.html": {
+      "title": "Market for Lemons",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/median-voter-theorem.html": {
+      "title": "Median Voter Theorem",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/mixed-strategy.html": {
+      "title": "Mixed Strategy",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/multistage-game.html": {
+      "title": "Multistage Game",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html": {
+      "title": "Nash Equilibrium in Mixed Strategies",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/nash-equilibrium.html": {
+      "title": "Nash Equilibrium",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/nash-existence-theorem.html": {
+      "title": "Nash Existence Theorem",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/normal-form-game.html": {
+      "title": "Normal-Form Game",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/one-stage-deviation-principle.html": {
+      "title": "One-Stage Deviation Principle",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/pareto-efficiency.html": {
+      "title": "Pareto Efficiency",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html": {
+      "title": "Perfect Bayesian Equilibrium",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/pooling-equilibrium.html": {
+      "title": "Pooling Equilibrium",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/private-value-auction.html": {
+      "title": "Private-Value Auction",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/pure-strategy.html": {
+      "title": "Pure Strategy",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/rational-agent.html": {
+      "title": "Rational Agent",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/repeated-game.html": {
+      "title": "Repeated Game",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/revenue-equivalence-theorem.html": {
+      "title": "Revenue Equivalence Theorem",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/second-price-auction.html": {
+      "title": "Second-Price Auction",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/separating-equilibrium.html": {
+      "title": "Separating Equilibrium",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/sequential-rationality.html": {
+      "title": "Sequential Rationality",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/signaling-game.html": {
+      "title": "Signalling Game",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/stackelberg-competition.html": {
+      "title": "Stackelberg Competition",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/stage-game.html": {
+      "title": "Stage Game",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/static-game-of-complete-information.html": {
+      "title": "Static Game of Complete Information",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html": {
+      "title": "Strategy in an Extensive-Form Game",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/strictly-dominant-strategy.html": {
+      "title": "Strictly Dominant Strategy",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/strictly-dominated-strategy.html": {
+      "title": "Strictly Dominated Strategy",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html": {
+      "title": "Subgame-Perfect Nash Equilibrium",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/subgame.html": {
+      "title": "Subgame",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/system-of-beliefs.html": {
+      "title": "System of Beliefs",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/trigger-strategy.html": {
+      "title": "Trigger Strategy",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/type.html": {
+      "title": "Type",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/weakly-dominant-strategy.html": {
+      "title": "Weakly Dominant Strategy",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/winner-s-curse.html": {
+      "title": "Winner's Curse",
       "courseName": "2b-Game-Theory",
       "coursePath": "Year-2/2b-Game-Theory",
       "curriculumStatus": "current",
@@ -8398,6 +9098,228 @@
     "Year-2/index.html": [],
     "Year-2/1a-Macroeconomics-for-EOR/index.html": [],
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/index.html": [],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/affine-subspace.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/subspace.html",
+      "Year-1/1b-Math-II-Linear-Algebra/kernel.html",
+      "Year-1/1b-Math-II-Linear-Algebra/system-of-linear-equations.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/basis-of-solutions-difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-polynomial-difference-equation.html",
+      "Year-1/1b-Math-II-Linear-Algebra/linear-independence.html",
+      "Year-1/1b-Math-II-Linear-Algebra/basis.html",
+      "Year-1/1b-Math-II-Linear-Algebra/determinant.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/basis.html",
+      "Year-1/1b-Math-II-Linear-Algebra/coordinate.html",
+      "Year-1/1b-Math-II-Linear-Algebra/inverse-matrix.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-representation-of-a-linear-map.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-equation-differential-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-differential-equation.html",
+      "Year-1/1b-Math-II-Linear-Algebra/root-of-a-polynomial.html",
+      "Year-1/1a-Math-I-Calculus/exponential-function.html",
+      "Year-1/1b-Math-II-Linear-Algebra/eulers-formula.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-polynomial-difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/difference-equation.html",
+      "Year-1/1b-Math-II-Linear-Algebra/root-of-a-polynomial.html",
+      "Year-1/1b-Math-II-Linear-Algebra/characteristic-polynomial.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/complex-conjugate-eigenvalues.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html",
+      "Year-1/1b-Math-II-Linear-Algebra/characteristic-polynomial.html",
+      "Year-1/1b-Math-II-Linear-Algebra/complex-conjugate.html",
+      "Year-1/1b-Math-II-Linear-Algebra/complex-conjugate-root-theorem.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/difference-equation.html": [
+      "Year-1/1a-Math-I-Calculus/sequence.html",
+      "Year-1/1b-Math-II-Linear-Algebra/vector-space.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/differential-equation.html": [
+      "Year-1/1a-Math-I-Calculus/derivative-and-differentiability.html",
+      "Year-1/1a-Math-I-Calculus/higher-order-derivative.html",
+      "Year-1/1a-Math-I-Calculus/antiderivative.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/equilibrium-differential-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-differential-equation.html",
+      "Year-1/1a-Math-I-Calculus/zero-of-a-function.html",
+      "Year-1/1a-Math-I-Calculus/constant-function.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-differential-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/differential-equation.html",
+      "Year-1/1a-Math-I-Calculus/exponential-function.html",
+      "Year-1/1a-Math-I-Calculus/chain-rule.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-linear-difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/difference-equation.html",
+      "Year-1/1a-Math-I-Calculus/geometric-series.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/kernel.html",
+      "Year-1/1b-Math-II-Linear-Algebra/range-of-a-linear-map.html",
+      "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-linear-maps.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/row-space.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-equation-differential-equation.html",
+      "Year-1/1b-Math-II-Linear-Algebra/linear-independence.html",
+      "Year-1/1b-Math-II-Linear-Algebra/dimension.html",
+      "Year-1/1b-Math-II-Linear-Algebra/homogeneous-system.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/generalized-inverse.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/matrix-product.html",
+      "Year-1/1b-Math-II-Linear-Algebra/rank.html",
+      "Year-1/1b-Math-II-Linear-Algebra/inverse-matrix.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/left-and-right-inverses.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/inner-product.html",
+      "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html",
+      "Year-1/1b-Math-II-Linear-Algebra/linear-independence.html",
+      "Year-1/1b-Math-II-Linear-Algebra/orthogonal-vectors.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/higher-order-linear-difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-polynomial-difference-equation.html",
+      "Year-1/1b-Math-II-Linear-Algebra/matrix-product.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/integrating-factor.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-differential-equation.html",
+      "Year-1/1a-Math-I-Calculus/antiderivative.html",
+      "Year-1/1a-Math-I-Calculus/differentiation-rules.html",
+      "Year-1/1a-Math-I-Calculus/chain-rule.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/kronecker-product.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/matrix-product.html",
+      "Year-1/1b-Math-II-Linear-Algebra/matrix-scalar-multiplication.html",
+      "Year-1/1b-Math-II-Linear-Algebra/block-matrix.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html",
+      "Year-1/1b-Math-II-Linear-Algebra/range-of-a-linear-map.html",
+      "Year-1/1b-Math-II-Linear-Algebra/transpose.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/linear-vector-ode.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-differential-equations.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-equilibrium.html",
+      "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html",
+      "Year-1/1b-Math-II-Linear-Algebra/eigenbasis.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-exponential.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/matrix-product.html",
+      "Year-1/2a-Math-III-Analysis/taylor-series.html",
+      "Year-1/1a-Math-I-Calculus/exponential-function.html",
+      "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html",
+      "Year-1/1b-Math-II-Linear-Algebra/jordan-normal-form.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-representation-of-a-linear-map.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/linear-map.html",
+      "Year-1/1b-Math-II-Linear-Algebra/basis.html",
+      "Year-1/1b-Math-II-Linear-Algebra/coordinate.html",
+      "Year-1/1b-Math-II-Linear-Algebra/matrix-product.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/moore-penrose-inverse.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/generalized-inverse.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value-decomposition.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html",
+      "Year-1/1b-Math-II-Linear-Algebra/symmetric-matrix.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/inner-product.html",
+      "Year-1/1b-Math-II-Linear-Algebra/orthogonal-vectors.html",
+      "Year-1/1b-Math-II-Linear-Algebra/subspace.html",
+      "Year-1/1b-Math-II-Linear-Algebra/direct-sum.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/inner-product.html",
+      "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html",
+      "Year-1/1b-Math-II-Linear-Algebra/orthogonal-vectors.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-equation-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/integrating-factor.html",
+      "Year-1/1b-Math-II-Linear-Algebra/homogeneous-system.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/row-space.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/linear-span.html",
+      "Year-1/1b-Math-II-Linear-Algebra/transpose.html",
+      "Year-1/1b-Math-II-Linear-Algebra/elementary-row-operation.html",
+      "Year-1/1b-Math-II-Linear-Algebra/row-echelon-form.html",
+      "Year-1/1b-Math-II-Linear-Algebra/rank.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-differential-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-differential-equation.html",
+      "Year-1/1a-Math-I-Calculus/higher-order-derivative.html",
+      "Year-1/1b-Math-II-Linear-Algebra/vector-space.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-linear-difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-linear-difference-equation.html",
+      "Year-1/1b-Math-II-Linear-Algebra/complex-number.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/similarity-transformation.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/inverse-matrix.html",
+      "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html",
+      "Year-1/1b-Math-II-Linear-Algebra/characteristic-polynomial.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value-decomposition.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html",
+      "Year-1/1b-Math-II-Linear-Algebra/symmetric-matrix.html",
+      "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html",
+      "Year-1/1b-Math-II-Linear-Algebra/symmetric-matrix.html",
+      "Year-1/1b-Math-II-Linear-Algebra/definite-matrix.html",
+      "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-equilibrium.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/equilibrium-differential-equation.html",
+      "Year-1/1a-Math-I-Calculus/derivative-and-differentiability.html",
+      "Year-1/1a-Math-I-Calculus/limit-at-infinity.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-higher-order-ode.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-equation-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-equilibrium.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html",
+      "Year-1/1b-Math-II-Linear-Algebra/eulers-formula.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-linear-difference-system.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-linear-difference-equations.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-scalar-difference-equation.html",
+      "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html",
+      "Year-1/1b-Math-II-Linear-Algebra/complex-absolute-value.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-scalar-difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-polynomial-difference-equation.html",
+      "Year-1/1a-Math-I-Calculus/limit-of-a-sequence.html",
+      "Year-1/1b-Math-II-Linear-Algebra/complex-absolute-value.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-differential-equations.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-differential-equation.html",
+      "Year-1/1b-Math-II-Linear-Algebra/matrix-product.html",
+      "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html",
+      "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-linear-difference-equations.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-linear-difference-equation.html",
+      "Year-1/1b-Math-II-Linear-Algebra/matrix-product.html",
+      "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html",
+      "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html"
+    ],
     "Year-2/1a-Statistical-Inference/index.html": [],
     "Year-2/1b-Linear-Models-in-Statistics/index.html": [],
     "Year-2/1b-Math-VI-Convexity-and-Optimization/index.html": [],
@@ -8541,6 +9463,329 @@
     ],
     "Year-2/2b-Dynamic-Econometrics/index.html": [],
     "Year-2/2b-Game-Theory/index.html": [],
+    "Year-2/2b-Game-Theory/adverse-selection.html": [
+      "Year-2/2b-Game-Theory/type.html",
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
+      "Year-1/1b-Probability-Theory-for-EOR/conditional-expectation.html"
+    ],
+    "Year-2/2b-Game-Theory/backward-induction.html": [
+      "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html",
+      "Year-2/2b-Game-Theory/rational-agent.html",
+      "Year-2/2b-Game-Theory/common-knowledge.html"
+    ],
+    "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html": [
+      "Year-2/2b-Game-Theory/system-of-beliefs.html",
+      "Year-2/2b-Game-Theory/common-prior.html",
+      "Year-2/2b-Game-Theory/mixed-strategy.html",
+      "Year-1/1b-Probability-Theory-for-EOR/bayes-rule.html"
+    ],
+    "Year-2/2b-Game-Theory/bayesian-game.html": [
+      "Year-2/2b-Game-Theory/type.html",
+      "Year-2/2b-Game-Theory/common-prior.html",
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-1/1b-Probability-Theory-for-EOR/expectation.html"
+    ],
+    "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html": [
+      "Year-2/2b-Game-Theory/bayesian-game.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/best-response.html",
+      "Year-1/1b-Probability-Theory-for-EOR/conditional-expectation.html"
+    ],
+    "Year-2/2b-Game-Theory/bertrand-duopoly.html": [
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/best-response.html"
+    ],
+    "Year-2/2b-Game-Theory/best-response-correspondence.html": [
+      "Year-2/2b-Game-Theory/best-response.html",
+      "Year-1/1a-Math-I-Calculus/function.html"
+    ],
+    "Year-2/2b-Game-Theory/best-response.html": [
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/rational-agent.html"
+    ],
+    "Year-2/2b-Game-Theory/chicken-game.html": [
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html"
+    ],
+    "Year-2/2b-Game-Theory/common-knowledge.html": [
+      "Year-2/2b-Game-Theory/rational-agent.html",
+      "Year-2/2b-Game-Theory/game-theory.html"
+    ],
+    "Year-2/2b-Game-Theory/common-prior.html": [
+      "Year-2/2b-Game-Theory/type.html",
+      "Year-2/2b-Game-Theory/common-knowledge.html",
+      "Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html",
+      "Year-1/1b-Probability-Theory-for-EOR/bayes-rule.html"
+    ],
+    "Year-2/2b-Game-Theory/common-value-auction.html": [
+      "Year-2/2b-Game-Theory/private-value-auction.html",
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
+      "Year-1/1b-Probability-Theory-for-EOR/conditional-expectation.html",
+      "Year-1/1b-Probability-Theory-for-EOR/uniform-distribution.html"
+    ],
+    "Year-2/2b-Game-Theory/cournot-duopoly.html": [
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/best-response.html",
+      "Year-1/1a-Math-I-Calculus/first-order-condition.html",
+      "Year-1/2a-Math-III-Analysis/partial-derivative.html"
+    ],
+    "Year-2/2b-Game-Theory/dutch-auction.html": [
+      "Year-2/2b-Game-Theory/first-price-auction.html",
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html"
+    ],
+    "Year-2/2b-Game-Theory/english-auction.html": [
+      "Year-2/2b-Game-Theory/private-value-auction.html",
+      "Year-2/2b-Game-Theory/second-price-auction.html",
+      "Year-2/2b-Game-Theory/weakly-dominant-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/expected-payoff-maximization.html": [
+      "Year-2/2b-Game-Theory/rational-agent.html",
+      "Year-1/1b-Probability-Theory-for-EOR/expectation.html",
+      "Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html",
+      "Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html"
+    ],
+    "Year-2/2b-Game-Theory/extensive-form-game.html": [
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/common-knowledge.html",
+      "Year-1/1a-OR-Modelling/tree.html"
+    ],
+    "Year-2/2b-Game-Theory/first-price-auction.html": [
+      "Year-2/2b-Game-Theory/private-value-auction.html",
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
+      "Year-1/1b-Probability-Theory-for-EOR/uniform-distribution.html",
+      "Year-1/1b-Probability-Theory-for-EOR/order-statistic.html"
+    ],
+    "Year-2/2b-Game-Theory/folk-theorem.html": [
+      "Year-2/2b-Game-Theory/repeated-game.html",
+      "Year-2/2b-Game-Theory/grim-trigger-strategy.html",
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/mixed-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/forward-induction.html": [
+      "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/strictly-dominated-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/game-theory.html": [
+      "Year-2/2b-Game-Theory/rational-agent.html",
+      "Year-1/1a-OR-Modelling/optimization-model.html"
+    ],
+    "Year-2/2b-Game-Theory/grim-trigger-strategy.html": [
+      "Year-2/2b-Game-Theory/trigger-strategy.html",
+      "Year-2/2b-Game-Theory/repeated-game.html",
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html": [
+      "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/type.html",
+      "Year-1/1b-Probability-Theory-for-EOR/uniform-distribution.html"
+    ],
+    "Year-2/2b-Game-Theory/harsanyi-transformation.html": [
+      "Year-2/2b-Game-Theory/bayesian-game.html",
+      "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/information-set.html"
+    ],
+    "Year-2/2b-Game-Theory/history.html": [
+      "Year-2/2b-Game-Theory/multistage-game.html",
+      "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html",
+      "Year-2/2b-Game-Theory/subgame.html"
+    ],
+    "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html": [
+      "Year-2/2b-Game-Theory/mixed-strategy.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/expected-payoff-maximization.html"
+    ],
+    "Year-2/2b-Game-Theory/information-set.html": [
+      "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/pure-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/iterated-elimination-of-strictly-dominated-strategies.html": [
+      "Year-2/2b-Game-Theory/strictly-dominated-strategy.html",
+      "Year-2/2b-Game-Theory/common-knowledge.html"
+    ],
+    "Year-2/2b-Game-Theory/market-for-lemons.html": [
+      "Year-2/2b-Game-Theory/adverse-selection.html",
+      "Year-2/2b-Game-Theory/type.html",
+      "Year-1/1b-Probability-Theory-for-EOR/conditional-expectation.html",
+      "Year-1/1b-Probability-Theory-for-EOR/uniform-distribution.html"
+    ],
+    "Year-2/2b-Game-Theory/median-voter-theorem.html": [
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/best-response.html",
+      "Year-1/1b-Probability-Theory-for-EOR/median.html",
+      "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html"
+    ],
+    "Year-2/2b-Game-Theory/mixed-strategy.html": [
+      "Year-2/2b-Game-Theory/pure-strategy.html",
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/expected-payoff-maximization.html",
+      "Year-1/1b-Probability-Theory-for-EOR/distribution.html"
+    ],
+    "Year-2/2b-Game-Theory/multistage-game.html": [
+      "Year-2/2b-Game-Theory/stage-game.html",
+      "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html": [
+      "Year-2/2b-Game-Theory/mixed-strategy.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/best-response-correspondence.html"
+    ],
+    "Year-2/2b-Game-Theory/nash-equilibrium.html": [
+      "Year-2/2b-Game-Theory/best-response.html",
+      "Year-2/2b-Game-Theory/best-response-correspondence.html",
+      "Year-2/2b-Game-Theory/normal-form-game.html"
+    ],
+    "Year-2/2b-Game-Theory/nash-existence-theorem.html": [
+      "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/mixed-strategy.html",
+      "Year-2/2b-Game-Theory/best-response-correspondence.html"
+    ],
+    "Year-2/2b-Game-Theory/normal-form-game.html": [
+      "Year-2/2b-Game-Theory/pure-strategy.html",
+      "Year-2/2b-Game-Theory/static-game-of-complete-information.html",
+      "Year-1/1a-Math-I-Calculus/function.html"
+    ],
+    "Year-2/2b-Game-Theory/one-stage-deviation-principle.html": [
+      "Year-2/2b-Game-Theory/multistage-game.html",
+      "Year-2/2b-Game-Theory/history.html",
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/pareto-efficiency.html": [
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/pure-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html": [
+      "Year-2/2b-Game-Theory/system-of-beliefs.html",
+      "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html",
+      "Year-2/2b-Game-Theory/sequential-rationality.html",
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/pooling-equilibrium.html": [
+      "Year-2/2b-Game-Theory/signaling-game.html",
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html",
+      "Year-2/2b-Game-Theory/system-of-beliefs.html",
+      "Year-2/2b-Game-Theory/common-prior.html"
+    ],
+    "Year-2/2b-Game-Theory/private-value-auction.html": [
+      "Year-2/2b-Game-Theory/bayesian-game.html",
+      "Year-2/2b-Game-Theory/type.html",
+      "Year-2/2b-Game-Theory/common-prior.html",
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/pure-strategy.html": [
+      "Year-2/2b-Game-Theory/static-game-of-complete-information.html",
+      "Year-1/1b-Math-II-Linear-Algebra/cartesian-product.html"
+    ],
+    "Year-2/2b-Game-Theory/rational-agent.html": [
+      "Year-1/1a-OR-Modelling/optimization-model.html",
+      "Year-1/1a-Math-I-Calculus/function.html"
+    ],
+    "Year-2/2b-Game-Theory/repeated-game.html": [
+      "Year-2/2b-Game-Theory/stage-game.html",
+      "Year-2/2b-Game-Theory/multistage-game.html",
+      "Year-2/2b-Game-Theory/history.html",
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/revenue-equivalence-theorem.html": [
+      "Year-2/2b-Game-Theory/first-price-auction.html",
+      "Year-2/2b-Game-Theory/second-price-auction.html",
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
+      "Year-1/1b-Probability-Theory-for-EOR/expectation.html",
+      "Year-1/1b-Probability-Theory-for-EOR/order-statistic.html"
+    ],
+    "Year-2/2b-Game-Theory/second-price-auction.html": [
+      "Year-2/2b-Game-Theory/private-value-auction.html",
+      "Year-2/2b-Game-Theory/weakly-dominant-strategy.html",
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
+      "Year-1/1b-Probability-Theory-for-EOR/order-statistic.html"
+    ],
+    "Year-2/2b-Game-Theory/separating-equilibrium.html": [
+      "Year-2/2b-Game-Theory/signaling-game.html",
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html",
+      "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html"
+    ],
+    "Year-2/2b-Game-Theory/sequential-rationality.html": [
+      "Year-2/2b-Game-Theory/best-response.html",
+      "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/information-set.html"
+    ],
+    "Year-2/2b-Game-Theory/signaling-game.html": [
+      "Year-2/2b-Game-Theory/bayesian-game.html",
+      "Year-2/2b-Game-Theory/type.html",
+      "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/stackelberg-competition.html": [
+      "Year-2/2b-Game-Theory/cournot-duopoly.html",
+      "Year-2/2b-Game-Theory/backward-induction.html",
+      "Year-2/2b-Game-Theory/best-response.html",
+      "Year-1/1a-Math-I-Calculus/first-order-condition.html"
+    ],
+    "Year-2/2b-Game-Theory/stage-game.html": [
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/mixed-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/static-game-of-complete-information.html": [
+      "Year-2/2b-Game-Theory/game-theory.html",
+      "Year-2/2b-Game-Theory/common-knowledge.html"
+    ],
+    "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html": [
+      "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/information-set.html",
+      "Year-2/2b-Game-Theory/pure-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/strictly-dominant-strategy.html": [
+      "Year-2/2b-Game-Theory/strictly-dominated-strategy.html",
+      "Year-2/2b-Game-Theory/normal-form-game.html"
+    ],
+    "Year-2/2b-Game-Theory/strictly-dominated-strategy.html": [
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/rational-agent.html"
+    ],
+    "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html": [
+      "Year-2/2b-Game-Theory/subgame.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html"
+    ],
+    "Year-2/2b-Game-Theory/subgame.html": [
+      "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/information-set.html"
+    ],
+    "Year-2/2b-Game-Theory/system-of-beliefs.html": [
+      "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/information-set.html",
+      "Year-2/2b-Game-Theory/bayesian-game.html",
+      "Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html"
+    ],
+    "Year-2/2b-Game-Theory/trigger-strategy.html": [
+      "Year-2/2b-Game-Theory/repeated-game.html",
+      "Year-2/2b-Game-Theory/history.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/type.html": [
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/common-knowledge.html",
+      "Year-1/1b-Probability-Theory-for-EOR/random-variable.html"
+    ],
+    "Year-2/2b-Game-Theory/weakly-dominant-strategy.html": [
+      "Year-2/2b-Game-Theory/strictly-dominant-strategy.html",
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/best-response.html"
+    ],
+    "Year-2/2b-Game-Theory/winner-s-curse.html": [
+      "Year-2/2b-Game-Theory/common-value-auction.html",
+      "Year-1/1b-Probability-Theory-for-EOR/conditional-expectation.html",
+      "Year-1/1b-Probability-Theory-for-EOR/order-statistic.html"
+    ],
     "Year-2/2b-Risk-Insurance/index.html": [],
     "Year-2/2b-Risk-Insurance/absolute-risk-aversion.html": [
       "Year-2/2b-Risk-Insurance/expected-utility-and-risk-aversion.html",
@@ -8828,7 +10073,9 @@
     ],
     "Year-1/1a-Math-I-Calculus/antiderivative.html": [
       "Year-1/1a-Math-I-Calculus/fundamental-theorem-of-calculus-part-2.html",
-      "Year-1/1a-Math-I-Calculus/indefinite-integral.html"
+      "Year-1/1a-Math-I-Calculus/indefinite-integral.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/integrating-factor.html"
     ],
     "Year-1/1a-Math-I-Calculus/arithmetic-series.html": [],
     "Year-1/1a-Math-I-Calculus/asymptotic-equivalence.html": [],
@@ -8856,7 +10103,9 @@
     "Year-1/1a-Math-I-Calculus/cauchy-sequence.html": [],
     "Year-1/1a-Math-I-Calculus/chain-rule.html": [
       "Year-1/1a-Math-I-Calculus/integration-by-substitution-type-1.html",
-      "Year-1/1a-Math-I-Calculus/integration-by-substitution-type-2.html"
+      "Year-1/1a-Math-I-Calculus/integration-by-substitution-type-2.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/integrating-factor.html"
     ],
     "Year-1/1a-Math-I-Calculus/codomain.html": [
       "Year-1/1a-Math-I-Calculus/surjective-function.html",
@@ -8872,7 +10121,9 @@
       "Year-1/2b-Math-IV-Multivariate-Calculus/left-and-right-inverses.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/multivariable-chain-rule.html"
     ],
-    "Year-1/1a-Math-I-Calculus/constant-function.html": [],
+    "Year-1/1a-Math-I-Calculus/constant-function.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/equilibrium-differential-equation.html"
+    ],
     "Year-1/1a-Math-I-Calculus/continuity.html": [
       "Year-1/1a-Math-I-Calculus/differentiability-class.html",
       "Year-1/1a-Math-I-Calculus/extreme-value-theorem.html",
@@ -8925,6 +10176,8 @@
       "Year-1/1a-Math-I-Calculus/rolles-theorem.html",
       "Year-1/1a-Math-I-Calculus/stationary-point.html",
       "Year-1/1b-Probability-Theory-for-EOR/transformation-of-a-continuous-random-variable.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-equilibrium.html",
       "Year-2/2a-Life-Insurance/force-of-mortality.html",
       "Year-2/2b-Risk-Insurance/loimaranta-efficiency.html"
     ],
@@ -8942,7 +10195,8 @@
       "Year-1/1a-Math-I-Calculus/integration-by-substitution-type-2.html"
     ],
     "Year-1/1a-Math-I-Calculus/differentiation-rules.html": [
-      "Year-1/1a-Math-I-Calculus/integration-by-parts.html"
+      "Year-1/1a-Math-I-Calculus/integration-by-parts.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/integrating-factor.html"
     ],
     "Year-1/1a-Math-I-Calculus/dirichlet-function.html": [],
     "Year-1/1a-Math-I-Calculus/disjoint-sets.html": [
@@ -8982,7 +10236,10 @@
       "Year-1/1b-Probability-Theory-for-EOR/normal-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html",
       "Year-1/2b-Probability-Distributions/exponential-limit.html",
-      "Year-1/2b-Probability-Distributions/moment-generating-function.html"
+      "Year-1/2b-Probability-Distributions/moment-generating-function.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-equation-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-exponential.html"
     ],
     "Year-1/1a-Math-I-Calculus/exponentiation-and-power.html": [
       "Year-1/1a-Math-I-Calculus/exponential-function.html",
@@ -9017,7 +10274,9 @@
       "Year-1/1a-Math-I-Calculus/riemann-sum.html"
     ],
     "Year-1/1a-Math-I-Calculus/first-order-condition.html": [
-      "Year-1/1a-Math-I-Calculus/second-order-condition.html"
+      "Year-1/1a-Math-I-Calculus/second-order-condition.html",
+      "Year-2/2b-Game-Theory/cournot-duopoly.html",
+      "Year-2/2b-Game-Theory/stackelberg-competition.html"
     ],
     "Year-1/1a-Math-I-Calculus/function.html": [
       "Year-1/1a-Math-I-Calculus/bounded-function.html",
@@ -9052,7 +10311,10 @@
       "Year-1/2b-Math-IV-Multivariate-Calculus/convex-and-concave-functions-on-rn.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/exogenous-and-endogenous-variables.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/lagrangian-function.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/restriction-of-a-function.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/restriction-of-a-function.html",
+      "Year-2/2b-Game-Theory/best-response-correspondence.html",
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/rational-agent.html"
     ],
     "Year-1/1a-Math-I-Calculus/fundamental-theorem-of-calculus-part-1.html": [],
     "Year-1/1a-Math-I-Calculus/fundamental-theorem-of-calculus-part-2.html": [],
@@ -9060,6 +10322,7 @@
       "Year-1/2b-Probability-Distributions/gamma-distribution.html"
     ],
     "Year-1/1a-Math-I-Calculus/geometric-series.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-linear-difference-equation.html",
       "Year-2/2a-Life-Insurance/annuity-certain.html"
     ],
     "Year-1/1a-Math-I-Calculus/global-extremum.html": [
@@ -9078,6 +10341,8 @@
       "Year-1/1a-Math-I-Calculus/second-order-condition.html",
       "Year-1/2a-Math-III-Analysis/taylors-theorem.html",
       "Year-1/2b-Probability-Distributions/moments-from-the-mgf.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-differential-equation.html",
       "Year-2/2b-Risk-Insurance/absolute-risk-aversion.html"
     ],
     "Year-1/1a-Math-I-Calculus/horizontal-asymptote.html": [],
@@ -9198,7 +10463,8 @@
       "Year-1/1a-Math-I-Calculus/improper-integral.html",
       "Year-1/1a-Math-I-Calculus/indeterminate-form.html",
       "Year-1/1a-Math-I-Calculus/squeeze-theorem-for-functions.html",
-      "Year-1/2a-Math-III-Analysis/big-o-and-little-o-notations.html"
+      "Year-1/2a-Math-III-Analysis/big-o-and-little-o-notations.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-equilibrium.html"
     ],
     "Year-1/1a-Math-I-Calculus/limit-laws-for-functions.html": [
       "Year-1/1a-Math-I-Calculus/indeterminate-form.html"
@@ -9216,7 +10482,8 @@
       "Year-1/2b-Probability-Distributions/almost-sure-convergence.html",
       "Year-1/2b-Probability-Distributions/convergence-in-distribution.html",
       "Year-1/2b-Probability-Distributions/convergence-in-probability.html",
-      "Year-1/2b-Probability-Distributions/exponential-limit.html"
+      "Year-1/2b-Probability-Distributions/exponential-limit.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-scalar-difference-equation.html"
     ],
     "Year-1/1a-Math-I-Calculus/local-extremum.html": [
       "Year-1/1a-Math-I-Calculus/first-order-condition.html",
@@ -9350,7 +10617,8 @@
       "Year-1/1a-Math-I-Calculus/cauchy-sequence.html",
       "Year-1/1a-Math-I-Calculus/finite-sequence.html",
       "Year-1/1a-Math-I-Calculus/limit-of-a-sequence.html",
-      "Year-1/2b-Probability-Distributions/convergence-in-probability.html"
+      "Year-1/2b-Probability-Distributions/convergence-in-probability.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/difference-equation.html"
     ],
     "Year-1/1a-Math-I-Calculus/set.html": [
       "Year-1/1a-Math-I-Calculus/cartesian-coordinate-system.html",
@@ -9438,7 +10706,8 @@
     ],
     "Year-1/1a-Math-I-Calculus/vertical-asymptote.html": [],
     "Year-1/1a-Math-I-Calculus/zero-of-a-function.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/root-of-a-polynomial.html"
+      "Year-1/1b-Math-II-Linear-Algebra/root-of-a-polynomial.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/equilibrium-differential-equation.html"
     ],
     "Year-1/1a-OR-Modelling/index.html": [],
     "Year-1/1a-OR-Modelling/algorithm.html": [
@@ -9796,7 +11065,9 @@
       "Year-1/1a-OR-Modelling/inventory-policy.html",
       "Year-1/1a-OR-Modelling/or-study-cycle.html",
       "Year-1/1a-OR-Modelling/relaxation.html",
-      "Year-1/1a-OR-Modelling/vehicle-routing-problem.html"
+      "Year-1/1a-OR-Modelling/vehicle-routing-problem.html",
+      "Year-2/2b-Game-Theory/game-theory.html",
+      "Year-2/2b-Game-Theory/rational-agent.html"
     ],
     "Year-1/1a-OR-Modelling/or-study-cycle.html": [],
     "Year-1/1a-OR-Modelling/ordering-cycle.html": [
@@ -9900,7 +11171,8 @@
     "Year-1/1a-OR-Modelling/task-quota-assignment.html": [],
     "Year-1/1a-OR-Modelling/transportation-problem.html": [],
     "Year-1/1a-OR-Modelling/tree.html": [
-      "Year-1/1a-OR-Modelling/spanning-tree.html"
+      "Year-1/1a-OR-Modelling/spanning-tree.html",
+      "Year-2/2b-Game-Theory/extensive-form-game.html"
     ],
     "Year-1/1a-OR-Modelling/two-phase-method.html": [
       "Year-1/1a-OR-Modelling/infeasible-linear-program.html"
@@ -9954,7 +11226,10 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/basis.html": [
       "Year-1/1b-Math-II-Linear-Algebra/dimension.html",
-      "Year-1/1b-Math-II-Linear-Algebra/eigenbasis.html"
+      "Year-1/1b-Math-II-Linear-Algebra/eigenbasis.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/basis-of-solutions-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-representation-of-a-linear-map.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/binary-operation.html": [
       "Year-1/1b-Math-II-Linear-Algebra/algebraic-structure.html",
@@ -9963,7 +11238,9 @@
       "Year-1/1b-Math-II-Linear-Algebra/identity-element.html",
       "Year-1/1b-Math-II-Linear-Algebra/semigroup.html"
     ],
-    "Year-1/1b-Math-II-Linear-Algebra/block-matrix.html": [],
+    "Year-1/1b-Math-II-Linear-Algebra/block-matrix.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/kronecker-product.html"
+    ],
     "Year-1/1b-Math-II-Linear-Algebra/cantors-diagonal-argument.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/cantors-theorem.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/cardinality-of-the-continuum.html": [
@@ -9979,14 +11256,18 @@
     "Year-1/1b-Math-II-Linear-Algebra/cartesian-product.html": [
       "Year-1/1b-Math-II-Linear-Algebra/binary-operation.html",
       "Year-1/1b-Math-II-Linear-Algebra/polar-coordinate-system.html",
-      "Year-1/1b-Probability-Theory-for-EOR/multiplication-rule.html"
+      "Year-1/1b-Probability-Theory-for-EOR/multiplication-rule.html",
+      "Year-2/2b-Game-Theory/pure-strategy.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/cauchy-schwarz-inequality.html": [
       "Year-1/1b-Math-II-Linear-Algebra/triangle-inequality-vector-norm.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/characteristic-polynomial.html": [
       "Year-1/1b-Math-II-Linear-Algebra/algebraic-multiplicity.html",
-      "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-root-theorem.html"
+      "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-root-theorem.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-polynomial-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/complex-conjugate-eigenvalues.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/similarity-transformation.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/cofactor-expansion.html": [
       "Year-1/1b-Math-II-Linear-Algebra/adjugate-matrix.html"
@@ -9996,15 +11277,20 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/complex-absolute-value.html": [
       "Year-1/1b-Math-II-Linear-Algebra/complex-plane-polar-coordinate-system.html",
-      "Year-1/1b-Math-II-Linear-Algebra/complex-reciprocal.html"
+      "Year-1/1b-Math-II-Linear-Algebra/complex-reciprocal.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-linear-difference-system.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-scalar-difference-equation.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/complex-addition.html": [
       "Year-1/1b-Math-II-Linear-Algebra/complex-subtraction.html"
     ],
-    "Year-1/1b-Math-II-Linear-Algebra/complex-conjugate-root-theorem.html": [],
+    "Year-1/1b-Math-II-Linear-Algebra/complex-conjugate-root-theorem.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/complex-conjugate-eigenvalues.html"
+    ],
     "Year-1/1b-Math-II-Linear-Algebra/complex-conjugate.html": [
       "Year-1/1b-Math-II-Linear-Algebra/complex-conjugate-root-theorem.html",
-      "Year-1/1b-Math-II-Linear-Algebra/complex-reciprocal.html"
+      "Year-1/1b-Math-II-Linear-Algebra/complex-reciprocal.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/complex-conjugate-eigenvalues.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/complex-division.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/complex-exponential-function.html": [
@@ -10041,7 +11327,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/complex-trigonometric-functions.html",
       "Year-1/1b-Math-II-Linear-Algebra/eulers-formula.html",
       "Year-1/1b-Math-II-Linear-Algebra/eulers-identity.html",
-      "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-algebra.html"
+      "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-algebra.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-linear-difference-equation.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/complex-plane-cartesian-coordinate-system.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/complex-plane-polar-coordinate-system.html": [
@@ -10062,7 +11349,9 @@
     "Year-1/1b-Math-II-Linear-Algebra/continuum-hypothesis.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/coordinate.html": [
       "Year-1/1b-Math-II-Linear-Algebra/origin.html",
-      "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html"
+      "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-representation-of-a-linear-map.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/countable-and-uncountable-sets.html": [
       "Year-1/1b-Math-II-Linear-Algebra/cantors-diagonal-argument.html",
@@ -10078,7 +11367,8 @@
       "Year-1/2b-Math-IV-Multivariate-Calculus/hessian-test-for-convexity-and-concavity.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/principal-minors-and-sylvesters-criterion.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/quadratic-form-on-a-constraint-set.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/unconstrained-extrema-conditions.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/unconstrained-extrema-conditions.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/definiteness-and-eigenvalues.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/determinant.html": [
@@ -10087,22 +11377,32 @@
       "Year-1/1b-Math-II-Linear-Algebra/cramers-rule.html",
       "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-root-theorem.html",
       "Year-1/1b-Math-II-Linear-Algebra/sarrus-rule.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/multivariable-inverse-function-theorem.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/multivariable-inverse-function-theorem.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/basis-of-solutions-difference-equation.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/diagonal-matrix.html": [
       "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/diagonalizable-matrix.html": [],
-    "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html": [],
-    "Year-1/1b-Math-II-Linear-Algebra/dimension.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-linear-maps.html"
+    "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-exponential.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value-decomposition.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-differential-equations.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-linear-difference-equations.html"
     ],
-    "Year-1/1b-Math-II-Linear-Algebra/direct-sum.html": [],
+    "Year-1/1b-Math-II-Linear-Algebra/dimension.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-linear-maps.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html"
+    ],
+    "Year-1/1b-Math-II-Linear-Algebra/direct-sum.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html"
+    ],
     "Year-1/1b-Math-II-Linear-Algebra/distance-between-point-and-line.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/distinct-eigenvalues-theorem.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/eigenbasis.html": [
       "Year-1/1b-Math-II-Linear-Algebra/diagonalizable-matrix.html",
-      "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html"
+      "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/linear-vector-ode.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html": [
       "Year-1/1b-Math-II-Linear-Algebra/algebraic-multiplicity.html",
@@ -10113,11 +11413,20 @@
       "Year-1/1b-Math-II-Linear-Algebra/eigenbasis.html",
       "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-root-theorem.html",
       "Year-1/1b-Math-II-Linear-Algebra/generalized-eigenvector.html",
-      "Year-1/1b-Math-II-Linear-Algebra/jordan-block.html"
+      "Year-1/1b-Math-II-Linear-Algebra/jordan-block.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/complex-conjugate-eigenvalues.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/linear-vector-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/similarity-transformation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value-decomposition.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-linear-difference-system.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-differential-equations.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-linear-difference-equations.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-root-theorem.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/elementary-row-operation.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/gauss-jordan-elimination.html"
+      "Year-1/1b-Math-II-Linear-Algebra/gauss-jordan-elimination.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/row-space.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/equivalence-relation.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/equivalent-systems-of-equations.html": [],
@@ -10126,7 +11435,9 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/euclidean-space.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/eulers-formula.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/eulers-identity.html"
+      "Year-1/1b-Math-II-Linear-Algebra/eulers-identity.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-equation-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-higher-order-ode.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/eulers-identity.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/field.html": [
@@ -10144,7 +11455,9 @@
       "Year-1/1b-Math-II-Linear-Algebra/dimension.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-algebra.html": [],
-    "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-linear-maps.html": [],
+    "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-linear-maps.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html"
+    ],
     "Year-1/1b-Math-II-Linear-Algebra/gauss-jordan-elimination.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/generalized-eigenvector.html": [
       "Year-1/1b-Math-II-Linear-Algebra/jordan-block.html",
@@ -10154,7 +11467,10 @@
       "Year-1/1b-Math-II-Linear-Algebra/abelian-group.html",
       "Year-1/1b-Math-II-Linear-Algebra/symmetric-group.html"
     ],
-    "Year-1/1b-Math-II-Linear-Algebra/homogeneous-system.html": [],
+    "Year-1/1b-Math-II-Linear-Algebra/homogeneous-system.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html"
+    ],
     "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/idempotent-matrix.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/identity-element.html": [
@@ -10176,22 +11492,32 @@
       "Year-1/1b-Math-II-Linear-Algebra/orthogonal-vectors.html",
       "Year-1/1b-Math-II-Linear-Algebra/point-normal-equation-of-a-plane.html",
       "Year-1/2a-Math-III-Analysis/directional-derivative.html",
-      "Year-1/2a-Math-III-Analysis/gradient.html"
+      "Year-1/2a-Math-III-Analysis/gradient.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/invariant-subspace.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/inverse-element.html": [
       "Year-1/1b-Math-II-Linear-Algebra/group.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/inverse-matrix.html": [
-      "Year-1/2b-Math-IV-Multivariate-Calculus/implicit-function-theorem.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/implicit-function-theorem.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/generalized-inverse.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/similarity-transformation.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/jordan-block.html": [
       "Year-1/1b-Math-II-Linear-Algebra/jordan-normal-form.html"
     ],
-    "Year-1/1b-Math-II-Linear-Algebra/jordan-normal-form.html": [],
+    "Year-1/1b-Math-II-Linear-Algebra/jordan-normal-form.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-exponential.html"
+    ],
     "Year-1/1b-Math-II-Linear-Algebra/kernel.html": [
       "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-linear-maps.html",
-      "Year-1/1b-Math-II-Linear-Algebra/generalized-eigenvector.html"
+      "Year-1/1b-Math-II-Linear-Algebra/generalized-eigenvector.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/affine-subspace.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/linear-combination.html": [
       "Year-1/1b-Math-II-Linear-Algebra/linear-independence.html",
@@ -10203,7 +11529,10 @@
       "Year-1/1b-Math-II-Linear-Algebra/basis.html",
       "Year-1/1b-Math-II-Linear-Algebra/distinct-eigenvalues-theorem.html",
       "Year-1/1b-Math-II-Linear-Algebra/eigenbasis.html",
-      "Year-1/1b-Math-II-Linear-Algebra/plane.html"
+      "Year-1/1b-Math-II-Linear-Algebra/plane.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/basis-of-solutions-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/linear-map.html": [
       "Year-1/1b-Math-II-Linear-Algebra/composition-of-linear-maps.html",
@@ -10212,7 +11541,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/range-of-a-linear-map.html",
       "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html",
       "Year-1/2a-Math-III-Analysis/jacobian-matrix.html",
-      "Year-1/2a-Math-III-Analysis/total-derivative-as-a-linear-transformation.html"
+      "Year-1/2a-Math-III-Analysis/total-derivative-as-a-linear-transformation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-representation-of-a-linear-map.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/linear-operator.html": [
       "Year-1/1b-Math-II-Linear-Algebra/eigenbasis.html",
@@ -10221,7 +11551,8 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/linear-span.html": [
       "Year-1/1b-Math-II-Linear-Algebra/basis.html",
-      "Year-1/1b-Math-II-Linear-Algebra/spanning-list.html"
+      "Year-1/1b-Math-II-Linear-Algebra/spanning-list.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/row-space.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/lu-decomposition.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/main-diagonal.html": [
@@ -10234,10 +11565,19 @@
       "Year-1/1b-Math-II-Linear-Algebra/idempotent-matrix.html",
       "Year-1/1b-Math-II-Linear-Algebra/inverse-matrix.html",
       "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/generalized-inverse.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/higher-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/kronecker-product.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-exponential.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-representation-of-a-linear-map.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-differential-equations.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-linear-difference-equations.html",
       "Year-2/2b-Risk-Insurance/bonus-malus-transition-matrix.html",
       "Year-3/2a-Stochastic-Models/markov-chain.html"
     ],
-    "Year-1/1b-Math-II-Linear-Algebra/matrix-scalar-multiplication.html": [],
+    "Year-1/1b-Math-II-Linear-Algebra/matrix-scalar-multiplication.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/kronecker-product.html"
+    ],
     "Year-1/1b-Math-II-Linear-Algebra/matrix.html": [
       "Year-1/1b-Math-II-Linear-Algebra/augmented-matrix.html",
       "Year-1/1b-Math-II-Linear-Algebra/block-matrix.html",
@@ -10282,7 +11622,10 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/origin.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/orthogonal-vectors.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/normal-vector.html"
+      "Year-1/1b-Math-II-Linear-Algebra/normal-vector.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/parametric-representation-of-a-line.html": [
       "Year-1/1b-Math-II-Linear-Algebra/distance-between-point-and-line.html",
@@ -10321,14 +11664,18 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/range-of-a-linear-map.html": [
       "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-linear-maps.html",
-      "Year-1/1b-Math-II-Linear-Algebra/rank.html"
+      "Year-1/1b-Math-II-Linear-Algebra/rank.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/rank.html": [
       "Year-1/2b-Math-IV-Multivariate-Calculus/bordered-matrix-test.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/independent-linear-constraint-system.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/jacobian-rank-local-behavior-theorem.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/local-injectivity-surjectivity-and-bijectivity.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/nondegenerate-constraint-qualification.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/nondegenerate-constraint-qualification.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/generalized-inverse.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/row-space.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html": [
       "Year-1/2a-Math-III-Analysis/discrete-metric.html",
@@ -10340,10 +11687,13 @@
       "Year-1/1b-Math-II-Linear-Algebra/field.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/root-of-a-polynomial.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-algebra.html"
+      "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-algebra.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-equation-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-polynomial-difference-equation.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/row-echelon-form.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/gauss-jordan-elimination.html"
+      "Year-1/1b-Math-II-Linear-Algebra/gauss-jordan-elimination.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/row-space.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/sarrus-rule.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/scalar-multiplication.html": [
@@ -10371,7 +11721,9 @@
       "Year-1/1b-Math-II-Linear-Algebra/invariant-subspace.html",
       "Year-1/1b-Math-II-Linear-Algebra/kernel.html",
       "Year-1/1b-Math-II-Linear-Algebra/range-of-a-linear-map.html",
-      "Year-1/1b-Math-II-Linear-Algebra/sum-of-subspaces.html"
+      "Year-1/1b-Math-II-Linear-Algebra/sum-of-subspaces.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/affine-subspace.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/sum-of-subspaces.html": [
       "Year-1/1b-Math-II-Linear-Algebra/direct-sum.html"
@@ -10379,20 +11731,26 @@
     "Year-1/1b-Math-II-Linear-Algebra/symmetric-group.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/symmetric-matrix.html": [
       "Year-1/1b-Math-II-Linear-Algebra/definite-matrix.html",
-      "Year-1/1b-Math-II-Linear-Algebra/definiteness-and-eigenvalues.html"
+      "Year-1/1b-Math-II-Linear-Algebra/definiteness-and-eigenvalues.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/moore-penrose-inverse.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value-decomposition.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/system-of-linear-equations.html": [
       "Year-1/1b-Math-II-Linear-Algebra/augmented-matrix.html",
       "Year-1/1b-Math-II-Linear-Algebra/cramers-rule.html",
       "Year-1/1b-Math-II-Linear-Algebra/equivalent-systems-of-equations.html",
       "Year-1/1b-Math-II-Linear-Algebra/solution-set.html",
-      "Year-1/1b-Math-II-Linear-Algebra/standard-form-of-a-linear-system.html"
+      "Year-1/1b-Math-II-Linear-Algebra/standard-form-of-a-linear-system.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/affine-subspace.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/trace.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/transpose.html": [
       "Year-1/1b-Math-II-Linear-Algebra/adjugate-matrix.html",
       "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html",
-      "Year-1/1b-Math-II-Linear-Algebra/symmetric-matrix.html"
+      "Year-1/1b-Math-II-Linear-Algebra/symmetric-matrix.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/row-space.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/triangle-inequality-vector-norm.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/upper-triangular-matrix.html": [
@@ -10415,7 +11773,11 @@
       "Year-1/2a-Math-III-Analysis/norm-and-normed-vector-space.html",
       "Year-1/2a-Math-III-Analysis/p-norm-and-p-metric.html",
       "Year-1/2a-Math-III-Analysis/taxicab-metric.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/steepest-ascent-direction.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/steepest-ascent-direction.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/vector-space.html": [
       "Year-1/1b-Math-II-Linear-Algebra/basis.html",
@@ -10435,7 +11797,9 @@
       "Year-1/1b-Math-II-Linear-Algebra/zero-vector.html",
       "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html",
       "Year-1/2a-Math-III-Analysis/equivalent-norms.html",
-      "Year-1/2a-Math-III-Analysis/norm-and-normed-vector-space.html"
+      "Year-1/2a-Math-III-Analysis/norm-and-normed-vector-space.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-differential-equation.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/vector.html": [
       "Year-1/1b-Math-II-Linear-Algebra/inner-product.html",
@@ -10472,7 +11836,9 @@
       "Year-1/1b-Probability-Theory-for-EOR/probability-function.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/bayes-rule.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/prosecutors-fallacy.html"
+      "Year-1/1b-Probability-Theory-for-EOR/prosecutors-fallacy.html",
+      "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html",
+      "Year-2/2b-Game-Theory/common-prior.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/bernoulli-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/binomial-distribution.html",
@@ -10500,7 +11866,12 @@
     "Year-1/1b-Probability-Theory-for-EOR/conditional-expectation.html": [
       "Year-1/1b-Probability-Theory-for-EOR/conditional-variance.html",
       "Year-1/2b-Probability-Distributions/law-of-total-expectation-partition.html",
-      "Year-2/2a-Life-Insurance/prospective-policy-value.html"
+      "Year-2/2a-Life-Insurance/prospective-policy-value.html",
+      "Year-2/2b-Game-Theory/adverse-selection.html",
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/common-value-auction.html",
+      "Year-2/2b-Game-Theory/market-for-lemons.html",
+      "Year-2/2b-Game-Theory/winner-s-curse.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/conditional-independence.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html": [
@@ -10517,6 +11888,8 @@
       "Year-1/2b-Probability-Distributions/total-probability-with-extra-conditioning.html",
       "Year-2/2a-Life-Insurance/actuarial-survival-probabilities.html",
       "Year-2/2a-Life-Insurance/future-lifetime.html",
+      "Year-2/2b-Game-Theory/common-prior.html",
+      "Year-2/2b-Game-Theory/system-of-beliefs.html",
       "Year-2/2b-Risk-Insurance/bonus-malus-transition-matrix.html",
       "Year-2/2b-Risk-Insurance/ordinary-deductible.html",
       "Year-3/2a-Stochastic-Models/markov-chain.html"
@@ -10548,6 +11921,7 @@
       "Year-1/2b-Probability-Distributions/joint-cdf-continuous.html",
       "Year-1/2b-Probability-Distributions/joint-cdf-discrete.html",
       "Year-1/2b-Probability-Distributions/survivor-function.html",
+      "Year-2/2b-Game-Theory/median-voter-theorem.html",
       "Year-2/2b-Risk-Insurance/grouped-data-likelihood.html",
       "Year-2/2b-Risk-Insurance/maximum-claim-in-a-portfolio.html",
       "Year-2/2b-Risk-Insurance/mixed-discrete-continuous-loss.html",
@@ -10575,7 +11949,8 @@
       "Year-1/1b-Probability-Theory-for-EOR/summary-measures-of-a-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/support-of-a-random-variable.html",
       "Year-1/1b-Probability-Theory-for-EOR/symmetric-distribution.html",
-      "Year-1/1b-Probability-Theory-for-EOR/unimodal-and-multimodal-distribution.html"
+      "Year-1/1b-Probability-Theory-for-EOR/unimodal-and-multimodal-distribution.html",
+      "Year-2/2b-Game-Theory/mixed-strategy.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/event.html": [
       "Year-1/1b-Probability-Theory-for-EOR/axioms-of-probability.html",
@@ -10606,6 +11981,9 @@
       "Year-1/2b-Probability-Distributions/strong-law-of-large-numbers.html",
       "Year-2/2a-Life-Insurance/actuarial-present-value.html",
       "Year-2/2a-Life-Insurance/expectation-of-life.html",
+      "Year-2/2b-Game-Theory/bayesian-game.html",
+      "Year-2/2b-Game-Theory/expected-payoff-maximization.html",
+      "Year-2/2b-Game-Theory/revenue-equivalence-theorem.html",
       "Year-2/2b-Risk-Insurance/expected-utility-and-risk-aversion.html",
       "Year-2/2b-Risk-Insurance/exponential-family.html",
       "Year-2/2b-Risk-Insurance/premium-principle-properties.html",
@@ -10677,7 +12055,9 @@
     "Year-1/1b-Probability-Theory-for-EOR/lotus.html": [
       "Year-1/2b-Probability-Distributions/moment-generating-function.html"
     ],
-    "Year-1/1b-Probability-Theory-for-EOR/median.html": [],
+    "Year-1/1b-Probability-Theory-for-EOR/median.html": [
+      "Year-2/2b-Game-Theory/median-voter-theorem.html"
+    ],
     "Year-1/1b-Probability-Theory-for-EOR/memoryless-property.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/minimum-of-independent-exponentials.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/mixture-distribution.html": [
@@ -10703,7 +12083,11 @@
       "Year-1/1b-Probability-Theory-for-EOR/standard-normal-distribution.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/order-statistic.html": [
-      "Year-1/2b-Probability-Distributions/density-of-an-order-statistic.html"
+      "Year-1/2b-Probability-Distributions/density-of-an-order-statistic.html",
+      "Year-2/2b-Game-Theory/first-price-auction.html",
+      "Year-2/2b-Game-Theory/revenue-equivalence-theorem.html",
+      "Year-2/2b-Game-Theory/second-price-auction.html",
+      "Year-2/2b-Game-Theory/winner-s-curse.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/outcome.html": [
       "Year-1/1b-Probability-Theory-for-EOR/sample-space.html"
@@ -10743,6 +12127,7 @@
       "Year-1/2b-Probability-Distributions/gamma-distribution.html",
       "Year-1/2b-Probability-Distributions/joint-probability-density-function.html",
       "Year-2/2a-Life-Insurance/force-of-mortality.html",
+      "Year-2/2b-Game-Theory/expected-payoff-maximization.html",
       "Year-2/2b-Risk-Insurance/exponential-family.html",
       "Year-2/2b-Risk-Insurance/maximum-likelihood-estimation.html",
       "Year-2/2b-Risk-Insurance/single-crossing-order-criteria.html"
@@ -10763,6 +12148,7 @@
       "Year-1/1b-Probability-Theory-for-EOR/geometric-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/mode.html",
       "Year-1/2b-Probability-Distributions/joint-probability-mass-function.html",
+      "Year-2/2b-Game-Theory/expected-payoff-maximization.html",
       "Year-2/2b-Risk-Insurance/exponential-family.html",
       "Year-2/2b-Risk-Insurance/maximum-likelihood-estimation.html"
     ],
@@ -10789,7 +12175,8 @@
       "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html",
       "Year-1/2b-Probability-Distributions/almost-sure-convergence.html",
       "Year-1/2b-Probability-Distributions/convergence-in-probability.html",
-      "Year-1/2b-Probability-Distributions/sample-mean.html"
+      "Year-1/2b-Probability-Distributions/sample-mean.html",
+      "Year-2/2b-Game-Theory/type.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/rayleigh-distribution.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/sample-space.html": [
@@ -10818,7 +12205,11 @@
     "Year-1/1b-Probability-Theory-for-EOR/uniform-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/universality-of-the-uniform.html",
       "Year-1/2b-Probability-Distributions/sum-of-two-iid-uniforms.html",
-      "Year-2/2a-Life-Insurance/uniform-distribution-of-deaths.html"
+      "Year-2/2a-Life-Insurance/uniform-distribution-of-deaths.html",
+      "Year-2/2b-Game-Theory/common-value-auction.html",
+      "Year-2/2b-Game-Theory/first-price-auction.html",
+      "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html",
+      "Year-2/2b-Game-Theory/market-for-lemons.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/unimodal-and-multimodal-distribution.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/union-and-intersection-of-events.html": [
@@ -11000,7 +12391,8 @@
       "Year-1/2a-Math-III-Analysis/gradient.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/higher-order-partial-derivative.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/second-order-partial-derivative.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/twice-continuous-differentiability-on-rn.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/twice-continuous-differentiability-on-rn.html",
+      "Year-2/2b-Game-Theory/cournot-duopoly.html"
     ],
     "Year-1/2a-Math-III-Analysis/path-connectedness.html": [],
     "Year-1/2a-Math-III-Analysis/path.html": [
@@ -11031,7 +12423,9 @@
     "Year-1/2a-Math-III-Analysis/strongly-equivalent-metrics.html": [],
     "Year-1/2a-Math-III-Analysis/taxicab-metric.html": [],
     "Year-1/2a-Math-III-Analysis/taylor-polynomial.html": [],
-    "Year-1/2a-Math-III-Analysis/taylor-series.html": [],
+    "Year-1/2a-Math-III-Analysis/taylor-series.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-exponential.html"
+    ],
     "Year-1/2a-Math-III-Analysis/taylors-theorem.html": [
       "Year-1/2a-Math-III-Analysis/taylor-polynomial.html"
     ],
@@ -11122,7 +12516,9 @@
       "Year-1/2b-Math-IV-Multivariate-Calculus/method-of-lagrange-for-equality-constraints.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/method-of-lagrange-for-inequality-constrained-maximization.html"
     ],
-    "Year-1/2b-Math-IV-Multivariate-Calculus/left-and-right-inverses.html": [],
+    "Year-1/2b-Math-IV-Multivariate-Calculus/left-and-right-inverses.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/generalized-inverse.html"
+    ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/local-injectivity-surjectivity-and-bijectivity.html": [
       "Year-1/2b-Math-IV-Multivariate-Calculus/jacobian-rank-local-behavior-theorem.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/multivariable-inverse-function-theorem.html"
@@ -11334,6 +12730,112 @@
     "Year-2/index.html": [],
     "Year-2/1a-Macroeconomics-for-EOR/index.html": [],
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/index.html": [],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/affine-subspace.html": [],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/basis-of-solutions-difference-equation.html": [],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/similarity-transformation.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-equation-differential-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-higher-order-ode.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-polynomial-difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/basis-of-solutions-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/higher-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-scalar-difference-equation.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/complex-conjugate-eigenvalues.html": [],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-polynomial-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-linear-difference-equation.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/differential-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-differential-equation.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/equilibrium-differential-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-equilibrium.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-differential-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/equilibrium-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/integrating-factor.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-differential-equations.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-linear-difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-scalar-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-linear-difference-equations.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value-decomposition.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-higher-order-ode.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/generalized-inverse.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/moore-penrose-inverse.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value-decomposition.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/higher-order-linear-difference-equation.html": [],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/integrating-factor.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/kronecker-product.html": [],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html": [],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/linear-vector-ode.html": [],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-exponential.html": [],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-representation-of-a-linear-map.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/moore-penrose-inverse.html": [],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/moore-penrose-inverse.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/row-space.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-differential-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-equation-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-linear-difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/higher-order-linear-difference-equation.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/similarity-transformation.html": [],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value-decomposition.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/moore-penrose-inverse.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value.html": [],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-equilibrium.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/linear-vector-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-higher-order-ode.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-higher-order-ode.html": [],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-linear-difference-system.html": [],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-scalar-difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-linear-difference-system.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-differential-equations.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/linear-vector-ode.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-linear-difference-equations.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-linear-difference-system.html"
+    ],
     "Year-2/1a-Statistical-Inference/index.html": [],
     "Year-2/1b-Linear-Models-in-Statistics/index.html": [],
     "Year-2/1b-Math-VI-Convexity-and-Optimization/index.html": [],
@@ -11447,6 +12949,274 @@
     ],
     "Year-2/2b-Dynamic-Econometrics/index.html": [],
     "Year-2/2b-Game-Theory/index.html": [],
+    "Year-2/2b-Game-Theory/adverse-selection.html": [
+      "Year-2/2b-Game-Theory/market-for-lemons.html"
+    ],
+    "Year-2/2b-Game-Theory/backward-induction.html": [
+      "Year-2/2b-Game-Theory/stackelberg-competition.html"
+    ],
+    "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html": [
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html",
+      "Year-2/2b-Game-Theory/separating-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/bayesian-game.html": [
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/harsanyi-transformation.html",
+      "Year-2/2b-Game-Theory/private-value-auction.html",
+      "Year-2/2b-Game-Theory/signaling-game.html",
+      "Year-2/2b-Game-Theory/system-of-beliefs.html"
+    ],
+    "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html": [
+      "Year-2/2b-Game-Theory/adverse-selection.html",
+      "Year-2/2b-Game-Theory/common-value-auction.html",
+      "Year-2/2b-Game-Theory/first-price-auction.html",
+      "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html",
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html",
+      "Year-2/2b-Game-Theory/private-value-auction.html",
+      "Year-2/2b-Game-Theory/revenue-equivalence-theorem.html",
+      "Year-2/2b-Game-Theory/second-price-auction.html"
+    ],
+    "Year-2/2b-Game-Theory/bertrand-duopoly.html": [],
+    "Year-2/2b-Game-Theory/best-response-correspondence.html": [
+      "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/nash-existence-theorem.html"
+    ],
+    "Year-2/2b-Game-Theory/best-response.html": [
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/bertrand-duopoly.html",
+      "Year-2/2b-Game-Theory/best-response-correspondence.html",
+      "Year-2/2b-Game-Theory/cournot-duopoly.html",
+      "Year-2/2b-Game-Theory/median-voter-theorem.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/sequential-rationality.html",
+      "Year-2/2b-Game-Theory/stackelberg-competition.html",
+      "Year-2/2b-Game-Theory/weakly-dominant-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/chicken-game.html": [],
+    "Year-2/2b-Game-Theory/common-knowledge.html": [
+      "Year-2/2b-Game-Theory/backward-induction.html",
+      "Year-2/2b-Game-Theory/common-prior.html",
+      "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/iterated-elimination-of-strictly-dominated-strategies.html",
+      "Year-2/2b-Game-Theory/static-game-of-complete-information.html",
+      "Year-2/2b-Game-Theory/type.html"
+    ],
+    "Year-2/2b-Game-Theory/common-prior.html": [
+      "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html",
+      "Year-2/2b-Game-Theory/bayesian-game.html",
+      "Year-2/2b-Game-Theory/pooling-equilibrium.html",
+      "Year-2/2b-Game-Theory/private-value-auction.html"
+    ],
+    "Year-2/2b-Game-Theory/common-value-auction.html": [
+      "Year-2/2b-Game-Theory/winner-s-curse.html"
+    ],
+    "Year-2/2b-Game-Theory/cournot-duopoly.html": [
+      "Year-2/2b-Game-Theory/stackelberg-competition.html"
+    ],
+    "Year-2/2b-Game-Theory/dutch-auction.html": [],
+    "Year-2/2b-Game-Theory/english-auction.html": [],
+    "Year-2/2b-Game-Theory/expected-payoff-maximization.html": [
+      "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/mixed-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/extensive-form-game.html": [
+      "Year-2/2b-Game-Theory/backward-induction.html",
+      "Year-2/2b-Game-Theory/forward-induction.html",
+      "Year-2/2b-Game-Theory/harsanyi-transformation.html",
+      "Year-2/2b-Game-Theory/information-set.html",
+      "Year-2/2b-Game-Theory/multistage-game.html",
+      "Year-2/2b-Game-Theory/sequential-rationality.html",
+      "Year-2/2b-Game-Theory/signaling-game.html",
+      "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html",
+      "Year-2/2b-Game-Theory/subgame.html",
+      "Year-2/2b-Game-Theory/system-of-beliefs.html"
+    ],
+    "Year-2/2b-Game-Theory/first-price-auction.html": [
+      "Year-2/2b-Game-Theory/dutch-auction.html",
+      "Year-2/2b-Game-Theory/revenue-equivalence-theorem.html"
+    ],
+    "Year-2/2b-Game-Theory/folk-theorem.html": [],
+    "Year-2/2b-Game-Theory/forward-induction.html": [],
+    "Year-2/2b-Game-Theory/game-theory.html": [
+      "Year-2/2b-Game-Theory/common-knowledge.html",
+      "Year-2/2b-Game-Theory/static-game-of-complete-information.html"
+    ],
+    "Year-2/2b-Game-Theory/grim-trigger-strategy.html": [
+      "Year-2/2b-Game-Theory/folk-theorem.html"
+    ],
+    "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html": [],
+    "Year-2/2b-Game-Theory/harsanyi-transformation.html": [],
+    "Year-2/2b-Game-Theory/history.html": [
+      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
+      "Year-2/2b-Game-Theory/repeated-game.html",
+      "Year-2/2b-Game-Theory/trigger-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html": [
+      "Year-2/2b-Game-Theory/chicken-game.html"
+    ],
+    "Year-2/2b-Game-Theory/information-set.html": [
+      "Year-2/2b-Game-Theory/harsanyi-transformation.html",
+      "Year-2/2b-Game-Theory/sequential-rationality.html",
+      "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html",
+      "Year-2/2b-Game-Theory/subgame.html",
+      "Year-2/2b-Game-Theory/system-of-beliefs.html"
+    ],
+    "Year-2/2b-Game-Theory/iterated-elimination-of-strictly-dominated-strategies.html": [],
+    "Year-2/2b-Game-Theory/market-for-lemons.html": [],
+    "Year-2/2b-Game-Theory/median-voter-theorem.html": [],
+    "Year-2/2b-Game-Theory/mixed-strategy.html": [
+      "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html",
+      "Year-2/2b-Game-Theory/folk-theorem.html",
+      "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/nash-existence-theorem.html",
+      "Year-2/2b-Game-Theory/stage-game.html"
+    ],
+    "Year-2/2b-Game-Theory/multistage-game.html": [
+      "Year-2/2b-Game-Theory/history.html",
+      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
+      "Year-2/2b-Game-Theory/repeated-game.html"
+    ],
+    "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html": [
+      "Year-2/2b-Game-Theory/chicken-game.html",
+      "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html",
+      "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/nash-existence-theorem.html"
+    ],
+    "Year-2/2b-Game-Theory/nash-equilibrium.html": [
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/bertrand-duopoly.html",
+      "Year-2/2b-Game-Theory/chicken-game.html",
+      "Year-2/2b-Game-Theory/cournot-duopoly.html",
+      "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/median-voter-theorem.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/stage-game.html",
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/trigger-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/nash-existence-theorem.html": [],
+    "Year-2/2b-Game-Theory/normal-form-game.html": [
+      "Year-2/2b-Game-Theory/bayesian-game.html",
+      "Year-2/2b-Game-Theory/best-response.html",
+      "Year-2/2b-Game-Theory/chicken-game.html",
+      "Year-2/2b-Game-Theory/dutch-auction.html",
+      "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/mixed-strategy.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/pareto-efficiency.html",
+      "Year-2/2b-Game-Theory/stage-game.html",
+      "Year-2/2b-Game-Theory/strictly-dominant-strategy.html",
+      "Year-2/2b-Game-Theory/strictly-dominated-strategy.html",
+      "Year-2/2b-Game-Theory/type.html",
+      "Year-2/2b-Game-Theory/weakly-dominant-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/one-stage-deviation-principle.html": [],
+    "Year-2/2b-Game-Theory/pareto-efficiency.html": [],
+    "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html": [
+      "Year-2/2b-Game-Theory/pooling-equilibrium.html",
+      "Year-2/2b-Game-Theory/separating-equilibrium.html",
+      "Year-2/2b-Game-Theory/signaling-game.html"
+    ],
+    "Year-2/2b-Game-Theory/pooling-equilibrium.html": [],
+    "Year-2/2b-Game-Theory/private-value-auction.html": [
+      "Year-2/2b-Game-Theory/common-value-auction.html",
+      "Year-2/2b-Game-Theory/english-auction.html",
+      "Year-2/2b-Game-Theory/first-price-auction.html",
+      "Year-2/2b-Game-Theory/second-price-auction.html"
+    ],
+    "Year-2/2b-Game-Theory/pure-strategy.html": [
+      "Year-2/2b-Game-Theory/information-set.html",
+      "Year-2/2b-Game-Theory/mixed-strategy.html",
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/pareto-efficiency.html",
+      "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html"
+    ],
+    "Year-2/2b-Game-Theory/rational-agent.html": [
+      "Year-2/2b-Game-Theory/backward-induction.html",
+      "Year-2/2b-Game-Theory/best-response.html",
+      "Year-2/2b-Game-Theory/common-knowledge.html",
+      "Year-2/2b-Game-Theory/expected-payoff-maximization.html",
+      "Year-2/2b-Game-Theory/game-theory.html",
+      "Year-2/2b-Game-Theory/strictly-dominated-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/repeated-game.html": [
+      "Year-2/2b-Game-Theory/folk-theorem.html",
+      "Year-2/2b-Game-Theory/grim-trigger-strategy.html",
+      "Year-2/2b-Game-Theory/trigger-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/revenue-equivalence-theorem.html": [],
+    "Year-2/2b-Game-Theory/second-price-auction.html": [
+      "Year-2/2b-Game-Theory/english-auction.html",
+      "Year-2/2b-Game-Theory/revenue-equivalence-theorem.html"
+    ],
+    "Year-2/2b-Game-Theory/separating-equilibrium.html": [],
+    "Year-2/2b-Game-Theory/sequential-rationality.html": [
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/signaling-game.html": [
+      "Year-2/2b-Game-Theory/pooling-equilibrium.html",
+      "Year-2/2b-Game-Theory/separating-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/stackelberg-competition.html": [],
+    "Year-2/2b-Game-Theory/stage-game.html": [
+      "Year-2/2b-Game-Theory/multistage-game.html",
+      "Year-2/2b-Game-Theory/repeated-game.html"
+    ],
+    "Year-2/2b-Game-Theory/static-game-of-complete-information.html": [
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/pure-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html": [
+      "Year-2/2b-Game-Theory/backward-induction.html",
+      "Year-2/2b-Game-Theory/dutch-auction.html",
+      "Year-2/2b-Game-Theory/history.html",
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/strictly-dominant-strategy.html": [
+      "Year-2/2b-Game-Theory/weakly-dominant-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/strictly-dominated-strategy.html": [
+      "Year-2/2b-Game-Theory/forward-induction.html",
+      "Year-2/2b-Game-Theory/iterated-elimination-of-strictly-dominated-strategies.html",
+      "Year-2/2b-Game-Theory/strictly-dominant-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html": [
+      "Year-2/2b-Game-Theory/folk-theorem.html",
+      "Year-2/2b-Game-Theory/forward-induction.html",
+      "Year-2/2b-Game-Theory/grim-trigger-strategy.html",
+      "Year-2/2b-Game-Theory/multistage-game.html",
+      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html",
+      "Year-2/2b-Game-Theory/repeated-game.html"
+    ],
+    "Year-2/2b-Game-Theory/subgame.html": [
+      "Year-2/2b-Game-Theory/history.html",
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/system-of-beliefs.html": [
+      "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html",
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html",
+      "Year-2/2b-Game-Theory/pooling-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/trigger-strategy.html": [
+      "Year-2/2b-Game-Theory/grim-trigger-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/type.html": [
+      "Year-2/2b-Game-Theory/adverse-selection.html",
+      "Year-2/2b-Game-Theory/bayesian-game.html",
+      "Year-2/2b-Game-Theory/common-prior.html",
+      "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html",
+      "Year-2/2b-Game-Theory/market-for-lemons.html",
+      "Year-2/2b-Game-Theory/private-value-auction.html",
+      "Year-2/2b-Game-Theory/signaling-game.html"
+    ],
+    "Year-2/2b-Game-Theory/weakly-dominant-strategy.html": [
+      "Year-2/2b-Game-Theory/english-auction.html",
+      "Year-2/2b-Game-Theory/second-price-auction.html"
+    ],
+    "Year-2/2b-Game-Theory/winner-s-curse.html": [],
     "Year-2/2b-Risk-Insurance/index.html": [],
     "Year-2/2b-Risk-Insurance/absolute-risk-aversion.html": [
       "Year-2/2b-Risk-Insurance/insurance-indifference-premiums.html"
@@ -15010,6 +16780,244 @@
     "Year-2/index.html": [],
     "Year-2/1a-Macroeconomics-for-EOR/index.html": [],
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/index.html": [],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/affine-subspace.html": [
+      "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html",
+      "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/basis-of-solutions-difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/higher-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-linear-difference-equations.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/similarity-transformation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
+      "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html",
+      "Year-1/1b-Math-II-Linear-Algebra/eigenbasis.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-equation-differential-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-higher-order-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-polynomial-difference-equation.html",
+      "Year-1/1b-Math-II-Linear-Algebra/characteristic-polynomial.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-polynomial-difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/basis-of-solutions-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/higher-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-scalar-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-equation-differential-equation.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/complex-conjugate-eigenvalues.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-linear-difference-system.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-representation-of-a-linear-map.html",
+      "Year-1/1b-Math-II-Linear-Algebra/de-moivres-formula.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-linear-difference-equations.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/differential-equation.html",
+      "Year-3/2a-Stochastic-Models/markov-chain.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/differential-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-differential-equations.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/difference-equation.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/equilibrium-differential-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-equilibrium.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/linear-vector-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-scalar-difference-equation.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-differential-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/integrating-factor.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/equilibrium-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-differential-equations.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-linear-difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-scalar-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-linear-difference-equations.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-differential-equation.html",
+      "Year-2/2a-Life-Insurance/annuity-certain.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value-decomposition.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/moore-penrose-inverse.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/basis-of-solutions-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/linear-vector-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-exponential.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-higher-order-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/affine-subspace.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/generalized-inverse.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/moore-penrose-inverse.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/affine-subspace.html",
+      "Year-1/1b-Math-II-Linear-Algebra/idempotent-matrix.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html",
+      "Year-1/1b-Math-II-Linear-Algebra/upper-triangular-matrix.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/higher-order-linear-difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-linear-difference-equations.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/basis-of-solutions-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-scalar-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-higher-order-ode.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/integrating-factor.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/equilibrium-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-exponential.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/kronecker-product.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html",
+      "Year-1/1b-Math-II-Linear-Algebra/determinant.html",
+      "Year-1/1b-Math-II-Linear-Algebra/trace.html",
+      "Year-1/1b-Math-II-Linear-Algebra/inverse-matrix.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/moore-penrose-inverse.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value-decomposition.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
+      "Year-1/1b-Math-II-Linear-Algebra/idempotent-matrix.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/linear-vector-ode.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-exponential.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-linear-difference-system.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/complex-conjugate-eigenvalues.html",
+      "Year-1/1b-Math-II-Linear-Algebra/jordan-normal-form.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-exponential.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/linear-vector-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-differential-equations.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/similarity-transformation.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-representation-of-a-linear-map.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/similarity-transformation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/complex-conjugate-eigenvalues.html",
+      "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/moore-penrose-inverse.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/left-and-right-inverses.html",
+      "Year-1/1b-Math-II-Linear-Algebra/idempotent-matrix.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
+      "Year-1/1b-Math-II-Linear-Algebra/normal-vector.html",
+      "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/moore-penrose-inverse.html",
+      "Year-1/1b-Math-II-Linear-Algebra/idempotent-matrix.html",
+      "Year-1/1b-Math-II-Linear-Algebra/distance-between-point-and-line.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/equilibrium-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/linear-vector-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-higher-order-ode.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/row-space.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html",
+      "Year-1/1b-Math-II-Linear-Algebra/kernel.html",
+      "Year-1/1b-Math-II-Linear-Algebra/range-of-a-linear-map.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-differential-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-equation-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-differential-equations.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-linear-difference-equation.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-linear-difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-polynomial-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/basis-of-solutions-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/higher-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-differential-equation.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/similarity-transformation.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html",
+      "Year-1/1b-Math-II-Linear-Algebra/jordan-normal-form.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-exponential.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value-decomposition.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value-decomposition.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/moore-penrose-inverse.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/similarity-transformation.html",
+      "Year-1/1b-Math-II-Linear-Algebra/definite-matrix.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value-decomposition.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/moore-penrose-inverse.html",
+      "Year-1/2a-Math-III-Analysis/norm-and-normed-vector-space.html",
+      "Year-1/1b-Math-II-Linear-Algebra/determinant.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-equilibrium.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-higher-order-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/linear-vector-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-scalar-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-linear-difference-system.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-higher-order-ode.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/linear-vector-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-scalar-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-linear-difference-system.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-linear-difference-system.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/complex-conjugate-eigenvalues.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/higher-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-equilibrium.html",
+      "Year-1/1b-Math-II-Linear-Algebra/jordan-normal-form.html",
+      "Year-3/2a-Stochastic-Models/markov-chain.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-scalar-difference-equation.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-linear-difference-system.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/higher-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-equilibrium.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-differential-equations.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/linear-vector-ode.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-exponential.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-differential-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-linear-difference-equations.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-linear-difference-equations.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/stability-linear-difference-system.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/higher-order-linear-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-differential-equations.html",
+      "Year-1/1b-Math-II-Linear-Algebra/jordan-normal-form.html",
+      "Year-3/2a-Stochastic-Models/markov-chain.html"
+    ],
     "Year-2/1a-Statistical-Inference/index.html": [],
     "Year-2/1b-Linear-Models-in-Statistics/index.html": [],
     "Year-2/1b-Math-VI-Convexity-and-Optimization/index.html": [],
@@ -15161,6 +17169,384 @@
     ],
     "Year-2/2b-Dynamic-Econometrics/index.html": [],
     "Year-2/2b-Game-Theory/index.html": [],
+    "Year-2/2b-Game-Theory/adverse-selection.html": [
+      "Year-2/2b-Game-Theory/market-for-lemons.html",
+      "Year-2/2b-Game-Theory/signaling-game.html",
+      "Year-2/2b-Game-Theory/winner-s-curse.html",
+      "Year-2/2b-Game-Theory/pareto-efficiency.html"
+    ],
+    "Year-2/2b-Game-Theory/backward-induction.html": [
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/sequential-rationality.html",
+      "Year-2/2b-Game-Theory/stackelberg-competition.html",
+      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
+      "Year-2/2b-Game-Theory/forward-induction.html"
+    ],
+    "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html": [
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html",
+      "Year-2/2b-Game-Theory/signaling-game.html",
+      "Year-2/2b-Game-Theory/separating-equilibrium.html",
+      "Year-1/1b-Probability-Theory-for-EOR/law-of-total-probability.html"
+    ],
+    "Year-2/2b-Game-Theory/bayesian-game.html": [
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/harsanyi-transformation.html",
+      "Year-2/2b-Game-Theory/market-for-lemons.html",
+      "Year-2/2b-Game-Theory/first-price-auction.html"
+    ],
+    "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html": [
+      "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html",
+      "Year-2/2b-Game-Theory/market-for-lemons.html",
+      "Year-2/2b-Game-Theory/first-price-auction.html",
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/bertrand-duopoly.html": [
+      "Year-2/2b-Game-Theory/cournot-duopoly.html",
+      "Year-2/2b-Game-Theory/best-response-correspondence.html",
+      "Year-2/2b-Game-Theory/pareto-efficiency.html",
+      "Year-2/2b-Game-Theory/repeated-game.html"
+    ],
+    "Year-2/2b-Game-Theory/best-response-correspondence.html": [
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/cournot-duopoly.html",
+      "Year-2/2b-Game-Theory/bertrand-duopoly.html",
+      "Year-2/2b-Game-Theory/nash-existence-theorem.html"
+    ],
+    "Year-2/2b-Game-Theory/best-response.html": [
+      "Year-2/2b-Game-Theory/best-response-correspondence.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/cournot-duopoly.html",
+      "Year-2/2b-Game-Theory/expected-payoff-maximization.html"
+    ],
+    "Year-2/2b-Game-Theory/chicken-game.html": [
+      "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html",
+      "Year-2/2b-Game-Theory/bayesian-game.html",
+      "Year-2/2b-Game-Theory/pareto-efficiency.html",
+      "Year-2/2b-Game-Theory/folk-theorem.html"
+    ],
+    "Year-2/2b-Game-Theory/common-knowledge.html": [
+      "Year-2/2b-Game-Theory/static-game-of-complete-information.html",
+      "Year-2/2b-Game-Theory/iterated-elimination-of-strictly-dominated-strategies.html",
+      "Year-2/2b-Game-Theory/common-prior.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/common-prior.html": [
+      "Year-2/2b-Game-Theory/bayesian-game.html",
+      "Year-2/2b-Game-Theory/harsanyi-transformation.html",
+      "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html",
+      "Year-1/2b-Probability-Distributions/joint-probability-mass-function.html"
+    ],
+    "Year-2/2b-Game-Theory/common-value-auction.html": [
+      "Year-2/2b-Game-Theory/winner-s-curse.html",
+      "Year-2/2b-Game-Theory/second-price-auction.html",
+      "Year-2/2b-Game-Theory/first-price-auction.html",
+      "Year-2/2b-Game-Theory/english-auction.html"
+    ],
+    "Year-2/2b-Game-Theory/cournot-duopoly.html": [
+      "Year-2/2b-Game-Theory/bertrand-duopoly.html",
+      "Year-2/2b-Game-Theory/stackelberg-competition.html",
+      "Year-2/2b-Game-Theory/best-response-correspondence.html",
+      "Year-2/2b-Game-Theory/pareto-efficiency.html"
+    ],
+    "Year-2/2b-Game-Theory/dutch-auction.html": [
+      "Year-2/2b-Game-Theory/english-auction.html",
+      "Year-2/2b-Game-Theory/second-price-auction.html",
+      "Year-2/2b-Game-Theory/revenue-equivalence-theorem.html",
+      "Year-2/2b-Game-Theory/common-value-auction.html"
+    ],
+    "Year-2/2b-Game-Theory/english-auction.html": [
+      "Year-2/2b-Game-Theory/dutch-auction.html",
+      "Year-2/2b-Game-Theory/first-price-auction.html",
+      "Year-2/2b-Game-Theory/revenue-equivalence-theorem.html",
+      "Year-2/2b-Game-Theory/common-value-auction.html"
+    ],
+    "Year-2/2b-Game-Theory/expected-payoff-maximization.html": [
+      "Year-2/2b-Risk-Insurance/expected-utility-and-risk-aversion.html",
+      "Year-2/2b-Game-Theory/mixed-strategy.html",
+      "Year-2/2b-Game-Theory/best-response.html"
+    ],
+    "Year-2/2b-Game-Theory/extensive-form-game.html": [
+      "Year-2/2b-Game-Theory/information-set.html",
+      "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html",
+      "Year-2/2b-Game-Theory/subgame.html",
+      "Year-2/2b-Game-Theory/backward-induction.html",
+      "Year-2/2b-Game-Theory/multistage-game.html"
+    ],
+    "Year-2/2b-Game-Theory/first-price-auction.html": [
+      "Year-2/2b-Game-Theory/second-price-auction.html",
+      "Year-2/2b-Game-Theory/dutch-auction.html",
+      "Year-2/2b-Game-Theory/revenue-equivalence-theorem.html",
+      "Year-1/2b-Probability-Distributions/density-of-an-order-statistic.html"
+    ],
+    "Year-2/2b-Game-Theory/folk-theorem.html": [
+      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
+      "Year-2/2b-Game-Theory/trigger-strategy.html",
+      "Year-2/2b-Game-Theory/pareto-efficiency.html",
+      "Year-2/2b-Game-Theory/chicken-game.html"
+    ],
+    "Year-2/2b-Game-Theory/forward-induction.html": [
+      "Year-2/2b-Game-Theory/backward-induction.html",
+      "Year-2/2b-Game-Theory/sequential-rationality.html",
+      "Year-2/2b-Game-Theory/iterated-elimination-of-strictly-dominated-strategies.html",
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/game-theory.html": [
+      "Year-2/2b-Game-Theory/static-game-of-complete-information.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/bayesian-game.html"
+    ],
+    "Year-2/2b-Game-Theory/grim-trigger-strategy.html": [
+      "Year-2/2b-Game-Theory/folk-theorem.html",
+      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
+      "Year-2/2b-Game-Theory/cournot-duopoly.html",
+      "Year-2/2b-Game-Theory/pareto-efficiency.html"
+    ],
+    "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html": [
+      "Year-2/2b-Game-Theory/chicken-game.html",
+      "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/harsanyi-transformation.html",
+      "Year-2/2b-Game-Theory/mixed-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/harsanyi-transformation.html": [
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/common-prior.html",
+      "Year-2/2b-Game-Theory/subgame.html",
+      "Year-2/2b-Game-Theory/signaling-game.html"
+    ],
+    "Year-2/2b-Game-Theory/history.html": [
+      "Year-2/2b-Game-Theory/repeated-game.html",
+      "Year-2/2b-Game-Theory/trigger-strategy.html",
+      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html"
+    ],
+    "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html": [
+      "Year-2/2b-Game-Theory/nash-existence-theorem.html",
+      "Year-2/2b-Game-Theory/chicken-game.html",
+      "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html",
+      "Year-2/2b-Game-Theory/strictly-dominated-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/information-set.html": [
+      "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html",
+      "Year-2/2b-Game-Theory/subgame.html",
+      "Year-2/2b-Game-Theory/sequential-rationality.html",
+      "Year-2/2b-Game-Theory/system-of-beliefs.html",
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/iterated-elimination-of-strictly-dominated-strategies.html": [
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/strictly-dominant-strategy.html",
+      "Year-2/2b-Game-Theory/weakly-dominant-strategy.html",
+      "Year-2/2b-Game-Theory/best-response.html"
+    ],
+    "Year-2/2b-Game-Theory/market-for-lemons.html": [
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/signaling-game.html",
+      "Year-2/2b-Game-Theory/separating-equilibrium.html",
+      "Year-2/2b-Game-Theory/pareto-efficiency.html"
+    ],
+    "Year-2/2b-Game-Theory/median-voter-theorem.html": [
+      "Year-2/2b-Game-Theory/bertrand-duopoly.html",
+      "Year-2/2b-Game-Theory/pareto-efficiency.html",
+      "Year-2/2b-Game-Theory/nash-existence-theorem.html",
+      "Year-1/1b-Probability-Theory-for-EOR/symmetric-distribution.html"
+    ],
+    "Year-2/2b-Game-Theory/mixed-strategy.html": [
+      "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/strictly-dominated-strategy.html",
+      "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html"
+    ],
+    "Year-2/2b-Game-Theory/multistage-game.html": [
+      "Year-2/2b-Game-Theory/history.html",
+      "Year-2/2b-Game-Theory/repeated-game.html",
+      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
+      "Year-2/2b-Game-Theory/backward-induction.html"
+    ],
+    "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html": [
+      "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/nash-existence-theorem.html",
+      "Year-2/2b-Game-Theory/chicken-game.html",
+      "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html",
+      "Year-2/2b-Game-Theory/pareto-efficiency.html"
+    ],
+    "Year-2/2b-Game-Theory/nash-equilibrium.html": [
+      "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/nash-existence-theorem.html",
+      "Year-2/2b-Game-Theory/iterated-elimination-of-strictly-dominated-strategies.html",
+      "Year-2/2b-Game-Theory/pareto-efficiency.html",
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/nash-existence-theorem.html": [
+      "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/cournot-duopoly.html",
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/normal-form-game.html": [
+      "Year-2/2b-Game-Theory/best-response.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/strictly-dominated-strategy.html",
+      "Year-2/2b-Game-Theory/extensive-form-game.html"
+    ],
+    "Year-2/2b-Game-Theory/one-stage-deviation-principle.html": [
+      "Year-2/2b-Game-Theory/grim-trigger-strategy.html",
+      "Year-2/2b-Game-Theory/trigger-strategy.html",
+      "Year-2/2b-Game-Theory/folk-theorem.html",
+      "Year-2/2b-Game-Theory/backward-induction.html"
+    ],
+    "Year-2/2b-Game-Theory/pareto-efficiency.html": [
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/strictly-dominant-strategy.html",
+      "Year-2/2b-Game-Theory/cournot-duopoly.html",
+      "Year-2/2b-Game-Theory/folk-theorem.html"
+    ],
+    "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html": [
+      "Year-2/2b-Game-Theory/signaling-game.html",
+      "Year-2/2b-Game-Theory/separating-equilibrium.html",
+      "Year-2/2b-Game-Theory/pooling-equilibrium.html",
+      "Year-2/2b-Game-Theory/forward-induction.html"
+    ],
+    "Year-2/2b-Game-Theory/pooling-equilibrium.html": [
+      "Year-2/2b-Game-Theory/separating-equilibrium.html",
+      "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html",
+      "Year-2/2b-Game-Theory/forward-induction.html",
+      "Year-2/2b-Game-Theory/adverse-selection.html"
+    ],
+    "Year-2/2b-Game-Theory/private-value-auction.html": [
+      "Year-2/2b-Game-Theory/first-price-auction.html",
+      "Year-2/2b-Game-Theory/second-price-auction.html",
+      "Year-2/2b-Game-Theory/common-value-auction.html",
+      "Year-2/2b-Game-Theory/revenue-equivalence-theorem.html"
+    ],
+    "Year-2/2b-Game-Theory/pure-strategy.html": [
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/mixed-strategy.html",
+      "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html",
+      "Year-2/2b-Game-Theory/best-response.html"
+    ],
+    "Year-2/2b-Game-Theory/rational-agent.html": [
+      "Year-2/2b-Game-Theory/expected-payoff-maximization.html",
+      "Year-2/2b-Game-Theory/best-response.html",
+      "Year-2/2b-Game-Theory/common-knowledge.html",
+      "Year-2/2b-Game-Theory/game-theory.html"
+    ],
+    "Year-2/2b-Game-Theory/repeated-game.html": [
+      "Year-2/2b-Game-Theory/trigger-strategy.html",
+      "Year-2/2b-Game-Theory/grim-trigger-strategy.html",
+      "Year-2/2b-Game-Theory/folk-theorem.html",
+      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html"
+    ],
+    "Year-2/2b-Game-Theory/revenue-equivalence-theorem.html": [
+      "Year-2/2b-Game-Theory/english-auction.html",
+      "Year-2/2b-Game-Theory/dutch-auction.html",
+      "Year-2/2b-Game-Theory/common-value-auction.html",
+      "Year-1/2b-Probability-Distributions/density-of-an-order-statistic.html"
+    ],
+    "Year-2/2b-Game-Theory/second-price-auction.html": [
+      "Year-2/2b-Game-Theory/english-auction.html",
+      "Year-2/2b-Game-Theory/first-price-auction.html",
+      "Year-2/2b-Game-Theory/revenue-equivalence-theorem.html",
+      "Year-2/2b-Game-Theory/common-value-auction.html"
+    ],
+    "Year-2/2b-Game-Theory/separating-equilibrium.html": [
+      "Year-2/2b-Game-Theory/pooling-equilibrium.html",
+      "Year-2/2b-Game-Theory/system-of-beliefs.html",
+      "Year-2/2b-Game-Theory/adverse-selection.html",
+      "Year-2/2b-Game-Theory/forward-induction.html"
+    ],
+    "Year-2/2b-Game-Theory/sequential-rationality.html": [
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/backward-induction.html",
+      "Year-2/2b-Game-Theory/system-of-beliefs.html",
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html",
+      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html"
+    ],
+    "Year-2/2b-Game-Theory/signaling-game.html": [
+      "Year-2/2b-Game-Theory/separating-equilibrium.html",
+      "Year-2/2b-Game-Theory/pooling-equilibrium.html",
+      "Year-2/2b-Game-Theory/adverse-selection.html",
+      "Year-2/2b-Game-Theory/market-for-lemons.html"
+    ],
+    "Year-2/2b-Game-Theory/stackelberg-competition.html": [
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html",
+      "Year-2/2b-Game-Theory/bertrand-duopoly.html",
+      "Year-2/2b-Game-Theory/sequential-rationality.html"
+    ],
+    "Year-2/2b-Game-Theory/stage-game.html": [
+      "Year-2/2b-Game-Theory/repeated-game.html",
+      "Year-2/2b-Game-Theory/multistage-game.html",
+      "Year-2/2b-Game-Theory/folk-theorem.html",
+      "Year-2/2b-Game-Theory/grim-trigger-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/static-game-of-complete-information.html": [
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/bayesian-game.html"
+    ],
+    "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html": [
+      "Year-2/2b-Game-Theory/mixed-strategy.html",
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/backward-induction.html",
+      "Year-2/2b-Game-Theory/history.html",
+      "Year-2/2b-Game-Theory/grim-trigger-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/strictly-dominant-strategy.html": [
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/pareto-efficiency.html",
+      "Year-2/2b-Game-Theory/weakly-dominant-strategy.html",
+      "Year-2/2b-Game-Theory/iterated-elimination-of-strictly-dominated-strategies.html"
+    ],
+    "Year-2/2b-Game-Theory/strictly-dominated-strategy.html": [
+      "Year-2/2b-Game-Theory/strictly-dominant-strategy.html",
+      "Year-2/2b-Game-Theory/iterated-elimination-of-strictly-dominated-strategies.html",
+      "Year-2/2b-Game-Theory/weakly-dominant-strategy.html",
+      "Year-2/2b-Game-Theory/mixed-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html": [
+      "Year-2/2b-Game-Theory/backward-induction.html",
+      "Year-2/2b-Game-Theory/sequential-rationality.html",
+      "Year-2/2b-Game-Theory/forward-induction.html",
+      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/subgame.html": [
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/backward-induction.html",
+      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
+      "Year-2/2b-Game-Theory/repeated-game.html"
+    ],
+    "Year-2/2b-Game-Theory/system-of-beliefs.html": [
+      "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html",
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html",
+      "Year-2/2b-Game-Theory/sequential-rationality.html",
+      "Year-2/2b-Game-Theory/signaling-game.html"
+    ],
+    "Year-2/2b-Game-Theory/trigger-strategy.html": [
+      "Year-2/2b-Game-Theory/grim-trigger-strategy.html",
+      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
+      "Year-2/2b-Game-Theory/folk-theorem.html",
+      "Year-2/2b-Game-Theory/cournot-duopoly.html"
+    ],
+    "Year-2/2b-Game-Theory/type.html": [
+      "Year-2/2b-Game-Theory/bayesian-game.html",
+      "Year-2/2b-Game-Theory/common-prior.html",
+      "Year-2/2b-Game-Theory/harsanyi-transformation.html",
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/weakly-dominant-strategy.html": [
+      "Year-2/2b-Game-Theory/second-price-auction.html",
+      "Year-2/2b-Game-Theory/english-auction.html",
+      "Year-2/2b-Game-Theory/strictly-dominated-strategy.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html"
+    ],
+    "Year-2/2b-Game-Theory/winner-s-curse.html": [
+      "Year-2/2b-Game-Theory/adverse-selection.html",
+      "Year-2/2b-Game-Theory/market-for-lemons.html",
+      "Year-2/2b-Game-Theory/first-price-auction.html",
+      "Year-1/1b-Probability-Theory-for-EOR/bayes-rule.html"
+    ],
     "Year-2/2b-Risk-Insurance/index.html": [],
     "Year-2/2b-Risk-Insurance/absolute-risk-aversion.html": [
       "Year-2/2b-Risk-Insurance/insurance-indifference-premiums.html",

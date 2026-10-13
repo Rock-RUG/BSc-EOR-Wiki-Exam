@@ -244,7 +244,7 @@ try{render();}catch(_){}
 try{fbStartRunSearchFx();}catch(_){}
 if(window.__findSearchV2&&typeof window.__findSearchV2.runLogicExpr==="function"){window.__findSearchV2.runLogicExpr(exprText);return true;}
 if(window.__findSearchV2&&typeof window.__findSearchV2.runQuery==="function"){window.__findSearchV2.runQuery(exprText);return true;}
-const params=new URLSearchParams(window.location.search);params.set("q",exprText);window.location.search=params.toString();return true;}catch(_){return false;}}
+const params=new URLSearchParams(window.location.search);params.delete("q");params.set("fq",exprText);window.location.search=params.toString();return true;}catch(_){return false;}}
 async function fbWaitAndRunSearchFromAutofill(timeoutMs,isCurrent){const timeout=Number.isFinite(timeoutMs)?timeoutMs:2400;const startedAt=Date.now();let attempts=0;while(Date.now()-startedAt<timeout){if(typeof isCurrent==="function"&&!isCurrent())return false;attempts+=1;const scope=document.getElementById("find-builder")||document;const rb=scope.querySelector("#fb-run")||document.querySelector("#fb-run");const hasExpr=!!(state&&Array.isArray(state.expr)&&state.expr.length);if(rb&&hasExpr&&fbCanAutofillRunButton(rb)){fbDispatchSyntheticClick(rb);return true;}
 await new Promise((r)=>setTimeout(r,attempts<8?32:80));}
 if(typeof isCurrent==="function"&&!isCurrent())return false;return fbRunSearchFallbackFromAutofill();}
@@ -252,7 +252,7 @@ async function fbRunLpDirectSearch(timeoutMs){const timeout=Number.isFinite(time
 if(typeof api.setDraftExpr==="function")api.setDraftExpr(exprText);return api.runLogicExpr(exprText)!==false;}
 await new Promise((r)=>setTimeout(r,50));}
 return fbWaitAndRunSearchFromAutofill(400);}
-function fbConsumeLpDirectRequest(){const req=fbReadLpDirectRequest();if(!req)return null;try{const url=new URL(window.location.href);url.searchParams.delete("q");url.searchParams.delete("lp_direct");url.searchParams.delete("fb_direct");url.searchParams.delete("lp_token");url.searchParams.delete("lp_kind");const src=String(url.searchParams.get("src")||"").trim().toLowerCase();if(src==="learning_path"||src==="lp_direct"){url.searchParams.delete("src");}
+function fbConsumeLpDirectRequest(){const req=fbReadLpDirectRequest();if(!req)return null;try{const url=new URL(window.location.href);url.searchParams.delete("q");url.searchParams.delete("fq");url.searchParams.delete("lp_direct");url.searchParams.delete("fb_direct");url.searchParams.delete("lp_token");url.searchParams.delete("lp_kind");const src=String(url.searchParams.get("src")||"").trim().toLowerCase();if(src==="learning_path"||src==="lp_direct"){url.searchParams.delete("src");}
 history.replaceState(history.state||{},"",url.toString());}catch(_){}
 return req;}
 async function fbAutofillFromTopSearch(rawToken,opts){const q=String(rawToken||"").trim().replace(/\s+/g," ");if(!q)return;const o=opts||{};if(!o.handoff&&__fbAutofillStateV1.rankedQ===q&&Date.now()-(Number(__fbAutofillStateV1.rankedT)||0)<4000)return;if(o.handoff&&typeof fbTryRankedHandoff==="function"){try{if(await fbTryRankedHandoff(q,o))return;}catch(_){}}
@@ -277,7 +277,7 @@ clearStatus();render();const exprNow=tokensToExprText(normalizeNodesToTokens(sta
                  <button type="button" class="fb-fuzzy-btn fb-fuzzy-btn--undo" data-fb-fuzzy-act="edit">Edit as typed</button>
                </div>`,{origExpr:exprBefore,tokenSwaps,tokenAddsOnEdit,forExprText:exprNow});}}}}catch(_){}
 try{await new Promise((r)=>setTimeout(r,0));if(!isCurrent())return;await fbWaitAndRunSearchFromAutofill(2600,isCurrent);}catch(_){}}finally{if(requestId===__fbAutofillStateV1.request)__fbAutofillStateV1.running=false;}}
-function fbReadEnterQueryNow(){try{const params=new URLSearchParams(window.location.search);if(params.get("src")==="header_search")return(params.get("q")||"").trim();if(params.get("src")==="header_search_done")return"";}catch(_){}
+function fbReadEnterQueryNow(){try{const params=new URLSearchParams(window.location.search);if(params.get("src")==="header_search")return(params.get("fq")||params.get("q")||"").trim();if(params.get("src")==="header_search_done")return"";}catch(_){}
 try{const raw=sessionStorage.getItem(FB_ENTER_PAYLOAD_KEY_V2)||"";const s=String(raw||"").trim();if(s&&s.startsWith("{")){const obj=JSON.parse(s);const q=String(obj&&obj.q||"").trim();if(q)return q;}
 if(s)return s;}catch(_){}
 try{const q1=String(sessionStorage.getItem(FB_ENTER_PAYLOAD_KEY_V1)||"").trim();if(q1)return q1;}catch(_){}
@@ -1043,14 +1043,14 @@ window.__findSearchV2.runLogicExpr(exprText);return;}
 if(window.__findSearchV2&&typeof window.__findSearchV2.runQuery==="function"){const onlyTerms=norm.filter((t)=>t.k==="TERM").flatMap((t)=>String(t.v||"").trim().split(/\s+/).filter(Boolean)).join(" ").trim();if(!onlyTerms){setStatus("bad","No terms to search.");render();return;}
 setStatus("bad","Logic search not ready: fallback AND was used.");render();try{fbStartRunSearchFx();}catch(_){}
 window.__findSearchV2.runQuery(onlyTerms);return;}
-const params=new URLSearchParams(window.location.search);params.set("q",exprText);try{fbStartRunSearchFx();}catch(_){}
+const params=new URLSearchParams(window.location.search);params.delete("q");params.set("fq",exprText);try{fbStartRunSearchFx();}catch(_){}
 window.location.search=params.toString();});}}
 function init(){if(!isOnFindPage())return;ensureHeaderSearchInteractionTracker();fbInstallSameFindTopSearchBridge();try{document.body&&document.body.classList&&document.body.classList.add("mk-find-page","trending-page");}catch(_){}
 ensureFindWideLayoutStyles();ensureFindMobileUiStyles();ensureFindThemeForegroundStyles();fbInstallThemeForegroundObserver();ensureFindSpeechBubbleFix();try{fbRenameFindPageTitle();}catch(_){}
 try{fbEnsureFinderQuickShopButton();}catch(_){}
 try{fbEnsureMobileIntroTips();}catch(_){}
 try{state.enterQuery=fbCacheEnterQuery();}catch(_){state.enterQuery="";}
-state.enterQueryUsed=false;closeMaterialSearchOverlayFast();fbForceClearTopSearchBarNow();const topInput=document.getElementById("search-input");if(topInput)topInput.value="";const params=new URLSearchParams(window.location.search);const q=(params.get("q")||"").trim();const lpDirectReq=fbConsumeLpDirectRequest();const lpDirectToken=lpDirectReq&&lpDirectReq.q?String(lpDirectReq.token||lpDirectReq.q||"").trim().replace(/\s+/g," "):"";if(lpDirectToken){try{state.enterQuery="";state.enterQueryUsed=true;state.history=[];state.future=[];}catch(_){}
+state.enterQueryUsed=false;closeMaterialSearchOverlayFast();fbForceClearTopSearchBarNow();const topInput=document.getElementById("search-input");if(topInput)topInput.value="";const params=new URLSearchParams(window.location.search);const q=(params.get("fq")||params.get("q")||"").trim();const lpDirectReq=fbConsumeLpDirectRequest();const lpDirectToken=lpDirectReq&&lpDirectReq.q?String(lpDirectReq.token||lpDirectReq.q||"").trim().replace(/\s+/g," "):"";if(lpDirectToken){try{state.enterQuery="";state.enterQueryUsed=true;state.history=[];state.future=[];}catch(_){}
 try{fbHideFuzzyNote();}catch(_){}
 try{fbForceClearTopSearchBarSoon();}catch(_){}
 state.expr=[TERM(lpDirectToken)];state.cursor=state.expr.length;try{state.tokens=addTokensToStorage([lpDirectToken]);}catch(_){}}else if(params.get("src")==="header_search"&&q){state.expr=[TERM(q)];state.cursor=state.expr.length;try{state.tokens=addTokensToStorage([q]);}catch(_){}}else{const savedExpr=readExpr();if(Array.isArray(savedExpr)&&savedExpr.length){state.expr=savedExpr;state.cursor=Math.min(state.cursor||savedExpr.length,savedExpr.length);}else if(q){const parts=q.split(/\s+/).filter(Boolean);state.expr=parts.map((x)=>TERM(x));state.cursor=state.expr.length;}else{state.expr=[];state.cursor=0;}}

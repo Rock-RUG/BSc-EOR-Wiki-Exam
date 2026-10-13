@@ -5,10 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="Math V: Advanced Linear Algebra does not have concept pages on the wiki yet, so this page is a placeholder rather than a page that failed to load." name="description"/>
+<meta content="Eigenvalues lead into linear difference and differential equations and their stability, then into orthogonality, the four fundamental subspaces," name="description"/>
 <link href="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-2/1a-Math-V-Advanced-Linear-Algebra/index.html" rel="canonical"/>
 <link href="../1a-Macroeconomics-for-EOR/index.html" rel="prev"/>
-<link href="../1a-Statistical-Inference/index.html" rel="next"/>
+<link href="affine-subspace.html" rel="next"/>
 <link href="../../assets/logo-navbar.svg" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
 <title>Math V: Advanced Linear Algebra - BSc EOR Wiki (Exam Mode)</title>
@@ -17,10 +17,10 @@
 <link href="../../stylesheets/fonts-vendor.css?h=6f3b200e55fb" rel="stylesheet"/>
 <link href="../../stylesheets/katex-vendor.css?h=810f682352aa" rel="stylesheet"/>
 <link href="../../stylesheets/katex-fast.css?h=96bc13ba3ce4" rel="stylesheet"/>
-<link href="../../stylesheets/extra.css?h=26c3e73a4ad8" rel="stylesheet"/>
-<link href="../../stylesheets/mastery-widget.css?h=c15003807fa0" rel="stylesheet"/>
+<link href="../../stylesheets/extra.css?h=c173c1dec9fb" rel="stylesheet"/>
+<link href="../../stylesheets/mastery-widget.css?h=66cc7413366b" rel="stylesheet"/>
 <link href="../../stylesheets/course-search.css?h=1251e49b65c0" rel="stylesheet"/>
-<link href="../../stylesheets/course-status.css?h=02c244ef84fc" rel="stylesheet"/>
+<link href="../../stylesheets/course-status.css?h=147775b80dfa" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-surfaces.css?h=9908a9eaceb5" rel="stylesheet"/>
 <link href="../../stylesheets/theme-surfaces.css?h=9cfb2886da02" rel="stylesheet" media="(forced-colors: active)" data-mk-css-gate="theme"/>
 <link href="../../stylesheets/wiki-community.css?h=bf04506951f8" rel="stylesheet"/>
@@ -28,10 +28,10 @@
 <link href="../../stylesheets/wiki-mastery-manager.css?h=3c2334d129df" rel="stylesheet" media="not all" data-mk-css-gate="manager"/>
 <link href="../../stylesheets/course-home.css?h=61d1bcb9b969" rel="stylesheet"/>
 <link href="../../stylesheets/course-atlas.css?h=5889408143d3" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-guides.css?h=efb16dde4ecd" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-guides.css?h=a3c9ec9a8403" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-explain.css?h=1120073dd99e" rel="stylesheet"/>
 <link href="../../stylesheets/search-history.css?h=49fa7cf4d796" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-interactions.css?h=27fd0fdbe29b" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-interactions.css?h=33c0975f38ca" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <style id="mk-mobile-fixed-chrome-early">
 @media (max-width: 900px), (pointer: coarse){
@@ -101,13 +101,13 @@
 <meta content="website" property="og:type"/>
 <meta content="BSc EOR Wiki (Exam Mode)" property="og:site_name"/>
 <meta content="Math V: Advanced Linear Algebra - BSc EOR Wiki (Exam Mode)" property="og:title"/>
-<meta content="Math V: Advanced Linear Algebra does not have concept pages on the wiki yet, so this page is a placeholder rather than a page that failed to load." property="og:description"/>
+<meta content="Eigenvalues lead into linear difference and differential equations and their stability, then into orthogonality, the four fundamental subspaces," property="og:description"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-2/1a-Math-V-Advanced-Linear-Algebra/index.html" property="og:url"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/assets/logo-navbar.png" property="og:image"/>
 <meta content="BSc EOR Wiki logo" property="og:image:alt"/>
 <meta content="summary" name="twitter:card"/>
 <meta content="Math V: Advanced Linear Algebra - BSc EOR Wiki (Exam Mode)" name="twitter:title"/>
-<meta content="Math V: Advanced Linear Algebra does not have concept pages on the wiki yet, so this page is a placeholder rather than a page that failed to load." name="twitter:description"/>
+<meta content="Eigenvalues lead into linear difference and differential equations and their stability, then into orthogonality, the four fundamental subspaces," name="twitter:description"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/assets/logo-navbar.png" name="twitter:image"/>
 <meta content="BSc EOR Wiki logo" name="twitter:image:alt"/>
 <script id="mk-search-index-network-cache">
@@ -131,7 +131,7 @@
     unbind();
   }
   window.__mkSearchIndexDemand = release;
-  try { var params = new URLSearchParams(location.search); if (params.get('q') || params.get('h')) release('query'); } catch (_) {}
+  try { var params = new URLSearchParams(location.search); if (params.get('q') || params.get('fq') || params.get('h')) release('query'); } catch (_) {}
   var SEARCH = '.md-search, label[for="__search"], #__search, [data-md-component="search"], [data-md-toggle="search"]';
   function near(event) { var t = event && event.target; try { return !!(t && t.closest && t.closest(SEARCH)); } catch (_) { return false; } }
   function onPointer(event) { if (near(event)) release('intent'); }
@@ -188,9 +188,9 @@
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=001bdc6a6232";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=028a29ef9217";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=001bdc6a6232";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=028a29ef9217";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -207,14 +207,32 @@
       if(!/\/find(?:\.html|\/(?:index\.html)?)?$/i.test(url.pathname)||params.get("lp_token"))return;
       var direct=String(params.get("lp_direct")||params.get("fb_direct")||"").trim().toLowerCase();
       var src=String(params.get("src")||"").trim().toLowerCase();
-      var q=String(params.get("q")||"").trim();
+      var q=String(params.get("fq")||params.get("q")||"").trim();
       if(!q||(direct!=="1"&&direct!=="true"&&src!=="lp_direct"&&src!=="learning_path"))return;
       params.set("lp_token",q);
       history.replaceState(history.state,"",url.toString());
     }catch(_){}
   }
+  // Material's search.share reads ?q= on load and OPENS the header search with
+  // that text (toggle checked + input focused). On the Finder the query is a
+  // Finder handoff, not a header search: Material opened the overlay (and the
+  // mobile keyboard), the Finder closed it again, and on a slow phone network
+  // the two fought until the header was left half-open and the page blurred.
+  // Move the Finder query to fq before Material's bundle runs; the Finder
+  // scripts read fq (and still accept q from older links).
+  function moveFinderQueryOffMaterialParam(){
+    try{
+      var url=new URL(location.href),params=url.searchParams;
+      if(!/\/find(?:\.html|\/(?:index\.html)?)?$/i.test(url.pathname)||!params.has("q"))return;
+      var q=String(params.get("q")||"").trim();
+      if(q&&!params.get("fq"))params.set("fq",q);
+      params.delete("q");
+      history.replaceState(history.state,"",url.toString());
+    }catch(_){}
+  }
   preserveLpFindToken();
-  document.addEventListener("DOMContentSwitch",preserveLpFindToken,true);
+  moveFinderQueryOffMaterialParam();
+  document.addEventListener("DOMContentSwitch",function(){preserveLpFindToken();moveFinderQueryOffMaterialParam();},true);
   var KEY="mk_startup_features_v1";
   var DEFAULTS={account:true,learningPath:true,mastery:true,aiQuiz:true,sidebarSort:true};
   function kebab(k){return String(k||"").replace(/[A-Z]/g,function(m){return "-"+m.toLowerCase();});}
@@ -733,6 +751,9 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
     
   </span>
 </a>
+<label class="md-nav__link md-nav__link--active" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
 </div>
 <nav aria-expanded="true" aria-labelledby="__nav_5_3_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_5_3">
@@ -744,6 +765,462 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="affine-subspace.html">
+<span class="md-ellipsis">
+    
+  
+    Affine Subspace
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="basis-of-solutions-difference-equation.html">
+<span class="md-ellipsis">
+    
+  
+    Basis of Solutions of a Difference Equation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="change-of-basis.html">
+<span class="md-ellipsis">
+    
+  
+    Change of Basis
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="characteristic-equation-differential-equation.html">
+<span class="md-ellipsis">
+    
+  
+    Characteristic Equation for a Differential Equation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="characteristic-polynomial-difference-equation.html">
+<span class="md-ellipsis">
+    
+  
+    Characteristic Polynomial for a Difference Equation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="complex-conjugate-eigenvalues.html">
+<span class="md-ellipsis">
+    
+  
+    Complex Conjugate Pair of Eigenvalues
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="difference-equation.html">
+<span class="md-ellipsis">
+    
+  
+    Difference Equation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="differential-equation.html">
+<span class="md-ellipsis">
+    
+  
+    Differential Equation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="equilibrium-differential-equation.html">
+<span class="md-ellipsis">
+    
+  
+    Equilibrium of a Differential Equation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="first-order-differential-equation.html">
+<span class="md-ellipsis">
+    
+  
+    First-Order Differential Equation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="first-order-linear-difference-equation.html">
+<span class="md-ellipsis">
+    
+  
+    First-Order Linear Difference Equation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="fundamental-theorem-of-linear-algebra.html">
+<span class="md-ellipsis">
+    
+  
+    Fundamental Theorem of Linear Algebra
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="general-solution-linear-ode.html">
+<span class="md-ellipsis">
+    
+  
+    General Solution of a Linear ODE
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="generalized-inverse.html">
+<span class="md-ellipsis">
+    
+  
+    Generalized Inverse
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="gram-schmidt-algorithm.html">
+<span class="md-ellipsis">
+    
+  
+    Gram-Schmidt Algorithm
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="higher-order-linear-difference-equation.html">
+<span class="md-ellipsis">
+    
+  
+    Higher-Order Linear Difference Equation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="integrating-factor.html">
+<span class="md-ellipsis">
+    
+  
+    Integrating Factor
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="kronecker-product.html">
+<span class="md-ellipsis">
+    
+  
+    Kronecker Product
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="least-squares.html">
+<span class="md-ellipsis">
+    
+  
+    Least Squares
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="linear-vector-ode.html">
+<span class="md-ellipsis">
+    
+  
+    Linear Vector ODE
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="matrix-exponential.html">
+<span class="md-ellipsis">
+    
+  
+    Matrix Exponential
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="matrix-representation-of-a-linear-map.html">
+<span class="md-ellipsis">
+    
+  
+    Matrix Representation of a Linear Map
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="moore-penrose-inverse.html">
+<span class="md-ellipsis">
+    
+  
+    Moore-Penrose Inverse
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="orthogonal-complement.html">
+<span class="md-ellipsis">
+    
+  
+    Orthogonal Complement
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="orthogonal-projection.html">
+<span class="md-ellipsis">
+    
+  
+    Orthogonal Projection
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="particular-solution-linear-ode.html">
+<span class="md-ellipsis">
+    
+  
+    Particular Solution of an Inhomogeneous Linear ODE
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="row-space.html">
+<span class="md-ellipsis">
+    
+  
+    Row Space
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="second-order-differential-equation.html">
+<span class="md-ellipsis">
+    
+  
+    Second-Order Differential Equation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="second-order-linear-difference-equation.html">
+<span class="md-ellipsis">
+    
+  
+    Second-Order Linear Difference Equation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="similarity-transformation.html">
+<span class="md-ellipsis">
+    
+  
+    Similarity Transformation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="singular-value-decomposition.html">
+<span class="md-ellipsis">
+    
+  
+    Singular Value Decomposition
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="singular-value.html">
+<span class="md-ellipsis">
+    
+  
+    Singular Value
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="stability-equilibrium.html">
+<span class="md-ellipsis">
+    
+  
+    Stability of an Equilibrium
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="stability-higher-order-ode.html">
+<span class="md-ellipsis">
+    
+  
+    Stability of Solutions of Higher-Order ODEs
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="stability-linear-difference-system.html">
+<span class="md-ellipsis">
+    
+  
+    Stability of a System of Linear Difference Equations
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="stability-scalar-difference-equation.html">
+<span class="md-ellipsis">
+    
+  
+    Stability of a Scalar Difference Equation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="system-of-differential-equations.html">
+<span class="md-ellipsis">
+    
+  
+    System of Differential Equations
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="system-of-linear-difference-equations.html">
+<span class="md-ellipsis">
+    
+  
+    System of Linear Difference Equations
+  
+
+    
+  </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -914,6 +1391,102 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#reading-this-course">
+<span class="md-ellipsis">
+      
+        Reading this course
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#foundations-already-on-the-wiki">
+<span class="md-ellipsis">
+      
+        Foundations already on the wiki
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#week-1-eigenvalues-and-linear-maps">
+<span class="md-ellipsis">
+      
+        Week 1; Eigenvalues and linear maps
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#week-2-linear-difference-equations">
+<span class="md-ellipsis">
+      
+        Week 2; Linear difference equations
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#week-3-first-order-differential-equations">
+<span class="md-ellipsis">
+      
+        Week 3; First-order differential equations
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#week-4-higher-order-equations-and-linear-systems">
+<span class="md-ellipsis">
+      
+        Week 4; Higher-order equations and linear systems
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#week-5-orthogonality-and-the-four-subspaces">
+<span class="md-ellipsis">
+      
+        Week 5; Orthogonality and the four subspaces
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#week-6-orthonormal-bases-and-change-of-basis">
+<span class="md-ellipsis">
+      
+        Week 6; Orthonormal bases and change of basis
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#week-7-singular-values-generalized-inverses-and-least-squares">
+<span class="md-ellipsis">
+      
+        Week 7; Singular values, generalized inverses and least squares
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sources">
+<span class="md-ellipsis">
+      
+        Sources
+      
+    </span>
+</a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -947,22 +1520,133 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <article class="md-content__inner md-typeset">
 <nav class="md-tags" aria-label="Concept tags">
 <span class="md-tag">curriculum-current</span>
+<span class="md-tag">m5ala</span>
 </nav>
 <h1 class="ch-title" id="math-v-advanced-linear-algebra">Math V: Advanced Linear Algebra<a class="headerlink" href="#math-v-advanced-linear-algebra" title="Permanent link">¶</a></h1>
-<p class="ch-course-kicker">Block 1a · Mathematics</p>
-<!-- mk-empty-course-notice -->
-<div class="admonition info">
-<p class="admonition-title">Not written yet</p>
-<p><strong>Math V: Advanced Linear Algebra</strong> does not have concept pages on the wiki yet, so this page is a
-placeholder rather than a page that failed to load. For current teaching materials,
-use the course learning environment. No publication date for this wiki section is set.</p>
-<p>In the meantime: the <a href="../../find.html">concept finder</a> searches everything that
-<em>is</em> published. The <a href="../index.html">Year 2 overview</a> shows which Year 2 courses
-have concept notes so far, and the <a href="../../Year-1/index.html">Year 1 directory</a> has the
-foundations most Year 2 courses build on. If you are taking this course and want to help write it up, the
-<a href="../../contributors.html">contributors page</a> explains how.</p>
+<p class="ch-course-kicker" data-course-token="m5ala">Block 1a · Mathematics</p>
+<p>Eigenvalues lead into linear difference and differential equations and their stability, then into orthogonality, the four fundamental subspaces, the singular value decomposition, generalized inverses and least squares.</p>
+<hr/>
+<h2 id="reading-this-course">Reading this course<a class="headerlink" href="#reading-this-course" title="Permanent link">¶</a></h2>
+<p>These notes introduce course-specific concepts. Linear-algebra material already taught in Math II (and the Math I calculus used for differential equations) has one canonical page and is linked as a foundation below rather than repeated. Week numbers are counted within this course, starting at Week 1, and follow the weekly slide decks. Concepts appear in the week where they are first introduced and are reused by links afterwards.</p>
+<hr/>
+<div class="admonition note">
+<p class="admonition-title">Coverage boundary</p>
+<p>The pages were written from a concept outline of the weekly slide decks; the slides themselves were not available when the pages were checked, so slide numbers are not cited and course-specific notation (stability conventions, the direction of a change-of-basis matrix, the names of the four subspaces) is stated in its standard form, and the pages say where it has not been checked against the slides. Weeks 3 and 4 share a combined deck, and the Week 6 and Week 7 material comes from one combined deck whose split between the two weeks is provisional.</p>
 </div>
-<p class="mk-last-updated">Last updated: 8 October 2026 18:38</p>
+<hr/>
+<h2 id="foundations-already-on-the-wiki">Foundations already on the wiki<a class="headerlink" href="#foundations-already-on-the-wiki" title="Permanent link">¶</a></h2>
+<p>Revisited in Week 1:</p>
+<ul>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/determinant.html">Determinant</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/identity-matrix.html">Identity Matrix</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/matrix-product.html">Matrix Product</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/inverse-matrix.html">Inverse and Singular Matrices</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html">Eigenvalue and Eigenvector</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/characteristic-polynomial.html">Characteristic Polynomial</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/diagonalization.html">Diagonalization</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/jordan-normal-form.html">Jordan Normal Form</a> </li>
+</ul>
+<p>Revisited in Week 5:</p>
+<ul>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/vector-space.html">Vector Space</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/subspace.html">Subspace</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/linear-combination.html">Linear Combination</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/linear-span.html">Linear Span</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/linear-independence.html">Linear Dependence and Independence</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/basis.html">Basis</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/dimension.html">Dimension</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/inner-product.html">Inner Product</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/vector-norm.html">Euclidean Norm</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/row-echelon-form.html">Row Echelon and Reduced Row Echelon Form</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/kernel.html">Kernel</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/range-of-a-linear-map.html">Range of a Linear Map</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/rank.html">Rank</a> </li>
+</ul>
+<p>Revisited in Weeks 6 and 7:</p>
+<ul>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/block-matrix.html">Block Matrix</a> </li>
+<li><a href="../../Year-1/2b-Math-IV-Multivariate-Calculus/left-and-right-inverses.html">Left and Right Inverses</a> </li>
+</ul>
+<hr/>
+<h2 id="week-1-eigenvalues-and-linear-maps">Week 1; Eigenvalues and linear maps<a class="headerlink" href="#week-1-eigenvalues-and-linear-maps" title="Permanent link">¶</a></h2>
+<p>Source: Week 1 slide deck.</p>
+<ul>
+<li><a href="matrix-representation-of-a-linear-map.html">Matrix Representation of a Linear Map</a> </li>
+<li><a href="complex-conjugate-eigenvalues.html">Complex Conjugate Pair of Eigenvalues</a> </li>
+</ul>
+<hr/>
+<h2 id="week-2-linear-difference-equations">Week 2; Linear difference equations<a class="headerlink" href="#week-2-linear-difference-equations" title="Permanent link">¶</a></h2>
+<p>Source: Week 2 slide deck.</p>
+<ul>
+<li><a href="difference-equation.html">Difference Equation</a> </li>
+<li><a href="first-order-linear-difference-equation.html">First-Order Linear Difference Equation</a> </li>
+<li><a href="second-order-linear-difference-equation.html">Second-Order Linear Difference Equation</a> </li>
+<li><a href="characteristic-polynomial-difference-equation.html">Characteristic Polynomial for a Difference Equation</a> </li>
+<li><a href="stability-scalar-difference-equation.html">Stability of a Scalar Difference Equation</a> </li>
+<li><a href="basis-of-solutions-difference-equation.html">Basis of Solutions of a Difference Equation</a> </li>
+<li><a href="higher-order-linear-difference-equation.html">Higher-Order Linear Difference Equation</a> </li>
+<li><a href="system-of-linear-difference-equations.html">System of Linear Difference Equations</a> </li>
+<li><a href="stability-linear-difference-system.html">Stability of a System of Linear Difference Equations</a> </li>
+</ul>
+<hr/>
+<h2 id="week-3-first-order-differential-equations">Week 3; First-order differential equations<a class="headerlink" href="#week-3-first-order-differential-equations" title="Permanent link">¶</a></h2>
+<p>Source: Week 3 slide deck.</p>
+<ul>
+<li><a href="differential-equation.html">Differential Equation</a> </li>
+<li><a href="first-order-differential-equation.html">First-Order Differential Equation</a> </li>
+<li><a href="integrating-factor.html">Integrating Factor</a> </li>
+<li><a href="equilibrium-differential-equation.html">Equilibrium of a Differential Equation</a> </li>
+<li><a href="stability-equilibrium.html">Stability of an Equilibrium</a> </li>
+</ul>
+<hr/>
+<h2 id="week-4-higher-order-equations-and-linear-systems">Week 4; Higher-order equations and linear systems<a class="headerlink" href="#week-4-higher-order-equations-and-linear-systems" title="Permanent link">¶</a></h2>
+<p>Source: Week 4 slide deck (also in the combined Weeks 3–4 deck).</p>
+<ul>
+<li><a href="second-order-differential-equation.html">Second-Order Differential Equation</a> </li>
+<li><a href="characteristic-equation-differential-equation.html">Characteristic Equation for a Differential Equation</a> </li>
+<li><a href="particular-solution-linear-ode.html">Particular Solution of an Inhomogeneous Linear ODE</a> </li>
+<li><a href="system-of-differential-equations.html">System of Differential Equations</a> </li>
+<li><a href="matrix-exponential.html">Matrix Exponential</a> </li>
+<li><a href="linear-vector-ode.html">Linear Vector ODE</a> </li>
+<li><a href="general-solution-linear-ode.html">General Solution of a Linear ODE</a> </li>
+<li><a href="stability-higher-order-ode.html">Stability of Solutions of Higher-Order ODEs</a> </li>
+</ul>
+<hr/>
+<h2 id="week-5-orthogonality-and-the-four-subspaces">Week 5; Orthogonality and the four subspaces<a class="headerlink" href="#week-5-orthogonality-and-the-four-subspaces" title="Permanent link">¶</a></h2>
+<p>Source: Week 5 slide deck.</p>
+<ul>
+<li><a href="orthogonal-complement.html">Orthogonal Complement</a> </li>
+<li><a href="orthogonal-projection.html">Orthogonal Projection</a> </li>
+<li><a href="row-space.html">Row Space</a> </li>
+<li><a href="fundamental-theorem-of-linear-algebra.html">Fundamental Theorem of Linear Algebra</a> </li>
+<li><a href="affine-subspace.html">Affine Subspace</a> </li>
+</ul>
+<hr/>
+<h2 id="week-6-orthonormal-bases-and-change-of-basis">Week 6; Orthonormal bases and change of basis<a class="headerlink" href="#week-6-orthonormal-bases-and-change-of-basis" title="Permanent link">¶</a></h2>
+<p>Source: first part of the combined Weeks 6–7 deck.</p>
+<ul>
+<li><a href="gram-schmidt-algorithm.html">Gram-Schmidt Algorithm</a> </li>
+<li><a href="kronecker-product.html">Kronecker Product</a> </li>
+<li><a href="change-of-basis.html">Change of Basis</a> </li>
+<li><a href="similarity-transformation.html">Similarity Transformation</a> </li>
+</ul>
+<hr/>
+<h2 id="week-7-singular-values-generalized-inverses-and-least-squares">Week 7; Singular values, generalized inverses and least squares<a class="headerlink" href="#week-7-singular-values-generalized-inverses-and-least-squares" title="Permanent link">¶</a></h2>
+<p>Source: second part of the combined Weeks 6–7 deck.</p>
+<ul>
+<li><a href="singular-value-decomposition.html">Singular Value Decomposition</a> </li>
+<li><a href="singular-value.html">Singular Value</a> </li>
+<li><a href="generalized-inverse.html">Generalized Inverse</a> </li>
+<li><a href="moore-penrose-inverse.html">Moore-Penrose Inverse</a> </li>
+<li><a href="least-squares.html">Least Squares</a> </li>
+</ul>
+<hr/>
+<h2 id="sources"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20.7c0 .46.1.9.27 1.3H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6.11c-.32-.07-.66-.11-1-.11s-.68.04-1 .11V4h-5v8l-2.5-2.25L8 12V4H6v16h7zm10-3.4v3.5c0 .6-.6 1.2-1.3 1.2h-5.5c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2v-1.5c0-1.4 1.4-2.5 2.8-2.5s2.8 1.1 2.8 2.5V16c.6 0 1.2.6 1.2 1.3m-2.5-2.8c0-.8-.7-1.3-1.5-1.3s-1.5.5-1.5 1.3V16h3z"></path></svg></span> Sources<a class="headerlink" href="#sources" title="Permanent link">¶</a></h2>
+<ul>
+<li>Math V: Advanced Linear Algebra · Weekly lecture slides (Weeks 1–7) </li>
+</ul>
+<p>These are wiki study notes based on a concept outline of the course slides, with new illustrative calculations. They have not been reviewed by the course lecturers. AI mastery checks are available on supported concept pages; each page shows its own availability.</p>
+<p class="mk-last-updated">Last updated: 13 October 2026 07:32</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -1001,16 +1685,16 @@ foundations most Year 2 courses build on. If you are taking this course and want
 <script src="../../javascripts/exam-mode.js?h=09b295110531"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
 <script src="../../javascripts/wiki-explain.js?h=8900cebd6651"></script>
-<script src="../../javascripts/startup-preferences.js?h=001bdc6a6232"></script>
+<script src="../../javascripts/startup-preferences.js?h=028a29ef9217"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=39d6a6cff37d"></script>
-<script src="../../javascripts/ui-guard.js?h=36b89791cb6b"></script>
+<script src="../../javascripts/ui-guard.js?h=52ec5f9e3afb"></script>
 <script src="../../javascripts/concept-title-fit.js?h=8a4406302178"></script>
 <script src="../../javascripts/a11y-landmarks.js?h=f9b5b9aefde5"></script>
 <script src="../../javascripts/fuzzy-core.js?h=eff81b2b18b8"></script>
 <script src="../../javascripts/nl-query-core.js?h=c6f0b7f77910"></script>
-<script src="../../javascripts/multilingual-search-core.js?h=280885188c08"></script>
-<script src="../../javascripts/search-suggestions.js?h=fbcb4fc709cb"></script>
+<script src="../../javascripts/multilingual-search-core.js?h=bb146f10f62c"></script>
+<script src="../../javascripts/search-suggestions.js?h=f813d7b33f45"></script>
 <script src="../../javascripts/search-history.js?h=a1367948fc13"></script>
 <script src="../../javascripts/header-search-stabilizer.js?h=cdd630b06fd3"></script>
 <script src="../../javascripts/concept-hover-preview.js?h=2170e87fe157"></script>
@@ -1018,7 +1702,7 @@ foundations most Year 2 courses build on. If you are taking this course and want
 <script src="../../javascripts/preload-guard.js?h=5e42effda2c3"></script>
 <script src="../../javascripts/random.js?h=13e72e32a905"></script>
 <script src="../../javascripts/random-tabs.js?h=e8b57cf10ac1"></script>
-<script src="../../javascripts/search-enter.js?h=5ef1fb6b67da"></script>
+<script src="../../javascripts/search-enter.js?h=e31166d24b53"></script>
 <script src="../../javascripts/concept-fold.js?h=6399c42db2c6"></script>
 <script src="../../javascripts/tag-search-links.js?h=84cb5c2dd87f"></script>
 <script src="../../javascripts/logo-lightbox.js?h=fda4850b9a41"></script>
