@@ -17,20 +17,20 @@
 <link href="../../stylesheets/fonts-vendor.css?h=6f3b200e55fb" rel="stylesheet"/>
 <link href="../../stylesheets/katex-vendor.css?h=810f682352aa" rel="stylesheet"/>
 <link href="../../stylesheets/katex-fast.css?h=0c60a27e100b" rel="stylesheet"/>
-<link href="../../stylesheets/extra.css?h=a36600470919" rel="stylesheet"/>
+<link href="../../stylesheets/extra.css?h=22c103393647" rel="stylesheet"/>
 <link href="../../stylesheets/concept-connections-panel.css?h=0c2961e3defd" rel="stylesheet"/>
-<link href="../../stylesheets/mastery-widget.css?h=66cc7413366b" rel="stylesheet"/>
+<link href="../../stylesheets/mastery-widget.css?h=48893dfee45a" rel="stylesheet"/>
 <link href="../../stylesheets/course-status.css?h=147775b80dfa" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-surfaces.css?h=9908a9eaceb5" rel="stylesheet"/>
-<link href="../../stylesheets/theme-surfaces.css?h=d72ae4522edf" rel="stylesheet" media="(forced-colors: active)" data-mk-css-gate="theme"/>
+<link href="../../stylesheets/theme-surfaces.css?h=f06bdcdaebde" rel="stylesheet" media="(forced-colors: active)" data-mk-css-gate="theme"/>
 <link href="../../stylesheets/wiki-community.css?h=bf04506951f8" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-maps.css?h=e3f715120b0c" rel="stylesheet" media="not all" data-mk-css-gate="maps"/>
+<link href="../../stylesheets/wiki-maps.css?h=af2f6fbbe09d" rel="stylesheet" media="not all" data-mk-css-gate="maps"/>
 <link href="../../stylesheets/wiki-mastery-manager.css?h=3c2334d129df" rel="stylesheet" media="not all" data-mk-css-gate="manager"/>
-<link href="../../stylesheets/wiki-guides.css?h=a3c9ec9a8403" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-explain.css?h=1120073dd99e" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-guides.css?h=bb3dad5277c8" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-explain.css?h=414317c1fdc0" rel="stylesheet"/>
 <link href="../../stylesheets/search-history.css?h=49fa7cf4d796" rel="stylesheet"/>
-<link href="../../stylesheets/learning-path.css?h=fc2fd24efe86" rel="stylesheet" media="not all" data-mk-css-gate="lp"/>
-<link href="../../stylesheets/wiki-interactions.css?h=304137b94e1e" rel="stylesheet"/>
+<link href="../../stylesheets/learning-path.css?h=77080a87bba1" rel="stylesheet" media="not all" data-mk-css-gate="lp"/>
+<link href="../../stylesheets/wiki-interactions.css?h=793331577f46" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <style id="mk-mobile-fixed-chrome-early">
 @media (max-width: 900px), (pointer: coarse){
@@ -41,6 +41,20 @@
   html.mk-mobile-fixed-chrome .md-main{margin-top:0!important}
   
   html.mk-mobile-fixed-chrome .md-top{top:calc(var(--mk-mobile-chrome-h,102px) + 12px)!important;z-index:10038!important}
+  
+  html.mk-mobile-fixed-chrome .md-top{left:auto!important;right:max(12px,env(safe-area-inset-right,0px))!important;transform:none!important;width:40px;height:40px;padding:0!important;font-size:0!important;border-radius:50%!important;display:flex;align-items:center;justify-content:center}
+  html.mk-mobile-fixed-chrome .md-top svg{width:20px;height:20px;margin:0!important;vertical-align:0}
+  
+  html.mk-mobile-fixed-chrome .md-tabs{transition:transform .2s ease,visibility 0s linear 0s}
+  html.mk-mobile-fixed-chrome:not([data-mk-image-interface-theme]) .md-tabs.mk-chrome-away{transform:translate3d(0,calc(-1 * var(--mk-mobile-tabs-h,48px)),0)!important;visibility:hidden;transition:transform .2s ease,visibility 0s linear .2s}
+}
+@media (pointer: coarse) and (orientation: landscape) and (max-height: 500px){
+  html.mk-mobile-fixed-chrome .md-header{transition:transform .2s ease,visibility 0s linear 0s}
+  html.mk-mobile-fixed-chrome .md-header.mk-chrome-away{transform:translate3d(0,-100%,0)!important;visibility:hidden;transition:transform .2s ease,visibility 0s linear .2s}
+  html.mk-mobile-fixed-chrome .md-tabs.mk-chrome-away{transform:translate3d(0,calc(-1 * var(--mk-mobile-chrome-h,102px)),0)!important;visibility:hidden;transition:transform .2s ease,visibility 0s linear .2s}
+}
+@media (prefers-reduced-motion: reduce){
+  html.mk-mobile-fixed-chrome .md-tabs,html.mk-mobile-fixed-chrome .md-header{transition:none!important}
 }
 
 .md-top[hidden]{visibility:hidden}
@@ -50,6 +64,31 @@
   var mm=window.matchMedia;if(!mm||!mm("(pointer: coarse)").matches)return;
   if(mm("(min-width: 768px)").matches&&mm("(min-height: 700px)").matches)return;
   document.documentElement.classList.add("mk-mobile-fixed-chrome");
+}catch(_){}})();
+
+(function(){try{
+  var root=document.documentElement,last=0,acc=0,raf=0,away=false;
+  if(!window.requestAnimationFrame)return;
+  function y(){return window.pageYOffset||root.scrollTop||0;}
+  function bars(){return document.querySelectorAll(".md-header,.md-tabs");}
+  function set(on){if(on===away)return;away=on;var b=bars();for(var i=0;i<b.length;i++)b[i].classList.toggle("mk-chrome-away",on);}
+  function held(){
+    if(!root.classList.contains("mk-mobile-fixed-chrome")||root.classList.contains("mk-app-booting"))return true;
+    var d=document.getElementById("__drawer"),s=document.getElementById("__search");
+    if((d&&d.checked)||(s&&s.checked))return true;
+    if(document.querySelector(".mk-rt-panel.mk-rt-open,.md-tab-dropdown-panel.open"))return true;
+    var a=document.activeElement;return !!(a&&a!==document.body&&a.closest&&a.closest(".md-header,.md-tabs"));
+  }
+  function tick(){raf=0;var cur=y(),dy=cur-last;last=cur;
+    if(cur<160||held()){acc=0;set(false);return;}
+    if(dy&&(dy>0)!==(acc>0))acc=0;acc+=dy;
+    if(acc>32)set(true);else if(acc<-8)set(false);}
+  window.addEventListener("scroll",function(){if(!raf)raf=requestAnimationFrame(tick);},{passive:true});
+  function show(){acc=0;set(false);}
+  document.addEventListener("focusin",function(e){var t=e.target;if(away&&t&&t.closest&&t.closest(".md-header,.md-tabs"))show();},true);
+  document.addEventListener("change",function(e){var t=e.target;if(t&&(t.id==="__drawer"||t.id==="__search")&&t.checked)show();},true);
+  window.addEventListener("pageshow",function(){last=y();show();});
+  document.addEventListener("DOMContentSwitch",show);
 }catch(_){}})();
 
 (function(){try{
@@ -190,9 +229,9 @@
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=bc146e823ff2";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=776a72fb6e96";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=bc146e823ff2";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=776a72fb6e96";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -314,6 +353,7 @@
      visible but rAF-throttled. */
   function reveal(n){if(n!==id||reveal.completed===n)return;clearTimeout(timer);clearTimeout(hard);if(document.hidden){revealCommit(n);return;}if(reveal.queued===n)return;reveal.queued=n;clearFindSearchResidue();forceTopNow();revealFrame=requestAnimationFrame(function(){if(n!==id||reveal.completed===n)return;forceTopNow();revealFrame=requestAnimationFrame(function(){if(n!==id)return;revealFrame=0;revealCommit(n);});});revealFallback=setTimeout(function(){if(n!==id)return;revealFallback=0;revealCommit(n);},400);}
   function probe(n){if(n!==id||reveal.completed===n||reveal.queued===n)return;markKind();clearFindSearchResidue();var ms=now()-start,c=concept();if(ms>=18&&shellReady()&&tabsReady()&&sidebarReady(ms)&&masteryReady(c,ms)&&lpReady(c,ms)&&motionReady(ms)&&findReady(ms)&&visibleToolsReady()&&viewportStable(ms))return reveal(n);clearTimeout(timer);timer=setTimeout(function(){probe(n);},16);}
+  function currentDocKey(){try{return location.pathname+location.search;}catch(_){return "";}}var docKey=currentDocKey();
   function boot(reason){markKind();id++;start=now();clearTimeout(timer);clearTimeout(hard);cancelRevealWork();reveal.queued=reveal.completed=0;blank(reason);var n=id;timer=setTimeout(function(){probe(n);},0);hard=setTimeout(function(){hardRevealWhenSafe(n);},10000);}
   function hardRevealWhenSafe(n){if(n!==id||reveal.completed===n||reveal.queued===n)return;var ms=now()-start;if(shouldGateDesktopSidebar(ms)&&!sidebarReady(ms)&&ms<1200){clearTimeout(hard);hard=setTimeout(function(){hardRevealWhenSafe(n);},50);return;}reveal(n);}
   function releaseForInteraction(e){try{if(e&&e.isTrusted===false)return;userInteracted=true;preserveReadingPosition();if(root.classList.contains("mk-app-booting")&&(!visibleToolsReady()||!lpReady(concept(),0)||!masteryReady(concept(),0)))return;if(root.classList.contains("mk-app-booting"))reveal(id);}catch(_){}}
@@ -324,13 +364,13 @@
   document.addEventListener("submit",function(e){if(searchTarget(e&&e.target))boot("find");},true);
   document.addEventListener("keydown",function(e){var t=e&&e.target;if(e&&e.key==="Enter"&&!e.isComposing&&e.keyCode!==229&&searchTarget(t)&&t.matches&&t.matches('input.md-search__input, input[data-md-component="search-query"]'))boot("find");},true);
   window.addEventListener("find:autofill",function(){boot("find");},true);
-  try{["pushState","replaceState"].forEach(function(k){var orig=history[k];if(!orig||orig.__mkGateWrappedV8)return;var wrapped=function(){var ret=orig.apply(this,arguments);setTimeout(function(){markKind();if(isFind())boot("history-find");else probe(id);},0);return ret;};wrapped.__mkGateWrappedV8=true;history[k]=wrapped;});}catch(_){}
+  try{["pushState","replaceState"].forEach(function(k){var orig=history[k];if(!orig||orig.__mkGateWrappedV8)return;var wrapped=function(){var ret=orig.apply(this,arguments);docKey=currentDocKey();setTimeout(function(){markKind();if(isFind())boot("history-find");else probe(id);},0);return ret;};wrapped.__mkGateWrappedV8=true;history[k]=wrapped;});}catch(_){}
   window.__mkUnifiedFirstPaintStart=boot;window.__mkUnifiedFirstPaintBlank=function(reason){boot(reason||"manual")};window.__mkUnifiedFirstPaintProbe=function(){probe(id)};window.__mkClearFindSearchResidue=clearFindSearchResidue;
   ["wheel","touchstart","pointerdown"].forEach(function(e){window.addEventListener(e,releaseForInteraction,{passive:true,capture:true});});window.addEventListener("keydown",function(e){if(e&&/^(ArrowDown|ArrowUp|PageDown|PageUp|Home|End| )$/.test(String(e.key||"")))releaseForInteraction(e);},true);
   ["mk:random-tabs-ready","mk:sidebar-sort-done","mk:sidebar-sort-rendered","mk:sidebar-sort-centered","mk:mastery-widget-ready","mk:learning-path-ready","mk:site-motion-change","mk:motionchange","fb:ready"].forEach(function(e){window.addEventListener(e,function(){probe(id);},true);});
   window.addEventListener("pagehide",function(){scrollPageAway=true;preserveReadingPosition();},{passive:true});
   window.addEventListener("hashchange",preserveReadingPosition,{passive:true});
-  boot("initial");document.addEventListener("DOMContentLoaded",function(){probe(id);},{once:true});document.addEventListener("DOMContentSwitch",function(){boot("switch");});window.addEventListener("pageshow",function(e){scrollPageAway=false;if(e&&e.persisted){preserveReadingPosition();boot("pageshow");}else probe(id);},{passive:true});window.addEventListener("popstate",function(){preserveReadingPosition();boot("popstate");},{passive:true});[0,60,160,340,700,1200,1800].forEach(function(ms){setTimeout(clearFindSearchResidue,ms);});
+  boot("initial");document.addEventListener("DOMContentLoaded",function(){probe(id);},{once:true});document.addEventListener("DOMContentSwitch",function(){boot("switch");});window.addEventListener("pageshow",function(e){scrollPageAway=false;if(e&&e.persisted){preserveReadingPosition();boot("pageshow");}else probe(id);},{passive:true});window.addEventListener("popstate",function(){preserveReadingPosition();var k=currentDocKey();if(k===docKey)return;docKey=k;boot("popstate");},{passive:true});document.addEventListener("click",function(e){try{var a=e&&e.target&&e.target.closest&&e.target.closest("a.md-skip[href^='#']");if(!a||e.defaultPrevented)return;var id=decodeURIComponent(String(a.getAttribute("href")||"").slice(1));var t=(id&&document.getElementById(id))||document.querySelector("article.md-content__inner, .md-content, main");if(!t)return;e.preventDefault();if(!t.hasAttribute("tabindex"))t.setAttribute("tabindex","-1");try{t.focus({preventScroll:true});}catch(_){t.focus();}try{t.scrollIntoView({block:"start"});}catch(_){}}catch(_){}},true);[0,60,160,340,700,1200,1800].forEach(function(ms){setTimeout(clearFindSearchResidue,ms);});
 })();
 </script>
 <style id="mk-unified-first-paint-css-v12-fast-release">
@@ -2215,18 +2255,18 @@ Keywords: sampling table, urn model, drawing with replacement, drawing without r
 <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="../../javascripts/exam-mode.js?h=09b295110531"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
-<script src="../../javascripts/wiki-explain.js?h=8900cebd6651"></script>
+<script src="../../javascripts/wiki-explain.js?h=642fc64bd1a9"></script>
 <script src="../../javascripts/concept-connections-panel.js?h=4713b49c1696"></script>
-<script src="../../javascripts/startup-preferences.js?h=bc146e823ff2"></script>
+<script src="../../javascripts/startup-preferences.js?h=776a72fb6e96"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=39d6a6cff37d"></script>
-<script src="../../javascripts/ui-guard.js?h=52ec5f9e3afb"></script>
+<script src="../../javascripts/ui-guard.js?h=7c21cbfde3c4"></script>
 <script src="../../javascripts/concept-title-fit.js?h=8a4406302178"></script>
 <script src="../../javascripts/a11y-landmarks.js?h=f9b5b9aefde5"></script>
-<script src="../../javascripts/fuzzy-core.js?h=eff81b2b18b8"></script>
-<script src="../../javascripts/nl-query-core.js?h=c6f0b7f77910"></script>
-<script src="../../javascripts/multilingual-search-core.js?h=bb146f10f62c"></script>
-<script src="../../javascripts/search-suggestions.js?h=f813d7b33f45"></script>
+<script src="../../javascripts/fuzzy-core.js?h=4e03f7d79eee"></script>
+<script src="../../javascripts/nl-query-core.js?h=8322a7a436ab"></script>
+<script src="../../javascripts/multilingual-search-core.js?h=222ece998b79"></script>
+<script src="../../javascripts/search-suggestions.js?h=c00818925b5f"></script>
 <script src="../../javascripts/search-history.js?h=a1367948fc13"></script>
 <script src="../../javascripts/header-search-stabilizer.js?h=cdd630b06fd3"></script>
 <script src="../../javascripts/concept-hover-preview.js?h=2170e87fe157"></script>
@@ -2234,14 +2274,14 @@ Keywords: sampling table, urn model, drawing with replacement, drawing without r
 <script src="../../javascripts/preload-guard.js?h=5e42effda2c3"></script>
 <script src="../../javascripts/random.js?h=13e72e32a905"></script>
 <script src="../../javascripts/random-tabs.js?h=e8b57cf10ac1"></script>
-<script src="../../javascripts/search-enter.js?h=e31166d24b53"></script>
+<script src="../../javascripts/search-enter.js?h=25c7c2d382da"></script>
 <script src="../../javascripts/concept-fold.js?h=6399c42db2c6"></script>
 <script src="../../javascripts/tag-search-links.js?h=84cb5c2dd87f"></script>
 <script src="../../javascripts/logo-lightbox.js?h=fda4850b9a41"></script>
-<script src="../../javascripts/figure-source.js?h=62c65f7b6712"></script>
-<script src="../../javascripts/wiki-guide-pages.js?h=924c447ad4a2"></script>
+<script src="../../javascripts/figure-source.js?h=9a9f66a79018"></script>
+<script src="../../javascripts/wiki-guide-pages.js?h=31529b8342eb"></script>
 <script src="../../javascripts/wiki-guide-account.js?h=2327db54a4ff"></script>
-<script src="../../javascripts/wiki-guides.js?h=74b29b68f079"></script>
-<script src="../../javascripts/wiki-explain-content.js?h=656d21850670"></script>
+<script src="../../javascripts/wiki-guides.js?h=5120a84905ef"></script>
+<script src="../../javascripts/wiki-explain-content.js?h=fa5967cad7fc"></script>
 </body>
 </html>

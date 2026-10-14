@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1791959356501,
+  "generatedAt": 1791988578356,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -8330,7 +8330,9 @@
       "Year-1/1a-Math-I-Calculus/exponential-function.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/order-statistic.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/random-variable.html"
+      "Year-1/1b-Probability-Theory-for-EOR/random-variable.html",
+      "Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html",
+      "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/outcome.html": [
       "Year-1/1a-Math-I-Calculus/set.html"
@@ -12101,6 +12103,7 @@
     "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html": [
       "Year-1/1b-Probability-Theory-for-EOR/absolutely-continuous-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/median.html",
+      "Year-1/1b-Probability-Theory-for-EOR/order-statistic.html",
       "Year-1/1b-Probability-Theory-for-EOR/point-mass.html",
       "Year-1/1b-Probability-Theory-for-EOR/quantile-function.html",
       "Year-1/1b-Probability-Theory-for-EOR/universality-of-the-uniform.html",
@@ -12198,6 +12201,7 @@
     "Year-1/1b-Probability-Theory-for-EOR/half-life.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/hypergeometric-distribution.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/order-statistic.html",
       "Year-1/2b-Probability-Distributions/central-limit-theorem.html",
       "Year-1/2b-Probability-Distributions/density-of-an-order-statistic.html",
       "Year-1/2b-Probability-Distributions/strong-law-of-large-numbers.html",
@@ -13847,9 +13851,10 @@
     ],
     "Year-1/1a-Math-I-Calculus/exponentiation-and-power.html": [
       "Year-1/1a-Math-I-Calculus/reciprocal.html",
-      "Year-1/1a-Math-I-Calculus/supremum.html",
-      "Year-1/1a-Math-I-Calculus/polynomial.html",
-      "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html"
+      "Year-1/1a-Math-I-Calculus/n-th-root.html",
+      "Year-1/1a-Math-I-Calculus/exponential-function.html",
+      "Year-1/1a-Math-I-Calculus/logarithm-and-logarithmic-function.html",
+      "Year-1/1a-Math-I-Calculus/polynomial.html"
     ],
     "Year-1/1a-Math-I-Calculus/extended-real-number.html": [
       "Year-1/1a-Math-I-Calculus/divergence-to-infinity.html",
@@ -16082,8 +16087,6 @@
     "Year-1/1b-Probability-Theory-for-EOR/order-statistic.html": [
       "Year-1/1b-Probability-Theory-for-EOR/quantile-function.html",
       "Year-1/1b-Probability-Theory-for-EOR/minimum-of-independent-exponentials.html",
-      "Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html",
-      "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html",
       "Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html",
       "Year-1/1b-Probability-Theory-for-EOR/random-interval.html"
     ],

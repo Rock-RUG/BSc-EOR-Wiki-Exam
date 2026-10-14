@@ -35,7 +35,7 @@ function masteryPctFromLevel(m){if(m===3)return 100;if(m===2)return 75;if(m===1)
 function historyEntryKind(item){const kind=String(item&&(item.kind||item.type||item.event||item.action)||'').toLowerCase().trim();if(kind==='view'||kind==='visit'||kind==='seen')return'view';return'mastery';}
 function masterySourceName(item){return String(item&&item.source||'').toLowerCase().trim();}
 function isAiMasterySource(source){const s=String(source||'').toLowerCase().trim();if(!s)return false;return s==='ai-mcq'||s.includes('aiq')||s.includes('ai-test')||s.includes('ai-test-mode')||s.includes('random-ai');}
-function lectureRiskLabel(score){const s=Number(score)||0;if(s>=75)return'Needs review';if(s>=56)return'Low mastery readiness';if(s>=38)return'Partial mastery readiness';return'Looks secure';}
+function lectureRiskLabel(score){const s=Number(score)||0;if(s>=75)return'Needs review';if(s>=56)return'Low mastery';if(s>=38)return'Partial mastery';return'Looks secure';}
 function lectureRiskToneByScore(score){const s=Number(score)||0;if(s>=75)return'is-hot';if(s>=56)return'is-mid';if(s>=38)return'is-cold';return'is-cool';}
 function cmmVisitorId(){try{if(window.MkHotTrack&&typeof window.MkHotTrack.getVisitorId==='function')return window.MkHotTrack.getVisitorId();const key='mk_hot_visitor_id_v1';let id=localStorage.getItem(key);if(!id){id=(crypto&&crypto.randomUUID)?crypto.randomUUID():`v_${Date.now()}_${Math.random().toString(16).slice(2)}`;localStorage.setItem(key,id);}
 return id;}catch(_){return'anonymous';}}
