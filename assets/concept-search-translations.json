@@ -11727,6 +11727,458 @@
           "anuitate viageră posticipată"
         ]
       }
+    },
+    {
+      "title": "Moment",
+      "names": {
+        "zh": [
+          "原点矩",
+          "原點矩",
+          "中心矩",
+          "随机变量的矩",
+          "隨機變數的矩"
+        ],
+        "nl": [
+          "moment",
+          "centraal moment"
+        ],
+        "de": [
+          "Moment",
+          "zentrales Moment"
+        ],
+        "fr": [
+          "moment",
+          "moment centré"
+        ],
+        "es": [
+          "momento",
+          "momento central"
+        ],
+        "it": [
+          "momento",
+          "momento centrale"
+        ],
+        "pl": [
+          "moment zwykły",
+          "moment centralny"
+        ],
+        "ro": [
+          "moment",
+          "moment centrat"
+        ]
+      }
+    },
+    {
+      "title": "Sampling With and Without Replacement",
+      "names": {
+        "zh": [
+          "有放回抽样",
+          "有放回抽樣",
+          "无放回抽样",
+          "無放回抽樣"
+        ],
+        "nl": [
+          "trekken met teruglegging",
+          "trekken zonder teruglegging"
+        ],
+        "de": [
+          "Ziehen mit Zurücklegen",
+          "Ziehen ohne Zurücklegen"
+        ],
+        "fr": [
+          "tirage avec remise",
+          "tirage sans remise"
+        ],
+        "es": [
+          "muestreo con reemplazo",
+          "muestreo sin reemplazo"
+        ],
+        "it": [
+          "estrazione con reinserimento",
+          "estrazione senza reinserimento"
+        ],
+        "pl": [
+          "losowanie ze zwracaniem",
+          "losowanie bez zwracania"
+        ],
+        "ro": [
+          "extragere cu revenire",
+          "extragere fără revenire"
+        ]
+      }
+    },
+    {
+      "title": "Almost Surely",
+      "names": {
+        "zh": [
+          "几乎必然",
+          "幾乎必然",
+          "以概率1成立"
+        ],
+        "nl": [
+          "bijna zeker"
+        ],
+        "de": [
+          "fast sicher"
+        ],
+        "fr": [
+          "presque sûrement"
+        ],
+        "es": [
+          "casi seguramente"
+        ],
+        "it": [
+          "quasi certamente"
+        ],
+        "pl": [
+          "prawie na pewno"
+        ],
+        "ro": [
+          "aproape sigur"
+        ]
+      }
+    },
+    {
+      "title": "Distributivity",
+      "names": {
+        "zh": [
+          "分配律",
+          "分配性"
+        ],
+        "nl": [
+          "distributiviteit",
+          "distributieve eigenschap"
+        ],
+        "de": [
+          "Distributivgesetz",
+          "Distributivität"
+        ],
+        "fr": [
+          "distributivité"
+        ],
+        "es": [
+          "propiedad distributiva",
+          "distributividad"
+        ],
+        "it": [
+          "proprietà distributiva"
+        ],
+        "pl": [
+          "rozdzielność",
+          "prawo rozdzielności"
+        ],
+        "ro": [
+          "distributivitate"
+        ]
+      }
+    },
+    {
+      "title": "Floor and Ceiling Functions",
+      "names": {
+        "zh": [
+          "取整函数",
+          "取整函數",
+          "向下取整",
+          "向上取整"
+        ],
+        "nl": [
+          "entierfunctie",
+          "floorfunctie",
+          "plafondfunctie"
+        ],
+        "de": [
+          "Abrundungsfunktion",
+          "Aufrundungsfunktion",
+          "Gaußklammer"
+        ],
+        "fr": [
+          "partie entière",
+          "fonction plancher",
+          "fonction plafond"
+        ],
+        "es": [
+          "función piso",
+          "función techo",
+          "parte entera"
+        ],
+        "it": [
+          "parte intera",
+          "funzione pavimento",
+          "funzione soffitto"
+        ],
+        "pl": [
+          "część całkowita",
+          "funkcja podłoga",
+          "funkcja sufit"
+        ],
+        "ro": [
+          "partea întreagă",
+          "partea întreagă superioară"
+        ]
+      }
+    },
+    {
+      "title": "Periodic Function",
+      "names": {
+        "zh": [
+          "周期函数",
+          "週期函數"
+        ],
+        "nl": [
+          "periodieke functie"
+        ],
+        "de": [
+          "periodische Funktion"
+        ],
+        "fr": [
+          "fonction périodique"
+        ],
+        "es": [
+          "función periódica"
+        ],
+        "it": [
+          "funzione periodica"
+        ],
+        "pl": [
+          "funkcja okresowa"
+        ],
+        "ro": [
+          "funcție periodică"
+        ]
+      }
+    },
+    {
+      "title": "Orthonormal Basis",
+      "names": {
+        "zh": [
+          "标准正交基",
+          "標準正交基",
+          "规范正交基",
+          "規範正交基"
+        ],
+        "nl": [
+          "orthonormale basis"
+        ],
+        "de": [
+          "Orthonormalbasis"
+        ],
+        "fr": [
+          "base orthonormée",
+          "base orthonormale"
+        ],
+        "es": [
+          "base ortonormal"
+        ],
+        "it": [
+          "base ortonormale"
+        ],
+        "pl": [
+          "baza ortonormalna"
+        ],
+        "ro": [
+          "bază ortonormată",
+          "bază ortonormală"
+        ]
+      }
+    },
+    {
+      "title": "Orthogonal Matrix",
+      "names": {
+        "zh": [
+          "正交矩阵",
+          "正交矩陣"
+        ],
+        "nl": [
+          "orthogonale matrix"
+        ],
+        "de": [
+          "orthogonale Matrix"
+        ],
+        "fr": [
+          "matrice orthogonale"
+        ],
+        "es": [
+          "matriz ortogonal"
+        ],
+        "it": [
+          "matrice ortogonale"
+        ],
+        "pl": [
+          "macierz ortogonalna"
+        ],
+        "ro": [
+          "matrice ortogonală"
+        ]
+      }
+    },
+    {
+      "title": "Prisoner's Dilemma",
+      "names": {
+        "zh": [
+          "囚徒困境",
+          "囚犯困境"
+        ],
+        "nl": [
+          "prisonersdilemma"
+        ],
+        "de": [
+          "Gefangenendilemma"
+        ],
+        "fr": [
+          "dilemme du prisonnier"
+        ],
+        "es": [
+          "dilema del prisionero"
+        ],
+        "it": [
+          "dilemma del prigioniero"
+        ],
+        "pl": [
+          "dylemat więźnia"
+        ],
+        "ro": [
+          "dilema prizonierului"
+        ]
+      }
+    },
+    {
+      "title": "Battle of the Sexes",
+      "names": {
+        "zh": [
+          "性别之战",
+          "性別之戰",
+          "情侣博弈",
+          "情侶博弈"
+        ],
+        "nl": [
+          "battle of the sexes"
+        ],
+        "de": [
+          "Kampf der Geschlechter"
+        ],
+        "fr": [
+          "guerre des sexes"
+        ],
+        "es": [
+          "batalla de los sexos"
+        ],
+        "it": [
+          "battaglia dei sessi"
+        ],
+        "pl": [
+          "wojna płci"
+        ],
+        "ro": [
+          "bătălia sexelor"
+        ]
+      }
+    },
+    {
+      "title": "Matching Pennies",
+      "names": {
+        "zh": [
+          "猜硬币",
+          "猜硬幣",
+          "匹配硬币",
+          "匹配硬幣"
+        ],
+        "nl": [
+          "matching pennies"
+        ],
+        "de": [
+          "Matching Pennies"
+        ],
+        "fr": [
+          "matching pennies"
+        ],
+        "es": [
+          "matching pennies"
+        ],
+        "it": [
+          "matching pennies"
+        ],
+        "pl": [
+          "matching pennies"
+        ],
+        "ro": [
+          "matching pennies"
+        ]
+      }
+    },
+    {
+      "title": "Equilibrium Path",
+      "names": {
+        "zh": [
+          "均衡路径",
+          "均衡路徑"
+        ],
+        "nl": [
+          "evenwichtspad"
+        ],
+        "de": [
+          "Gleichgewichtspfad"
+        ],
+        "fr": [
+          "chemin d'équilibre",
+          "sentier d'équilibre"
+        ],
+        "es": [
+          "senda de equilibrio",
+          "trayectoria de equilibrio"
+        ],
+        "it": [
+          "sentiero di equilibrio",
+          "percorso di equilibrio"
+        ],
+        "pl": [
+          "ścieżka równowagi"
+        ],
+        "ro": [
+          "traiectoria de echilibru"
+        ]
+      }
+    },
+    {
+      "title": "Interest and Discounting",
+      "names": {
+        "zh": [
+          "利息与贴现",
+          "利息與貼現",
+          "贴现因子",
+          "貼現因子",
+          "利息力"
+        ],
+        "nl": [
+          "rente en disconteren",
+          "disconteringsfactor"
+        ],
+        "de": [
+          "Zins und Diskontierung",
+          "Diskontfaktor",
+          "Zinsintensität"
+        ],
+        "fr": [
+          "intérêt et actualisation",
+          "facteur d'actualisation"
+        ],
+        "es": [
+          "interés y descuento",
+          "factor de descuento"
+        ],
+        "it": [
+          "interesse e attualizzazione",
+          "fattore di attualizzazione"
+        ],
+        "pl": [
+          "oprocentowanie i dyskontowanie",
+          "czynnik dyskontujący",
+          "natężenie oprocentowania"
+        ],
+        "ro": [
+          "dobândă și actualizare",
+          "factor de actualizare"
+        ]
+      }
     }
   ]
 }

@@ -16,13 +16,13 @@
 <link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link href="../../stylesheets/fonts-vendor.css?h=6f3b200e55fb" rel="stylesheet"/>
 <link href="../../stylesheets/katex-vendor.css?h=810f682352aa" rel="stylesheet"/>
-<link href="../../stylesheets/katex-fast.css?h=96bc13ba3ce4" rel="stylesheet"/>
-<link href="../../stylesheets/extra.css?h=c173c1dec9fb" rel="stylesheet"/>
+<link href="../../stylesheets/katex-fast.css?h=0c60a27e100b" rel="stylesheet"/>
+<link href="../../stylesheets/extra.css?h=a36600470919" rel="stylesheet"/>
 <link href="../../stylesheets/mastery-widget.css?h=66cc7413366b" rel="stylesheet"/>
 <link href="../../stylesheets/course-search.css?h=1251e49b65c0" rel="stylesheet"/>
 <link href="../../stylesheets/course-status.css?h=147775b80dfa" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-surfaces.css?h=9908a9eaceb5" rel="stylesheet"/>
-<link href="../../stylesheets/theme-surfaces.css?h=9cfb2886da02" rel="stylesheet" media="(forced-colors: active)" data-mk-css-gate="theme"/>
+<link href="../../stylesheets/theme-surfaces.css?h=d72ae4522edf" rel="stylesheet" media="(forced-colors: active)" data-mk-css-gate="theme"/>
 <link href="../../stylesheets/wiki-community.css?h=bf04506951f8" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-maps.css?h=e3f715120b0c" rel="stylesheet" media="not all" data-mk-css-gate="maps"/>
 <link href="../../stylesheets/wiki-mastery-manager.css?h=3c2334d129df" rel="stylesheet" media="not all" data-mk-css-gate="manager"/>
@@ -31,7 +31,7 @@
 <link href="../../stylesheets/wiki-guides.css?h=a3c9ec9a8403" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-explain.css?h=1120073dd99e" rel="stylesheet"/>
 <link href="../../stylesheets/search-history.css?h=49fa7cf4d796" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-interactions.css?h=ba9898c08bf6" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-interactions.css?h=304137b94e1e" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <style id="mk-mobile-fixed-chrome-early">
 @media (max-width: 900px), (pointer: coarse){
@@ -188,9 +188,9 @@
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=d6ec7fc451bd";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=bc146e823ff2";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=d6ec7fc451bd";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=bc146e823ff2";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -1054,11 +1054,35 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="orthogonal-matrix.html">
+<span class="md-ellipsis">
+    
+  
+    Orthogonal Matrix
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="orthogonal-projection.html">
 <span class="md-ellipsis">
     
   
     Orthogonal Projection
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="orthonormal-basis.html">
+<span class="md-ellipsis">
+    
+  
+    Orthonormal Basis
   
 
     
@@ -1549,7 +1573,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <p class="ch-lead">Eigenvalues lead into linear difference and differential equations and their stability, then into orthogonality, the four fundamental subspaces, the singular value decomposition, generalized inverses and least squares.</p>
 <ul class="ch-facts">
 <li><strong>7</strong> weeks </li>
-<li><strong>38</strong> concept pages </li>
+<li><strong>40</strong> concept pages </li>
 </ul>
 <nav aria-label="Course actions" class="ch-actions"><a class="ch-btn ch-btn--primary" href="#week-1">Start with Week 1</a><a class="ch-btn" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m5ala&amp;lp_token=m5ala#search-results">Review in Concept Finder</a><a class="ch-btn" href="../../galaxy.html?course=Year-2/1a-Math-V-Advanced-Linear-Algebra">See it in Galaxy</a></nav>
 </section>
@@ -1569,7 +1593,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <div class="ch-connect-col">
 <h2 class="ch-section-title" id="course-builds-on">Before you start<a class="headerlink" href="#course-builds-on" title="Permanent link">¶</a></h2>
 <p class="ch-section-note">Earlier concepts these pages use most. If a step feels unfamiliar, revisit them first.</p>
-<div class="ch-connect-course"><a class="ch-connect-name" href="../../Year-1/1b-Math-II-Linear-Algebra/index.html">Math II: Linear Algebra</a><ul class="ch-chips"><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html">Eigenvalue and Eigenvector</a> </li><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/matrix-product.html">Matrix Product</a> </li><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/diagonalization.html">Diagonalization</a> </li><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/vector-norm.html">Euclidean Norm</a> </li><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/basis.html">Basis</a> </li><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/characteristic-polynomial.html">Characteristic Polynomial</a> </li><li class="ch-chip-more">+35 more </li></ul></div>
+<div class="ch-connect-course"><a class="ch-connect-name" href="../../Year-1/1b-Math-II-Linear-Algebra/index.html">Math II: Linear Algebra</a><ul class="ch-chips"><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html">Eigenvalue and Eigenvector</a> </li><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/matrix-product.html">Matrix Product</a> </li><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/vector-norm.html">Euclidean Norm</a> </li><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/basis.html">Basis</a> </li><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/diagonalization.html">Diagonalization</a> </li><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/inner-product.html">Inner Product</a> </li><li class="ch-chip-more">+35 more </li></ul></div>
 <div class="ch-connect-course"><a class="ch-connect-name" href="../../Year-1/1a-Math-I-Calculus/index.html">Math I: Calculus</a><ul class="ch-chips"><li><a href="../../Year-1/1a-Math-I-Calculus/exponential-function.html">Exponential Function</a> </li><li><a href="../../Year-1/1a-Math-I-Calculus/antiderivative.html">Antiderivative</a> </li><li><a href="../../Year-1/1a-Math-I-Calculus/chain-rule.html">Chain Rule</a> </li><li><a href="../../Year-1/1a-Math-I-Calculus/derivative-and-differentiability.html">Derivative and Differentiability</a> </li><li><a href="../../Year-1/1a-Math-I-Calculus/higher-order-derivative.html">Higher-Order Derivative</a> </li><li><a href="../../Year-1/1a-Math-I-Calculus/constant-function.html">Constant Function</a> </li><li class="ch-chip-more">+6 more </li></ul></div>
 <div class="ch-connect-course"><a class="ch-connect-name" href="../../Year-1/2b-Math-IV-Multivariate-Calculus/index.html">Math IV: Multivariate Calculus</a><ul class="ch-chips"><li><a href="../../Year-1/2b-Math-IV-Multivariate-Calculus/left-and-right-inverses.html">Left and Right Inverses</a> </li></ul></div>
 <p class="ch-connect-also">Also: <a href="../../Year-1/2a-Math-III-Analysis/taylor-series.html">Taylor Series</a> (Math III: Analysis)</p>
@@ -1665,8 +1689,10 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li><a href="change-of-basis.html">Change of Basis</a> </li>
 <li><a href="similarity-transformation.html">Similarity Transformation</a> </li>
 <li><a href="../../Year-1/1b-Math-II-Linear-Algebra/block-matrix.html">Block Matrix</a> <span class="ch-from">Math II: Linear Algebra</span> </li>
+<li><a href="orthonormal-basis.html">Orthonormal Basis</a> </li>
+<li><a href="orthogonal-matrix.html">Orthogonal Matrix</a> </li>
 </ul>
-<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="m5ala-week06" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m5ala-week06&amp;lp_token=m5ala-week06#search-results">Review week 6 in Concept Finder</a> <span>5 concepts</span></p>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="m5ala-week06" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=m5ala-week06&amp;lp_token=m5ala-week06#search-results">Review week 6 in Concept Finder</a> <span>7 concepts</span></p>
 </section>
 <section class="ch-unit-card" id="week-7">
 <h2 id="week-7-singular-values-generalized-inverses-and-least-squares">Week 7: Singular values, generalized inverses and least squares<a class="headerlink" href="#week-7-singular-values-generalized-inverses-and-least-squares" title="Permanent link">¶</a></h2>
@@ -1694,7 +1720,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <!-- course-home:teaching-begin -->
 <!-- course-home:teaching-end -->
 </section>
-<p class="mk-last-updated">Last updated: 13 October 2026 13:48</p>
+<p class="mk-last-updated">Last updated: 14 October 2026 08:21</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -1733,7 +1759,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../javascripts/exam-mode.js?h=09b295110531"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
 <script src="../../javascripts/wiki-explain.js?h=8900cebd6651"></script>
-<script src="../../javascripts/startup-preferences.js?h=d6ec7fc451bd"></script>
+<script src="../../javascripts/startup-preferences.js?h=bc146e823ff2"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=39d6a6cff37d"></script>
 <script src="../../javascripts/ui-guard.js?h=52ec5f9e3afb"></script>
@@ -1746,7 +1772,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../javascripts/search-history.js?h=a1367948fc13"></script>
 <script src="../../javascripts/header-search-stabilizer.js?h=cdd630b06fd3"></script>
 <script src="../../javascripts/concept-hover-preview.js?h=2170e87fe157"></script>
-<script src="../../javascripts/mathjax.js?h=28de04804437"></script>
+<script src="../../javascripts/mathjax.js?h=06875c0b69ec"></script>
 <script src="../../javascripts/preload-guard.js?h=5e42effda2c3"></script>
 <script src="../../javascripts/random.js?h=13e72e32a905"></script>
 <script src="../../javascripts/random-tabs.js?h=e8b57cf10ac1"></script>

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1791912037221,
+  "generatedAt": 1791959356501,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -403,6 +403,13 @@
     },
     "Year-1/1a-Math-I-Calculus/first-order-condition.html": {
       "title": "First-Order Condition",
+      "courseName": "1a-Math-I-Calculus",
+      "coursePath": "Year-1/1a-Math-I-Calculus",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-1/1a-Math-I-Calculus/floor-and-ceiling-functions.html": {
+      "title": "Floor and Ceiling Functions",
       "courseName": "1a-Math-I-Calculus",
       "coursePath": "Year-1/1a-Math-I-Calculus",
       "curriculumStatus": "current",
@@ -827,6 +834,13 @@
       "coursePath": "Year-1/1a-Math-I-Calculus",
       "curriculumStatus": "current",
       "aiMcq": true
+    },
+    "Year-1/1a-Math-I-Calculus/periodic-function.html": {
+      "title": "Periodic Function",
+      "courseName": "1a-Math-I-Calculus",
+      "coursePath": "Year-1/1a-Math-I-Calculus",
+      "curriculumStatus": "enrichment",
+      "aiMcq": false
     },
     "Year-1/1a-Math-I-Calculus/polynomial.html": {
       "title": "Polynomial",
@@ -2480,6 +2494,13 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-1/1b-Math-II-Linear-Algebra/distributivity.html": {
+      "title": "Distributivity",
+      "courseName": "1b-Math-II-Linear-Algebra",
+      "coursePath": "Year-1/1b-Math-II-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
     "Year-1/1b-Math-II-Linear-Algebra/eigenbasis.html": {
       "title": "Eigenbasis",
       "courseName": "1b-Math-II-Linear-Algebra",
@@ -3537,6 +3558,13 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-1/1b-Probability-Theory-for-EOR/sampling-with-and-without-replacement.html": {
+      "title": "Sampling With and Without Replacement",
+      "courseName": "1b-Probability-Theory-for-EOR",
+      "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
     "Year-1/1b-Probability-Theory-for-EOR/standard-normal-distribution.html": {
       "title": "Standard Normal Distribution",
       "courseName": "1b-Probability-Theory-for-EOR",
@@ -4545,6 +4573,13 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-1/2b-Probability-Distributions/almost-surely.html": {
+      "title": "Almost Surely",
+      "courseName": "2b-Probability-Distributions",
+      "coursePath": "Year-1/2b-Probability-Distributions",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
     "Year-1/2b-Probability-Distributions/bayes-and-total-probability-four-forms.html": {
       "title": "Bayes and Total Probability: Four Forms",
       "courseName": "2b-Probability-Distributions",
@@ -4839,6 +4874,13 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-1/2b-Probability-Distributions/moment.html": {
+      "title": "Moment",
+      "courseName": "2b-Probability-Distributions",
+      "coursePath": "Year-1/2b-Probability-Distributions",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
     "Year-1/2b-Probability-Distributions/moments-from-the-mgf.html": {
       "title": "Moments from the MGF",
       "courseName": "2b-Probability-Distributions",
@@ -5119,8 +5161,22 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-matrix.html": {
+      "title": "Orthogonal Matrix",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html": {
       "title": "Orthogonal Projection",
+      "courseName": "1a-Math-V-Advanced-Linear-Algebra",
+      "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthonormal-basis.html": {
+      "title": "Orthonormal Basis",
       "courseName": "1a-Math-V-Advanced-Linear-Algebra",
       "coursePath": "Year-2/1a-Math-V-Advanced-Linear-Algebra",
       "curriculumStatus": "current",
@@ -5378,6 +5434,13 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-2/2a-Life-Insurance/interest-and-discounting.html": {
+      "title": "Interest and Discounting",
+      "courseName": "2a-Life-Insurance",
+      "coursePath": "Year-2/2a-Life-Insurance",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
     "Year-2/2a-Life-Insurance/life-annuity-payment-frequency.html": {
       "title": "Life Annuities Payable Several Times a Year",
       "courseName": "2a-Life-Insurance",
@@ -5518,6 +5581,13 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-2/2b-Game-Theory/battle-of-the-sexes.html": {
+      "title": "Battle of the Sexes",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
     "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html": {
       "title": "Bayes Rule for Beliefs",
       "courseName": "2b-Game-Theory",
@@ -5604,6 +5674,13 @@
     },
     "Year-2/2b-Game-Theory/english-auction.html": {
       "title": "English Auction",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/equilibrium-path.html": {
+      "title": "Equilibrium Path",
       "courseName": "2b-Game-Theory",
       "coursePath": "Year-2/2b-Game-Theory",
       "curriculumStatus": "current",
@@ -5707,6 +5784,13 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-2/2b-Game-Theory/matching-pennies.html": {
+      "title": "Matching Pennies",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
     "Year-2/2b-Game-Theory/median-voter-theorem.html": {
       "title": "Median Voter Theorem",
       "courseName": "2b-Game-Theory",
@@ -5779,6 +5863,13 @@
     },
     "Year-2/2b-Game-Theory/pooling-equilibrium.html": {
       "title": "Pooling Equilibrium",
+      "courseName": "2b-Game-Theory",
+      "coursePath": "Year-2/2b-Game-Theory",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/2b-Game-Theory/prisoners-dilemma.html": {
+      "title": "Prisoner's Dilemma",
       "courseName": "2b-Game-Theory",
       "coursePath": "Year-2/2b-Game-Theory",
       "curriculumStatus": "current",
@@ -6567,6 +6658,11 @@
       "Year-1/1a-Math-I-Calculus/local-extremum.html",
       "Year-1/1a-Math-I-Calculus/derivative-and-differentiability.html"
     ],
+    "Year-1/1a-Math-I-Calculus/floor-and-ceiling-functions.html": [
+      "Year-1/1a-Math-I-Calculus/integer.html",
+      "Year-1/1a-Math-I-Calculus/real-number.html",
+      "Year-1/1a-Math-I-Calculus/function.html"
+    ],
     "Year-1/1a-Math-I-Calculus/function.html": [
       "Year-1/1a-Math-I-Calculus/real-number.html"
     ],
@@ -6801,6 +6897,10 @@
     ],
     "Year-1/1a-Math-I-Calculus/partition-and-regular-subdivision.html": [
       "Year-1/1a-Math-I-Calculus/length-of-an-interval.html"
+    ],
+    "Year-1/1a-Math-I-Calculus/periodic-function.html": [
+      "Year-1/1a-Math-I-Calculus/function.html",
+      "Year-1/1a-Math-I-Calculus/real-number.html"
     ],
     "Year-1/1a-Math-I-Calculus/polynomial.html": [
       "Year-1/1a-Math-I-Calculus/monomial-and-power-function.html"
@@ -7671,6 +7771,9 @@
       "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html",
       "Year-1/1b-Math-II-Linear-Algebra/linear-independence.html"
     ],
+    "Year-1/1b-Math-II-Linear-Algebra/distributivity.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/binary-operation.html"
+    ],
     "Year-1/1b-Math-II-Linear-Algebra/eigenbasis.html": [
       "Year-1/1b-Math-II-Linear-Algebra/basis.html",
       "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html",
@@ -7914,7 +8017,8 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/ring.html": [
       "Year-1/1b-Math-II-Linear-Algebra/abelian-group.html",
-      "Year-1/1b-Math-II-Linear-Algebra/semigroup.html"
+      "Year-1/1b-Math-II-Linear-Algebra/semigroup.html",
+      "Year-1/1b-Math-II-Linear-Algebra/distributivity.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/root-of-a-polynomial.html": [
       "Year-1/1a-Math-I-Calculus/polynomial.html",
@@ -8140,7 +8244,8 @@
       "Year-1/1a-Math-I-Calculus/logarithm-and-logarithmic-function.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/hypergeometric-distribution.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/combination.html"
+      "Year-1/1b-Probability-Theory-for-EOR/combination.html",
+      "Year-1/1b-Probability-Theory-for-EOR/sampling-with-and-without-replacement.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html": [
       "Year-1/1b-Probability-Theory-for-EOR/random-variable.html",
@@ -8288,6 +8393,12 @@
     "Year-1/1b-Probability-Theory-for-EOR/sample-space.html": [
       "Year-1/1a-Math-I-Calculus/set.html",
       "Year-1/1b-Probability-Theory-for-EOR/outcome.html"
+    ],
+    "Year-1/1b-Probability-Theory-for-EOR/sampling-with-and-without-replacement.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/counting.html",
+      "Year-1/1b-Probability-Theory-for-EOR/multiplication-rule.html",
+      "Year-1/1b-Probability-Theory-for-EOR/permutation.html",
+      "Year-1/1b-Probability-Theory-for-EOR/combination.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/standard-normal-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/normal-distribution.html"
@@ -8873,7 +8984,13 @@
     ],
     "Year-1/2b-Probability-Distributions/almost-sure-convergence.html": [
       "Year-1/1b-Probability-Theory-for-EOR/random-variable.html",
-      "Year-1/1a-Math-I-Calculus/limit-of-a-sequence.html"
+      "Year-1/1a-Math-I-Calculus/limit-of-a-sequence.html",
+      "Year-1/2b-Probability-Distributions/almost-surely.html"
+    ],
+    "Year-1/2b-Probability-Distributions/almost-surely.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/event.html",
+      "Year-1/1b-Probability-Theory-for-EOR/probability-function.html",
+      "Year-1/1b-Probability-Theory-for-EOR/random-variable.html"
     ],
     "Year-1/2b-Probability-Distributions/bayes-and-total-probability-four-forms.html": [
       "Year-1/2b-Probability-Distributions/conditional-probability-mass-function.html",
@@ -9044,9 +9161,15 @@
       "Year-1/1b-Probability-Theory-for-EOR/lotus.html",
       "Year-1/1a-Math-I-Calculus/exponential-function.html"
     ],
+    "Year-1/2b-Probability-Distributions/moment.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/expectation.html",
+      "Year-1/1b-Probability-Theory-for-EOR/random-variable.html",
+      "Year-1/1b-Probability-Theory-for-EOR/lotus.html"
+    ],
     "Year-1/2b-Probability-Distributions/moments-from-the-mgf.html": [
       "Year-1/2b-Probability-Distributions/moment-generating-function.html",
-      "Year-1/1a-Math-I-Calculus/higher-order-derivative.html"
+      "Year-1/1a-Math-I-Calculus/higher-order-derivative.html",
+      "Year-1/2b-Probability-Distributions/moment.html"
     ],
     "Year-1/2b-Probability-Distributions/multinomial-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/binomial-distribution.html",
@@ -9236,11 +9359,23 @@
       "Year-1/1b-Math-II-Linear-Algebra/subspace.html",
       "Year-1/1b-Math-II-Linear-Algebra/direct-sum.html"
     ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-matrix.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthonormal-basis.html",
+      "Year-1/1b-Math-II-Linear-Algebra/transpose.html",
+      "Year-1/1b-Math-II-Linear-Algebra/inverse-matrix.html",
+      "Year-1/1b-Math-II-Linear-Algebra/determinant.html"
+    ],
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html": [
       "Year-1/1b-Math-II-Linear-Algebra/inner-product.html",
       "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html",
       "Year-1/1b-Math-II-Linear-Algebra/orthogonal-vectors.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthonormal-basis.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/inner-product.html",
+      "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html",
+      "Year-1/1b-Math-II-Linear-Algebra/orthogonal-vectors.html",
+      "Year-1/1b-Math-II-Linear-Algebra/basis.html"
     ],
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html": [
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/second-order-differential-equation.html",
@@ -9277,7 +9412,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/symmetric-matrix.html",
       "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
-      "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html"
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-matrix.html"
     ],
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value.html": [
       "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html",
@@ -9329,7 +9465,8 @@
     "Year-2/2a-Life-Insurance/index.html": [],
     "Year-2/2a-Life-Insurance/actuarial-present-value.html": [
       "Year-2/2a-Life-Insurance/future-lifetime.html",
-      "Year-1/1b-Probability-Theory-for-EOR/expectation.html"
+      "Year-1/1b-Probability-Theory-for-EOR/expectation.html",
+      "Year-2/2a-Life-Insurance/interest-and-discounting.html"
     ],
     "Year-2/2a-Life-Insurance/actuarial-survival-probabilities.html": [
       "Year-2/2a-Life-Insurance/future-lifetime.html",
@@ -9337,7 +9474,8 @@
     ],
     "Year-2/2a-Life-Insurance/annuity-certain.html": [
       "Year-2/2a-Life-Insurance/actuarial-present-value.html",
-      "Year-1/1a-Math-I-Calculus/geometric-series.html"
+      "Year-1/1a-Math-I-Calculus/geometric-series.html",
+      "Year-2/2a-Life-Insurance/interest-and-discounting.html"
     ],
     "Year-2/2a-Life-Insurance/constant-force-interpolation.html": [
       "Year-2/2a-Life-Insurance/life-table.html",
@@ -9395,6 +9533,11 @@
     "Year-2/2a-Life-Insurance/insurance-present-value-variance.html": [
       "Year-2/2a-Life-Insurance/actuarial-present-value.html",
       "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html"
+    ],
+    "Year-2/2a-Life-Insurance/interest-and-discounting.html": [
+      "Year-1/1a-Math-I-Calculus/exponential-function.html",
+      "Year-1/1a-Math-I-Calculus/logarithm-and-logarithmic-function.html",
+      "Year-1/1a-Math-I-Calculus/geometric-series.html"
     ],
     "Year-2/2a-Life-Insurance/life-annuity-payment-frequency.html": [
       "Year-2/2a-Life-Insurance/whole-life-annuity-due.html",
@@ -9474,6 +9617,11 @@
       "Year-2/2b-Game-Theory/rational-agent.html",
       "Year-2/2b-Game-Theory/common-knowledge.html"
     ],
+    "Year-2/2b-Game-Theory/battle-of-the-sexes.html": [
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/best-response.html"
+    ],
     "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html": [
       "Year-2/2b-Game-Theory/system-of-beliefs.html",
       "Year-2/2b-Game-Theory/common-prior.html",
@@ -9541,6 +9689,12 @@
       "Year-2/2b-Game-Theory/private-value-auction.html",
       "Year-2/2b-Game-Theory/second-price-auction.html",
       "Year-2/2b-Game-Theory/weakly-dominant-strategy.html"
+    ],
+    "Year-2/2b-Game-Theory/equilibrium-path.html": [
+      "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html",
+      "Year-2/2b-Game-Theory/information-set.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html"
     ],
     "Year-2/2b-Game-Theory/expected-payoff-maximization.html": [
       "Year-2/2b-Game-Theory/rational-agent.html",
@@ -9615,6 +9769,12 @@
       "Year-1/1b-Probability-Theory-for-EOR/conditional-expectation.html",
       "Year-1/1b-Probability-Theory-for-EOR/uniform-distribution.html"
     ],
+    "Year-2/2b-Game-Theory/matching-pennies.html": [
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/mixed-strategy.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html"
+    ],
     "Year-2/2b-Game-Theory/median-voter-theorem.html": [
       "Year-2/2b-Game-Theory/nash-equilibrium.html",
       "Year-2/2b-Game-Theory/best-response.html",
@@ -9673,6 +9833,12 @@
       "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html",
       "Year-2/2b-Game-Theory/system-of-beliefs.html",
       "Year-2/2b-Game-Theory/common-prior.html"
+    ],
+    "Year-2/2b-Game-Theory/prisoners-dilemma.html": [
+      "Year-2/2b-Game-Theory/normal-form-game.html",
+      "Year-2/2b-Game-Theory/strictly-dominant-strategy.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/pareto-efficiency.html"
     ],
     "Year-2/2b-Game-Theory/private-value-auction.html": [
       "Year-2/2b-Game-Theory/bayesian-game.html",
@@ -10239,7 +10405,8 @@
       "Year-1/2b-Probability-Distributions/moment-generating-function.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-equation-differential-equation.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-differential-equation.html",
-      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-exponential.html"
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-exponential.html",
+      "Year-2/2a-Life-Insurance/interest-and-discounting.html"
     ],
     "Year-1/1a-Math-I-Calculus/exponentiation-and-power.html": [
       "Year-1/1a-Math-I-Calculus/exponential-function.html",
@@ -10278,6 +10445,7 @@
       "Year-2/2b-Game-Theory/cournot-duopoly.html",
       "Year-2/2b-Game-Theory/stackelberg-competition.html"
     ],
+    "Year-1/1a-Math-I-Calculus/floor-and-ceiling-functions.html": [],
     "Year-1/1a-Math-I-Calculus/function.html": [
       "Year-1/1a-Math-I-Calculus/bounded-function.html",
       "Year-1/1a-Math-I-Calculus/codomain.html",
@@ -10285,6 +10453,7 @@
       "Year-1/1a-Math-I-Calculus/constant-function.html",
       "Year-1/1a-Math-I-Calculus/convexity-and-concavity.html",
       "Year-1/1a-Math-I-Calculus/domain.html",
+      "Year-1/1a-Math-I-Calculus/floor-and-ceiling-functions.html",
       "Year-1/1a-Math-I-Calculus/global-extremum.html",
       "Year-1/1a-Math-I-Calculus/graph-of-a-function.html",
       "Year-1/1a-Math-I-Calculus/identity-function.html",
@@ -10295,6 +10464,7 @@
       "Year-1/1a-Math-I-Calculus/local-extremum.html",
       "Year-1/1a-Math-I-Calculus/monomial-and-power-function.html",
       "Year-1/1a-Math-I-Calculus/monotone-function.html",
+      "Year-1/1a-Math-I-Calculus/periodic-function.html",
       "Year-1/1a-Math-I-Calculus/range.html",
       "Year-1/1a-Math-I-Calculus/signum-function.html",
       "Year-1/1a-Math-I-Calculus/trigonometric-functions.html",
@@ -10323,7 +10493,8 @@
     ],
     "Year-1/1a-Math-I-Calculus/geometric-series.html": [
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/first-order-linear-difference-equation.html",
-      "Year-2/2a-Life-Insurance/annuity-certain.html"
+      "Year-2/2a-Life-Insurance/annuity-certain.html",
+      "Year-2/2a-Life-Insurance/interest-and-discounting.html"
     ],
     "Year-1/1a-Math-I-Calculus/global-extremum.html": [
       "Year-1/1a-Math-I-Calculus/extreme-value-theorem.html",
@@ -10403,6 +10574,7 @@
       "Year-1/2b-Math-IV-Multivariate-Calculus/local-injectivity-surjectivity-and-bijectivity.html"
     ],
     "Year-1/1a-Math-I-Calculus/integer.html": [
+      "Year-1/1a-Math-I-Calculus/floor-and-ceiling-functions.html",
       "Year-1/1a-Math-I-Calculus/negation.html",
       "Year-1/1a-Math-I-Calculus/rational-number.html",
       "Year-1/1a-Math-I-Calculus/sequence.html"
@@ -10490,7 +10662,8 @@
       "Year-1/2b-Math-IV-Multivariate-Calculus/local-maximum-and-minimum.html"
     ],
     "Year-1/1a-Math-I-Calculus/logarithm-and-logarithmic-function.html": [
-      "Year-1/1b-Probability-Theory-for-EOR/half-life.html"
+      "Year-1/1b-Probability-Theory-for-EOR/half-life.html",
+      "Year-2/2a-Life-Insurance/interest-and-discounting.html"
     ],
     "Year-1/1a-Math-I-Calculus/lower-bound.html": [
       "Year-1/1a-Math-I-Calculus/bounded-function.html",
@@ -10559,6 +10732,7 @@
     "Year-1/1a-Math-I-Calculus/partition-and-regular-subdivision.html": [
       "Year-1/1a-Math-I-Calculus/riemann-sum.html"
     ],
+    "Year-1/1a-Math-I-Calculus/periodic-function.html": [],
     "Year-1/1a-Math-I-Calculus/polynomial.html": [
       "Year-1/1a-Math-I-Calculus/rational-function.html",
       "Year-1/1b-Math-II-Linear-Algebra/algebraically-closed-field.html",
@@ -10588,9 +10762,11 @@
       "Year-1/1a-Math-I-Calculus/absolute-value.html",
       "Year-1/1a-Math-I-Calculus/cartesian-coordinate-system.html",
       "Year-1/1a-Math-I-Calculus/extended-real-number.html",
+      "Year-1/1a-Math-I-Calculus/floor-and-ceiling-functions.html",
       "Year-1/1a-Math-I-Calculus/function.html",
       "Year-1/1a-Math-I-Calculus/inequality.html",
       "Year-1/1a-Math-I-Calculus/irrational-number.html",
+      "Year-1/1a-Math-I-Calculus/periodic-function.html",
       "Year-1/1a-Math-I-Calculus/trichotomy-of-real-numbers.html",
       "Year-1/1b-Math-II-Linear-Algebra/cardinality-of-the-continuum.html",
       "Year-1/1b-Math-II-Linear-Algebra/complex-number.html",
@@ -11229,12 +11405,14 @@
       "Year-1/1b-Math-II-Linear-Algebra/eigenbasis.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/basis-of-solutions-difference-equation.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html",
-      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-representation-of-a-linear-map.html"
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/matrix-representation-of-a-linear-map.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthonormal-basis.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/binary-operation.html": [
       "Year-1/1b-Math-II-Linear-Algebra/algebraic-structure.html",
       "Year-1/1b-Math-II-Linear-Algebra/associativity.html",
       "Year-1/1b-Math-II-Linear-Algebra/commutativity.html",
+      "Year-1/1b-Math-II-Linear-Algebra/distributivity.html",
       "Year-1/1b-Math-II-Linear-Algebra/identity-element.html",
       "Year-1/1b-Math-II-Linear-Algebra/semigroup.html"
     ],
@@ -11378,7 +11556,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-root-theorem.html",
       "Year-1/1b-Math-II-Linear-Algebra/sarrus-rule.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/multivariable-inverse-function-theorem.html",
-      "Year-2/1a-Math-V-Advanced-Linear-Algebra/basis-of-solutions-difference-equation.html"
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/basis-of-solutions-difference-equation.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-matrix.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/diagonal-matrix.html": [
       "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html"
@@ -11399,6 +11578,9 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/distance-between-point-and-line.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/distinct-eigenvalues-theorem.html": [],
+    "Year-1/1b-Math-II-Linear-Algebra/distributivity.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/ring.html"
+    ],
     "Year-1/1b-Math-II-Linear-Algebra/eigenbasis.html": [
       "Year-1/1b-Math-II-Linear-Algebra/diagonalizable-matrix.html",
       "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html",
@@ -11495,7 +11677,8 @@
       "Year-1/2a-Math-III-Analysis/gradient.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html",
-      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html"
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthonormal-basis.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/invariant-subspace.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/inverse-element.html": [
@@ -11505,6 +11688,7 @@
       "Year-1/2b-Math-IV-Multivariate-Calculus/implicit-function-theorem.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/generalized-inverse.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-matrix.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/similarity-transformation.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/jordan-block.html": [
@@ -11625,7 +11809,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/normal-vector.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html",
-      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html"
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthonormal-basis.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/parametric-representation-of-a-line.html": [
       "Year-1/1b-Math-II-Linear-Algebra/distance-between-point-and-line.html",
@@ -11750,6 +11935,7 @@
       "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html",
       "Year-1/1b-Math-II-Linear-Algebra/symmetric-matrix.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-matrix.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/row-space.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/triangle-inequality-vector-norm.html": [],
@@ -11777,6 +11963,7 @@
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthonormal-basis.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/vector-space.html": [
@@ -11858,7 +12045,8 @@
     "Year-1/1b-Probability-Theory-for-EOR/birthday-problem.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/combination.html": [
       "Year-1/1b-Probability-Theory-for-EOR/binomial-coefficient.html",
-      "Year-1/1b-Probability-Theory-for-EOR/hypergeometric-distribution.html"
+      "Year-1/1b-Probability-Theory-for-EOR/hypergeometric-distribution.html",
+      "Year-1/1b-Probability-Theory-for-EOR/sampling-with-and-without-replacement.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html": [
       "Year-1/1b-Probability-Theory-for-EOR/birthday-problem.html"
@@ -11907,6 +12095,7 @@
     "Year-1/1b-Probability-Theory-for-EOR/counting.html": [
       "Year-1/1b-Probability-Theory-for-EOR/multiplication-rule.html",
       "Year-1/1b-Probability-Theory-for-EOR/naive-probability.html",
+      "Year-1/1b-Probability-Theory-for-EOR/sampling-with-and-without-replacement.html",
       "Year-1/1b-Probability-Theory-for-EOR/stars-and-bars.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html": [
@@ -11962,7 +12151,8 @@
       "Year-1/1b-Probability-Theory-for-EOR/indicator-random-variable.html",
       "Year-1/1b-Probability-Theory-for-EOR/naive-probability.html",
       "Year-1/1b-Probability-Theory-for-EOR/probability-function.html",
-      "Year-1/1b-Probability-Theory-for-EOR/union-and-intersection-of-events.html"
+      "Year-1/1b-Probability-Theory-for-EOR/union-and-intersection-of-events.html",
+      "Year-1/2b-Probability-Distributions/almost-surely.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/expectation.html": [
       "Year-1/1b-Probability-Theory-for-EOR/conditional-expectation.html",
@@ -11978,6 +12168,7 @@
       "Year-1/2b-Probability-Distributions/jensen-inequality.html",
       "Year-1/2b-Probability-Distributions/lotus-two-dimensional-continuous.html",
       "Year-1/2b-Probability-Distributions/lotus-two-dimensional-discrete.html",
+      "Year-1/2b-Probability-Distributions/moment.html",
       "Year-1/2b-Probability-Distributions/strong-law-of-large-numbers.html",
       "Year-2/2a-Life-Insurance/actuarial-present-value.html",
       "Year-2/2a-Life-Insurance/expectation-of-life.html",
@@ -12053,7 +12244,8 @@
     ],
     "Year-1/1b-Probability-Theory-for-EOR/lognormal-distribution.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/lotus.html": [
-      "Year-1/2b-Probability-Distributions/moment-generating-function.html"
+      "Year-1/2b-Probability-Distributions/moment-generating-function.html",
+      "Year-1/2b-Probability-Distributions/moment.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/median.html": [
       "Year-2/2b-Game-Theory/median-voter-theorem.html"
@@ -12069,7 +12261,9 @@
       "Year-1/1b-Probability-Theory-for-EOR/unimodal-and-multimodal-distribution.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/monotonicity-of-expectation.html": [],
-    "Year-1/1b-Probability-Theory-for-EOR/multiplication-rule.html": [],
+    "Year-1/1b-Probability-Theory-for-EOR/multiplication-rule.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/sampling-with-and-without-replacement.html"
+    ],
     "Year-1/1b-Probability-Theory-for-EOR/naive-probability.html": [
       "Year-1/1b-Probability-Theory-for-EOR/birthday-problem.html",
       "Year-1/1b-Probability-Theory-for-EOR/discrete-uniform-distribution.html"
@@ -12096,7 +12290,9 @@
       "Year-1/1b-Probability-Theory-for-EOR/law-of-total-probability.html",
       "Year-1/2b-Probability-Distributions/law-of-total-expectation-partition.html"
     ],
-    "Year-1/1b-Probability-Theory-for-EOR/permutation.html": [],
+    "Year-1/1b-Probability-Theory-for-EOR/permutation.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/sampling-with-and-without-replacement.html"
+    ],
     "Year-1/1b-Probability-Theory-for-EOR/point-mass.html": [
       "Year-2/2b-Risk-Insurance/individual-risk-model.html",
       "Year-2/2b-Risk-Insurance/mixed-discrete-continuous-loss.html",
@@ -12139,7 +12335,8 @@
       "Year-1/1b-Probability-Theory-for-EOR/inclusion-exclusion-principle.html",
       "Year-1/1b-Probability-Theory-for-EOR/independent-events.html",
       "Year-1/1b-Probability-Theory-for-EOR/law-of-total-probability.html",
-      "Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html"
+      "Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html",
+      "Year-1/2b-Probability-Distributions/almost-surely.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html": [
       "Year-1/1b-Probability-Theory-for-EOR/bernoulli-distribution.html",
@@ -12174,7 +12371,9 @@
       "Year-1/1b-Probability-Theory-for-EOR/support-of-a-random-variable.html",
       "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html",
       "Year-1/2b-Probability-Distributions/almost-sure-convergence.html",
+      "Year-1/2b-Probability-Distributions/almost-surely.html",
       "Year-1/2b-Probability-Distributions/convergence-in-probability.html",
+      "Year-1/2b-Probability-Distributions/moment.html",
       "Year-1/2b-Probability-Distributions/sample-mean.html",
       "Year-2/2b-Game-Theory/type.html"
     ],
@@ -12186,6 +12385,9 @@
       "Year-1/1b-Probability-Theory-for-EOR/naive-probability.html",
       "Year-1/1b-Probability-Theory-for-EOR/probability-function.html",
       "Year-1/1b-Probability-Theory-for-EOR/random-variable.html"
+    ],
+    "Year-1/1b-Probability-Theory-for-EOR/sampling-with-and-without-replacement.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/hypergeometric-distribution.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/standard-normal-distribution.html": [
       "Year-1/2b-Probability-Distributions/central-limit-theorem.html",
@@ -12589,6 +12791,9 @@
     "Year-1/2b-Probability-Distributions/almost-sure-convergence.html": [
       "Year-1/2b-Probability-Distributions/strong-law-of-large-numbers.html"
     ],
+    "Year-1/2b-Probability-Distributions/almost-surely.html": [
+      "Year-1/2b-Probability-Distributions/almost-sure-convergence.html"
+    ],
     "Year-1/2b-Probability-Distributions/bayes-and-total-probability-four-forms.html": [],
     "Year-1/2b-Probability-Distributions/binomial-theorem.html": [],
     "Year-1/2b-Probability-Distributions/cauchy-schwarz-inequality.html": [],
@@ -12703,6 +12908,9 @@
       "Year-2/2b-Risk-Insurance/exponential-order.html",
       "Year-2/2b-Risk-Insurance/probability-generating-function.html"
     ],
+    "Year-1/2b-Probability-Distributions/moment.html": [
+      "Year-1/2b-Probability-Distributions/moments-from-the-mgf.html"
+    ],
     "Year-1/2b-Probability-Distributions/moments-from-the-mgf.html": [],
     "Year-1/2b-Probability-Distributions/multinomial-distribution.html": [],
     "Year-1/2b-Probability-Distributions/normal-approximation-to-binomial.html": [],
@@ -12798,10 +13006,16 @@
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html"
     ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-matrix.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value-decomposition.html"
+    ],
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html": [
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/moore-penrose-inverse.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthonormal-basis.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-matrix.html"
     ],
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html": [
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html"
@@ -12897,6 +13111,10 @@
     "Year-2/2a-Life-Insurance/guaranteed-life-annuity.html": [],
     "Year-2/2a-Life-Insurance/insurance-payment-frequency.html": [],
     "Year-2/2a-Life-Insurance/insurance-present-value-variance.html": [],
+    "Year-2/2a-Life-Insurance/interest-and-discounting.html": [
+      "Year-2/2a-Life-Insurance/actuarial-present-value.html",
+      "Year-2/2a-Life-Insurance/annuity-certain.html"
+    ],
     "Year-2/2a-Life-Insurance/life-annuity-payment-frequency.html": [],
     "Year-2/2a-Life-Insurance/life-insurance-equivalence-principle.html": [
       "Year-2/2a-Life-Insurance/future-loss-random-variable.html"
@@ -12955,6 +13173,7 @@
     "Year-2/2b-Game-Theory/backward-induction.html": [
       "Year-2/2b-Game-Theory/stackelberg-competition.html"
     ],
+    "Year-2/2b-Game-Theory/battle-of-the-sexes.html": [],
     "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html": [
       "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html",
       "Year-2/2b-Game-Theory/separating-equilibrium.html"
@@ -12983,6 +13202,7 @@
       "Year-2/2b-Game-Theory/nash-existence-theorem.html"
     ],
     "Year-2/2b-Game-Theory/best-response.html": [
+      "Year-2/2b-Game-Theory/battle-of-the-sexes.html",
       "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
       "Year-2/2b-Game-Theory/bertrand-duopoly.html",
       "Year-2/2b-Game-Theory/best-response-correspondence.html",
@@ -13016,12 +13236,14 @@
     ],
     "Year-2/2b-Game-Theory/dutch-auction.html": [],
     "Year-2/2b-Game-Theory/english-auction.html": [],
+    "Year-2/2b-Game-Theory/equilibrium-path.html": [],
     "Year-2/2b-Game-Theory/expected-payoff-maximization.html": [
       "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html",
       "Year-2/2b-Game-Theory/mixed-strategy.html"
     ],
     "Year-2/2b-Game-Theory/extensive-form-game.html": [
       "Year-2/2b-Game-Theory/backward-induction.html",
+      "Year-2/2b-Game-Theory/equilibrium-path.html",
       "Year-2/2b-Game-Theory/forward-induction.html",
       "Year-2/2b-Game-Theory/harsanyi-transformation.html",
       "Year-2/2b-Game-Theory/information-set.html",
@@ -13053,9 +13275,11 @@
       "Year-2/2b-Game-Theory/trigger-strategy.html"
     ],
     "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html": [
-      "Year-2/2b-Game-Theory/chicken-game.html"
+      "Year-2/2b-Game-Theory/chicken-game.html",
+      "Year-2/2b-Game-Theory/matching-pennies.html"
     ],
     "Year-2/2b-Game-Theory/information-set.html": [
+      "Year-2/2b-Game-Theory/equilibrium-path.html",
       "Year-2/2b-Game-Theory/harsanyi-transformation.html",
       "Year-2/2b-Game-Theory/sequential-rationality.html",
       "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html",
@@ -13064,11 +13288,13 @@
     ],
     "Year-2/2b-Game-Theory/iterated-elimination-of-strictly-dominated-strategies.html": [],
     "Year-2/2b-Game-Theory/market-for-lemons.html": [],
+    "Year-2/2b-Game-Theory/matching-pennies.html": [],
     "Year-2/2b-Game-Theory/median-voter-theorem.html": [],
     "Year-2/2b-Game-Theory/mixed-strategy.html": [
       "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html",
       "Year-2/2b-Game-Theory/folk-theorem.html",
       "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/matching-pennies.html",
       "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html",
       "Year-2/2b-Game-Theory/nash-existence-theorem.html",
       "Year-2/2b-Game-Theory/stage-game.html"
@@ -13082,30 +13308,37 @@
       "Year-2/2b-Game-Theory/chicken-game.html",
       "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html",
       "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/matching-pennies.html",
       "Year-2/2b-Game-Theory/nash-existence-theorem.html"
     ],
     "Year-2/2b-Game-Theory/nash-equilibrium.html": [
+      "Year-2/2b-Game-Theory/battle-of-the-sexes.html",
       "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
       "Year-2/2b-Game-Theory/bertrand-duopoly.html",
       "Year-2/2b-Game-Theory/chicken-game.html",
       "Year-2/2b-Game-Theory/cournot-duopoly.html",
+      "Year-2/2b-Game-Theory/equilibrium-path.html",
       "Year-2/2b-Game-Theory/extensive-form-game.html",
       "Year-2/2b-Game-Theory/median-voter-theorem.html",
       "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/prisoners-dilemma.html",
       "Year-2/2b-Game-Theory/stage-game.html",
       "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
       "Year-2/2b-Game-Theory/trigger-strategy.html"
     ],
     "Year-2/2b-Game-Theory/nash-existence-theorem.html": [],
     "Year-2/2b-Game-Theory/normal-form-game.html": [
+      "Year-2/2b-Game-Theory/battle-of-the-sexes.html",
       "Year-2/2b-Game-Theory/bayesian-game.html",
       "Year-2/2b-Game-Theory/best-response.html",
       "Year-2/2b-Game-Theory/chicken-game.html",
       "Year-2/2b-Game-Theory/dutch-auction.html",
       "Year-2/2b-Game-Theory/extensive-form-game.html",
+      "Year-2/2b-Game-Theory/matching-pennies.html",
       "Year-2/2b-Game-Theory/mixed-strategy.html",
       "Year-2/2b-Game-Theory/nash-equilibrium.html",
       "Year-2/2b-Game-Theory/pareto-efficiency.html",
+      "Year-2/2b-Game-Theory/prisoners-dilemma.html",
       "Year-2/2b-Game-Theory/stage-game.html",
       "Year-2/2b-Game-Theory/strictly-dominant-strategy.html",
       "Year-2/2b-Game-Theory/strictly-dominated-strategy.html",
@@ -13113,13 +13346,16 @@
       "Year-2/2b-Game-Theory/weakly-dominant-strategy.html"
     ],
     "Year-2/2b-Game-Theory/one-stage-deviation-principle.html": [],
-    "Year-2/2b-Game-Theory/pareto-efficiency.html": [],
+    "Year-2/2b-Game-Theory/pareto-efficiency.html": [
+      "Year-2/2b-Game-Theory/prisoners-dilemma.html"
+    ],
     "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html": [
       "Year-2/2b-Game-Theory/pooling-equilibrium.html",
       "Year-2/2b-Game-Theory/separating-equilibrium.html",
       "Year-2/2b-Game-Theory/signaling-game.html"
     ],
     "Year-2/2b-Game-Theory/pooling-equilibrium.html": [],
+    "Year-2/2b-Game-Theory/prisoners-dilemma.html": [],
     "Year-2/2b-Game-Theory/private-value-auction.html": [
       "Year-2/2b-Game-Theory/common-value-auction.html",
       "Year-2/2b-Game-Theory/english-auction.html",
@@ -13171,10 +13407,12 @@
     "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html": [
       "Year-2/2b-Game-Theory/backward-induction.html",
       "Year-2/2b-Game-Theory/dutch-auction.html",
+      "Year-2/2b-Game-Theory/equilibrium-path.html",
       "Year-2/2b-Game-Theory/history.html",
       "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html"
     ],
     "Year-2/2b-Game-Theory/strictly-dominant-strategy.html": [
+      "Year-2/2b-Game-Theory/prisoners-dilemma.html",
       "Year-2/2b-Game-Theory/weakly-dominant-strategy.html"
     ],
     "Year-2/2b-Game-Theory/strictly-dominated-strategy.html": [
@@ -13645,6 +13883,14 @@
       "Year-1/1a-Math-I-Calculus/stationary-point.html",
       "Year-1/1a-Math-I-Calculus/critical-point.html"
     ],
+    "Year-1/1a-Math-I-Calculus/floor-and-ceiling-functions.html": [
+      "Year-1/1a-Math-I-Calculus/one-sided-limit.html",
+      "Year-1/1a-Math-I-Calculus/one-sided-continuity.html",
+      "Year-1/1a-Math-I-Calculus/monotone-function.html",
+      "Year-1/1a-Math-I-Calculus/periodic-function.html",
+      "Year-1/1a-OR-Modelling/branch-and-bound.html",
+      "Year-2/2a-Life-Insurance/curtate-future-lifetime.html"
+    ],
     "Year-1/1a-Math-I-Calculus/function.html": [
       "Year-1/1a-Math-I-Calculus/bijection-and-inverse-function.html",
       "Year-1/1a-Math-I-Calculus/sequence.html",
@@ -13920,7 +14166,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/complex-conjugate.html"
     ],
     "Year-1/1a-Math-I-Calculus/one-sided-continuity.html": [
-      "Year-1/1a-Math-I-Calculus/one-sided-derivative.html"
+      "Year-1/1a-Math-I-Calculus/one-sided-derivative.html",
+      "Year-1/1a-Math-I-Calculus/floor-and-ceiling-functions.html"
     ],
     "Year-1/1a-Math-I-Calculus/one-sided-derivative.html": [
       "Year-1/1a-Math-I-Calculus/one-sided-continuity.html"
@@ -13928,7 +14175,8 @@
     "Year-1/1a-Math-I-Calculus/one-sided-limit.html": [
       "Year-1/1a-Math-I-Calculus/signum-function.html",
       "Year-1/1a-Math-I-Calculus/divergence-to-infinity.html",
-      "Year-1/1a-Math-I-Calculus/punctured-neighbourhood.html"
+      "Year-1/1a-Math-I-Calculus/punctured-neighbourhood.html",
+      "Year-1/1a-Math-I-Calculus/floor-and-ceiling-functions.html"
     ],
     "Year-1/1a-Math-I-Calculus/p-series.html": [
       "Year-1/1a-Math-I-Calculus/harmonic-series.html",
@@ -13943,6 +14191,13 @@
     "Year-1/1a-Math-I-Calculus/partition-and-regular-subdivision.html": [
       "Year-1/1a-Math-I-Calculus/riemann-integral.html",
       "Year-1/1a-Math-I-Calculus/interval.html"
+    ],
+    "Year-1/1a-Math-I-Calculus/periodic-function.html": [
+      "Year-1/1a-Math-I-Calculus/trigonometric-functions.html",
+      "Year-1/1b-Math-II-Linear-Algebra/complex-exponential-function.html",
+      "Year-1/1b-Math-II-Linear-Algebra/eulers-formula.html",
+      "Year-1/1a-Math-I-Calculus/dirichlet-function.html",
+      "Year-1/1a-Math-I-Calculus/floor-and-ceiling-functions.html"
     ],
     "Year-1/1a-Math-I-Calculus/polynomial.html": [
       "Year-1/2a-Math-III-Analysis/power-series.html",
@@ -14085,7 +14340,8 @@
       "Year-1/1a-Math-I-Calculus/inverse-trigonometric-functions.html",
       "Year-1/1a-Math-I-Calculus/cartesian-coordinate-system.html",
       "Year-1/1b-Math-II-Linear-Algebra/eulers-formula.html",
-      "Year-1/1b-Math-II-Linear-Algebra/complex-trigonometric-functions.html"
+      "Year-1/1b-Math-II-Linear-Algebra/complex-trigonometric-functions.html",
+      "Year-1/1a-Math-I-Calculus/periodic-function.html"
     ],
     "Year-1/1a-Math-I-Calculus/union-of-sets.html": [
       "Year-1/1a-Math-I-Calculus/intersection-of-sets.html",
@@ -14184,7 +14440,8 @@
     ],
     "Year-1/1a-OR-Modelling/branch-and-bound.html": [
       "Year-1/1a-OR-Modelling/incumbent-solution.html",
-      "Year-1/1a-OR-Modelling/branch-and-bound-pruning.html"
+      "Year-1/1a-OR-Modelling/branch-and-bound-pruning.html",
+      "Year-1/1a-Math-I-Calculus/floor-and-ceiling-functions.html"
     ],
     "Year-1/1a-OR-Modelling/bus-scheduling-model.html": [
       "Year-1/1a-OR-Modelling/ambulance-location-model.html"
@@ -14783,7 +15040,8 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/associativity.html": [
       "Year-1/1b-Math-II-Linear-Algebra/monoid.html",
-      "Year-1/1b-Math-II-Linear-Algebra/matrix-product.html"
+      "Year-1/1b-Math-II-Linear-Algebra/matrix-product.html",
+      "Year-1/1b-Math-II-Linear-Algebra/distributivity.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/augmented-matrix.html": [
       "Year-1/1b-Math-II-Linear-Algebra/standard-form-of-a-linear-system.html",
@@ -14800,7 +15058,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/group.html",
       "Year-1/1b-Math-II-Linear-Algebra/inverse-element.html",
       "Year-1/1b-Math-II-Linear-Algebra/monoid.html",
-      "Year-1/1b-Math-II-Linear-Algebra/ring.html"
+      "Year-1/1b-Math-II-Linear-Algebra/ring.html",
+      "Year-1/1b-Math-II-Linear-Algebra/distributivity.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/block-matrix.html": [
       "Year-1/1b-Math-II-Linear-Algebra/diagonal-matrix.html",
@@ -14860,7 +15119,8 @@
     "Year-1/1b-Math-II-Linear-Algebra/commutativity.html": [
       "Year-1/1b-Math-II-Linear-Algebra/group.html",
       "Year-1/1b-Math-II-Linear-Algebra/field.html",
-      "Year-1/1b-Math-II-Linear-Algebra/matrix-product.html"
+      "Year-1/1b-Math-II-Linear-Algebra/matrix-product.html",
+      "Year-1/1b-Math-II-Linear-Algebra/distributivity.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/complex-absolute-value.html": [
       "Year-1/1b-Math-II-Linear-Algebra/complex-conjugate.html",
@@ -14892,7 +15152,8 @@
       "Year-1/2a-Math-III-Analysis/taylor-series.html",
       "Year-1/1b-Math-II-Linear-Algebra/complex-exponentiation.html",
       "Year-1/1b-Math-II-Linear-Algebra/eulers-identity.html",
-      "Year-1/1b-Math-II-Linear-Algebra/de-moivres-formula.html"
+      "Year-1/1b-Math-II-Linear-Algebra/de-moivres-formula.html",
+      "Year-1/1a-Math-I-Calculus/periodic-function.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/complex-exponentiation.html": [
       "Year-1/1b-Math-II-Linear-Algebra/de-moivres-formula.html",
@@ -14910,7 +15171,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/complex-addition.html",
       "Year-1/1b-Math-II-Linear-Algebra/complex-reciprocal.html",
       "Year-1/1b-Math-II-Linear-Algebra/complex-plane-polar-coordinate-system.html",
-      "Year-1/1b-Math-II-Linear-Algebra/imaginary-unit.html"
+      "Year-1/1b-Math-II-Linear-Algebra/imaginary-unit.html",
+      "Year-1/1b-Math-II-Linear-Algebra/distributivity.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/complex-negation.html": [
       "Year-1/1b-Math-II-Linear-Algebra/complex-addition.html",
@@ -14940,7 +15202,8 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/complex-trigonometric-functions.html": [
       "Year-1/2a-Math-III-Analysis/taylor-series.html",
-      "Year-1/1b-Math-II-Linear-Algebra/de-moivres-formula.html"
+      "Year-1/1b-Math-II-Linear-Algebra/de-moivres-formula.html",
+      "Year-1/1a-Math-I-Calculus/periodic-function.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/composition-of-linear-maps.html": [
       "Year-1/1a-Math-I-Calculus/composition-of-functions.html",
@@ -14986,7 +15249,8 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/definiteness-and-eigenvalues.html": [
       "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html",
-      "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html"
+      "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-matrix.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/determinant.html": [
       "Year-1/1b-Math-II-Linear-Algebra/inverse-matrix.html",
@@ -15036,6 +15300,14 @@
       "Year-1/1b-Math-II-Linear-Algebra/eigenbasis.html",
       "Year-1/1b-Math-II-Linear-Algebra/characteristic-polynomial.html"
     ],
+    "Year-1/1b-Math-II-Linear-Algebra/distributivity.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/associativity.html",
+      "Year-1/1b-Math-II-Linear-Algebra/commutativity.html",
+      "Year-1/1b-Math-II-Linear-Algebra/ring.html",
+      "Year-1/1b-Math-II-Linear-Algebra/field.html",
+      "Year-1/1b-Math-II-Linear-Algebra/complex-multiplication.html",
+      "Year-1/1b-Math-II-Linear-Algebra/matrix-product.html"
+    ],
     "Year-1/1b-Math-II-Linear-Algebra/eigenbasis.html": [
       "Year-1/1b-Math-II-Linear-Algebra/distinct-eigenvalues-theorem.html"
     ],
@@ -15075,7 +15347,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/coordinate.html",
       "Year-1/1b-Math-II-Linear-Algebra/euclidean-distance.html",
       "Year-1/1b-Math-II-Linear-Algebra/inner-product.html",
-      "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html"
+      "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthonormal-basis.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/eulers-formula.html": [
       "Year-1/1b-Math-II-Linear-Algebra/de-moivres-formula.html",
@@ -15094,7 +15367,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/algebraic-structure.html",
       "Year-1/1b-Math-II-Linear-Algebra/commutativity.html",
       "Year-1/1b-Math-II-Linear-Algebra/complex-addition.html",
-      "Year-1/1b-Math-II-Linear-Algebra/inverse-element.html"
+      "Year-1/1b-Math-II-Linear-Algebra/inverse-element.html",
+      "Year-1/1b-Math-II-Linear-Algebra/distributivity.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/finite-dimensional-vector-space.html": [
       "Year-1/1b-Math-II-Linear-Algebra/basis.html",
@@ -15248,7 +15522,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/composition-of-linear-maps.html",
       "Year-1/1b-Math-II-Linear-Algebra/linear-map.html",
       "Year-1/1b-Math-II-Linear-Algebra/identity-matrix.html",
-      "Year-1/1b-Math-II-Linear-Algebra/vector.html"
+      "Year-1/1b-Math-II-Linear-Algebra/vector.html",
+      "Year-1/1b-Math-II-Linear-Algebra/distributivity.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/matrix-scalar-multiplication.html": [
       "Year-1/1b-Math-II-Linear-Algebra/scalar-multiplication.html",
@@ -15280,7 +15555,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/angle-between-vectors.html",
       "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html",
       "Year-1/1b-Math-II-Linear-Algebra/cauchy-schwarz-inequality.html",
-      "Year-1/1b-Math-II-Linear-Algebra/idempotent-matrix.html"
+      "Year-1/1b-Math-II-Linear-Algebra/idempotent-matrix.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthonormal-basis.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/parametric-representation-of-a-line.html": [
       "Year-1/1b-Math-II-Linear-Algebra/plane.html",
@@ -15429,7 +15705,8 @@
     "Year-1/1b-Math-II-Linear-Algebra/symmetric-matrix.html": [
       "Year-1/1b-Math-II-Linear-Algebra/quadratic-form.html",
       "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html",
-      "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html"
+      "Year-1/1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthonormal-basis.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/system-of-linear-equations.html": [
       "Year-1/1b-Math-II-Linear-Algebra/row-echelon-form.html",
@@ -15471,7 +15748,8 @@
     "Year-1/1b-Math-II-Linear-Algebra/vector-space.html": [
       "Year-1/1b-Math-II-Linear-Algebra/linear-combination.html",
       "Year-1/1b-Math-II-Linear-Algebra/matrix-addition.html",
-      "Year-1/1b-Math-II-Linear-Algebra/matrix-scalar-multiplication.html"
+      "Year-1/1b-Math-II-Linear-Algebra/matrix-scalar-multiplication.html",
+      "Year-1/1b-Math-II-Linear-Algebra/distributivity.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/vector.html": [
       "Year-1/1b-Math-II-Linear-Algebra/vector-addition.html",
@@ -15528,18 +15806,21 @@
       "Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html",
       "Year-1/2b-Probability-Distributions/binomial-theorem.html",
       "Year-1/2b-Probability-Distributions/exponential-limit.html",
-      "Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html"
+      "Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html",
+      "Year-1/1b-Probability-Theory-for-EOR/sampling-with-and-without-replacement.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/birthday-problem.html": [
       "Year-1/1b-Probability-Theory-for-EOR/independent-events.html",
       "Year-1/1b-Probability-Theory-for-EOR/counting.html",
-      "Year-1/1b-Probability-Theory-for-EOR/permutation.html"
+      "Year-1/1b-Probability-Theory-for-EOR/permutation.html",
+      "Year-1/1b-Probability-Theory-for-EOR/sampling-with-and-without-replacement.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/combination.html": [
       "Year-1/1b-Probability-Theory-for-EOR/permutation.html",
       "Year-1/1b-Probability-Theory-for-EOR/stars-and-bars.html",
       "Year-1/1b-Probability-Theory-for-EOR/counting.html",
-      "Year-1/1a-Math-I-Calculus/factorial.html"
+      "Year-1/1a-Math-I-Calculus/factorial.html",
+      "Year-1/1b-Probability-Theory-for-EOR/sampling-with-and-without-replacement.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/complement-of-an-event.html": [
       "Year-1/1b-Probability-Theory-for-EOR/axioms-of-probability.html",
@@ -15738,7 +16019,8 @@
       "Year-1/1b-Probability-Theory-for-EOR/probability-mass-function.html",
       "Year-1/1b-Probability-Theory-for-EOR/probability-density-function.html",
       "Year-1/2b-Probability-Distributions/lotus-two-dimensional-discrete.html",
-      "Year-1/2b-Probability-Distributions/lotus-two-dimensional-continuous.html"
+      "Year-1/2b-Probability-Distributions/lotus-two-dimensional-continuous.html",
+      "Year-1/2b-Probability-Distributions/moment.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/median.html": [
       "Year-1/1b-Probability-Theory-for-EOR/symmetric-distribution.html",
@@ -15767,18 +16049,21 @@
     ],
     "Year-1/1b-Probability-Theory-for-EOR/monotonicity-of-expectation.html": [
       "Year-1/1b-Probability-Theory-for-EOR/linearity-of-expectation.html",
-      "Year-1/1b-Probability-Theory-for-EOR/lotus.html"
+      "Year-1/1b-Probability-Theory-for-EOR/lotus.html",
+      "Year-1/2b-Probability-Distributions/almost-surely.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/multiplication-rule.html": [
       "Year-1/1b-Probability-Theory-for-EOR/permutation.html",
       "Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html",
       "Year-1/1b-Probability-Theory-for-EOR/bayes-rule.html",
-      "Year-1/1b-Probability-Theory-for-EOR/independent-events.html"
+      "Year-1/1b-Probability-Theory-for-EOR/independent-events.html",
+      "Year-1/1b-Probability-Theory-for-EOR/sampling-with-and-without-replacement.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/naive-probability.html": [
       "Year-1/1b-Probability-Theory-for-EOR/axioms-of-probability.html",
       "Year-1/1b-Probability-Theory-for-EOR/hypergeometric-distribution.html",
-      "Year-1/1b-Probability-Theory-for-EOR/probability-function.html"
+      "Year-1/1b-Probability-Theory-for-EOR/probability-function.html",
+      "Year-1/1b-Probability-Theory-for-EOR/sampling-with-and-without-replacement.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/negative-binomial-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/binomial-distribution.html",
@@ -15817,7 +16102,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/symmetric-group.html",
       "Year-1/1b-Probability-Theory-for-EOR/counting.html",
       "Year-1/1a-Math-I-Calculus/factorial.html",
-      "Year-1/1b-Probability-Theory-for-EOR/multiplication-rule.html"
+      "Year-1/1b-Probability-Theory-for-EOR/multiplication-rule.html",
+      "Year-1/1b-Probability-Theory-for-EOR/sampling-with-and-without-replacement.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/point-mass.html": [
       "Year-1/1b-Probability-Theory-for-EOR/discrete-random-variable.html",
@@ -15886,6 +16172,14 @@
       "Year-1/1b-Math-II-Linear-Algebra/power-set.html",
       "Year-1/1b-Math-II-Linear-Algebra/cartesian-product.html"
     ],
+    "Year-1/1b-Probability-Theory-for-EOR/sampling-with-and-without-replacement.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/binomial-coefficient.html",
+      "Year-1/1b-Probability-Theory-for-EOR/stars-and-bars.html",
+      "Year-1/1b-Probability-Theory-for-EOR/naive-probability.html",
+      "Year-1/1b-Probability-Theory-for-EOR/birthday-problem.html",
+      "Year-1/1b-Probability-Theory-for-EOR/binomial-distribution.html",
+      "Year-1/1b-Probability-Theory-for-EOR/hypergeometric-distribution.html"
+    ],
     "Year-1/1b-Probability-Theory-for-EOR/standard-normal-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/cumulative-distribution-function.html",
       "Year-1/1b-Probability-Theory-for-EOR/standardization.html",
@@ -15900,7 +16194,8 @@
     "Year-1/1b-Probability-Theory-for-EOR/stars-and-bars.html": [
       "Year-1/1b-Probability-Theory-for-EOR/discrete-uniform-distribution.html",
       "Year-1/1b-Probability-Theory-for-EOR/binomial-coefficient.html",
-      "Year-1/1b-Probability-Theory-for-EOR/combination.html"
+      "Year-1/1b-Probability-Theory-for-EOR/combination.html",
+      "Year-1/1b-Probability-Theory-for-EOR/sampling-with-and-without-replacement.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/stochastic-process.html": [
       "Year-1/1b-Probability-Theory-for-EOR/arrival-rate.html",
@@ -15930,7 +16225,8 @@
     "Year-1/1b-Probability-Theory-for-EOR/symmetric-distribution.html": [
       "Year-1/1b-Probability-Theory-for-EOR/median.html",
       "Year-1/1b-Probability-Theory-for-EOR/normal-distribution.html",
-      "Year-1/1b-Probability-Theory-for-EOR/expectation.html"
+      "Year-1/1b-Probability-Theory-for-EOR/expectation.html",
+      "Year-1/2b-Probability-Distributions/moment.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/transformation-of-a-continuous-random-variable.html": [
       "Year-1/1b-Probability-Theory-for-EOR/function-of-a-random-variable.html",
@@ -15967,7 +16263,8 @@
       "Year-1/2b-Probability-Distributions/moments-from-the-mgf.html",
       "Year-1/2b-Probability-Distributions/sum-of-two-iid-uniforms.html",
       "Year-1/2b-Probability-Distributions/jensen-inequality.html",
-      "Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html"
+      "Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html",
+      "Year-1/2b-Probability-Distributions/moment.html"
     ],
     "Year-1/1b-Programming-for-EOR/index.html": [],
     "Year-1/2a-Finance-for-EOR/index.html": [],
@@ -16534,6 +16831,16 @@
     "Year-1/2b-Probability-Distributions/almost-sure-convergence.html": [
       "Year-1/2b-Probability-Distributions/convergence-in-probability.html"
     ],
+    "Year-1/2b-Probability-Distributions/almost-surely.html": [
+      "Year-1/2b-Probability-Distributions/almost-sure-convergence.html",
+      "Year-1/2b-Probability-Distributions/strong-law-of-large-numbers.html",
+      "Year-1/2b-Probability-Distributions/convergence-in-probability.html",
+      "Year-1/2b-Probability-Distributions/generalized-markov-inequality.html",
+      "Year-1/2b-Probability-Distributions/chebyshev-inequality.html",
+      "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html",
+      "Year-1/1b-Probability-Theory-for-EOR/continuous-random-variable.html",
+      "Year-1/1b-Probability-Theory-for-EOR/monotonicity-of-expectation.html"
+    ],
     "Year-1/2b-Probability-Distributions/bayes-and-total-probability-four-forms.html": [
       "Year-1/2b-Probability-Distributions/continuous-law-of-total-probability.html",
       "Year-1/2b-Probability-Distributions/continuous-bayes-rule.html",
@@ -16558,7 +16865,8 @@
       "Year-1/2b-Probability-Distributions/convergence-in-probability.html",
       "Year-1/1a-Math-I-Calculus/absolute-value.html",
       "Year-1/2b-Probability-Distributions/generalized-markov-inequality.html",
-      "Year-1/2b-Probability-Distributions/chernoff-bound.html"
+      "Year-1/2b-Probability-Distributions/chernoff-bound.html",
+      "Year-1/2b-Probability-Distributions/almost-surely.html"
     ],
     "Year-1/2b-Probability-Distributions/chernoff-bound.html": [
       "Year-1/2b-Probability-Distributions/mgf-of-an-independent-sum.html",
@@ -16723,7 +17031,16 @@
     "Year-1/2b-Probability-Distributions/moment-generating-function.html": [
       "Year-1/2a-Math-III-Analysis/taylor-series.html",
       "Year-1/1b-Probability-Theory-for-EOR/bernoulli-distribution.html",
-      "Year-1/2b-Probability-Distributions/jensen-inequality.html"
+      "Year-1/2b-Probability-Distributions/jensen-inequality.html",
+      "Year-1/2b-Probability-Distributions/moment.html"
+    ],
+    "Year-1/2b-Probability-Distributions/moment.html": [
+      "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html",
+      "Year-1/2b-Probability-Distributions/moment-generating-function.html",
+      "Year-1/2b-Probability-Distributions/moments-from-the-mgf.html",
+      "Year-1/1b-Probability-Theory-for-EOR/symmetric-distribution.html",
+      "Year-1/1b-Probability-Theory-for-EOR/linearity-of-expectation.html",
+      "Year-1/1b-Probability-Theory-for-EOR/bernoulli-distribution.html"
     ],
     "Year-1/2b-Probability-Distributions/moments-from-the-mgf.html": [
       "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html"
@@ -16753,7 +17070,8 @@
     ],
     "Year-1/2b-Probability-Distributions/strong-law-of-large-numbers.html": [
       "Year-1/2b-Probability-Distributions/weak-law-of-large-numbers.html",
-      "Year-1/2b-Probability-Distributions/central-limit-theorem.html"
+      "Year-1/2b-Probability-Distributions/central-limit-theorem.html",
+      "Year-1/2b-Probability-Distributions/almost-surely.html"
     ],
     "Year-1/2b-Probability-Distributions/sum-of-two-iid-uniforms.html": [
       "Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html"
@@ -16796,7 +17114,9 @@
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/similarity-transformation.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
       "Year-1/1b-Math-II-Linear-Algebra/diagonalization.html",
-      "Year-1/1b-Math-II-Linear-Algebra/eigenbasis.html"
+      "Year-1/1b-Math-II-Linear-Algebra/eigenbasis.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthonormal-basis.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-matrix.html"
     ],
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/characteristic-equation-differential-equation.html": [
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html",
@@ -16872,7 +17192,8 @@
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html",
-      "Year-1/1b-Math-II-Linear-Algebra/upper-triangular-matrix.html"
+      "Year-1/1b-Math-II-Linear-Algebra/upper-triangular-matrix.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthonormal-basis.html"
     ],
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/higher-order-linear-difference-equation.html": [
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/system-of-linear-difference-equations.html",
@@ -16928,14 +17249,31 @@
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
       "Year-1/1b-Math-II-Linear-Algebra/normal-vector.html",
-      "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html"
+      "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthonormal-basis.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-matrix.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/singular-value-decomposition.html",
+      "Year-1/1b-Math-II-Linear-Algebra/symmetric-matrix.html",
+      "Year-1/1b-Math-II-Linear-Algebra/permutation-matrix.html"
     ],
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html": [
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/moore-penrose-inverse.html",
       "Year-1/1b-Math-II-Linear-Algebra/idempotent-matrix.html",
-      "Year-1/1b-Math-II-Linear-Algebra/distance-between-point-and-line.html"
+      "Year-1/1b-Math-II-Linear-Algebra/distance-between-point-and-line.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthonormal-basis.html"
+    ],
+    "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthonormal-basis.html": [
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-matrix.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-complement.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html"
     ],
     "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html": [
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html",
@@ -17048,7 +17386,8 @@
     ],
     "Year-2/2a-Life-Insurance/curtate-future-lifetime.html": [
       "Year-2/2a-Life-Insurance/expectation-of-life.html",
-      "Year-2/2a-Life-Insurance/whole-life-insurance.html"
+      "Year-2/2a-Life-Insurance/whole-life-insurance.html",
+      "Year-1/1a-Math-I-Calculus/floor-and-ceiling-functions.html"
     ],
     "Year-2/2a-Life-Insurance/deferred-life-annuity.html": [
       "Year-2/2a-Life-Insurance/guaranteed-life-annuity.html",
@@ -17086,13 +17425,22 @@
       "Year-2/2a-Life-Insurance/varying-life-annuity.html"
     ],
     "Year-2/2a-Life-Insurance/insurance-payment-frequency.html": [
-      "Year-2/2a-Life-Insurance/life-annuity-payment-frequency.html"
+      "Year-2/2a-Life-Insurance/life-annuity-payment-frequency.html",
+      "Year-2/2a-Life-Insurance/interest-and-discounting.html"
     ],
     "Year-2/2a-Life-Insurance/insurance-present-value-variance.html": [
       "Year-2/2a-Life-Insurance/endowment-insurance.html",
       "Year-2/2a-Life-Insurance/whole-life-annuity-due.html",
       "Year-2/2a-Life-Insurance/varying-life-annuity.html",
-      "Year-2/2a-Life-Insurance/varying-life-insurance-benefits.html"
+      "Year-2/2a-Life-Insurance/varying-life-insurance-benefits.html",
+      "Year-2/2a-Life-Insurance/interest-and-discounting.html"
+    ],
+    "Year-2/2a-Life-Insurance/interest-and-discounting.html": [
+      "Year-2/2a-Life-Insurance/actuarial-present-value.html",
+      "Year-2/2a-Life-Insurance/annuity-certain.html",
+      "Year-2/2a-Life-Insurance/insurance-payment-frequency.html",
+      "Year-2/2a-Life-Insurance/force-of-mortality.html",
+      "Year-2/2a-Life-Insurance/insurance-present-value-variance.html"
     ],
     "Year-2/2a-Life-Insurance/life-annuity-payment-frequency.html": [
       "Year-2/2a-Life-Insurance/continuous-life-annuity.html",
@@ -17182,11 +17530,21 @@
       "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
       "Year-2/2b-Game-Theory/forward-induction.html"
     ],
+    "Year-2/2b-Game-Theory/battle-of-the-sexes.html": [
+      "Year-2/2b-Game-Theory/pareto-efficiency.html",
+      "Year-2/2b-Game-Theory/prisoners-dilemma.html",
+      "Year-2/2b-Game-Theory/matching-pennies.html",
+      "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html",
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/chicken-game.html"
+    ],
     "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html": [
       "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html",
       "Year-2/2b-Game-Theory/signaling-game.html",
       "Year-2/2b-Game-Theory/separating-equilibrium.html",
-      "Year-1/1b-Probability-Theory-for-EOR/law-of-total-probability.html"
+      "Year-1/1b-Probability-Theory-for-EOR/law-of-total-probability.html",
+      "Year-2/2b-Game-Theory/equilibrium-path.html"
     ],
     "Year-2/2b-Game-Theory/bayesian-game.html": [
       "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
@@ -17222,7 +17580,8 @@
       "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html",
       "Year-2/2b-Game-Theory/bayesian-game.html",
       "Year-2/2b-Game-Theory/pareto-efficiency.html",
-      "Year-2/2b-Game-Theory/folk-theorem.html"
+      "Year-2/2b-Game-Theory/folk-theorem.html",
+      "Year-2/2b-Game-Theory/prisoners-dilemma.html"
     ],
     "Year-2/2b-Game-Theory/common-knowledge.html": [
       "Year-2/2b-Game-Theory/static-game-of-complete-information.html",
@@ -17260,6 +17619,16 @@
       "Year-2/2b-Game-Theory/revenue-equivalence-theorem.html",
       "Year-2/2b-Game-Theory/common-value-auction.html"
     ],
+    "Year-2/2b-Game-Theory/equilibrium-path.html": [
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/subgame.html",
+      "Year-2/2b-Game-Theory/backward-induction.html",
+      "Year-2/2b-Game-Theory/battle-of-the-sexes.html",
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html",
+      "Year-2/2b-Game-Theory/system-of-beliefs.html",
+      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
+      "Year-2/2b-Game-Theory/grim-trigger-strategy.html"
+    ],
     "Year-2/2b-Game-Theory/expected-payoff-maximization.html": [
       "Year-2/2b-Risk-Insurance/expected-utility-and-risk-aversion.html",
       "Year-2/2b-Game-Theory/mixed-strategy.html",
@@ -17270,7 +17639,8 @@
       "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html",
       "Year-2/2b-Game-Theory/subgame.html",
       "Year-2/2b-Game-Theory/backward-induction.html",
-      "Year-2/2b-Game-Theory/multistage-game.html"
+      "Year-2/2b-Game-Theory/multistage-game.html",
+      "Year-2/2b-Game-Theory/battle-of-the-sexes.html"
     ],
     "Year-2/2b-Game-Theory/first-price-auction.html": [
       "Year-2/2b-Game-Theory/second-price-auction.html",
@@ -17282,7 +17652,8 @@
       "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
       "Year-2/2b-Game-Theory/trigger-strategy.html",
       "Year-2/2b-Game-Theory/pareto-efficiency.html",
-      "Year-2/2b-Game-Theory/chicken-game.html"
+      "Year-2/2b-Game-Theory/chicken-game.html",
+      "Year-2/2b-Game-Theory/prisoners-dilemma.html"
     ],
     "Year-2/2b-Game-Theory/forward-induction.html": [
       "Year-2/2b-Game-Theory/backward-induction.html",
@@ -17300,7 +17671,9 @@
       "Year-2/2b-Game-Theory/folk-theorem.html",
       "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
       "Year-2/2b-Game-Theory/cournot-duopoly.html",
-      "Year-2/2b-Game-Theory/pareto-efficiency.html"
+      "Year-2/2b-Game-Theory/pareto-efficiency.html",
+      "Year-2/2b-Game-Theory/prisoners-dilemma.html",
+      "Year-2/2b-Game-Theory/equilibrium-path.html"
     ],
     "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html": [
       "Year-2/2b-Game-Theory/chicken-game.html",
@@ -17336,13 +17709,21 @@
       "Year-2/2b-Game-Theory/nash-equilibrium.html",
       "Year-2/2b-Game-Theory/strictly-dominant-strategy.html",
       "Year-2/2b-Game-Theory/weakly-dominant-strategy.html",
-      "Year-2/2b-Game-Theory/best-response.html"
+      "Year-2/2b-Game-Theory/best-response.html",
+      "Year-2/2b-Game-Theory/prisoners-dilemma.html"
     ],
     "Year-2/2b-Game-Theory/market-for-lemons.html": [
       "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
       "Year-2/2b-Game-Theory/signaling-game.html",
       "Year-2/2b-Game-Theory/separating-equilibrium.html",
       "Year-2/2b-Game-Theory/pareto-efficiency.html"
+    ],
+    "Year-2/2b-Game-Theory/matching-pennies.html": [
+      "Year-2/2b-Game-Theory/nash-existence-theorem.html",
+      "Year-2/2b-Game-Theory/best-response-correspondence.html",
+      "Year-2/2b-Game-Theory/information-set.html",
+      "Year-2/2b-Game-Theory/battle-of-the-sexes.html",
+      "Year-2/2b-Game-Theory/chicken-game.html"
     ],
     "Year-2/2b-Game-Theory/median-voter-theorem.html": [
       "Year-2/2b-Game-Theory/bertrand-duopoly.html",
@@ -17354,7 +17735,8 @@
       "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html",
       "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html",
       "Year-2/2b-Game-Theory/strictly-dominated-strategy.html",
-      "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html"
+      "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html",
+      "Year-2/2b-Game-Theory/matching-pennies.html"
     ],
     "Year-2/2b-Game-Theory/multistage-game.html": [
       "Year-2/2b-Game-Theory/history.html",
@@ -17367,20 +17749,26 @@
       "Year-2/2b-Game-Theory/nash-existence-theorem.html",
       "Year-2/2b-Game-Theory/chicken-game.html",
       "Year-2/2b-Game-Theory/harsanyi-purification-theorem.html",
-      "Year-2/2b-Game-Theory/pareto-efficiency.html"
+      "Year-2/2b-Game-Theory/pareto-efficiency.html",
+      "Year-2/2b-Game-Theory/battle-of-the-sexes.html",
+      "Year-2/2b-Game-Theory/matching-pennies.html"
     ],
     "Year-2/2b-Game-Theory/nash-equilibrium.html": [
       "Year-2/2b-Game-Theory/nash-equilibrium-in-mixed-strategies.html",
       "Year-2/2b-Game-Theory/nash-existence-theorem.html",
       "Year-2/2b-Game-Theory/iterated-elimination-of-strictly-dominated-strategies.html",
       "Year-2/2b-Game-Theory/pareto-efficiency.html",
-      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html"
+      "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/prisoners-dilemma.html",
+      "Year-2/2b-Game-Theory/battle-of-the-sexes.html",
+      "Year-2/2b-Game-Theory/matching-pennies.html"
     ],
     "Year-2/2b-Game-Theory/nash-existence-theorem.html": [
       "Year-2/2b-Game-Theory/indifference-principle-for-mixed-strategies.html",
       "Year-2/2b-Game-Theory/cournot-duopoly.html",
       "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
-      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html"
+      "Year-2/2b-Game-Theory/bayesian-nash-equilibrium.html",
+      "Year-2/2b-Game-Theory/matching-pennies.html"
     ],
     "Year-2/2b-Game-Theory/normal-form-game.html": [
       "Year-2/2b-Game-Theory/best-response.html",
@@ -17392,25 +17780,36 @@
       "Year-2/2b-Game-Theory/grim-trigger-strategy.html",
       "Year-2/2b-Game-Theory/trigger-strategy.html",
       "Year-2/2b-Game-Theory/folk-theorem.html",
-      "Year-2/2b-Game-Theory/backward-induction.html"
+      "Year-2/2b-Game-Theory/backward-induction.html",
+      "Year-2/2b-Game-Theory/equilibrium-path.html"
     ],
     "Year-2/2b-Game-Theory/pareto-efficiency.html": [
       "Year-2/2b-Game-Theory/nash-equilibrium.html",
       "Year-2/2b-Game-Theory/strictly-dominant-strategy.html",
       "Year-2/2b-Game-Theory/cournot-duopoly.html",
-      "Year-2/2b-Game-Theory/folk-theorem.html"
+      "Year-2/2b-Game-Theory/folk-theorem.html",
+      "Year-2/2b-Game-Theory/prisoners-dilemma.html"
     ],
     "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html": [
       "Year-2/2b-Game-Theory/signaling-game.html",
       "Year-2/2b-Game-Theory/separating-equilibrium.html",
       "Year-2/2b-Game-Theory/pooling-equilibrium.html",
-      "Year-2/2b-Game-Theory/forward-induction.html"
+      "Year-2/2b-Game-Theory/forward-induction.html",
+      "Year-2/2b-Game-Theory/equilibrium-path.html"
     ],
     "Year-2/2b-Game-Theory/pooling-equilibrium.html": [
       "Year-2/2b-Game-Theory/separating-equilibrium.html",
       "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html",
       "Year-2/2b-Game-Theory/forward-induction.html",
       "Year-2/2b-Game-Theory/adverse-selection.html"
+    ],
+    "Year-2/2b-Game-Theory/prisoners-dilemma.html": [
+      "Year-2/2b-Game-Theory/iterated-elimination-of-strictly-dominated-strategies.html",
+      "Year-2/2b-Game-Theory/static-game-of-complete-information.html",
+      "Year-2/2b-Game-Theory/battle-of-the-sexes.html",
+      "Year-2/2b-Game-Theory/chicken-game.html",
+      "Year-2/2b-Game-Theory/repeated-game.html",
+      "Year-2/2b-Game-Theory/grim-trigger-strategy.html"
     ],
     "Year-2/2b-Game-Theory/private-value-auction.html": [
       "Year-2/2b-Game-Theory/first-price-auction.html",
@@ -17434,7 +17833,8 @@
       "Year-2/2b-Game-Theory/trigger-strategy.html",
       "Year-2/2b-Game-Theory/grim-trigger-strategy.html",
       "Year-2/2b-Game-Theory/folk-theorem.html",
-      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html"
+      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
+      "Year-2/2b-Game-Theory/prisoners-dilemma.html"
     ],
     "Year-2/2b-Game-Theory/revenue-equivalence-theorem.html": [
       "Year-2/2b-Game-Theory/english-auction.html",
@@ -17459,7 +17859,8 @@
       "Year-2/2b-Game-Theory/backward-induction.html",
       "Year-2/2b-Game-Theory/system-of-beliefs.html",
       "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html",
-      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html"
+      "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
+      "Year-2/2b-Game-Theory/equilibrium-path.html"
     ],
     "Year-2/2b-Game-Theory/signaling-game.html": [
       "Year-2/2b-Game-Theory/separating-equilibrium.html",
@@ -17477,26 +17878,30 @@
       "Year-2/2b-Game-Theory/repeated-game.html",
       "Year-2/2b-Game-Theory/multistage-game.html",
       "Year-2/2b-Game-Theory/folk-theorem.html",
-      "Year-2/2b-Game-Theory/grim-trigger-strategy.html"
+      "Year-2/2b-Game-Theory/grim-trigger-strategy.html",
+      "Year-2/2b-Game-Theory/prisoners-dilemma.html"
     ],
     "Year-2/2b-Game-Theory/static-game-of-complete-information.html": [
       "Year-2/2b-Game-Theory/normal-form-game.html",
       "Year-2/2b-Game-Theory/nash-equilibrium.html",
       "Year-2/2b-Game-Theory/extensive-form-game.html",
-      "Year-2/2b-Game-Theory/bayesian-game.html"
+      "Year-2/2b-Game-Theory/bayesian-game.html",
+      "Year-2/2b-Game-Theory/prisoners-dilemma.html"
     ],
     "Year-2/2b-Game-Theory/strategy-in-an-extensive-form-game.html": [
       "Year-2/2b-Game-Theory/mixed-strategy.html",
       "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
       "Year-2/2b-Game-Theory/backward-induction.html",
       "Year-2/2b-Game-Theory/history.html",
-      "Year-2/2b-Game-Theory/grim-trigger-strategy.html"
+      "Year-2/2b-Game-Theory/grim-trigger-strategy.html",
+      "Year-2/2b-Game-Theory/equilibrium-path.html"
     ],
     "Year-2/2b-Game-Theory/strictly-dominant-strategy.html": [
       "Year-2/2b-Game-Theory/nash-equilibrium.html",
       "Year-2/2b-Game-Theory/pareto-efficiency.html",
       "Year-2/2b-Game-Theory/weakly-dominant-strategy.html",
-      "Year-2/2b-Game-Theory/iterated-elimination-of-strictly-dominated-strategies.html"
+      "Year-2/2b-Game-Theory/iterated-elimination-of-strictly-dominated-strategies.html",
+      "Year-2/2b-Game-Theory/prisoners-dilemma.html"
     ],
     "Year-2/2b-Game-Theory/strictly-dominated-strategy.html": [
       "Year-2/2b-Game-Theory/strictly-dominant-strategy.html",
@@ -17509,19 +17914,22 @@
       "Year-2/2b-Game-Theory/sequential-rationality.html",
       "Year-2/2b-Game-Theory/forward-induction.html",
       "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
-      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html"
+      "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html",
+      "Year-2/2b-Game-Theory/equilibrium-path.html"
     ],
     "Year-2/2b-Game-Theory/subgame.html": [
       "Year-2/2b-Game-Theory/subgame-perfect-nash-equilibrium.html",
       "Year-2/2b-Game-Theory/backward-induction.html",
       "Year-2/2b-Game-Theory/one-stage-deviation-principle.html",
-      "Year-2/2b-Game-Theory/repeated-game.html"
+      "Year-2/2b-Game-Theory/repeated-game.html",
+      "Year-2/2b-Game-Theory/equilibrium-path.html"
     ],
     "Year-2/2b-Game-Theory/system-of-beliefs.html": [
       "Year-2/2b-Game-Theory/bayes-rule-for-beliefs.html",
       "Year-2/2b-Game-Theory/perfect-bayesian-equilibrium.html",
       "Year-2/2b-Game-Theory/sequential-rationality.html",
-      "Year-2/2b-Game-Theory/signaling-game.html"
+      "Year-2/2b-Game-Theory/signaling-game.html",
+      "Year-2/2b-Game-Theory/equilibrium-path.html"
     ],
     "Year-2/2b-Game-Theory/trigger-strategy.html": [
       "Year-2/2b-Game-Theory/grim-trigger-strategy.html",
