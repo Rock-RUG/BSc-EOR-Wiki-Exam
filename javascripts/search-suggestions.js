@@ -339,6 +339,25 @@ function ensureStyles(){if(STATE.styleReady&&document.getElementById("mk-custom-
         color: var(--md-accent-fg-color, #00c853);
       }
 
+      .mk-search-suggest__suggest {
+        appearance: none;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background: none;
+        font: inherit;
+        font-weight: 700;
+        color: var(--md-typeset-a-color, var(--md-accent-fg-color));
+        text-decoration: underline;
+        text-underline-offset: .16em;
+        cursor: pointer;
+      }
+      .mk-search-suggest__suggest:focus-visible {
+        outline: 2px solid var(--md-typeset-a-color, var(--md-accent-fg-color));
+        outline-offset: 2px;
+        border-radius: .15rem;
+      }
+
       .mk-search-suggest__empty,
       .mk-search-suggest__loading {
         padding: 1rem 1.1rem 1.05rem;
@@ -763,6 +782,7 @@ function renderUncoveredNoticeHtml(topic,count){if(!topic)return"";const courses
     `;}
 function uncoveredEmptyHtml(topic){const courses=topic?courseLinksHtml(topic.courses):"";const years=yearLinksHtml();return`<div class="mk-search-suggest__empty">No page mentions it yet.
       <span class="mk-search-suggest__empty-help">${courses ? `See the course pages: ${courses}` : years ? `Browse the courses: ${years}` : ""}</span></div>`;}
+function suggestButtonHtml(text){const t=escapeHtml(String(text||"").trim());return`<button type="button" class="mk-search-suggest__notice-query mk-search-suggest__suggest" data-mk-suggest="${t}">${t}</button>`;}
 function renderSeeAllHtml(rawQuery,total){const href=finderUrlFor(rawQuery);if(!href)return"";return`<a class="mk-search-suggest__all" href="${escapeHtml(href)}" data-mk-search-all="1">See all ${total} results in Concept Finder</a>`;}
 function renderRowHtml(hit,q){const d=hit.doc||{};const href=toAbsoluteUrl(d.location);const displayQuery=hit.multilingualName?"":q;const titleHtml=renderTitleHtml(d,displayQuery);const metaHtml=renderMetaHtml(d,displayQuery);const detailHtml=hit.multilingualName?`<div class="mk-search-suggest__detail"><span class="mk-search-suggest__detail-label">Name match:</span> ${escapeHtml(hit.multilingualName)}</div>`:renderDetailHtml(d,q);return`<a class="mk-search-suggest__item" href="${escapeHtml(href)}" role="option" aria-selected="false" data-index="${hit.__i || 0}">
           <div class="mk-search-suggest__head">
@@ -805,10 +825,12 @@ function renderPartialNoticeHtml(rawQuery){return`<div class="mk-search-suggest_
         <span class="mk-search-suggest__notice-term"><strong class="mk-search-suggest__notice-query">${escapeHtml(String(rawQuery || "").trim())}</strong>.</span>
         <span class="mk-search-suggest__notice-label">Pages that match some of the words:</span>
       </div>`;}
-async function rankForQuery(rawQuery,docs,isCurrent){const current=()=>typeof isCurrent!=="function"||isCurrent();const pages=docs||[];const multilingualLookup=await getMultilingualLookup();if(!current())return null;const multilingual=multilingualLookup&&multilingualLookup.search(rawQuery,pages);if(multilingual){const nameHits=Array.isArray(multilingual.hits)?multilingual.hits.length:0;const noticeHtml=`<div class="mk-search-suggest__notice" role="status" aria-live="polite">${multilingual.label
-        ? `<span class="mk-search-suggest__notice-label">Did you mean?</span> <strong class="mk-search-suggest__notice-query">${escapeHtml(multilingual.label)}</strong>`
+async function rankForQuery(rawQuery,docs,isCurrent){const current=()=>typeof isCurrent!=="function"||isCurrent();const pages=docs||[];const multilingualLookup=await getMultilingualLookup();if(!current())return null;const multilingual=multilingualLookup&&multilingualLookup.search(rawQuery,pages);if(multilingual){const nameHits=Array.isArray(multilingual.hits)?multilingual.hits.length:0;const nameCount=`<span class="mk-search-suggest__notice-label">${nameHits === 1 ? "1 concept name matches" : `${nameHits} concept names match`}</span>`;const noticeHtml=`<div class="mk-search-suggest__notice" role="status" aria-live="polite">${multilingual.label
+        ? `<span class="mk-search-suggest__notice-label">Did you mean?</span> ${suggestButtonHtml(multilingual.label)}`
+        : multilingual.term && nameHits
+          ? `<span class="mk-search-suggest__notice-label">Did you mean?</span> ${suggestButtonHtml(multilingual.term)} <span class="mk-search-suggest__notice-label">·</span> ${nameCount}`
         : nameHits
-          ? `<span class="mk-search-suggest__notice-label">${nameHits===1?"1 concept name matches":`${nameHits} concept names match`}</span> <strong class="mk-search-suggest__notice-query">${escapeHtml(String(rawQuery||"").trim())}</strong>`
+          ? `${nameCount} <strong class="mk-search-suggest__notice-query">${escapeHtml(String(rawQuery||"").trim())}</strong>`
           : '<span class="mk-search-suggest__notice-label">No matching concept name.</span>'}
         <span class="mk-search-suggest__notice-label">Multilingual search matches titles and aliases only.</span></div>`;return{...multilingual,effectiveQuery:rawQuery,noticeHtml,uncovered:null};}
 const nl=getNlCore();const notation=notationQueryFor(rawQuery);if(notation){const notationHits=getSortedHits(notation,pages);if(notationHits.length){return{effectiveQuery:notation,hits:notationHits,noticeHtml:renderNotationNoticeHtml(rawQuery,notation),uncovered:null,label:notation};}}
@@ -821,12 +843,12 @@ if(natural&&natural.hits.length){effectiveHits=natural.hits;effectiveQuery=natur
 if(!effectiveHits.length){const correction=await getCorrectedQuery(rawQuery,pages);if(!current())return null;if(correction&&correction.suggested){const correctedHits=getSortedHits(correction.suggested,pages);if(correctedHits.length){effectiveQuery=correction.suggested;effectiveHits=correctedHits;noticeHtml=renderCorrectionNoticeHtml(rawQuery,correction.suggested);label=correction.suggested;}}}
 if(!effectiveHits.length){const partial=partialWordHits(rawQuery,pages);if(partial.length){effectiveHits=partial;noticeHtml=renderPartialNoticeHtml(rawQuery);}}
 return{effectiveQuery,hits:effectiveHits,noticeHtml,uncovered:null,label};}
-function rankedHandoff(rawQuery,ranked){const hits=ranked&&Array.isArray(ranked.hits)?ranked.hits:[];return{query:String(rawQuery||"").trim(),locations:hits.map((hit)=>String((hit&&hit.doc&&hit.doc.location)||"")).filter(Boolean),label:ranked&&ranked.label?String(ranked.label):"",nameOnly:!!(ranked&&ranked.nameOnly),uncovered:ranked&&ranked.uncovered?{key:ranked.uncovered.key,name:ranked.uncovered.name,courses:Array.isArray(ranked.uncovered.courses)?ranked.uncovered.courses:[]}:null};}
+function rankedHandoff(rawQuery,ranked){const hits=ranked&&Array.isArray(ranked.hits)?ranked.hits:[];return{query:String(rawQuery||"").trim(),locations:hits.map((hit)=>String((hit&&hit.doc&&hit.doc.location)||"")).filter(Boolean),label:ranked&&(ranked.label||ranked.term)?String(ranked.label||ranked.term):"",nameOnly:!!(ranked&&ranked.nameOnly),uncovered:ranked&&ranked.uncovered?{key:ranked.uncovered.key,name:ranked.uncovered.name,courses:Array.isArray(ranked.uncovered.courses)?ranked.uncovered.courses:[]}:null};}
 async function updateResultsNow(input){const i=input||getActiveInput();if(!i||i.__mkSearchComposing||i.isConnected===false)return;const rawQuery=String(i.value||"").trim();const seq=++STATE.renderSeq;if(rawQuery){hideSearchHistoryDropdowns(i,true);forceRevealSearchOutput(i);}
 const box=ensureCustomContainer(i);if(!box)return;if(!rawQuery){clearCustomResults(i);return;}
 box.hidden=false;if(!box.querySelector(".mk-search-suggest__panel")){box.innerHTML='<div class="mk-search-suggest__panel"><div class="mk-search-suggest__loading">Loading…</div></div>';}
 const docs=await ensureDocs().catch(()=>[]);if(seq!==STATE.renderSeq)return;const ranked=await rankForQuery(rawQuery,docs||[],()=>seq===STATE.renderSeq);if(!ranked||seq!==STATE.renderSeq)return;STATE.lastRanked=rankedHandoff(rawQuery,ranked);await renderCustomResults(i,ranked.hits,ranked.effectiveQuery,seq,{rawQuery,noticeHtml:ranked.noticeHtml,uncovered:ranked.uncovered,nameOnly:ranked.nameOnly}).catch(()=>{if(seq!==STATE.renderSeq)return;box.innerHTML='<div class="mk-search-suggest__panel"><div class="mk-search-suggest__empty">No matching pages</div></div>';});}
-window.__mkSearchSuggestions=Object.assign(window.__mkSearchSuggestions||{},{handoffResults(input){const q=String((input&&input.value)||"").trim();const last=STATE.lastRanked;return q&&last&&last.query===q?last:null;},async matchMultilingualNames(rawQuery){const q=String(rawQuery||"").trim();if(!q)return null;const docs=await ensureDocs().catch(()=>[]);const lookup=await getMultilingualLookup();const result=lookup&&lookup.search(q,docs||[]);return result?{query:q,nameOnly:true,label:result.label,locations:result.hits.map(hit=>hit.doc.location)}:null;},async rankQuery(rawQuery){const q=String(rawQuery||"").trim();if(!q)return null;if(STATE.lastRanked&&STATE.lastRanked.query===q)return STATE.lastRanked;const docs=await ensureDocs().catch(()=>[]);const ranked=await rankForQuery(q,docs||[]);return ranked?rankedHandoff(q,ranked):null;},finderUrlFor});function scheduleUpdate(input){const i=input||getActiveInput();if(i&&i.__mkSearchComposing)return;if(i&&!String(i.value||"").trim()){clearCustomResults(i);return;}
+window.__mkSearchSuggestions=Object.assign(window.__mkSearchSuggestions||{},{handoffResults(input){const q=String((input&&input.value)||"").trim();const last=STATE.lastRanked;return q&&last&&last.query===q?last:null;},async matchMultilingualNames(rawQuery){const q=String(rawQuery||"").trim();if(!q)return null;const docs=await ensureDocs().catch(()=>[]);const lookup=await getMultilingualLookup();const result=lookup&&lookup.search(q,docs||[]);return result?{query:q,nameOnly:true,label:result.label||result.term||"",locations:result.hits.map(hit=>hit.doc.location)}:null;},async rankQuery(rawQuery){const q=String(rawQuery||"").trim();if(!q)return null;if(STATE.lastRanked&&STATE.lastRanked.query===q)return STATE.lastRanked;const docs=await ensureDocs().catch(()=>[]);const ranked=await rankForQuery(q,docs||[]);return ranked?rankedHandoff(q,ranked):null;},finderUrlFor});function scheduleUpdate(input){const i=input||getActiveInput();if(i&&i.__mkSearchComposing)return;if(i&&!String(i.value||"").trim()){clearCustomResults(i);return;}
 ++STATE.renderSeq;if(i&&String(i.value||"").trim()){hideSearchHistoryDropdowns(i,true);forceRevealSearchOutput(i);}
 window.clearTimeout(STATE.renderTimer);const typed=i?String(i.value||"").trim().length:0;const delay=typed<=2?110:typed<=4?70:45;STATE.renderTimer=window.setTimeout(()=>{updateResultsNow(i||input).catch(()=>{});},delay);}
 function suggestionTabStops(input){const box=ensureCustomContainer(input);if(!box||box.hidden)return[];return Array.from(box.querySelectorAll("a[href], button:not([disabled])")).filter((el)=>{try{const r=el.getBoundingClientRect();return r.width>0&&r.height>0;}catch(_){return false;}});}
@@ -851,7 +873,9 @@ scheduleUpdate(t);},true);document.addEventListener("keydown",(e)=>{const target
 if(!(e.key==="Tab"||e.key==="Escape"))return;const root=box.closest(".md-search");const input=root?root.querySelector('input[data-md-component="search-query"], input.md-search__input'):getActiveInput();if(!input||!isHeaderSearchInput(input))return;if(e.key==="Escape"){stopKey(e);closeSearchUi(input);focusSearchOpener(input);return;}
 const stops=suggestionTabStops(input);const idx=stops.indexOf(target);if(idx<0)return;stopKey(e);if(e.shiftKey){if(idx>0)stops[idx-1].focus();else input.focus();return;}
 if(idx<stops.length-1){stops[idx+1].focus();return;}
-closeSearchUi(input);if(!focusAfterSearch(input))focusSearchOpener(input);},true);document.addEventListener("click",(e)=>{if(Date.now()<Number(window.__mkSearchSuggestClickBlockUntil||0))return;const finderLink=e.target&&e.target.closest?e.target.closest(".mk-search-suggest__all, .mk-search-suggest__finder-link"):null;if(finderLink){const input=getActiveInput();const enter=window.__mkSearchEnter;let handled=false;try{handled=!!(enter&&typeof enter.openFinder==="function"&&input&&enter.openFinder(input));}catch(_){handled=false;}
+closeSearchUi(input);if(!focusAfterSearch(input))focusSearchOpener(input);},true);document.addEventListener("click",(e)=>{if(Date.now()<Number(window.__mkSearchSuggestClickBlockUntil||0))return;const suggest=e.target&&e.target.closest?e.target.closest(".mk-search-suggest__suggest"):null;if(suggest){e.preventDefault();e.stopPropagation();if(e.stopImmediatePropagation)e.stopImmediatePropagation();const input=getActiveInput();const next=String(suggest.getAttribute("data-mk-suggest")||"").trim();if(!input||!next)return;input.value=next;try{input.focus({preventScroll:true});}catch(_){}
+input.dispatchEvent(new Event("input",{bubbles:true}));return;}
+const finderLink=e.target&&e.target.closest?e.target.closest(".mk-search-suggest__all, .mk-search-suggest__finder-link"):null;if(finderLink){const input=getActiveInput();const enter=window.__mkSearchEnter;let handled=false;try{handled=!!(enter&&typeof enter.openFinder==="function"&&input&&enter.openFinder(input));}catch(_){handled=false;}
 if(handled){e.preventDefault();e.stopPropagation();if(e.stopImmediatePropagation)e.stopImmediatePropagation();}
 return;}
 const link=e.target&&e.target.closest?e.target.closest(".mk-search-suggest__item"):null;if(!link)return;if(Date.now()<Number(window.__mkSearchSuggestClickBlockUntil||0)){e.preventDefault();e.stopPropagation();if(e.stopImmediatePropagation)e.stopImmediatePropagation();return;}
