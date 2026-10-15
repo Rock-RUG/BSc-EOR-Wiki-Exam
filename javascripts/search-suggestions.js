@@ -708,6 +708,38 @@ function ensureStyles(){if(STATE.styleReady&&document.getElementById("mk-custom-
           max-width: none;
         }
       }
+
+      /* The title and course share a row only when both 13rem columns fit;
+         Material's root font grows with the screen (20-24px), so a wide
+         screen can still give one column. The course line then starts at
+         the left like the title instead of hanging right. */
+      .mk-search-suggest__head { container-type: inline-size; }
+      @container (width < 26.9rem) {
+        .mk-search-suggest__meta {
+          justify-self: start;
+          text-align: left;
+          max-width: none;
+        }
+      }
+
+      /* Desktop: Material caps the results at 75vh. A tall notice (a
+         multilingual match) plus the list and "See all" ran past that cap and
+         hid the "See all" row, so the list shrinks to leave room for both. */
+      @media screen and (min-width: 60em) and (hover: hover) and (pointer: fine) {
+        .mk-search-suggest__panel {
+          display: flex;
+          flex-direction: column;
+          max-height: 75vh;
+        }
+        .mk-search-suggest__panel > .mk-search-suggest__notice,
+        .mk-search-suggest__panel > .mk-search-suggest__all {
+          flex: none;
+        }
+        .mk-search-suggest__panel > .mk-search-suggest__scroll {
+          flex: 0 1 auto;
+          min-height: 0;
+        }
+      }
     `;document.head.appendChild(style);STATE.styleReady=true;}
 function getActiveInput(){const active=document.activeElement;if(isHeaderSearchInput(active))return active;const inputs=Array.from(document.querySelectorAll('.md-header '+INPUT_SELECTOR)).filter(isHeaderSearchInput);if(!inputs.length)return null;const activeSearch=document.querySelector('.md-header .md-search.md-search--active')||document.querySelector('.md-header .md-search');if(activeSearch){const inActive=inputs.find((i)=>activeSearch.contains(i)&&i.offsetParent!==null);if(inActive)return inActive;}
 return inputs.find((i)=>i.offsetParent!==null)||inputs[0];}
