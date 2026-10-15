@@ -9,7 +9,7 @@ function isTouchLikeViewport(){try{return!!(window.matchMedia&&window.matchMedia
 function siteRootUrl(){const script=document.querySelector('script[src*="assets/javascripts/bundle"]');const link=document.querySelector('link[href*="assets/stylesheets/main"]')||document.querySelector('link[href*="assets/stylesheets"]')||document.querySelector('script[src*="assets/javascripts"]');const attr=script?script.getAttribute("src"):(link?(link.getAttribute("href")||link.getAttribute("src")):null);const assetUrl=attr?new URL(attr,document.baseURI):new URL(document.baseURI);const pathname=assetUrl.pathname||"/";const idx=pathname.indexOf("/assets/");if(idx>=0){return assetUrl.origin+pathname.slice(0,idx+1);}
 const base=new URL(document.baseURI);if(!base.pathname.endsWith("/"))base.pathname+="/";return base.origin+base.pathname;}
 function splitSegments(rel){return String(rel||"").split("/").filter(Boolean);}
-function cleanTitle(text){return String(text||"").replace(/\s*¶\s*$/u,"").replace(/\u00B6/g,"").replace(/\s+/g," ").trim();}
+function cleanTitle(text){return String(text||"").replace(/\s*¶\s*$/u,"").replace(/\u00B6/g,"").replace(/\s*[\u203A\u00BB]\s*$/u,"").replace(/\s+/g," ").trim();}
 function unitNounFromType(type){return String(type||"lecture").toLowerCase()==="week"?"Week":"Lecture";}
 function unitLabel(type,number){return Number(number)>0?unitNounFromType(type)+" "+Number(number):"Other concepts";}
 function unitGroupPrefix(type){return String(type||"lecture").toLowerCase()==="week"?"W":"L";}
