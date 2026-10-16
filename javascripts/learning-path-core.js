@@ -396,7 +396,7 @@ return null;}
 function lpGpsWeightedChoice(candidates){const arr=Array.isArray(candidates)?candidates.filter(Boolean):[];if(!arr.length)return null;let total=0;for(const item of arr)total+=Math.max(0.001,Number(item.weight)||0.001);let pick=Math.random()*total;for(const item of arr){pick-=Math.max(0.001,Number(item.weight)||0.001);if(pick<=0)return item;}
 return arr[arr.length-1]||null;}
 function lpGpsEstimateLength(stepCount){const n=Math.max(0,Number(stepCount)||0);if(n<=1)return"Start here";if(n<=3)return"Short";if(n<=6)return"Medium";return"Long";}
-function lpGpsNeedsWork(meta){return!meta||meta.m==null||meta.m===0||meta.m===1;}
+function lpGpsNeedsWork(meta){return!meta||meta.weak!==false;}
 function lpGpsModeLabel(){return"guided study";}
 function lpGpsModeCopy(){return"Follow the line from top to bottom. Each step prepares the one below it.";}
 function lpMapButtonSvg(){return`

@@ -11948,6 +11948,43 @@
       }
     },
     {
+      "title": "Mathematical Induction",
+      "names": {
+        "zh": [
+          "数学归纳法",
+          "數學歸納法"
+        ],
+        "nl": [
+          "volledige inductie",
+          "wiskundige inductie"
+        ],
+        "de": [
+          "vollständige Induktion",
+          "mathematische Induktion"
+        ],
+        "fr": [
+          "raisonnement par récurrence",
+          "récurrence"
+        ],
+        "es": [
+          "inducción matemática",
+          "principio de inducción"
+        ],
+        "it": [
+          "induzione matematica",
+          "principio di induzione"
+        ],
+        "pl": [
+          "indukcja matematyczna",
+          "zasada indukcji matematycznej"
+        ],
+        "ro": [
+          "inducție matematică",
+          "metoda inducției matematice"
+        ]
+      }
+    },
+    {
       "title": "Orthonormal Basis",
       "names": {
         "zh": [
