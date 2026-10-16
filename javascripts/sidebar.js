@@ -183,6 +183,26 @@ html[data-md-color-scheme="slate"] #current-course-bar{
   gap:.42rem;
   min-width:0;
 }
+#current-course-bar .ccb-practice{
+  position:relative;
+  z-index:1;
+  display:flex;
+  align-items:center;
+  gap:.3rem;
+  width:max-content;
+  max-width:100%;
+  margin:.32rem 0 0;
+  padding:.1rem 0;
+  color:var(--md-typeset-a-color, var(--md-primary-fg-color));
+  font-size:.66rem;
+  font-weight:650;
+  line-height:1.25;
+  text-decoration:none;
+}
+#current-course-bar .ccb-practice[aria-current="page"]{
+  text-decoration:underline;
+  text-underline-offset:.18em;
+}
 #current-course-bar .ccb-titlelink{
   flex:1 1 auto;
   min-width:0;
@@ -1906,7 +1926,11 @@ function syncCurrentCoursePicker(bar,scope,fallbackTitle){if(!(bar instanceof HT
 function applyCurrentCourseBar(scrollWrap,scope){const wrap=controlsHost(scrollWrap instanceof HTMLElement?scrollWrap:getScrollWrap());if(!(wrap instanceof HTMLElement))return null;const effectiveScope=scope&&typeof scope==='object'?scope:inferScope();const existing=wrap.querySelector('#current-course-bar');const show=!!(effectiveScope&&(effectiveScope.kind==='year'||effectiveScope.kind==='course'));if(!show){if(existing instanceof HTMLElement){existing.style.display='none';existing.dataset.hasToggle='0';}
 return null;}
 const bar=ensureCurrentCourseBarNode(wrap);if(!(bar instanceof HTMLElement))return null;const scopeNode=currentBarScopeNode(effectiveScope);const titleEl=scopeNode instanceof HTMLElement?(directNavLink(scopeNode)||scopeNode.querySelector('.md-nav__link')):null;const titleText=effectiveScope.kind==='year'?'Select a course':cleanTitle(titleEl?titleEl.textContent:'');if(!titleText){bar.style.display='none';return bar;}
-const titleSpan=bar.querySelector('.ccb-title');if(titleSpan instanceof HTMLElement)titleSpan.textContent=titleText;bar.style.display='';bar.style.top='0px';bar.dataset.scopeKind=effectiveScope.kind||'';bar.dataset.yearSeg=effectiveScope.yearSeg||'';bar.dataset.courseSeg=effectiveScope.courseSeg||'';bar.dataset.hasToggle='0';syncCurrentCoursePicker(bar,effectiveScope,titleText);return bar;}
+const titleSpan=bar.querySelector('.ccb-title');if(titleSpan instanceof HTMLElement)titleSpan.textContent=titleText;bar.style.display='';bar.style.top='0px';bar.dataset.scopeKind=effectiveScope.kind||'';bar.dataset.yearSeg=effectiveScope.yearSeg||'';bar.dataset.courseSeg=effectiveScope.courseSeg||'';bar.dataset.hasToggle='0';syncCurrentCoursePicker(bar,effectiveScope,titleText);syncCoursePracticeLink(bar,effectiveScope);return bar;}
+function syncCoursePracticeLink(bar,scope){const key=scope&&scope.kind==='course'&&scope.yearSeg&&scope.courseSeg?scope.yearSeg+'/'+scope.courseSeg:'';const drop=function(){const old=bar.querySelector('.ccb-practice');if(old){old.remove();emitCurrentCourseBarLayoutChanged();}};if(!key||window.__mkExamMode){drop();return;}
+bar.dataset.practiceFor=key;metaProvider.loadSidebarMeta().then(function(meta){if(bar.dataset.practiceFor!==key)return;const target=meta&&meta.practice&&meta.practice[key];if(typeof target!=='string'||!target){drop();return;}
+const href=new URL(target,siteRootUrl()).toString();let link=bar.querySelector('.ccb-practice');if(link&&link.href===href)return;if(!link){link=document.createElement('a');link.className='ccb-practice';link.innerHTML='<span class="ccb-practice-label">Worked exam problems</span><span class="ccb-practice-arrow" aria-hidden="true">→</span>';bar.appendChild(link);}
+link.href=href;if(sameLogicalRel(currentRelPath(),target))link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');emitCurrentCourseBarLayoutChanged();},function(){});}
 function ensureControl(scrollWrap,scopeKind){const host=controlsHost(scrollWrap);if(!host)return null;let node=host.querySelector("#"+IDS.control);if(!node){node=document.createElement("div");node.id=IDS.control;node.className=CLS.dock;node.setAttribute(ATTR.injected,"1");node.innerHTML='<div class="'+CLS.dockBox+'">'+'<span class="'+CLS.dockLabel+'">Sort by</span>'+'<button type="button" class="'+CLS.dockButton+'"></button>'+'</div>';const bar=host.querySelector("#current-course-bar");if(bar&&bar.parentElement===host)bar.insertAdjacentElement("afterend",node);else host.prepend(node);}else{const bar=host.querySelector("#current-course-bar");if(bar&&bar.parentElement===host&&node.previousElementSibling!==bar)bar.insertAdjacentElement("afterend",node);else if(node.parentElement!==host)host.prepend(node);}
 const btn=node.querySelector("."+CLS.dockButton);if(btn&&!btn.dataset.bound){btn.dataset.bound="1";btn.addEventListener("click",function(event){event.preventDefault();event.stopPropagation();const scope=inferScope();if(!scope.kind)return;const cur=readMode(scope.kind);const next=nextMode(scope.kind,cur);writeMode(scope.kind,next);scheduleRefresh("mode-toggle");});}
 if(scopeKind){const mode=readMode(scopeKind);updateControlUi(node,scopeKind,mode);node.style.display="";}

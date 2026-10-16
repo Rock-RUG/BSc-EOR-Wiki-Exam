@@ -39,19 +39,12 @@ return Array.from(courses.values());}
 function pageMatchesCourse(page,token,scope,catalogue=[]){const tags=Array.isArray(page&&page.tags)?page.tags.map((x)=>String(x||'').trim().toLowerCase()):[];const path=normLoc(page&&page.location);const home=path.split('/').slice(0,2).join('/');const target=scope&&scope.yearSeg&&scope.courseSeg?scope.yearSeg+'/'+scope.courseSeg:'';if(!target)return false;const courses=catalogue.some(course=>course.id===home)?catalogue:catalogue.concat([{id:home,token:''}]);const shared=window.MkMapTeachingUnits;if(shared&&typeof shared.primaryCourse==='function')return shared.primaryCourse(tags,courses,home).courseId===target;return home===target;}
 function isCoreCurriculumPage(page){const tags=Array.isArray(page&&page.tags)?page.tags.map((value)=>String(value||'').trim().toLowerCase()):[];return!tags.includes('curriculum-enrichment')&&!tags.includes('curriculum-retired');}
 function absoluteHref(loc){try{return new URL(String(loc||'').replace(/^\/+/,''),getSiteRootUrl()).toString();}catch(_){return String(loc||'');}}
-function metricValueCard(label,value,helper){return`
-      <div class="cmm-metric">
-        <div class="cmm-metric__label">${escapeHtml(label)}</div>
-        <div class="cmm-metric__value">${escapeHtml(value)}</div>
-        <div class="cmm-metric__helper">${escapeHtml(helper)}</div>
-      </div>
-    `;}
-function buildCourseDiagnosticHead(headline){const h=headline||null;const known=!!(h&&h.avg!=null);const help=h?h.help:'';return`
+function buildCourseDiagnosticHead(headline){const h=headline||null;const known=!!(h&&h.avg!=null);const help=h?h.help:'';const pct=known?clampPct(h.avg):0;return`
       <div class="cmm-head">
         <div class="cmm-head__row">
           ${h ? `
             <div class="cmm-headreadiness-wrap">
-              <button type="button" class="cmm-headreadiness cmm-headreadiness--orb${known?'':' is-unrated'}" data-cmm-course-readiness-info="1" style="${known?escapeHtml(readinessToneStyle(h.avg)):''}" aria-label="${escapeHtml(help)}">
+              <button type="button" class="cmm-headreadiness cmm-headreadiness--orb cmm-ring${known?'':' is-unrated'}" data-cmm-course-readiness-info="1" style="${known?escapeHtml(readinessToneStyle(h.avg)):''}--cmm-pct:${pct}" aria-label="${escapeHtml(help)}">
                 <strong>${known?escapeHtml(String(h.avg)):'?'}</strong>
                 <span>${known?'Avg mastery':'Not known yet'}</span>
               </button>
@@ -62,7 +55,8 @@ function buildCourseDiagnosticHead(headline){const h=headline||null;const known=
             <div class="cmm-title" id="${PANEL_ID}-title">Course diagnostics</div>
             <div class="cmm-sub">${h ? escapeHtml(h.title) : 'Mastery comes from your ratings and AI-check answers; opening a page never counts. Not a course grade.'}</div>
             ${h && h.text ? `<div class="cmm-note">${escapeHtml(h.text)}${h.startLecture!=null?` <button type="button" class="cmm-filter" data-cmm-jump-lecture="${escapeHtml(String(h.startLecture))}">Open ${escapeHtml(h.startLabel)}</button>`:''}</div>` : ''}
-            ${h && h.loginHint ? '<div class="cmm-note">Log in to keep this evidence across your devices.</div>' : ''}
+            ${h && h.mix ? buildMixBar(h) : ''}
+            ${h && h.loginHint ? '<div class="cmm-note cmm-note--login">Log in to keep this evidence across your devices.</div>' : ''}
           </div>
         </div>
       </div>
@@ -70,8 +64,8 @@ function buildCourseDiagnosticHead(headline){const h=headline||null;const known=
 function daysSince(ts){const n=safeNum(ts);if(!n)return Infinity;return Math.max(0,(Date.now()-n)/(24*60*60*1000));}
 function conceptLink(loc,title){return`<a class="cmm-concept__title" href="${escapeHtml(absoluteHref(loc))}">${escapeHtml(title)}</a>`;}
 function plural(n,word){return`${n} ${word}${n === 1 ? '' : 's'}`;}
-function buildDiagnosis(summary,graph){const concepts=summary&&Array.isArray(summary.concepts)?summary.concepts:[];const totals=summary&&summary.totals||{};const cm=window.ConceptMastery;const inCourse=new Set(concepts.map((c)=>c.location));const prereqs=(loc)=>graph&&cm&&typeof cm.directPrereqsFromGraph==='function'?cm.directPrereqsFromGraph(graph,loc):[];const dependents=new Map();concepts.forEach((c)=>prereqs(c.location).forEach((p)=>{if(inCourse.has(p)&&p!==c.location)dependents.set(p,(dependents.get(p)||0)+1);}));const maxDeps=Math.max(1,...dependents.values());const entries=concepts.map((concept)=>{const s=concept.score||{};const deps=dependents.get(concept.location)||0;return{key:concept.location,concept,lectureNum:concept.lectureNum,score:s.hasEvidence?s.score:null,summary:s,deps,imp:deps/maxDeps};});const byConcept=new Map(entries.map((item)=>[item.key,item]));const lectureLabel=new Map((summary&&summary.lectures||[]).map((l)=>[l.lectureNum,l.label]));const depsText=(e)=>e.deps?`${plural(e.deps, 'concept')} here build on it`:'';const join=(parts)=>parts.filter(Boolean).join(' · ');const weak=entries.filter((e)=>e.score!=null&&e.score<GUIDE_WEAK_BELOW).sort((a,b)=>(1-b.score/100)*(0.5+0.5*b.imp)-(1-a.score/100)*(0.5+0.5*a.imp)).slice(0,GUIDE_LIST_LIMIT).map((e)=>{const c=e.summary.counts||{};const rec=e.concept.record;return{entry:e,html:conceptLink(e.key,e.concept.title),why:join([`Mastery ${e.score}`,c.quizAnswers?`AI checks: ${c.quizCorrect}/${c.quizAnswers} answers right`:'',isExplicitRating(rec)?`you rated it ${levelLabel(rec)}`:'',depsText(e)])};});const now=Date.now();const review=entries.filter((e)=>e.score!=null&&e.score>=GUIDE_REVIEW_MIN&&e.summary.lastEvidenceAt&&(now-e.summary.lastEvidenceAt)/86400000>=GUIDE_REVIEW_AFTER_DAYS).sort((a,b)=>(b.imp-a.imp)||(a.summary.lastEvidenceAt-b.summary.lastEvidenceAt)).slice(0,GUIDE_LIST_LIMIT).map((e)=>({entry:e,html:conceptLink(e.key,e.concept.title),why:join([`Last evidence ${Math.floor((now - e.summary.lastEvidenceAt) / 86400000)} days ago`,e.summary.freshScore!=null&&e.summary.freshScore>e.score?`mastery faded from ${e.summary.freshScore} to ${e.score}`:`mastery ${e.score}`])}));const unassessed=entries.filter((e)=>e.score==null);const start=unassessed.slice().sort((a,b)=>((a.lectureNum||1e9)-(b.lectureNum||1e9))||(b.imp-a.imp)).slice(0,GUIDE_LIST_LIMIT).map((e)=>({entry:e,html:conceptLink(e.key,e.concept.title),why:join([lectureLabel.get(e.lectureNum)||'',depsText(e),e.concept.record&&e.concept.record.visited?'opened, not assessed yet':''])}));let gaps=null;if(graph&&cm&&typeof cm.readinessFromGraph==='function'){const scoreFor=summary.scoreFor;gaps=entries.filter((e)=>(e.score!=null||(e.concept.record&&e.concept.record.visited))&&prereqs(e.key).length).map((e)=>({e,r:cm.readinessFromGraph(graph,e.key,{maxDepth:GUIDE_READINESS_DEPTH,masteryMap:summary.masteryMap,scoreFor})})).filter((x)=>x.r&&x.r.status==='ok'&&x.r.items.length&&x.r.score<GUIDE_GAP_BELOW).sort((a,b)=>(b.e.imp-a.e.imp)||(a.r.score-b.r.score)).slice(0,GUIDE_LIST_LIMIT).map(({e,r})=>{const low=r.items.slice().sort((a,b)=>b.weight*(1-b.value)-a.weight*(1-a.value)).slice(0,2);return{entry:e,html:conceptLink(e.key,e.concept.title),readiness:r.pct,why:`Prerequisite readiness ${r.pct}% · `+low.map((p)=>`${plainMathTitle(p.title)}: ${p.hasEvidence ? `mastery ${p.masteryScore}` : 'no evidence'}`).join(', '),next:low[0]?conceptLink(low[0].loc,low[0].title):''};});}
-const lectureDiagnostics=(summary&&summary.lectures||[]).map((lecture)=>{const risk=lectureRisk(lecture.coverage,lecture.meanScore);return{lecture,lectureNum:lecture.lectureNum,label:lecture.label,readinessAvg:lecture.meanScore,riskLabel:risk.label,tone:risk.tone};});const total=safeNum(totals.total),evidenced=safeNum(totals.evidenced);const coverage=total?evidenced/total:0;const firstLecture=(summary&&summary.lectures||[]).find((l)=>l&&l.total&&l.evidenced<l.total)||null;const known=totals.avgScore!=null&&coverage>=GUIDE_COVERAGE_MIN;const headline=total?{avg:known?totals.avgScore:null,title:known?`Average mastery ${totals.avgScore} over the ${evidenced} of ${total} concepts with evidence (evidence: ${totals.evidenceBand}).`:`Not known yet: ${evidenced} of ${total} concepts have evidence.`,text:known?'Concepts without evidence are not averaged; see the lists below for what to do next.':'Rate a few concepts or take an AI check to fill this in.',startLecture:known||!firstLecture?null:firstLecture.lectureNum,startLabel:firstLecture?firstLecture.label:'',help:'Each concept’s mastery (0–100) combines your self-ratings and AI-check answers, weighted by how reliable and how recent they are. Opening a page never counts. Not a course grade.',loginHint:!window.__mkExamMode&&/^\["guest"/.test(String(cmmMasteryContext()||'')),}:null;return{entries,byConcept,lectureDiagnostics,headline,coverage,courseReadinessAvg:known?totals.avgScore:null,guide:{weak,gaps,review,start,unassessedCount:unassessed.length},};}
+function buildDiagnosis(summary,graph){const concepts=summary&&Array.isArray(summary.concepts)?summary.concepts:[];const totals=summary&&summary.totals||{};const cm=window.ConceptMastery;const inCourse=new Set(concepts.map((c)=>c.location));const prereqs=(loc)=>graph&&cm&&typeof cm.directPrereqsFromGraph==='function'?cm.directPrereqsFromGraph(graph,loc):[];const dependents=new Map();concepts.forEach((c)=>prereqs(c.location).forEach((p)=>{if(inCourse.has(p)&&p!==c.location)dependents.set(p,(dependents.get(p)||0)+1);}));const maxDeps=Math.max(1,...dependents.values());const entries=concepts.map((concept)=>{const s=concept.score||{};const deps=dependents.get(concept.location)||0;return{key:concept.location,concept,lectureNum:concept.lectureNum,score:s.hasEvidence?s.score:null,summary:s,deps,imp:deps/maxDeps};});const byConcept=new Map(entries.map((item)=>[item.key,item]));const lectureLabel=new Map((summary&&summary.lectures||[]).map((l)=>[l.lectureNum,l.label]));const depsText=(e)=>e.deps?`${plural(e.deps, 'concept')} here build on it`:'';const depsTag=(e)=>e.deps?`${e.deps} build on it`:'';const join=(parts)=>parts.filter(Boolean).join(' · ');const weakAll=entries.filter((e)=>e.score!=null&&e.score<GUIDE_WEAK_BELOW);const weak=weakAll.sort((a,b)=>(1-b.score/100)*(0.5+0.5*b.imp)-(1-a.score/100)*(0.5+0.5*a.imp)).slice(0,GUIDE_LIST_LIMIT).map((e)=>{const c=e.summary.counts||{};const rec=e.concept.record;return{entry:e,html:conceptLink(e.key,e.concept.title),score:e.score,why:join([`Mastery ${e.score}`,c.quizAnswers?`AI checks: ${c.quizCorrect}/${c.quizAnswers} answers right`:'',isExplicitRating(rec)?`you rated it ${levelLabel(rec)}`:'',depsText(e)]),tags:[c.quizAnswers?`AI ${c.quizCorrect}/${c.quizAnswers} right`:'',isExplicitRating(rec)?`Rated ${levelLabel(rec)}`:'',depsTag(e)]};});const now=Date.now();const reviewAll=entries.filter((e)=>e.score!=null&&e.score>=GUIDE_REVIEW_MIN&&e.summary.lastEvidenceAt&&(now-e.summary.lastEvidenceAt)/86400000>=GUIDE_REVIEW_AFTER_DAYS);const review=reviewAll.sort((a,b)=>(b.imp-a.imp)||(a.summary.lastEvidenceAt-b.summary.lastEvidenceAt)).slice(0,GUIDE_LIST_LIMIT).map((e)=>{const days=Math.floor((now-e.summary.lastEvidenceAt)/86400000);const faded=e.summary.freshScore!=null&&e.summary.freshScore>e.score;return{entry:e,html:conceptLink(e.key,e.concept.title),score:e.score,why:join([`Last evidence ${days} days ago`,faded?`mastery faded from ${e.summary.freshScore} to ${e.score}`:`mastery ${e.score}`]),tags:[`${days} days ago`,faded?`was ${e.summary.freshScore}`:'']};});const unassessed=entries.filter((e)=>e.score==null);const start=unassessed.slice().sort((a,b)=>((a.lectureNum||1e9)-(b.lectureNum||1e9))||(b.imp-a.imp)).slice(0,GUIDE_LIST_LIMIT).map((e)=>({entry:e,html:conceptLink(e.key,e.concept.title),score:null,why:join([lectureLabel.get(e.lectureNum)||'',depsText(e),e.concept.record&&e.concept.record.visited?'opened, not assessed yet':'']),tags:[lectureLabel.get(e.lectureNum)||'',depsTag(e),e.concept.record&&e.concept.record.visited?'Opened':'']}));let gaps=null,gapCount=0;if(graph&&cm&&typeof cm.readinessFromGraph==='function'){const scoreFor=summary.scoreFor;gaps=entries.filter((e)=>(e.score!=null||(e.concept.record&&e.concept.record.visited))&&prereqs(e.key).length).map((e)=>({e,r:cm.readinessFromGraph(graph,e.key,{maxDepth:GUIDE_READINESS_DEPTH,masteryMap:summary.masteryMap,scoreFor})})).filter((x)=>x.r&&x.r.status==='ok'&&x.r.items.length&&x.r.score<GUIDE_GAP_BELOW);gapCount=gaps.length;gaps=gaps.sort((a,b)=>(b.e.imp-a.e.imp)||(a.r.score-b.r.score)).slice(0,GUIDE_LIST_LIMIT).map(({e,r})=>{const low=r.items.slice().sort((a,b)=>b.weight*(1-b.value)-a.weight*(1-a.value)).slice(0,2);return{entry:e,html:conceptLink(e.key,e.concept.title),readiness:r.pct,score:r.pct,pct:true,tags:[low.length?`${low.length === 1 ? 'Missing' : 'Low'}: ${low.map((p) => plainMathTitle(p.title)).join(', ')}`:''],why:`Prerequisite readiness ${r.pct}% · `+low.map((p)=>`${plainMathTitle(p.title)}: ${p.hasEvidence ? `mastery ${p.masteryScore}` : 'no evidence'}`).join(', '),next:low[0]?conceptLink(low[0].loc,low[0].title):''};});}
+const lectureDiagnostics=(summary&&summary.lectures||[]).map((lecture)=>{const risk=lectureRisk(lecture.coverage,lecture.meanScore);return{lecture,lectureNum:lecture.lectureNum,label:lecture.label,readinessAvg:lecture.meanScore,riskLabel:risk.label,tone:risk.tone};});const total=safeNum(totals.total),evidenced=safeNum(totals.evidenced);const coverage=total?evidenced/total:0;const firstLecture=(summary&&summary.lectures||[]).find((l)=>l&&l.total&&l.evidenced<l.total)||null;const known=totals.avgScore!=null&&coverage>=GUIDE_COVERAGE_MIN;const headline=total?{mix:tierMix(entries),total,evidenced,visited:safeNum(totals.visited),band:totals.evidenceBand,avg:known?totals.avgScore:null,title:known?`Average over the ${evidenced} concepts with evidence (evidence: ${totals.evidenceBand}).`:`Not known yet: ${evidenced} of ${total} concepts have evidence.`,text:known?'':'Rate a few concepts or take an AI check to fill this in.',startLecture:known||!firstLecture?null:firstLecture.lectureNum,startLabel:firstLecture?firstLecture.label:'',help:'Each concept’s mastery (0–100) combines your self-ratings and AI-check answers, weighted by how reliable and how recent they are. The average only uses concepts with evidence. Opening a page never counts. Not a course grade.',loginHint:!window.__mkExamMode&&/^\["guest"/.test(String(cmmMasteryContext()||'')),}:null;return{entries,byConcept,lectureDiagnostics,headline,coverage,courseReadinessAvg:known?totals.avgScore:null,guide:{weak,gaps,review,start,unassessedCount:unassessed.length,counts:{weak:weakAll.length,gaps:gapCount,review:reviewAll.length,start:unassessed.length}},};}
 function ensureSelectedConcept(summary,diagnosis){const curr=String(state.selectedConceptLoc||'');if(curr&&diagnosis.byConcept.has(curr))return diagnosis.byConcept.get(curr);state.selectedConceptLoc='';return null;}
 function shortRecencyLabel(ts){const n=safeNum(ts);if(!n)return'No activity';const d=daysSince(n);if(!Number.isFinite(d))return'No activity';if(d<1)return'Today';if(d<2)return'Yesterday';if(d<7)return`${Math.round(d)}d ago`;if(d<30)return`${Math.round(d / 7)}w ago`;return`${Math.round(d / 30)}mo ago`;}
 function levelShort(rec){if(!rec||(!rec.visited&&!isExplicitRating(rec)))return'•';if(!isExplicitRating(rec))return'V';if(rec.m===3)return'M';if(rec.m===2)return'C';if(rec.m===1)return'P';if(rec.m===0)return'U';return'•';}
@@ -108,7 +102,7 @@ function buildSelectedConceptCard(entry){if(!entry){return`
             <div class="cmm-focuscard__main">
               <div class="cmm-sidecard__kicker">Current focus</div>
               <div class="cmm-sidecard__title">No concept selected</div>
-              <div class="cmm-sidecard__sub">Select a tile to inspect mastery, evidence, AI checks and prerequisite readiness.</div>
+              <div class="cmm-sidecard__sub">Click a square in the map to see its mastery, evidence, AI checks and prerequisite readiness here.</div>
             </div>
           </div>
         </section>
@@ -194,33 +188,21 @@ function buildRecentChangeCard(diagnosis){const hist=diagnosis&&diagnosis.dailyH
         </div>
       </section>
     `;}
-function buildConceptStateHistogram(diagnosis){const items=diagnosis&&Array.isArray(diagnosis.entries)?diagnosis.entries:[];const cm=window.ConceptMastery;const buckets=[{key:'none',label:'No evidence',tone:null,count:0},{key:'weak',label:'Weak (<30)',tone:10,count:0},{key:'partial',label:'Partial (30–54)',tone:40,count:0},{key:'good',label:'Mostly there (55–74)',tone:65,count:0},{key:'solid',label:'Solid (75+)',tone:92,count:0},];const byKey=new Map(buckets.map((bucket)=>[bucket.key,bucket]));items.forEach((item)=>{const tier=cm&&typeof cm.scoreTier==='function'?cm.scoreTier(item.score).key:'none';(byKey.get(tier)||byKey.get('none')).count+=1;});const total=Math.max(1,items.length);const maxCount=Math.max(1,...buckets.map((b)=>b.count));return`
-      <section class="cmm-sidecard cmm-sidecard--chart">
-        <div class="cmm-sidecard__kicker">Mastery distribution</div>
-        <div class="cmm-sidecard__sub">Concepts by mastery score.</div>
-        <div class="cmm-histrows cmm-histrows--states">
-          ${buckets.map((bucket) => {
-            const width = Math.round((bucket.count / maxCount) * 100);
-            const share = Math.round((bucket.count / total) * 100);
-            return `
-              <div class="cmm-histrow cmm-histrow--state">
-                <span class="cmm-histrow__label">${escapeHtml(bucket.label)}</span>
-                <span class="cmm-histbar"><span class="cmm-histbar__fill" style="${bucket.tone==null?'':escapeHtml(readinessToneStyle(bucket.tone))}width:${escapeHtml(String(width))}%"></span></span>
-                <span class="cmm-histrow__count">${escapeHtml(String(bucket.count))}</span>
-                <span class="cmm-histrow__share">${escapeHtml(String(share))}%</span>
-              </div>
-            `;
-          }).join('')}
-        </div>
-      </section>
+const MIX_TIERS=[{key:'weak',label:'Weak',range:'below 30',tone:10},{key:'partial',label:'Partial',range:'30–54',tone:40},{key:'good',label:'Mostly there',range:'55–74',tone:65},{key:'solid',label:'Solid',range:'75+',tone:92},{key:'none',label:'No evidence',range:'',tone:null},];function tierMix(entries){const cm=window.ConceptMastery;const counts=Object.fromEntries(MIX_TIERS.map((t)=>[t.key,0]));(entries||[]).forEach((item)=>{const key=item.score==null?'none':cm&&typeof cm.scoreTier==='function'?cm.scoreTier(item.score).key:'none';counts[key in counts?key:'none']+=1;});return MIX_TIERS.map((t)=>Object.assign({count:counts[t.key]},t));}
+function buildMixBar(h){const total=Math.max(1,safeNum(h.total));const segs=h.mix.filter((t)=>t.count>0).map((t)=>{const name=`${t.label}${t.range ? ` (${t.range})` : ''}: ${t.count}`;return`<span class="cmm-mix__seg cmm-mix__seg--${t.key}" style="${t.tone == null ? '' : escapeHtml(readinessToneStyle(t.tone))}flex-grow:${t.count}" title="${escapeHtml(name)}"></span>`;}).join('');const legend=h.mix.map((t)=>`<li class="cmm-mix__key cmm-mix__key--${t.key}${t.count ? '' : ' is-zero'}" title="${escapeHtml(t.range ? `Mastery ${t.range}` : 'No rating or AI-check answer yet')}"><i style="${t.tone == null ? '' : escapeHtml(readinessToneStyle(t.tone))}"></i>${escapeHtml(t.label)} <b>${t.count}</b></li>`).join('');return`
+      <div class="cmm-mix">
+        <div class="cmm-mix__bar" role="img" aria-label="${escapeHtml(`${h.evidenced} of ${h.total} concepts have evidence. ` + h.mix.map((t) => `${t.label} ${t.count}`).join(', '))}">${segs}</div>
+        <ul class="cmm-mix__legend">${legend}</ul>
+        <div class="cmm-mix__facts"><span><b>${escapeHtml(`${h.evidenced}/${h.total}`)}</b> with evidence (${Math.round(safeNum(h.evidenced) / total * 100)}%)</span><span title="Opening a page is not evidence"><b>${escapeHtml(`${h.visited}/${h.total}`)}</b> opened</span></div>
+      </div>
     `;}
 function buildHeatmapRow(lecture,diagnosis){const diag=(diagnosis&&diagnosis.lectureDiagnostics||[]).find((item)=>item.lectureNum===lecture.lectureNum)||null;const unrated=!(lecture&&lecture.meanScore!=null&&lecture.coverage>=GUIDE_COVERAGE_MIN);const tone=unrated?'':(diag?diag.tone:lectureHeatTone(lecture));const score=unrated?0:clampPct(lecture.meanScore);const concepts=Array.isArray(lecture.concepts)?lecture.concepts:[];return`
       <div class="cmm-row ${unrated ? 'is-unrated' : tone}">
         <button type="button" class="cmm-row__label" data-cmm-jump-lecture="${escapeHtml(String(lecture.lectureNum))}">
           <span class="cmm-row__title">${escapeHtml(lecture.label)}</span>
           <span class="cmm-row__meta">
-            <span class="cmm-row__meta-line">${escapeHtml(`${lecture.evidenced}/${lecture.total} with evidence`)}</span>
-            <span class="cmm-row__meta-line">${escapeHtml(`${lecture.weak} weak`)}</span>
+            <span class="cmm-row__cov" title="${escapeHtml(`${lecture.evidenced} of ${lecture.total} concepts with evidence`)}"><span class="cmm-row__covbar"><i style="width:${Math.round(pctOf(lecture.evidenced, lecture.total))}%"></i></span><span class="cmm-row__meta-line">${escapeHtml(`${lecture.evidenced}/${lecture.total}`)}<span class="cmm-row__meta-long"> with evidence</span></span></span>
+            ${lecture.weak ? `<span class="cmm-row__weak">${escapeHtml(`${lecture.weak} weak`)}</span>` : ''}
             <span class="cmm-row__scroll-hint" hidden>Scroll tiles ↔</span>
           </span>
         </button>
@@ -255,23 +237,29 @@ function buildVisualStage(summary,diagnosis){const selected=ensureSelectedConcep
         <section class="cmm-stage__main">
           <div class="cmm-stagehead">
             <div>
-              <div class="cmm-sidecard__kicker">${escapeHtml(unitNoun)} concept tiles</div>
-              <div class="cmm-stagehead__sub">Each square is one concept, coloured by mastery (grey: no evidence yet); the letter is your self-rating. Click a tile to inspect it. Concepts covered in several units are listed once, under the first unit named in their tags for this course.</div>
+              <div class="cmm-sidecard__kicker">Concept map by ${escapeHtml(unitNoun.toLowerCase())}</div>
+              <div class="cmm-stagehead__sub">One square per concept. Click a square to see its details.</div>
             </div>
             <div class="cmm-legend">
-              <span class="cmm-legend__label">Low mastery</span>
+              <span class="cmm-legend__label">Low</span>
               <span class="cmm-legend__bar"></span>
               <span class="cmm-legend__label">High mastery</span>
+              <span class="cmm-legend__none" aria-hidden="true"></span>
+              <span class="cmm-legend__label">No evidence</span>
             </div>
           </div>
+          <details class="cmm-more">
+            <summary>How to read the map</summary>
+            <p>Each square is one concept, coloured by mastery (grey: no evidence yet). The letter is your own rating: U Unknown, P Partial, C Clear, M Mastered; V means opened but not rated. Concepts covered in several units are listed once, under the first unit named in their tags for this course.</p>
+          </details>
           <div class="cmm-heatmap">
             ${(summary && summary.lectures ? summary.lectures : []).map((lecture) => buildHeatmapRow(lecture, diagnosis)).join('') || `<div class="cmm-error">No ${escapeHtml(unitNoun.toLowerCase())} data yet.</div>`}
           </div>
         </section>
         <aside class="cmm-stage__side">
+          ${buildSelectedConceptCard(selected)}
           ${buildLectureStatusHighlightsCard(summary)}
           ${buildRecentChangeCard(diagnosis)}
-          ${buildConceptStateHistogram(diagnosis)}
         </aside>
       </div>
     `;}
@@ -2777,8 +2765,210 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         }
       }
 
+      /* 2026-10-16 visual pass: colour carries the state, text stays short.
+         Double id so these win over the older rules above and wiki-surfaces. */
+      #${PANEL_ID}#${PANEL_ID}{
+        --cmm-ink: var(--md-default-fg-color);
+        --cmm-muted: var(--md-default-fg-color--light);
+        --cmm-card: var(--md-default-bg-color);
+        --cmm-line: color-mix(in srgb, var(--md-default-fg-color) 11%, transparent);
+        --cmm-track: color-mix(in srgb, var(--md-default-fg-color) 9%, transparent);
+        --cmm-acc-l: 46%;
+        --cmm-tone-ink-l: 30%;
+        --cmm-tone-mix: 24%;
+      }
+      html[data-md-color-scheme="slate"] #${PANEL_ID}#${PANEL_ID},
+      body[data-md-color-scheme="slate"] #${PANEL_ID}#${PANEL_ID}{
+        --cmm-acc-l: 66%;
+        --cmm-tone-ink-l: 76%;
+        --cmm-tone-mix: 30%;
+      }
+      #${PANEL_ID}#${PANEL_ID} .cmm-head{
+        padding: 1.1rem 3.8rem 1.05rem 1.15rem;
+        background: linear-gradient(180deg, color-mix(in srgb, var(--md-accent-fg-color, var(--md-primary-fg-color)) 7%, transparent), transparent);
+        border-bottom: 1px solid var(--cmm-line);
+      }
+      #${PANEL_ID}#${PANEL_ID} .cmm-head__row{ grid-template-columns: 104px minmax(0, 1fr); gap: 1.15rem; align-items: center; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-ring{
+        --cmm-ring-fill: hsl(var(--cmm-h, 210) var(--cmm-s, 60%) var(--cmm-fill-l, 60%));
+        width: 104px; height: 104px; padding: 0; border: 0; border-radius: 50%;
+        color: var(--cmm-ink);
+        background:
+          radial-gradient(closest-side, var(--cmm-card) 76%, transparent 77% 100%),
+          conic-gradient(var(--cmm-ring-fill) calc(var(--cmm-pct, 0) * 1%), var(--cmm-track) 0);
+        box-shadow: 0 6px 18px rgb(0 0 0 / .07);
+      }
+      #${PANEL_ID}#${PANEL_ID} .cmm-ring strong{ font-size: 1.85rem; font-weight: 850; margin: 0 0 .1rem; color: hsl(var(--cmm-h, 210) 70% var(--cmm-tone-ink-l)); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-ring span{ font-size: .56rem; font-weight: 750; opacity: 1; color: var(--cmm-muted); letter-spacing: .02em; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-ring.is-unrated{
+        background:
+          radial-gradient(closest-side, var(--cmm-card) 76%, transparent 77% 100%),
+          repeating-conic-gradient(var(--cmm-track) 0 6deg, transparent 6deg 12deg);
+      }
+      #${PANEL_ID}#${PANEL_ID} .cmm-ring.is-unrated strong{ font-size: 1.6rem !important; color: var(--cmm-muted); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-title{ font-size: 1.28rem; font-weight: 800; letter-spacing: -.015em; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-sub{ margin-top: .2rem; font-size: .84rem; opacity: 1; color: var(--cmm-muted); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-note{ color: var(--cmm-muted); opacity: 1; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-note--login{
+        display: inline-block; margin-top: .55rem; padding: .22rem .62rem; border-radius: 999px; font-size: .72rem; font-weight: 650;
+        color: var(--md-accent-fg-color, var(--md-primary-fg-color));
+        background: color-mix(in srgb, var(--md-accent-fg-color, var(--md-primary-fg-color)) 11%, transparent);
+      }
+      #${PANEL_ID}#${PANEL_ID} .cmm-mix{ margin-top: .7rem; max-width: 46rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-mix__bar{ display: flex; gap: 2px; height: 14px; border-radius: 999px; overflow: hidden; background: var(--cmm-track); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-mix__seg{ flex: 1 1 0; min-width: 4px; background: hsl(var(--cmm-h) var(--cmm-s) var(--cmm-fill-l)); }
+      #${PANEL_ID}#${PANEL_ID} :is(.cmm-mix__seg--none, .cmm-mix__key--none i, .cmm-legend__none){
+        background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--md-default-fg-color) 16%, transparent) 0 3px, color-mix(in srgb, var(--md-default-fg-color) 7%, transparent) 3px 6px);
+      }
+      #${PANEL_ID}#${PANEL_ID} .cmm-mix__legend{ display: flex; flex-wrap: wrap; gap: .3rem .9rem; margin: .5rem 0 0; padding: 0; list-style: none; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-mix__key{ display: inline-flex; align-items: center; gap: .32rem; margin: 0; font-size: .74rem; color: var(--cmm-muted); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-mix__key i{ width: 10px; height: 10px; border-radius: 3px; background: hsl(var(--cmm-h) var(--cmm-s) var(--cmm-fill-l)); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-mix__key b{ color: var(--cmm-ink); font-weight: 800; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-mix__key.is-zero{ opacity: .55; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-mix__facts{ display: flex; flex-wrap: wrap; gap: .2rem 1rem; margin-top: .35rem; font-size: .72rem; color: var(--cmm-muted); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-mix__facts b{ color: var(--cmm-ink); }
 
+      #${PANEL_ID}#${PANEL_ID} .cmm-body{ gap: 1.1rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-next{ display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: .8rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextcard{
+        --cmm-acc: hsl(var(--cmm-acc-h) 68% var(--cmm-acc-l));
+        min-width: 0; padding: .85rem .9rem .7rem; border-radius: 16px;
+        border: 1px solid var(--cmm-line);
+        background: linear-gradient(180deg, color-mix(in srgb, var(--cmm-acc) 9%, var(--cmm-card)), var(--cmm-card) 4.5rem);
+        box-shadow: inset 0 3px 0 var(--cmm-acc), 0 4px 14px rgb(0 0 0 / .04);
+      }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextcard--weak{ --cmm-acc-h: 2; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextcard--gaps{ --cmm-acc-h: 30; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextcard--review{ --cmm-acc-h: 208; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextcard--start{ --cmm-acc-h: 262; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextcard__head{ display: flex; align-items: center; gap: .5rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextcard__icon{
+        flex: 0 0 auto; width: 30px; height: 30px; border-radius: 10px; display: grid; place-items: center;
+        background: color-mix(in srgb, var(--cmm-acc) 16%, transparent); color: var(--cmm-acc);
+      }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextcard__icon svg,
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextcard__empty svg{ width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextcard .cmm-sidecard__kicker{ font-size: .86rem; font-weight: 800; opacity: 1; color: var(--cmm-ink); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextcard__count{
+        margin-left: auto; min-width: 1.6rem; padding: .08rem .48rem; border-radius: 999px; text-align: center;
+        font-size: .74rem; font-weight: 800; color: #fff; background: var(--cmm-acc);
+      }
+      html[data-md-color-scheme="slate"] #${PANEL_ID}#${PANEL_ID} .cmm-nextcard__count,
+      body[data-md-color-scheme="slate"] #${PANEL_ID}#${PANEL_ID} .cmm-nextcard__count{ color: #111; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextcard__hint{ margin: .3rem 0 .35rem; font-size: .72rem; color: var(--cmm-muted); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-next .cmm-guide__list{ margin: 0; gap: 0; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextitem{
+        display: grid; grid-template-columns: 2.6rem minmax(0, 1fr); gap: .55rem; align-items: start;
+        padding: .5rem 0; border-top: 1px solid var(--cmm-line);
+      }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextitem:first-child{ border-top: 0; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextitem__score{
+        min-width: 36px; height: 36px; padding: 0 .28rem; box-sizing: border-box; border-radius: 11px; display: inline-flex; align-items: center; justify-content: center; white-space: nowrap; justify-self: start;
+        font-size: .9rem; font-weight: 850; line-height: 1;
+        color: hsl(var(--cmm-h) 72% var(--cmm-tone-ink-l));
+        background: color-mix(in srgb, hsl(var(--cmm-h) var(--cmm-s) var(--cmm-fill-l)) var(--cmm-tone-mix), var(--cmm-card));
+        border: 1px solid color-mix(in srgb, hsl(var(--cmm-h) var(--cmm-s) var(--cmm-fill-l)) 55%, transparent);
+      }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextitem__score small{ font-size: .56rem; font-weight: 800; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextitem__score.is-none{ color: var(--cmm-muted); background: transparent; border: 1.5px dashed var(--cmm-line); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextitem__main{ min-width: 0; display: block; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextitem .cmm-concept__title{
+        display: block; color: var(--cmm-ink); font-size: .9rem; font-weight: 750; line-height: 1.25; text-decoration: none;
+      }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextitem .cmm-concept__title:hover{ text-decoration: underline; text-underline-offset: .16em; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-next .cmm-guide__why{
+        position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+      }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextitem__tags{ display: flex; flex-wrap: wrap; gap: .22rem; margin-top: .26rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextitem__tag{
+        padding: .06rem .42rem; border-radius: 7px; font-size: .66rem; font-weight: 600; line-height: 1.45;
+        color: var(--cmm-muted); background: var(--cmm-track); overflow-wrap: anywhere;
+      }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextitem__next{ display: block; margin-top: .3rem; font-size: .72rem; color: var(--cmm-muted); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextitem__next::before{ content: "→ "; color: var(--cmm-acc); font-weight: 800; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextitem__next .cmm-concept__title{ display: inline; font-size: inherit; font-weight: 750; color: var(--cmm-acc); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextcard__empty{ display: flex; align-items: center; gap: .45rem; padding: .55rem 0 .3rem; font-size: .78rem; color: var(--cmm-muted); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-nextcard__empty svg{ flex: 0 0 auto; color: hsl(150 55% var(--cmm-acc-l)); }
 
+      #${PANEL_ID}#${PANEL_ID} :is(.cmm-stage__main, .cmm-sidecard){
+        border: 1px solid var(--cmm-line); border-radius: 16px; background: var(--cmm-card); box-shadow: 0 4px 14px rgb(0 0 0 / .04);
+      }
+      #${PANEL_ID}#${PANEL_ID} .cmm-sidecard__kicker{ font-size: .86rem; font-weight: 800; opacity: 1; color: var(--cmm-ink); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-stagehead{ margin-bottom: .4rem; align-items: center; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-stagehead__sub{ margin-top: .15rem; font-size: .74rem; color: var(--cmm-muted); opacity: 1; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-legend{ flex-wrap: wrap; gap: .35rem; align-items: center; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-legend__label{ font-size: .68rem; color: var(--cmm-muted); opacity: 1; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-legend__none{ width: 12px; height: 12px; margin-left: .45rem; border-radius: 4px; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-more{ margin: 0 0 .7rem; font-size: .72rem; color: var(--cmm-muted); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-more summary{ cursor: pointer; width: max-content; max-width: 100%; color: var(--md-accent-fg-color, var(--md-primary-fg-color)); font-weight: 650; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-more p{ margin: .35rem 0 0; line-height: 1.4; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-heatmap{ gap: .45rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-row{
+        --cmm-row-acc: color-mix(in srgb, var(--md-default-fg-color) 22%, transparent);
+        padding: .55rem .65rem .55rem .8rem; border-radius: 12px; border: 1px solid var(--cmm-line);
+        background: var(--cmm-card); box-shadow: inset 3px 0 0 var(--cmm-row-acc);
+      }
+      #${PANEL_ID}#${PANEL_ID} .cmm-row.is-hot{ --cmm-row-acc: hsl(4 70% 58%); background: color-mix(in srgb, hsl(4 70% 58%) 5%, var(--cmm-card)); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-row.is-mid{ --cmm-row-acc: hsl(40 80% 52%); background: color-mix(in srgb, hsl(40 80% 52%) 5%, var(--cmm-card)); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-row.is-cool{ --cmm-row-acc: hsl(150 55% 45%); background: color-mix(in srgb, hsl(150 55% 45%) 5%, var(--cmm-card)); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-row__meta{ gap: .22rem; margin-top: .25rem; opacity: 1; color: var(--cmm-muted); font-size: .66rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-row__cov{ display: grid; gap: .16rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-row__covbar{ display: block; width: 100%; max-width: 92px; height: 5px; border-radius: 999px; background: var(--cmm-track); overflow: hidden; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-row__covbar i{ display: block; height: 100%; border-radius: inherit; background: var(--md-accent-fg-color, var(--md-primary-fg-color)); opacity: .75; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-row__weak{ width: max-content; padding: 0 .38rem; border-radius: 999px; font-weight: 700; line-height: 1.5; color: hsl(4 65% var(--cmm-tone-ink-l)); background: color-mix(in srgb, hsl(4 70% 58%) 14%, transparent); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-tile.is-none .cmm-tile__txt{ visibility: hidden; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-tile.is-unrated:not(.is-visit){ background: var(--cmm-track); border-color: transparent; box-shadow: none; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-tile:not(.is-unrated){ border-color: transparent; background: hsl(var(--cmm-h) calc(var(--cmm-s) + 6%) calc(var(--cmm-l) - 14%)); color: hsl(var(--cmm-h) 80% 18%); box-shadow: none; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-tile.is-active{ outline: 2px solid var(--md-accent-fg-color, var(--md-primary-fg-color)); outline-offset: 2px; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-riskchip{ min-width: 2.3rem; font-size: .84rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-row__risklabel{ font-size: .6rem; color: var(--cmm-muted); opacity: 1; }
+
+      #${PANEL_ID}#${PANEL_ID} .cmm-stage__side .cmm-focuscard__body{ grid-template-columns: minmax(0, 1fr); gap: .65rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-stage__side .cmm-focusorbs-stack{ display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: .45rem .8rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-stage__side .cmm-focusorbs{ justify-content: flex-start; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-stage__side .cmm-public-score-avgs{ max-width: none; grid-template-columns: minmax(0, 1fr); gap: .4rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-stage__side .cmm-public-score-avg{ text-align: left; font-size: .62rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-stage__side .cmm-public-score-avg strong{ font-size: .8rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-stage__side .cmm-focusorbs-stack > .cmm-note{ grid-column: 1 / -1; margin: 0; font-size: .66rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-scoreorb{ width: 70px; height: 70px; min-width: 70px; box-shadow: none; background: hsl(var(--cmm-h, 140) var(--cmm-s, 64%) var(--cmm-l, 92%)); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-focuscard{ box-shadow: inset 0 3px 0 var(--md-accent-fg-color, var(--md-primary-fg-color)), 0 4px 14px rgb(0 0 0 / .04); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-focuscard--empty{ background: color-mix(in srgb, var(--md-accent-fg-color, var(--md-primary-fg-color)) 5%, var(--cmm-card)); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-focuscard--empty .cmm-sidecard__title{ font-size: .9rem; color: var(--cmm-muted); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-focusfacts{ grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-focuscard:not(.cmm-focuscard--empty) .cmm-sidecard__title{ color: var(--cmm-ink); font-size: 1.05rem; opacity: 1; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-focusfact span{ font-size: .6rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-focusfact strong{ font-size: .78rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-vizrows{ gap: .4rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-vizrow{ padding: .45rem .55rem; border-radius: 10px; border-color: transparent; background: color-mix(in srgb, var(--md-default-fg-color) 4%, var(--cmm-card)); box-shadow: none; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-vizrow__meta{
+        position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+      }
+
+      #${PANEL_ID}#${PANEL_ID} .cmm-listhead{ display: flex; align-items: center; justify-content: space-between; gap: .6rem 1rem; flex-wrap: wrap; margin-top: .3rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-listhead__title{ font-size: .98rem; font-weight: 800; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-lectures{ gap: .5rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-lecture{
+        --cmm-lec-acc: color-mix(in srgb, var(--md-default-fg-color) 22%, transparent);
+        border-radius: 12px; border: 1px solid var(--cmm-line); background: var(--cmm-card);
+        box-shadow: inset 3px 0 0 var(--cmm-lec-acc);
+      }
+      #${PANEL_ID}#${PANEL_ID} .cmm-lecture:not(.is-unrated){ --cmm-lec-acc: hsl(var(--cmm-h) var(--cmm-s) var(--cmm-fill-l)); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-lecture__btn{ padding: .62rem .8rem .62rem .95rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-lecture__title{ font-size: .98rem; }
+      #${PANEL_ID}#${PANEL_ID} .cmm-lecture__fact{ border-color: transparent; background: var(--cmm-track); color: var(--cmm-muted); }
+      #${PANEL_ID}#${PANEL_ID} .cmm-lecture__chev{ border-color: var(--cmm-line); background: transparent; }
+
+      @media (max-width: 720px){
+        #${PANEL_ID}#${PANEL_ID} .cmm-head{ padding: .95rem 3.2rem .95rem .9rem; }
+        #${PANEL_ID}#${PANEL_ID} .cmm-head__row{ grid-template-columns: 78px minmax(0, 1fr); gap: .8rem; align-items: start; }
+        #${PANEL_ID}#${PANEL_ID} .cmm-ring{ width: 78px !important; height: 78px !important; }
+        #${PANEL_ID}#${PANEL_ID} .cmm-ring strong{ font-size: 1.4rem !important; }
+        #${PANEL_ID}#${PANEL_ID} .cmm-ring span{ font-size: .46rem !important; white-space: nowrap; }
+        #${PANEL_ID}#${PANEL_ID} .cmm-row__meta-long{ display: none; }
+        #${PANEL_ID}#${PANEL_ID} .cmm-title{ font-size: 1.1rem; }
+        #${PANEL_ID}#${PANEL_ID} .cmm-mix{ grid-column: 1 / -1; }
+        #${PANEL_ID}#${PANEL_ID} .cmm-next{ grid-template-columns: minmax(0, 1fr); }
+      }
     `.trim();document.head.appendChild(st);}
 function ensureModal(anchor){let modal=document.getElementById('mk-course-mastery-map-modal');if(!modal){modal=document.createElement('div');modal.id='mk-course-mastery-map-modal';modal.className='cmm-modal';modal.hidden=true;modal.innerHTML=`
         <div class="cmm-modal__backdrop" data-cmm-close="1"></div>
@@ -2823,7 +3013,7 @@ function buildConceptRow(concept){const rec=concept.record;const cls=levelClass(
       </div>
     `;}
 function buildLectureCard(lecture){const filtered=lecture.concepts.filter(matchesFilters);const lectureKey=String(lecture.lectureNum);const isOpen=state.expandedLecture.has(lectureKey);const risk=lectureRisk(lecture.coverage,lecture.meanScore);const unrated=!risk.tone;const tone=risk.tone;const readinessAvg=unrated?0:clampPct(lecture.meanScore);const facts=[`Evidence ${lecture.evidenced}/${lecture.total}`,`${lecture.weak} weak`,`Opened ${lecture.visited}/${lecture.total}`,];return`
-      <section class="cmm-lecture ${unrated ? 'is-unrated' : tone} ${isOpen ? 'is-open' : ''}" data-lecture="${lectureKey}">
+      <section class="cmm-lecture ${unrated ? 'is-unrated' : tone} ${isOpen ? 'is-open' : ''}" data-lecture="${lectureKey}" style="${unrated ? '' : escapeHtml(readinessToneStyle(readinessAvg))}">
         <button type="button" class="cmm-lecture__btn" data-cmm-lecture-toggle="${lectureKey}" aria-expanded="${isOpen ? 'true' : 'false'}">
           <div class="cmm-lecture__left">
             <div class="cmm-lecture__title">${escapeHtml(lecture.label)}</div>
@@ -2841,19 +3031,29 @@ function buildLectureCard(lecture){const filtered=lecture.concepts.filter(matche
     `;}
 function rememberDialogScroll(panel){const dialog=panel&&panel.closest?panel.closest('.cmm-modal__dialog'):null;state.preservedScrollTop=dialog?dialog.scrollTop:null;}
 function restoreDialogScroll(panel){if(state.scrollToLecture||state.scrollToFocus)return;if(state.preservedScrollTop==null)return;const dialog=panel&&panel.closest?panel.closest('.cmm-modal__dialog'):null;const top=state.preservedScrollTop;state.preservedScrollTop=null;if(!dialog)return;window.requestAnimationFrame(()=>{try{dialog.scrollTop=top;}catch(_){}});}
-function guideCard(kicker,items,empty){return`
-      <section class="cmm-sidecard cmm-guide__card">
-        <div class="cmm-sidecard__kicker">${escapeHtml(kicker)}</div>
-        ${items && items.length ? `<ol class="cmm-guide__list">${items.map((item)=>`<li>${item.html}<span class="cmm-guide__why">${escapeHtml(item.why)}</span>${item.next ? `<span class="cmm-guide__why">Start with ${item.next}</span>` : ''}</li>`).join('')}</ol>`
-          : `<div class="cmm-sidecard__empty">${escapeHtml(empty)}</div>`}
+const GUIDE_ICONS={weak:'<circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/>',gaps:'<circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/>',review:'<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/>',start:'<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/>',};const GUIDE_DONE_ICON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>';function guideCard(kind,label,hint,items,count,empty){const list=items&&items.length?`<ol class="cmm-guide__list">${items.map((item) => {
+      const badge = item.score == null
+        ? '<span class="cmm-nextitem__score is-none" aria-hidden="true">–</span>'
+        : `<span class="cmm-nextitem__score" style="${escapeHtml(readinessToneStyle(item.score))}">${escapeHtml(String(item.score))}${item.pct?'<small>%</small>':''}</span>`;
+      const tags = (item.tags || []).filter(Boolean).map((t) => `<span class="cmm-nextitem__tag">${escapeHtml(t)}</span>`).join('');
+      return `<li class="cmm-nextitem" title="${escapeHtml(item.why)}">${badge}<span class="cmm-nextitem__main">${item.html}<span class="cmm-guide__why">${escapeHtml(item.why)}</span>${tags?`<span class="cmm-nextitem__tags">${tags}</span>`:''}${item.next?`<span class="cmm-nextitem__next">Start with ${item.next}</span>`:''}</span></li>`;
+    }).join('')}</ol>`:`<div class="cmm-nextcard__empty">${GUIDE_DONE_ICON}<span>${escapeHtml(empty)}</span></div>`;return`
+      <section class="cmm-nextcard cmm-nextcard--${kind}">
+        <div class="cmm-nextcard__head">
+          <span class="cmm-nextcard__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false">${GUIDE_ICONS[kind]}</svg></span>
+          <div class="cmm-sidecard__kicker">${escapeHtml(label)}</div>
+          ${count ? `<span class="cmm-nextcard__count" title="${escapeHtml(`${count} in this course`)}">${escapeHtml(String(count))}</span>` : ''}
+        </div>
+        <div class="cmm-nextcard__hint">${escapeHtml(hint)}</div>
+        ${list}
       </section>
     `;}
-function buildGuide(diagnosis){const g=diagnosis&&diagnosis.guide;if(!g)return'';const gapsEmpty=g.gaps?'No prerequisite gaps among the concepts you have started.':state.graphStatus==='failed'?'Prerequisite links are unavailable right now.':'Checking prerequisite links…';return`
-      <div class="cmm-guide" aria-label="What to do next">
-        ${guideCard('Weak by evidence', g.weak, `No concept with evidence scores below ${GUIDE_WEAK_BELOW}.`)}
-        ${guideCard('Prerequisite gaps', g.gaps || [], gapsEmpty)}
-        ${guideCard('Due for review', g.review, 'Nothing is due for review.')}
-        ${guideCard(`No evidence yet (${g.unassessedCount})`, g.start, 'Every concept has evidence.')}
+function buildGuide(diagnosis){const g=diagnosis&&diagnosis.guide;if(!g)return'';const n=g.counts||{};const gapsEmpty=g.gaps?'No prerequisite gaps among the concepts you have started.':state.graphStatus==='failed'?'Prerequisite links are unavailable right now.':'Checking prerequisite links…';return`
+      <div class="cmm-guide cmm-next" aria-label="What to do next">
+        ${guideCard('weak', 'Weak by evidence', `Mastery below ${GUIDE_WEAK_BELOW}, most-used first`, g.weak, n.weak, `No concept with evidence scores below ${GUIDE_WEAK_BELOW}.`)}
+        ${guideCard('gaps', 'Prerequisite gaps', 'Started, but the basics are shaky', g.gaps || [], n.gaps, gapsEmpty)}
+        ${guideCard('review', 'Due for review', 'Known once, evidence is getting old', g.review, n.review, 'Nothing is due for review.')}
+        ${guideCard('start', 'No evidence yet', 'Rate it or take an AI check', g.start, n.start, 'Every concept has evidence.')}
       </div>
     `;}
 function ensureGraph(anchor,panel,seq){const cm=window.ConceptMastery;if(state.graphStatus!=='idle'||!cm||typeof cm.loadGraph!=='function')return;state.graphStatus='loading';Promise.resolve(cm.loadGraph()).catch(()=>null).then((graph)=>{state.graph=graph||null;state.graphStatus=graph?'ready':'failed';if(state.open&&seq===state.seq){rememberDialogScroll(panel);renderMap(anchor,panel);}});}
@@ -2864,18 +3064,14 @@ function renderPanelShell(panel){panel.innerHTML=`
       </div>
     `;}
 async function renderMap(anchor,panel){if(!anchor||!panel)return;const seq=++state.seq;const context=cmmMasteryContext();const route=currentRelPath();const focused=document.activeElement;const focusAttr=panel.contains(focused)&&['data-cmm-filter','data-cmm-lecture-toggle','data-cmm-select-concept','data-cmm-jump-lecture','data-cmm-course-readiness-info'].find(attr=>focused.hasAttribute(attr));const focusValue=focusAttr?focused.getAttribute(focusAttr):null;ensureStyles();renderPanelShell(panel);panel.hidden=!state.open;try{const data=await loadCourseMapData(anchor);if(seq!==state.seq)return;if(context!==cmmMasteryContext()||route!==currentRelPath())throw cmmMasteryReadError();const summary=data.summary;const totals=summary.totals;readAiQuizCountsByConcept();const diagnosis=buildDiagnosis(summary,state.graph);diagnosis.dailyHistory=cmmRecordDailySnapshot(data.key,summary,diagnosis);const selected=ensureSelectedConcept(summary,diagnosis);const allLecturesHtml=(summary.lectures||[]).map(buildLectureCard).join('');const panelBody=`
-        <div class="cmm-toprow">
-          <div class="cmm-metrics">
-            ${metricValueCard('With evidence', `${totals.evidenced}/${totals.total}`, `${Math.round(diagnosis.coverage*100)}% of concepts`)}
-            ${metricValueCard('Opened concepts', `${totals.visited}/${totals.total}`, 'Opening a page is not evidence')}
-          </div>
-          ${buildSelectedConceptCard(selected)}
-        </div>
         ${summary.scoreAvailable ? buildGuide(diagnosis) : '<div class="cmm-error" role="status">Mastery scores are unavailable right now. Reload the page to retry.</div>'}
         ${buildVisualStage(summary, diagnosis, selected)}
-        <div class="cmm-filters">
+        <div class="cmm-listhead">
+          <div class="cmm-listhead__title">All concepts by ${escapeHtml((summary.unitNoun || 'Lecture').toLowerCase())}</div>
+          <div class="cmm-filters">
           <button type="button" class="cmm-filter ${state.filters.weak ? 'is-on' : ''}" data-cmm-filter="weak" aria-pressed="${state.filters.weak ? 'true' : 'false'}">Weak by evidence</button>
           <button type="button" class="cmm-filter ${state.filters.unvisited ? 'is-on' : ''}" data-cmm-filter="unvisited" aria-pressed="${state.filters.unvisited ? 'true' : 'false'}">Unvisited</button>
+          </div>
         </div>
         <div class="cmm-lectures">${allLecturesHtml || '<div class="cmm-error">No concept pages were found for this course yet.</div>'}</div>
       `;panel.innerHTML=`

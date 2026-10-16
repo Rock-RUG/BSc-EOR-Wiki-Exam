@@ -26,13 +26,13 @@
 <link href="../../stylesheets/wiki-community.css?h=bf04506951f8" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-maps.css?h=1879d66b3a18" rel="stylesheet" media="not all" data-mk-css-gate="maps"/>
 <link href="../../stylesheets/wiki-mastery-manager.css?h=8cbdecf7dab1" rel="stylesheet" media="not all" data-mk-css-gate="manager"/>
-<link href="../../stylesheets/course-home.css?h=bb3392429bd1" rel="stylesheet"/>
+<link href="../../stylesheets/course-home.css?h=a0a33de54866" rel="stylesheet"/>
 <link href="../../stylesheets/course-atlas.css?h=b23cfa603ce8" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-guides.css?h=ff83a4b7a603" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-guides.css?h=dedd59465d98" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-explain.css?h=74c905f81ff8" rel="stylesheet"/>
 <link href="../../stylesheets/search-history.css?h=49fa7cf4d796" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-boxes.css?h=22e3bf635f04" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-interactions.css?h=793331577f46" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-interactions.css?h=306bcb466a81" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <style id="mk-mobile-fixed-chrome-early">
 @media (max-width: 900px), (pointer: coarse){
@@ -228,9 +228,9 @@
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=541af87ac735";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=f9eb0f02a102";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=541af87ac735";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=f9eb0f02a102";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -952,19 +952,10 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#course-find">
+<a class="md-nav__link" href="#course-practise">
 <span class="md-ellipsis">
       
-        Find within this course
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#course-builds-on">
-<span class="md-ellipsis">
-      
-        Before you start
+        Practise
       
     </span>
 </a>
@@ -979,10 +970,10 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#course-sources">
+<a class="md-nav__link" href="#course-more">
 <span class="md-ellipsis">
       
-        Sources
+        More about this course
       
     </span>
 </a>
@@ -1032,11 +1023,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <ul class="ch-facts">
 <li><strong>4</strong> concept pages </li>
 </ul>
-<nav aria-label="Course actions" class="ch-actions"><a class="ch-btn ch-btn--primary" href="#course-units">See the concept pages</a><a class="ch-btn" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=sm-foundations&amp;lp_token=sm-foundations#search-results">Review in Concept Finder</a><a class="ch-btn" href="../../galaxy.html?course=Year-3/2a-Stochastic-Models">See it in Galaxy</a></nav>
-</section>
-<section aria-labelledby="course-find" class="ch-search-section">
-<h2 class="ch-section-title" id="course-find">Find within this course<a class="headerlink" href="#course-find" title="Permanent link">¶</a></h2>
-<div class="course-search" data-course-token="sm-foundations">
+<div class="course-search" data-course-token="sm-foundations" id="course-find">
 <form class="search-hero__form" id="course-search-form">
 <input aria-label="Search in Stochastic Models" autocomplete="off" class="search-hero__input" id="course-search-input" placeholder="Search this course, for example stationary distribution" type="text"/>
 <button class="search-hero__button fb-cta-btn fb-cta-btn--search" data-fb-cta-decorated="1" id="course-search-btn" type="submit"><span aria-hidden="true" class="fb-cta__ico fb-cta__ico--search"></span><span class="fb-cta__txt">Search in course</span></button>
@@ -1046,35 +1033,127 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <div class="course-search-results" id="course-search-results"></div>
 </div>
 </section>
-<section aria-label="How this course connects" class="ch-connect">
-<div class="ch-connect-col">
-<h2 class="ch-section-title" id="course-builds-on">Before you start<a class="headerlink" href="#course-builds-on" title="Permanent link">¶</a></h2>
-<p class="ch-section-note">Earlier concepts these pages use most. If a step feels unfamiliar, revisit them first.</p>
-<div class="ch-connect-course"><a class="ch-connect-name" href="../../Year-1/1b-Math-II-Linear-Algebra/index.html">Math II: Linear Algebra</a><ul class="ch-chips"><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/matrix-product.html">Matrix Product</a> </li><li><a href="../../Year-1/1b-Math-II-Linear-Algebra/standard-form-of-a-linear-system.html">Standard Form of a Linear System</a> </li></ul></div>
-<div class="ch-connect-course"><a class="ch-connect-name" href="../../Year-1/1b-Probability-Theory-for-EOR/index.html">Probability Theory for EOR</a><ul class="ch-chips"><li><a href="../../Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html">Conditional Probability</a> </li><li><a href="../../Year-1/1b-Probability-Theory-for-EOR/stochastic-process.html">Stochastic Process</a> </li></ul></div>
+<section aria-labelledby="course-practise" class="ch-practise">
+<h2 class="ch-section-title" id="course-practise">Practise<a class="headerlink" href="#course-practise" title="Permanent link">¶</a></h2>
+<div class="ch-practise-cards">
+<a class="ch-practise-card ch-practise-card--finder" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=sm-foundations&amp;lp_token=sm-foundations#search-results"><span class="ch-practise-name">Review in Concept Finder</span><span class="ch-practise-note">Check yourself on the whole course, or one week at a time.</span></a>
 </div>
 </section>
 </div>
 <section aria-labelledby="course-units" class="ch-route">
+<div class="ch-route-head">
 <h2 class="ch-section-title" id="course-units">Concept pages<a class="headerlink" href="#course-units" title="Permanent link">¶</a></h2>
-<section class="ch-unit-card ch-unit-card--extra ch-unit-card--described" id="course-other-concepts">
+</div>
+<div class="ch-unit-list">
+<details class="ch-unit-card ch-unit-card--extra ch-unit-card--described" id="course-other-concepts" open="open">
+<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--more"></span><span class="ch-row-name">All concept pages</span><span class="ch-row-count">4<span class="ch-sr"> concepts</span></span></summary>
 <ul>
 <li><a href="markov-chain.html">Markov Chain</a>: the Markov property and transition probabilities. </li>
 <li><a href="stationary-distribution.html">Stationary Distribution</a>: distributions preserved by the transition matrix. </li>
 <li><a href="irreducibility.html">Irreducibility</a>: communication between states. </li>
 <li><a href="aperiodicity.html">Aperiodicity</a>: return times and convergence conditions. </li>
 </ul>
-</section>
+</details>
+</div>
 </section>
 <!-- course-home:end -->
-<section aria-labelledby="course-sources" class="ch-sources">
-<h2 class="ch-section-title" id="course-sources">Sources<a class="headerlink" href="#course-sources" title="Permanent link">¶</a></h2>
+<section aria-labelledby="course-more" class="ch-more">
+<h2 class="ch-section-title" id="course-more">More about this course<a class="headerlink" href="#course-more" title="Permanent link">¶</a></h2>
+<div class="ch-more-list">
+<!-- course-home:more-begin -->
+<details class="ch-more-row ch-more-row--builds-on" id="course-builds-on">
+<summary><span class="ch-row-name">Before you start<small>Earlier concepts these pages use most. If a step feels unfamiliar, revisit them first.</small></span><span class="ch-row-count">2 courses</span></summary>
+<div class="ch-more-body ch-connect">
+<div class="ch-connect-course">
+<div class="ch-connect-head"><a class="ch-connect-name" href="../../Year-1/1b-Math-II-Linear-Algebra/index.html">Math II: Linear Algebra</a></div>
+<ul class="ch-chips">
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/matrix-product.html">Matrix Product</a> </li>
+<li><a href="../../Year-1/1b-Math-II-Linear-Algebra/standard-form-of-a-linear-system.html">Standard Form of a Linear System</a> </li>
+</ul>
+</div>
+<div class="ch-connect-course">
+<div class="ch-connect-head"><a class="ch-connect-name" href="../../Year-1/1b-Probability-Theory-for-EOR/index.html">Probability Theory for EOR</a></div>
+<ul class="ch-chips">
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html">Conditional Probability</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/stochastic-process.html">Stochastic Process</a> </li>
+</ul>
+</div>
+</div>
+</details>
+<details class="ch-more-row ch-more-row--achievements" hidden="hidden" id="course-achievements-row">
+<summary><span class="ch-row-name">Achievements<small>Course challenges and how many learners hold them</small></span></summary>
+<div class="ch-more-body"></div>
+</details>
+<div class="ch-more-link"><a class="ch-more-row ch-more-row--galaxy" href="../../galaxy.html?course=Year-3/2a-Stochastic-Models"><span class="ch-row-name">See it in Galaxy<small>This course among all the wiki's concepts</small></span></a></div>
+<!-- course-home:more-end -->
+<details class="ch-more-row ch-more-row--sources" id="course-sources">
+<summary><span class="ch-row-name">Sources<small>Course material these pages were checked against</small></span></summary>
+<div class="ch-more-body">
 <ul>
 <li><a href="https://ocasys.rug.nl/2026-2027/catalog/programme/56833">BSc EOR programme, 2026–2027</a>. </li>
 <li><a href="https://ocasys.rug.nl/2026-2027/catalog/course/EBB878A05">Official course catalogue: EBB878A05</a>. </li>
 </ul>
 <p><a href="../index.html">Return to the Year 3 overview</a>.</p>
+</div>
+</details>
+</div>
 </section>
+<script id="mk-course-home-rows">
+(function () {
+  var art = document.querySelector("article.md-content__inner");
+  var units = art && art.querySelector(".ch-route .ch-unit-list");
+  if (!units) return;
+  var KEY = "mk_course_unit_open_v1", path = location.pathname.replace(/index\.html$/, "");
+  var lib = art.querySelector(".ch-library"), sw = art.querySelector(".ch-view-switch");
+  function read() { try { return JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (_) { return {}; } }
+  function remember(id) {
+    try {
+      var all = read(); delete all[path]; all[path] = id;
+      var keys = Object.keys(all); while (keys.length > 60) delete all[keys.shift()];
+      localStorage.setItem(KEY, JSON.stringify(all));
+    } catch (_) {}
+  }
+  function view(topics) {
+    if (!lib || !sw) return;
+    art.classList.toggle("ch-view-topics", topics);
+    Array.prototype.forEach.call(sw.querySelectorAll("button[data-ch-view]"), function (b) {
+      b.setAttribute("aria-pressed", String((b.getAttribute("data-ch-view") === "topics") === topics));
+    });
+  }
+  function reveal(id) {
+    var el = id && document.getElementById(id);
+    if (!el || !art.contains(el)) return null;
+    if (lib && lib.contains(el)) view(true);
+    for (var node = el; node && node !== art; node = node.parentElement) {
+      if (node.tagName === "DETAILS") { node.hidden = false; node.open = true; }
+    }
+    return el;
+  }
+  function hashId() { try { return decodeURIComponent(location.hash.slice(1)); } catch (_) { return ""; } }
+  if (sw) sw.addEventListener("click", function (event) {
+    var b = event.target.closest && event.target.closest("button[data-ch-view]");
+    if (b) view(b.getAttribute("data-ch-view") === "topics");
+  });
+  units.addEventListener("toggle", function (event) {
+    var row = event.target;
+    if (row.open && row.parentElement === units && row.id) remember(row.id);
+  }, true);
+  if (!reveal(hashId())) {
+    var last = read()[path], row = last && document.getElementById(last);
+    if (row && row.parentElement === units) {
+      row.open = true;
+      var tag = document.createElement("span");
+      tag.className = "ch-row-last"; tag.textContent = "Last opened";
+      var count = row.querySelector("summary .ch-row-count");
+      if (count) count.before(tag);
+    }
+  }
+  window.addEventListener("hashchange", function () {
+    var el = reveal(hashId());
+    if (el) el.scrollIntoView();
+  });
+})();
+</script>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -1112,7 +1191,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../javascripts/exam-mode.js?h=09b295110531"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
 <script src="../../javascripts/wiki-explain.js?h=642fc64bd1a9"></script>
-<script src="../../javascripts/startup-preferences.js?h=541af87ac735"></script>
+<script src="../../javascripts/startup-preferences.js?h=f9eb0f02a102"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=f2890ec6d446"></script>
 <script src="../../javascripts/ui-guard.js?h=7c21cbfde3c4"></script>
@@ -1125,7 +1204,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../javascripts/search-suggestions.js?h=48bc14c0842b"></script>
 <script src="../../javascripts/search-history.js?h=a1367948fc13"></script>
 <script src="../../javascripts/header-search-stabilizer.js?h=cdd630b06fd3"></script>
-<script src="../../javascripts/concept-hover-preview.js?h=2170e87fe157"></script>
+<script src="../../javascripts/concept-hover-preview.js?h=7990de02ac56"></script>
 <script src="../../javascripts/mathjax.js?h=06875c0b69ec"></script>
 <script src="../../javascripts/preload-guard.js?h=5e42effda2c3"></script>
 <script src="../../javascripts/random.js?h=09d4fc597def"></script>
@@ -1135,10 +1214,10 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../javascripts/tag-search-links.js?h=84cb5c2dd87f"></script>
 <script src="../../javascripts/logo-lightbox.js?h=fda4850b9a41"></script>
 <script src="../../javascripts/figure-source.js?h=9a9f66a79018"></script>
-<script src="../../javascripts/wiki-guide-pages.js?h=31529b8342eb"></script>
+<script src="../../javascripts/wiki-guide-pages.js?h=24a5bdffa53a"></script>
 <script src="../../javascripts/wiki-guide-account.js?h=2327db54a4ff"></script>
 <script src="../../javascripts/wiki-guides.js?h=750720ce1432"></script>
-<script src="../../javascripts/wiki-explain-content.js?h=f5926800c33b"></script>
+<script src="../../javascripts/wiki-explain-content.js?h=dde99ec1e7f0"></script>
 <script src="../../javascripts/course-atlas.js?h=7c112d78335c"></script>
 </body>
 </html>
