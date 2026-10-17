@@ -31,6 +31,10 @@ function mapEntryHtml(placeholder){return`
           </span>
           <span class="lp-local-cta-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span>
         </button>
+        <div class="lp-local-dirs" role="group" aria-label="Direction maps">
+          <button class="lp-local-dir" type="button" data-lp-open-route-map="toHere"${placeholder ? ' disabled tabindex="-1"' : ''} title="Everything this concept builds on, with a route to here">Prerequisite map</button>
+          <button class="lp-local-dir" type="button" data-lp-open-route-map="fromHere"${placeholder ? ' disabled tabindex="-1"' : ''} title="Everything that builds on this concept">Dependent map</button>
+        </div>
       </div>
     `;}
 function renderPanel({forward,prereqsAll,related},renderList){return`

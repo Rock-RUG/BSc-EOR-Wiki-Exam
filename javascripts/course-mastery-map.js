@@ -3053,7 +3053,7 @@ function buildGuide(diagnosis){const g=diagnosis&&diagnosis.guide;if(!g)return''
         ${guideCard('weak', 'Weak by evidence', `Mastery below ${GUIDE_WEAK_BELOW}, most-used first`, g.weak, n.weak, `No concept with evidence scores below ${GUIDE_WEAK_BELOW}.`)}
         ${guideCard('gaps', 'Prerequisite gaps', 'Started, but the basics are shaky', g.gaps || [], n.gaps, gapsEmpty)}
         ${guideCard('review', 'Due for review', 'Known once, evidence is getting old', g.review, n.review, 'Nothing is due for review.')}
-        ${guideCard('start', 'No evidence yet', 'Rate it or take an AI check', g.start, n.start, 'Every concept has evidence.')}
+        ${guideCard('start', 'No evidence yet', window.__mkExamMode ? 'Rate it after trying it' : 'Rate it or take an AI check', g.start, n.start, 'Every concept has evidence.')}
       </div>
     `;}
 function ensureGraph(anchor,panel,seq){const cm=window.ConceptMastery;if(state.graphStatus!=='idle'||!cm||typeof cm.loadGraph!=='function')return;state.graphStatus='loading';Promise.resolve(cm.loadGraph()).catch(()=>null).then((graph)=>{state.graph=graph||null;state.graphStatus=graph?'ready':'failed';if(state.open&&seq===state.seq){rememberDialogScroll(panel);renderMap(anchor,panel);}});}
