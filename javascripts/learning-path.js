@@ -1512,7 +1512,7 @@ function lpInstallMobileSheetClickContainmentShield(){if(window.__lpMobileSheetC
     /* Keep expanded/animating card on the exact same bottom baseline as the
        collapsed card. Do not use bottom:0 + padding-bottom here, otherwise the
        two states sit a few pixels apart on mobile Safari/Chrome. */
-    bottom: calc(env(safe-area-inset-bottom, 0px) + 18px) !important;
+    bottom: max(4px, calc(env(safe-area-inset-bottom, 0px) - 9px)) !important;
     min-height: 0 !important;
     height: auto !important;
     padding: 0 12px !important;
@@ -3446,9 +3446,9 @@ document.addEventListener("DOMContentSwitch",ensureStyles);window.addEventListen
     -webkit-touch-callout: none !important;
   }
 
-  /* Lift the card slightly so the lower shadow stays in the controllable viewport. */
+  /* Same docked baseline as the final alignment patch below (2026-10-20). */
   #lp-mobile-sheet{
-    bottom: calc(max(env(safe-area-inset-bottom, 0px), var(--lp-mobile-vv-bottom-gap, 0px)) + 18px) !important;
+    bottom: max(4px, calc(env(safe-area-inset-bottom, 0px) - 9px)) !important;
     padding: 0 12px !important;
   }
 
@@ -3569,7 +3569,7 @@ if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded'
   /* Keep the learning-path card pinned to one visual position.
      Do not let keyboard / visualViewport gap lift it upward. */
   #lp-mobile-sheet {
-    bottom: calc(env(safe-area-inset-bottom, 0px) + 18px) !important;
+    bottom: max(4px, calc(env(safe-area-inset-bottom, 0px) - 9px)) !important;
     transform: none !important;
   }
 
@@ -3580,7 +3580,7 @@ if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded'
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    bottom: calc(env(safe-area-inset-bottom, 0px) + 18px) !important;
+    bottom: max(4px, calc(env(safe-area-inset-bottom, 0px) - 9px)) !important;
     transform: none !important;
     animation: none !important;
   }
@@ -3606,11 +3606,14 @@ if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded'
 }
 `;(document.head||document.documentElement).appendChild(st);}
 if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",ensureStyle,{once:true});}else{ensureStyle();}
-document.addEventListener("DOMContentSwitch",ensureStyle);})();(function(){const STYLE_ID='lp-mobile-map-header-offset-v2';const ROOT_VAR='--lp-mobile-top-stack-offset';let rafId=0;function isPhoneLike(){try{return!!(window.matchMedia&&(window.matchMedia('(max-width: 900px)').matches||window.matchMedia('(hover: none) and (pointer: coarse)').matches));}catch(_){return false;}}
+document.addEventListener("DOMContentSwitch",ensureStyle);})();(function(){const STYLE_ID='lp-mobile-map-header-offset-v2';const ROOT_VAR='--lp-mobile-top-stack-offset';const SHEET_VAR='--lp-mobile-sheet-max-h';let rafId=0;function isPhoneLike(){try{return!!(window.matchMedia&&(window.matchMedia('(max-width: 900px)').matches||window.matchMedia('(hover: none) and (pointer: coarse)').matches));}catch(_){return false;}}
 function isVisible(el){if(!el)return false;try{const cs=window.getComputedStyle(el);if(!cs)return false;if(cs.display==='none'||cs.visibility==='hidden'||Number(cs.opacity||1)===0)return false;const r=el.getBoundingClientRect();return!!(r&&r.width>0&&r.height>0);}catch(_){return false;}}
 function currentTopStackBottom(){if(!isPhoneLike())return 0;let bottom=0;const candidates=[document.querySelector('.md-header'),document.querySelector('.md-tabs')];for(const el of candidates){if(!isVisible(el))continue;try{const rect=el.getBoundingClientRect();const cs=window.getComputedStyle(el);const isPinned=cs.position==='fixed'||(cs.position==='sticky'&&rect.top<=2)||rect.top<=2;if(!isPinned)continue;bottom=Math.max(bottom,Math.round(rect.bottom));}catch(_){}}
 return Math.max(0,bottom);}
-function applyOffset(){try{const root=document.documentElement;if(!root)return;const offset=currentTopStackBottom();const text=`${offset}px`;if(root.style.getPropertyValue(ROOT_VAR)!==text)root.style.setProperty(ROOT_VAR,text);}catch(_){}}
+function sheetTopLimit(stackBottom){let bottom=stackBottom;const bar=document.getElementById('mk-shop-reading-progress');for(const el of bar?[bar,bar.querySelector(':scope > b')]:[]){if(!isVisible(el))continue;try{bottom=Math.max(bottom,Math.round(el.getBoundingClientRect().bottom));}catch(_){}}
+return bottom+8;}
+function applySheetLimit(stackBottom){const sheet=document.getElementById('lp-mobile-sheet');if(!sheet||!isPhoneLike()||!sheet.classList.contains('lp-mounted'))return;try{const rect=sheet.getBoundingClientRect();const pad=parseFloat(window.getComputedStyle(sheet).paddingBottom)||0;const room=Math.round(rect.bottom-pad-sheetTopLimit(stackBottom));if(rect.bottom<=0||room<=0)return;const text=`${Math.max(160, room)}px`;if(sheet.style.getPropertyValue(SHEET_VAR)!==text)sheet.style.setProperty(SHEET_VAR,text);}catch(_){}}
+function applyOffset(){try{const root=document.documentElement;if(!root)return;const offset=currentTopStackBottom();const text=`${offset}px`;if(root.style.getPropertyValue(ROOT_VAR)!==text)root.style.setProperty(ROOT_VAR,text);applySheetLimit(offset);}catch(_){}}
 function scheduleApply(){try{if(rafId)cancelAnimationFrame(rafId);}catch(_){}
 rafId=requestAnimationFrame(()=>{rafId=0;applyOffset();});}
 function ensureStyle(){if(document.getElementById(STYLE_ID))return;const st=document.createElement('style');st.id=STYLE_ID;st.textContent=`
@@ -3652,7 +3655,7 @@ function ensureStyle(){if(document.getElementById(STYLE_ID))return;const st=docu
   #lp-mobile-sheet .lp-msheet{
     display: flex !important;
     flex-direction: column !important;
-    max-height: calc(var(--lp-mobile-vv-height, 100svh) - var(${ROOT_VAR}, 0px) - max(env(safe-area-inset-bottom, 0px), var(--lp-mobile-vv-bottom-gap, 0px)) - 30px) !important;
+    max-height: min(calc(var(--lp-mobile-vv-height, 100svh) - var(${ROOT_VAR}, 0px) - max(env(safe-area-inset-bottom, 0px), var(--lp-mobile-vv-bottom-gap, 0px)) - 30px), var(${SHEET_VAR}, 100vh)) !important;
   }
 
   #lp-mobile-sheet .lp-msheet-body{
@@ -3681,9 +3684,11 @@ function ensureStyle(){if(document.getElementById(STYLE_ID))return;const st=docu
 function mutationTouchesHeaderOffsetHosts(records){const selector='#lp-map-modal, #lp-h1sg-modal, #lp-mobile-sheet';for(const record of records||[]){const target=record&&record.target;if(target&&target.nodeType===1&&target.closest&&target.closest(selector))return true;const nodes=Array.from((record&&record.addedNodes)||[]).concat(Array.from((record&&record.removedNodes)||[]));for(const node of nodes){if(!node||node.nodeType!==1)continue;if((node.matches&&node.matches(selector))||(node.querySelector&&node.querySelector(selector)))return true;}}
 return false;}
 function bindModalObserver(id){try{const modal=document.getElementById(id);if(!modal||modal.__lpHeaderOffsetObserverBound)return;modal.__lpHeaderOffsetObserverBound=true;const mo=new MutationObserver(()=>scheduleApply());mo.observe(modal,{attributes:true,attributeFilter:['class','style']});}catch(_){}}
-function run(){ensureStyle();scheduleApply();bindModalObserver('lp-map-modal');bindModalObserver('lp-h1sg-modal');}
+function run(){ensureStyle();scheduleApply();bindModalObserver('lp-map-modal');bindModalObserver('lp-h1sg-modal');bindSheetObserver();}
+function bindSheetObserver(){try{const sheet=document.getElementById('lp-mobile-sheet');if(!sheet||sheet.__lpSheetLimitObserverBound)return;sheet.__lpSheetLimitObserverBound=true;new MutationObserver(()=>scheduleApply()).observe(sheet,{attributes:true,attributeFilter:['class']});}catch(_){}}
 if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run,{once:true});}else{run();}
-window.addEventListener('resize',scheduleApply,{passive:true});window.addEventListener('orientationchange',scheduleApply,{passive:true});window.addEventListener('pageshow',scheduleApply,{passive:true});document.addEventListener('DOMContentSwitch',run);try{const mo=new MutationObserver((records)=>{if(mutationTouchesHeaderOffsetHosts(records))run();});if(document.body){mo.observe(document.body,{childList:true});}else{window.addEventListener('DOMContentLoaded',()=>{try{if(document.body)mo.observe(document.body,{childList:true});}catch(_){}},{once:true});}}catch(_){}})();(function(){"use strict";const STYLE_ID="lp-ipad-only-map-ui-v4";const BOUND_FLAG="__lpIpadOnlyMapUiV4Bound";let raf=0;function isIPadLike(){try{const nav=navigator||{};const ua=String(nav.userAgent||"");const platform=String(nav.platform||"");const vendor=String(nav.vendor||"");const points=Number(nav.maxTouchPoints||0);if(/\biPad\b/i.test(ua))return true;if(/Apple/i.test(vendor)&&/Mac/i.test(platform)&&points>1)return true;}catch(_){}
+window.addEventListener('resize',scheduleApply,{passive:true});window.addEventListener('orientationchange',scheduleApply,{passive:true});window.addEventListener('pageshow',scheduleApply,{passive:true});try{if(window.visualViewport)window.visualViewport.addEventListener('resize',scheduleApply,{passive:true});}catch(_){}
+document.addEventListener('DOMContentSwitch',run);try{const mo=new MutationObserver((records)=>{if(mutationTouchesHeaderOffsetHosts(records))run();});if(document.body){mo.observe(document.body,{childList:true});}else{window.addEventListener('DOMContentLoaded',()=>{try{if(document.body)mo.observe(document.body,{childList:true});}catch(_){}},{once:true});}}catch(_){}})();(function(){"use strict";const STYLE_ID="lp-ipad-only-map-ui-v4";const BOUND_FLAG="__lpIpadOnlyMapUiV4Bound";let raf=0;function isIPadLike(){try{const nav=navigator||{};const ua=String(nav.userAgent||"");const platform=String(nav.platform||"");const vendor=String(nav.vendor||"");const points=Number(nav.maxTouchPoints||0);if(/\biPad\b/i.test(ua))return true;if(/Apple/i.test(vendor)&&/Mac/i.test(platform)&&points>1)return true;}catch(_){}
 return false;}
 if(!isIPadLike())return;function ensureStyle(){if(document.getElementById(STYLE_ID))return;const st=document.createElement("style");st.id=STYLE_ID;st.textContent=`
 /* Only active when JS detects iPad/iPadOS and adds .lp-ipad-map-ui. */
@@ -4511,8 +4516,13 @@ try{document.addEventListener(type,clickThroughGuardPassive,{capture:true,passiv
 `;(document.head||document.documentElement).appendChild(st);}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ensureStyles,{once:true});else ensureStyles();try{document.addEventListener('DOMContentSwitch',ensureStyles);}catch(_){}})();(function(){"use strict";const STYLE_ID="lp-mobile-sheet-header-and-baseline-fix-v1";function ensureStyle(){if(document.getElementById(STYLE_ID))return;const st=document.createElement("style");st.id=STYLE_ID;st.textContent=`
 @media (max-width: 768px), (pointer: coarse) {
+  /* Docked baseline (2026-10-20): was safe area + 18px, which left a wide gap
+     above iOS 26 Safari's floating address bar. The safe area already clears
+     the home indicator, so tuck 9px into it, never closer than 4px to the
+     viewport edge (keeps the lower shadow on screen where the inset is 0).
+     wiki-guides.css and mastery-widget.css stack their buttons on this line. */
   #lp-mobile-sheet{
-    --lp-msheet-bottom: calc(env(safe-area-inset-bottom, 0px) + 18px);
+    --lp-msheet-bottom: max(4px, calc(env(safe-area-inset-bottom, 0px) - 9px));
     bottom: var(--lp-msheet-bottom) !important;
   }
 

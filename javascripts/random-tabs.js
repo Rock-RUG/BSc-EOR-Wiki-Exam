@@ -370,6 +370,17 @@ html[data-md-color-scheme="default"] .mk-rt-panel .mk-rt-sep.mk-rt-sep--group,
 body[data-md-color-scheme="default"] .mk-rt-panel .mk-rt-sep.mk-rt-sep--group{
   background:rgba(0,0,0,.20);
 }
+/* Built-in dark palette (2026-10-20): the indigo primary mix clashed with the
+   dark header and page, so the panel takes the site's raised dark surface
+   (wiki-surfaces.css tokens). Interface themes, header and dropdown skins keep theirs. */
+html:not([data-mk-interface-theme]):not([data-mk-image-interface-theme]):not([data-mk-header-skin]):not([data-mk-dropdown-skin]) body[data-md-color-scheme="slate"] .mk-rt-panel{
+  background:linear-gradient(var(--ws-raised, #23262e), var(--ws-raised, #23262e)) var(--md-default-bg-color, #1e2129);
+  color:var(--md-default-fg-color);
+  border-color:var(--ws-border, rgba(255,255,255,.13));
+  box-shadow:0 12px 30px rgba(0,0,0,.42);
+}
+html:not([data-mk-interface-theme]):not([data-mk-image-interface-theme]):not([data-mk-header-skin]):not([data-mk-dropdown-skin]) body[data-md-color-scheme="slate"] .mk-rt-panel .mk-rt-sep{ background:rgba(255,255,255,.10); }
+html:not([data-mk-interface-theme]):not([data-mk-image-interface-theme]):not([data-mk-header-skin]):not([data-mk-dropdown-skin]) body[data-md-color-scheme="slate"] .mk-rt-panel .mk-rt-sep.mk-rt-sep--group{ background:rgba(255,255,255,.20); }
 /* Cosmetic header skins are account-level choices injected by account-tracking.js.
    The dropdown panels live directly under document.body, so they must be
    styled here as well, not only through the Material header/tabs containers. */

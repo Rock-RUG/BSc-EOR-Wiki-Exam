@@ -17,8 +17,8 @@
 <link href="../../stylesheets/fonts-vendor.css?h=6f3b200e55fb" rel="stylesheet"/>
 <link href="../../stylesheets/katex-vendor.css?h=810f682352aa" rel="stylesheet"/>
 <link href="../../stylesheets/katex-fast.css?h=0c60a27e100b" rel="stylesheet"/>
-<link href="../../stylesheets/extra.css?h=a1c90aa7cd5b" rel="stylesheet"/>
-<link href="../../stylesheets/mastery-widget.css?h=9d9d35de70f7" rel="stylesheet"/>
+<link href="../../stylesheets/extra.css?h=efb2df6aac8e" rel="stylesheet"/>
+<link href="../../stylesheets/mastery-widget.css?h=099ee489c236" rel="stylesheet"/>
 <link href="../../stylesheets/course-search.css?h=1251e49b65c0" rel="stylesheet"/>
 <link href="../../stylesheets/course-status.css?h=147775b80dfa" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-surfaces.css?h=c34ef5acfade" rel="stylesheet"/>
@@ -26,9 +26,9 @@
 <link href="../../stylesheets/wiki-community.css?h=bf04506951f8" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-maps.css?h=ea7a61d0488b" rel="stylesheet" media="not all" data-mk-css-gate="maps"/>
 <link href="../../stylesheets/wiki-mastery-manager.css?h=2f3de385f632" rel="stylesheet" media="not all" data-mk-css-gate="manager"/>
-<link href="../../stylesheets/course-home.css?h=a0a33de54866" rel="stylesheet"/>
+<link href="../../stylesheets/course-home.css?h=a5d0435e04f4" rel="stylesheet"/>
 <link href="../../stylesheets/course-atlas.css?h=b23cfa603ce8" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-guides.css?h=dedd59465d98" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-guides.css?h=56a1c89af607" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-explain.css?h=74c905f81ff8" rel="stylesheet"/>
 <link href="../../stylesheets/search-history.css?h=49fa7cf4d796" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-boxes.css?h=22e3bf635f04" rel="stylesheet"/>
@@ -230,9 +230,9 @@
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=78d92f551229";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=89900ed044e1";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=78d92f551229";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=89900ed044e1";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -2960,10 +2960,10 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <section aria-label="Concepts by topic" class="ch-library" id="course-concepts">
 <div class="ch-unit-list ch-topic-list">
 <details class="ch-unit-card ch-topic-card" id="foundations-block">
-<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Foundations<small>Sets, numbers, functions, plus sequences.</small></span><span class="ch-row-count">17<span class="ch-sr"> concepts</span></span></summary>
+<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Foundations<small>Sets, numbers, arithmetic, bounds, and sequences.</small></span><span class="ch-row-count">48<span class="ch-sr"> concepts</span></span></summary>
 <div class="ch-concept-grid">
 <details class="ch-concept-group">
-<summary>Sets <span class="ch-group-count">6</span></summary>
+<summary>Sets <span class="ch-group-count">11</span></summary>
 <ul>
 <li><a href="set.html">Set</a> </li>
 <li><a href="subset.html">Subset</a> </li>
@@ -2971,47 +2971,129 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li><a href="intersection-of-sets.html">Intersection of Sets</a> </li>
 <li><a href="difference-set.html">Difference Set</a> </li>
 <li><a href="complement.html">Complement</a> </li>
+<li><a href="empty-set.html">Empty Set</a> </li>
+<li><a href="singleton-set.html">Singleton Set</a> </li>
+<li><a href="proper-subset.html">Proper Subset</a> </li>
+<li><a href="disjoint-sets.html">Disjoint Sets</a> </li>
+<li><a href="finite-and-infinite-sets.html">Finite and Infinite Sets</a> </li>
 </ul>
 </details>
 <details class="ch-concept-group">
-<summary>Number systems <span class="ch-group-count">5</span></summary>
+<summary>Number systems <span class="ch-group-count">9</span></summary>
 <ul>
 <li><a href="natural-number.html">Natural Number</a> </li>
 <li><a href="integer.html">Integer</a> </li>
 <li><a href="rational-number.html">Rational Number</a> </li>
 <li><a href="real-number.html">Real Number</a> </li>
 <li><a href="infinity.html">Infinity</a> </li>
+<li><a href="irrational-number.html">Irrational Number</a> </li>
+<li><a href="extended-real-number.html">Extended Real Number</a> </li>
+<li><a href="trichotomy-of-real-numbers.html">Trichotomy of Real Numbers</a> </li>
+<li><a href="mathematical-induction.html">Mathematical Induction</a> </li>
 </ul>
 </details>
 <details class="ch-concept-group">
-<summary>Functions <span class="ch-group-count">3</span></summary>
+<summary>Arithmetic and inequalities <span class="ch-group-count">12</span></summary>
 <ul>
-<li><a href="function.html">Function</a> </li>
-<li><a href="composition-of-functions.html">Composition of Functions</a> </li>
-<li><a href="bijection-and-inverse-function.html">Bijection and Inverse Function</a> </li>
+<li><a href="addition-and-sum.html">Addition and Sum</a> </li>
+<li><a href="subtraction-and-difference.html">Subtraction and Difference</a> </li>
+<li><a href="negation.html">Negation</a> </li>
+<li><a href="multiplication-and-product.html">Multiplication and Product</a> </li>
+<li><a href="division-and-quotient.html">Division and Quotient</a> </li>
+<li><a href="reciprocal.html">Reciprocal</a> </li>
+<li><a href="exponentiation-and-power.html">Exponentiation and Power</a> </li>
+<li><a href="n-th-root.html">n-th Root</a> </li>
+<li><a href="factorial.html">Factorial</a> </li>
+<li><a href="absolute-value.html">Absolute Value</a> </li>
+<li><a href="inequality.html">Inequality</a> </li>
+<li><a href="triangle-inequality.html">Triangle Inequality</a> </li>
 </ul>
 </details>
 <details class="ch-concept-group">
-<summary>Sequences <span class="ch-group-count">3</span></summary>
+<summary>Intervals and bounds <span class="ch-group-count">10</span></summary>
+<ul>
+<li><a href="interval.html">Interval</a> </li>
+<li><a href="endpoint-and-bounded-interval.html">Endpoint and Bounded Interval</a> </li>
+<li><a href="length-of-an-interval.html">Length of an Interval</a> </li>
+<li><a href="upper-bound.html">Upper Bound</a> </li>
+<li><a href="lower-bound.html">Lower Bound</a> </li>
+<li><a href="bounded-set.html">Bounded Set</a> </li>
+<li><a href="maximum-of-a-set.html">Maximum of a Set</a> </li>
+<li><a href="minimum-of-a-set.html">Minimum of a Set</a> </li>
+<li><a href="supremum.html">Supremum</a> </li>
+<li><a href="infimum.html">Infimum</a> </li>
+</ul>
+</details>
+<details class="ch-concept-group">
+<summary>Sequences <span class="ch-group-count">6</span></summary>
 <ul>
 <li><a href="sequence.html">Sequence</a> </li>
 <li><a href="bounded-sequence.html">Bounded Sequence</a> </li>
 <li><a href="monotone-sequence.html">Monotone Sequence</a> </li>
+<li><a href="finite-sequence.html">Finite Sequence</a> </li>
+<li><a href="subsequence.html">Subsequence</a> </li>
+<li><a href="monotone-convergence-theorem.html">Monotone Convergence Theorem</a> </li>
+</ul>
+</details>
+</div>
+</details>
+<details class="ch-unit-card ch-topic-card" id="functions-block">
+<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Functions<small>Function language, properties, and the standard functions.</small></span><span class="ch-row-count">27<span class="ch-sr"> concepts</span></span></summary>
+<div class="ch-concept-grid">
+<details class="ch-concept-group">
+<summary>Function language <span class="ch-group-count">13</span></summary>
+<ul>
+<li><a href="function.html">Function</a> </li>
+<li><a href="composition-of-functions.html">Composition of Functions</a> </li>
+<li><a href="bijection-and-inverse-function.html">Bijection and Inverse Function</a> </li>
+<li><a href="domain.html">Domain</a> </li>
+<li><a href="codomain.html">Codomain</a> </li>
+<li><a href="range.html">Range and Image</a> </li>
+<li><a href="graph-of-a-function.html">Graph of a Function</a> </li>
+<li><a href="cartesian-coordinate-system.html">Cartesian Coordinate System</a> </li>
+<li><a href="injective-function.html">Injective Function</a> </li>
+<li><a href="surjective-function.html">Surjective Function</a> </li>
+<li><a href="bounded-function.html">Bounded Function</a> </li>
+<li><a href="monotone-function.html">Monotone Function</a> </li>
+<li><a href="zero-of-a-function.html">Zero of a Function</a> </li>
+</ul>
+</details>
+<details class="ch-concept-group">
+<summary>Standard functions <span class="ch-group-count">14</span></summary>
+<ul>
+<li><a href="constant-function.html">Constant Function</a> </li>
+<li><a href="identity-function.html">Identity Function</a> </li>
+<li><a href="monomial-and-power-function.html">Monomial and Power Function</a> </li>
+<li><a href="polynomial.html">Polynomial</a> </li>
+<li><a href="rational-function.html">Rational Function</a> </li>
+<li><a href="eulers-number.html">Euler's Number</a> </li>
+<li><a href="exponential-function.html">Exponential Function</a> </li>
+<li><a href="logarithm-and-logarithmic-function.html">Logarithm and Logarithmic Function</a> </li>
+<li><a href="trigonometric-functions.html">Trigonometric Functions</a> </li>
+<li><a href="inverse-trigonometric-functions.html">Inverse Trigonometric Functions</a> </li>
+<li><a href="signum-function.html">Signum Function</a> </li>
+<li><a href="floor-and-ceiling-functions.html">Floor and Ceiling Functions</a> </li>
+<li><a href="indicator-function.html">Indicator Function</a> </li>
+<li><a href="dirichlet-function.html">Dirichlet Function</a> </li>
 </ul>
 </details>
 </div>
 </details>
 <details class="ch-unit-card ch-topic-card" id="limits-block">
-<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Limits and continuity<small>Definitions, tools, and core theorems.</small></span><span class="ch-row-count">13<span class="ch-sr"> concepts</span></span></summary>
+<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Limits and continuity<small>Definitions, tools, and core theorems.</small></span><span class="ch-row-count">18<span class="ch-sr"> concepts</span></span></summary>
 <div class="ch-concept-grid">
 <details class="ch-concept-group">
-<summary>Limits <span class="ch-group-count">5</span></summary>
+<summary>Limits <span class="ch-group-count">9</span></summary>
 <ul>
 <li><a href="limit-at-a-point.html">Limit at a Point</a> </li>
 <li><a href="limit-of-a-sequence.html">Limit of a Sequence</a> </li>
 <li><a href="limit-at-infinity.html">Limit at Infinity</a> </li>
 <li><a href="punctured-neighbourhood.html">Punctured Neighbourhood</a> </li>
 <li><a href="divergence-to-infinity.html">Divergence to Infinity</a> </li>
+<li><a href="one-sided-limit.html">One-Sided Limit</a> </li>
+<li><a href="indeterminate-form.html">Indeterminate Form</a> </li>
+<li><a href="horizontal-asymptote.html">Horizontal Asymptote</a> </li>
+<li><a href="vertical-asymptote.html">Vertical Asymptote</a> </li>
 </ul>
 </details>
 <details class="ch-concept-group">
@@ -3024,10 +3106,11 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </ul>
 </details>
 <details class="ch-concept-group">
-<summary>Continuity <span class="ch-group-count">2</span></summary>
+<summary>Continuity <span class="ch-group-count">3</span></summary>
 <ul>
 <li><a href="continuity.html">Continuity</a> </li>
 <li><a href="one-sided-continuity.html">One-Sided Continuity</a> </li>
+<li><a href="singularity.html">Singularity</a> </li>
 </ul>
 </details>
 <details class="ch-concept-group">
@@ -3040,24 +3123,30 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </div>
 </details>
 <details class="ch-unit-card ch-topic-card" id="diff-block">
-<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Differentiation<small>Rules, approximation, extrema, and key theorems.</small></span><span class="ch-row-count">12<span class="ch-sr"> concepts</span></span></summary>
+<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Differentiation<small>Rules, approximation, extrema, and key theorems.</small></span><span class="ch-row-count">20<span class="ch-sr"> concepts</span></span></summary>
 <div class="ch-concept-grid">
 <details class="ch-concept-group">
-<summary>Essentials <span class="ch-group-count">4</span></summary>
+<summary>Essentials <span class="ch-group-count">6</span></summary>
 <ul>
 <li><a href="derivative-and-differentiability.html">Derivative and Differentiability</a> </li>
 <li><a href="differentiation-rules.html">Differentiation Rules</a> </li>
 <li><a href="chain-rule.html">Chain Rule</a> </li>
 <li><a href="higher-order-derivative.html">Higher Order Derivative</a> </li>
+<li><a href="one-sided-derivative.html">One-Sided Derivative</a> </li>
+<li><a href="differentiability-class.html">Differentiability Class</a> </li>
 </ul>
 </details>
 <details class="ch-concept-group">
-<summary>Extrema and shape <span class="ch-group-count">4</span></summary>
+<summary>Extrema and shape <span class="ch-group-count">8</span></summary>
 <ul>
 <li><a href="critical-point.html">Critical Point</a> </li>
 <li><a href="local-extremum.html">Local Extremum</a> </li>
 <li><a href="convexity-and-concavity.html">Convexity and Concavity</a> </li>
 <li><a href="inflection-point.html">Inflection Point</a> </li>
+<li><a href="stationary-point.html">Stationary Point</a> </li>
+<li><a href="first-order-condition.html">First-Order Condition</a> </li>
+<li><a href="second-order-condition.html">Second-Order Condition</a> </li>
+<li><a href="global-extremum.html">Global Extremum</a> </li>
 </ul>
 </details>
 <details class="ch-concept-group">
@@ -3068,25 +3157,29 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </ul>
 </details>
 <details class="ch-concept-group">
-<summary>Key theorems <span class="ch-group-count">2</span></summary>
+<summary>Key theorems <span class="ch-group-count">4</span></summary>
 <ul>
 <li><a href="mean-value-theorem.html">Mean Value Theorem</a> </li>
 <li><a href="lhopitals-rule.html">L'Hôpital's Rule</a> </li>
+<li><a href="rolles-theorem.html">Rolle’s Theorem</a> </li>
+<li><a href="inverse-function-theorem.html">Inverse Function Theorem</a> </li>
 </ul>
 </details>
 </div>
 </details>
 <details class="ch-unit-card ch-topic-card" id="series-block">
-<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Series<small>Series and convergence tests.</small></span><span class="ch-row-count">8<span class="ch-sr"> concepts</span></span></summary>
+<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Series<small>Series and convergence tests.</small></span><span class="ch-row-count">10<span class="ch-sr"> concepts</span></span></summary>
 <div class="ch-concept-grid">
 <details class="ch-concept-group">
-<summary>Core series <span class="ch-group-count">5</span></summary>
+<summary>Core series <span class="ch-group-count">7</span></summary>
 <ul>
 <li><a href="finite-series.html">Finite Series</a> </li>
 <li><a href="arithmetic-series.html">Arithmetic Series</a> </li>
 <li><a href="geometric-series.html">Geometric Series</a> </li>
 <li><a href="infinite-series.html">Infinite Series</a> </li>
 <li><a href="harmonic-series.html">Harmonic Series</a> </li>
+<li><a href="alternating-series.html">Alternating Series</a> </li>
+<li><a href="p-series.html">p-series</a> </li>
 </ul>
 </details>
 <details class="ch-concept-group">
@@ -3146,22 +3239,22 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <div class="ch-more-list">
 <!-- course-home:more-begin -->
 <details class="ch-more-row ch-more-row--leads-to" id="course-leads-to">
-<summary><span class="ch-row-name">Where it leads<small>Later courses on the wiki that build on these concepts.</small></span><span class="ch-row-count">9 courses</span></summary>
+<summary><span class="ch-row-name">Where it leads<small>Later courses on the wiki that build on these concepts.</small></span><span class="ch-row-count">10 courses</span></summary>
 <div class="ch-more-body ch-connect">
 <div class="ch-connect-course">
 <div class="ch-connect-head"><a class="ch-connect-name" href="../../Year-1/2a-Math-III-Analysis/index.html">Math III: Analysis</a></div>
 <ul class="ch-chips">
 <li><a href="function.html">Function</a> </li>
+<li><a href="subset.html">Subset</a> </li>
 <li><a href="union-of-sets.html">Union of Sets</a> </li>
 <li><a href="continuity.html">Continuity</a> </li>
 <li><a href="infinite-series.html">Infinite Series</a> </li>
 <li><a href="limit-of-a-sequence.html">Limit of a Sequence</a> </li>
-<li><a href="polynomial.html">Polynomial</a> </li>
 <li class="ch-chip-more">
 <details>
 <summary><span class="ch-more-closed">+25 more</span><span class="ch-more-open">Show fewer</span></summary>
 <ul class="ch-chips">
-<li><a href="subset.html">Subset</a> </li>
+<li><a href="polynomial.html">Polynomial</a> </li>
 <li><a href="intersection-of-sets.html">Intersection of Sets</a> </li>
 <li><a href="interval.html">Interval</a> </li>
 <li><a href="monomial-and-power-function.html">Monomial and Power Function</a> </li>
@@ -3274,7 +3367,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </li>
 </ul>
 </div>
-<p class="ch-connect-also">Also: <a href="../../Year-2/1a-Math-V-Advanced-Linear-Algebra/index.html">Math V: Advanced Linear Algebra</a> (via Exponential Function), <a href="../../Year-1/2b-Probability-Distributions/index.html">Probability Distributions</a> (via Limit of a Sequence), <a href="../../Year-2/2a-Life-Insurance/index.html">Life Insurance</a> (via Geometric Series), <a href="../../Year-2/2b-Game-Theory/index.html">Game Theory</a> (via Function), <a href="../../Year-2/2b-Risk-Insurance/index.html">Risk Insurance</a> (via Convexity and Concavity)</p>
+<p class="ch-connect-also">Also: <a href="../../Year-2/1a-Math-V-Advanced-Linear-Algebra/index.html">Math V: Advanced Linear Algebra</a> (via Exponential Function), <a href="../../Year-1/2b-Probability-Distributions/index.html">Probability Distributions</a> (via Limit of a Sequence), <a href="../../Year-2/2a-Life-Insurance/index.html">Life Insurance</a> (via Geometric Series), <a href="../../Year-2/2b-Game-Theory/index.html">Game Theory</a> (via Function), <a href="../../Year-2/2b-Risk-Insurance/index.html">Risk Insurance</a> (via Convexity and Concavity), <a href="../../Year-1/1a-OR-Modelling/index.html">OR Modelling</a> (via Cartesian Coordinate System)</p>
 </div>
 </details>
 <details class="ch-more-row ch-more-row--achievements" hidden="hidden" id="course-achievements-row">
@@ -3297,7 +3390,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <!-- course-home:teaching-end -->
 </div>
 </section>
-<p class="mk-last-updated">Last updated: 16 October 2026 16:09</p>
+<p class="mk-last-updated">Last updated: 20 October 2026 19:41</p>
 <script id="mk-course-home-rows">
 (function () {
   var art = document.querySelector("article.md-content__inner");
@@ -3391,7 +3484,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../javascripts/exam-mode.js?h=09b295110531"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
 <script src="../../javascripts/wiki-explain.js?h=642fc64bd1a9"></script>
-<script src="../../javascripts/startup-preferences.js?h=78d92f551229"></script>
+<script src="../../javascripts/startup-preferences.js?h=89900ed044e1"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=f2890ec6d446"></script>
 <script src="../../javascripts/ui-guard.js?h=7c21cbfde3c4"></script>
@@ -3408,7 +3501,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../javascripts/mathjax.js?h=06875c0b69ec"></script>
 <script src="../../javascripts/preload-guard.js?h=5e42effda2c3"></script>
 <script src="../../javascripts/random.js?h=10f974c5fe5c"></script>
-<script src="../../javascripts/random-tabs.js?h=e8b57cf10ac1"></script>
+<script src="../../javascripts/random-tabs.js?h=0499b13339db"></script>
 <script src="../../javascripts/search-enter.js?h=25c7c2d382da"></script>
 <script src="../../javascripts/concept-fold.js?h=6399c42db2c6"></script>
 <script src="../../javascripts/tag-search-links.js?h=84cb5c2dd87f"></script>
@@ -3417,7 +3510,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../javascripts/wiki-guide-pages.js?h=988cab459044"></script>
 <script src="../../javascripts/wiki-guide-account.js?h=2327db54a4ff"></script>
 <script src="../../javascripts/wiki-guides.js?h=750720ce1432"></script>
-<script src="../../javascripts/wiki-explain-content.js?h=abf17bf65658"></script>
+<script src="../../javascripts/wiki-explain-content.js?h=688e5504f96a"></script>
 <script src="../../javascripts/course-atlas.js?h=7c112d78335c"></script>
 </body>
 </html>

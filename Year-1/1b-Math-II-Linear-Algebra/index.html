@@ -17,8 +17,8 @@
 <link href="../../stylesheets/fonts-vendor.css?h=6f3b200e55fb" rel="stylesheet"/>
 <link href="../../stylesheets/katex-vendor.css?h=810f682352aa" rel="stylesheet"/>
 <link href="../../stylesheets/katex-fast.css?h=0c60a27e100b" rel="stylesheet"/>
-<link href="../../stylesheets/extra.css?h=a1c90aa7cd5b" rel="stylesheet"/>
-<link href="../../stylesheets/mastery-widget.css?h=9d9d35de70f7" rel="stylesheet"/>
+<link href="../../stylesheets/extra.css?h=efb2df6aac8e" rel="stylesheet"/>
+<link href="../../stylesheets/mastery-widget.css?h=099ee489c236" rel="stylesheet"/>
 <link href="../../stylesheets/course-search.css?h=1251e49b65c0" rel="stylesheet"/>
 <link href="../../stylesheets/course-status.css?h=147775b80dfa" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-surfaces.css?h=c34ef5acfade" rel="stylesheet"/>
@@ -26,9 +26,9 @@
 <link href="../../stylesheets/wiki-community.css?h=bf04506951f8" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-maps.css?h=ea7a61d0488b" rel="stylesheet" media="not all" data-mk-css-gate="maps"/>
 <link href="../../stylesheets/wiki-mastery-manager.css?h=2f3de385f632" rel="stylesheet" media="not all" data-mk-css-gate="manager"/>
-<link href="../../stylesheets/course-home.css?h=a0a33de54866" rel="stylesheet"/>
+<link href="../../stylesheets/course-home.css?h=a5d0435e04f4" rel="stylesheet"/>
 <link href="../../stylesheets/course-atlas.css?h=b23cfa603ce8" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-guides.css?h=dedd59465d98" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-guides.css?h=56a1c89af607" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-explain.css?h=74c905f81ff8" rel="stylesheet"/>
 <link href="../../stylesheets/search-history.css?h=49fa7cf4d796" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-boxes.css?h=22e3bf635f04" rel="stylesheet"/>
@@ -228,9 +228,9 @@
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=78d92f551229";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=89900ed044e1";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=78d92f551229";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=89900ed044e1";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -2961,13 +2961,33 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </div>
 </details>
 <details class="ch-unit-card ch-topic-card" id="foundations-block">
-<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Algebraic and complex foundations<small>Complex numbers, fields, polynomials, and formulas used later.</small></span><span class="ch-row-count">26<span class="ch-sr"> concepts</span></span></summary>
+<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Algebraic and complex foundations<small>Algebraic structures, complex numbers, polynomials, and formulas used later.</small></span><span class="ch-row-count">44<span class="ch-sr"> concepts</span></span></summary>
 <div class="ch-concept-grid">
 <details class="ch-concept-group">
-<summary>Algebraic language <span class="ch-group-count">2</span></summary>
+<summary>Algebraic language <span class="ch-group-count">8</span></summary>
 <ul>
 <li><a href="field.html">Field</a> </li>
 <li><a href="equivalence-relation.html">Equivalence Relation</a> </li>
+<li><a href="binary-operation.html">Binary Operation</a> </li>
+<li><a href="associativity.html">Associativity</a> </li>
+<li><a href="commutativity.html">Commutativity</a> </li>
+<li><a href="distributivity.html">Distributivity</a> </li>
+<li><a href="identity-element.html">Identity Element</a> </li>
+<li><a href="inverse-element.html">Inverse Element</a> </li>
+</ul>
+</details>
+<details class="ch-concept-group">
+<summary>Algebraic structures <span class="ch-group-count">9</span></summary>
+<ul>
+<li><a href="algebraic-structure.html">Algebraic Structure</a> </li>
+<li><a href="semigroup.html">Semigroup</a> </li>
+<li><a href="monoid.html">Monoid</a> </li>
+<li><a href="group.html">Group</a> </li>
+<li><a href="abelian-group.html">Abelian Group</a> </li>
+<li><a href="ring.html">Ring</a> </li>
+<li><a href="algebraically-closed-field.html">Algebraically Closed Field</a> </li>
+<li><a href="permutation.html">Permutation</a> </li>
+<li><a href="symmetric-group.html">Symmetric Group</a> </li>
 </ul>
 </details>
 <details class="ch-concept-group">
@@ -3012,24 +3032,33 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </ul>
 </details>
 <details class="ch-concept-group">
-<summary>Polynomials and formulas <span class="ch-group-count">3</span></summary>
+<summary>Polynomials and formulas <span class="ch-group-count">6</span></summary>
 <ul>
 <li><a href="root-of-a-polynomial.html">Root of a Polynomial</a> </li>
 <li><a href="fundamental-theorem-of-algebra.html">Fundamental Theorem of Algebra</a> </li>
 <li><a href="de-moivres-formula.html">De Moivre's Formula</a> </li>
+<li><a href="polynomial-long-division.html">Polynomial Long Division</a> </li>
+<li><a href="polynomial-greatest-common-divisor.html">Polynomial Greatest Common Divisor</a> </li>
+<li><a href="complex-conjugate-root-theorem.html">Complex Conjugate Root Theorem</a> </li>
 </ul>
 </details>
 </div>
 </details>
 <details class="ch-unit-card ch-topic-card" id="vector-space-block">
-<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Vector spaces<small>Linear combinations, span, independence, bases, and dimension.</small></span><span class="ch-row-count">12<span class="ch-sr"> concepts</span></span></summary>
+<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Vector spaces<small>Linear combinations, span, independence, bases, and dimension.</small></span><span class="ch-row-count">18<span class="ch-sr"> concepts</span></span></summary>
 <div class="ch-concept-grid">
 <details class="ch-concept-group">
-<summary>Spaces and subspaces <span class="ch-group-count">3</span></summary>
+<summary>Spaces and subspaces <span class="ch-group-count">9</span></summary>
 <ul>
 <li><a href="vector.html">Vector</a> </li>
 <li><a href="vector-space.html">Vector Space</a> </li>
 <li><a href="subspace.html">Subspace</a> </li>
+<li><a href="real-coordinate-space.html">Real Coordinate Space</a> </li>
+<li><a href="origin.html">Origin</a> </li>
+<li><a href="zero-vector.html">Zero Vector</a> </li>
+<li><a href="vector-addition.html">Vector Addition</a> </li>
+<li><a href="scalar-multiplication.html">Scalar Multiplication</a> </li>
+<li><a href="sum-of-subspaces.html">Sum of Subspaces</a> </li>
 </ul>
 </details>
 <details class="ch-concept-group">
@@ -3059,32 +3088,49 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </div>
 </details>
 <details class="ch-unit-card ch-topic-card" id="matrices-systems-block">
-<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Matrices, systems, and linear maps<small>Matrix operations, linear systems, row reduction, and maps.</small></span><span class="ch-row-count">14<span class="ch-sr"> concepts</span></span></summary>
+<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Matrices, systems, and linear maps<small>Matrix operations, linear systems, row reduction, and maps.</small></span><span class="ch-row-count">26<span class="ch-sr"> concepts</span></span></summary>
 <div class="ch-concept-grid">
 <details class="ch-concept-group">
-<summary>Matrix essentials <span class="ch-group-count">4</span></summary>
+<summary>Matrix essentials <span class="ch-group-count">7</span></summary>
 <ul>
 <li><a href="matrix.html">Matrix</a> </li>
 <li><a href="matrix-product.html">Matrix Product</a> </li>
 <li><a href="identity-matrix.html">Identity Matrix</a> </li>
 <li><a href="transpose.html">Transpose</a> </li>
+<li><a href="matrix-addition.html">Matrix Addition</a> </li>
+<li><a href="matrix-scalar-multiplication.html">Matrix Scalar Multiplication</a> </li>
+<li><a href="trace.html">Trace</a> </li>
 </ul>
 </details>
 <details class="ch-concept-group">
-<summary>Linear systems <span class="ch-group-count">4</span></summary>
+<summary>Special matrices <span class="ch-group-count">6</span></summary>
+<ul>
+<li><a href="main-diagonal.html">Matrix Diagonals</a> </li>
+<li><a href="diagonal-matrix.html">Diagonal Matrix</a> </li>
+<li><a href="upper-triangular-matrix.html">Triangular Matrix</a> </li>
+<li><a href="symmetric-matrix.html">Symmetric Matrix</a> </li>
+<li><a href="block-matrix.html">Block Matrix</a> </li>
+<li><a href="permutation-matrix.html">Permutation Matrix</a> </li>
+</ul>
+</details>
+<details class="ch-concept-group">
+<summary>Linear systems <span class="ch-group-count">5</span></summary>
 <ul>
 <li><a href="system-of-linear-equations.html">System of Linear Equations</a> </li>
 <li><a href="standard-form-of-a-linear-system.html">Standard Form of a Linear System</a> </li>
 <li><a href="augmented-matrix.html">Augmented Matrix</a> </li>
 <li><a href="solution-set.html">Solution Set</a> </li>
+<li><a href="equivalent-systems-of-equations.html">Equivalent Systems of Equations</a> </li>
 </ul>
 </details>
 <details class="ch-concept-group">
-<summary>Row reduction <span class="ch-group-count">3</span></summary>
+<summary>Row reduction <span class="ch-group-count">5</span></summary>
 <ul>
 <li><a href="elementary-row-operation.html">Elementary Row Operation</a> </li>
 <li><a href="row-echelon-form.html">Row Echelon and Reduced Row Echelon Form</a> </li>
 <li><a href="gauss-jordan-elimination.html">Gauss-Jordan Elimination</a> </li>
+<li><a href="pivot.html">Pivot</a> </li>
+<li><a href="lu-decomposition.html">LU Decomposition</a> </li>
 </ul>
 </details>
 <details class="ch-concept-group">
@@ -3098,7 +3144,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </div>
 </details>
 <details class="ch-unit-card ch-topic-card" id="rank-det-block">
-<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Rank, kernel, inverse matrices, and determinants<small>Invertibility, rank, determinant methods, and solution structure.</small></span><span class="ch-row-count">10<span class="ch-sr"> concepts</span></span></summary>
+<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Rank, kernel, inverse matrices, and determinants<small>Invertibility, rank, determinant methods, and solution structure.</small></span><span class="ch-row-count">11<span class="ch-sr"> concepts</span></span></summary>
 <div class="ch-concept-grid">
 <details class="ch-concept-group">
 <summary>Kernel, range, and rank <span class="ch-group-count">4</span></summary>
@@ -3117,26 +3163,29 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </ul>
 </details>
 <details class="ch-concept-group">
-<summary>Determinants <span class="ch-group-count">4</span></summary>
+<summary>Determinants <span class="ch-group-count">5</span></summary>
 <ul>
 <li><a href="determinant.html">Determinant</a> </li>
 <li><a href="cofactor-expansion.html">Cofactor Expansion</a> </li>
 <li><a href="adjugate-matrix.html">Adjugate Matrix</a> </li>
 <li><a href="cramers-rule.html">Cramer's Rule</a> </li>
+<li><a href="sarrus-rule.html">Sarrus' Rule</a> </li>
 </ul>
 </details>
 </div>
 </details>
 <details class="ch-unit-card ch-topic-card" id="geometry-block">
-<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Inner products and geometry<small>Lengths, angles, orthogonality, projections, lines, and planes.</small></span><span class="ch-row-count">11<span class="ch-sr"> concepts</span></span></summary>
+<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Inner products and geometry<small>Lengths, angles, orthogonality, projections, lines, and planes.</small></span><span class="ch-row-count">16<span class="ch-sr"> concepts</span></span></summary>
 <div class="ch-concept-grid">
 <details class="ch-concept-group">
-<summary>Lengths and angles <span class="ch-group-count">4</span></summary>
+<summary>Lengths and angles <span class="ch-group-count">6</span></summary>
 <ul>
 <li><a href="euclidean-space.html">Euclidean Space</a> </li>
 <li><a href="inner-product.html">Inner Product</a> </li>
 <li><a href="vector-norm.html">Euclidean Norm</a> </li>
 <li><a href="angle-between-vectors.html">Angle Between Vectors</a> </li>
+<li><a href="euclidean-distance.html">Euclidean Distance</a> </li>
+<li><a href="triangle-inequality-vector-norm.html">Triangle Inequality for Vector Norms</a> </li>
 </ul>
 </details>
 <details class="ch-concept-group">
@@ -3148,34 +3197,42 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </ul>
 </details>
 <details class="ch-concept-group">
-<summary>Lines and planes <span class="ch-group-count">4</span></summary>
+<summary>Lines and planes <span class="ch-group-count">7</span></summary>
 <ul>
 <li><a href="hyperplane.html">Hyperplane</a> </li>
 <li><a href="plane.html">Plane</a> </li>
 <li><a href="parametric-representation-of-a-line.html">Parametric Representations of Lines and Planes</a> </li>
 <li><a href="point-normal-equation-of-a-plane.html">Point-Normal Equation of a Plane</a> </li>
+<li><a href="normal-vector.html">Normal Vector</a> </li>
+<li><a href="distance-between-point-and-line.html">Distance Between a Point and a Line</a> </li>
+<li><a href="skew-lines.html">Skew Lines</a> </li>
 </ul>
 </details>
 </div>
 </details>
 <details class="ch-unit-card ch-topic-card" id="eigen-block">
-<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Eigenvalues, diagonalisation, and quadratic forms<small>Spectral ideas, diagonalisation, Jordan form, and definiteness.</small></span><span class="ch-row-count">10<span class="ch-sr"> concepts</span></span></summary>
+<summary><span aria-hidden="true" class="ch-unit-num ch-unit-num--topic"></span><span class="ch-row-name">Eigenvalues, diagonalisation, and quadratic forms<small>Spectral ideas, diagonalisation, Jordan form, and definiteness.</small></span><span class="ch-row-count">15<span class="ch-sr"> concepts</span></span></summary>
 <div class="ch-concept-grid">
 <details class="ch-concept-group">
-<summary>Eigenvalue basics <span class="ch-group-count">3</span></summary>
+<summary>Eigenvalue basics <span class="ch-group-count">6</span></summary>
 <ul>
 <li><a href="eigenvalue-and-eigenvector.html">Eigenvalue and Eigenvector</a> </li>
 <li><a href="characteristic-polynomial.html">Characteristic Polynomial</a> </li>
 <li><a href="algebraic-multiplicity.html">Algebraic and Geometric Multiplicity</a> </li>
+<li><a href="eigenvalue-root-theorem.html">Eigenvalue-Root Theorem</a> </li>
+<li><a href="distinct-eigenvalues-theorem.html">Distinct Eigenvalues Theorem</a> </li>
+<li><a href="invariant-subspace.html">Invariant Subspace</a> </li>
 </ul>
 </details>
 <details class="ch-concept-group">
-<summary>Diagonalisation <span class="ch-group-count">4</span></summary>
+<summary>Diagonalisation <span class="ch-group-count">6</span></summary>
 <ul>
 <li><a href="eigenbasis.html">Eigenbasis</a> </li>
 <li><a href="diagonalizable-matrix.html">Diagonalizable Matrix</a> </li>
 <li><a href="diagonalization.html">Diagonalization</a> </li>
 <li><a href="jordan-normal-form.html">Jordan Normal Form</a> </li>
+<li><a href="generalized-eigenvector.html">Generalized Eigenvector</a> </li>
+<li><a href="jordan-block.html">Jordan Blocks and Chains</a> </li>
 </ul>
 </details>
 <details class="ch-concept-group">
@@ -3342,7 +3399,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <!-- course-home:teaching-end -->
 </div>
 </section>
-<p class="mk-last-updated">Last updated: 16 October 2026 16:09</p>
+<p class="mk-last-updated">Last updated: 20 October 2026 19:41</p>
 <script id="mk-course-home-rows">
 (function () {
   var art = document.querySelector("article.md-content__inner");
@@ -3436,7 +3493,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../javascripts/exam-mode.js?h=09b295110531"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
 <script src="../../javascripts/wiki-explain.js?h=642fc64bd1a9"></script>
-<script src="../../javascripts/startup-preferences.js?h=78d92f551229"></script>
+<script src="../../javascripts/startup-preferences.js?h=89900ed044e1"></script>
 <script src="../../javascripts/link-math-underline.js?h=e0c3b5c48fa1"></script>
 <script src="../../javascripts/style-shortcuts.js?h=f2890ec6d446"></script>
 <script src="../../javascripts/ui-guard.js?h=7c21cbfde3c4"></script>
@@ -3453,7 +3510,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../javascripts/mathjax.js?h=06875c0b69ec"></script>
 <script src="../../javascripts/preload-guard.js?h=5e42effda2c3"></script>
 <script src="../../javascripts/random.js?h=10f974c5fe5c"></script>
-<script src="../../javascripts/random-tabs.js?h=e8b57cf10ac1"></script>
+<script src="../../javascripts/random-tabs.js?h=0499b13339db"></script>
 <script src="../../javascripts/search-enter.js?h=25c7c2d382da"></script>
 <script src="../../javascripts/concept-fold.js?h=6399c42db2c6"></script>
 <script src="../../javascripts/tag-search-links.js?h=84cb5c2dd87f"></script>
@@ -3462,7 +3519,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../javascripts/wiki-guide-pages.js?h=988cab459044"></script>
 <script src="../../javascripts/wiki-guide-account.js?h=2327db54a4ff"></script>
 <script src="../../javascripts/wiki-guides.js?h=750720ce1432"></script>
-<script src="../../javascripts/wiki-explain-content.js?h=abf17bf65658"></script>
+<script src="../../javascripts/wiki-explain-content.js?h=688e5504f96a"></script>
 <script src="../../javascripts/course-atlas.js?h=7c112d78335c"></script>
 </body>
 </html>

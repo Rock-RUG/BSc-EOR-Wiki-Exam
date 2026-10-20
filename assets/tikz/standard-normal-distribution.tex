@@ -10,7 +10,7 @@
 	\begin{axis}[
 		axis lines=left, xmin=-3.6, xmax=3.7, ymin=0, ymax=0.47,
 		xtick={-3,-2,-1,0,1,2,3}, ytick={0,0.1,0.2,0.3,0.4},
-		xlabel={$z$}, ylabel={$\varphi(z)$}, ylabel style={rotate=-90, anchor=south, at={(axis description cs:0,1.02)}},
+		xlabel={$z$}, ylabel={$\phi(z)$}, ylabel style={rotate=-90, anchor=south, at={(axis description cs:0,1.02)}},
 		samples=160, smooth, width=8.8cm, height=5.2cm, clip=false
 		]
 		\addplot[fill=blue!18, draw=none, domain=-3.5:1] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;

@@ -6,6 +6,7 @@
 \begin{document}
 % |x+y| <= |x| + |y|: on the number line the step x followed by the step y never lands further
 % from 0 than |x|+|y|; equality only when x and y point the same way.
+% Case 2: x=2.5, y=-1.5, so |x+y|=1 and the |x|+|y| bar has length 4.
 \begin{tikzpicture}[x=1.3cm, every node/.style={font=\small}]
 	% case 1: same sign
 	\draw[-{Latex[length=2mm]}] (-0.4,1.6) -- (6.4,1.6);
@@ -24,8 +25,8 @@
 	\node[red, above=3pt] at (1.75,-0.25) {$y$};
 	\draw[gray, |-|] (0,-0.85) -- (1.0,-0.85);
 	\node[gray, below=1pt] at (0.5,-0.85) {$|x+y|$};
-	\draw[gray, |-|] (2.6,-0.85) -- (6.1,-0.85);
-	\node[gray, below=1pt] at (4.35,-0.85) {$|x|+|y|$};
+	\draw[gray, |-|] (2.3,-0.85) -- (6.3,-0.85);
+	\node[gray, below=1pt] at (4.3,-0.85) {$|x|+|y|$};
 	\node[below=2pt] at (0,-0.4) {$0$};
 \end{tikzpicture}
 \end{document}

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1792267358673,
+  "generatedAt": 1792518651382,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -3524,7 +3524,7 @@
       "aiMcq": true
     },
     "Year-1/1b-Probability-Theory-for-EOR/prosecutors-fallacy.html": {
-      "title": "Prosecutors Fallacy",
+      "title": "Prosecutor's Fallacy",
       "courseName": "1b-Probability-Theory-for-EOR",
       "coursePath": "Year-1/1b-Probability-Theory-for-EOR",
       "curriculumStatus": "current",
@@ -7195,7 +7195,8 @@
       "Year-1/1a-OR-Modelling/economic-order-quantity.html"
     ],
     "Year-1/1a-OR-Modelling/euclidean-network.html": [
-      "Year-1/1a-OR-Modelling/undirected-network.html"
+      "Year-1/1a-OR-Modelling/undirected-network.html",
+      "Year-1/1a-Math-I-Calculus/cartesian-coordinate-system.html"
     ],
     "Year-1/1a-OR-Modelling/euler-network-characterization.html": [
       "Year-1/1a-OR-Modelling/connected-network.html",
@@ -8477,6 +8478,8 @@
       "Year-1/2a-Math-III-Analysis/open-metric-ball.html"
     ],
     "Year-1/2a-Math-III-Analysis/adherent-point-and-closure-of-a-set.html": [
+      "Year-1/2a-Math-III-Analysis/metric-and-metric-space.html",
+      "Year-1/1a-Math-I-Calculus/subset.html",
       "Year-1/2a-Math-III-Analysis/open-metric-ball.html"
     ],
     "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html": [
@@ -10277,6 +10280,7 @@
     "Year-1/1a-Math-I-Calculus/bounded-set.html": [],
     "Year-1/1a-Math-I-Calculus/cartesian-coordinate-system.html": [
       "Year-1/1a-Math-I-Calculus/graph-of-a-function.html",
+      "Year-1/1a-OR-Modelling/euclidean-network.html",
       "Year-1/1b-Math-II-Linear-Algebra/complex-plane-cartesian-coordinate-system.html",
       "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html"
     ],
@@ -10858,6 +10862,7 @@
       "Year-1/1b-Math-II-Linear-Algebra/power-set.html",
       "Year-1/1b-Math-II-Linear-Algebra/subspace.html",
       "Year-1/1b-Probability-Theory-for-EOR/event.html",
+      "Year-1/2a-Math-III-Analysis/adherent-point-and-closure-of-a-set.html",
       "Year-1/2a-Math-III-Analysis/closed-metric-ball.html",
       "Year-1/2a-Math-III-Analysis/open-metric-ball.html",
       "Year-1/2a-Math-III-Analysis/topology-and-topological-space.html"
@@ -12567,6 +12572,7 @@
     ],
     "Year-1/2a-Math-III-Analysis/maximum-norm.html": [],
     "Year-1/2a-Math-III-Analysis/metric-and-metric-space.html": [
+      "Year-1/2a-Math-III-Analysis/adherent-point-and-closure-of-a-set.html",
       "Year-1/2a-Math-III-Analysis/cauchy-sequence-in-a-metric-space.html",
       "Year-1/2a-Math-III-Analysis/closed-metric-ball.html",
       "Year-1/2a-Math-III-Analysis/convergence-in-a-metric-space.html",
@@ -13928,7 +13934,6 @@
     ],
     "Year-1/1a-Math-I-Calculus/fundamental-theorem-of-calculus-part-2.html": [
       "Year-1/1a-Math-I-Calculus/fundamental-theorem-of-calculus-part-1.html",
-      "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-algebra.html",
       "Year-1/1a-Math-I-Calculus/indefinite-integral.html"
     ],
     "Year-1/1a-Math-I-Calculus/gamma-function.html": [
@@ -14364,7 +14369,8 @@
     ],
     "Year-1/1a-Math-I-Calculus/trichotomy-of-real-numbers.html": [
       "Year-1/1a-Math-I-Calculus/inequality.html",
-      "Year-1/1a-Math-I-Calculus/absolute-value.html"
+      "Year-1/1a-Math-I-Calculus/absolute-value.html",
+      "Year-1/1b-Math-II-Linear-Algebra/complex-number.html"
     ],
     "Year-1/1a-Math-I-Calculus/trigonometric-functions.html": [
       "Year-1/1a-Math-I-Calculus/inverse-trigonometric-functions.html",
@@ -14910,7 +14916,8 @@
     ],
     "Year-1/1a-OR-Modelling/shadow-price.html": [
       "Year-1/1a-OR-Modelling/rhs-sensitivity-range.html",
-      "Year-1/1a-OR-Modelling/reduced-cost.html"
+      "Year-1/1a-OR-Modelling/reduced-cost.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/shadow-price.html"
     ],
     "Year-1/1a-OR-Modelling/shortage-cost.html": [
       "Year-1/1a-OR-Modelling/eoq-with-planned-shortages.html",
@@ -15785,7 +15792,6 @@
       "Year-1/1b-Math-II-Linear-Algebra/vector-addition.html",
       "Year-1/1b-Math-II-Linear-Algebra/scalar-multiplication.html",
       "Year-1/1b-Math-II-Linear-Algebra/matrix.html",
-      "Year-1/1b-Probability-Theory-for-EOR/random-variable.html",
       "Year-1/1b-Math-II-Linear-Algebra/linear-combination.html",
       "Year-1/1b-Math-II-Linear-Algebra/coordinate.html"
     ],
@@ -16184,7 +16190,6 @@
       "Year-1/1b-Probability-Theory-for-EOR/order-statistic.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/random-variable.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/vector.html",
       "Year-1/1a-Math-I-Calculus/domain.html",
       "Year-1/1a-Math-I-Calculus/codomain.html",
       "Year-1/1b-Probability-Theory-for-EOR/event.html",

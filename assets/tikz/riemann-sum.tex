@@ -4,8 +4,8 @@
 \pgfplotsset{compat=1.18}
 
 \begin{document}
-% A tagged Riemann sum of f(x)=x^2/2+1 on [0,4]: partition 0<1<2<3<4, one tag t_i in each
-% subinterval (here the midpoints), rectangle heights f(t_i).
+% A tagged Riemann sum of f(x)=x^2/2+1 on [0,4]: partition 0<1<2<3<4, one tag x*_i in each
+% subinterval (here the midpoints), rectangle heights f(x*_i).
 \begin{tikzpicture}
 	\begin{axis}[
 		axis lines=middle,
@@ -29,12 +29,12 @@
 		\foreach \t in {0.5,1.5,2.5,3.5} {
 			\addplot[only marks, mark=*, mark size=1.4pt, red] coordinates {(\t,0)};
 		}
-		\node[red, anchor=north, font=\small] at (axis cs:0.5,-0.1) {$t_1$};
-		\node[red, anchor=north, font=\small] at (axis cs:1.5,-0.1) {$t_2$};
-		\node[red, anchor=north, font=\small] at (axis cs:2.5,-0.1) {$t_3$};
-		\node[red, anchor=north, font=\small] at (axis cs:3.5,-0.1) {$t_4$};
+		\node[red, anchor=north, font=\small] at (axis cs:0.5,-0.1) {$x^*_1$};
+		\node[red, anchor=north, font=\small] at (axis cs:1.5,-0.1) {$x^*_2$};
+		\node[red, anchor=north, font=\small] at (axis cs:2.5,-0.1) {$x^*_3$};
+		\node[red, anchor=north, font=\small] at (axis cs:3.5,-0.1) {$x^*_4$};
 		\draw[dashed, red] (axis cs:2.5,0) -- (axis cs:2.5,4.125);
-		\node[red, anchor=west, font=\small] at (axis cs:2.62,3.0) {$f(t_3)$};
+		\node[red, anchor=west, font=\small] at (axis cs:2.62,3.0) {$f(x^*_3)$};
 	\end{axis}
 \end{tikzpicture}
 \end{document}

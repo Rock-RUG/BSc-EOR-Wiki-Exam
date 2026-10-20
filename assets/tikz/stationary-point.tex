@@ -4,8 +4,8 @@
 \pgfplotsset{compat=1.18}
 
 \begin{document}
-% Stationary points are where the tangent is horizontal, f'(x)=0: a local maximum, a local minimum,
-% and a point of inflection with f'=0 that is neither.
+% Stationary points are where the tangent is horizontal, f'(x)=0: here two local maxima and one
+% local minimum of f(x) = sin(1.6x) + 0.6.
 \begin{tikzpicture}
 	\begin{axis}[
 		axis lines=middle,
@@ -17,10 +17,11 @@
 		samples=200, smooth, clip=false,
 		width=8.6cm, height=5.4cm
 		]
-		% f(x) = 0.5 sin(1.6x) + 0.08(x-4)^3 + 0.6 : stationary points found numerically are approximate
+		% f'(x) = 1.6 cos(1.6x) = 0 at x = pi/3.2, 3pi/3.2, 5pi/3.2 (0.982, 2.945, 4.909), values 1.6, -0.4, 1.6
 		\addplot[thick, blue, domain=0.2:5.3] {sin(deg(1.6*x))+0.6};
 		\addplot[red, dashed, domain=0.4:1.6] {1.6};
 		\addplot[red, dashed, domain=2.35:3.55] {-0.4};
+		\addplot[red, dashed, domain=4.31:5.51] {1.6};
 		\addplot[only marks, mark=*, red] coordinates {(0.982,1.6) (2.945,-0.4) (4.909,1.6)};
 		\node[red, anchor=south, font=\small] at (axis cs:0.982,1.68) {$f'=0$};
 		\node[red, anchor=north, font=\small] at (axis cs:2.945,-0.48) {$f'=0$};

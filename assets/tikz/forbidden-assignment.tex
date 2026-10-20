@@ -4,7 +4,7 @@
 \usetikzlibrary{matrix,arrows.meta}
 
 \begin{document}
-% A forbidden pair (agent 2 may not do task 3) gets cost infinity; row and column reductions
+% A forbidden pair (agent 2 may not do task 2) gets cost infinity; row and column reductions
 % leave it infinite, so it can never become a zero and is never selected.
 \begin{tikzpicture}[every node/.style={font=\small}, >={Latex[length=1.8mm]}]
 	\matrix (A) [matrix of math nodes, nodes={minimum size=6.5mm, anchor=center, draw=gray!50}, column sep=-\pgflinewidth, row sep=-\pgflinewidth] at (0,0) {|[fill=gray!15]| & |[fill=gray!15]| T_1 & |[fill=gray!15]| T_2 & |[fill=gray!15]| T_3 \\ |[fill=gray!15]| A_1 & |[fill=green!25]| 2 & 5 & 7 \\ |[fill=gray!15]| A_2 & 6 & |[fill=red!25]| \infty & |[fill=green!25]| 4 \\ |[fill=gray!15]| A_3 & 5 & |[fill=green!25]| 6 & 2 \\};
