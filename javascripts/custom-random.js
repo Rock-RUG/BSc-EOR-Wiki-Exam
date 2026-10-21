@@ -74,7 +74,7 @@ function setSelectionForLocations(selectedMap,locations,value){for(const loc of 
 function renderApp(container,state){const tokens=state.tokens;const unionCount=state.union.length;const selectedCount=countSelected(state.union,state.selectedMap);const chips=tokens.length?tokens.map((t,i)=>`
           <span style="display:inline-flex;align-items:center;gap:6px;margin:0 6px 6px 0;padding:4px 10px;border-radius:999px;border:1px solid var(--md-default-fg-color--lightest);">
             <span>${escapeHtml(t)}</span>
-            <button data-del="${i}" class="md-button" style="padding:2px 8px;min-width:auto">×</button>
+            <button type="button" data-del="${i}" class="mk-x-btn" aria-label="Remove ${escapeHtml(t)}" title="Remove"><svg class="mk-glyph" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
           </span>
         `).join(""):`<span style="opacity:.7">No tokens yet.</span>`;const unionInfo=tokens.length?`<div style="margin-top:12px;opacity:.85;line-height:1.5">
        <div>

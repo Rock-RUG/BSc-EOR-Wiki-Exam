@@ -393,7 +393,7 @@ function lpMountKnowledgeGps(panel,graph,targetLoc){const root=panel&&panel.quer
 return plan;};render();return root;}
 function ensureKnowledgeGpsModal(graph){let modal=document.getElementById('lp-gps-modal');if(!modal){modal=document.createElement('div');modal.id='lp-gps-modal';modal.setAttribute('aria-hidden','true');modal.style.display='none';modal.innerHTML=`
         <div class="lp-gps-mbox" role="dialog" aria-modal="true" aria-label="Knowledge GPS">
-          <button class="lp-gps-close" type="button" aria-label="Close">✕</button>
+          <button class="lp-gps-close" type="button" aria-label="Close"><svg class="mk-glyph" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
           <div class="lp-gps-mbody" data-lp-gps-modal-root="1"></div>
         </div>
       `;document.body.appendChild(modal);const closeBtn=modal.querySelector('.lp-gps-close');lpBindTap(closeBtn,()=>hideKnowledgeGpsModal());modal.addEventListener('click',(e)=>{if(e.target===modal)hideKnowledgeGpsModal();});window.addEventListener('keydown',(e)=>{if(e.key==='Escape'&&modal.style.display!=='none')hideKnowledgeGpsModal();});}
@@ -1243,7 +1243,7 @@ function ensureMapModal(graph){let modal=document.getElementById("lp-map-modal")
 modal.innerHTML=`
       <div class="lp-mbox" role="dialog" aria-modal="true" aria-label="Concept maps">
         <button class="lp-full" type="button" aria-label="Fullscreen" data-lp-fullscreen>⤢</button>
-        <button class="lp-close" type="button" aria-label="Close">✕</button>
+        <button class="lp-close" type="button" aria-label="Close"><svg class="mk-glyph" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
         <div class="lp-map-topbar">
           <div class="lp-map-toprow">
             <div class="lp-map-tabs" role="tablist" aria-label="Map views">
@@ -1926,7 +1926,7 @@ function lpH1StudyStartRerenderPreservingView(modal,graph,targetLoc,mode){try{if
 function ensureH1StudyStartModal(){let modal=document.getElementById("lp-h1sg-modal");if(!modal){modal=document.createElement("div");modal.id="lp-h1sg-modal";modal.setAttribute("aria-hidden","true");modal.style.display="none";modal.innerHTML=`
         <div class="lp-mbox" role="dialog" aria-modal="true" aria-label="Concept maps">
           <button class="lp-full" type="button" aria-label="Fullscreen" data-lp-h1sg-fullscreen></button>
-          <button class="lp-close" type="button" aria-label="Close">✕</button>
+          <button class="lp-close" type="button" aria-label="Close"><svg class="mk-glyph" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
           <div class="lp-h1sg-topbar">
             <div class="lp-h1sg-tophead">
               <div class="lp-h1sg-tabs" role="tablist" aria-label="Map views">

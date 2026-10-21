@@ -794,7 +794,7 @@ const snapshot=window.__mkExamMode?{mastery:mmReadStoredMap(LS_KEY),events:[],qu
 function ensureModal(){mmRemoveLegacyMobilePanelFloor();ensureManagerStyles();mmBindViewportMetricsOnce();const existing=document.getElementById("mm-modal");if(existing){if(existing.getAttribute("data-mm-manager-build")==="v20")return;try{existing.remove();}catch(_){}}
 const wrap=document.createElement("div");wrap.id="mm-modal";wrap.setAttribute("data-mm-manager-build","v20");wrap.setAttribute("data-mm-filters-open","false");wrap.style.display="none";wrap.innerHTML=`
       <div id="mm-panel" role="dialog" aria-modal="true" aria-label="Mastery manager" tabindex="-1">
-        <button id="mm-close" type="button" aria-label="Close" title="Close">&times;</button>
+        <button id="mm-close" type="button" aria-label="Close" title="Close"><svg class="mk-glyph" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
         <div class="mm-header">
           <div class="mm-heading-row"><h2 class="mm-title">Mastery manager</h2><button id="mm-download" class="mm-btn" type="button" title="Download all retained learning history as JSON for local analysis" hidden>Download history</button></div>
           <div class="mm-subtitle">${window.__mkExamMode ? "Review mastery ratings and page visits stored in this browser." : "Review your mastery ratings, page visits, and AI concept-check sessions."}</div>

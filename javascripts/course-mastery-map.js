@@ -2973,7 +2973,7 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
 function ensureModal(anchor){let modal=document.getElementById('mk-course-mastery-map-modal');if(!modal){modal=document.createElement('div');modal.id='mk-course-mastery-map-modal';modal.className='cmm-modal';modal.hidden=true;modal.innerHTML=`
         <div class="cmm-modal__backdrop" data-cmm-close="1"></div>
         <div class="cmm-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="${PANEL_ID}-title">
-          <button type="button" class="cmm-modal__close" data-cmm-close="1" aria-label="Close course mastery map">×</button>
+          <button type="button" class="cmm-modal__close" data-cmm-close="1" aria-label="Close course mastery map"><svg class="mk-glyph" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
           <section id="${PANEL_ID}"></section>
         </div>
       `;document.body.appendChild(modal);}
