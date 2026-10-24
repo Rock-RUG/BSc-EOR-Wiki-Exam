@@ -189,7 +189,7 @@ function ensureStyles(){if(document.getElementById(IDS.style))return;const st=do
 }
 .mk-rt-panel{
   position:fixed;
-  z-index:200;
+  z-index:9998;
   display:none;
   width:max-content;
   min-width:0;
@@ -217,6 +217,13 @@ function ensureStyles(){if(document.getElementById(IDS.style))return;const st=do
 }
 .mk-rt-panel.mk-rt-open{
   display:block;
+}
+/* An open phone menu sits above the Concept connections dock; the help buttons
+   live in the top layer, so hide them while the menu is open. */
+html.mk-rt-menu-open #wiki-guide-root :is(.wg-launcher,.wg-nudge),
+html.mk-rt-menu-open #wiki-explain-root:not([data-wx-active="true"]) :is(.wx-toggle,.wx-hint){
+  visibility:hidden !important;
+  pointer-events:none !important;
 }
 
 /* Search safety:
@@ -764,7 +771,7 @@ function closeOpenPanel(options){const trigger=state.openTrigger;clearHoverTimer
 if(state.openPanel){resetPanelInteractionState(state.openPanel);try{state.openPanel.classList.remove("mk-rt-open");}catch(_){}}
 if(state.openTrigger){try{state.openTrigger.setAttribute("aria-expanded","false");}catch(_){}
 try{if(isMobileMenuMode()&&state.openTrigger.blur)state.openTrigger.blur();}catch(_){}}
-state.openPanel=null;state.openTrigger=null;state.pinned=false;try{if(window.__rfHideYearCoursePopoverV4)window.__rfHideYearCoursePopoverV4({force:true});}catch(_){}
+state.openPanel=null;state.openTrigger=null;state.pinned=false;document.documentElement.classList.remove("mk-rt-menu-open");try{if(window.__rfHideYearCoursePopoverV4)window.__rfHideYearCoursePopoverV4({force:true});}catch(_){}
 if(options&&options.returnFocus&&trigger&&trigger.isConnected){try{trigger.focus({preventScroll:true});}catch(_){trigger.focus();}}}
 function viewportBox(){try{const vv=window.visualViewport;if(vv){return{left:Math.round(vv.offsetLeft||0),top:Math.round(vv.offsetTop||0),right:Math.round((vv.offsetLeft||0)+(vv.width||window.innerWidth||0)),bottom:Math.round((vv.offsetTop||0)+(vv.height||window.innerHeight||0)),width:Math.round(vv.width||window.innerWidth||document.documentElement.clientWidth||0),height:Math.round(vv.height||window.innerHeight||document.documentElement.clientHeight||0),};}}catch(_){}
 const w=Math.round(window.innerWidth||document.documentElement.clientWidth||0);const h=Math.round(window.innerHeight||document.documentElement.clientHeight||0);return{left:0,top:0,right:w,bottom:h,width:w,height:h};}
@@ -774,7 +781,7 @@ let ph=Math.ceil(panel.getBoundingClientRect().height||panel.offsetHeight||panel
 let left=Math.round(r.left);let top=Math.round(r.bottom+6);const parentRect=panel.classList.contains("mk-rt-mobile-year-course-panel")&&panel.__mkRtParentRect?panel.__mkRtParentRect:null;if(parentRect&&view.width>760){left=Math.round(Number(parentRect.right||0)+6);top=Math.round(Number(parentRect.top||r.top));if(left+pw>view.right-gap)left=Math.round(Number(parentRect.left||r.left)-pw-6);}else{const belowTop=Math.round(r.bottom+6);const aboveTop=Math.round(r.top-ph-6);const spaceBelow=view.bottom-gap-belowTop;const spaceAbove=aboveTop-(view.top+gap);top=(ph>spaceBelow&&spaceAbove>spaceBelow)?aboveTop:belowTop;}
 left=clampNumber(left,view.left+gap,view.right-gap-pw);top=clampNumber(top,panelFloor,view.bottom-gap-ph);panel.style.left=`${left}px`;panel.style.top=`${top}px`;panel.style.visibility="visible";}
 function openPanelNow(panel,trigger,pinned){if(!panel||!trigger)return;try{window.__mkMarkInteractionBusy&&window.__mkMarkInteractionBusy(300);}catch(_){}
-closeOpenPanel();state.openPanel=panel;state.openTrigger=trigger;state.pinned=!!pinned;trigger.setAttribute("aria-expanded","true");placePanel(panel,trigger);try{paintShopDiscountBadge();}catch(_){}}
+closeOpenPanel();state.openPanel=panel;state.openTrigger=trigger;state.pinned=!!pinned;trigger.setAttribute("aria-expanded","true");if(isMobileMenuMode())document.documentElement.classList.add("mk-rt-menu-open");placePanel(panel,trigger);try{paintShopDiscountBadge();}catch(_){}}
 function queueHoverOpen(panel,trigger){if(!canUseHoverDropdown())return;if(state.pinned)return;try{if(state.hoverCloseTimer)window.clearTimeout(state.hoverCloseTimer);}catch(_){}
 state.hoverCloseTimer=0;if(state.openPanel===panel&&panel.classList.contains("mk-rt-open")){placePanel(panel,trigger);return;}
 try{if(state.hoverOpenTimer)window.clearTimeout(state.hoverOpenTimer);}catch(_){}
