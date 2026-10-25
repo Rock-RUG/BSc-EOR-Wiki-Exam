@@ -265,8 +265,8 @@ function ensureStyle(){if(document.getElementById("mk-startup-preferences-style"
          the title does not resize when the real panel replaces the shell. */
       #lp-side-panel.lp-early-shell .lp-title{font-weight:800;letter-spacing:-.01em;opacity:.95;font-size:clamp(.96rem,1.05vw,1.08rem);line-height:1.2;white-space:nowrap}
       @media (min-width:901px){#lp-side-panel.lp-early-shell .lp-title{font-size:clamp(.90rem,1vw,1.02rem)}}
-      #lp-side-panel.lp-early-shell .lp-early-section{display:grid;gap:.38rem;border-top:1px solid var(--md-default-fg-color--lightest,rgba(100,116,139,.18));padding-top:.55rem;margin-top:.55rem}
-      #lp-side-panel.lp-early-shell .lp-early-section>summary{display:block;list-style:none;font-size:1.2em;font-weight:780;line-height:1.3;opacity:.95}
+      #lp-side-panel.lp-early-shell .lp-early-section{display:grid;gap:.38rem;margin-top:.75rem}
+      #lp-side-panel.lp-early-shell .lp-early-section>summary{display:block;list-style:none;text-align:center;font-size:1.05em;font-weight:780;line-height:1.6rem;opacity:.95}
       #lp-side-panel.lp-early-shell .lp-early-section>summary::-webkit-details-marker{display:none}
       #lp-side-panel.lp-early-shell .lp-early-section.lp-deps>summary{color:var(--lp-post)}
       #lp-side-panel.lp-early-shell .lp-early-section.lp-pres>summary{color:var(--lp-pre)}
