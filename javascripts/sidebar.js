@@ -172,7 +172,7 @@ html:not(.mk-startup-no-motion) #current-course-bar{
   backface-visibility:hidden;
   will-change:transform;
 }
-html[data-md-color-scheme="slate"] #current-course-bar{
+html[data-mk-color-scheme="slate"] #current-course-bar{
   --ccb-line:rgba(255,255,255,.10);
 }
 #current-course-bar .ccb-row{
@@ -491,14 +491,14 @@ html.mk-sidebar-sort-ready .md-sidebar--primary{
   --msb-card-bg-hover: color-mix(in srgb, var(--md-default-bg-color) 90%, var(--md-accent-fg-color) 10%);
 }
 }
-html[data-md-color-scheme="slate"].mk-sidebar-sort-ready .md-sidebar--primary {
+html[data-mk-color-scheme="slate"].mk-sidebar-sort-ready .md-sidebar--primary {
   --msb-card-border: rgba(255,255,255,.10);
   --msb-card-border-strong: rgba(255,255,255,.12);
   --msb-card-bg: var(--md-default-bg-color);
   --msb-card-bg-hover: var(--md-default-bg-color);
 }
 @supports (color: color-mix(in srgb, black, white)){
-html[data-md-color-scheme="slate"].mk-sidebar-sort-ready .md-sidebar--primary{
+html[data-mk-color-scheme="slate"].mk-sidebar-sort-ready .md-sidebar--primary{
   --msb-card-border-strong: color-mix(in srgb, var(--md-accent-fg-color) 30%, rgba(255,255,255,.12));
   --msb-card-bg: color-mix(in srgb, var(--md-default-bg-color) 90%, rgba(255,255,255,.05) 10%);
   --msb-card-bg-hover: color-mix(in srgb, var(--md-default-bg-color) 84%, var(--md-accent-fg-color) 16%);
@@ -2145,14 +2145,14 @@ function ensureDrawerGapPatchStyles(){const STYLE_ID="mk-sidebar-drawer-gap-patc
   --msb-card-bg-hover: color-mix(in srgb, var(--md-default-bg-color) 90%, var(--md-accent-fg-color) 10%);
 }
 }
-html[data-md-color-scheme="slate"] #mk-sidebar-drawer-ghost-floor{
+html[data-mk-color-scheme="slate"] #mk-sidebar-drawer-ghost-floor{
   --msb-card-border: rgba(255,255,255,.10);
   --msb-card-border-strong: rgba(255,255,255,.12);
   --msb-card-bg: var(--md-default-bg-color);
   --msb-card-bg-hover: var(--md-default-bg-color);
 }
 @supports (color: color-mix(in srgb, black, white)){
-html[data-md-color-scheme="slate"] #mk-sidebar-drawer-ghost-floor{
+html[data-mk-color-scheme="slate"] #mk-sidebar-drawer-ghost-floor{
   --msb-card-border-strong: color-mix(in srgb, var(--md-accent-fg-color) 30%, rgba(255,255,255,.12));
   --msb-card-bg: color-mix(in srgb, var(--md-default-bg-color) 90%, rgba(255,255,255,.05) 10%);
   --msb-card-bg-hover: color-mix(in srgb, var(--md-default-bg-color) 84%, var(--md-accent-fg-color) 16%);
@@ -2405,7 +2405,7 @@ html[data-md-color-scheme="slate"] #mk-sidebar-drawer-ghost-floor{
 #mk-mobile-drawer-click-shield.is-active{
   display:block !important;
 }
-html[data-md-color-scheme="slate"] #mk-mobile-drawer-backdrop-blur{
+html[data-mk-color-scheme="slate"] #mk-mobile-drawer-backdrop-blur{
   background:rgba(3,7,18,.42) !important;
 }
 @media (max-width:76.1875em){
@@ -2515,7 +2515,7 @@ html[data-md-color-scheme="slate"] #mk-mobile-drawer-backdrop-blur{
   transform-style:preserve-3d !important;
   content-visibility:visible !important;
 }
-html[data-md-color-scheme="slate"] #mk-mobile-unified-sidebar-surface{
+html[data-mk-color-scheme="slate"] #mk-mobile-unified-sidebar-surface{
   border-right-color:rgba(255,255,255,.12) !important;
   box-shadow:2px 0 18px rgba(0,0,0,.32) !important;
 }
@@ -2661,7 +2661,7 @@ html[data-md-color-scheme="slate"] #mk-mobile-unified-sidebar-surface{
   transform:translate3d(0, var(--msb-custom-scrollbar-thumb-y, 0px), 0) !important;
   will-change:transform,height !important;
 }
-html[data-md-color-scheme="slate"] #mk-mobile-unified-sidebar-surface .msb-unified-scrollbar-thumb{
+html[data-mk-color-scheme="slate"] #mk-mobile-unified-sidebar-surface .msb-unified-scrollbar-thumb{
   background:rgba(255,255,255,.38) !important;
 }
 #mk-mobile-unified-sidebar-surface .md-sidebar__inner{
@@ -2768,7 +2768,7 @@ html[data-md-color-scheme="slate"] #mk-mobile-unified-sidebar-surface .msb-unifi
 #mk-mobile-unified-sidebar-surface .md-nav__item.msb-unified-active-group.msb-group-single{
   border-bottom-color:color-mix(in srgb, var(--md-accent-fg-color, #00bfa5) 42%, transparent) !important;
 }
-html[data-md-color-scheme="slate"] #mk-mobile-unified-sidebar-surface .md-nav__item.msb-unified-active-group{
+html[data-mk-color-scheme="slate"] #mk-mobile-unified-sidebar-surface .md-nav__item.msb-unified-active-group{
   background:color-mix(in srgb, var(--md-accent-fg-color, #00bfa5) 16%, var(--md-default-bg-color) 84%) !important;
 }
 
@@ -3201,7 +3201,7 @@ html.mk-sidebar-sort-ready .md-sidebar--primary .msb-group-head__btn[aria-expand
   overflow:hidden !important;
   box-shadow:none !important;
 }
-html[data-md-color-scheme="slate"] #mk-mobile-unified-sidebar-surface .msb-global-link-item{
+html[data-mk-color-scheme="slate"] #mk-mobile-unified-sidebar-surface .msb-global-link-item{
   border-color:rgba(255,255,255,.10) !important;
   background:color-mix(in srgb, var(--md-default-bg-color) 88%, rgba(255,255,255,.06) 12%) !important;
 }

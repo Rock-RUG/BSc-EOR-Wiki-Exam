@@ -4776,7 +4776,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
         color:#fff !important;
         stroke:#fff !important;
       }
-      html[data-md-color-scheme="slate"] .lp-routebar svg [fill]:not([fill="none"]){
+      html[data-mk-color-scheme="slate"] .lp-routebar svg [fill]:not([fill="none"]){
         fill:#fff !important;
       }
     `;(document.head||document.documentElement).appendChild(st);}catch(_){}})();(function(){"use strict";const STYLE_ID="lp-local-map-default-blur-v72";const FOG_KEY="lp_map_fog_enabled_v1";const MAP_IDS=["lp-map-modal","lp-h1sg-modal"];const PHONE_MQ="(pointer: coarse), (max-width: 900px)";const BACKDROP={wide:{bg:"rgba(0,0,0,.46)",filter:"blur(6px) saturate(1.04)"},phone:{bg:"rgba(0,0,0,.62)",filter:"none"}};function backdropForViewport(){try{if(window.matchMedia&&window.matchMedia(PHONE_MQ).matches)return BACKDROP.phone;}catch(_){}

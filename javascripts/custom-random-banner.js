@@ -138,9 +138,9 @@ function insertBanner(cands,tokens,matchedTokens){const inner=document.querySele
     color:#fff !important;
     stroke:#fff !important;
   }
-  html[data-md-color-scheme="slate"] #custom-random-banner .cr-dice__ico svg [fill]:not([fill="none"]),
-  html[data-md-color-scheme="slate"] #custom-random-banner .cr-tool__ico svg [fill]:not([fill="none"]),
-  html[data-md-color-scheme="slate"] #custom-random-banner .cr-dice__ico svg circle{
+  html[data-mk-color-scheme="slate"] #custom-random-banner .cr-dice__ico svg [fill]:not([fill="none"]),
+  html[data-mk-color-scheme="slate"] #custom-random-banner .cr-tool__ico svg [fill]:not([fill="none"]),
+  html[data-mk-color-scheme="slate"] #custom-random-banner .cr-dice__ico svg circle{
     fill:#fff !important;
   }
   @media (hover: hover) and (pointer: fine){

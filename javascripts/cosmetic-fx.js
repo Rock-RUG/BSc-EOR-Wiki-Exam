@@ -113,7 +113,7 @@ function ensureStyles(){if(document.getElementById(STYLE_ID))return;const style=
       html[data-mk-concept-card-skin="concept_card_minimal_ink"] .md-typeset .grid.cards>ul>li{color:#111;background:#fff!important;border:1px solid #111!important;border-radius:2px!important;box-shadow:4px 4px 0 #111!important}
 
       html[data-mk-concept-card-skin="concept_card_glass_lab"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#173245}
-      html[data-md-color-scheme="slate"][data-mk-concept-card-skin="concept_card_glass_lab"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#e8faff;background:linear-gradient(135deg,rgba(17,50,67,.97),rgba(17,79,94,.92))!important}
+      html[data-mk-color-scheme="slate"][data-mk-concept-card-skin="concept_card_glass_lab"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#e8faff;background:linear-gradient(135deg,rgba(17,50,67,.97),rgba(17,79,94,.92))!important}
       html[data-mk-concept-card-skin="concept_card_cyber_hud"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#d9ffff}
       html[data-mk-concept-card-skin="concept_card_study_notes"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#253249}
       html[data-mk-concept-card-skin="concept_card_manga_panel"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#111}
@@ -121,7 +121,7 @@ function ensureStyles(){if(document.getElementById(STYLE_ID))return;const style=
       html[data-mk-concept-card-skin="concept_card_blueprint_desk"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#e0f2fe}
       html[data-mk-concept-card-skin="concept_card_forest_journal"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#29431f}
       html[data-mk-concept-card-skin="concept_card_sunset_glass"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#4c1d3d}
-      html[data-md-color-scheme="slate"][data-mk-concept-card-skin="concept_card_sunset_glass"] .md-typeset .grid.cards>ul>li{background:linear-gradient(135deg,#fed7aa,#f9a8d4,#c4b5fd)!important}
+      html[data-mk-color-scheme="slate"][data-mk-concept-card-skin="concept_card_sunset_glass"] .md-typeset .grid.cards>ul>li{background:linear-gradient(135deg,#fed7aa,#f9a8d4,#c4b5fd)!important}
       html[data-mk-concept-card-skin="concept_card_retro_computer"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#86efac}
       html[data-mk-concept-card-skin="concept_card_minimal_ink"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#111}
 

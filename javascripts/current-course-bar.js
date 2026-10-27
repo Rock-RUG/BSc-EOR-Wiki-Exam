@@ -31,7 +31,7 @@ function ensureStyleInjected(){if(document.getElementById(STYLE_ID))return;const
   --ccb-line: color-mix(in srgb, var(--md-default-fg-color) 14%, transparent);
 }
 }
-html[data-md-color-scheme="slate"] #current-course-bar{
+html[data-mk-color-scheme="slate"] #current-course-bar{
   --ccb-line: rgba(255,255,255,.10);
 }
 #current-course-bar .ccb-row{

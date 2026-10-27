@@ -96,8 +96,8 @@ function ensureStyles(){if(document.getElementById("mk-study-window-style"))retu
 .sw-view .sw-sets span{font-size:12px;color:var(--wa-muted)}
 .sw-view .sw-sets p{margin:4px 0 0;font-size:12.5px;color:var(--wa-muted)}
 .sw-view .sw-foot{margin-top:2px}
-html[data-md-color-scheme="slate"] .sw-view .sw-code{color:hsl(var(--sw-course-h) 70% 82%);background:hsl(var(--sw-course-h) 35% 24%)}
-html[data-md-color-scheme="slate"] .sw-view .sw-ring strong,html[data-md-color-scheme="slate"] .sw-view :is(.sw-focus,.sw-rows) b{color:hsl(var(--sw-h,210) 70% 74%)}
+html[data-mk-color-scheme="slate"] .sw-view .sw-code{color:hsl(var(--sw-course-h) 70% 82%);background:hsl(var(--sw-course-h) 35% 24%)}
+html[data-mk-color-scheme="slate"] .sw-view .sw-ring strong,html[data-mk-color-scheme="slate"] .sw-view :is(.sw-focus,.sw-rows) b{color:hsl(var(--sw-h,210) 70% 74%)}
 @media (max-width:520px){.sw-view .sw-grid{grid-template-columns:minmax(0,1fr)}}
 `;document.head.appendChild(st);}
 const RENDER={progress:renderProgress,review:renderReview,sets:renderSets};function mount(host,type){const render=RENDER[type];if(!host||!render)return null;ensureStyles();const view=document.createElement("div");view.className="sw-view";host.replaceChildren(view);const s={gone:false,courses:null,live:()=>!s.gone&&view.isConnected&&host.dataset.type===type};const onClick=event=>{const tab=event.target.closest("[data-sw-tab]");if(tab){host.closest(".mk-local-activity-modal")?.querySelector(`.mk-local-activity-tab[data-type="${tab.dataset.swTab}"]`)?.click();return;}
