@@ -5,12 +5,14 @@
 
 \begin{document}
 % Row operations replace a system by an equivalent one: different lines, same solution set.
+% Both line endpoints are evaluated from x2=3-x1 and x2=x1-1.
+\def\leftx{0.2}\def\rightx{3.4}
 \begin{tikzpicture}[every node/.style={font=\small}, >={Latex[length=2mm]}]
 	\begin{scope}
 		\draw[->] (-0.6,0) -- (3.6,0) node[below right] {$x_1$};
 		\draw[->] (0,-0.6) -- (0,3.2) node[above left] {$x_2$};
-		\draw[blue, very thick] (-0.3,3.3) -- (3.4,-0.4);
-		\draw[red, very thick] (-0.3,-0.3) -- (3.4,2.4);
+		\draw[blue, very thick] (\leftx,{3-\leftx}) -- (\rightx,{3-\rightx});
+		\draw[red, very thick] (0.4,{0.4-1}) -- (\rightx,{\rightx-1});
 		\fill[green!50!black] (2,1) circle (2.5pt);
 		\node[anchor=north, align=center] at (1.5,-0.7) {$x_1+x_2=3$,\ $x_1-x_2=1$};
 	\end{scope}

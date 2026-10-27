@@ -738,22 +738,27 @@ const filteredHits=srFilteredHits(state.hits);const total=filteredHits.length;co
       <div class="csr-action-sort">${srRenderSortDropdownHtml()}</div>
     </div>
       <p class="csr-selection-count" data-sr-selection-count role="status"></p>
-      <button type="button" class="md-button csr-practice-toggle" data-sr-toggle="practice" aria-controls="csr-practice-panel" aria-expanded="${!!state.practiceToolsOpen}">${state.practiceToolsOpen ? "Close practice tools" : "Practise selected concepts"}</button>
+      <button type="button" class="csr-tool csr-practice-toggle" data-sr-toggle="practice" aria-controls="csr-practice-panel" aria-expanded="${!!state.practiceToolsOpen}">${state.practiceToolsOpen ? "Close practice tools" : "Practise selected concepts"}</button>
     </div>
     <div class="csr-practice-tools" id="csr-practice-panel" role="group" aria-label="Practice tools for selected concepts" ${state.practiceToolsOpen ? "" : "hidden"}>
-    <div class="csr-revise-tools" role="group" aria-label="Select and revise">
-      
-      <div class="csr-select-actions">
-        <button type="button" class="md-button" id="cr-page" title="Select the results on this page, keeping selections on other pages">This page</button>
-        <button type="button" class="md-button" id="cr-all" aria-label="Select all results" title="Select every filtered result across all pages">All results</button>
-        <button type="button" class="md-button" id="cr-none" aria-label="Clear selection" title="Deselect every filtered result across all pages">Clear selection</button>
+    <div class="csr-steps csr-revise-tools" role="group" aria-label="Select and revise">
+      <div class="csr-step csr-step--select" role="group" aria-labelledby="csr-step-select">
+        <span class="csr-step-label" id="csr-step-select">Select</span>
+        <div class="csr-select-actions">
+          <button type="button" class="csr-tool" id="cr-page" title="Tick the results on this page, keeping ticks on other pages">This page</button>
+          <button type="button" class="csr-tool" id="cr-all" aria-label="Select all results" title="Tick every filtered result across all pages">All results</button>
+          <button type="button" class="csr-tool" id="cr-none" aria-label="Clear selection" title="Untick every filtered result across all pages">Clear</button>
+        </div>
       </div>
-      ${window.__mkExamMode ? '' : '<button type="button" class="md-button csr-study-set-create" data-study-set-create aria-controls="study-sets-workspace" aria-expanded="false">Save as set</button>'}
-      <button type="button" class="csr-revision-toggle" data-sr-toggle="revision" aria-controls="csr-revision-panel" aria-expanded="${!!state.revisionOptionsOpen}">Revision <span class="csr-revision-mode" data-sr-revision-mode></span></button>
-    <button type="button" class="md-button md-button--primary cr-dice-btn csr-action-start" id="cr-random">
-      <span class="cr-dice__ico" aria-hidden="true">${diceSvg(readLastFace())}</span>
-      <span class="cr-dice__txt">Start random</span>
-    </button>
+      ${window.__mkExamMode ? '' : '<div class="csr-step csr-step--save" role="group" aria-labelledby="csr-step-save"><span class="csr-step-label" id="csr-step-save">Save</span><button type="button" class="csr-tool csr-study-set-create" data-study-set-create aria-controls="study-sets-workspace" aria-expanded="false" title="Keep the selected concepts as a study set. Your sets open below; you stay in Finder.">Save as set</button></div>'}
+      <div class="csr-step csr-step--start" role="group" aria-labelledby="csr-step-start">
+        <span class="csr-step-label" id="csr-step-start">Practise</span>
+        <button type="button" class="csr-revision-toggle" data-sr-toggle="revision" aria-controls="csr-revision-panel" aria-expanded="${!!state.revisionOptionsOpen}" title="Choose how the concept opens">Revision <span class="csr-revision-mode" data-sr-revision-mode></span></button>
+        <button type="button" class="md-button md-button--primary cr-dice-btn csr-action-start" id="cr-random" title="Open a random concept from your selection">
+          <span class="cr-dice__ico" aria-hidden="true">${diceSvg(readLastFace())}</span>
+          <span class="cr-dice__txt">Start random</span>
+        </button>
+      </div>
     </div>
     <details class="csr-selection-explanation" data-sr-selection-explanation hidden><summary data-sr-selection-why></summary><p data-sr-selection-reasons></p></details>
       <div class="csr-toolbar-panels">

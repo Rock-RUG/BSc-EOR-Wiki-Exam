@@ -15,8 +15,11 @@
 	\draw[->, blue, very thick] (0,0) -- (1.7,-0.55);
 	\draw[->, blue, very thick] (0,0) -- (-0.3,0.8);
 	\node[blue!60!black, font=\small, align=center] at (-1.05,0.0) {plane:\\ $\dim=2$};
-	\draw[red, very thick] (-1.0,-2.0) -- (1.0,2.5);
-	\draw[->, red, very thick] (0,0) -- (0.45,1.1);
+	% The line and its basis arrow use the same direction through zero.
+	\pgfmathsetmacro{\lineX}{0.45}
+	\pgfmathsetmacro{\lineY}{1.1}
+	\draw[red, very thick] ({-2*\lineX},{-2*\lineY}) -- ({2*\lineX},{2*\lineY});
+	\draw[->, red, very thick] (0,0) -- (\lineX,\lineY);
 	\node[red, font=\small, anchor=west] at (1.05,2.3) {line: $\dim=1$};
 	\node[anchor=west] at (1.5,2.95) {$\mathbb{R}^3$ itself: $\dim=3$};
 	\fill (0,0) circle (1.5pt);

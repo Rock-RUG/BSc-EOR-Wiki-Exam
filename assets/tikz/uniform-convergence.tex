@@ -24,10 +24,10 @@
 		\addplot[green!50!black, dashed, domain=0:2] {x^2+0.35};
 		\addplot[green!50!black, dashed, domain=0:2] {x^2-0.35};
 		\addplot[thick, black, domain=0:2] {x^2};
-		\addplot[thick, red!70, domain=0:2] {x^2+sin(deg(6*x))/1.2};
+		\addplot[thick, red!70, domain=0:2] {x^2+sin(deg(6*x))};
 		\addplot[thick, blue, domain=0:2] {x^2+sin(deg(6*x))/4};
 		\node[black, anchor=west] at (axis cs:2.02,4.35) {$f$};
-		\node[red!70, anchor=west, font=\small] at (axis cs:2.02,3.4) {$f_1$ (outside the tube)};
+		\node[red!70, anchor=west, font=\small] at (axis cs:2.02,3.4) {$f_1$ (leaves the tube)};
 		\node[blue, anchor=west, font=\small] at (axis cs:2.02,3.88) {$f_n$, $n$ large};
 		\node[green!40!black, font=\small] (tube) at (axis cs:0.7,2.1) {$\varepsilon$-tube};
 		\draw[green!50!black, thin] (tube.south) -- (axis cs:0.95,1.2);

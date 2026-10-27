@@ -17,7 +17,8 @@
     \addplot[blue, very thick, domain=0:100] {100*exp(-0.05*x)};
     \node[blue!70!black, anchor=south west] at (axis cs:30,28) {$100\,v^t\,{}_tp_x=100\mathrm{e}^{-0.05t}$};
     \draw[->, green!50!black, thick] (axis cs:44,75) -- (axis cs:12,30);
-    \node[green!50!black, anchor=west] at (axis cs:45,75) {area $=100\,\bar a_x=100/0.05=2000$};
+    \node[green!50!black, anchor=west] at (axis cs:45,75) {full APV $=\int_0^\infty100\mathrm{e}^{-0.05t}\,\mathrm{d}t=2000$};
+    \node[gray!70!black, anchor=west] at (axis cs:45,63) {shown: $0\le t\le100$};
   \end{axis}
 \end{tikzpicture}
 \end{document}

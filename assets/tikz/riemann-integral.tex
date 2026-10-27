@@ -2,8 +2,11 @@
 \usepackage{amsmath}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
+\pgfmathdeclarefunction{curvevalue}{1}{\pgfmathparse{1+0.8*sin(deg(#1))+0.2*#1}}
 
 \begin{document}
+\pgfmathsetmacro{\peak}{rad(acos(-0.25))}
+\pgfmathsetmacro{\trough}{2*pi-\peak}
 % Lower sum (rectangles under the graph) and upper sum (rectangles over it) for one partition:
 % the integral is the common value they squeeze towards when the partition is refined.
 \begin{tikzpicture}
@@ -18,17 +21,19 @@
 		samples=150, smooth, clip=false,
 		width=8.4cm, height=5.6cm
 		]
-		% f(x)=1+0.8 sin(x)+0.2x on [0.5,4.5]; piecewise sup/inf approximated at endpoints/interior
+		% f'=0.8 cos(x)+0.2 vanishes at peak and trough.
+		% Extrema on each closed piece are evaluated at endpoints and these
+		% stationary points, not rounded rectangle heights or sampled maxima.
 		% upper rectangles (max on each piece), drawn first
-		\fill[red!20, draw=red!60!black] (axis cs:0.5,0) rectangle (axis cs:1.5,2.08);
-		\fill[red!20, draw=red!60!black] (axis cs:1.5,0) rectangle (axis cs:2.5,2.11);
-		\fill[red!20, draw=red!60!black] (axis cs:2.5,0) rectangle (axis cs:3.5,1.98);
-		\fill[red!20, draw=red!60!black] (axis cs:3.5,0) rectangle (axis cs:4.5,1.42);
+		\fill[red!20, draw=red!60!black] (axis cs:0.5,0) rectangle (axis cs:1.5,{curvevalue(1.5)});
+		\fill[red!20, draw=red!60!black] (axis cs:1.5,0) rectangle (axis cs:2.5,{curvevalue(\peak)});
+		\fill[red!20, draw=red!60!black] (axis cs:2.5,0) rectangle (axis cs:3.5,{curvevalue(2.5)});
+		\fill[red!20, draw=red!60!black] (axis cs:3.5,0) rectangle (axis cs:4.5,{curvevalue(3.5)});
 		% lower rectangles (min on each piece)
-		\fill[blue!35, draw=blue!60!black] (axis cs:0.5,0) rectangle (axis cs:1.5,1.48);
-		\fill[blue!35, draw=blue!60!black] (axis cs:1.5,0) rectangle (axis cs:2.5,1.98);
-		\fill[blue!35, draw=blue!60!black] (axis cs:2.5,0) rectangle (axis cs:3.5,1.42);
-		\fill[blue!35, draw=blue!60!black] (axis cs:3.5,0) rectangle (axis cs:4.5,1.12);
+		\fill[blue!35, draw=blue!60!black] (axis cs:0.5,0) rectangle (axis cs:1.5,{curvevalue(0.5)});
+		\fill[blue!35, draw=blue!60!black] (axis cs:1.5,0) rectangle (axis cs:2.5,{curvevalue(2.5)});
+		\fill[blue!35, draw=blue!60!black] (axis cs:2.5,0) rectangle (axis cs:3.5,{curvevalue(3.5)});
+		\fill[blue!35, draw=blue!60!black] (axis cs:3.5,0) rectangle (axis cs:4.5,{curvevalue(\trough)});
 		\addplot[thick, blue, domain=0.3:4.6] {1+0.8*sin(deg(x))+0.2*x};
 		\node[blue, anchor=west] at (axis cs:4.6,1.1) {$f$};
 	\end{axis}

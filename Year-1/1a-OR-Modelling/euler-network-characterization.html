@@ -17,10 +17,10 @@
 <link href="../../stylesheets/fonts-vendor.css?h=6f3b200e55fb" rel="stylesheet"/>
 <link href="../../stylesheets/katex-vendor.css?h=810f682352aa" rel="stylesheet"/>
 <link href="../../stylesheets/katex-fast.css?h=d33dde2419a3" rel="stylesheet"/>
-<link href="../../stylesheets/extra.css?h=0018b9796772" rel="stylesheet"/>
+<link href="../../stylesheets/extra.css?h=d674c53f87dc" rel="stylesheet"/>
 <link href="../../stylesheets/concept-connections-panel.css?h=96c7204f9f37" rel="stylesheet"/>
 <link href="../../stylesheets/mastery-widget.css?h=099ee489c236" rel="stylesheet"/>
-<link href="../../stylesheets/course-status.css?h=147775b80dfa" rel="stylesheet"/>
+<link href="../../stylesheets/course-status.css?h=52d6fd8245d8" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-surfaces.css?h=c34ef5acfade" rel="stylesheet"/>
 <link href="../../stylesheets/theme-surfaces.css?h=db4799d82910" rel="stylesheet" media="(forced-colors: active)" data-mk-css-gate="theme"/>
 <link href="../../stylesheets/wiki-community.css?h=bf04506951f8" rel="stylesheet"/>
@@ -33,7 +33,7 @@
 <link href="../../stylesheets/learning-path.css?h=abe508830e1d" rel="stylesheet" media="not all" data-mk-css-gate="lp"/>
 <link href="../../stylesheets/wiki-boxes.css?h=d0fdf80e5f31" rel="stylesheet"/>
 <link href="../../stylesheets/site-motion.css?h=482cc791006f" rel="stylesheet" media="not all" data-mk-css-gate="motion"/>
-<link href="../../stylesheets/wiki-interactions.css?h=11bf5da18994" rel="stylesheet"/>
+<link href="../../stylesheets/wiki-interactions.css?h=b986dfe588e8" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <style id="mk-mobile-fixed-chrome-early">
 @media (max-width: 900px), (pointer: coarse){
@@ -231,9 +231,9 @@
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=2c5f954b2b50";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=438503b93366";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=2c5f954b2b50";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=438503b93366";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -2944,7 +2944,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <h2 id="key-results"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m8.58 17.25.92-3.89-3-2.58 3.95-.37L12 6.8l1.55 3.65 3.95.33-3 2.58.92 3.89L12 15.19zM12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8"></path></svg></span> Key Results<a class="headerlink" href="#key-results" title="Permanent link">¶</a></h2>
 <ul>
 <li>One odd-degree vertex is enough to rule out an Euler tour. </li>
-<li>Connectedness is required to traverse all edges in one tour. </li>
+<li>Connectedness of the edges is required to traverse all edges in one tour: if the edges lie in two or more separate parts, no single tour covers them all (isolated vertices do no harm). </li>
 <li>Parallel copies introduced by the <a href="chinese-postman-problem.html">Chinese postman</a> construction are counted as separate edges. </li>
 </ul>
 <hr/>
@@ -2969,7 +2969,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <ul>
 <li><a class="mk-source-course" href="index.html">OR Modelling</a> · Week 4 </li>
 </ul>
-<p class="mk-last-updated">Last updated: 20 October 2026 03:02</p><meta content="true" name="mk-concept-ai-mcq"/><script id="mk-concept-connections-data" type="application/json">{"kind":"concept-connections-panel-v1","readinessMaxDepth":2,"loc":"Year-1/1a-OR-Modelling/euler-network-characterization.html","nodes":{"Year-1/1a-OR-Modelling/euler-network-characterization.html":{"title":"Euler Network Characterization","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/euler-tour-algorithm.html":{"title":"Euler Tour Algorithm","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/connected-network.html":{"title":"Connected Network","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/euler-tour.html":{"title":"Euler Tour","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/vertex-degree.html":{"title":"Vertex Degree","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/chinese-postman-problem.html":{"title":"Chinese Postman Problem","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/cycle.html":{"title":"Cycle","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/path.html":{"title":"Path in a Network","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/undirected-network.html":{"title":"Undirected Network","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true}},"titleLocs":["Year-1/1a-OR-Modelling/euler-network-characterization.html","Year-1/1a-OR-Modelling/euler-tour-algorithm.html","Year-1/1a-OR-Modelling/connected-network.html","Year-1/1a-OR-Modelling/euler-tour.html","Year-1/1a-OR-Modelling/vertex-degree.html","Year-1/1a-OR-Modelling/chinese-postman-problem.html"],"prereqsByLoc":{"Year-1/1a-OR-Modelling/euler-network-characterization.html":["Year-1/1a-OR-Modelling/connected-network.html","Year-1/1a-OR-Modelling/euler-tour.html","Year-1/1a-OR-Modelling/vertex-degree.html"],"Year-1/1a-OR-Modelling/euler-tour-algorithm.html":["Year-1/1a-OR-Modelling/euler-network-characterization.html","Year-1/1a-OR-Modelling/cycle.html"],"Year-1/1a-OR-Modelling/connected-network.html":["Year-1/1a-OR-Modelling/undirected-network.html","Year-1/1a-OR-Modelling/path.html"],"Year-1/1a-OR-Modelling/euler-tour.html":["Year-1/1a-OR-Modelling/cycle.html","Year-1/1a-OR-Modelling/vertex-degree.html"],"Year-1/1a-OR-Modelling/vertex-degree.html":["Year-1/1a-OR-Modelling/undirected-network.html"]},"dependents":["Year-1/1a-OR-Modelling/euler-tour-algorithm.html"],"related":["Year-1/1a-OR-Modelling/euler-tour-algorithm.html","Year-1/1a-OR-Modelling/chinese-postman-problem.html"]}</script><template data-search-exclude="" id="mk-concept-connections-titles"><span data-lp-title-loc="Year-1/1a-OR-Modelling/euler-network-characterization.html">Euler Network Characterization</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/euler-tour-algorithm.html">Euler Tour Algorithm</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/connected-network.html">Connected Network</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/euler-tour.html">Euler Tour</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/vertex-degree.html">Vertex Degree</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/chinese-postman-problem.html">Chinese Postman Problem</span></template>
+<p class="mk-last-updated">Last updated: 27 October 2026 11:52</p><meta content="true" name="mk-concept-ai-mcq"/><script id="mk-concept-connections-data" type="application/json">{"kind":"concept-connections-panel-v1","readinessMaxDepth":2,"loc":"Year-1/1a-OR-Modelling/euler-network-characterization.html","nodes":{"Year-1/1a-OR-Modelling/euler-network-characterization.html":{"title":"Euler Network Characterization","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/euler-tour-algorithm.html":{"title":"Euler Tour Algorithm","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/connected-network.html":{"title":"Connected Network","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/euler-tour.html":{"title":"Euler Tour","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/vertex-degree.html":{"title":"Vertex Degree","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/chinese-postman-problem.html":{"title":"Chinese Postman Problem","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/cycle.html":{"title":"Cycle","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/path.html":{"title":"Path in a Network","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/undirected-network.html":{"title":"Undirected Network","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true}},"titleLocs":["Year-1/1a-OR-Modelling/euler-network-characterization.html","Year-1/1a-OR-Modelling/euler-tour-algorithm.html","Year-1/1a-OR-Modelling/connected-network.html","Year-1/1a-OR-Modelling/euler-tour.html","Year-1/1a-OR-Modelling/vertex-degree.html","Year-1/1a-OR-Modelling/chinese-postman-problem.html"],"prereqsByLoc":{"Year-1/1a-OR-Modelling/euler-network-characterization.html":["Year-1/1a-OR-Modelling/connected-network.html","Year-1/1a-OR-Modelling/euler-tour.html","Year-1/1a-OR-Modelling/vertex-degree.html"],"Year-1/1a-OR-Modelling/euler-tour-algorithm.html":["Year-1/1a-OR-Modelling/euler-network-characterization.html","Year-1/1a-OR-Modelling/cycle.html"],"Year-1/1a-OR-Modelling/connected-network.html":["Year-1/1a-OR-Modelling/undirected-network.html","Year-1/1a-OR-Modelling/path.html"],"Year-1/1a-OR-Modelling/euler-tour.html":["Year-1/1a-OR-Modelling/cycle.html","Year-1/1a-OR-Modelling/vertex-degree.html"],"Year-1/1a-OR-Modelling/vertex-degree.html":["Year-1/1a-OR-Modelling/undirected-network.html"]},"dependents":["Year-1/1a-OR-Modelling/euler-tour-algorithm.html"],"related":["Year-1/1a-OR-Modelling/euler-tour-algorithm.html","Year-1/1a-OR-Modelling/chinese-postman-problem.html"]}</script><template data-search-exclude="" id="mk-concept-connections-titles"><span data-lp-title-loc="Year-1/1a-OR-Modelling/euler-network-characterization.html">Euler Network Characterization</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/euler-tour-algorithm.html">Euler Tour Algorithm</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/connected-network.html">Connected Network</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/euler-tour.html">Euler Tour</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/vertex-degree.html">Vertex Degree</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/chinese-postman-problem.html">Chinese Postman Problem</span></template>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -3008,7 +3008,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
 <script src="../../javascripts/wiki-explain.js?h=6d0e9335c013"></script>
 <script src="../../javascripts/concept-connections-panel.js?h=e3222c759851"></script>
-<script src="../../javascripts/startup-preferences.js?h=2c5f954b2b50"></script>
+<script src="../../javascripts/startup-preferences.js?h=438503b93366"></script>
 <script src="../../javascripts/style-shortcuts.js?h=903df15b6eba"></script>
 <script src="../../javascripts/ui-guard.js?h=8d2c3d9edaed"></script>
 <script src="../../javascripts/concept-title-fit.js?h=8a4406302178"></script>
@@ -3017,12 +3017,12 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../../javascripts/fuzzy-core.js?h=4e03f7d79eee"></script>
 <script src="../../javascripts/nl-query-core.js?h=74dc76589bdf"></script>
 <script src="../../javascripts/multilingual-search-core.js?h=2366a7653efd"></script>
-<script src="../../javascripts/search-suggestions.js?h=3fdec4049eef"></script>
+<script src="../../javascripts/search-suggestions.js?h=00cc2d5ef2a0"></script>
 <script src="../../javascripts/search-history.js?h=b9c74637e483"></script>
 <script src="../../javascripts/header-search-stabilizer.js?h=cdd630b06fd3"></script>
 <script src="../../javascripts/concept-hover-preview.js?h=05780d2bf2a9"></script>
 <script src="../../javascripts/mathjax.js?h=06875c0b69ec"></script>
-<script src="../../javascripts/preload-guard.js?h=5e42effda2c3"></script>
+<script src="../../javascripts/preload-guard.js?h=ea0feebd57c2"></script>
 <script src="../../javascripts/random.js?h=10f974c5fe5c"></script>
 <script src="../../javascripts/random-tabs.js?h=35f609c26982"></script>
 <script src="../../javascripts/search-enter.js?h=25c7c2d382da"></script>

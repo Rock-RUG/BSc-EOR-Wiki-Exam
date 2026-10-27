@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1792970250878,
+  "generatedAt": 1793098963896,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -13938,7 +13938,7 @@
     ],
     "Year-1/1a-Math-I-Calculus/gamma-function.html": [
       "Year-1/1a-Math-I-Calculus/p-test.html",
-      "Year-1/1b-Probability-Theory-for-EOR/negative-binomial-distribution.html"
+      "Year-1/2b-Probability-Distributions/gamma-distribution.html"
     ],
     "Year-1/1a-Math-I-Calculus/geometric-series.html": [
       "Year-1/1a-Math-I-Calculus/arithmetic-series.html"

@@ -4,6 +4,7 @@
 \pgfplotsset{compat=1.18}
 
 \begin{document}
+\pgfmathsetmacro{\leftlimit}{1+0.1*sin(deg(6))}
 % A jump at x0: the value f(x0) sits on the right branch, so f is right-continuous at x0 but not
 % left-continuous (the left branch approaches a different value).
 \begin{tikzpicture}
@@ -12,7 +13,7 @@
 		xmin=-0.3, xmax=4.6,
 		ymin=-0.3, ymax=3.2,
 		xtick={2}, xticklabels={$x_0$},
-		ytick={1,2.2}, yticklabels={$L$,$f(x_0)$},
+		ytick={\leftlimit,2.2}, yticklabels={$L$,$f(x_0)$},
 		xlabel={$x$}, ylabel={$y$},
 		xlabel style={below right}, ylabel style={above left},
 		samples=100, smooth, clip=false,
