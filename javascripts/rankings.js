@@ -512,91 +512,6 @@ body[data-md-color-scheme="slate"] .mk-trending-h1-hot svg *{
   border-top:0;
 }
 
-.trending-user-item[data-ranking-effect="ranking_row_gold"]{
-  --trending-ranking-bg-strong:rgba(250,204,21,.16);
-  --trending-ranking-bg-soft:rgba(254,240,138,.075);
-  --trending-ranking-border:rgba(250,204,21,.30);
-  --trending-ranking-line-1:#fef3c7;
-  --trending-ranking-line-2:#f6c453;
-  --trending-ranking-line-3:#fff7d6;
-}
-.trending-user-item[data-ranking-effect="ranking_row_pastel_red"]{
-  --trending-ranking-bg-strong:rgba(252,165,165,.18);
-  --trending-ranking-bg-soft:rgba(254,202,202,.085);
-  --trending-ranking-border:rgba(248,113,113,.28);
-  --trending-ranking-line-1:#ffe4e6;
-  --trending-ranking-line-2:#fca5a5;
-  --trending-ranking-line-3:#fff1f2;
-}
-.trending-user-item[data-ranking-effect="ranking_row_pastel_blue"]{
-  --trending-ranking-bg-strong:rgba(147,197,253,.18);
-  --trending-ranking-bg-soft:rgba(191,219,254,.085);
-  --trending-ranking-border:rgba(96,165,250,.27);
-  --trending-ranking-line-1:#dbeafe;
-  --trending-ranking-line-2:#93c5fd;
-  --trending-ranking-line-3:#eff6ff;
-}
-.trending-user-item[data-ranking-effect="ranking_row_pastel_purple"]{
-  --trending-ranking-bg-strong:rgba(196,181,253,.18);
-  --trending-ranking-bg-soft:rgba(221,214,254,.085);
-  --trending-ranking-border:rgba(167,139,250,.27);
-  --trending-ranking-line-1:#ede9fe;
-  --trending-ranking-line-2:#c4b5fd;
-  --trending-ranking-line-3:#f5f3ff;
-}
-.trending-user-item[data-ranking-effect="ranking_row_pastel_green"]{
-  --trending-ranking-bg-strong:rgba(134,239,172,.18);
-  --trending-ranking-bg-soft:rgba(187,247,208,.085);
-  --trending-ranking-border:rgba(74,222,128,.25);
-  --trending-ranking-line-1:#dcfce7;
-  --trending-ranking-line-2:#86efac;
-  --trending-ranking-line-3:#f0fdf4;
-}
-.trending-user-item[data-ranking-effect="ranking_row_pastel_peach"]{
-  --trending-ranking-bg-strong:rgba(253,186,116,.17);
-  --trending-ranking-bg-soft:rgba(254,215,170,.085);
-  --trending-ranking-border:rgba(251,146,60,.25);
-  --trending-ranking-line-1:#ffedd5;
-  --trending-ranking-line-2:#fdba74;
-  --trending-ranking-line-3:#fff7ed;
-}
-.trending-user-item[data-ranking-effect="ranking_row_gold"],
-.trending-user-item[data-ranking-effect="ranking_row_pastel_red"],
-.trending-user-item[data-ranking-effect="ranking_row_pastel_blue"],
-.trending-user-item[data-ranking-effect="ranking_row_pastel_purple"],
-.trending-user-item[data-ranking-effect="ranking_row_pastel_green"],
-.trending-user-item[data-ranking-effect="ranking_row_pastel_peach"]{
-  position:relative;
-  overflow:visible;
-  border-radius:16px;
-  background:linear-gradient(90deg,var(--trending-ranking-bg-strong),var(--trending-ranking-bg-soft) 44%,transparent 84%);
-  box-shadow:inset 0 0 0 1px var(--trending-ranking-border),0 10px 24px rgba(15,23,42,.075);
-}
-.trending-user-item[data-ranking-effect="ranking_row_gold"]::before,
-.trending-user-item[data-ranking-effect="ranking_row_pastel_red"]::before,
-.trending-user-item[data-ranking-effect="ranking_row_pastel_blue"]::before,
-.trending-user-item[data-ranking-effect="ranking_row_pastel_purple"]::before,
-.trending-user-item[data-ranking-effect="ranking_row_pastel_green"]::before,
-.trending-user-item[data-ranking-effect="ranking_row_pastel_peach"]::before{
-  content:"";
-  position:absolute;
-  left:0;
-  top:13%;
-  bottom:13%;
-  width:5px;
-  border-radius:999px;
-  background:linear-gradient(var(--trending-ranking-line-1),var(--trending-ranking-line-2),var(--trending-ranking-line-3));
-  pointer-events:none;
-}
-.trending-user-item[data-ranking-effect="ranking_row_gold"]::after,
-.trending-user-item[data-ranking-effect="ranking_row_pastel_red"]::after,
-.trending-user-item[data-ranking-effect="ranking_row_pastel_blue"]::after,
-.trending-user-item[data-ranking-effect="ranking_row_pastel_purple"]::after,
-.trending-user-item[data-ranking-effect="ranking_row_pastel_green"]::after,
-.trending-user-item[data-ranking-effect="ranking_row_pastel_peach"]::after{
-  content:none;
-  display:none;
-}
 .trending-user-item .trending-rank{
   width:32px;
   text-align:center;
@@ -1153,7 +1068,7 @@ window.addEventListener("mk-account-avatar-ready",()=>{const shared=window.MkAcc
 async function ensureAccountFeatureApi(get){if(get())return get();const startup=window.MkStartupPrefs;if(startup&&typeof startup.ensureFeature==="function")await startup.ensureFeature("account");return get();}
 let rankingConnections=null;function rankingConnectionSnapshot(meKey,refresh){if(!refresh&&rankingConnections&&rankingConnections.key===meKey&&Date.now()-rankingConnections.at<15000)return rankingConnections.promise;const promise=(async()=>{const api=window.MkLocalActivity;if(api&&typeof api.fetchConnections==="function")return api.fetchConnections();const visitorId=trendingVisitorId();if(!visitorId)throw new Error("Connections unavailable");const controller=typeof AbortController==="function"?new AbortController():null;const timer=controller?window.setTimeout(()=>controller.abort(),10000):null;try{const response=await fetch(API_BASE+"/connections?visitorId="+encodeURIComponent(visitorId),{cache:"no-store",...(controller?{signal:controller.signal}:{})});if(!response.ok)throw new Error("Connections unavailable");return await response.json();}finally{if(timer)window.clearTimeout(timer);}})().then(data=>{if(!data||!data.ok||!["connections","incoming","outgoing"].every(key=>Array.isArray(data[key])))throw new Error("Connections unavailable");return data;});rankingConnections={key:meKey,at:Date.now(),promise};promise.catch(()=>{if(rankingConnections&&rankingConnections.promise===promise)rankingConnections=null;});return promise;}
 function trendingQuickActions(item){const accountKey=String(item&&(item.accountKey||item.account_key)||"").trim();if(!accountKey)return null;let meKey="";try{meKey=String(readTrendingLocalProfile().accountKey||"").trim().toLowerCase();}catch(_){meKey="";}
-if(!meKey||meKey===accountKey.toLowerCase())return null;const name=userDisplayName(item);const wrap=el("span","trending-user-quick");const buttons=el("span","trending-quick-buttons");wrap.appendChild(buttons);const status=el("span","trending-quick-status");status.setAttribute("role","status");status.setAttribute("aria-live","polite");const say=(text,bad)=>{status.textContent=text||"";if(bad)status.setAttribute("data-error","true");else status.removeAttribute("data-error");};const make=(kind,label,icon)=>{const btn=el("button",`trending-quick-btn trending-quick-${kind}`);btn.type="button";btn.title=label;btn.setAttribute("aria-label",`${label}: ${name}`);btn.innerHTML=`${quickActionIcon(icon)}<span class="trending-quick-sr">${escapeTrendingHtml(label)}</span>`;buttons.appendChild(btn);return btn;};const connect=make("connect","Checking connection","link");connect.disabled=true;const duel=make("challenge","Challenge to a duel","swords");wrap.appendChild(status);let relationship="unknown",connectionBusy=false;const current=()=>wrap.isConnected&&String(readTrendingLocalProfile().accountKey||"").trim().toLowerCase()===meKey;function paintRelationship(state){relationship=state;const label=state==="accepted"?"Applaud":state==="outgoing"?"Request sent":state==="incoming"?"Incoming request":state==="unknown"?"Retry connection status":"Add study connection";connect.title=label;connect.setAttribute("aria-label",`${label}: ${name}`);connect.innerHTML=`${quickActionIcon(state === "accepted" ? "star" : state === "outgoing" || state === "incoming" ? "check" : "link")}<span class="trending-quick-sr">${escapeTrendingHtml(label)}</span>`;connect.disabled=state==="outgoing"||state==="incoming";}
+if(!meKey||meKey===accountKey.toLowerCase())return null;const name=userDisplayName(item);const wrap=el("span","trending-user-quick");const buttons=el("span","trending-quick-buttons");wrap.appendChild(buttons);const status=el("span","trending-quick-status");status.setAttribute("role","status");status.setAttribute("aria-live","polite");const say=(text,bad)=>{status.textContent=text||"";if(bad)status.setAttribute("data-error","true");else status.removeAttribute("data-error");};const make=(kind,label,icon)=>{const btn=el("button",`trending-quick-btn trending-quick-${kind}`);btn.type="button";btn.title=label;btn.setAttribute("aria-label",`${label}: ${name}`);btn.setAttribute("data-icon",icon);btn.innerHTML=`${quickActionIcon(icon)}<span class="trending-quick-sr">${escapeTrendingHtml(label)}</span>`;buttons.appendChild(btn);return btn;};const connect=make("connect","Checking connection","link");connect.disabled=true;const duel=make("challenge","Challenge to a duel","swords");wrap.appendChild(status);let relationship="unknown",connectionBusy=false;const current=()=>wrap.isConnected&&String(readTrendingLocalProfile().accountKey||"").trim().toLowerCase()===meKey;function paintRelationship(state){relationship=state;const label=state==="accepted"?"Applaud":state==="outgoing"?"Request sent":state==="incoming"?"Incoming request":state==="unknown"?"Retry connection status":"Add study connection";connect.title=label;connect.setAttribute("aria-label",`${label}: ${name}`);const icon=state==="accepted"?"star":state==="outgoing"||state==="incoming"?"check":"link";connect.setAttribute("data-icon",icon);connect.innerHTML=`${quickActionIcon(icon)}<span class="trending-quick-sr">${escapeTrendingHtml(label)}</span>`;connect.disabled=state==="outgoing"||state==="incoming";}
 async function refreshRelationship(force){const data=await rankingConnectionSnapshot(meKey,force);if(!current())return false;const matches=row=>String(row.otherAccountKey||"").toLowerCase()===accountKey.toLowerCase();paintRelationship(data.connections.some(matches)?"accepted":data.outgoing.some(matches)?"outgoing":data.incoming.some(matches)?"incoming":"none");return true;}
 refreshRelationship(false).catch(()=>{if(current())paintRelationship("unknown");});connect.addEventListener("click",async()=>{if(connect.disabled||connectionBusy||!current())return;connectionBusy=true;connect.disabled=true;connect.setAttribute("aria-busy","true");try{if(!await refreshRelationship(true)||!current())return;const api=await ensureAccountFeatureApi(()=>window.MkLocalActivity);if(!current())return;if(relationship==="accepted"){api.applaudLearner({...item,accountKey,name});say("");}else if(relationship==="none"){connect.disabled=true;say("Sending request…");const res=await api.requestConnection(name,{isCurrent:current});if(!current())return;rankingConnections=null;if(res&&res.ok){await refreshRelationship(true);say(relationship==="accepted"?"Connected":"Request sent");}
 else say(res&&res.error||"Could not send the request.",true);}}catch(_){if(current()){paintRelationship("unknown");say("Could not load connection status. Try again.",true);}}
@@ -1211,7 +1126,8 @@ function monthlyHonorGapRow(outcome,metric){const row=el("li","trending-item tre
 function mergeHonorGaps(entries,gaps,{firstPage,lastPage,newerBound}){const rows=entries.map(item=>({month:item.month,item}));if(!Array.isArray(gaps)||!gaps.length)return rows;const newest=entries.length?entries[0].month:"",oldest=entries.length?entries[entries.length-1].month:"";const upper=firstPage?"":(newerBound||newest);for(const gap of gaps){if(entries.length){if(upper&&!(gap.month<upper))continue;if(!lastPage&&gap.month<oldest)continue;}
 rows.push({month:gap.month,gap});}
 return rows.sort((a,b)=>(a.month<b.month?1:a.month>b.month?-1:0));}
-function trendingUserRow(it,metric,{leading,value,profileItem=null,extra=null,hideTotalXp=false}={}){const li=el("li","trending-item trending-user-item");const fx=String((it&&(it.rankingEffect||(it.equippedCosmetics&&it.equippedCosmetics.ranking_effect)))||"").trim();if(fx)li.setAttribute("data-ranking-effect",fx);try{const me=readTrendingLocalProfile();const meKey=String(me.accountKey||"").trim().toLowerCase();if(meKey&&String(it&&(it.accountKey||it.account_key||"")||"").trim().toLowerCase()===meKey){li.classList.add("mk-trending-current-user");li.setAttribute("data-current-user","true");}}catch(_){}
+function trendingUserRow(it,metric,{leading,value,profileItem=null,extra=null,hideTotalXp=false}={}){const li=el("li","trending-item trending-user-item");const theme=/^public_profile_theme_([a-z0-9_]+?)(_complete)?$/.exec(String((it&&it.equippedCosmetics&&it.equippedCosmetics.public_profile_theme)||""));if(theme){li.setAttribute("data-row-theme",theme[1].replace(/_/g,"-"));li.setAttribute("data-row-edition",theme[2]?"complete":"base");}
+try{const me=readTrendingLocalProfile();const meKey=String(me.accountKey||"").trim().toLowerCase();if(meKey&&String(it&&(it.accountKey||it.account_key||"")||"").trim().toLowerCase()===meKey){li.classList.add("mk-trending-current-user");li.setAttribute("data-current-user","true");}}catch(_){}
 if(it&&it.__rival)li.classList.add("is-rival");li.appendChild(leading);const name=userDisplayName(it);const level=userLevel(it);const totalXp=userTotalXp(it);const intro=userIntroText(it);const levelPct=formatTrendingPctStyle(userLevelProgressPct(it,totalXp,level));const profile=el("div","trending-user-profile");profile.innerHTML=trendingUserAvatarHtml(it,name);const main=el("div","trending-user-main");const nameRow=el("div","trending-user-name-row");const nameLink=el("a","trending-user-name",name);nameLink.href="#";nameRow.appendChild(nameLink);const quick=trendingQuickActions(it);if(quick)nameRow.appendChild(quick);const levelChip=el("span","trending-user-level");levelChip.title=`${levelPct}% complete in this level`;levelChip.innerHTML=`<span class="trending-user-level-fill" style="width:${levelPct}%"></span><strong>Lv. ${escapeTrendingHtml(level)}</strong>`;nameRow.appendChild(levelChip);if(!hideTotalXp){const totalXpChip=el("span","trending-user-total-xp");totalXpChip.title="Total experience";totalXpChip.appendChild(el("span","trending-user-total-label","Total "));totalXpChip.appendChild(el("span","trending-user-total-value",formatTrendingXp(totalXp)));nameRow.appendChild(totalXpChip);}
 main.appendChild(nameRow);if(intro)main.appendChild(el("div","trending-user-intro",intro));if(extra)main.appendChild(extra);profile.appendChild(main);const open=(ev)=>{ev.preventDefault();const oldError=profile.querySelector(".trending-profile-error");if(oldError)oldError.remove();openTrendingPublicProfile(profileItem||it,nameLink);};nameLink.addEventListener("click",open);profile.addEventListener("dblclick",open);li.appendChild(profile);li.appendChild(value);return li;}
 function getTagsFromDoc(d){const out=[];out.push(...asStringList(d&&d.tags));out.push(...asStringList(d&&d.tag));out.push(...asStringList(d&&d.meta&&d.meta.tags));out.push(...asStringList(d&&d.meta&&d.meta.tag));return out.map(s=>String(s).trim()).filter(Boolean);}
