@@ -208,7 +208,7 @@ function mwInstallSelfCheckGuard(){if(window.MasterySelfCheckGuard&&window.Maste
             display:flex !important;
             align-items:flex-end !important;
             justify-content:center !important;
-            padding:10px 10px calc(var(--mwsc-ios-hidden-tail, 0px) + env(safe-area-inset-bottom, 0px) + 10px) !important;
+            padding:10px 10px 0 !important;
             box-sizing:border-box !important;
             overflow:hidden !important;
             background:transparent !important;
@@ -238,8 +238,8 @@ function mwInstallSelfCheckGuard(){if(window.MasterySelfCheckGuard&&window.Maste
             max-width:520px !important;
             height:auto !important;
             min-height:0 !important;
-            max-height:calc(var(--mwsc-visible-height, var(--mwsc-vh, 100dvh)) - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px) - 20px) !important;
-            border-radius:20px !important;
+            max-height:calc(100% - env(safe-area-inset-top, 0px)) !important;
+            border-radius:20px 20px 0 0 !important;
             overflow:auto !important;
             -webkit-overflow-scrolling:touch !important;
             overscroll-behavior:contain !important;
@@ -302,7 +302,7 @@ try{if(document.body)document.body.classList.remove("mw-selfcheck-open");}catch(
 try{modal.remove();}catch(_){}
 if(scCloseDialog===cleanup)scCloseDialog=null;const opener=returnFocus&&returnFocus.isConnected&&returnFocus.getClientRects().length?returnFocus:fallbackFocus;if(opener&&opener.isConnected&&opener.getClientRects().length){try{opener.focus({preventScroll:true});}catch(_){opener.focus();}}
 resolve(value);};modal.addEventListener("click",(ev)=>{if(ev.target===modal){ev.preventDefault();ev.stopPropagation();cleanup("cancel");return;}
-const btn=ev.target&&ev.target.closest?ev.target.closest("button[data-action]"):null;if(!btn)return;ev.preventDefault();ev.stopPropagation();cleanup(btn.getAttribute("data-action")||"cancel");});const onKey=(ev)=>{if(ev.key==="Escape"){ev.preventDefault();ev.stopPropagation();cleanup("cancel");}else if(ev.key==="Tab"){const controls=Array.from(modal.querySelectorAll("button:not([disabled])"));const first=controls[0]||modal;const last=controls[controls.length-1]||modal;if(!modal.contains(document.activeElement)||(ev.shiftKey?document.activeElement===first:document.activeElement===last)){ev.preventDefault();(ev.shiftKey?last:first).focus();}}};scCloseDialog=cleanup;document.addEventListener("keydown",onKey,true);document.body.appendChild(modal);try{document.documentElement.classList.add("mw-selfcheck-open");}catch(_){}
+const btn=ev.target&&ev.target.closest?ev.target.closest("button[data-action]"):null;if(!btn)return;ev.preventDefault();ev.stopPropagation();cleanup(btn.getAttribute("data-action")||"cancel");});const onKey=(ev)=>{if(ev.key==="Escape"){ev.preventDefault();ev.stopPropagation();cleanup("cancel");}else if(ev.key==="Tab"){const controls=Array.from(modal.querySelectorAll("button:not([disabled])"));const first=controls[0]||modal;const last=controls[controls.length-1]||modal;if(!modal.contains(document.activeElement)||(ev.shiftKey?document.activeElement===first:document.activeElement===last)){ev.preventDefault();(ev.shiftKey?last:first).focus();}}};scCloseDialog=cleanup;document.addEventListener("keydown",onKey,true);document.body.appendChild(modal);if(window.MkDocSheet)window.MkDocSheet.cover(modal);try{document.documentElement.classList.add("mw-selfcheck-open");}catch(_){}
 try{if(document.body)document.body.classList.add("mw-selfcheck-open");}catch(_){}
 const firstControl=modal.querySelector("button[data-action='continue']")||modal;try{firstControl.focus({preventScroll:true});}catch(_){firstControl.focus();}
 try{scBindViewportMetricsOnce();scUpdateViewportMetrics();window.setTimeout(scUpdateViewportMetrics,60);}catch(_){}});}

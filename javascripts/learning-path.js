@@ -401,8 +401,9 @@ function ensureKnowledgeGpsModal(graph){let modal=document.getElementById('lp-gp
 const root=modal.querySelector('[data-lp-gps-modal-root]');if(root&&!root.dataset.lpGpsBound){root.dataset.lpGpsBound='1';}
 modal.__lpRender=(g,targetLoc)=>{const activeGraph=g||window.__lpLearningPathGraph||graph;if(!activeGraph||!root)return;const target=normLoc(targetLoc||currentRelPath());modal.dataset.lpTargetLoc=target;const activeState=lpGpsSyncRouteStateForPage(currentRelPath());const plan=lpBuildKnowledgeGpsPlan(activeGraph,target,{activeState});root.innerHTML=lpRenderKnowledgeGpsCard(activeGraph,plan,currentRelPath(),activeState);lpBindKnowledgeGpsActions(root,activeGraph,plan,target);try{typesetMathSafe([root]);}catch(_){}};modal.__lpOpen=(targetLoc)=>showKnowledgeGpsModal(window.__lpLearningPathGraph||graph,targetLoc||modal.dataset.lpTargetLoc||currentRelPath());return modal;}
 function showKnowledgeGpsModal(graph,targetLoc){ensureGpsStylesOnce();ensureKnowledgeGpsModalStylesOnce();const modal=ensureKnowledgeGpsModal(graph);modal.__lpRender(graph,targetLoc);modal.style.display='flex';modal.classList.add('lp-open');try{modal.style.setProperty('z-index',String(LP_MAP_MODAL_Z),'important');}catch(_){}
-modal.setAttribute('aria-hidden','false');setLpModalScrollLock(true);}
-function hideKnowledgeGpsModal(){const modal=document.getElementById('lp-gps-modal');if(!modal||modal.style.display==='none')return;lpInstallClickShield(560);modal.classList.remove('lp-open');modal.setAttribute('aria-hidden','true');modal.style.display='none';setLpModalScrollLock(false);}
+modal.setAttribute('aria-hidden','false');setLpModalScrollLock(true);if(window.MkDocSheet)modal.__lpReleaseCover=window.MkDocSheet.cover(modal);}
+function hideKnowledgeGpsModal(){const modal=document.getElementById('lp-gps-modal');if(!modal||modal.style.display==='none')return;lpInstallClickShield(560);modal.classList.remove('lp-open');modal.setAttribute('aria-hidden','true');modal.style.display='none';if(modal.__lpReleaseCover){modal.__lpReleaseCover();modal.__lpReleaseCover=null;}
+setLpModalScrollLock(false);}
 function ensureKnowledgeGpsModalStylesOnce(){if(document.getElementById('lp-gps-modal-style-v1'))return;const st=document.createElement('style');st.id='lp-gps-modal-style-v1';st.textContent=`
       #lp-gps-modal{
         position:fixed;

@@ -38,7 +38,7 @@ function inferMaterialSchemeEarly(){try{const body=document.body||null;const att
 try{let palette=null;try{for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k&&/(^|\/|\.)__palette$/.test(k)){const v=JSON.parse(localStorage.getItem(k)||"null");if(v){palette=v;break;}}}}catch(_){}
 if(!palette)palette=readJsonStorage("/.__palette",null)||readJsonStorage("__palette",null);const colour=palette&&typeof palette==="object"?(palette.color||palette.colour||palette):null;const scheme=colour&&typeof colour==="object"?(colour.scheme||colour.colorScheme||""):"";if(scheme)return String(scheme).trim()||"default";}catch(_){}
 return"default";}
-function isThemeOwned(inv,itemId){const id=clampThemeId(itemId);if(!id)return false;try{const owned=inv&&inv.owned;if(owned&&typeof owned==="object"&&owned[id])return true;const ownedIds=inv&&inv.ownedIds;if(Array.isArray(ownedIds)&&ownedIds.indexOf(id)>=0)return true;}catch(_){}
+function isThemeOwned(inv,itemId){const id=clampThemeId(itemId);if(!id)return false;try{const owned=inv&&inv.owned;if(owned&&typeof owned==="object"&&owned[id])return true;const ownedIds=inv&&inv.ownedIds;if(Array.isArray(ownedIds)&&ownedIds.indexOf(id)>=0)return true;if(Number((inv.festivalFree||{})[id]||0)>Date.now())return true;}catch(_){}
 return false;}
 function earlyTrialItemForSlot(slot){const wanted=String(slot||"").trim();if(!wanted)return"";const now=Date.now();const candidates=[];try{const inv=readJsonStorage(SHOP_INVENTORY_LIGHT_CACHE_KEY,null);const trials=inv&&Array.isArray(inv.activeTrials)?inv.activeTrials:[];trials.forEach((row)=>candidates.push(row));}catch(_){}
 try{const rows=readJsonAnyStorage(SHOP_RUNTIME_TRIAL_KEY,[]);if(Array.isArray(rows))rows.forEach((row)=>candidates.push(row));}catch(_){}
