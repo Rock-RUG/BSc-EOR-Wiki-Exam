@@ -5,10 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="Concept notes, search, local mastery ratings and learning maps for the BSc EOR Wiki exam-room mirror." name="description"/>
+<meta content="Sample paths and simulation of queueing and inventory systems: rates, Little's law, PASTA, level crossing, exact and approximate queueing models, inventory policies and queueing networks, week by week." name="description"/>
 <link href="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-2/1b-Stochastic-Operations-Research/index.html" rel="canonical"/>
 <link href="../1b-Math-VI-Convexity-and-Optimization/index.html" rel="prev"/>
-<link href="../2a-Discrete-Operations-Research/index.html" rel="next"/>
+<link href="arrival-and-departure-rates.html" rel="next"/>
 <link href="../../assets/logo-navbar.svg" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
 <title>Stochastic Operations Research - BSc EOR Wiki (Exam Mode)</title>
@@ -17,14 +17,14 @@
 <link href="../../stylesheets/fonts-vendor.css?h=6f3b200e55fb" rel="stylesheet"/>
 <link href="../../stylesheets/katex-vendor.css?h=810f682352aa" rel="stylesheet"/>
 <link href="../../stylesheets/katex-fast.css?h=d33dde2419a3" rel="stylesheet"/>
-<link href="../../stylesheets/extra.css?h=67a2892e7d48" rel="stylesheet"/>
-<link href="../../stylesheets/mastery-widget.css?h=099ee489c236" rel="stylesheet"/>
-<link href="../../stylesheets/course-search.css?h=1251e49b65c0" rel="stylesheet"/>
-<link href="../../stylesheets/course-status.css?h=52d6fd8245d8" rel="stylesheet"/>
+<link href="../../stylesheets/extra.css?h=3adc0fb03ce6" rel="stylesheet"/>
+<link href="../../stylesheets/mastery-widget.css?h=c23bc4da9c87" rel="stylesheet"/>
+<link href="../../stylesheets/course-search.css?h=0a18332bcef1" rel="stylesheet"/>
+<link href="../../stylesheets/course-status.css?h=57797d87bdd3" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-surfaces.css?h=c34ef5acfade" rel="stylesheet"/>
-<link href="../../stylesheets/theme-surfaces.css?h=5715e17c8a8f" rel="stylesheet" media="(forced-colors: active)" data-mk-css-gate="theme"/>
+<link href="../../stylesheets/theme-surfaces.css?h=b445e73ad143" rel="stylesheet" media="(forced-colors: active)" data-mk-css-gate="theme"/>
 <link href="../../stylesheets/wiki-community.css?h=bf04506951f8" rel="stylesheet"/>
-<link href="../../stylesheets/wiki-maps.css?h=ca7dd617f0d7" rel="stylesheet" media="not all" data-mk-css-gate="maps"/>
+<link href="../../stylesheets/wiki-maps.css?h=fb76700163c4" rel="stylesheet" media="not all" data-mk-css-gate="maps"/>
 <link href="../../stylesheets/wiki-mastery-manager.css?h=fa1ca3f1b89d" rel="stylesheet" media="not all" data-mk-css-gate="manager"/>
 <link href="../../stylesheets/course-home.css?h=584f98f710bb" rel="stylesheet"/>
 <link href="../../stylesheets/course-atlas.css?h=500873e05af8" rel="stylesheet"/>
@@ -143,13 +143,13 @@
 <meta content="website" property="og:type"/>
 <meta content="BSc EOR Wiki (Exam Mode)" property="og:site_name"/>
 <meta content="Stochastic Operations Research - BSc EOR Wiki (Exam Mode)" property="og:title"/>
-<meta content="Concept notes, search, local mastery ratings and learning maps for the BSc EOR Wiki exam-room mirror." property="og:description"/>
+<meta content="Sample paths and simulation of queueing and inventory systems: rates, Little's law, PASTA, level crossing, exact and approximate queueing models, inventory policies and queueing networks, week by week." property="og:description"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-2/1b-Stochastic-Operations-Research/index.html" property="og:url"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/assets/logo-navbar.png" property="og:image"/>
 <meta content="BSc EOR Wiki logo" property="og:image:alt"/>
 <meta content="summary" name="twitter:card"/>
 <meta content="Stochastic Operations Research - BSc EOR Wiki (Exam Mode)" name="twitter:title"/>
-<meta content="Concept notes, search, local mastery ratings and learning maps for the BSc EOR Wiki exam-room mirror." name="twitter:description"/>
+<meta content="Sample paths and simulation of queueing and inventory systems: rates, Little's law, PASTA, level crossing, exact and approximate queueing models, inventory policies and queueing networks, week by week." name="twitter:description"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/assets/logo-navbar.png" name="twitter:image"/>
 <meta content="BSc EOR Wiki logo" name="twitter:image:alt"/>
 <script id="mk-search-index-network-cache">
@@ -217,6 +217,8 @@
 })();
 </script>
 <script>document.documentElement.classList.add("mk-course-home");</script>
+<link as="font" crossorigin="anonymous" href="../../stylesheets/fonts/KaTeX_Main-Regular.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="anonymous" href="../../stylesheets/fonts/KaTeX_Math-Italic.woff2" rel="preload" type="font/woff2"/>
 <!-- Start sidebar metadata early when its feature is enabled. A static preload
      would still download it in Lite mode, where the sorter has no consumer. -->
 <script id="mk-sidebar-meta-prefetch-v1">
@@ -230,9 +232,9 @@
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=5d20aa4998b2";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=73f26035ba8d";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=5d20aa4998b2";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=73f26035ba8d";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -846,6 +848,9 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
     
   </span>
 </a>
+<label class="md-nav__link md-nav__link--active" for="__nav_5_7" id="__nav_5_7_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
 </div>
 <nav aria-expanded="true" aria-labelledby="__nav_5_7_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_5_7">
@@ -857,6 +862,1158 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="arrival-and-departure-rates.html">
+<span class="md-ellipsis">
+    
+  
+    Arrival and Departure Rates
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="arrival-average-performance.html">
+<span class="md-ellipsis">
+    
+  
+    Arrival-Average Performance
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="arrival-average-state-probability.html">
+<span class="md-ellipsis">
+    
+  
+    Arrival-Average State Probability
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="arrival-theorem.html">
+<span class="md-ellipsis">
+    
+  
+    Arrival Theorem
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="arrival-time-recursion.html">
+<span class="md-ellipsis">
+    
+  
+    Arrival-Time Recursion
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="availability.html">
+<span class="md-ellipsis">
+    
+  
+    Availability
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="balance-equations.html">
+<span class="md-ellipsis">
+    
+  
+    Balance Equations
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="balking.html">
+<span class="md-ellipsis">
+    
+  
+    Balking
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="base-stock-backlog.html">
+<span class="md-ellipsis">
+    
+  
+    Base-Stock Backlog
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="base-stock-inventory-distribution.html">
+<span class="md-ellipsis">
+    
+  
+    Base-Stock Inventory Distribution
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="base-stock-policy.html">
+<span class="md-ellipsis">
+    
+  
+    Base-Stock Policy
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="batch-arrival-queue.html">
+<span class="md-ellipsis">
+    
+  
+    Batch-Arrival Queue
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="batch-arrival-waiting-time.html">
+<span class="md-ellipsis">
+    
+  
+    Batch-Arrival Waiting Time
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="batch-formation-time.html">
+<span class="md-ellipsis">
+    
+  
+    Batch Formation Time
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="batch-rejection-policy.html">
+<span class="md-ellipsis">
+    
+  
+    Batch Rejection Policy
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="birth-death-queue.html">
+<span class="md-ellipsis">
+    
+  
+    Birth-Death Queue
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="busy-period.html">
+<span class="md-ellipsis">
+    
+  
+    Busy Period
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="closed-queueing-network.html">
+<span class="md-ellipsis">
+    
+  
+    Closed Queueing Network
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="closure.html">
+<span class="md-ellipsis">
+    
+  
+    Closure
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="conditional-uniform-arrival-times.html">
+<span class="md-ellipsis">
+    
+  
+    Conditional Uniform Arrival Times
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="conwip.html">
+<span class="md-ellipsis">
+    
+  
+    CONWIP
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="counting-process.html">
+<span class="md-ellipsis">
+    
+  
+    Counting Process
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="cycle-service-level.html">
+<span class="md-ellipsis">
+    
+  
+    Cycle Service Level
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="departure-scv-approximation.html">
+<span class="md-ellipsis">
+    
+  
+    Departure SCV Approximation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="discrete-time-queue-recursion.html">
+<span class="md-ellipsis">
+    
+  
+    Discrete-Time Queue Recursion
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="economic-production-quantity.html">
+<span class="md-ellipsis">
+    
+  
+    Economic Production Quantity
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="erlang-b-model.html">
+<span class="md-ellipsis">
+    
+  
+    Erlang B Model
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="exponential-limit-of-uniform-spacings.html">
+<span class="md-ellipsis">
+    
+  
+    Exponential Limit of Uniform Spacings
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="fill-rate.html">
+<span class="md-ellipsis">
+    
+  
+    Fill Rate
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="finite-calling-population.html">
+<span class="md-ellipsis">
+    
+  
+    Finite Calling Population
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="hitting-time-recursion.html">
+<span class="md-ellipsis">
+    
+  
+    Hitting-Time Recursion
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="inventory-level.html">
+<span class="md-ellipsis">
+    
+  
+    Inventory Level
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="inventory-position.html">
+<span class="md-ellipsis">
+    
+  
+    Inventory Position
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="jackson-product-form.html">
+<span class="md-ellipsis">
+    
+  
+    Jackson Product Form
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="kendalls-notation.html">
+<span class="md-ellipsis">
+    
+  
+    Kendall's Notation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="lambda-function.html">
+<span class="md-ellipsis">
+    
+  
+    Lambda Function
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="lead-time-demand.html">
+<span class="md-ellipsis">
+    
+  
+    Lead-Time Demand
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="level-crossing-equation.html">
+<span class="md-ellipsis">
+    
+  
+    Level-Crossing Equation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="lindley-recursion.html">
+<span class="md-ellipsis">
+    
+  
+    Lindley Recursion
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="littles-law.html">
+<span class="md-ellipsis">
+    
+  
+    Little's Law
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="m-g-1-departure-epoch-chain.html">
+<span class="md-ellipsis">
+    
+  
+    M/G/1 Departure-Epoch Chain
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="m-m-1-k-queue.html">
+<span class="md-ellipsis">
+    
+  
+    M/M/1/K Queue
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="m-m-1-queue.html">
+<span class="md-ellipsis">
+    
+  
+    M/M/1 Queue
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="m-m-c-queue.html">
+<span class="md-ellipsis">
+    
+  
+    M/M/c Queue
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="m-m-infinity-queue.html">
+<span class="md-ellipsis">
+    
+  
+    M/M/Infinity Queue
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="mean-value-analysis.html">
+<span class="md-ellipsis">
+    
+  
+    Mean Value Analysis
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="memoization.html">
+<span class="md-ellipsis">
+    
+  
+    Memoization
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="n-policy.html">
+<span class="md-ellipsis">
+    
+  
+    N-Policy
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="non-preemptive-outage.html">
+<span class="md-ellipsis">
+    
+  
+    Non-Preemptive Outage
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="open-queueing-network.html">
+<span class="md-ellipsis">
+    
+  
+    Open Queueing Network
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="pasta.html">
+<span class="md-ellipsis">
+    
+  
+    Poisson Arrivals See Time Averages
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="pollaczek-khinchine-formula.html">
+<span class="md-ellipsis">
+    
+  
+    Pollaczek-Khinchine Formula
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="preemptive-outage-effective-service-time.html">
+<span class="md-ellipsis">
+    
+  
+    Preemptive-Outage Effective Service Time
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="q-r-average-cost.html">
+<span class="md-ellipsis">
+    
+  
+    (Q, r) Average Cost
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="q-r-policy.html">
+<span class="md-ellipsis">
+    
+  
+    (Q, r) Policy
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="q-r-uniform-inventory-position.html">
+<span class="md-ellipsis">
+    
+  
+    Uniform Inventory Position under a (Q, r) Policy
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="queue-drift.html">
+<span class="md-ellipsis">
+    
+  
+    Queue Drift
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="queue-length-conservation.html">
+<span class="md-ellipsis">
+    
+  
+    Queue-Length Conservation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="queue-sample-path-simulation.html">
+<span class="md-ellipsis">
+    
+  
+    Queue Sample-Path Simulation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="queueing-and-inventory-systems.html">
+<span class="md-ellipsis">
+    
+  
+    Queueing and Inventory Systems
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="quicksort.html">
+<span class="md-ellipsis">
+    
+  
+    Quicksort
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="rate-stability.html">
+<span class="md-ellipsis">
+    
+  
+    Rate Stability
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="ready-rate.html">
+<span class="md-ellipsis">
+    
+  
+    Ready Rate
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="remaining-service-time.html">
+<span class="md-ellipsis">
+    
+  
+    Remaining Service Time
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="renewal-reward-theorem.html">
+<span class="md-ellipsis">
+    
+  
+    Renewal Reward Theorem
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="routing-matrix.html">
+<span class="md-ellipsis">
+    
+  
+    Routing Matrix
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="running-and-hitting-costs.html">
+<span class="md-ellipsis">
+    
+  
+    Running and Hitting Costs
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="s-s-cost-recursion.html">
+<span class="md-ellipsis">
+    
+  
+    (s, S) Cost Recursion
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="s-s-policy.html">
+<span class="md-ellipsis">
+    
+  
+    (s, S) Policy
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="sakasegawa-formula.html">
+<span class="md-ellipsis">
+    
+  
+    Sakasegawa's Formula
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="scv-estimation-from-counts.html">
+<span class="md-ellipsis">
+    
+  
+    SCV Estimation from Counts
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="server-adjustment.html">
+<span class="md-ellipsis">
+    
+  
+    Server Adjustment
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="server-failure.html">
+<span class="md-ellipsis">
+    
+  
+    Server Failure
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="server-load.html">
+<span class="md-ellipsis">
+    
+  
+    Server Load
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="server-setup.html">
+<span class="md-ellipsis">
+    
+  
+    Server Setup
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="server-utilization.html">
+<span class="md-ellipsis">
+    
+  
+    Server Utilization
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="service-rate.html">
+<span class="md-ellipsis">
+    
+  
+    Service Rate
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="setup-effective-service-time.html">
+<span class="md-ellipsis">
+    
+  
+    Setup Effective Service Time
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="single-item-inventory-system.html">
+<span class="md-ellipsis">
+    
+  
+    Single-Item Inventory System
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="single-server-service-recursion.html">
+<span class="md-ellipsis">
+    
+  
+    Single-Server Service Recursion
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="sojourn-time.html">
+<span class="md-ellipsis">
+    
+  
+    Sojourn Time
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="squared-coefficient-of-variation.html">
+<span class="md-ellipsis">
+    
+  
+    Squared Coefficient of Variation
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="state-dependent-arrival-rate.html">
+<span class="md-ellipsis">
+    
+  
+    State-Dependent Arrival Rate
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="state-dependent-capacity.html">
+<span class="md-ellipsis">
+    
+  
+    State-Dependent Capacity
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="stationary-probability-recursion.html">
+<span class="md-ellipsis">
+    
+  
+    Stationary-Probability Recursion
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="t-s-cost-recursion.html">
+<span class="md-ellipsis">
+    
+  
+    (T, S) Cost Recursion
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="t-s-policy.html">
+<span class="md-ellipsis">
+    
+  
+    (T, S) Policy
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="t-s-s-policy.html">
+<span class="md-ellipsis">
+    
+  
+    (T, s, S) Policy
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="tandem-queue.html">
+<span class="md-ellipsis">
+    
+  
+    Tandem Queue
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="time-average-performance.html">
+<span class="md-ellipsis">
+    
+  
+    Time-Average Performance
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="time-average-state-probability.html">
+<span class="md-ellipsis">
+    
+  
+    Time-Average State Probability
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="traffic-equations.html">
+<span class="md-ellipsis">
+    
+  
+    Traffic Equations
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="visit-ratio.html">
+<span class="md-ellipsis">
+    
+  
+    Visit Ratio
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="waiting-time-admission-control.html">
+<span class="md-ellipsis">
+    
+  
+    Waiting-Time Admission Control
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="waiting-time.html">
+<span class="md-ellipsis">
+    
+  
+    Waiting Time
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="workload.html">
+<span class="md-ellipsis">
+    
+  
+    Workload
+  
+
+    
+  </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -971,10 +2128,43 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </div>
 </div>
 </div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden="">
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-practise">
+<span class="md-ellipsis">
+      
+        Practise
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-units">
+<span class="md-ellipsis">
+      
+        Weeks
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-more">
+<span class="md-ellipsis">
+      
+        More about this course
+      
+    </span>
+</a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -1008,21 +2198,392 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <article class="md-content__inner md-typeset">
 <nav class="md-tags" aria-label="Concept tags">
 <span class="md-tag">curriculum-current</span>
+<span class="md-tag">sor</span>
 </nav>
 <h1 class="ch-title" id="stochastic-operations-research">Stochastic Operations Research<a class="headerlink" href="#stochastic-operations-research" title="Permanent link">¶</a></h1>
 <p class="ch-course-kicker">Year 2 · Block 1b · Operations research</p>
-<!-- mk-empty-course-notice -->
-<div class="course-home ch-empty">
-<section aria-label="Course status" class="ch-overview">
-<p class="ch-lead"><strong>Not written yet.</strong> Concept pages for Stochastic Operations Research are not on the wiki yet.</p>
-<p class="ch-section-note">Use your course learning environment for teaching materials. Taking this course and want to help write it up? The <a href="../../contributors.html">contributors page</a> explains how.</p>
-<nav aria-label="Course actions" class="ch-actions"><a class="ch-btn ch-btn--primary" href="../../find.html">Search published concepts</a><a class="ch-btn" href="../index.html">All Year 2 courses</a><a class="ch-btn" href="../../Year-1/index.html">Year 1 foundations</a></nav>
+<!-- course-home:begin -->
+<div data-course-mastery-map="sor"></div>
+<div class="course-home" data-course-home="sor">
+<section aria-label="Course overview" class="ch-overview">
+<p class="ch-lead">Queueing and inventory systems are built from their sample paths and simulated, then analysed with rates, renewal reward, Little's law, PASTA and level crossing. This leads to exact queueing and inventory models, approximations for G/G/c queues with setups and outages, and queueing networks.</p>
+<ul class="ch-facts">
+<li><strong>7</strong> weeks </li>
+<li><strong>96</strong> concept pages </li>
+</ul>
+<div class="course-search" data-course-token="sor" id="course-find">
+<form class="search-hero__form" id="course-search-form">
+<input aria-label="Search in Stochastic Operations Research" autocomplete="off" class="search-hero__input" id="course-search-input" placeholder="Search this course, for example Little's law" type="text"/>
+<button class="search-hero__button fb-cta-btn fb-cta-btn--search" data-fb-cta-decorated="1" id="course-search-btn" type="submit"><span aria-hidden="true" class="fb-cta__ico fb-cta__ico--search"></span><span class="fb-cta__txt">Search in course</span></button>
+<button aria-label="Search in course" id="csr-mobile-submit" type="submit"><svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></button>
+<button aria-label="Clear search" hidden="" id="csr-mobile-clear" title="Clear search" type="button">×</button>
+</form>
+<div class="course-search-results" id="course-search-results"></div>
+</div>
+</section>
+<section aria-labelledby="course-practise" class="ch-practise">
+<h2 class="ch-section-title" id="course-practise">Practise<a class="headerlink" href="#course-practise" title="Permanent link">¶</a></h2>
+<div class="ch-practise-cards">
+<a class="ch-practise-card ch-practise-card--finder" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=sor&amp;lp_token=sor#search-results"><span class="ch-practise-name">Review in Concept Finder</span><span class="ch-practise-note">Check yourself on the whole course, or one week at a time.</span></a>
+</div>
 </section>
 </div>
+<section aria-labelledby="course-units" class="ch-route">
+<div class="ch-route-head">
+<h2 class="ch-section-title" id="course-units">Weeks<a class="headerlink" href="#course-units" title="Permanent link">¶</a></h2>
+</div>
+<div class="ch-unit-list">
+<details class="ch-unit-card" id="week-1">
+<summary><span aria-label="Week 1" class="ch-unit-num">1</span><span class="ch-row-name">Sample paths, algorithms and the Poisson process</span><span class="ch-row-count">12<span class="ch-sr"> concepts</span></span></summary>
+<p class="ch-unit-meta">Week 1 · course notes Chapter 1</p>
+<ul>
+<li><a href="lambda-function.html">Lambda Function</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/stochastic-process.html">Stochastic Process</a> <span class="ch-from">Probability Theory for EOR</span> </li>
+<li><a href="closure.html">Closure</a> </li>
+<li><a href="memoization.html">Memoization</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/poisson-process.html">Poisson Process</a> <span class="ch-from">Probability Theory for EOR</span> </li>
+<li><a href="queueing-and-inventory-systems.html">Queueing and Inventory Systems</a> </li>
+<li><a href="time-average-state-probability.html">Time-Average State Probability</a> </li>
+<li><a href="arrival-time-recursion.html">Arrival-Time Recursion</a> </li>
+<li><a href="conditional-uniform-arrival-times.html">Conditional Uniform Arrival Times</a> </li>
+<li><a href="exponential-limit-of-uniform-spacings.html">Exponential Limit of Uniform Spacings</a> </li>
+<li><a href="quicksort.html">Quicksort</a> </li>
+<li><a href="arrival-average-state-probability.html">Arrival-Average State Probability</a> </li>
+</ul>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="sor-week01" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=sor-week01&amp;lp_token=sor-week01#search-results">Review week 1 in Concept Finder</a> <span>12 concepts</span></p>
+</details>
+<details class="ch-unit-card" id="week-2">
+<summary><span aria-label="Week 2" class="ch-unit-num">2</span><span class="ch-row-name">Discrete-time queues and inventory systems</span><span class="ch-row-count">14<span class="ch-sr"> concepts</span></span></summary>
+<p class="ch-unit-meta">Week 2 · course notes Chapter 2</p>
+<ul>
+<li><a href="discrete-time-queue-recursion.html">Discrete-Time Queue Recursion</a> </li>
+<li><a href="queue-drift.html">Queue Drift</a> </li>
+<li><a href="single-item-inventory-system.html">Single-Item Inventory System</a> </li>
+<li><a href="squared-coefficient-of-variation.html">Squared Coefficient of Variation</a> </li>
+<li><a href="state-dependent-capacity.html">State-Dependent Capacity</a> </li>
+<li><a href="inventory-level.html">Inventory Level</a> </li>
+<li><a href="inventory-position.html">Inventory Position</a> </li>
+<li><a href="ready-rate.html">Ready Rate</a> </li>
+<li><a href="base-stock-policy.html">Base-Stock Policy</a> </li>
+<li><a href="fill-rate.html">Fill Rate</a> </li>
+<li><a href="s-s-policy.html">(s, S) Policy</a> </li>
+<li><a href="t-s-policy.html">(T, S) Policy</a> </li>
+<li><a href="cycle-service-level.html">Cycle Service Level</a> </li>
+<li><a href="q-r-policy.html">(Q, r) Policy</a> </li>
+</ul>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="sor-week02" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=sor-week02&amp;lp_token=sor-week02#search-results">Review week 2 in Concept Finder</a> <span>14 concepts</span></p>
+</details>
+<details class="ch-unit-card" id="week-3">
+<summary><span aria-label="Week 3" class="ch-unit-num">3</span><span class="ch-row-name">Continuous-time queues, rates and stability</span><span class="ch-row-count">19<span class="ch-sr"> concepts</span></span></summary>
+<p class="ch-unit-meta">Week 3 · course notes Chapter 3 and Sections 4.1–4.2</p>
+<ul>
+<li><a href="counting-process.html">Counting Process</a> </li>
+<li><a href="kendalls-notation.html">Kendall's Notation</a> </li>
+<li><a href="single-server-service-recursion.html">Single-Server Service Recursion</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/universality-of-the-uniform.html">Universality of the Uniform and CDF Realizability</a> <span class="ch-from">Probability Theory for EOR</span> </li>
+<li><a href="waiting-time.html">Waiting Time</a> </li>
+<li><a href="arrival-and-departure-rates.html">Arrival and Departure Rates</a> </li>
+<li><a href="lindley-recursion.html">Lindley Recursion</a> </li>
+<li><a href="queue-sample-path-simulation.html">Queue Sample-Path Simulation</a> </li>
+<li><a href="queue-length-conservation.html">Queue-Length Conservation</a> </li>
+<li><a href="service-rate.html">Service Rate</a> </li>
+<li><a href="sojourn-time.html">Sojourn Time</a> </li>
+<li><a href="waiting-time-admission-control.html">Waiting-Time Admission Control</a> </li>
+<li><a href="workload.html">Workload</a> </li>
+<li><a href="server-load.html">Server Load</a> </li>
+<li><a href="server-utilization.html">Server Utilization</a> </li>
+<li><a href="busy-period.html">Busy Period</a> </li>
+<li><a href="rate-stability.html">Rate Stability</a> </li>
+<li><a href="time-average-performance.html">Time-Average Performance</a> </li>
+<li><a href="arrival-average-performance.html">Arrival-Average Performance</a> </li>
+</ul>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="sor-week03" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=sor-week03&amp;lp_token=sor-week03#search-results">Review week 3 in Concept Finder</a> <span>19 concepts</span></p>
+</details>
+<details class="ch-unit-card" id="week-4">
+<summary><span aria-label="Week 4" class="ch-unit-num">4</span><span class="ch-row-name">Renewal reward, Little's law, PASTA and level crossing</span><span class="ch-row-count">17<span class="ch-sr"> concepts</span></span></summary>
+<p class="ch-unit-meta">Week 4 · course notes Sections 4.3–4.6 and 5.1–5.2</p>
+<ul>
+<li><a href="../../Year-1/1a-OR-Modelling/economic-order-quantity.html">Economic Order Quantity</a> <span class="ch-from">OR Modelling</span> </li>
+<li><a href="littles-law.html">Little's Law</a> </li>
+<li><a href="pasta.html">Poisson Arrivals See Time Averages</a> </li>
+<li><a href="renewal-reward-theorem.html">Renewal Reward Theorem</a> </li>
+<li><a href="state-dependent-arrival-rate.html">State-Dependent Arrival Rate</a> </li>
+<li><a href="economic-production-quantity.html">Economic Production Quantity</a> </li>
+<li><a href="level-crossing-equation.html">Level-Crossing Equation</a> </li>
+<li><a href="stationary-probability-recursion.html">Stationary-Probability Recursion</a> </li>
+<li><a href="balance-equations.html">Balance Equations</a> </li>
+<li><a href="birth-death-queue.html">Birth-Death Queue</a> </li>
+<li><a href="finite-calling-population.html">Finite Calling Population</a> </li>
+<li><a href="m-m-1-queue.html">M/M/1 Queue</a> </li>
+<li><a href="m-m-1-k-queue.html">M/M/1/K Queue</a> </li>
+<li><a href="m-m-c-queue.html">M/M/c Queue</a> </li>
+<li><a href="balking.html">Balking</a> </li>
+<li><a href="erlang-b-model.html">Erlang B Model</a> </li>
+<li><a href="m-m-infinity-queue.html">M/M/Infinity Queue</a> </li>
+</ul>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="sor-week04" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=sor-week04&amp;lp_token=sor-week04#search-results">Review week 4 in Concept Finder</a> <span>17 concepts</span></p>
+</details>
+<details class="ch-unit-card" id="week-5">
+<summary><span aria-label="Week 5" class="ch-unit-num">5</span><span class="ch-row-name">Batch arrivals, the M/G/1 queue and inventory analytics</span><span class="ch-row-count">12<span class="ch-sr"> concepts</span></span></summary>
+<p class="ch-unit-meta">Week 5 · course notes Sections 5.3–5.8</p>
+<ul>
+<li><a href="batch-arrival-queue.html">Batch-Arrival Queue</a> </li>
+<li><a href="batch-arrival-waiting-time.html">Batch-Arrival Waiting Time</a> </li>
+<li><a href="lead-time-demand.html">Lead-Time Demand</a> </li>
+<li><a href="m-g-1-departure-epoch-chain.html">M/G/1 Departure-Epoch Chain</a> </li>
+<li><a href="remaining-service-time.html">Remaining Service Time</a> </li>
+<li><a href="base-stock-inventory-distribution.html">Base-Stock Inventory Distribution</a> </li>
+<li><a href="batch-rejection-policy.html">Batch Rejection Policy</a> </li>
+<li><a href="pollaczek-khinchine-formula.html">Pollaczek-Khinchine Formula</a> </li>
+<li><a href="q-r-uniform-inventory-position.html">Uniform Inventory Position under a (Q, r) Policy</a> </li>
+<li><a href="base-stock-backlog.html">Base-Stock Backlog</a> </li>
+<li><a href="n-policy.html">N-Policy</a> </li>
+<li><a href="q-r-average-cost.html">(Q, r) Average Cost</a> </li>
+</ul>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="sor-week05" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=sor-week05&amp;lp_token=sor-week05#search-results">Review week 5 in Concept Finder</a> <span>12 concepts</span></p>
+</details>
+<details class="ch-unit-card" id="week-6">
+<summary><span aria-label="Week 6" class="ch-unit-num">6</span><span class="ch-row-name">Inventory cost recursions, the G/G/c queue and setups</span><span class="ch-row-count">10<span class="ch-sr"> concepts</span></span></summary>
+<p class="ch-unit-meta">Week 6 · course notes Sections 5.9 and 6.1–6.2</p>
+<ul>
+<li><a href="hitting-time-recursion.html">Hitting-Time Recursion</a> </li>
+<li><a href="running-and-hitting-costs.html">Running and Hitting Costs</a> </li>
+<li><a href="sakasegawa-formula.html">Sakasegawa's Formula</a> </li>
+<li><a href="scv-estimation-from-counts.html">SCV Estimation from Counts</a> </li>
+<li><a href="server-setup.html">Server Setup</a> </li>
+<li><a href="setup-effective-service-time.html">Setup Effective Service Time</a> </li>
+<li><a href="t-s-cost-recursion.html">(T, S) Cost Recursion</a> </li>
+<li><a href="batch-formation-time.html">Batch Formation Time</a> </li>
+<li><a href="s-s-cost-recursion.html">(s, S) Cost Recursion</a> </li>
+<li><a href="t-s-s-policy.html">(T, s, S) Policy</a> </li>
+</ul>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="sor-week06" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=sor-week06&amp;lp_token=sor-week06#search-results">Review week 6 in Concept Finder</a> <span>10 concepts</span></p>
+</details>
+<details class="ch-unit-card" id="week-7">
+<summary><span aria-label="Week 7" class="ch-unit-num">7</span><span class="ch-row-name">Outages, tandem queues and queueing networks</span><span class="ch-row-count">16<span class="ch-sr"> concepts</span></span></summary>
+<p class="ch-unit-meta">Week 7 · course notes Sections 6.3–6.4 and Chapter 7</p>
+<ul>
+<li><a href="server-adjustment.html">Server Adjustment</a> </li>
+<li><a href="tandem-queue.html">Tandem Queue</a> </li>
+<li><a href="departure-scv-approximation.html">Departure SCV Approximation</a> </li>
+<li><a href="non-preemptive-outage.html">Non-Preemptive Outage</a> </li>
+<li><a href="routing-matrix.html">Routing Matrix</a> </li>
+<li><a href="server-failure.html">Server Failure</a> </li>
+<li><a href="traffic-equations.html">Traffic Equations</a> </li>
+<li><a href="visit-ratio.html">Visit Ratio</a> </li>
+<li><a href="availability.html">Availability</a> </li>
+<li><a href="closed-queueing-network.html">Closed Queueing Network</a> </li>
+<li><a href="open-queueing-network.html">Open Queueing Network</a> </li>
+<li><a href="preemptive-outage-effective-service-time.html">Preemptive-Outage Effective Service Time</a> </li>
+<li><a href="arrival-theorem.html">Arrival Theorem</a> </li>
+<li><a href="jackson-product-form.html">Jackson Product Form</a> </li>
+<li><a href="mean-value-analysis.html">Mean Value Analysis</a> </li>
+<li><a href="conwip.html">CONWIP</a> </li>
+</ul>
+<p class="ch-unit-actions"><a class="ch-text-link" data-course-unit="sor-week07" href="../../find.html?src=lp_direct&amp;lp_direct=1&amp;q=sor-week07&amp;lp_token=sor-week07#search-results">Review week 7 in Concept Finder</a> <span>16 concepts</span></p>
+</details>
+</div>
+<p class="ch-section-note ch-route-note">Concepts appear in the week that introduces them, foundations first. A course name after a concept marks an earlier page revisited that week.</p>
+</section>
+<!-- course-home:end -->
+<section aria-labelledby="course-more" class="ch-more">
+<h2 class="ch-section-title" id="course-more">More about this course<a class="headerlink" href="#course-more" title="Permanent link">¶</a></h2>
+<div class="ch-more-list">
+<!-- course-home:more-begin -->
+<details class="ch-more-row ch-more-row--builds-on" id="course-builds-on">
+<summary><span class="ch-row-name">Before you start<small>Earlier concepts these pages use most. If a step feels unfamiliar, revisit them first.</small></span><span class="ch-row-count">5 courses</span></summary>
+<div class="ch-more-body ch-connect">
+<div class="ch-connect-course">
+<div class="ch-connect-head"><a class="ch-connect-name" href="../../Year-1/1b-Probability-Theory-for-EOR/index.html">Probability Theory for EOR</a></div>
+<ul class="ch-chips">
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/exponential-distribution.html">Exponential Distribution</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/memoryless-property.html">Memoryless Property</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/poisson-process.html">Poisson Process</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/stochastic-process.html">Stochastic Process</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/expectation.html">Expectation</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/indicator-random-variable.html">Indicator Random Variable</a> </li>
+<li class="ch-chip-more">
+<details>
+<summary><span class="ch-more-closed">+20 more</span><span class="ch-more-open">Show fewer</span></summary>
+<ul class="ch-chips">
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/first-success-distribution.html">First Success Distribution</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/iid-random-variables.html">Independent and Identically Distributed Random Variables</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/minimum-of-independent-exponentials.html">Minimum of Independent Exponentials</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/linearity-of-expectation.html">Linearity of Expectation</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/order-statistic.html">Order Statistic</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/poisson-distribution.html">Poisson Distribution</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html">Variance and Standard Deviation</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/arrival-rate.html">Arrival Rate</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/bernoulli-distribution.html">Bernoulli Distribution</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/binomial-distribution.html">Binomial Distribution</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/conditional-probability.html">Conditional Probability</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/discrete-uniform-distribution.html">Discrete Uniform Distribution</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/geometric-distribution.html">Geometric Distribution</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/independent-random-variables.html">Independent Random Variables</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/law-of-total-probability.html">Law of Total Probability</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/lotus.html">LOTUS</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/mixture-distribution.html">Mixture Distribution</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/sum-of-independent-random-variables.html">Sum of Independent Random Variables</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/uniform-distribution.html">Uniform Distribution</a> </li>
+<li><a href="../../Year-1/1b-Probability-Theory-for-EOR/universality-of-the-uniform.html">Universality of the Uniform and CDF Realizability</a> </li>
+</ul>
+</details>
+</li>
+</ul>
+</div>
+<div class="ch-connect-course">
+<div class="ch-connect-head"><a class="ch-connect-name" href="../../Year-1/1a-OR-Modelling/index.html">OR Modelling</a></div>
+<ul class="ch-chips">
+<li><a href="../../Year-1/1a-OR-Modelling/economic-order-quantity.html">Economic Order Quantity</a> </li>
+<li><a href="../../Year-1/1a-OR-Modelling/positive-part.html">Positive Part</a> </li>
+<li><a href="../../Year-1/1a-OR-Modelling/setup-cost.html">Setup Cost</a> </li>
+<li><a href="../../Year-1/1a-OR-Modelling/algorithm.html">Algorithm</a> </li>
+<li><a href="../../Year-1/1a-OR-Modelling/dynamic-programming.html">Dynamic Programming</a> </li>
+<li><a href="../../Year-1/1a-OR-Modelling/eoq-with-planned-shortages.html">EOQ with Planned Shortages</a> </li>
+<li class="ch-chip-more">
+<details>
+<summary><span class="ch-more-closed">+4 more</span><span class="ch-more-open">Show fewer</span></summary>
+<ul class="ch-chips">
+<li><a href="../../Year-1/1a-OR-Modelling/inventory-policy.html">Inventory Policy</a> </li>
+<li><a href="../../Year-1/1a-OR-Modelling/eoq-with-lead-times.html">EOQ with Lead Times</a> </li>
+<li><a href="../../Year-1/1a-OR-Modelling/newsvendor-model.html">Newsvendor Model</a> </li>
+<li><a href="../../Year-1/1a-OR-Modelling/ordering-cycle.html">Ordering Cycle</a> </li>
+</ul>
+</details>
+</li>
+</ul>
+</div>
+<div class="ch-connect-course">
+<div class="ch-connect-head"><a class="ch-connect-name" href="../../Year-1/2b-Probability-Distributions/index.html">Probability Distributions</a></div>
+<ul class="ch-chips">
+<li><a href="../../Year-1/2b-Probability-Distributions/poisson-splitting.html">Poisson Splitting</a> </li>
+<li><a href="../../Year-1/2b-Probability-Distributions/poisson-merging.html">Poisson Merging</a> </li>
+<li><a href="../../Year-1/2b-Probability-Distributions/adams-law.html">Adam’s Law: Total Expectation</a> </li>
+<li><a href="../../Year-1/2b-Probability-Distributions/eves-law.html">Eve’s Law: Total Variance</a> </li>
+<li><a href="../../Year-1/2b-Probability-Distributions/survivor-function.html">Survivor Function</a> </li>
+<li><a href="../../Year-1/2b-Probability-Distributions/central-limit-theorem.html">Central Limit Theorem</a> </li>
+<li class="ch-chip-more">
+<details>
+<summary><span class="ch-more-closed">+4 more</span><span class="ch-more-open">Show fewer</span></summary>
+<ul class="ch-chips">
+<li><a href="../../Year-1/2b-Probability-Distributions/density-of-an-order-statistic.html">Density of an Order Statistic</a> </li>
+<li><a href="../../Year-1/2b-Probability-Distributions/exponential-limit.html">Exponential Limit</a> </li>
+<li><a href="../../Year-1/2b-Probability-Distributions/gamma-distribution.html">Gamma Distribution</a> </li>
+<li><a href="../../Year-1/2b-Probability-Distributions/strong-law-of-large-numbers.html">Strong Law of Large Numbers</a> </li>
+</ul>
+</details>
+</li>
+</ul>
+</div>
+<div class="ch-connect-course">
+<div class="ch-connect-head"><a class="ch-connect-name" href="../../Year-1/1a-Math-I-Calculus/index.html">Math I: Calculus</a></div>
+<ul class="ch-chips">
+<li><a href="../../Year-1/1a-Math-I-Calculus/function.html">Function</a> </li>
+<li><a href="../../Year-1/1a-Math-I-Calculus/definite-integral.html">Definite Integral</a> </li>
+<li><a href="../../Year-1/1a-Math-I-Calculus/floor-and-ceiling-functions.html">Floor and Ceiling Functions</a> </li>
+<li><a href="../../Year-1/1a-Math-I-Calculus/geometric-series.html">Geometric Series</a> </li>
+<li><a href="../../Year-1/1a-Math-I-Calculus/indicator-function.html">Indicator Function</a> </li>
+<li><a href="../../Year-1/1a-Math-I-Calculus/mathematical-induction.html">Mathematical Induction</a> </li>
+<li class="ch-chip-more">
+<details>
+<summary><span class="ch-more-closed">+2 more</span><span class="ch-more-open">Show fewer</span></summary>
+<ul class="ch-chips">
+<li><a href="../../Year-1/1a-Math-I-Calculus/one-sided-limit.html">One-Sided Limit</a> </li>
+<li><a href="../../Year-1/1a-Math-I-Calculus/squeeze-theorem-for-sequences.html">Squeeze Theorem for Sequences</a> </li>
+</ul>
+</details>
+</li>
+</ul>
+</div>
+<p class="ch-connect-also">Also: <a href="../../Year-1/1b-Math-II-Linear-Algebra/matrix-product.html">Matrix Product</a> (Math II: Linear Algebra)</p>
+</div>
+</details>
+<details class="ch-more-row ch-more-row--achievements" hidden="hidden" id="course-achievements-row">
+<summary><span class="ch-row-name">Achievements<small>Course challenges and how many learners hold them</small></span></summary>
+<div class="ch-more-body"></div>
+</details>
+<div class="ch-more-link"><a class="ch-more-row ch-more-row--galaxy" href="../../galaxy.html?course=Year-2/1b-Stochastic-Operations-Research"><span class="ch-row-name">See it in Galaxy<small>This course among all the wiki's concepts</small></span></a></div>
+<!-- course-home:more-end -->
+<details class="ch-more-row ch-more-row--reading" id="course-reading">
+<summary><span class="ch-row-name">How to read this course<small>Notation, shared pages and conventions</small></span></summary>
+<div class="ch-more-body">
+<p>These notes follow the lecturer's course notes and their notation: <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A(t)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></span> and <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">D(t)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></span> count arrivals and departures, <span class="mk-math-glue"><span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">X_k</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span>,</span> <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">S_k</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span> and <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>J</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">J_k</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0962em;">J</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0962em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span> are the inter-arrival, service and sojourn times of job <span class="mk-math-glue"><span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span></span>,</span> <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">L(t)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">L</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></span> and <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Q(t)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span></span> are the numbers in the system and in the queue, <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">p(n)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span> is a time average and <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\pi(n)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span> an arrival average, and <span class="mk-math-glue"><span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span></span>,</span> <span class="mk-math-glue"><span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0379em;">δ</span></span></span></span></span>,</span> <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">μ</span></span></span></span></span> and <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi></mrow><annotation encoding="application/x-tex">\rho</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">ρ</span></span></span></span></span> are the arrival, departure and service rates and the load. Probability already taught in Year 1, such as the Poisson process, the exponential distribution and the economic order quantity, has one canonical page; it is linked under <strong>Before you start</strong> or shown in the week that revisits it, rather than repeated. Weeks follow the teaching order of the 2026–2027 course manual. Many pages contain an interactive figure that simulates or computes the model, so you can change rates and policy levels and watch the performance measures respond.</p>
+</div>
+</details>
+<details class="ch-more-row ch-more-row--sources" id="course-sources">
+<summary><span class="ch-row-name">Sources<small>Course material these pages were checked against</small></span></summary>
+<div class="ch-more-body">
+<ul>
+<li>N. D. van Foreest, <em>Sample Path Analysis and Simulation of Stochastic Systems</em>, course notes for Stochastic Operations Research (version of 28 October 2026), Chapters 1–7 with exercises and solutions </li>
+<li>Stochastic Operations Research · Weeks 1–7 </li>
+</ul>
+</div>
+</details>
+<!-- course-home:teaching-begin -->
+<!-- course-home:teaching-end -->
+</div>
+</section>
 <p><span class="search-aliases" data-nosnippet="">
 Aliases: SOR
+Symbols: delta, lambda, mu, pi, rho
 </span></p>
-<p class="mk-last-updated">Last updated: 26 October 2026 00:09</p>
+<p class="mk-last-updated">Last updated: 29 October 2026 20:42</p>
+<script id="mk-course-home-rows">
+(function () {
+  var art = document.querySelector("article.md-content__inner");
+  var units = art && art.querySelector(".ch-route .ch-unit-list");
+  if (!units) return;
+  var KEY = "mk_course_unit_open_v1", path = location.pathname.replace(/index\.html$/, "");
+  var lib = art.querySelector(".ch-library"), sw = art.querySelector(".ch-view-switch");
+  function read() { try { return JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (_) { return {}; } }
+  function remember(id) {
+    try {
+      var all = read(); delete all[path]; all[path] = id;
+      var keys = Object.keys(all); while (keys.length > 60) delete all[keys.shift()];
+      localStorage.setItem(KEY, JSON.stringify(all));
+    } catch (_) {}
+  }
+  function view(topics) {
+    if (!lib || !sw) return;
+    art.classList.toggle("ch-view-topics", topics);
+    Array.prototype.forEach.call(sw.querySelectorAll("button[data-ch-view]"), function (b) {
+      b.setAttribute("aria-pressed", String((b.getAttribute("data-ch-view") === "topics") === topics));
+    });
+  }
+  function reveal(id) {
+    var el = id && document.getElementById(id);
+    if (!el || !art.contains(el)) return null;
+    if (lib && lib.contains(el)) view(true);
+    for (var node = el; node && node !== art; node = node.parentElement) {
+      if (node.tagName === "DETAILS") { node.hidden = false; node.open = true; }
+    }
+    return el;
+  }
+  function hashId() { try { return decodeURIComponent(location.hash.slice(1)); } catch (_) { return ""; } }
+  if (sw) sw.addEventListener("click", function (event) {
+    var b = event.target.closest && event.target.closest("button[data-ch-view]");
+    if (b) view(b.getAttribute("data-ch-view") === "topics");
+  });
+  units.addEventListener("toggle", function (event) {
+    var row = event.target;
+    if (row.open && row.parentElement === units && row.id) remember(row.id);
+  }, true);
+  if (!reveal(hashId())) {
+    var last = read()[path], row = last && document.getElementById(last);
+    if (row && row.parentElement === units) {
+      row.open = true;
+      var tag = document.createElement("span");
+      tag.className = "ch-row-last"; tag.textContent = "Last opened";
+      var count = row.querySelector("summary .ch-row-count");
+      if (count) count.before(tag);
+    }
+  }
+  window.addEventListener("hashchange", function () {
+    var el = reveal(hashId());
+    if (el) el.scrollIntoView();
+  });
+})();
+</script>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -1060,7 +2621,7 @@ Aliases: SOR
 <script src="../../javascripts/exam-mode.js?h=09b295110531"></script>
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
 <script src="../../javascripts/wiki-explain.js?h=70b31a1e6108"></script>
-<script src="../../javascripts/startup-preferences.js?h=5d20aa4998b2"></script>
+<script src="../../javascripts/startup-preferences.js?h=73f26035ba8d"></script>
 <script src="../../javascripts/style-shortcuts.js?h=903df15b6eba"></script>
 <script src="../../javascripts/ui-guard.js?h=6e5cf15727d0"></script>
 <script src="../../javascripts/concept-title-fit.js?h=8a4406302178"></script>
@@ -1069,10 +2630,10 @@ Aliases: SOR
 <script src="../../javascripts/fuzzy-core.js?h=4e03f7d79eee"></script>
 <script src="../../javascripts/nl-query-core.js?h=74dc76589bdf"></script>
 <script src="../../javascripts/multilingual-search-core.js?h=2366a7653efd"></script>
-<script src="../../javascripts/search-suggestions.js?h=00cc2d5ef2a0"></script>
+<script src="../../javascripts/search-suggestions.js?h=5ae958295726"></script>
 <script src="../../javascripts/search-history.js?h=b9c74637e483"></script>
 <script src="../../javascripts/header-search-stabilizer.js?h=cdd630b06fd3"></script>
-<script src="../../javascripts/concept-hover-preview.js?h=05780d2bf2a9"></script>
+<script src="../../javascripts/concept-hover-preview.js?h=1823c976d715"></script>
 <script src="../../javascripts/mathjax.js?h=06875c0b69ec"></script>
 <script src="../../javascripts/preload-guard.js?h=6850e005c3a1"></script>
 <script src="../../javascripts/random.js?h=10f974c5fe5c"></script>

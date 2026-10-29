@@ -1082,9 +1082,8 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         line-height:1.05;
         letter-spacing:0;
         text-transform:none;
-        white-space:nowrap;
-        overflow:hidden;
-        text-overflow:ellipsis;
+        white-space:normal;
+        overflow-wrap:break-word;
       }
       #${PANEL_ID} .cmm-focusfact strong{
         display:block;
@@ -1092,9 +1091,8 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         font-size:.68rem;
         font-weight:700;
         line-height:1.12;
-        white-space:nowrap;
-        overflow:hidden;
-        text-overflow:ellipsis;
+        white-space:normal;
+        overflow-wrap:break-word;
       }
       #${PANEL_ID} .cmm-focuscard--empty{
         justify-content:center;
@@ -1180,9 +1178,8 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
       #${PANEL_ID} .cmm-public-score-avg span,
       #${PANEL_ID} .cmm-public-score-avg strong{
         display:block;
-        white-space:nowrap;
-        overflow:hidden;
-        text-overflow:ellipsis;
+        white-space:normal;
+        overflow-wrap:break-word;
       }
       #${PANEL_ID} .cmm-public-score-avg strong{
         margin-top:.06rem;
@@ -1516,9 +1513,8 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
       #${PANEL_ID} .cmm-change-row__beforeafter{
         min-width:0;
         max-width:100%;
-        overflow:hidden;
-        text-overflow:ellipsis;
-        white-space:nowrap;
+        overflow-wrap:break-word;
+        white-space:normal;
         font-size:.62rem;
         line-height:1.08;
         font-weight:760;
@@ -2018,8 +2014,7 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         #${PANEL_ID} .cmm-focuscard__titlelink{
           font-size:.94rem !important;
           line-height:1.12 !important;
-          overflow:hidden;
-          text-overflow:ellipsis;
+          overflow-wrap:break-word;
         }
         #${PANEL_ID} .cmm-focusfacts{
           grid-template-columns:repeat(3,minmax(0,1fr)) !important;
@@ -2035,16 +2030,14 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         #${PANEL_ID} .cmm-focusfact span{
           font-size:.54rem !important;
           line-height:1.05 !important;
-          white-space:nowrap;
-          overflow:hidden;
-          text-overflow:ellipsis;
+          white-space:normal;
+          overflow-wrap:break-word;
         }
         #${PANEL_ID} .cmm-focusfact strong{
           font-size:.68rem !important;
           line-height:1.08 !important;
-          white-space:nowrap;
-          overflow:hidden;
-          text-overflow:ellipsis;
+          white-space:normal;
+          overflow-wrap:break-word;
         }
         #${PANEL_ID} .cmm-focusorbs{
           display:flex !important;
@@ -2098,9 +2091,8 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         #${PANEL_ID} .cmm-lecture__meta{
           font-size:.66rem !important;
           line-height:1.1 !important;
-          white-space:nowrap;
-          overflow:hidden;
-          text-overflow:ellipsis;
+          white-space:normal;
+          overflow-wrap:break-word;
         }
         #${PANEL_ID} .cmm-chip{
           font-size:.61rem !important;
@@ -2329,9 +2321,8 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
           flex:0 1 auto !important;
           min-width:0 !important;
           max-width:33.33% !important;
-          white-space:nowrap !important;
-          overflow:hidden !important;
-          text-overflow:ellipsis !important;
+          white-space:normal !important;
+          overflow-wrap:break-word !important;
           font-size:.56rem !important;
           padding:.20rem .32rem !important;
         }
@@ -2347,8 +2338,7 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         }
         #${PANEL_ID} .cmm-row__risklabel{
           min-width:0 !important;
-          overflow:hidden !important;
-          text-overflow:ellipsis !important;
+          overflow-wrap:break-word !important;
         }
       }
 
@@ -2417,9 +2407,8 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         #${PANEL_ID} .cmm-row__title{
           font-size:.82rem !important;
           line-height:1.1 !important;
-          white-space:nowrap !important;
-          overflow:hidden !important;
-          text-overflow:ellipsis !important;
+          white-space:normal !important;
+          overflow-wrap:break-word !important;
         }
         #${PANEL_ID} .cmm-row__meta{
           display:grid !important;
@@ -2430,9 +2419,8 @@ function ensureStyles(){cmmUpdateViewportMetrics();cmmBindViewportMetricsOnce();
         }
         #${PANEL_ID} .cmm-row__meta-line{
           display:block !important;
-          white-space:nowrap !important;
-          overflow:hidden !important;
-          text-overflow:ellipsis !important;
+          white-space:normal !important;
+          overflow-wrap:break-word !important;
         }
         #${PANEL_ID} .cmm-row__tiles{
           grid-column:2 !important;

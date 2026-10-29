@@ -230,7 +230,7 @@ if(document.getElementById(STYLE_ID))return;const style=document.createElement("
  border:1px solid color-mix(in srgb,var(--md-default-fg-color) 11%,transparent); border-radius:18px; padding:11px 12px; background:var(--md-default-bg-color);
  background:color-mix(in srgb,var(--md-default-bg-color) 92%,var(--md-primary-fg-color) 8%); min-width:0; }
       .mm-stat-card span{ display:block; color:var(--md-default-fg-color--light); font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; }
-      .mm-stat-card strong{ display:block; margin-top:4px; font-size:22px; line-height:1.1; font-weight:850; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+      .mm-stat-card strong{ display:block; margin-top:4px; font-size:22px; line-height:1.1; font-weight:850; white-space:normal; overflow-wrap:break-word; }
       .mm-stat-card small{ display:block; margin-top:3px; color:var(--md-default-fg-color--light); font-size:12px; }
       .mm-status-card strong{ font-size:17px; display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
       .mm-toolbar{ flex:0 0 auto; display:flex; align-items:center; gap:10px; flex-wrap:wrap; padding:14px 22px; border-bottom:1px solid rgba(100, 116, 139, 0.09);
@@ -255,9 +255,9 @@ if(document.getElementById(STYLE_ID))return;const style=document.createElement("
       .mm-card.is-popover-open{ z-index:40; }
       .mm-card-line{ display:grid; grid-template-columns:minmax(120px,.6fr) minmax(0,1fr) 128px; gap:10px; align-items:center; }
       .mm-card-course{ min-width:0; color:var(--md-default-fg-color--light); font-size:12px; line-height:1.28; }
-      .mm-card-course span{ display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+      .mm-card-course span{ display:block; overflow-wrap:break-word; white-space:normal; }
       .mm-card-course span:first-child{ color:var(--md-default-fg-color); font-weight:750; }
-      .mm-card-title{ color:var(--md-primary-fg-color); font-size:17px; line-height:1.2; font-weight:850; text-decoration:none; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+      .mm-card-title{ color:var(--md-primary-fg-color); font-size:17px; line-height:1.2; font-weight:850; text-decoration:none; min-width:0; overflow-wrap:break-word; white-space:normal; }
       .mm-card-title:hover{ text-decoration:underline; }
       .mm-small-label{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
       .mm-level-cell{ min-width:0; width:128px; }

@@ -67,7 +67,7 @@ function ensureStyles(){if(document.getElementById("mk-study-window-style"))retu
 .sw-view .sw-stats dd{margin:1px 0 0;font-size:14px;font-weight:800}
 .sw-view .sw-focus{display:flex;align-items:baseline;gap:6px;margin:0;font-size:12.5px;min-width:0}
 .sw-view .sw-focus span{flex:0 0 auto;font-size:10.5px;font-weight:750;text-transform:uppercase;letter-spacing:.04em;color:var(--wa-muted)}
-.sw-view .sw-focus a,.sw-view .sw-rows a{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--wa-link)}
+.sw-view .sw-focus a,.sw-view .sw-rows a{flex:1 1 auto;min-width:0;overflow-wrap:break-word;white-space:normal;color:var(--wa-link)}
 .sw-view :is(.sw-focus,.sw-rows) b{flex:0 0 auto;font-size:12px;font-weight:800;color:hsl(var(--sw-h) 70% 34%)}
 .sw-view .sw-focus--hint{display:block;color:var(--wa-muted)}
 .sw-view .sw-btn{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:7px 12px;border:1px solid var(--wa-line);border-radius:10px;box-sizing:border-box;background:var(--wa-paper);color:var(--wa-fg);font-family:inherit;font-size:12.5px;font-weight:650;line-height:1.2;text-decoration:none;cursor:pointer}

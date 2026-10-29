@@ -29760,6 +29760,2963 @@
           "distribuție staționară"
         ]
       }
+    },
+    {
+      "title": "Queueing and Inventory Systems",
+      "names": {
+        "zh": [
+          "排队与库存系统",
+          "排隊與庫存系統"
+        ],
+        "nl": [
+          "wachtrij- en voorraadsystemen"
+        ],
+        "de": [
+          "Warteschlangen- und Lagersysteme"
+        ],
+        "fr": [
+          "systèmes de files d'attente et de stocks"
+        ],
+        "es": [
+          "sistemas de colas e inventarios"
+        ],
+        "it": [
+          "sistemi di code e di scorte"
+        ],
+        "pl": [
+          "systemy kolejkowe i magazynowe"
+        ],
+        "ro": [
+          "sisteme de așteptare și de stocuri"
+        ]
+      }
+    },
+    {
+      "title": "Time-Average State Probability",
+      "names": {
+        "zh": [
+          "时间平均状态概率",
+          "時間平均狀態機率"
+        ],
+        "nl": [
+          "tijdsgemiddelde toestandskans"
+        ],
+        "de": [
+          "zeitgemittelte Zustandswahrscheinlichkeit"
+        ],
+        "fr": [
+          "probabilité d'état en moyenne temporelle"
+        ],
+        "es": [
+          "probabilidad de estado promediada en el tiempo"
+        ],
+        "it": [
+          "probabilità di stato in media temporale"
+        ],
+        "pl": [
+          "prawdopodobieństwo stanu uśrednione w czasie"
+        ],
+        "ro": [
+          "probabilitatea stării mediată în timp"
+        ]
+      }
+    },
+    {
+      "title": "Arrival-Average State Probability",
+      "names": {
+        "zh": [
+          "到达平均状态概率",
+          "到達平均狀態機率"
+        ],
+        "nl": [
+          "aankomstgemiddelde toestandskans"
+        ],
+        "de": [
+          "ankunftsgemittelte Zustandswahrscheinlichkeit"
+        ],
+        "fr": [
+          "probabilité d'état vue par les arrivées"
+        ],
+        "es": [
+          "probabilidad de estado vista por las llegadas"
+        ],
+        "it": [
+          "probabilità di stato vista dagli arrivi"
+        ],
+        "pl": [
+          "prawdopodobieństwo stanu widziane przez przybycia"
+        ],
+        "ro": [
+          "probabilitatea stării văzută de sosiri"
+        ]
+      }
+    },
+    {
+      "title": "Lambda Function",
+      "names": {
+        "zh": [
+          "lambda函数",
+          "lambda函數",
+          "匿名函数",
+          "匿名函數"
+        ],
+        "nl": [
+          "lambdafunctie",
+          "anonieme functie"
+        ],
+        "de": [
+          "Lambda-Funktion",
+          "anonyme Funktion"
+        ],
+        "fr": [
+          "fonction lambda",
+          "fonction anonyme"
+        ],
+        "es": [
+          "función lambda",
+          "función anónima"
+        ],
+        "it": [
+          "funzione lambda",
+          "funzione anonima"
+        ],
+        "pl": [
+          "funkcja lambda",
+          "funkcja anonimowa"
+        ],
+        "ro": [
+          "funcție lambda",
+          "funcție anonimă"
+        ]
+      }
+    },
+    {
+      "title": "Closure",
+      "names": {
+        "zh": [
+          "函数闭包",
+          "函數閉包"
+        ],
+        "nl": [
+          "lexicale closure"
+        ],
+        "de": [
+          "Funktionsabschluss"
+        ],
+        "fr": [
+          "fermeture lexicale"
+        ],
+        "es": [
+          "clausura léxica"
+        ],
+        "it": [
+          "chiusura lessicale"
+        ],
+        "pl": [
+          "domknięcie leksykalne"
+        ],
+        "ro": [
+          "închidere lexicală"
+        ]
+      }
+    },
+    {
+      "title": "Memoization",
+      "names": {
+        "zh": [
+          "记忆化",
+          "記憶化"
+        ],
+        "nl": [
+          "memoïsatie"
+        ],
+        "de": [
+          "Memoisation"
+        ],
+        "fr": [
+          "mémoïsation"
+        ],
+        "es": [
+          "memoización"
+        ],
+        "it": [
+          "memoizzazione"
+        ],
+        "pl": [
+          "memoizacja"
+        ],
+        "ro": [
+          "memoizare"
+        ]
+      }
+    },
+    {
+      "title": "Quicksort",
+      "names": {
+        "zh": [
+          "快速排序"
+        ],
+        "nl": [
+          "quicksort"
+        ],
+        "de": [
+          "Quicksort"
+        ],
+        "fr": [
+          "tri rapide"
+        ],
+        "es": [
+          "ordenamiento rápido"
+        ],
+        "it": [
+          "quicksort"
+        ],
+        "pl": [
+          "sortowanie szybkie"
+        ],
+        "ro": [
+          "sortare rapidă"
+        ]
+      }
+    },
+    {
+      "title": "Arrival-Time Recursion",
+      "names": {
+        "zh": [
+          "到达时间递推",
+          "到達時間遞推"
+        ],
+        "nl": [
+          "recursie voor aankomsttijden"
+        ],
+        "de": [
+          "Rekursion der Ankunftszeiten"
+        ],
+        "fr": [
+          "récurrence des instants d'arrivée"
+        ],
+        "es": [
+          "recursión de los tiempos de llegada"
+        ],
+        "it": [
+          "ricorsione dei tempi di arrivo"
+        ],
+        "pl": [
+          "rekurencja momentów przybycia"
+        ],
+        "ro": [
+          "recurența momentelor de sosire"
+        ]
+      }
+    },
+    {
+      "title": "Conditional Uniform Arrival Times",
+      "names": {
+        "zh": [
+          "泊松过程到达时刻的条件均匀性",
+          "泊松過程到達時刻的條件均勻性"
+        ],
+        "nl": [
+          "conditioneel uniforme aankomsttijden"
+        ],
+        "de": [
+          "bedingt gleichverteilte Ankunftszeiten"
+        ],
+        "fr": [
+          "instants d'arrivée conditionnellement uniformes"
+        ],
+        "es": [
+          "tiempos de llegada condicionalmente uniformes"
+        ],
+        "it": [
+          "tempi di arrivo condizionatamente uniformi"
+        ],
+        "pl": [
+          "warunkowo jednostajne momenty przybyć"
+        ],
+        "ro": [
+          "momente de sosire condiționat uniforme"
+        ]
+      }
+    },
+    {
+      "title": "Exponential Limit of Uniform Spacings",
+      "names": {
+        "zh": [
+          "均匀间距的指数极限",
+          "均勻間距的指數極限"
+        ],
+        "nl": [
+          "exponentiële limiet van uniforme tussenafstanden"
+        ],
+        "de": [
+          "exponentieller Grenzwert gleichverteilter Abstände"
+        ],
+        "fr": [
+          "limite exponentielle des espacements uniformes"
+        ],
+        "es": [
+          "límite exponencial de los espaciamientos uniformes"
+        ],
+        "it": [
+          "limite esponenziale delle spaziature uniformi"
+        ],
+        "pl": [
+          "wykładnicza granica odstępów jednostajnych"
+        ],
+        "ro": [
+          "limita exponențială a spațierilor uniforme"
+        ]
+      }
+    },
+    {
+      "title": "Discrete-Time Queue Recursion",
+      "names": {
+        "zh": [
+          "离散时间排队递推",
+          "離散時間排隊遞推"
+        ],
+        "nl": [
+          "recursie voor een wachtrij in discrete tijd"
+        ],
+        "de": [
+          "Rekursion für Warteschlangen in diskreter Zeit"
+        ],
+        "fr": [
+          "récurrence de file d'attente en temps discret"
+        ],
+        "es": [
+          "recursión de colas en tiempo discreto"
+        ],
+        "it": [
+          "ricorsione della coda a tempo discreto"
+        ],
+        "pl": [
+          "rekurencja kolejki w czasie dyskretnym"
+        ],
+        "ro": [
+          "recurența cozii în timp discret"
+        ]
+      }
+    },
+    {
+      "title": "Queue Drift",
+      "names": {
+        "zh": [
+          "队列漂移",
+          "隊列漂移"
+        ],
+        "nl": [
+          "drift van een wachtrij"
+        ],
+        "de": [
+          "Drift einer Warteschlange"
+        ],
+        "fr": [
+          "dérive d'une file d'attente"
+        ],
+        "es": [
+          "deriva de una cola"
+        ],
+        "it": [
+          "deriva della coda"
+        ],
+        "pl": [
+          "dryf kolejki"
+        ],
+        "ro": [
+          "deriva cozii"
+        ]
+      }
+    },
+    {
+      "title": "Squared Coefficient of Variation",
+      "names": {
+        "zh": [
+          "平方变异系数",
+          "平方變異係數"
+        ],
+        "nl": [
+          "gekwadrateerde variatiecoëfficiënt"
+        ],
+        "de": [
+          "quadrierter Variationskoeffizient"
+        ],
+        "fr": [
+          "coefficient de variation au carré"
+        ],
+        "es": [
+          "coeficiente de variación al cuadrado"
+        ],
+        "it": [
+          "coefficiente di variazione al quadrato"
+        ],
+        "pl": [
+          "kwadrat współczynnika zmienności"
+        ],
+        "ro": [
+          "pătratul coeficientului de variație"
+        ]
+      }
+    },
+    {
+      "title": "State-Dependent Capacity",
+      "names": {
+        "zh": [
+          "状态相关的服务能力",
+          "狀態相關的服務能力"
+        ],
+        "nl": [
+          "toestandsafhankelijke capaciteit"
+        ],
+        "de": [
+          "zustandsabhängige Kapazität"
+        ],
+        "fr": [
+          "capacité dépendant de l'état"
+        ],
+        "es": [
+          "capacidad dependiente del estado"
+        ],
+        "it": [
+          "capacità dipendente dallo stato"
+        ],
+        "pl": [
+          "przepustowość zależna od stanu"
+        ],
+        "ro": [
+          "capacitate dependentă de stare"
+        ]
+      }
+    },
+    {
+      "title": "Single-Item Inventory System",
+      "names": {
+        "zh": [
+          "单品库存系统",
+          "單品庫存系統"
+        ],
+        "nl": [
+          "voorraadsysteem voor één artikel"
+        ],
+        "de": [
+          "Einprodukt-Lagerhaltungssystem"
+        ],
+        "fr": [
+          "système de stock à un seul article"
+        ],
+        "es": [
+          "sistema de inventario de un solo artículo"
+        ],
+        "it": [
+          "sistema di scorte a singolo articolo"
+        ],
+        "pl": [
+          "system zapasów jednego produktu"
+        ],
+        "ro": [
+          "sistem de stocuri cu un singur articol"
+        ]
+      }
+    },
+    {
+      "title": "Inventory Level",
+      "names": {
+        "zh": [
+          "库存水平",
+          "庫存水平",
+          "净库存",
+          "淨庫存"
+        ],
+        "nl": [
+          "voorraadniveau",
+          "netto voorraad"
+        ],
+        "de": [
+          "Nettolagerbestand"
+        ],
+        "fr": [
+          "niveau de stock",
+          "stock net"
+        ],
+        "es": [
+          "nivel de inventario",
+          "inventario neto"
+        ],
+        "it": [
+          "livello delle scorte",
+          "giacenza netta"
+        ],
+        "pl": [
+          "poziom zapasu",
+          "zapas netto"
+        ],
+        "ro": [
+          "nivelul stocului",
+          "stoc net"
+        ]
+      }
+    },
+    {
+      "title": "Inventory Position",
+      "names": {
+        "zh": [
+          "库存位置",
+          "庫存位置"
+        ],
+        "nl": [
+          "voorraadpositie"
+        ],
+        "de": [
+          "Bestandsposition",
+          "disponibler Lagerbestand"
+        ],
+        "fr": [
+          "position de stock"
+        ],
+        "es": [
+          "posición de inventario"
+        ],
+        "it": [
+          "posizione di magazzino"
+        ],
+        "pl": [
+          "pozycja zapasu"
+        ],
+        "ro": [
+          "poziția stocului"
+        ]
+      }
+    },
+    {
+      "title": "Base-Stock Policy",
+      "names": {
+        "zh": [
+          "基础库存策略",
+          "基礎庫存策略"
+        ],
+        "nl": [
+          "basisvoorraadbeleid"
+        ],
+        "de": [
+          "Base-Stock-Politik"
+        ],
+        "fr": [
+          "politique de stock de base"
+        ],
+        "es": [
+          "política de stock base"
+        ],
+        "it": [
+          "politica di scorta di base"
+        ],
+        "pl": [
+          "polityka zapasu bazowego"
+        ],
+        "ro": [
+          "politica stocului de bază"
+        ]
+      }
+    },
+    {
+      "title": "(s, S) Policy",
+      "names": {
+        "zh": [
+          "(s, S) 库存策略",
+          "(s, S) 庫存策略"
+        ],
+        "nl": [
+          "(s, S)-beleid"
+        ],
+        "de": [
+          "(s, S)-Politik"
+        ],
+        "fr": [
+          "politique (s, S)"
+        ],
+        "es": [
+          "política (s, S)"
+        ],
+        "it": [
+          "politica (s, S)"
+        ],
+        "pl": [
+          "polityka (s, S)"
+        ],
+        "ro": [
+          "politica (s, S)"
+        ]
+      }
+    },
+    {
+      "title": "(T, S) Policy",
+      "names": {
+        "zh": [
+          "(T, S) 库存策略",
+          "(T, S) 庫存策略"
+        ],
+        "nl": [
+          "(T, S)-beleid"
+        ],
+        "de": [
+          "(T, S)-Politik",
+          "Bestellrhythmusverfahren"
+        ],
+        "fr": [
+          "politique (T, S)"
+        ],
+        "es": [
+          "política (T, S)"
+        ],
+        "it": [
+          "politica (T, S)"
+        ],
+        "pl": [
+          "polityka (T, S)"
+        ],
+        "ro": [
+          "politica (T, S)"
+        ]
+      }
+    },
+    {
+      "title": "(Q, r) Policy",
+      "names": {
+        "zh": [
+          "(Q, r) 库存策略",
+          "(Q, r) 庫存策略"
+        ],
+        "nl": [
+          "(Q, r)-beleid"
+        ],
+        "de": [
+          "(Q, r)-Politik"
+        ],
+        "fr": [
+          "politique (Q, r)"
+        ],
+        "es": [
+          "política (Q, r)"
+        ],
+        "it": [
+          "politica (Q, r)"
+        ],
+        "pl": [
+          "polityka (Q, r)"
+        ],
+        "ro": [
+          "politica (Q, r)"
+        ]
+      }
+    },
+    {
+      "title": "Ready Rate",
+      "names": {
+        "zh": [
+          "就绪率",
+          "就緒率"
+        ],
+        "nl": [
+          "gereedheidsgraad"
+        ],
+        "de": [
+          "Bereitschaftsgrad",
+          "periodenbezogener α-Servicegrad"
+        ],
+        "fr": [
+          "taux de disponibilité par période"
+        ],
+        "es": [
+          "tasa de disponibilidad por periodo"
+        ],
+        "it": [
+          "tasso di prontezza"
+        ],
+        "pl": [
+          "wskaźnik gotowości"
+        ],
+        "ro": [
+          "rata de disponibilitate pe perioadă"
+        ]
+      }
+    },
+    {
+      "title": "Fill Rate",
+      "names": {
+        "zh": [
+          "满足率",
+          "滿足率"
+        ],
+        "nl": [
+          "fill rate"
+        ],
+        "de": [
+          "β-Servicegrad",
+          "mengenorientierter Servicegrad"
+        ],
+        "fr": [
+          "taux de satisfaction de la demande",
+          "taux de service quantitatif"
+        ],
+        "es": [
+          "tasa de llenado"
+        ],
+        "it": [
+          "livello di servizio di tipo β"
+        ],
+        "pl": [
+          "wskaźnik pokrycia popytu z zapasu"
+        ],
+        "ro": [
+          "rata de onorare a cererii"
+        ]
+      }
+    },
+    {
+      "title": "Cycle Service Level",
+      "names": {
+        "zh": [
+          "周期服务水平",
+          "週期服務水準"
+        ],
+        "nl": [
+          "cyclusservicegraad"
+        ],
+        "de": [
+          "ereignisorientierter Servicegrad"
+        ],
+        "fr": [
+          "niveau de service par cycle"
+        ],
+        "es": [
+          "nivel de servicio del ciclo"
+        ],
+        "it": [
+          "livello di servizio del ciclo"
+        ],
+        "pl": [
+          "poziom obsługi w cyklu"
+        ],
+        "ro": [
+          "nivelul de servire pe ciclu"
+        ]
+      }
+    },
+    {
+      "title": "Single-Server Service Recursion",
+      "names": {
+        "zh": [
+          "单服务台服务递推",
+          "單服務台服務遞推"
+        ],
+        "nl": [
+          "recursie voor één bediende",
+          "vertrektijdenrecursie"
+        ],
+        "de": [
+          "Rekursion für Einbedienersysteme",
+          "Abgangszeitenrekursion"
+        ],
+        "fr": [
+          "récurrence à un serveur",
+          "récurrence des instants de départ"
+        ],
+        "es": [
+          "recursión de un servidor",
+          "recursión de los tiempos de salida"
+        ],
+        "it": [
+          "ricorsione a servente singolo",
+          "ricorsione dei tempi di partenza"
+        ],
+        "pl": [
+          "rekurencja dla jednego stanowiska obsługi",
+          "rekurencja momentów wyjścia"
+        ],
+        "ro": [
+          "recurența cu un singur server",
+          "recurența momentelor de plecare"
+        ]
+      }
+    },
+    {
+      "title": "Waiting Time",
+      "names": {
+        "zh": [
+          "等待时间",
+          "等待時間"
+        ],
+        "nl": [
+          "wachttijd"
+        ],
+        "de": [
+          "Wartezeit"
+        ],
+        "fr": [
+          "temps d'attente"
+        ],
+        "es": [
+          "tiempo de espera en cola"
+        ],
+        "it": [
+          "tempo di attesa"
+        ],
+        "pl": [
+          "czas oczekiwania"
+        ],
+        "ro": [
+          "timp de așteptare"
+        ]
+      }
+    },
+    {
+      "title": "Sojourn Time",
+      "names": {
+        "zh": [
+          "逗留时间",
+          "逗留時間"
+        ],
+        "nl": [
+          "verblijftijd"
+        ],
+        "de": [
+          "Verweilzeit",
+          "Aufenthaltszeit"
+        ],
+        "fr": [
+          "temps de séjour"
+        ],
+        "es": [
+          "tiempo de permanencia",
+          "tiempo en el sistema"
+        ],
+        "it": [
+          "tempo di permanenza",
+          "tempo di soggiorno"
+        ],
+        "pl": [
+          "czas przebywania w systemie"
+        ],
+        "ro": [
+          "timp de ședere",
+          "timp petrecut în sistem"
+        ]
+      }
+    },
+    {
+      "title": "Lindley Recursion",
+      "names": {
+        "zh": [
+          "林德利递推",
+          "林德利遞推"
+        ],
+        "nl": [
+          "Lindley-recursie"
+        ],
+        "de": [
+          "Lindley-Rekursion",
+          "Lindley-Gleichung"
+        ],
+        "fr": [
+          "récurrence de Lindley",
+          "équation de Lindley"
+        ],
+        "es": [
+          "recursión de Lindley",
+          "ecuación de Lindley"
+        ],
+        "it": [
+          "ricorsione di Lindley",
+          "equazione di Lindley"
+        ],
+        "pl": [
+          "rekurencja Lindleya",
+          "równanie Lindleya"
+        ],
+        "ro": [
+          "recurența lui Lindley",
+          "ecuația lui Lindley"
+        ]
+      }
+    },
+    {
+      "title": "Counting Process",
+      "names": {
+        "zh": [
+          "计数过程",
+          "計數過程"
+        ],
+        "nl": [
+          "telproces"
+        ],
+        "de": [
+          "Zählprozess"
+        ],
+        "fr": [
+          "processus de comptage"
+        ],
+        "es": [
+          "proceso de conteo"
+        ],
+        "it": [
+          "processo di conteggio"
+        ],
+        "pl": [
+          "proces liczący"
+        ],
+        "ro": [
+          "proces de numărare"
+        ]
+      }
+    },
+    {
+      "title": "Workload",
+      "names": {
+        "zh": [
+          "系统工作量",
+          "系統工作量"
+        ],
+        "nl": [
+          "werklast",
+          "virtuele wachttijd"
+        ],
+        "de": [
+          "Arbeitslast",
+          "virtuelle Wartezeit"
+        ],
+        "fr": [
+          "charge de travail",
+          "temps d'attente virtuel"
+        ],
+        "es": [
+          "carga de trabajo",
+          "tiempo de espera virtual"
+        ],
+        "it": [
+          "carico di lavoro",
+          "tempo di attesa virtuale"
+        ],
+        "pl": [
+          "obciążenie pracą",
+          "wirtualny czas oczekiwania"
+        ],
+        "ro": [
+          "volum de lucru",
+          "timp de așteptare virtual"
+        ]
+      }
+    },
+    {
+      "title": "Queue-Length Conservation",
+      "names": {
+        "zh": [
+          "队长守恒",
+          "隊長守恆"
+        ],
+        "nl": [
+          "behoud van de rijlengte"
+        ],
+        "de": [
+          "Erhaltung der Warteschlangenlänge"
+        ],
+        "fr": [
+          "conservation de la longueur de file"
+        ],
+        "es": [
+          "conservación de la longitud de la cola"
+        ],
+        "it": [
+          "conservazione della lunghezza della coda"
+        ],
+        "pl": [
+          "zachowanie długości kolejki"
+        ],
+        "ro": [
+          "conservarea lungimii cozii"
+        ]
+      }
+    },
+    {
+      "title": "Kendall's Notation",
+      "names": {
+        "zh": [
+          "肯德尔记号",
+          "肯德爾記號"
+        ],
+        "nl": [
+          "notatie van Kendall"
+        ],
+        "de": [
+          "Kendall-Notation"
+        ],
+        "fr": [
+          "notation de Kendall"
+        ],
+        "es": [
+          "notación de Kendall"
+        ],
+        "it": [
+          "notazione di Kendall"
+        ],
+        "pl": [
+          "notacja Kendalla"
+        ],
+        "ro": [
+          "notația Kendall"
+        ]
+      }
+    },
+    {
+      "title": "Queue Sample-Path Simulation",
+      "names": {
+        "zh": [
+          "排队样本路径模拟",
+          "排隊樣本路徑模擬"
+        ],
+        "nl": [
+          "simulatie van een wachtrij"
+        ],
+        "de": [
+          "Simulation einer Warteschlange"
+        ],
+        "fr": [
+          "simulation d'une file d'attente"
+        ],
+        "es": [
+          "simulación de una cola"
+        ],
+        "it": [
+          "simulazione di una coda"
+        ],
+        "pl": [
+          "symulacja kolejki"
+        ],
+        "ro": [
+          "simularea unei cozi de așteptare"
+        ]
+      }
+    },
+    {
+      "title": "Waiting-Time Admission Control",
+      "names": {
+        "zh": [
+          "等待时间准入控制",
+          "等待時間准入控制"
+        ],
+        "nl": [
+          "toelatingscontrole op wachttijd"
+        ],
+        "de": [
+          "Zugangssteuerung nach Wartezeit"
+        ],
+        "fr": [
+          "contrôle d'admission par le temps d'attente"
+        ],
+        "es": [
+          "control de admisión por tiempo de espera"
+        ],
+        "it": [
+          "controllo di ammissione sul tempo di attesa"
+        ],
+        "pl": [
+          "sterowanie przyjęciem według czasu oczekiwania"
+        ],
+        "ro": [
+          "controlul admiterii după timpul de așteptare"
+        ]
+      }
+    },
+    {
+      "title": "Arrival and Departure Rates",
+      "names": {
+        "zh": [
+          "到达率与离开率",
+          "到達率與離開率"
+        ],
+        "nl": [
+          "aankomst- en vertrekintensiteit"
+        ],
+        "de": [
+          "Ankunfts- und Abgangsrate"
+        ],
+        "fr": [
+          "taux d'arrivée et de départ"
+        ],
+        "es": [
+          "tasas de llegada y de salida"
+        ],
+        "it": [
+          "tassi di arrivo e di partenza"
+        ],
+        "pl": [
+          "intensywność napływu i odpływu"
+        ],
+        "ro": [
+          "ratele de sosire și de plecare"
+        ]
+      }
+    },
+    {
+      "title": "Service Rate",
+      "names": {
+        "zh": [
+          "服务率",
+          "服務率"
+        ],
+        "nl": [
+          "bedieningsintensiteit"
+        ],
+        "de": [
+          "Bedienrate"
+        ],
+        "fr": [
+          "taux de service"
+        ],
+        "es": [
+          "tasa de servicio"
+        ],
+        "it": [
+          "tasso di servizio"
+        ],
+        "pl": [
+          "intensywność obsługi"
+        ],
+        "ro": [
+          "rata de servire"
+        ]
+      }
+    },
+    {
+      "title": "Server Load",
+      "names": {
+        "zh": [
+          "服务强度",
+          "服務強度"
+        ],
+        "nl": [
+          "belastingsgraad"
+        ],
+        "de": [
+          "Verkehrsintensität"
+        ],
+        "fr": [
+          "intensité du trafic",
+          "charge du serveur"
+        ],
+        "es": [
+          "intensidad de tráfico",
+          "carga del servidor"
+        ],
+        "it": [
+          "intensità di traffico",
+          "carico del servente"
+        ],
+        "pl": [
+          "intensywność ruchu"
+        ],
+        "ro": [
+          "intensitatea traficului"
+        ]
+      }
+    },
+    {
+      "title": "Server Utilization",
+      "names": {
+        "zh": [
+          "服务台利用率",
+          "服務台利用率"
+        ],
+        "nl": [
+          "bezettingsgraad"
+        ],
+        "de": [
+          "Auslastung der Bedienstation"
+        ],
+        "fr": [
+          "taux d'utilisation du serveur"
+        ],
+        "es": [
+          "utilización del servidor"
+        ],
+        "it": [
+          "utilizzazione del servente"
+        ],
+        "pl": [
+          "wykorzystanie stanowiska obsługi"
+        ],
+        "ro": [
+          "gradul de utilizare a serverului"
+        ]
+      }
+    },
+    {
+      "title": "Rate Stability",
+      "names": {
+        "zh": [
+          "速率稳定性",
+          "速率穩定性"
+        ],
+        "nl": [
+          "ratestabiliteit"
+        ],
+        "de": [
+          "Ratenstabilität"
+        ],
+        "fr": [
+          "stabilité en taux"
+        ],
+        "es": [
+          "estabilidad en tasa"
+        ],
+        "it": [
+          "stabilità in tasso"
+        ],
+        "pl": [
+          "stabilność w sensie intensywności"
+        ],
+        "ro": [
+          "stabilitate în rată"
+        ]
+      }
+    },
+    {
+      "title": "Busy Period",
+      "names": {
+        "zh": [
+          "忙期"
+        ],
+        "nl": [
+          "bezige periode"
+        ],
+        "de": [
+          "Busy-Periode",
+          "Belegungsperiode"
+        ],
+        "fr": [
+          "période d'activité"
+        ],
+        "es": [
+          "periodo de ocupación"
+        ],
+        "it": [
+          "periodo di occupazione"
+        ],
+        "pl": [
+          "okres zajętości"
+        ],
+        "ro": [
+          "perioada de ocupare"
+        ]
+      }
+    },
+    {
+      "title": "Arrival-Average Performance",
+      "names": {
+        "zh": [
+          "到达平均性能指标",
+          "到達平均性能指標"
+        ],
+        "nl": [
+          "aankomstgemiddelde prestatiemaat"
+        ],
+        "de": [
+          "ankunftsgemittelte Leistungskenngröße"
+        ],
+        "fr": [
+          "mesure de performance moyennée sur les arrivées"
+        ],
+        "es": [
+          "medida de rendimiento promediada sobre las llegadas"
+        ],
+        "it": [
+          "misura di prestazione media sugli arrivi"
+        ],
+        "pl": [
+          "miara wydajności uśredniona po przybyciach"
+        ],
+        "ro": [
+          "măsură de performanță mediată pe sosiri"
+        ]
+      }
+    },
+    {
+      "title": "Time-Average Performance",
+      "names": {
+        "zh": [
+          "时间平均性能指标",
+          "時間平均性能指標"
+        ],
+        "nl": [
+          "tijdgemiddelde prestatiemaat"
+        ],
+        "de": [
+          "zeitgemittelte Leistungskenngröße"
+        ],
+        "fr": [
+          "mesure de performance moyennée dans le temps"
+        ],
+        "es": [
+          "medida de rendimiento promediada en el tiempo"
+        ],
+        "it": [
+          "misura di prestazione media temporale"
+        ],
+        "pl": [
+          "miara wydajności uśredniona w czasie"
+        ],
+        "ro": [
+          "măsură de performanță mediată în timp"
+        ]
+      }
+    },
+    {
+      "title": "Renewal Reward Theorem",
+      "names": {
+        "zh": [
+          "更新报酬定理",
+          "更新報酬定理",
+          "更新回报定理",
+          "更新回報定理"
+        ],
+        "nl": [
+          "renewal-reward-stelling"
+        ],
+        "de": [
+          "Erneuerungs-Belohnungs-Satz",
+          "Renewal-Reward-Theorem"
+        ],
+        "fr": [
+          "théorème de renouvellement avec récompense"
+        ],
+        "es": [
+          "teorema de renovación-recompensa"
+        ],
+        "it": [
+          "teorema di rinnovo con ricompensa"
+        ],
+        "pl": [
+          "twierdzenie o odnowie z nagrodą"
+        ],
+        "ro": [
+          "teorema reînnoire-recompensă"
+        ]
+      }
+    },
+    {
+      "title": "Economic Production Quantity",
+      "names": {
+        "zh": [
+          "经济生产批量",
+          "經濟生產批量"
+        ],
+        "nl": [
+          "economische productiehoeveelheid"
+        ],
+        "de": [
+          "optimale Produktionslosgröße"
+        ],
+        "fr": [
+          "quantité économique de production"
+        ],
+        "es": [
+          "cantidad económica de producción"
+        ],
+        "it": [
+          "lotto economico di produzione"
+        ],
+        "pl": [
+          "ekonomiczna wielkość produkcji"
+        ],
+        "ro": [
+          "cantitatea economică de producție"
+        ]
+      }
+    },
+    {
+      "title": "Little's Law",
+      "names": {
+        "zh": [
+          "利特尔法则",
+          "利特爾法則"
+        ],
+        "nl": [
+          "wet van Little"
+        ],
+        "de": [
+          "Littles Gesetz"
+        ],
+        "fr": [
+          "loi de Little"
+        ],
+        "es": [
+          "ley de Little"
+        ],
+        "it": [
+          "legge di Little"
+        ],
+        "pl": [
+          "prawo Little'a"
+        ],
+        "ro": [
+          "legea lui Little"
+        ]
+      }
+    },
+    {
+      "title": "Poisson Arrivals See Time Averages",
+      "names": {
+        "zh": [
+          "泊松到达看到时间平均",
+          "泊松到達看到時間平均"
+        ],
+        "nl": [
+          "Poisson-aankomsten zien tijdgemiddelden"
+        ],
+        "de": [
+          "Poisson-Ankünfte sehen Zeitmittel"
+        ],
+        "fr": [
+          "les arrivées poissonniennes voient les moyennes temporelles"
+        ],
+        "es": [
+          "las llegadas de Poisson ven promedios temporales"
+        ],
+        "it": [
+          "gli arrivi di Poisson vedono le medie temporali"
+        ],
+        "pl": [
+          "przybycia Poissona widzą średnie czasowe"
+        ],
+        "ro": [
+          "sosirile Poisson văd mediile temporale"
+        ]
+      }
+    },
+    {
+      "title": "State-Dependent Arrival Rate",
+      "names": {
+        "zh": [
+          "状态相关到达率",
+          "狀態相關到達率"
+        ],
+        "nl": [
+          "toestandsafhankelijke aankomstintensiteit"
+        ],
+        "de": [
+          "zustandsabhängige Ankunftsrate"
+        ],
+        "fr": [
+          "taux d'arrivée dépendant de l'état"
+        ],
+        "es": [
+          "tasa de llegada dependiente del estado"
+        ],
+        "it": [
+          "tasso di arrivo dipendente dallo stato"
+        ],
+        "pl": [
+          "intensywność przybyć zależna od stanu"
+        ],
+        "ro": [
+          "rata de sosire dependentă de stare"
+        ]
+      }
+    },
+    {
+      "title": "Level-Crossing Equation",
+      "names": {
+        "zh": [
+          "水平穿越方程",
+          "水平跨越方程"
+        ],
+        "nl": [
+          "niveaukruisingsvergelijking"
+        ],
+        "de": [
+          "Niveaukreuzungsgleichung"
+        ],
+        "fr": [
+          "équation de franchissement de niveau"
+        ],
+        "es": [
+          "ecuación de cruce de nivel"
+        ],
+        "it": [
+          "equazione di attraversamento di livello"
+        ],
+        "pl": [
+          "równanie przecięć poziomu"
+        ],
+        "ro": [
+          "ecuația de traversare a nivelului"
+        ]
+      }
+    },
+    {
+      "title": "Stationary-Probability Recursion",
+      "names": {
+        "zh": [
+          "稳态概率递推",
+          "穩態概率遞推"
+        ],
+        "nl": [
+          "recursie voor stationaire kansen"
+        ],
+        "de": [
+          "Rekursion für stationäre Wahrscheinlichkeiten"
+        ],
+        "fr": [
+          "récurrence des probabilités stationnaires"
+        ],
+        "es": [
+          "recursión de las probabilidades estacionarias"
+        ],
+        "it": [
+          "ricorsione delle probabilità stazionarie"
+        ],
+        "pl": [
+          "rekurencja prawdopodobieństw stacjonarnych"
+        ],
+        "ro": [
+          "recurența probabilităților staționare"
+        ]
+      }
+    },
+    {
+      "title": "Balance Equations",
+      "names": {
+        "zh": [
+          "平衡方程",
+          "全局平衡方程"
+        ],
+        "nl": [
+          "balansvergelijkingen"
+        ],
+        "de": [
+          "Gleichgewichtsgleichungen",
+          "globale Balancegleichungen"
+        ],
+        "fr": [
+          "équations d'équilibre global",
+          "équations de balance"
+        ],
+        "es": [
+          "ecuaciones de balance global"
+        ],
+        "it": [
+          "equazioni di bilancio globale"
+        ],
+        "pl": [
+          "równania równowagi globalnej"
+        ],
+        "ro": [
+          "ecuațiile de echilibru global"
+        ]
+      }
+    },
+    {
+      "title": "Birth-Death Queue",
+      "names": {
+        "zh": [
+          "生灭过程",
+          "生滅過程"
+        ],
+        "nl": [
+          "geboorte-sterfteproces"
+        ],
+        "de": [
+          "Geburts- und Todesprozess"
+        ],
+        "fr": [
+          "processus de naissance et de mort"
+        ],
+        "es": [
+          "proceso de nacimiento y muerte"
+        ],
+        "it": [
+          "processo di nascita e morte"
+        ],
+        "pl": [
+          "proces narodzin i śmierci"
+        ],
+        "ro": [
+          "proces de naștere și moarte"
+        ]
+      }
+    },
+    {
+      "title": "M/M/1 Queue",
+      "names": {
+        "zh": [
+          "M/M/1排队模型",
+          "M/M/1排隊模型"
+        ],
+        "nl": [
+          "M/M/1-wachtrij"
+        ],
+        "de": [
+          "M/M/1-Warteschlange"
+        ],
+        "fr": [
+          "file d'attente M/M/1"
+        ],
+        "es": [
+          "cola M/M/1"
+        ],
+        "it": [
+          "coda M/M/1"
+        ],
+        "pl": [
+          "kolejka M/M/1"
+        ],
+        "ro": [
+          "sistem de așteptare M/M/1"
+        ]
+      }
+    },
+    {
+      "title": "M/M/c Queue",
+      "names": {
+        "zh": [
+          "M/M/c排队模型",
+          "M/M/c排隊模型"
+        ],
+        "nl": [
+          "M/M/c-wachtrij"
+        ],
+        "de": [
+          "M/M/c-Warteschlange"
+        ],
+        "fr": [
+          "file d'attente M/M/c"
+        ],
+        "es": [
+          "cola M/M/c"
+        ],
+        "it": [
+          "coda M/M/c"
+        ],
+        "pl": [
+          "kolejka M/M/c"
+        ],
+        "ro": [
+          "sistem de așteptare M/M/c"
+        ]
+      }
+    },
+    {
+      "title": "M/M/1/K Queue",
+      "names": {
+        "zh": [
+          "M/M/1/K排队模型",
+          "M/M/1/K排隊模型"
+        ],
+        "nl": [
+          "M/M/1/K-wachtrij"
+        ],
+        "de": [
+          "M/M/1/K-Warteschlange"
+        ],
+        "fr": [
+          "file d'attente M/M/1/K"
+        ],
+        "es": [
+          "cola M/M/1/K"
+        ],
+        "it": [
+          "coda M/M/1/K"
+        ],
+        "pl": [
+          "kolejka M/M/1/K"
+        ],
+        "ro": [
+          "sistem de așteptare M/M/1/K"
+        ]
+      }
+    },
+    {
+      "title": "Erlang B Model",
+      "names": {
+        "zh": [
+          "爱尔朗B公式",
+          "愛爾朗B公式"
+        ],
+        "nl": [
+          "Erlang-B-formule"
+        ],
+        "de": [
+          "Erlang-B-Formel",
+          "Erlangsche Verlustformel"
+        ],
+        "fr": [
+          "formule d'Erlang B"
+        ],
+        "es": [
+          "fórmula de Erlang B"
+        ],
+        "it": [
+          "formula di Erlang B"
+        ],
+        "pl": [
+          "wzór Erlanga B"
+        ],
+        "ro": [
+          "formula Erlang B"
+        ]
+      }
+    },
+    {
+      "title": "M/M/Infinity Queue",
+      "names": {
+        "zh": [
+          "M/M/∞排队模型",
+          "M/M/∞排隊模型"
+        ],
+        "nl": [
+          "M/M/∞-wachtrij"
+        ],
+        "de": [
+          "M/M/∞-Warteschlange"
+        ],
+        "fr": [
+          "file d'attente M/M/∞"
+        ],
+        "es": [
+          "cola M/M/∞"
+        ],
+        "it": [
+          "coda M/M/∞"
+        ],
+        "pl": [
+          "kolejka M/M/∞"
+        ],
+        "ro": [
+          "sistem de așteptare M/M/∞"
+        ]
+      }
+    },
+    {
+      "title": "Finite Calling Population",
+      "names": {
+        "zh": [
+          "有限顾客源排队",
+          "有限顧客源排隊"
+        ],
+        "nl": [
+          "eindige klantenpopulatie",
+          "machine-reparatiemodel"
+        ],
+        "de": [
+          "endliche Quellenpopulation",
+          "Maschinen-Reparatur-Modell"
+        ],
+        "fr": [
+          "population source finie",
+          "modèle de réparation de machines"
+        ],
+        "es": [
+          "población de origen finita",
+          "modelo de reparación de máquinas"
+        ],
+        "it": [
+          "popolazione finita di utenti",
+          "modello di riparazione delle macchine"
+        ],
+        "pl": [
+          "skończona populacja zgłoszeń",
+          "model naprawy maszyn"
+        ],
+        "ro": [
+          "populație sursă finită",
+          "model de reparare a mașinilor"
+        ]
+      }
+    },
+    {
+      "title": "Balking",
+      "names": {
+        "zh": [
+          "顾客止步",
+          "顧客止步"
+        ],
+        "nl": [
+          "afhaken bij aankomst"
+        ],
+        "de": [
+          "Nichteintritt in die Warteschlange"
+        ],
+        "fr": [
+          "renoncement à l'arrivée"
+        ],
+        "es": [
+          "desistimiento al llegar",
+          "rehúso a entrar en la cola"
+        ],
+        "it": [
+          "rinuncia all'ingresso in coda"
+        ],
+        "pl": [
+          "rezygnacja z wejścia do kolejki"
+        ],
+        "ro": [
+          "renunțare la intrarea în coadă"
+        ]
+      }
+    },
+    {
+      "title": "Batch-Arrival Queue",
+      "names": {
+        "zh": [
+          "成批到达排队",
+          "成批到達排隊"
+        ],
+        "nl": [
+          "wachtrij met groepsaankomsten"
+        ],
+        "de": [
+          "Warteschlange mit Gruppenankünften",
+          "Bulk-Arrival-Warteschlange"
+        ],
+        "fr": [
+          "file d'attente à arrivées groupées"
+        ],
+        "es": [
+          "cola con llegadas en lotes",
+          "cola con llegadas por grupos"
+        ],
+        "it": [
+          "coda con arrivi a gruppi"
+        ],
+        "pl": [
+          "kolejka z grupowymi zgłoszeniami"
+        ],
+        "ro": [
+          "coadă cu sosiri în grup"
+        ]
+      }
+    },
+    {
+      "title": "Batch-Arrival Waiting Time",
+      "names": {
+        "zh": [
+          "成批到达等待时间",
+          "成批到達等待時間"
+        ],
+        "nl": [
+          "wachttijd bij groepsaankomsten"
+        ],
+        "de": [
+          "Wartezeit bei Gruppenankünften"
+        ],
+        "fr": [
+          "temps d'attente avec arrivées groupées"
+        ],
+        "es": [
+          "tiempo de espera con llegadas en lotes"
+        ],
+        "it": [
+          "tempo di attesa con arrivi a gruppi"
+        ],
+        "pl": [
+          "czas oczekiwania przy grupowych zgłoszeniach"
+        ],
+        "ro": [
+          "timp de așteptare cu sosiri în grup"
+        ]
+      }
+    },
+    {
+      "title": "Batch Rejection Policy",
+      "names": {
+        "zh": [
+          "批量拒绝策略",
+          "批量拒絕策略"
+        ],
+        "nl": [
+          "weigeringsbeleid voor groepen"
+        ],
+        "de": [
+          "Abweisungsregel für Gruppen"
+        ],
+        "fr": [
+          "politique de rejet des lots"
+        ],
+        "es": [
+          "política de rechazo de lotes"
+        ],
+        "it": [
+          "politica di rifiuto dei gruppi"
+        ],
+        "pl": [
+          "polityka odrzucania grup zgłoszeń"
+        ],
+        "ro": [
+          "politică de respingere a loturilor"
+        ]
+      }
+    },
+    {
+      "title": "Remaining Service Time",
+      "names": {
+        "zh": [
+          "剩余服务时间",
+          "剩餘服務時間"
+        ],
+        "nl": [
+          "resterende bedieningstijd"
+        ],
+        "de": [
+          "Restbedienzeit",
+          "restliche Bedienzeit"
+        ],
+        "fr": [
+          "temps de service résiduel"
+        ],
+        "es": [
+          "tiempo de servicio residual"
+        ],
+        "it": [
+          "tempo di servizio residuo"
+        ],
+        "pl": [
+          "resztkowy czas obsługi",
+          "pozostały czas obsługi"
+        ],
+        "ro": [
+          "timp de servire rezidual"
+        ]
+      }
+    },
+    {
+      "title": "Pollaczek-Khinchine Formula",
+      "names": {
+        "zh": [
+          "波拉切克-辛钦公式",
+          "波拉切克-辛欽公式"
+        ],
+        "nl": [
+          "formule van Pollaczek-Khinchin"
+        ],
+        "de": [
+          "Pollaczek-Chintschin-Formel"
+        ],
+        "fr": [
+          "formule de Pollaczek-Khintchine"
+        ],
+        "es": [
+          "fórmula de Pollaczek-Khinchine"
+        ],
+        "it": [
+          "formula di Pollaczek-Khinchin"
+        ],
+        "pl": [
+          "wzór Pollaczka-Chinczyna"
+        ],
+        "ro": [
+          "formula Pollaczek-Hincin"
+        ]
+      }
+    },
+    {
+      "title": "M/G/1 Departure-Epoch Chain",
+      "names": {
+        "zh": [
+          "M/G/1嵌入马尔可夫链",
+          "M/G/1嵌入馬爾可夫鏈"
+        ],
+        "nl": [
+          "ingebedde keten op vertrektijdstippen"
+        ],
+        "de": [
+          "eingebettete Markow-Kette zu Abgangszeitpunkten"
+        ],
+        "fr": [
+          "chaîne incluse aux instants de départ"
+        ],
+        "es": [
+          "cadena embebida en los instantes de salida"
+        ],
+        "it": [
+          "catena immersa agli istanti di partenza"
+        ],
+        "pl": [
+          "łańcuch włożony w chwilach odejść"
+        ],
+        "ro": [
+          "lanț scufundat la momentele de plecare"
+        ]
+      }
+    },
+    {
+      "title": "N-Policy",
+      "names": {
+        "zh": [
+          "N策略"
+        ],
+        "nl": [
+          "N-beleid"
+        ],
+        "de": [
+          "N-Politik"
+        ],
+        "fr": [
+          "politique N"
+        ],
+        "es": [
+          "política N"
+        ],
+        "it": [
+          "politica N"
+        ],
+        "pl": [
+          "polityka N"
+        ],
+        "ro": [
+          "politica N"
+        ]
+      }
+    },
+    {
+      "title": "Lead-Time Demand",
+      "names": {
+        "zh": [
+          "提前期需求"
+        ],
+        "nl": [
+          "vraag tijdens de levertijd"
+        ],
+        "de": [
+          "Bedarf während der Wiederbeschaffungszeit",
+          "Nachfrage während der Lieferzeit"
+        ],
+        "fr": [
+          "demande pendant le délai de livraison"
+        ],
+        "es": [
+          "demanda durante el plazo de entrega"
+        ],
+        "it": [
+          "domanda durante il tempo di consegna"
+        ],
+        "pl": [
+          "popyt w czasie realizacji zamówienia"
+        ],
+        "ro": [
+          "cererea pe durata termenului de livrare"
+        ]
+      }
+    },
+    {
+      "title": "Base-Stock Inventory Distribution",
+      "names": {
+        "zh": [
+          "基础库存策略下的库存水平分布",
+          "基礎庫存策略下的庫存水準分佈"
+        ],
+        "nl": [
+          "voorraadverdeling bij een base-stockbeleid"
+        ],
+        "de": [
+          "Verteilung des Lagerbestands bei Base-Stock-Politik"
+        ],
+        "fr": [
+          "distribution du niveau de stock sous une politique de stock de base"
+        ],
+        "es": [
+          "distribución del nivel de inventario con política de stock base"
+        ],
+        "it": [
+          "distribuzione del livello delle scorte con politica base-stock"
+        ],
+        "pl": [
+          "rozkład poziomu zapasu przy polityce base-stock"
+        ],
+        "ro": [
+          "distribuția nivelului stocului la politica base-stock"
+        ]
+      }
+    },
+    {
+      "title": "Base-Stock Backlog",
+      "names": {
+        "zh": [
+          "基础库存策略的期望欠货量",
+          "基礎庫存策略的期望欠貨量"
+        ],
+        "nl": [
+          "verwachte achterstand bij een base-stockbeleid"
+        ],
+        "de": [
+          "erwarteter Rückstand bei Base-Stock-Politik"
+        ],
+        "fr": [
+          "commandes en attente moyennes sous une politique de stock de base"
+        ],
+        "es": [
+          "pedidos pendientes esperados con política de stock base"
+        ],
+        "it": [
+          "arretrati attesi con politica base-stock"
+        ],
+        "pl": [
+          "oczekiwane zaległości przy polityce base-stock"
+        ],
+        "ro": [
+          "comenzi restante așteptate la politica base-stock"
+        ]
+      }
+    },
+    {
+      "title": "Uniform Inventory Position under a (Q, r) Policy",
+      "names": {
+        "zh": [
+          "(Q, r)策略下库存位置的均匀分布",
+          "(Q, r)策略下庫存位置的均勻分佈"
+        ],
+        "nl": [
+          "uniforme voorraadpositie bij een (Q, r)-beleid"
+        ],
+        "de": [
+          "gleichverteilte Lagerposition bei (Q, r)-Politik"
+        ],
+        "fr": [
+          "position de stock uniforme sous une politique (Q, r)"
+        ],
+        "es": [
+          "posición de inventario uniforme con política (Q, r)"
+        ],
+        "it": [
+          "posizione delle scorte uniforme con politica (Q, r)"
+        ],
+        "pl": [
+          "jednostajny rozkład pozycji zapasu przy polityce (Q, r)"
+        ],
+        "ro": [
+          "poziția uniformă a stocului la politica (Q, r)"
+        ]
+      }
+    },
+    {
+      "title": "(Q, r) Average Cost",
+      "names": {
+        "zh": [
+          "(Q, r)策略的平均成本"
+        ],
+        "nl": [
+          "gemiddelde kosten van een (Q, r)-beleid"
+        ],
+        "de": [
+          "Durchschnittskosten der (Q, r)-Politik"
+        ],
+        "fr": [
+          "coût moyen d'une politique (Q, r)"
+        ],
+        "es": [
+          "coste medio de una política (Q, r)"
+        ],
+        "it": [
+          "costo medio di una politica (Q, r)"
+        ],
+        "pl": [
+          "średni koszt polityki (Q, r)"
+        ],
+        "ro": [
+          "costul mediu al politicii (Q, r)"
+        ]
+      }
+    },
+    {
+      "title": "Hitting-Time Recursion",
+      "names": {
+        "zh": [
+          "首达时间递推",
+          "首達時間遞推"
+        ],
+        "nl": [
+          "recursie voor de eerste-passagetijd"
+        ],
+        "de": [
+          "Rekursion für die Ersteintrittszeit"
+        ],
+        "fr": [
+          "récurrence du temps d'atteinte"
+        ],
+        "es": [
+          "recursión del tiempo de primer paso"
+        ],
+        "it": [
+          "ricorsione del tempo di primo passaggio"
+        ],
+        "pl": [
+          "rekurencja czasu pierwszego dojścia"
+        ],
+        "ro": [
+          "recurența timpului de primă atingere"
+        ]
+      }
+    },
+    {
+      "title": "Running and Hitting Costs",
+      "names": {
+        "zh": [
+          "运行成本与停止成本",
+          "運行成本與停止成本"
+        ],
+        "nl": [
+          "lopende kosten en stopkosten"
+        ],
+        "de": [
+          "laufende Kosten und Stoppkosten"
+        ],
+        "fr": [
+          "coûts courants et coûts d'arrêt"
+        ],
+        "es": [
+          "costes de continuación y de parada"
+        ],
+        "it": [
+          "costi correnti e costi di arresto"
+        ],
+        "pl": [
+          "koszty bieżące i koszty zatrzymania"
+        ],
+        "ro": [
+          "costuri curente și costuri de oprire"
+        ]
+      }
+    },
+    {
+      "title": "(T, S) Cost Recursion",
+      "names": {
+        "zh": [
+          "(T,S)策略成本递推",
+          "(T,S)策略成本遞推"
+        ],
+        "nl": [
+          "kostenrecursie voor het (T,S)-beleid"
+        ],
+        "de": [
+          "Kostenrekursion der (T,S)-Politik"
+        ],
+        "fr": [
+          "récurrence des coûts de la politique (T,S)"
+        ],
+        "es": [
+          "recursión de costes de la política (T,S)"
+        ],
+        "it": [
+          "ricorsione dei costi della politica (T,S)"
+        ],
+        "pl": [
+          "rekurencja kosztów polityki (T,S)"
+        ],
+        "ro": [
+          "recurența costurilor politicii (T,S)"
+        ]
+      }
+    },
+    {
+      "title": "(s, S) Cost Recursion",
+      "names": {
+        "zh": [
+          "(s,S)策略成本递推",
+          "(s,S)策略成本遞推"
+        ],
+        "nl": [
+          "kostenrecursie voor het (s,S)-beleid"
+        ],
+        "de": [
+          "Kostenrekursion der (s,S)-Politik"
+        ],
+        "fr": [
+          "récurrence des coûts de la politique (s,S)"
+        ],
+        "es": [
+          "recursión de costes de la política (s,S)"
+        ],
+        "it": [
+          "ricorsione dei costi della politica (s,S)"
+        ],
+        "pl": [
+          "rekurencja kosztów polityki (s,S)"
+        ],
+        "ro": [
+          "recurența costurilor politicii (s,S)"
+        ]
+      }
+    },
+    {
+      "title": "(T, s, S) Policy",
+      "names": {
+        "zh": [
+          "(T,s,S)库存策略",
+          "(T,s,S)庫存策略"
+        ],
+        "nl": [
+          "(T,s,S)-beleid"
+        ],
+        "de": [
+          "(T,s,S)-Politik",
+          "(T,s,S)-Bestellpolitik"
+        ],
+        "fr": [
+          "politique (T,s,S)"
+        ],
+        "es": [
+          "política (T,s,S)"
+        ],
+        "it": [
+          "politica (T,s,S)"
+        ],
+        "pl": [
+          "polityka (T,s,S)"
+        ],
+        "ro": [
+          "politica (T,s,S)"
+        ]
+      }
+    },
+    {
+      "title": "Sakasegawa's Formula",
+      "names": {
+        "zh": [
+          "Sakasegawa公式",
+          "Sakasegawa近似"
+        ],
+        "nl": [
+          "formule van Sakasegawa"
+        ],
+        "de": [
+          "Sakasegawa-Formel"
+        ],
+        "fr": [
+          "formule de Sakasegawa"
+        ],
+        "es": [
+          "fórmula de Sakasegawa"
+        ],
+        "it": [
+          "formula di Sakasegawa"
+        ],
+        "pl": [
+          "wzór Sakasegawy"
+        ],
+        "ro": [
+          "formula lui Sakasegawa"
+        ]
+      }
+    },
+    {
+      "title": "SCV Estimation from Counts",
+      "names": {
+        "zh": [
+          "由计数估计平方变异系数",
+          "由計數估計平方變異係數"
+        ],
+        "nl": [
+          "schatting van de gekwadrateerde variatiecoëfficiënt uit tellingen"
+        ],
+        "de": [
+          "Schätzung des quadrierten Variationskoeffizienten aus Zählwerten"
+        ],
+        "fr": [
+          "estimation du coefficient de variation au carré à partir de comptages"
+        ],
+        "es": [
+          "estimación del coeficiente de variación al cuadrado a partir de conteos"
+        ],
+        "it": [
+          "stima del coefficiente di variazione al quadrato dai conteggi"
+        ],
+        "pl": [
+          "estymacja kwadratu współczynnika zmienności z liczebności"
+        ],
+        "ro": [
+          "estimarea pătratului coeficientului de variație din numărări"
+        ]
+      }
+    },
+    {
+      "title": "Server Setup",
+      "names": {
+        "zh": [
+          "服务台准备时间",
+          "服務台準備時間"
+        ],
+        "nl": [
+          "omsteltijd"
+        ],
+        "de": [
+          "Rüstzeit"
+        ],
+        "fr": [
+          "temps de changement de série"
+        ],
+        "es": [
+          "tiempo de preparación de máquina"
+        ],
+        "it": [
+          "tempo di attrezzaggio"
+        ],
+        "pl": [
+          "czas przezbrojenia"
+        ],
+        "ro": [
+          "timp de reglare a mașinii"
+        ]
+      }
+    },
+    {
+      "title": "Batch Formation Time",
+      "names": {
+        "zh": [
+          "批次形成时间",
+          "批次形成時間"
+        ],
+        "nl": [
+          "batchvormingstijd"
+        ],
+        "de": [
+          "Losbildungszeit"
+        ],
+        "fr": [
+          "temps de formation des lots"
+        ],
+        "es": [
+          "tiempo de formación del lote"
+        ],
+        "it": [
+          "tempo di formazione del lotto"
+        ],
+        "pl": [
+          "czas formowania partii"
+        ],
+        "ro": [
+          "timpul de formare a lotului"
+        ]
+      }
+    },
+    {
+      "title": "Setup Effective Service Time",
+      "names": {
+        "zh": [
+          "含准备时间的有效服务时间",
+          "含準備時間的有效服務時間"
+        ],
+        "nl": [
+          "effectieve bedieningstijd met omsteltijden"
+        ],
+        "de": [
+          "effektive Bedienzeit mit Rüstzeiten"
+        ],
+        "fr": [
+          "temps de service effectif avec changements de série"
+        ],
+        "es": [
+          "tiempo de servicio efectivo con preparación"
+        ],
+        "it": [
+          "tempo di servizio effettivo con attrezzaggio"
+        ],
+        "pl": [
+          "efektywny czas obsługi z przezbrojeniami"
+        ],
+        "ro": [
+          "timp efectiv de servire cu reglare"
+        ]
+      }
+    },
+    {
+      "title": "Server Adjustment",
+      "names": {
+        "zh": [
+          "服务台调整",
+          "服務台調整"
+        ],
+        "nl": [
+          "onvoorziene afstelling",
+          "serverafstelling"
+        ],
+        "de": [
+          "ungeplante Justierung"
+        ],
+        "fr": [
+          "réglage imprévu du serveur"
+        ],
+        "es": [
+          "ajuste imprevisto del servidor"
+        ],
+        "it": [
+          "regolazione imprevista del servente"
+        ],
+        "pl": [
+          "nieplanowana regulacja stanowiska obsługi"
+        ],
+        "ro": [
+          "ajustare neplanificată a serverului"
+        ]
+      }
+    },
+    {
+      "title": "Non-Preemptive Outage",
+      "names": {
+        "zh": [
+          "非抢占式中断",
+          "非搶佔式中斷"
+        ],
+        "nl": [
+          "niet-preëmptieve onderbreking"
+        ],
+        "de": [
+          "nicht-präemptive Unterbrechung"
+        ],
+        "fr": [
+          "interruption non préemptive"
+        ],
+        "es": [
+          "interrupción no apropiativa"
+        ],
+        "it": [
+          "interruzione non preemptive"
+        ],
+        "pl": [
+          "przerwa bez wywłaszczenia"
+        ],
+        "ro": [
+          "întrerupere nepreemptivă"
+        ]
+      }
+    },
+    {
+      "title": "Server Failure",
+      "names": {
+        "zh": [
+          "服务台故障",
+          "服務台故障"
+        ],
+        "nl": [
+          "serverstoring",
+          "machinestoring"
+        ],
+        "de": [
+          "Serverausfall",
+          "Maschinenausfall"
+        ],
+        "fr": [
+          "panne du serveur"
+        ],
+        "es": [
+          "avería del servidor"
+        ],
+        "it": [
+          "guasto del servente"
+        ],
+        "pl": [
+          "awaria stanowiska obsługi"
+        ],
+        "ro": [
+          "defectarea serverului"
+        ]
+      }
+    },
+    {
+      "title": "Availability",
+      "names": {
+        "zh": [
+          "可用度"
+        ],
+        "nl": [
+          "beschikbaarheid",
+          "machinebeschikbaarheid"
+        ],
+        "de": [
+          "Verfügbarkeit"
+        ],
+        "fr": [
+          "disponibilité"
+        ],
+        "es": [
+          "disponibilidad"
+        ],
+        "it": [
+          "disponibilità"
+        ],
+        "pl": [
+          "dostępność",
+          "gotowość techniczna"
+        ],
+        "ro": [
+          "disponibilitate"
+        ]
+      }
+    },
+    {
+      "title": "Preemptive-Outage Effective Service Time",
+      "names": {
+        "zh": [
+          "抢占式中断下的有效服务时间",
+          "搶佔式中斷下的有效服務時間"
+        ],
+        "nl": [
+          "effectieve bedieningstijd bij storingen"
+        ],
+        "de": [
+          "effektive Bedienzeit bei Ausfällen"
+        ],
+        "fr": [
+          "temps de service effectif avec pannes"
+        ],
+        "es": [
+          "tiempo de servicio efectivo con averías"
+        ],
+        "it": [
+          "tempo di servizio effettivo con guasti"
+        ],
+        "pl": [
+          "efektywny czas obsługi przy awariach"
+        ],
+        "ro": [
+          "timp efectiv de servire cu defecțiuni"
+        ]
+      }
+    },
+    {
+      "title": "Tandem Queue",
+      "names": {
+        "zh": [
+          "串联排队系统",
+          "串聯排隊系統"
+        ],
+        "nl": [
+          "wachtrijen in serie",
+          "tandemwachtrij"
+        ],
+        "de": [
+          "Tandem-Warteschlange"
+        ],
+        "fr": [
+          "files d'attente en tandem"
+        ],
+        "es": [
+          "colas en tándem"
+        ],
+        "it": [
+          "code in tandem"
+        ],
+        "pl": [
+          "kolejki tandemowe"
+        ],
+        "ro": [
+          "cozi în tandem"
+        ]
+      }
+    },
+    {
+      "title": "Departure SCV Approximation",
+      "names": {
+        "zh": [
+          "离去间隔平方变异系数近似",
+          "離去間隔平方變異係數近似"
+        ],
+        "nl": [
+          "benadering van de SCV van vertrektijden"
+        ],
+        "de": [
+          "Approximation des quadrierten Variationskoeffizienten der Abgänge"
+        ],
+        "fr": [
+          "approximation du SCV des départs"
+        ],
+        "es": [
+          "aproximación del SCV de las salidas"
+        ],
+        "it": [
+          "approssimazione dello SCV delle partenze"
+        ],
+        "pl": [
+          "aproksymacja SCV odstępów odejść"
+        ],
+        "ro": [
+          "aproximarea SCV a plecărilor"
+        ]
+      }
+    },
+    {
+      "title": "Routing Matrix",
+      "names": {
+        "zh": [
+          "路由矩阵",
+          "路由矩陣"
+        ],
+        "nl": [
+          "routeringsmatrix"
+        ],
+        "de": [
+          "Routingmatrix"
+        ],
+        "fr": [
+          "matrice de routage"
+        ],
+        "es": [
+          "matriz de enrutamiento"
+        ],
+        "it": [
+          "matrice di instradamento"
+        ],
+        "pl": [
+          "macierz routingu"
+        ],
+        "ro": [
+          "matrice de rutare"
+        ]
+      }
+    },
+    {
+      "title": "Traffic Equations",
+      "names": {
+        "zh": [
+          "流量方程",
+          "流量平衡方程"
+        ],
+        "nl": [
+          "verkeersvergelijkingen"
+        ],
+        "de": [
+          "Verkehrsgleichungen"
+        ],
+        "fr": [
+          "équations de trafic"
+        ],
+        "es": [
+          "ecuaciones de tráfico"
+        ],
+        "it": [
+          "equazioni di traffico"
+        ],
+        "pl": [
+          "równania ruchu"
+        ],
+        "ro": [
+          "ecuațiile de trafic"
+        ]
+      }
+    },
+    {
+      "title": "Open Queueing Network",
+      "names": {
+        "zh": [
+          "开放排队网络",
+          "開放排隊網路"
+        ],
+        "nl": [
+          "open wachtrijnetwerk"
+        ],
+        "de": [
+          "offenes Warteschlangennetz"
+        ],
+        "fr": [
+          "réseau de files d'attente ouvert"
+        ],
+        "es": [
+          "red de colas abierta"
+        ],
+        "it": [
+          "rete di code aperta"
+        ],
+        "pl": [
+          "otwarta sieć kolejkowa"
+        ],
+        "ro": [
+          "rețea deschisă de cozi"
+        ]
+      }
+    },
+    {
+      "title": "Closed Queueing Network",
+      "names": {
+        "zh": [
+          "封闭排队网络",
+          "封閉排隊網路"
+        ],
+        "nl": [
+          "gesloten wachtrijnetwerk"
+        ],
+        "de": [
+          "geschlossenes Warteschlangennetz"
+        ],
+        "fr": [
+          "réseau de files d'attente fermé"
+        ],
+        "es": [
+          "red de colas cerrada"
+        ],
+        "it": [
+          "rete di code chiusa"
+        ],
+        "pl": [
+          "zamknięta sieć kolejkowa"
+        ],
+        "ro": [
+          "rețea închisă de cozi"
+        ]
+      }
+    },
+    {
+      "title": "Jackson Product Form",
+      "names": {
+        "zh": [
+          "杰克逊乘积形式",
+          "傑克森乘積形式"
+        ],
+        "nl": [
+          "productvorm van Jackson",
+          "Jackson-netwerk"
+        ],
+        "de": [
+          "Produktform von Jackson",
+          "Jackson-Netz"
+        ],
+        "fr": [
+          "forme produit de Jackson",
+          "réseau de Jackson"
+        ],
+        "es": [
+          "forma producto de Jackson",
+          "red de Jackson"
+        ],
+        "it": [
+          "forma prodotto di Jackson",
+          "rete di Jackson"
+        ],
+        "pl": [
+          "postać iloczynowa Jacksona",
+          "sieć Jacksona"
+        ],
+        "ro": [
+          "forma produs Jackson",
+          "rețea Jackson"
+        ]
+      }
+    },
+    {
+      "title": "Visit Ratio",
+      "names": {
+        "zh": [
+          "访问比",
+          "訪問比"
+        ],
+        "nl": [
+          "bezoekverhouding"
+        ],
+        "de": [
+          "Besuchsverhältnis"
+        ],
+        "fr": [
+          "rapport de visite"
+        ],
+        "es": [
+          "razón de visitas"
+        ],
+        "it": [
+          "rapporto di visita"
+        ],
+        "pl": [
+          "współczynnik odwiedzin"
+        ],
+        "ro": [
+          "raportul de vizitare"
+        ]
+      }
+    },
+    {
+      "title": "Arrival Theorem",
+      "names": {
+        "zh": [
+          "到达定理",
+          "到達定理"
+        ],
+        "nl": [
+          "aankomststelling"
+        ],
+        "de": [
+          "Ankunftstheorem"
+        ],
+        "fr": [
+          "théorème d'arrivée"
+        ],
+        "es": [
+          "teorema de llegada"
+        ],
+        "it": [
+          "teorema degli arrivi"
+        ],
+        "pl": [
+          "twierdzenie o przybyciu"
+        ],
+        "ro": [
+          "teorema sosirii"
+        ]
+      }
+    },
+    {
+      "title": "Mean Value Analysis",
+      "names": {
+        "zh": [
+          "均值分析",
+          "平均值分析"
+        ],
+        "nl": [
+          "gemiddelde-waardeanalyse"
+        ],
+        "de": [
+          "Mittelwertanalyse"
+        ],
+        "fr": [
+          "analyse de la valeur moyenne"
+        ],
+        "es": [
+          "análisis del valor medio"
+        ],
+        "it": [
+          "analisi del valore medio"
+        ],
+        "pl": [
+          "analiza wartości średnich"
+        ],
+        "ro": [
+          "analiza valorii medii"
+        ]
+      }
+    },
+    {
+      "title": "CONWIP",
+      "names": {
+        "zh": [
+          "恒定在制品",
+          "恆定在製品"
+        ],
+        "nl": [
+          "CONWIP-besturing"
+        ],
+        "de": [
+          "CONWIP-Steuerung"
+        ],
+        "fr": [
+          "système CONWIP"
+        ],
+        "es": [
+          "sistema CONWIP"
+        ],
+        "it": [
+          "sistema CONWIP"
+        ],
+        "pl": [
+          "system CONWIP"
+        ],
+        "ro": [
+          "sistemul CONWIP"
+        ]
+      }
     }
   ]
 }

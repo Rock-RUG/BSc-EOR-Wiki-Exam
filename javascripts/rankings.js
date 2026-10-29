@@ -42,7 +42,7 @@ try{const old22=document.getElementById("trending-style-v22-mobile-title-ellipsi
   border-top:1px solid var(--md-default-fg-color--lightest, rgba(0,0,0,.08));
   font-size:.82em; color:var(--md-default-fg-color--light, #6b7280);
 }
-.trending-board-time{ flex:1 1 auto; min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.trending-board-time{ flex:1 1 auto; min-width:0; white-space:normal; overflow-wrap:break-word; }
 .trending-board-refresh{
   flex:0 0 auto; display:inline-flex; align-items:center; gap:.35em;
   padding:.28rem .6rem; border-radius:999px; cursor:pointer;
@@ -108,18 +108,16 @@ try{const old22=document.getElementById("trending-style-v22-mobile-title-ellipsi
     display:block;
     min-width:0;
     max-width:100%;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
+    overflow-wrap:break-word;
+    white-space:normal;
   }
   .trending-course{
     grid-area:course;
     display:block;
     min-width:0;
     max-width:100%;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
+    overflow-wrap:break-word;
+    white-space:normal;
     text-align:left !important;
     justify-self:stretch;
     opacity:.72;
@@ -747,9 +745,8 @@ body[data-md-color-scheme="slate"] .mk-trending-h1-hot svg *{
   color:color-mix(in srgb, var(--md-default-fg-color) 72%, transparent);
   font-size:.84rem;
   line-height:1.35;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
+  white-space:normal;
+  overflow-wrap:break-word;
 }
 .trending-user-intro.is-empty{
   opacity:.52;
@@ -832,11 +829,10 @@ body[data-md-color-scheme="slate"] .mk-trending-h1-hot svg *{
     min-width:0;
     padding:.38rem .44rem;
     font-size:.70rem;
-    white-space:nowrap;
+    white-space:normal;
     line-height:1.12;
     text-align:center;
-    overflow:hidden;
-    text-overflow:ellipsis;
+    overflow-wrap:break-word;
   }
 }
 

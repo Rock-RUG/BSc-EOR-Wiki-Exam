@@ -508,12 +508,8 @@ function ensureStyles(){if(STATE.styleReady&&document.getElementById("mk-custom-
         font-size: .77rem;
         line-height: 1.45;
         word-break: break-word;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        line-clamp: 2;
-        max-height: calc(1em * 1.45 * 2);
+        overflow-wrap: break-word;
+        display: block;
       }
 
       /* Snippets carry inline math only; cap them at about three lines and

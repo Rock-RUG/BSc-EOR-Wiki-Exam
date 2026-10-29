@@ -301,9 +301,8 @@ function csrEnsureSortDropdownStylesOnce(){if(document.getElementById("mk-sortdr
     .mk-sortbtn__txt{ font-weight:650; opacity:.85; }
     .mk-sortbtn__val{
       font-weight:750;
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
+      white-space:normal;
+      overflow-wrap:break-word;
       max-width:min(40vw, 320px);
     }
     .mk-sortbtn[aria-expanded="true"] .mk-sortbtn__chev{ transform: rotate(180deg); }

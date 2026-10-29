@@ -377,10 +377,8 @@ function ensureStyles(){if(document.getElementById(STYLE_ID))return;const st=doc
         font-size:14.5px;
         line-height:1.28;
         font-weight:780;
-        display:-webkit-box;
-        -webkit-line-clamp:2;
-        -webkit-box-orient:vertical;
-        overflow:hidden;
+        display:block;
+        overflow-wrap:break-word;
       }
       #${POPUP_ID} .mk-chp-body{
         position:relative;

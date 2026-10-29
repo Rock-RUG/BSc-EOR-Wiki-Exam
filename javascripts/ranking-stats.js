@@ -31,7 +31,7 @@ dialog.mk-rstats::backdrop{background:rgba(8,14,30,.55)}
 .mk-rstats-legend li.is-prev::before{border-top:2px dashed var(--rs-muted)}
 .mk-rstats-rows{display:grid;gap:.35rem;margin:0;padding:0;list-style:none}
 .mk-rstats-row{display:grid;grid-template-columns:minmax(0,11rem) minmax(0,1fr) 6.4rem;gap:.6rem;align-items:center}
-.mk-rstats-name{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mk-rstats-name{min-width:0;overflow-wrap:break-word;white-space:normal}
 .mk-rstats-track{height:.6rem;border-radius:999px;background:var(--rs-soft);overflow:hidden}
 .mk-rstats-fill{display:block;height:100%;border-radius:999px;background:var(--rs-accent)}
 .mk-rstats-val{font-variant-numeric:tabular-nums;font-weight:650;white-space:nowrap;text-align:right}
