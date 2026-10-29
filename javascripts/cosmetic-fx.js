@@ -96,34 +96,33 @@ function ensureStyles(){if(document.getElementById(STYLE_ID))return;const style=
       @keyframes mk-reaction-snow{50%{filter:brightness(1.12);box-shadow:0 0 19px #bfdbfe}}
       @keyframes mk-reaction-clover{50%{transform:rotate(-1.5deg) scale(1.04);filter:saturate(1.2)}}
 
-      html[data-mk-concept-card-skin] .md-typeset .grid.cards>ul>li{position:relative;overflow:hidden;color:var(--mk-equipped-card-ink,inherit)!important;transition:transform .18s ease,box-shadow .18s ease}
+      html[data-mk-concept-card-skin] .md-typeset :is(.course-card,.ch-unit-card){position:relative;overflow:hidden;color:var(--mk-equipped-card-ink,inherit)!important;transition:box-shadow .18s ease}
       /* A purchased card owns its ink as well as its surface. Theme link rules
          otherwise put dark links on dark cards and pale links on paper cards. */
-      html[data-mk-concept-card-skin] body .md-typeset .grid.cards>ul>li :is(a,a *,strong,em,small,p){color:var(--mk-equipped-card-ink,inherit)!important}
-      html[data-mk-concept-card-skin] .md-typeset .grid.cards>ul>li:hover{transform:translateY(-3px)}
-      html[data-mk-concept-card-skin="concept_card_glass_lab"] .md-typeset .grid.cards>ul>li{background:linear-gradient(135deg,#ffffff99,#bdeeff44)!important;border-color:#8be5ff!important;box-shadow:inset 0 0 0 1px #fff8,0 12px 28px #0ea5e922!important;backdrop-filter:blur(12px)}
-      html[data-mk-concept-card-skin="concept_card_cyber_hud"] .md-typeset .grid.cards>ul>li{color:#d9ffff;background:#071c28!important;border:1px solid #22d3ee!important;box-shadow:inset 0 0 22px #06b6d422,0 0 16px #06b6d433!important}
-      html[data-mk-concept-card-skin="concept_card_study_notes"] .md-typeset .grid.cards>ul>li{background:repeating-linear-gradient(#fff9d7 0 25px,#b9d9ff 26px)!important;border-color:#e0b44c!important;box-shadow:5px 7px 0 #cf9d3b22!important;transform:rotate(-.35deg)}
-      html[data-mk-concept-card-skin="concept_card_manga_panel"] .md-typeset .grid.cards>ul>li{background:#fff!important;border:3px solid #111!important;border-radius:3px!important;box-shadow:7px 7px 0 #111!important}
-      html[data-mk-concept-card-skin="concept_card_cosmic_orbit"] .md-typeset .grid.cards>ul>li{color:#eef4ff;background:radial-gradient(circle at 80% 20%,#fff 0 1px,transparent 2px),linear-gradient(135deg,#11152e,#31155b)!important;border-color:#8b5cf6!important;box-shadow:0 0 22px #8b5cf644!important}
-      html[data-mk-concept-card-skin="concept_card_blueprint_desk"] .md-typeset .grid.cards>ul>li{color:#e0f2fe;background:linear-gradient(rgba(56,189,248,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,.13) 1px,transparent 1px),#0c4a6e!important;background-size:18px 18px!important;border:1px solid #38bdf8!important;box-shadow:inset 0 0 22px #082f4988!important}
-      html[data-mk-concept-card-skin="concept_card_forest_journal"] .md-typeset .grid.cards>ul>li{color:#29431f;background:linear-gradient(135deg,#f1f5d8,#d4e7b2)!important;border:1px solid #65a30d!important;box-shadow:inset 6px 0 #4d7c0f,4px 6px 0 #36531422!important}
-      html[data-mk-concept-card-skin="concept_card_sunset_glass"] .md-typeset .grid.cards>ul>li{color:#4c1d3d;background:linear-gradient(135deg,#fed7aa99,#f9a8d499,#c4b5fd88)!important;border:1px solid #fb7185!important;box-shadow:inset 0 1px #fff9,0 12px 26px #f9731640!important;backdrop-filter:blur(10px)}
-      html[data-mk-concept-card-skin="concept_card_retro_computer"] .md-typeset .grid.cards>ul>li{color:#86efac;background:#052e16!important;border:2px solid #22c55e!important;border-radius:4px!important;box-shadow:inset 0 0 25px #16a34a33,5px 5px 0 #14532d!important;font-family:ui-monospace,monospace}
-      html[data-mk-concept-card-skin="concept_card_minimal_ink"] .md-typeset .grid.cards>ul>li{color:#111;background:#fff!important;border:1px solid #111!important;border-radius:2px!important;box-shadow:4px 4px 0 #111!important}
+      html[data-mk-concept-card-skin] body .md-typeset :is(.course-card,.ch-unit-card) :is(a,a *,strong,em,small,p){color:var(--mk-equipped-card-ink,inherit)!important}
+      html[data-mk-concept-card-skin="concept_card_glass_lab"] .md-typeset :is(.course-card,.ch-unit-card){background:linear-gradient(135deg,#ffffff99,#bdeeff44)!important;border-color:#8be5ff!important;box-shadow:inset 0 0 0 1px #fff8,0 12px 28px #0ea5e922!important;backdrop-filter:blur(12px)}
+      html[data-mk-concept-card-skin="concept_card_cyber_hud"] .md-typeset :is(.course-card,.ch-unit-card){color:#d9ffff;background:#071c28!important;border:1px solid #22d3ee!important;box-shadow:inset 0 0 22px #06b6d422,0 0 16px #06b6d433!important}
+      html[data-mk-concept-card-skin="concept_card_study_notes"] .md-typeset :is(.course-card,.ch-unit-card){background:repeating-linear-gradient(#fff9d7 0 25px,#b9d9ff 26px)!important;border-color:#e0b44c!important;box-shadow:5px 7px 0 #cf9d3b22!important;transform:rotate(-.35deg)}
+      html[data-mk-concept-card-skin="concept_card_manga_panel"] .md-typeset :is(.course-card,.ch-unit-card){background:#fff!important;border:3px solid #111!important;border-radius:3px!important;box-shadow:7px 7px 0 #111!important}
+      html[data-mk-concept-card-skin="concept_card_cosmic_orbit"] .md-typeset :is(.course-card,.ch-unit-card){color:#eef4ff;background:radial-gradient(circle at 80% 20%,#fff 0 1px,transparent 2px),linear-gradient(135deg,#11152e,#31155b)!important;border-color:#8b5cf6!important;box-shadow:0 0 22px #8b5cf644!important}
+      html[data-mk-concept-card-skin="concept_card_blueprint_desk"] .md-typeset :is(.course-card,.ch-unit-card){color:#e0f2fe;background:linear-gradient(rgba(56,189,248,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,.13) 1px,transparent 1px),#0c4a6e!important;background-size:18px 18px!important;border:1px solid #38bdf8!important;box-shadow:inset 0 0 22px #082f4988!important}
+      html[data-mk-concept-card-skin="concept_card_forest_journal"] .md-typeset :is(.course-card,.ch-unit-card){color:#29431f;background:linear-gradient(135deg,#f1f5d8,#d4e7b2)!important;border:1px solid #65a30d!important;box-shadow:inset 6px 0 #4d7c0f,4px 6px 0 #36531422!important}
+      html[data-mk-concept-card-skin="concept_card_sunset_glass"] .md-typeset :is(.course-card,.ch-unit-card){color:#4c1d3d;background:linear-gradient(135deg,#fed7aa99,#f9a8d499,#c4b5fd88)!important;border:1px solid #fb7185!important;box-shadow:inset 0 1px #fff9,0 12px 26px #f9731640!important;backdrop-filter:blur(10px)}
+      html[data-mk-concept-card-skin="concept_card_retro_computer"] .md-typeset :is(.course-card,.ch-unit-card){color:#86efac;background:#052e16!important;border:2px solid #22c55e!important;border-radius:4px!important;box-shadow:inset 0 0 25px #16a34a33,5px 5px 0 #14532d!important;font-family:ui-monospace,monospace}
+      html[data-mk-concept-card-skin="concept_card_minimal_ink"] .md-typeset :is(.course-card,.ch-unit-card){color:#111;background:#fff!important;border:1px solid #111!important;border-radius:2px!important;box-shadow:4px 4px 0 #111!important}
 
-      html[data-mk-concept-card-skin="concept_card_glass_lab"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#173245}
-      html[data-mk-color-scheme="slate"][data-mk-concept-card-skin="concept_card_glass_lab"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#e8faff;background:linear-gradient(135deg,rgba(17,50,67,.97),rgba(17,79,94,.92))!important}
-      html[data-mk-concept-card-skin="concept_card_cyber_hud"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#d9ffff}
-      html[data-mk-concept-card-skin="concept_card_study_notes"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#253249}
-      html[data-mk-concept-card-skin="concept_card_manga_panel"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#111}
-      html[data-mk-concept-card-skin="concept_card_cosmic_orbit"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#eef4ff}
-      html[data-mk-concept-card-skin="concept_card_blueprint_desk"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#e0f2fe}
-      html[data-mk-concept-card-skin="concept_card_forest_journal"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#29431f}
-      html[data-mk-concept-card-skin="concept_card_sunset_glass"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#4c1d3d}
-      html[data-mk-color-scheme="slate"][data-mk-concept-card-skin="concept_card_sunset_glass"] .md-typeset .grid.cards>ul>li{background:linear-gradient(135deg,#fed7aa,#f9a8d4,#c4b5fd)!important}
-      html[data-mk-concept-card-skin="concept_card_retro_computer"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#86efac}
-      html[data-mk-concept-card-skin="concept_card_minimal_ink"] .md-typeset .grid.cards>ul>li{--mk-equipped-card-ink:#111}
+      html[data-mk-concept-card-skin="concept_card_glass_lab"] .md-typeset :is(.course-card,.ch-unit-card){--mk-equipped-card-ink:#173245}
+      html[data-mk-color-scheme="slate"][data-mk-concept-card-skin="concept_card_glass_lab"] .md-typeset :is(.course-card,.ch-unit-card){--mk-equipped-card-ink:#e8faff;background:linear-gradient(135deg,rgba(17,50,67,.97),rgba(17,79,94,.92))!important}
+      html[data-mk-concept-card-skin="concept_card_cyber_hud"] .md-typeset :is(.course-card,.ch-unit-card){--mk-equipped-card-ink:#d9ffff}
+      html[data-mk-concept-card-skin="concept_card_study_notes"] .md-typeset :is(.course-card,.ch-unit-card){--mk-equipped-card-ink:#253249}
+      html[data-mk-concept-card-skin="concept_card_manga_panel"] .md-typeset :is(.course-card,.ch-unit-card){--mk-equipped-card-ink:#111}
+      html[data-mk-concept-card-skin="concept_card_cosmic_orbit"] .md-typeset :is(.course-card,.ch-unit-card){--mk-equipped-card-ink:#eef4ff}
+      html[data-mk-concept-card-skin="concept_card_blueprint_desk"] .md-typeset :is(.course-card,.ch-unit-card){--mk-equipped-card-ink:#e0f2fe}
+      html[data-mk-concept-card-skin="concept_card_forest_journal"] .md-typeset :is(.course-card,.ch-unit-card){--mk-equipped-card-ink:#29431f}
+      html[data-mk-concept-card-skin="concept_card_sunset_glass"] .md-typeset :is(.course-card,.ch-unit-card){--mk-equipped-card-ink:#4c1d3d}
+      html[data-mk-color-scheme="slate"][data-mk-concept-card-skin="concept_card_sunset_glass"] .md-typeset :is(.course-card,.ch-unit-card){background:linear-gradient(135deg,#fed7aa,#f9a8d4,#c4b5fd)!important}
+      html[data-mk-concept-card-skin="concept_card_retro_computer"] .md-typeset :is(.course-card,.ch-unit-card){--mk-equipped-card-ink:#86efac}
+      html[data-mk-concept-card-skin="concept_card_minimal_ink"] .md-typeset :is(.course-card,.ch-unit-card){--mk-equipped-card-ink:#111}
 
       html[data-mk-notification-skin] .mk-notification-row{position:relative;overflow:visible!important;height:auto!important;min-height:0!important;box-sizing:border-box;border-radius:14px!important;margin:.5rem 0!important;padding:.72rem .82rem!important}
       html[data-mk-notification-skin] .mk-notification-row .mk-local-activity-main{min-width:0}
@@ -146,13 +145,6 @@ function ensureStyles(){if(document.getElementById(STYLE_ID))return;const style=
 
       .mk-shop-series-preview{position:relative;display:grid;place-items:center;min-height:4rem;margin:.32rem 0 .08rem;border:1px solid color-mix(in srgb,var(--md-default-fg-color) 12%,transparent);border-radius:14px;overflow:hidden;background:color-mix(in srgb,var(--md-default-bg-color) 94%,transparent)}
       .mk-account-shop-meta{line-height:1.25!important;white-space:normal!important}
-      .mk-shop-theme-complete-preview{display:flex;align-items:center;justify-content:space-between;gap:.35rem;flex-wrap:wrap;width:100%;box-sizing:border-box;margin:.35rem 0 .1rem;padding:.35rem .44rem;border:1px solid #ffffff8f;border-radius:9px;color:#fff;background:#132339d9;box-shadow:inset 0 1px #ffffff29}
-      .mk-shop-theme-complete-caption{flex:none;font:750 .45rem/1.15 system-ui;letter-spacing:.01em}
-      .mk-shop-theme-complete-icons{display:flex;align-items:center;gap:.13rem;flex-wrap:wrap}
-      .mk-shop-theme-complete-icon{display:grid;place-items:center;flex:none;width:1.12rem;height:1.12rem;border:1px solid #ffffffa6;border-radius:5px;background:linear-gradient(135deg,#f8fafc 0 50%,#152238 50% 100%)}
-      .mk-shop-theme-complete-icon img{display:block;width:.88rem;height:.88rem;object-fit:contain}
-      .mk-shop-theme-complete-icon.is-mastery{border-radius:999px}
-      .mk-shop-theme-complete-divider{width:1px;height:.92rem;margin-inline:.1rem;background:#ffffffa6}
       .mk-shop-series-preview:is([data-preview-kind="reaction"],[data-preview-kind="quiz"],[data-preview-kind="sound"],[data-preview-kind="bgm"]){cursor:pointer;pointer-events:auto}
       .mk-shop-series-preview strong,.mk-shop-series-preview span{position:relative;z-index:2}
       .mk-shop-preview-map-effect{display:grid;gap:.22rem;width:88%;padding:.32rem 0;text-align:center;perspective:220px}
