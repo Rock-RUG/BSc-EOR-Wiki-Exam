@@ -98,8 +98,13 @@ function ensureStyles(){if(document.getElementById(STYLE_ID))return;const style=
 
       html[data-mk-concept-card-skin] .md-typeset :is(.course-card,.ch-unit-card){position:relative;overflow:hidden;color:var(--mk-equipped-card-ink,inherit)!important;transition:box-shadow .18s ease}
       /* A purchased card owns its ink as well as its surface. Theme link rules
-         otherwise put dark links on dark cards and pale links on paper cards. */
-      html[data-mk-concept-card-skin] body .md-typeset :is(.course-card,.ch-unit-card) :is(a,a *,strong,em,small,p){color:var(--mk-equipped-card-ink,inherit)!important}
+         otherwise put dark links on dark cards and pale links on paper cards;
+         :not(#mk-ink) outranks the palette-theme link rule (0,4,2). */
+      html[data-mk-concept-card-skin] body .md-typeset :is(.course-card,.ch-unit-card) :is(a,a *,strong,em,small,p):not(#mk-ink){color:var(--mk-equipped-card-ink,inherit)!important}
+      /* Course-home rows take title, number, count and chip colours from the
+         --ch-* tokens of the page theme. Re-point them at the skin's ink, or a
+         paper skin on a dark theme keeps pale titles (Manga Panel on Halloween). */
+      html[data-mk-concept-card-skin] .md-typeset .ch-unit-card{--ch-ink:var(--mk-equipped-card-ink);--ch-seed:var(--mk-equipped-card-ink);--ch-muted:color-mix(in srgb,var(--mk-equipped-card-ink) 88%,transparent);--ch-surface:transparent;--ch-soft:color-mix(in srgb,var(--mk-equipped-card-ink) 8%,transparent);--ch-line:color-mix(in srgb,var(--mk-equipped-card-ink) 30%,transparent)}
       html[data-mk-concept-card-skin="concept_card_glass_lab"] .md-typeset :is(.course-card,.ch-unit-card){background:linear-gradient(135deg,#ffffff99,#bdeeff44)!important;border-color:#8be5ff!important;box-shadow:inset 0 0 0 1px #fff8,0 12px 28px #0ea5e922!important;backdrop-filter:blur(12px)}
       html[data-mk-concept-card-skin="concept_card_cyber_hud"] .md-typeset :is(.course-card,.ch-unit-card){color:#d9ffff;background:#071c28!important;border:1px solid #22d3ee!important;box-shadow:inset 0 0 22px #06b6d422,0 0 16px #06b6d433!important}
       html[data-mk-concept-card-skin="concept_card_study_notes"] .md-typeset :is(.course-card,.ch-unit-card){background:repeating-linear-gradient(#fff9d7 0 25px,#b9d9ff 26px)!important;border-color:#e0b44c!important;box-shadow:5px 7px 0 #cf9d3b22!important;transform:rotate(-.35deg)}
