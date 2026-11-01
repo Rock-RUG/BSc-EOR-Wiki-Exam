@@ -80,7 +80,7 @@ function ensureStyles(){if(document.getElementById(IDS.style))return;const st=do
   align-items:center;
   min-width:0;
   height:100%;
-  gap:.12rem;
+  gap:.3rem;
 }
 #${IDS.shell} .mk-rt-left{
   flex:0 1 auto;
@@ -256,11 +256,12 @@ html:is(.mk-rt-search-active, :has(.md-header input[data-md-component="search-qu
 }
 .mk-rt-badge[hidden]{ display:none !important; }
 #${IDS.shell} .mk-rt-trigger{ position:relative; }
-#${IDS.shell} .mk-rt-trigger .mk-rt-label{ position:relative; display:inline-flex; align-items:center; }
+#${IDS.shell} .mk-rt-trigger .mk-rt-label{ display:inline-flex; align-items:center; }
+/* On the face's top-right corner, clear of the label. */
 #${IDS.shell} .mk-rt-trigger .mk-rt-label .mk-rt-badge{
   position:absolute;
-  right:-.62rem;
-  top:-.58rem;
+  right:0;
+  top:0;
   border:1px solid var(--md-primary-fg-color);
   border:1px solid color-mix(in srgb, var(--md-primary-fg-color) 68%, transparent);
   margin-left:0;
@@ -505,29 +506,25 @@ html[data-mk-dropdown-skin="dropdown_glass"] #year-dropdown-panel.md-random-drop
   }
 }
 @media (max-width: 720px){
+  /* Each tab wears a button face (wiki-interactions.css): the label keeps
+     clear of its edge and the faces keep apart, scaled to the screen width. */
   #${IDS.shell}{
     font-size:.72rem;
-    padding-left:1.05rem;
-    padding-right:1.05rem;
+    padding-inline:clamp(.3rem, 2vw, 1.05rem);
   }
   #${IDS.shell} .mk-rt-left,
   #${IDS.shell} .mk-rt-right{
-    gap:0;
+    gap:clamp(.2rem, 1.5vw, .4rem);
   }
   #${IDS.shell} a.mk-rt-link,
   #${IDS.shell} button.mk-rt-trigger{
-    padding:0 .38rem;
+    padding:0 clamp(.25rem, 1.9vw, .56rem);
+    gap:.14rem;
     min-height:2.25rem;
     letter-spacing:0;
   }
-  #${IDS.shell} .mk-rt-left > .mk-rt-link:first-child{
-    padding-left:0;
-  }
-  #${IDS.shell} .mk-rt-right > :last-child{
-    padding-right:0;
-  }
   #${IDS.shell} .mk-rt-spacer{
-    min-width:.28rem;
+    min-width:clamp(.2rem, 1.5vw, .4rem);
   }
 
   /* Touch devices can keep :hover/:focus after the first tap. Keep closed
@@ -712,13 +709,7 @@ html[data-mk-dropdown-skin="dropdown_glass"] #year-dropdown-panel.md-random-drop
  }
 @media (max-width: 430px){
   #${IDS.shell}{
-    font-size:.68rem;
-    padding-left:.96rem;
-    padding-right:.96rem;
-  }
-  #${IDS.shell} a.mk-rt-link,
-  #${IDS.shell} button.mk-rt-trigger{
-    padding:0 .30rem;
+    font-size:min(.68rem, 3.5vw);
   }
 }
     `.trim();(document.head||document.documentElement).appendChild(st);}
