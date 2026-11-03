@@ -78,17 +78,6 @@
   if(saved&&saved.color&&saved.color.scheme==="slate")document.documentElement.setAttribute("data-mk-boot-scheme","slate");
 }catch(_){}})();
 </script>
-<script id="mk-complete-css-gate">
-(function(){
-  var root=document.documentElement,on={main:false,profile:false};
-  function links(kind){return document.querySelectorAll('link[rel~="stylesheet"][href*="stylesheets/theme-complete'+(kind==="profile"?"-profile":"")+'.css"]');}
-  function set(kind,active){on[kind]=on[kind]||!!active;var media=on[kind]?"all":"not all",list=links(kind);for(var i=0;i<list.length;i++){if(list[i].media!==media)list[i].media=media;}}
-  function sync(){var profile=root.getAttribute("data-mk-public-profile-theme-edition")==="complete";set("main",profile||root.getAttribute("data-mk-theme-edition")==="complete");set("profile",profile);}
-  window.MkCompleteThemeCss={activate:function(kind){set("main",true);if(kind==="profile")set("profile",true);},sync:sync};
-  sync();
-  try{new MutationObserver(sync).observe(root,{attributes:true,attributeFilter:["data-mk-theme-edition","data-mk-public-profile-theme-edition"]});}catch(_){}
-})();
-</script>
 <script id="mk-deferred-css-gate">
 (function(){
   var root=document.documentElement,on=Object.create(null);
@@ -208,9 +197,9 @@
   
   try{var u="assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="javascripts/sidebar-core.js?h=79da149bfbfe";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="javascripts/sidebar-core.js?h=05df91e02055";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="javascripts/sidebar.js?h=79da149bfbfe";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="javascripts/sidebar.js?h=05df91e02055";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
