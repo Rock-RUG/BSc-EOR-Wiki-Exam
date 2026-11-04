@@ -126,33 +126,21 @@ function ensureStyles(){if(document.getElementById(IDS.style))return;const st=do
   -webkit-tap-highlight-color:transparent;
   transition:color 125ms ease, opacity 125ms ease;
 }
-/* Hover is a state layer from wiki-interactions.css. These states used to
-   switch to the accent ink, which themes set to a dark brand colour: about
-   1.8:1 on Forest's photo header and dark blue on Sky's blue one (the Year
-   panel opens on hover, so every reader met it). They keep the tab's own ink
-   and mark the state with an underline in that ink instead. */
-:where(html[data-mk-header-skin], html[data-mk-interface-theme]) #${IDS.shell} a.mk-rt-link:hover,
-#${IDS.shell} a.mk-rt-link:focus-visible,
-:where(html[data-mk-header-skin], html[data-mk-interface-theme]) #${IDS.shell} button.mk-rt-trigger:hover,
-#${IDS.shell} button.mk-rt-trigger:focus-visible,
-#${IDS.shell} button.mk-rt-trigger[aria-expanded="true"]{
+/* Hover, focus and the open menu tint the tab's button face (state layer in
+   wiki-interactions.css) and keep the tab's own ink: the accent ink measured
+   1.8:1 on Forest's photo header. Tabs are buttons, so they never take an
+   underline; underlines mark links (Rock, 2026-11-04). */
+#${IDS.shell} :is(a.mk-rt-link,button.mk-rt-trigger):is(:hover,:focus-visible,[aria-expanded="true"]){
   opacity:1;
-  text-decoration:underline 2px currentColor !important;
-  text-underline-offset:.4em;
+  text-decoration:none !important;
   background:transparent !important;
   box-shadow:none !important;
 }
 /* Theme headers choose their own ink (white at .96 or a dark ink on paper
-   headers); the .86 white above measured 4.0:1 on Sky and 4.2:1 on Sage. A
-   white state layer would lighten those mid-tone headers further, so themed
-   headers use only the underline. */
+   headers); the label sits on the tab's opaque face. */
 :where(html[data-mk-interface-theme]) #${IDS.shell} a.mk-rt-link,
 :where(html[data-mk-interface-theme]) #${IDS.shell} button.mk-rt-trigger{
   color:inherit;
-}
-:where(html[data-mk-interface-theme]) #${IDS.shell} a.mk-rt-link::before,
-:where(html[data-mk-interface-theme]) #${IDS.shell} button.mk-rt-trigger::before{
-  display:none !important;
 }
 #${IDS.shell} a.mk-rt-link.mk-rt-active,
 #${IDS.shell} button.mk-rt-trigger.mk-rt-active{
@@ -527,18 +515,12 @@ html[data-mk-dropdown-skin="dropdown_glass"] #year-dropdown-panel.md-random-drop
     min-width:clamp(.2rem, 1.5vw, .4rem);
   }
 
-  /* Touch devices can keep :hover/:focus after the first tap. Keep closed
-     dropdown tabs plain; only the open panel is underlined. */
-  #${IDS.shell} button.mk-rt-trigger:hover,
-  #${IDS.shell} button.mk-rt-trigger:focus,
-  #${IDS.shell} button.mk-rt-trigger:focus-visible{
-    text-decoration:none !important;
+  /* Touch devices can keep :hover/:focus after the first tap: closed
+     dropdown tabs stay plain; the open one keeps its tinted face. */
+  #${IDS.shell} button.mk-rt-trigger:is(:hover,:focus,:focus-visible){
     background:transparent !important;
     box-shadow:none !important;
     outline:0 !important;
-  }
-  #${IDS.shell} button.mk-rt-trigger[aria-expanded="true"]{
-    text-decoration:underline 2px currentColor !important;
   }
   .mk-rt-panel{
     font-size:.74rem;
