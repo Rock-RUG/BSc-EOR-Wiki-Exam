@@ -26,14 +26,14 @@
 <link href="../stylesheets/wiki-community.css?h=4a806446e116" rel="stylesheet"/>
 <link href="../stylesheets/wiki-maps.css?h=fb76700163c4" rel="stylesheet" media="not all" data-mk-css-gate="maps"/>
 <link href="../stylesheets/wiki-mastery-manager.css?h=b3d804f7ca81" rel="stylesheet" media="not all" data-mk-css-gate="manager"/>
-<link href="../stylesheets/course-home.css?h=b35bd2660d1b" rel="stylesheet"/>
+<link href="../stylesheets/course-home.css?h=a09467063de9" rel="stylesheet"/>
 <link href="../stylesheets/wiki-guides.css?h=56a1c89af607" rel="stylesheet"/>
 <link href="../stylesheets/wiki-explain.css?h=0d0e09c957bc" rel="stylesheet"/>
 <link href="../stylesheets/search-history.css?h=49d97aadf6c0" rel="stylesheet"/>
 <link href="../stylesheets/theme-search-motion.css?h=f1aca18760d0" rel="stylesheet" media="not all" data-mk-css-gate="theme"/>
 <link href="../stylesheets/wiki-boxes.css?h=d0fdf80e5f31" rel="stylesheet"/>
 <link href="../stylesheets/site-motion.css?h=c01d99c8ba21" rel="stylesheet" media="not all" data-mk-css-gate="motion"/>
-<link href="../stylesheets/wiki-interactions.css?h=b3963f1a36bc" rel="stylesheet"/>
+<link href="../stylesheets/wiki-interactions.css?h=fbc0f17ebcdb" rel="stylesheet"/>
 <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <style id="mk-mobile-fixed-chrome-early">
 @media (max-width: 900px), (pointer: coarse){
@@ -217,9 +217,9 @@
   
   try{var u="../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../javascripts/sidebar-core.js?h=94979d329de5";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../javascripts/sidebar-core.js?h=c682edb5088f";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../javascripts/sidebar.js?h=94979d329de5";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../javascripts/sidebar.js?h=c682edb5088f";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -953,56 +953,53 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <!-- year-facts:end -->
 </div>
 </div>
+<!-- year-map:begin -->
 <section aria-labelledby="year-map-title" class="year-map">
 <h2 id="year-map-title">How the courses connect</h2>
-<p class="year-map__note">Four lines run through the year. Each line shows its parts in order and what they build on from Years 1 and 2.</p>
-<div class="year-lanes year-lanes--3">
-<div aria-hidden="true" class="year-lanes__head"><span>Semester 1</span><span>Block 2a</span><span>Block 2b</span></div>
+<p class="year-map__note">Read each line from left to right: one subject, block by block.</p>
+<div class="year-map__grid year-map__grid--n5">
+<div aria-hidden="true" class="year-map__head"><span></span><span class="year-map__label--side">Builds on</span><span>Semester 1</span><span>Block 2a</span><span>Block 2b</span></div>
 <div class="year-lane">
 <p class="year-lane__name">Your choices</p>
-<ol class="year-lane__steps">
-<li class="year-lane__step year-lane__step--c1" data-block="Semester 1"><a href="Semester-1-Minor/index.html">Minor and study abroad</a> </li>
-<li class="year-lane__step year-lane__step--c3" data-block="2b"><a href="2b-Elective-BSc-EOR/index.html">Elective BSc EOR</a> </li>
-</ol>
-<p class="year-lane__next"><strong>Note:</strong> the EOR minor is recommended if you plan the MSc Econometrics, Operations Research &amp; Actuarial Studies or a similar programme. Without the EOR minor, you may take one of its courses as your elective.</p>
+<span aria-hidden="true" class="year-lane__track year-lane__track--f3 year-lane__track--t5"></span>
+<div class="year-lane__cell year-lane__cell--c3" data-col="Semester 1"><a class="year-chip" href="Semester-1-Minor/index.html">Minor or study abroad</a></div>
+<div class="year-lane__cell year-lane__cell--c5" data-col="Block 2b"><a class="year-chip" href="2b-Elective-BSc-EOR/index.html">Elective</a></div>
 </div>
 <div class="year-lane">
 <p class="year-lane__name">Quantitative methods</p>
-<ol class="year-lane__steps">
-<li class="year-lane__step year-lane__step--c2" data-block="2a"><a href="2a-Numerical-Methods-for-EOR/index.html">Numerical Methods for EOR</a><a href="2a-Stochastic-Models/index.html">Stochastic Models</a> </li>
-</ol>
-<p class="year-lane__next"><strong>Builds on:</strong> Numerical Methods expects <a href="../Year-1/1b-Programming-for-EOR/index.html">Programming for EOR</a> and <a href="../Year-2/1a-Statistical-Inference/index.html">Statistical Inference</a>. The Stochastic Models notes here use <a href="../Year-1/1b-Math-II-Linear-Algebra/index.html">Math II</a> and <a href="../Year-1/1b-Probability-Theory-for-EOR/index.html">Probability Theory</a>.</p>
+<span aria-hidden="true" class="year-lane__track year-lane__track--f2 year-lane__track--t4"></span>
+<div class="year-lane__cell year-lane__cell--c2" data-col="Builds on"><a class="year-chip year-chip--side" href="../Year-1/1b-Programming-for-EOR/index.html">Programming</a><a class="year-chip year-chip--side" href="../Year-1/1b-Probability-Theory-for-EOR/index.html">Probability Theory</a><a class="year-chip year-chip--side" href="../Year-2/1a-Statistical-Inference/index.html">Statistical Inference</a></div>
+<div class="year-lane__cell year-lane__cell--c4" data-col="Block 2a"><a class="year-chip" href="2a-Numerical-Methods-for-EOR/index.html">Numerical Methods</a><a class="year-chip" href="2a-Stochastic-Models/index.html">Stochastic Models</a></div>
 </div>
 <div class="year-lane">
 <p class="year-lane__name">Economics</p>
-<ol class="year-lane__steps">
-<li class="year-lane__step year-lane__step--c3" data-block="2b"><a href="2b-Games-Competition-and-Markets/index.html">Games, Competition and Markets</a> </li>
-</ol>
-<p class="year-lane__next"><strong>Builds on:</strong> <a href="../Year-2/2b-Game-Theory/index.html">Game Theory</a> (Year 2). If you already passed Introduction to Mathematical Economics, the programme has you take Game Theory instead.</p>
+<span aria-hidden="true" class="year-lane__track year-lane__track--f2 year-lane__track--t5"></span>
+<div class="year-lane__cell year-lane__cell--c2" data-col="Builds on"><a class="year-chip year-chip--side" href="../Year-2/2b-Game-Theory/index.html">Game Theory</a></div>
+<div class="year-lane__cell year-lane__cell--c5" data-col="Block 2b"><a class="year-chip" href="2b-Games-Competition-and-Markets/index.html">Games, Competition and Markets</a></div>
 </div>
 <div class="year-lane">
 <p class="year-lane__name">Research</p>
-<ol class="year-lane__steps">
-<li class="year-lane__step year-lane__step--c2 year-lane__step--span2" data-block="Semester 2"><a href="Bachelor-Thesis-EOR/index.html">Bachelor’s Thesis EOR</a> </li>
-</ol>
-<p class="year-lane__next"><strong>Builds on:</strong> the whole programme. You need at least 120 ECTS, including all of Year 1; the thesis may also be taken in semester 1.</p>
+<span aria-hidden="true" class="year-lane__track year-lane__track--f2 year-lane__track--t5"></span>
+<div class="year-lane__cell year-lane__cell--c2" data-col="Builds on"><a class="year-chip year-chip--side" href="../Year-2/index.html">Year 1 and 2</a></div>
+<div class="year-lane__cell year-lane__cell--c4 year-lane__cell--w2" data-col="Block 2a–Block 2b"><a class="year-chip" href="Bachelor-Thesis-EOR/index.html">Bachelor’s Thesis</a></div>
 </div>
 </div>
-<p class="year-map__source">Links between courses follow the <a href="https://ocasys.rug.nl/2026-2027/catalog/programme/56833" rel="noopener">2026–2027 programme and course catalogue</a>. Check it and your course learning environment for current entry requirements, assessment and planning.</p>
+<p class="year-map__source">Based on the entry requirements in the <a href="https://ocasys.rug.nl/2026-2027/catalog/programme/56833" rel="noopener">2026–2027 course catalogue</a>. Key terms of courses without notes come from the same catalogue.</p>
 </section>
+<!-- year-map:end -->
 <!-- year-courses:begin -->
 <section class="year-block year-block--1a">
 <div class="year-block__inner">
 <h2 id="semester-1">Semester 1<a class="headerlink" href="#semester-1" title="Permanent link">¶</a></h2>
 <div class="year-course-grid">
 <div class="course-row">
-<div class="course-card course-card--title">
+<div class="course-card course-card--tile">
+<div class="course-card__title">
 <p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 14c-3.36 0-4.46 1.35-4.82 2.24C9.25 16.7 10 17.76 10 19a3 3 0 0 1-3 3 3 3 0 0 1-3-3c0-1.31.83-2.42 2-2.83V7.83A2.99 2.99 0 0 1 4 5a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.31-.83 2.42-2 2.83v5.29c.88-.65 2.16-1.12 4-1.12 2.67 0 3.56-1.34 3.85-2.23A3.01 3.01 0 0 1 14 7a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.34-.88 2.5-2.09 2.86C17.65 11.29 16.68 14 13 14m-6 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"></path></svg></span> <a href="Semester-1-Minor/index.html"><strong>Minor and Study Abroad</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">Choose one approved 30 ECTS minor route, or study abroad with the programme coordinator's approval.</p>
-<p class="course-terms"><span class="topic-pill topic-pill--plain">EOR minor</span><span class="topic-pill topic-pill--plain">E&amp;BE minor</span><span class="topic-pill topic-pill--plain">Innovation &amp; Entrepreneurship</span><span class="topic-pill topic-pill--plain">Study abroad</span><span class="topic-pill topic-pill--plain">University minor</span></p>
-<p class="course-status course-status--empty">Programme options and conditions · no notes</p>
+<p class="course-card__meta"><span class="course-status course-status--empty">Programme options</span></p>
+<p class="course-about">A 30 ECTS minor route, or study abroad with the coordinator's approval.</p>
+<p class="course-terms" title="Topics from the course catalogue"><span class="topic-pill topic-pill--plain">EOR minor</span><span class="topic-pill topic-pill--plain">E&amp;BE minor</span><span class="topic-pill topic-pill--plain">Innovation &amp; Entrepreneurship</span><span class="topic-pill topic-pill--plain">Study abroad</span><span class="topic-pill topic-pill--plain">University minor</span></p>
 </div>
 </div>
 </div>
@@ -1013,23 +1010,23 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <h2 id="block-2a">Block 2a<a class="headerlink" href="#block-2a" title="Permanent link">¶</a></h2>
 <div class="year-course-grid">
 <div class="course-row">
-<div class="course-card course-card--title">
+<div class="course-card course-card--tile">
+<div class="course-card__title">
 <p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"></path></svg></span> <a href="2a-Numerical-Methods-for-EOR/index.html"><strong>Numerical Methods for EOR</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">Numerical methods in R for organizing data, optimizing functions and simulating uncertainty.</p>
-<p class="course-terms"><span class="topic-pill topic-pill--plain">Organizing data</span><span class="topic-pill topic-pill--plain">Numerical optimization</span><span class="topic-pill topic-pill--plain">Log-likelihood functions</span><span class="topic-pill topic-pill--plain">Simulation</span><span class="topic-pill topic-pill--plain">Bootstrap</span></p>
-<p class="course-status course-status--empty">Not written yet · topics from the course catalogue</p>
+<p class="course-card__meta"><span class="course-status course-status--empty">Not written yet</span></p>
+<p class="course-about">Numerical methods in R: data, optimization and simulation.</p>
+<p class="course-terms" title="Topics from the course catalogue"><span class="topic-pill topic-pill--plain">Organizing data</span><span class="topic-pill topic-pill--plain">Numerical optimization</span><span class="topic-pill topic-pill--plain">Log-likelihood functions</span><span class="topic-pill topic-pill--plain">Simulation</span><span class="topic-pill topic-pill--plain">Bootstrap</span></p>
 </div>
 </div>
 <div class="course-row">
-<div class="course-card course-card--title">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.78 3h-8.56C10.55 3 10 3.55 10 4.22V8h6v6h3.78c.67 0 1.22-.55 1.22-1.22V4.22C21 3.55 20.45 3 19.78 3m-7.34 3.67a1.23 1.23 0 1 1 0-2.46 1.23 1.23 0 0 1 1.23 1.23c0 .68-.55 1.23-1.23 1.23m6.12 6.11a1.23 1.23 0 1 1-.02-2.46c.68-.01 1.23.54 1.24 1.24-.01.67-.55 1.21-1.22 1.22m0-6.11a1.23 1.23 0 1 1-.02-2.46 1.231 1.231 0 0 1 .02 2.46M4.22 10h8.56A1.22 1.22 0 0 1 14 11.22v8.56c0 .67-.55 1.22-1.22 1.22H4.22C3.55 21 3 20.45 3 19.78v-8.56c0-.67.55-1.22 1.22-1.22m4.28 4.28c-.67 0-1.22.55-1.22 1.22s.55 1.22 1.22 1.22 1.22-.55 1.22-1.22a1.22 1.22 0 0 0-1.22-1.22m-3.06-3.06c-.67 0-1.22.55-1.22 1.22a1.22 1.22 0 0 0 1.22 1.22c.67 0 1.22-.55 1.22-1.22s-.55-1.22-1.22-1.22m6.11 6.11c-.67 0-1.22.55-1.22 1.22s.55 1.22 1.22 1.22a1.22 1.22 0 0 0 1.22-1.22c0-.67-.54-1.21-1.21-1.22z"></path></svg></span> <a href="2a-Stochastic-Models/index.html"><strong>Stochastic Models</strong></a><span class="course-code">SM</span></p>
+<div class="course-card course-card--tile">
+<div class="course-card__title">
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.78 3h-8.56C10.55 3 10 3.55 10 4.22V8h6v6h3.78c.67 0 1.22-.55 1.22-1.22V4.22C21 3.55 20.45 3 19.78 3m-7.34 3.67a1.23 1.23 0 1 1 0-2.46 1.23 1.23 0 0 1 1.23 1.23c0 .68-.55 1.23-1.23 1.23m6.12 6.11a1.23 1.23 0 1 1-.02-2.46c.68-.01 1.23.54 1.24 1.24-.01.67-.55 1.21-1.22 1.22m0-6.11a1.23 1.23 0 1 1-.02-2.46 1.231 1.231 0 0 1 .02 2.46M4.22 10h8.56A1.22 1.22 0 0 1 14 11.22v8.56c0 .67-.55 1.22-1.22 1.22H4.22C3.55 21 3 20.45 3 19.78v-8.56c0-.67.55-1.22 1.22-1.22m4.28 4.28c-.67 0-1.22.55-1.22 1.22s.55 1.22 1.22 1.22 1.22-.55 1.22-1.22a1.22 1.22 0 0 0-1.22-1.22m-3.06-3.06c-.67 0-1.22.55-1.22 1.22a1.22 1.22 0 0 0 1.22 1.22c.67 0 1.22-.55 1.22-1.22s-.55-1.22-1.22-1.22m6.11 6.11c-.67 0-1.22.55-1.22 1.22s.55 1.22 1.22 1.22a1.22 1.22 0 0 0 1.22-1.22c0-.67-.54-1.21-1.21-1.22z"></path></svg></span> <a href="2a-Stochastic-Models/index.html"><strong>Stochastic Models</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">Standard stochastic models, from Markov chains in discrete and continuous time to renewal theory and reliability.</p>
+<p class="course-card__meta"><span class="course-code">SM</span><span class="course-status">Partial notes</span></p>
+<p class="course-about">Markov chains in discrete and continuous time, renewal theory, reliability.</p>
 <p class="course-terms"><a class="topic-pill" href="2a-Stochastic-Models/markov-chain.html">Markov chain</a><a class="topic-pill" href="2a-Stochastic-Models/stationary-distribution.html">Stationary distribution</a><a class="topic-pill" href="2a-Stochastic-Models/irreducibility.html">Irreducibility</a><a class="topic-pill" href="2a-Stochastic-Models/aperiodicity.html">Aperiodicity</a><span class="topic-pill topic-pill--plain">Continuous-time Markov chains</span><span class="topic-pill topic-pill--plain">Renewal theory</span></p>
-<p class="course-status">Partial notes on the wiki · Markov-chain foundations</p>
 </div>
 </div>
 </div>
@@ -1040,23 +1037,23 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <h2 id="block-2b">Block 2b<a class="headerlink" href="#block-2b" title="Permanent link">¶</a></h2>
 <div class="year-course-grid">
 <div class="course-row">
-<div class="course-card course-card--title">
+<div class="course-card course-card--tile">
+<div class="course-card__title">
 <p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"></path></svg></span> <a href="2b-Games-Competition-and-Markets/index.html"><strong>Games, Competition and Markets</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">Game theory applied to competition between firms, a central topic of industrial organization.</p>
-<p class="course-terms"><span class="topic-pill topic-pill--plain">Price discrimination</span><span class="topic-pill topic-pill--plain">Search costs</span><span class="topic-pill topic-pill--plain">Switching costs</span><span class="topic-pill topic-pill--plain">Advertising</span><span class="topic-pill topic-pill--plain">Platforms</span></p>
-<p class="course-status course-status--empty">Not written yet · topics from the course catalogue</p>
+<p class="course-card__meta"><span class="course-status course-status--empty">Not written yet</span></p>
+<p class="course-about">Game theory applied to competition between firms.</p>
+<p class="course-terms" title="Topics from the course catalogue"><span class="topic-pill topic-pill--plain">Price discrimination</span><span class="topic-pill topic-pill--plain">Search costs</span><span class="topic-pill topic-pill--plain">Switching costs</span><span class="topic-pill topic-pill--plain">Advertising</span><span class="topic-pill topic-pill--plain">Platforms</span></p>
 </div>
 </div>
 <div class="course-row">
-<div class="course-card course-card--title">
+<div class="course-card course-card--tile">
+<div class="course-card__title">
 <p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 3c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 2h14v14H5zm2 2v2h10V7zm0 4v2h10v-2zm0 4v2h7v-2z"></path></svg></span> <a href="2b-Elective-BSc-EOR/index.html"><strong>Elective BSc EOR</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">One 5 ECTS elective from the official list, or a course from the EOR minor.</p>
-<p class="course-terms"><span class="topic-pill topic-pill--plain">Economics</span><span class="topic-pill topic-pill--plain">Finance</span><span class="topic-pill topic-pill--plain">Mathematics</span><span class="topic-pill topic-pill--plain">Programming</span><span class="topic-pill topic-pill--plain">Business and management</span></p>
-<p class="course-status course-status--empty">Official elective list · no notes</p>
+<p class="course-card__meta"><span class="course-status course-status--empty">Elective list</span></p>
+<p class="course-about">One 5 ECTS elective from the official list or the EOR minor.</p>
+<p class="course-terms" title="Topics from the course catalogue"><span class="topic-pill topic-pill--plain">Economics</span><span class="topic-pill topic-pill--plain">Finance</span><span class="topic-pill topic-pill--plain">Mathematics</span><span class="topic-pill topic-pill--plain">Programming</span><span class="topic-pill topic-pill--plain">Business and management</span></p>
 </div>
 </div>
 </div>
@@ -1067,13 +1064,13 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <h2 id="across-semester-2">Across semester 2<a class="headerlink" href="#across-semester-2" title="Permanent link">¶</a></h2>
 <div class="year-course-grid">
 <div class="course-row">
-<div class="course-card course-card--title">
+<div class="course-card course-card--tile">
+<div class="course-card__title">
 <p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.06 9 .94.94L5.92 19H5v-.92zm3.6-6c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29m-3.6 3.19L3 17.25V21h3.75L17.81 9.94z"></path></svg></span> <a href="Bachelor-Thesis-EOR/index.html"><strong>Bachelor's Thesis EOR</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">An individual scientific report on a supervised research project, with a topic from the programme's list.</p>
-<p class="course-terms"><span class="topic-pill topic-pill--plain">Research question</span><span class="topic-pill topic-pill--plain">Supervised project</span><span class="topic-pill topic-pill--plain">Scientific report</span><span class="topic-pill topic-pill--plain">Topic list</span></p>
-<p class="course-status course-status--empty">Not written yet · topics from the course catalogue</p>
+<p class="course-card__meta"><span class="course-status course-status--empty">Not written yet</span></p>
+<p class="course-about">An individual research report on a supervised project.</p>
+<p class="course-terms" title="Topics from the course catalogue"><span class="topic-pill topic-pill--plain">Research question</span><span class="topic-pill topic-pill--plain">Supervised project</span><span class="topic-pill topic-pill--plain">Scientific report</span><span class="topic-pill topic-pill--plain">Topic list</span></p>
 </div>
 </div>
 </div>
@@ -1117,7 +1114,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../javascripts/exam-mode.js?h=09b295110531"></script>
 <script src="../javascripts/perf-probe.js?h=ea289ef426e5"></script>
 <script src="../javascripts/wiki-explain.js?h=70b31a1e6108"></script>
-<script src="../javascripts/startup-preferences.js?h=94979d329de5"></script>
+<script src="../javascripts/startup-preferences.js?h=c682edb5088f"></script>
 <script src="../javascripts/style-shortcuts.js?h=1f1d27bbf857"></script>
 <script src="../javascripts/ui-guard.js?h=6e5cf15727d0"></script>
 <script src="../javascripts/concept-title-fit.js?h=8a4406302178"></script>
@@ -1133,13 +1130,13 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../javascripts/mathjax.js?h=06875c0b69ec"></script>
 <script src="../javascripts/preload-guard.js?h=6850e005c3a1"></script>
 <script src="../javascripts/random.js?h=10f974c5fe5c"></script>
-<script src="../javascripts/random-tabs.js?h=e5dde7e165c2"></script>
+<script src="../javascripts/random-tabs.js?h=d2336cc0bdc3"></script>
 <script src="../javascripts/search-enter.js?h=25c7c2d382da"></script>
 <script src="../javascripts/concept-fold.js?h=6399c42db2c6"></script>
 <script src="../javascripts/tag-search-links.js?h=84cb5c2dd87f"></script>
 <script src="../javascripts/logo-lightbox.js?h=d3da5cd41eeb"></script>
 <script src="../javascripts/figure-source.js?h=634defb48599"></script>
-<script src="../javascripts/wiki-guide-pages.js?h=4fa11f3ec3b3"></script>
+<script src="../javascripts/wiki-guide-pages.js?h=7160038aaa3a"></script>
 <script src="../javascripts/wiki-guide-account.js?h=a6792ec9d296"></script>
 <script src="../javascripts/wiki-guides.js?h=7cd9d96cb254"></script>
 <script src="../javascripts/wiki-explain-content.js?h=bbb58a1ad451"></script>

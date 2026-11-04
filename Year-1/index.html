@@ -26,14 +26,14 @@
 <link href="../stylesheets/wiki-community.css?h=4a806446e116" rel="stylesheet"/>
 <link href="../stylesheets/wiki-maps.css?h=fb76700163c4" rel="stylesheet" media="not all" data-mk-css-gate="maps"/>
 <link href="../stylesheets/wiki-mastery-manager.css?h=b3d804f7ca81" rel="stylesheet" media="not all" data-mk-css-gate="manager"/>
-<link href="../stylesheets/course-home.css?h=b35bd2660d1b" rel="stylesheet"/>
+<link href="../stylesheets/course-home.css?h=a09467063de9" rel="stylesheet"/>
 <link href="../stylesheets/wiki-guides.css?h=56a1c89af607" rel="stylesheet"/>
 <link href="../stylesheets/wiki-explain.css?h=0d0e09c957bc" rel="stylesheet"/>
 <link href="../stylesheets/search-history.css?h=49d97aadf6c0" rel="stylesheet"/>
 <link href="../stylesheets/theme-search-motion.css?h=f1aca18760d0" rel="stylesheet" media="not all" data-mk-css-gate="theme"/>
 <link href="../stylesheets/wiki-boxes.css?h=d0fdf80e5f31" rel="stylesheet"/>
 <link href="../stylesheets/site-motion.css?h=c01d99c8ba21" rel="stylesheet" media="not all" data-mk-css-gate="motion"/>
-<link href="../stylesheets/wiki-interactions.css?h=b3963f1a36bc" rel="stylesheet"/>
+<link href="../stylesheets/wiki-interactions.css?h=fbc0f17ebcdb" rel="stylesheet"/>
 <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <style id="mk-mobile-fixed-chrome-early">
 @media (max-width: 900px), (pointer: coarse){
@@ -217,9 +217,9 @@
   
   try{var u="../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../javascripts/sidebar-core.js?h=94979d329de5";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../javascripts/sidebar-core.js?h=c682edb5088f";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../javascripts/sidebar.js?h=94979d329de5";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../javascripts/sidebar.js?h=c682edb5088f";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -1031,87 +1031,84 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <!-- year-facts:end -->
 </div>
 </div>
+<!-- year-map:begin -->
 <section aria-labelledby="year-map-title" class="year-map">
 <h2 id="year-map-title">How the courses connect</h2>
-<p class="year-map__note">Five lines run through the year. Each line shows its courses in block order and what they prepare you for.</p>
-<div class="year-lanes">
-<div aria-hidden="true" class="year-lanes__head"><span>Block 1a</span><span>Block 1b</span><span>Block 2a</span><span>Block 2b</span></div>
+<p class="year-map__note">Read each line from left to right: one subject, block by block.</p>
+<div class="year-map__grid year-map__grid--n6">
+<div aria-hidden="true" class="year-map__head"><span></span><span>Block 1a</span><span>Block 1b</span><span>Block 2a</span><span>Block 2b</span><span class="year-map__label--side">Leads to</span></div>
 <div class="year-lane">
 <p class="year-lane__name">Mathematics</p>
-<ol class="year-lane__steps">
-<li class="year-lane__step year-lane__step--c1" data-block="1a"><a href="1a-Math-I-Calculus/index.html">Math I: Calculus</a> </li>
-<li class="year-lane__step year-lane__step--c2" data-block="1b"><a href="1b-Math-II-Linear-Algebra/index.html">Math II: Linear Algebra</a> </li>
-<li class="year-lane__step year-lane__step--c3" data-block="2a"><a href="2a-Math-III-Analysis/index.html">Math III: Analysis</a> </li>
-<li class="year-lane__step year-lane__step--c4" data-block="2b"><a href="2b-Math-IV-Multivariate-Calculus/index.html">Math IV: Multivariate Calculus</a> </li>
-</ol>
-<p class="year-lane__next"><strong>Next:</strong> Each Math course recommends the ones before it. Year 2 continues with <a href="../Year-2/1a-Math-V-Advanced-Linear-Algebra/index.html">Math V</a> and <a href="../Year-2/1b-Math-VI-Convexity-and-Optimization/index.html">Math VI</a>, which expects Math I–V.</p>
+<span aria-hidden="true" class="year-lane__track year-lane__track--f2 year-lane__track--t6"></span>
+<div class="year-lane__cell year-lane__cell--c2" data-col="Block 1a"><a class="year-chip" href="1a-Math-I-Calculus/index.html">Math I</a></div>
+<div class="year-lane__cell year-lane__cell--c3" data-col="Block 1b"><a class="year-chip" href="1b-Math-II-Linear-Algebra/index.html">Math II</a></div>
+<div class="year-lane__cell year-lane__cell--c4" data-col="Block 2a"><a class="year-chip" href="2a-Math-III-Analysis/index.html">Math III</a></div>
+<div class="year-lane__cell year-lane__cell--c5" data-col="Block 2b"><a class="year-chip" href="2b-Math-IV-Multivariate-Calculus/index.html">Math IV</a></div>
+<div class="year-lane__cell year-lane__cell--c6" data-col="Leads to"><a class="year-chip year-chip--side" href="../Year-2/1a-Math-V-Advanced-Linear-Algebra/index.html">Math V</a><a class="year-chip year-chip--side" href="../Year-2/1b-Math-VI-Convexity-and-Optimization/index.html">Math VI</a></div>
 </div>
 <div class="year-lane">
 <p class="year-lane__name">Probability and statistics</p>
-<ol class="year-lane__steps">
-<li class="year-lane__step year-lane__step--c2" data-block="1b"><a href="1b-Probability-Theory-for-EOR/index.html">Probability Theory for EOR</a> </li>
-<li class="year-lane__step year-lane__step--c4" data-block="2b"><a href="2b-Probability-Distributions/index.html">Probability Distributions</a><a href="2b-Statistical-Modelling-for-EOR/index.html">Statistical Modelling for EOR</a> </li>
-</ol>
-<p class="year-lane__next"><strong>Next:</strong> Probability Distributions continues the same textbook. Year 2 builds on both in <a href="../Year-2/1a-Statistical-Inference/index.html">Statistical Inference</a>, <a href="../Year-2/1b-Stochastic-Operations-Research/index.html">Stochastic OR</a> and the two insurance courses.</p>
+<span aria-hidden="true" class="year-lane__track year-lane__track--f3 year-lane__track--t6"></span>
+<div class="year-lane__cell year-lane__cell--c3" data-col="Block 1b"><a class="year-chip" href="1b-Probability-Theory-for-EOR/index.html">Probability Theory</a></div>
+<div class="year-lane__cell year-lane__cell--c5" data-col="Block 2b"><a class="year-chip" href="2b-Probability-Distributions/index.html">Probability Distributions</a><a class="year-chip" href="2b-Statistical-Modelling-for-EOR/index.html">Statistical Modelling</a></div>
+<div class="year-lane__cell year-lane__cell--c6" data-col="Leads to"><a class="year-chip year-chip--side" href="../Year-2/1a-Statistical-Inference/index.html">Statistical Inference</a><a class="year-chip year-chip--side" href="../Year-2/1b-Stochastic-Operations-Research/index.html">Stochastic OR</a><a class="year-chip year-chip--side" href="../Year-2/2a-Life-Insurance/index.html">Insurance courses</a></div>
 </div>
 <div class="year-lane">
 <p class="year-lane__name">Operations research</p>
-<ol class="year-lane__steps">
-<li class="year-lane__step year-lane__step--c1" data-block="1a"><a href="1a-OR-Modelling/index.html">OR Modelling</a> </li>
-</ol>
-<p class="year-lane__next"><strong>Next:</strong> <a href="../Year-2/2a-Discrete-Operations-Research/index.html">Discrete OR</a> (Year 2) expects full knowledge of OR Modelling; <a href="../Year-2/1b-Stochastic-Operations-Research/index.html">Stochastic OR</a> reuses its inventory models.</p>
+<span aria-hidden="true" class="year-lane__track year-lane__track--f2 year-lane__track--t6"></span>
+<div class="year-lane__cell year-lane__cell--c2" data-col="Block 1a"><a class="year-chip" href="1a-OR-Modelling/index.html">OR Modelling</a></div>
+<div class="year-lane__cell year-lane__cell--c6" data-col="Leads to"><a class="year-chip year-chip--side" href="../Year-2/2a-Discrete-Operations-Research/index.html">Discrete OR</a><a class="year-chip year-chip--side" href="../Year-2/1b-Stochastic-Operations-Research/index.html">Stochastic OR</a></div>
 </div>
 <div class="year-lane">
 <p class="year-lane__name">Economics and finance</p>
-<ol class="year-lane__steps">
-<li class="year-lane__step year-lane__step--c3" data-block="2a"><a href="2a-Finance-for-EOR/index.html">Finance for EOR</a><a href="2a-Microeconomics-for-EOR/index.html">Microeconomics for EOR</a> </li>
-</ol>
-<p class="year-lane__next"><strong>Next:</strong> Year 2 adds <a href="../Year-2/1a-Macroeconomics-for-EOR/index.html">Macroeconomics</a> and <a href="../Year-2/2b-Game-Theory/index.html">Game Theory</a>, whose examples come from microeconomics: duopoly, cartels, auctions.</p>
+<span aria-hidden="true" class="year-lane__track year-lane__track--f4 year-lane__track--t6"></span>
+<div class="year-lane__cell year-lane__cell--c4" data-col="Block 2a"><a class="year-chip" href="2a-Finance-for-EOR/index.html">Finance</a><a class="year-chip" href="2a-Microeconomics-for-EOR/index.html">Microeconomics</a></div>
+<div class="year-lane__cell year-lane__cell--c6" data-col="Leads to"><a class="year-chip year-chip--side" href="../Year-2/1a-Macroeconomics-for-EOR/index.html">Macroeconomics</a><a class="year-chip year-chip--side" href="../Year-2/2b-Game-Theory/index.html">Game Theory</a></div>
 </div>
 <div class="year-lane">
 <p class="year-lane__name">Data and programming</p>
-<ol class="year-lane__steps">
-<li class="year-lane__step year-lane__step--c1" data-block="1a"><a href="1a-Introduction-to-Data-Analytics/index.html">Introduction to Data Analytics</a> </li>
-<li class="year-lane__step year-lane__step--c2" data-block="1b"><a href="1b-Programming-for-EOR/index.html">Programming for EOR</a> </li>
-</ol>
-<p class="year-lane__next"><strong>Next:</strong> Statistical Modelling (2b) recommends Programming for EOR; <a href="../Year-3/2a-Numerical-Methods-for-EOR/index.html">Numerical Methods</a> (Year 3) expects it.</p>
+<span aria-hidden="true" class="year-lane__track year-lane__track--f2 year-lane__track--t6"></span>
+<div class="year-lane__cell year-lane__cell--c2" data-col="Block 1a"><a class="year-chip" href="1a-Introduction-to-Data-Analytics/index.html">Data Analytics</a></div>
+<div class="year-lane__cell year-lane__cell--c3" data-col="Block 1b"><a class="year-chip" href="1b-Programming-for-EOR/index.html">Programming</a></div>
+<div class="year-lane__cell year-lane__cell--c6" data-col="Leads to"><a class="year-chip year-chip--side" href="../Year-3/2a-Numerical-Methods-for-EOR/index.html">Numerical Methods</a></div>
 </div>
 </div>
-<p class="year-map__source">Links between courses follow the prior knowledge each course lists in the <a href="https://ocasys.rug.nl/2026-2027/catalog/programme/56833" rel="noopener">2026–2027 course catalogue</a>, and the concept links between wiki pages.</p>
+<p class="year-map__source">Based on the prior knowledge each course lists in the <a href="https://ocasys.rug.nl/2026-2027/catalog/programme/56833" rel="noopener">2026–2027 course catalogue</a>. Key terms of courses without notes come from the same catalogue.</p>
 </section>
+<!-- year-map:end -->
 <!-- year-courses:begin -->
 <section class="year-block year-block--1a">
 <div class="year-block__inner">
 <h2 id="block-1a">Block 1a<a class="headerlink" href="#block-1a" title="Permanent link">¶</a></h2>
 <div class="year-course-grid">
 <div class="course-row">
-<div class="course-card course-card--title">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4M4 9v3c0 2.21 3.58 4 8 4s8-1.79 8-4V9c0 2.21-3.58 4-8 4s-8-1.79-8-4m0 5v3c0 2.21 3.58 4 8 4s8-1.79 8-4v-3c0 2.21-3.58 4-8 4s-8-1.79-8-4"></path></svg></span> <a href="1a-Introduction-to-Data-Analytics/index.html"><strong>Introduction to Data Analytics</strong></a><span class="course-code">I2DA</span></p>
+<div class="course-card course-card--tile">
+<div class="course-card__title">
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4M4 9v3c0 2.21 3.58 4 8 4s8-1.79 8-4V9c0 2.21-3.58 4-8 4s-8-1.79-8-4m0 5v3c0 2.21 3.58 4 8 4s8-1.79 8-4v-3c0 2.21-3.58 4-8 4s-8-1.79-8-4"></path></svg></span> <a href="1a-Introduction-to-Data-Analytics/index.html"><strong>Introduction to Data Analytics</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">Basic ideas of scientific data analysis, met intuitively before later courses treat them rigorously.</p>
-<p class="course-terms"><span class="topic-pill topic-pill--plain">Statistical concepts</span><span class="topic-pill topic-pill--plain">Working with data</span><span class="topic-pill topic-pill--plain">Data software</span><span class="topic-pill topic-pill--plain">Reporting findings</span></p>
-<p class="course-status course-status--empty">Not written yet · topics from the course catalogue</p>
+<p class="course-card__meta"><span class="course-code">I2DA</span><span class="course-status course-status--empty">Not written yet</span></p>
+<p class="course-about">Scientific data analysis, met intuitively before later courses make it rigorous.</p>
+<p class="course-terms" title="Topics from the course catalogue"><span class="topic-pill topic-pill--plain">Statistical concepts</span><span class="topic-pill topic-pill--plain">Working with data</span><span class="topic-pill topic-pill--plain">Data software</span><span class="topic-pill topic-pill--plain">Reporting findings</span></p>
 </div>
 </div>
 <div class="course-row">
-<div class="course-card course-card--title">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.6 5.29c-1.1-.1-2.07.71-2.17 1.82L13.18 10H16v2h-3l-.44 5.07a3.986 3.986 0 0 1-4.33 3.63 4 4 0 0 1-3.06-1.87l1.5-1.5c.24.74.9 1.31 1.73 1.38 1.1.1 2.07-.71 2.17-1.82L11 12H8v-2h3.17l.27-3.07c.19-2.2 2.13-3.83 4.33-3.63 1.31.11 2.41.84 3.06 1.87l-1.5 1.5c-.24-.74-.9-1.31-1.73-1.38"></path></svg></span> <a href="1a-Math-I-Calculus/index.html"><strong>Math I: Calculus</strong></a><span class="course-code">M1</span></p>
+<div class="course-card course-card--tile">
+<div class="course-card__title">
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.6 5.29c-1.1-.1-2.07.71-2.17 1.82L13.18 10H16v2h-3l-.44 5.07a3.986 3.986 0 0 1-4.33 3.63 4 4 0 0 1-3.06-1.87l1.5-1.5c.24.74.9 1.31 1.73 1.38 1.1.1 2.07-.71 2.17-1.82L11 12H8v-2h3.17l.27-3.07c.19-2.2 2.13-3.83 4.33-3.63 1.31.11 2.41.84 3.06 1.87l-1.5 1.5c-.24-.74-.9-1.31-1.73-1.38"></path></svg></span> <a href="1a-Math-I-Calculus/index.html"><strong>Math I: Calculus</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">Build from sets, numbers and limits to differentiation, series and integration.</p>
+<p class="course-card__meta"><span class="course-code">M1</span><span class="course-status">12 lectures of notes</span></p>
+<p class="course-about">From sets, numbers and limits to derivatives, series and integrals.</p>
 <p class="course-terms"><a class="topic-pill" href="1a-Math-I-Calculus/limit-at-a-point.html">Limits</a><a class="topic-pill" href="1a-Math-I-Calculus/continuity.html">Continuity</a><a class="topic-pill" href="1a-Math-I-Calculus/derivative-and-differentiability.html">Derivatives</a><a class="topic-pill" href="1a-Math-I-Calculus/sequence.html">Sequences</a><a class="topic-pill" href="1a-Math-I-Calculus/infinite-series.html">Series</a><a class="topic-pill" href="1a-Math-I-Calculus/definite-integral.html">Integrals</a></p>
-<p class="course-status">Notes on the wiki · 12 lectures</p>
 </div>
 </div>
 <div class="course-row">
-<div class="course-card course-card--title">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"></path></svg></span> <a href="1a-OR-Modelling/index.html"><strong>OR Modelling</strong></a><span class="course-code">ORM</span></p>
+<div class="course-card course-card--tile">
+<div class="course-card__title">
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"></path></svg></span> <a href="1a-OR-Modelling/index.html"><strong>OR Modelling</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">From linear programming and the simplex method to networks, inventory models and dynamic programming.</p>
+<p class="course-card__meta"><span class="course-code">ORM</span><span class="course-status">6 weeks of notes</span></p>
+<p class="course-about">Linear programming and the simplex method, networks and inventory models.</p>
 <p class="course-terms"><a class="topic-pill" href="1a-OR-Modelling/linear-programming.html">Linear programming</a><a class="topic-pill" href="1a-OR-Modelling/simplex-method.html">Simplex method</a><a class="topic-pill" href="1a-OR-Modelling/sensitivity-analysis.html">Sensitivity analysis</a><a class="topic-pill" href="1a-OR-Modelling/integer-linear-programming.html">Integer programming</a><a class="topic-pill" href="1a-OR-Modelling/network.html">Networks</a><a class="topic-pill" href="1a-OR-Modelling/economic-order-quantity.html">Inventory models</a></p>
-<p class="course-status">Notes on the wiki · 6 weeks</p>
 </div>
 </div>
 </div>
@@ -1122,33 +1119,33 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <h2 id="block-1b">Block 1b<a class="headerlink" href="#block-1b" title="Permanent link">¶</a></h2>
 <div class="year-course-grid">
 <div class="course-row">
-<div class="course-card course-card--title">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 3v4.59L7.59 15H3v6h6v-4.58L16.42 9H21V3m-4 2h2v2h-2M5 17h2v2H5"></path></svg></span> <a href="1b-Math-II-Linear-Algebra/index.html"><strong>Math II: Linear Algebra</strong></a><span class="course-code">M2</span></p>
+<div class="course-card course-card--tile">
+<div class="course-card__title">
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 3v4.59L7.59 15H3v6h6v-4.58L16.42 9H21V3m-4 2h2v2h-2M5 17h2v2H5"></path></svg></span> <a href="1b-Math-II-Linear-Algebra/index.html"><strong>Math II: Linear Algebra</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">Connect vector spaces and linear maps with matrices, geometry and eigenvalues.</p>
+<p class="course-card__meta"><span class="course-code">M2</span><span class="course-status">6 weeks of notes</span></p>
+<p class="course-about">Vector spaces and linear maps, matrices, geometry and eigenvalues.</p>
 <p class="course-terms"><a class="topic-pill" href="1b-Math-II-Linear-Algebra/vector-space.html">Vector spaces</a><a class="topic-pill" href="1b-Math-II-Linear-Algebra/matrix.html">Matrices</a><a class="topic-pill" href="1b-Math-II-Linear-Algebra/linear-map.html">Linear maps</a><a class="topic-pill" href="1b-Math-II-Linear-Algebra/determinant.html">Determinants</a><a class="topic-pill" href="1b-Math-II-Linear-Algebra/inner-product.html">Inner products</a><a class="topic-pill" href="1b-Math-II-Linear-Algebra/eigenvalue-and-eigenvector.html">Eigenvalues</a></p>
-<p class="course-status">Notes on the wiki · 6 weeks</p>
 </div>
 </div>
 <div class="course-row">
-<div class="course-card course-card--title">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.78 3h-8.56C10.55 3 10 3.55 10 4.22V8h6v6h3.78c.67 0 1.22-.55 1.22-1.22V4.22C21 3.55 20.45 3 19.78 3m-7.34 3.67a1.23 1.23 0 1 1 0-2.46 1.23 1.23 0 0 1 1.23 1.23c0 .68-.55 1.23-1.23 1.23m6.12 6.11a1.23 1.23 0 1 1-.02-2.46c.68-.01 1.23.54 1.24 1.24-.01.67-.55 1.21-1.22 1.22m0-6.11a1.23 1.23 0 1 1-.02-2.46 1.231 1.231 0 0 1 .02 2.46M4.22 10h8.56A1.22 1.22 0 0 1 14 11.22v8.56c0 .67-.55 1.22-1.22 1.22H4.22C3.55 21 3 20.45 3 19.78v-8.56c0-.67.55-1.22 1.22-1.22m4.28 4.28c-.67 0-1.22.55-1.22 1.22s.55 1.22 1.22 1.22 1.22-.55 1.22-1.22a1.22 1.22 0 0 0-1.22-1.22m-3.06-3.06c-.67 0-1.22.55-1.22 1.22a1.22 1.22 0 0 0 1.22 1.22c.67 0 1.22-.55 1.22-1.22s-.55-1.22-1.22-1.22m6.11 6.11c-.67 0-1.22.55-1.22 1.22s.55 1.22 1.22 1.22a1.22 1.22 0 0 0 1.22-1.22c0-.67-.54-1.21-1.21-1.22z"></path></svg></span> <a href="1b-Probability-Theory-for-EOR/index.html"><strong>Probability Theory for EOR</strong></a><span class="course-code">PT</span></p>
+<div class="course-card course-card--tile">
+<div class="course-card__title">
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.78 3h-8.56C10.55 3 10 3.55 10 4.22V8h6v6h3.78c.67 0 1.22-.55 1.22-1.22V4.22C21 3.55 20.45 3 19.78 3m-7.34 3.67a1.23 1.23 0 1 1 0-2.46 1.23 1.23 0 0 1 1.23 1.23c0 .68-.55 1.23-1.23 1.23m6.12 6.11a1.23 1.23 0 1 1-.02-2.46c.68-.01 1.23.54 1.24 1.24-.01.67-.55 1.21-1.22 1.22m0-6.11a1.23 1.23 0 1 1-.02-2.46 1.231 1.231 0 0 1 .02 2.46M4.22 10h8.56A1.22 1.22 0 0 1 14 11.22v8.56c0 .67-.55 1.22-1.22 1.22H4.22C3.55 21 3 20.45 3 19.78v-8.56c0-.67.55-1.22 1.22-1.22m4.28 4.28c-.67 0-1.22.55-1.22 1.22s.55 1.22 1.22 1.22 1.22-.55 1.22-1.22a1.22 1.22 0 0 0-1.22-1.22m-3.06-3.06c-.67 0-1.22.55-1.22 1.22a1.22 1.22 0 0 0 1.22 1.22c.67 0 1.22-.55 1.22-1.22s-.55-1.22-1.22-1.22m6.11 6.11c-.67 0-1.22.55-1.22 1.22s.55 1.22 1.22 1.22a1.22 1.22 0 0 0 1.22-1.22c0-.67-.54-1.21-1.21-1.22z"></path></svg></span> <a href="1b-Probability-Theory-for-EOR/index.html"><strong>Probability Theory for EOR</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">From sample spaces and counting to random variables, expectation and Poisson processes.</p>
+<p class="course-card__meta"><span class="course-code">PT</span><span class="course-status">6 weeks of notes</span></p>
+<p class="course-about">Sample spaces and counting, random variables, expectation, Poisson processes.</p>
 <p class="course-terms"><a class="topic-pill" href="1b-Probability-Theory-for-EOR/conditional-probability.html">Conditional probability</a><a class="topic-pill" href="1b-Probability-Theory-for-EOR/random-variable.html">Random variables</a><a class="topic-pill" href="1b-Probability-Theory-for-EOR/expectation.html">Expectation</a><a class="topic-pill" href="1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html">Variance</a><a class="topic-pill" href="1b-Probability-Theory-for-EOR/normal-distribution.html">Normal distribution</a><a class="topic-pill" href="1b-Probability-Theory-for-EOR/poisson-process.html">Poisson process</a></p>
-<p class="course-status">Notes on the wiki · 6 weeks</p>
 </div>
 </div>
 <div class="course-row">
-<div class="course-card course-card--title">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"></path></svg></span> <a href="1b-Programming-for-EOR/index.html"><strong>Programming for EOR</strong></a><span class="course-code">PROG</span></p>
+<div class="course-card course-card--tile">
+<div class="course-card__title">
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"></path></svg></span> <a href="1b-Programming-for-EOR/index.html"><strong>Programming for EOR</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">Basic programming in R for students with little or no prior experience.</p>
-<p class="course-terms"><span class="topic-pill topic-pill--plain">Data types in R</span><span class="topic-pill topic-pill--plain">Data cleaning</span><span class="topic-pill topic-pill--plain">Descriptive statistics and graphs</span><span class="topic-pill topic-pill--plain">Functions and control flow</span><span class="topic-pill topic-pill--plain">Tidyverse</span></p>
-<p class="course-status course-status--empty">Not written yet · topics from the course catalogue</p>
+<p class="course-card__meta"><span class="course-code">PROG</span><span class="course-status course-status--empty">Not written yet</span></p>
+<p class="course-about">Basic programming in R, for students with little or no experience.</p>
+<p class="course-terms" title="Topics from the course catalogue"><span class="topic-pill topic-pill--plain">Data types in R</span><span class="topic-pill topic-pill--plain">Data cleaning</span><span class="topic-pill topic-pill--plain">Descriptive statistics and graphs</span><span class="topic-pill topic-pill--plain">Functions and control flow</span><span class="topic-pill topic-pill--plain">Tidyverse</span></p>
 </div>
 </div>
 </div>
@@ -1159,33 +1156,33 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <h2 id="block-2a">Block 2a<a class="headerlink" href="#block-2a" title="Permanent link">¶</a></h2>
 <div class="year-course-grid">
 <div class="course-row">
-<div class="course-card course-card--title">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 6h18v12H5zm9 3a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3M9 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2zm-8 2h2v10h16v2H1z"></path></svg></span> <a href="2a-Finance-for-EOR/index.html"><strong>Finance for EOR</strong></a><span class="course-code">FIN</span></p>
+<div class="course-card course-card--tile">
+<div class="course-card__title">
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 6h18v12H5zm9 3a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3M9 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2zm-8 2h2v10h16v2H1z"></path></svg></span> <a href="2a-Finance-for-EOR/index.html"><strong>Finance for EOR</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">How firms value assets and decide what to invest in and how to finance it.</p>
-<p class="course-terms"><span class="topic-pill topic-pill--plain">Capital budgeting</span><span class="topic-pill topic-pill--plain">Cost of capital</span><span class="topic-pill topic-pill--plain">Stock and bond valuation</span><span class="topic-pill topic-pill--plain">Risk and return</span><span class="topic-pill topic-pill--plain">Financing decisions</span></p>
-<p class="course-status course-status--empty">Not written yet · topics from the course catalogue</p>
+<p class="course-card__meta"><span class="course-code">FIN</span><span class="course-status course-status--empty">Not written yet</span></p>
+<p class="course-about">How firms value assets and choose investments and financing.</p>
+<p class="course-terms" title="Topics from the course catalogue"><span class="topic-pill topic-pill--plain">Capital budgeting</span><span class="topic-pill topic-pill--plain">Cost of capital</span><span class="topic-pill topic-pill--plain">Stock and bond valuation</span><span class="topic-pill topic-pill--plain">Risk and return</span><span class="topic-pill topic-pill--plain">Financing decisions</span></p>
 </div>
 </div>
 <div class="course-row">
-<div class="course-card course-card--title">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 6H8.83l6 6-6 6H18v2H6v-2l6-6-6-6V4h12z"></path></svg></span> <a href="2a-Math-III-Analysis/index.html"><strong>Math III: Analysis</strong></a><span class="course-code">M3</span></p>
+<div class="course-card course-card--tile">
+<div class="course-card__title">
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 6H8.83l6 6-6 6H18v2H6v-2l6-6-6-6V4h12z"></path></svg></span> <a href="2a-Math-III-Analysis/index.html"><strong>Math III: Analysis</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">Explore convergence, metric spaces and topology, then follow differentiation into higher dimensions.</p>
+<p class="course-card__meta"><span class="course-code">M3</span><span class="course-status">12 lectures of notes</span></p>
+<p class="course-about">Convergence, metric spaces and topology, then derivatives in higher dimensions.</p>
 <p class="course-terms"><a class="topic-pill" href="2a-Math-III-Analysis/uniform-convergence.html">Uniform convergence</a><a class="topic-pill" href="2a-Math-III-Analysis/taylor-series.html">Taylor series</a><a class="topic-pill" href="2a-Math-III-Analysis/metric-and-metric-space.html">Metric spaces</a><a class="topic-pill" href="2a-Math-III-Analysis/compact-set.html">Compact sets</a><a class="topic-pill" href="2a-Math-III-Analysis/connected-and-disconnected-sets.html">Connected sets</a><a class="topic-pill" href="2a-Math-III-Analysis/jacobian-matrix.html">Jacobian matrix</a></p>
-<p class="course-status">Notes on the wiki · 12 lectures</p>
 </div>
 </div>
 <div class="course-row">
-<div class="course-card course-card--title">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18H6v-4h6m9 0v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6m0-10H4v2h16z"></path></svg></span> <a href="2a-Microeconomics-for-EOR/index.html"><strong>Microeconomics for EOR</strong></a><span class="course-code">MICRO</span></p>
+<div class="course-card course-card--tile">
+<div class="course-card__title">
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18H6v-4h6m9 0v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6m0-10H4v2h16z"></path></svg></span> <a href="2a-Microeconomics-for-EOR/index.html"><strong>Microeconomics for EOR</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">How consumers and firms decide, and how markets coordinate their decisions through prices.</p>
-<p class="course-terms"><span class="topic-pill topic-pill--plain">Consumer choice</span><span class="topic-pill topic-pill--plain">Demand and supply</span><span class="topic-pill topic-pill--plain">Cost functions</span><span class="topic-pill topic-pill--plain">Market equilibrium</span><span class="topic-pill topic-pill--plain">Monopoly</span><span class="topic-pill topic-pill--plain">Welfare</span></p>
-<p class="course-status course-status--empty">Not written yet · topics from the course catalogue</p>
+<p class="course-card__meta"><span class="course-code">MICRO</span><span class="course-status course-status--empty">Not written yet</span></p>
+<p class="course-about">How consumers and firms decide, and how prices coordinate markets.</p>
+<p class="course-terms" title="Topics from the course catalogue"><span class="topic-pill topic-pill--plain">Consumer choice</span><span class="topic-pill topic-pill--plain">Demand and supply</span><span class="topic-pill topic-pill--plain">Cost functions</span><span class="topic-pill topic-pill--plain">Market equilibrium</span><span class="topic-pill topic-pill--plain">Monopoly</span><span class="topic-pill topic-pill--plain">Welfare</span></p>
 </div>
 </div>
 </div>
@@ -1196,40 +1193,40 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <h2 id="block-2b">Block 2b<a class="headerlink" href="#block-2b" title="Permanent link">¶</a></h2>
 <div class="year-course-grid">
 <div class="course-row">
-<div class="course-card course-card--title">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.42 5.29c-1.1-.1-2.07.71-2.17 1.82L10 10h2.82v2h-3l-.44 5.07A4.001 4.001 0 0 1 2 18.83l1.5-1.5c.33 1.05 1.46 1.64 2.5 1.3.78-.24 1.33-.93 1.4-1.74L7.82 12h-3v-2H8l.27-3.07a4.01 4.01 0 0 1 4.33-3.65c1.26.11 2.4.81 3.06 1.89l-1.5 1.5c-.25-.77-.93-1.31-1.74-1.38M22 13.65l-1.41-1.41-2.83 2.83-2.83-2.83-1.43 1.41 2.85 2.85-2.85 2.81 1.43 1.41 2.83-2.83 2.83 2.83L22 19.31l-2.83-2.81z"></path></svg></span> <a href="2b-Math-IV-Multivariate-Calculus/index.html"><strong>Math IV: Multivariate Calculus</strong></a><span class="course-code">M4</span></p>
+<div class="course-card course-card--tile">
+<div class="course-card__title">
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.42 5.29c-1.1-.1-2.07.71-2.17 1.82L10 10h2.82v2h-3l-.44 5.07A4.001 4.001 0 0 1 2 18.83l1.5-1.5c.33 1.05 1.46 1.64 2.5 1.3.78-.24 1.33-.93 1.4-1.74L7.82 12h-3v-2H8l.27-3.07a4.01 4.01 0 0 1 4.33-3.65c1.26.11 2.4.81 3.06 1.89l-1.5 1.5c-.25-.77-.93-1.31-1.74-1.38M22 13.65l-1.41-1.41-2.83 2.83-2.83-2.83-1.43 1.41 2.85 2.85-2.85 2.81 1.43 1.41 2.83-2.83 2.83 2.83L22 19.31l-2.83-2.81z"></path></svg></span> <a href="2b-Math-IV-Multivariate-Calculus/index.html"><strong>Math IV: Multivariate Calculus</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">Follow derivatives in several variables into local approximation, constrained optimization and sensitivity.</p>
+<p class="course-card__meta"><span class="course-code">M4</span><span class="course-status">7 weeks of notes</span></p>
+<p class="course-about">Derivatives in several variables: approximation and constrained optimization.</p>
 <p class="course-terms"><a class="topic-pill" href="2b-Math-IV-Multivariate-Calculus/implicit-function-theorem.html">Implicit function theorem</a><a class="topic-pill" href="2b-Math-IV-Multivariate-Calculus/multivariable-inverse-function-theorem.html">Inverse function theorem</a><a class="topic-pill" href="2b-Math-IV-Multivariate-Calculus/lagrange-multiplier.html">Lagrange multipliers</a><a class="topic-pill" href="2b-Math-IV-Multivariate-Calculus/kuhn-tucker-lagrangian.html">Kuhn–Tucker conditions</a><a class="topic-pill" href="2b-Math-IV-Multivariate-Calculus/envelope-theorem-for-constrained-optimization.html">Envelope theorem</a></p>
-<p class="course-status">Notes on the wiki · 7 weeks</p>
 </div>
 </div>
 <div class="course-row">
-<div class="course-card course-card--title">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 2h2v18h18v2H2zm7 8a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m4-8a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m5 10a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3"></path></svg></span> <a href="2b-Probability-Distributions/index.html"><strong>Probability Distributions</strong></a><span class="course-code">PD</span></p>
+<div class="course-card course-card--tile">
+<div class="course-card__title">
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 2h2v18h18v2H2zm7 8a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m4-8a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m5 10a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3"></path></svg></span> <a href="2b-Probability-Distributions/index.html"><strong>Probability Distributions</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">From joint distributions and MGFs through conditional expectation to laws of large numbers and normal approximations.</p>
+<p class="course-card__meta"><span class="course-code">PD</span><span class="course-status">7 weeks of notes</span></p>
+<p class="course-about">Joint distributions, MGFs, conditional expectation and limit theorems.</p>
 <p class="course-terms"><a class="topic-pill" href="2b-Probability-Distributions/joint-probability-density-function.html">Joint distributions</a><a class="topic-pill" href="2b-Probability-Distributions/moment-generating-function.html">Moment generating functions</a><a class="topic-pill" href="2b-Probability-Distributions/convolution.html">Convolution</a><a class="topic-pill" href="2b-Probability-Distributions/conditional-expectation-given-a-random-variable.html">Conditional expectation</a><a class="topic-pill" href="2b-Probability-Distributions/weak-law-of-large-numbers.html">Law of large numbers</a><a class="topic-pill" href="2b-Probability-Distributions/central-limit-theorem.html">Central limit theorem</a></p>
-<p class="course-status">Notes on the wiki · 7 weeks</p>
 </div>
 </div>
 <div class="course-row">
-<div class="course-card course-card--title">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.96 11.31C10.82 8.1 11.5 6 13 6s2.18 2.1 3.04 5.31C17 14.92 18.1 19 22 19v-2c-2.2 0-3-2.46-4.03-6.2C17.08 7.46 16.15 4 13 4s-4.08 3.46-4.97 6.8C7.03 14.54 6.2 17 4 17V2H2v20h20v-2H4v-1c3.9 0 5-4.08 5.96-7.69"></path></svg></span> <a href="2b-Statistical-Modelling-for-EOR/index.html"><strong>Statistical Modelling for EOR</strong></a><span class="course-code">SM1</span></p>
+<div class="course-card course-card--tile">
+<div class="course-card__title">
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.96 11.31C10.82 8.1 11.5 6 13 6s2.18 2.1 3.04 5.31C17 14.92 18.1 19 22 19v-2c-2.2 0-3-2.46-4.03-6.2C17.08 7.46 16.15 4 13 4s-4.08 3.46-4.97 6.8C7.03 14.54 6.2 17 4 17V2H2v20h20v-2H4v-1c3.9 0 5-4.08 5.96-7.69"></path></svg></span> <a href="2b-Statistical-Modelling-for-EOR/index.html"><strong>Statistical Modelling for EOR</strong></a></p>
 </div>
-<div class="course-card course-card--topics">
-<p class="course-about">Apply econometric and actuarial models to practical problems and present the results.</p>
-<p class="course-terms"><span class="topic-pill topic-pill--plain">Econometric models</span><span class="topic-pill topic-pill--plain">Causal relationships</span><span class="topic-pill topic-pill--plain">Actuarial models</span><span class="topic-pill topic-pill--plain">Presenting results</span></p>
-<p class="course-status course-status--empty">Not written yet · topics from the course catalogue</p>
+<p class="course-card__meta"><span class="course-code">SM1</span><span class="course-status course-status--empty">Not written yet</span></p>
+<p class="course-about">Econometric and actuarial models applied to practical problems.</p>
+<p class="course-terms" title="Topics from the course catalogue"><span class="topic-pill topic-pill--plain">Econometric models</span><span class="topic-pill topic-pill--plain">Causal relationships</span><span class="topic-pill topic-pill--plain">Actuarial models</span><span class="topic-pill topic-pill--plain">Presenting results</span></p>
 </div>
 </div>
 </div>
 </div>
 </section>
 <!-- year-courses:end -->
-<p class="mk-last-updated">Last updated: 4 November 2026 13:06</p>
+<p class="mk-last-updated">Last updated: 4 November 2026 15:23</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -1267,7 +1264,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../javascripts/exam-mode.js?h=09b295110531"></script>
 <script src="../javascripts/perf-probe.js?h=ea289ef426e5"></script>
 <script src="../javascripts/wiki-explain.js?h=70b31a1e6108"></script>
-<script src="../javascripts/startup-preferences.js?h=94979d329de5"></script>
+<script src="../javascripts/startup-preferences.js?h=c682edb5088f"></script>
 <script src="../javascripts/style-shortcuts.js?h=1f1d27bbf857"></script>
 <script src="../javascripts/ui-guard.js?h=6e5cf15727d0"></script>
 <script src="../javascripts/concept-title-fit.js?h=8a4406302178"></script>
@@ -1283,13 +1280,13 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <script src="../javascripts/mathjax.js?h=06875c0b69ec"></script>
 <script src="../javascripts/preload-guard.js?h=6850e005c3a1"></script>
 <script src="../javascripts/random.js?h=10f974c5fe5c"></script>
-<script src="../javascripts/random-tabs.js?h=e5dde7e165c2"></script>
+<script src="../javascripts/random-tabs.js?h=d2336cc0bdc3"></script>
 <script src="../javascripts/search-enter.js?h=25c7c2d382da"></script>
 <script src="../javascripts/concept-fold.js?h=6399c42db2c6"></script>
 <script src="../javascripts/tag-search-links.js?h=84cb5c2dd87f"></script>
 <script src="../javascripts/logo-lightbox.js?h=d3da5cd41eeb"></script>
 <script src="../javascripts/figure-source.js?h=634defb48599"></script>
-<script src="../javascripts/wiki-guide-pages.js?h=4fa11f3ec3b3"></script>
+<script src="../javascripts/wiki-guide-pages.js?h=7160038aaa3a"></script>
 <script src="../javascripts/wiki-guide-account.js?h=a6792ec9d296"></script>
 <script src="../javascripts/wiki-guides.js?h=7cd9d96cb254"></script>
 <script src="../javascripts/wiki-explain-content.js?h=bbb58a1ad451"></script>
