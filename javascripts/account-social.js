@@ -6235,7 +6235,7 @@ const openingScrollY=window.scrollY||0;const touchLike=mkLocalIsTouchLikeViewpor
           </div>
           <button type="button" class="mk-local-activity-close mk-comment-icon-btn" ${iconButtonAttrs("Close")}>${iconButtonHtml("x", "Close")}</button>
         </div>
-        <div class="mk-local-activity-tabs" role="tablist" aria-label="${panelName} sections" style="--mk-account-tab-count:${panelTabs.length}">${tabsHtml}</div>
+        <div class="mk-local-activity-tabs" role="tablist" aria-label="${panelName} sections" data-tab-count="${panelTabs.length}" style="--mk-account-tab-count:${panelTabs.length}">${tabsHtml}</div>
         <div class="mk-local-activity-body"></div>
       </div>`;document.body.appendChild(modal);try{document.documentElement.classList.add("mk-local-activity-open");document.body.classList.add("mk-local-activity-open");if(!touchLike)lockPageBehindModal(openingScrollY);else unlockPageBehindModal();}catch(_){}
 try{mkLocalBindViewportMetricsOnce();window.setTimeout(mkLocalScheduleViewportMetrics,220);}catch(_){}
