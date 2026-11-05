@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1793802820916,
+  "generatedAt": 1793839404398,
   "nodes": {
     "index.html": {
       "title": "BSc EOR Wiki",
@@ -5301,6 +5301,440 @@
       "curriculumStatus": "current",
       "aiMcq": true
     },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/adding-or-removing-a-variable.html": {
+      "title": "Adding or Removing a Variable",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/adjacent-corner-points.html": {
+      "title": "Adjacent Corner Points",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html": {
+      "title": "Basis and Basis Matrix",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/big-m-method.html": {
+      "title": "Big-M Method",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/blands-rule.html": {
+      "title": "Bland's Rule",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/changing-a-technology-coefficient.html": {
+      "title": "Changing a Technology Coefficient",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/cone.html": {
+      "title": "Cone",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/continuity-of-convex-functions.html": {
+      "title": "Continuity of Convex Functions",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-combination.html": {
+      "title": "Convex Combination",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-cone.html": {
+      "title": "Convex Cone",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull-of-extreme-points.html": {
+      "title": "Convex Hull of Extreme Points",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull.html": {
+      "title": "Convex Hull",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-optimization-problem.html": {
+      "title": "Convex Optimization Problem",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/cycling.html": {
+      "title": "Cycling",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html": {
+      "title": "Dual Linear Program",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-of-the-dual.html": {
+      "title": "Dual of the Dual",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html": {
+      "title": "Dual Solution from the Simplex Tableau",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/epigraph.html": {
+      "title": "Epigraph",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/extrema-of-convex-functions-on-compact-sets.html": {
+      "title": "Extrema of Convex Functions on Compact Sets",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-point.html": {
+      "title": "Extreme Point",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html": {
+      "title": "Extreme Points of a Polyhedral Set",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-on-a-supporting-hyperplane.html": {
+      "title": "Extreme Points on a Supporting Hyperplane",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html": {
+      "title": "Farkas' Lemma",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html": {
+      "title": "Finitely Generated Convex Cone",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html": {
+      "title": "Halfspace",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/hypograph.html": {
+      "title": "Hypograph",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/improving-adjacent-corner-point.html": {
+      "title": "Nonoptimal and Optimal Corner Points",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/interior-and-closure-of-a-convex-set.html": {
+      "title": "Interior and Closure of a Convex Set",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html": {
+      "title": "Intersection and Sum of Convex Sets",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/local-minimum-of-a-convex-function.html": {
+      "title": "Local Minimum of a Convex Function",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-complementary-slackness.html": {
+      "title": "Complementary Slackness (Linear Programming)",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html": {
+      "title": "Possible Outcomes of a Linear Program",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html": {
+      "title": "Standard Form of a Linear Program",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/minimum-and-separation.html": {
+      "title": "Minimum Characterized by Separation",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/nearest-point-of-a-closed-convex-set.html": {
+      "title": "Nearest Point of a Closed Convex Set",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/nonoptimality-and-reduced-costs.html": {
+      "title": "Nonoptimality and Reduced Costs",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html": {
+      "title": "Normal Cone of a Polyhedral Set",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html": {
+      "title": "Normal Cone",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/objective-coefficient-ranging.html": {
+      "title": "Objective Coefficient Ranging",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/one-sided-derivatives-and-convexity.html": {
+      "title": "One-Sided Derivatives and Convexity",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/operations-preserving-convexity-of-functions.html": {
+      "title": "Operations Preserving Convexity of Functions",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html": {
+      "title": "Optima at Extreme Points",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/polar-cone.html": {
+      "title": "Polar Cone",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-cone.html": {
+      "title": "Polyhedral Convex Cone",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html": {
+      "title": "Polyhedral Convex Set",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-outcomes.html": {
+      "title": "Possible Outcomes of a Primal–Dual Pair",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-transformation-scheme.html": {
+      "title": "Primal–Dual Transformation Scheme",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-concave-function.html": {
+      "title": "Quasi-Concave Function",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-convex-function.html": {
+      "title": "Quasi-Convex Function",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html": {
+      "title": "Revised Simplex Algorithm",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/right-hand-side-ranging.html": {
+      "title": "Right-Hand-Side Ranging",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/separating-hyperplane.html": {
+      "title": "Separating Hyperplane",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html": {
+      "title": "Separation of a Point and a Closed Convex Set",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-disjoint-convex-sets.html": {
+      "title": "Separation of Disjoint Convex Sets",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html": {
+      "title": "Set of Minimizers of a Quasi-Convex Function",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html": {
+      "title": "Simplex Tableau in Matrix Form",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/strictly-convex-function.html": {
+      "title": "Strictly Convex Function",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html": {
+      "title": "Strong Duality",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html": {
+      "title": "Sublevel Sets of Convex Functions",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html": {
+      "title": "Supporting Hyperplane",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplanes-from-gradients.html": {
+      "title": "Supporting Hyperplanes from Gradients",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/weak-duality.html": {
+      "title": "Weak Duality",
+      "courseName": "1b-Math-VI-Convexity-and-Optimization",
+      "coursePath": "Year-2/1b-Math-VI-Convexity-and-Optimization",
+      "curriculumStatus": "current",
+      "aiMcq": true
+    },
     "Year-2/1b-Stochastic-Operations-Research/index.html": {
       "title": "Stochastic Operations Research",
       "courseName": "1b-Stochastic-Operations-Research",
@@ -10147,6 +10581,392 @@
     "Year-2/1a-Statistical-Inference/index.html": [],
     "Year-2/1b-Linear-Models-in-Statistics/index.html": [],
     "Year-2/1b-Math-VI-Convexity-and-Optimization/index.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/adding-or-removing-a-variable.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/changing-a-technology-coefficient.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/adjacent-corner-points.html": [
+      "Year-1/1a-OR-Modelling/corner-point.html",
+      "Year-1/1b-Math-II-Linear-Algebra/linear-independence.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/binding-and-nonbinding-constraints.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html",
+      "Year-1/1a-OR-Modelling/augmented-form.html",
+      "Year-1/1a-OR-Modelling/basic-solution.html",
+      "Year-1/1a-OR-Modelling/corner-point.html",
+      "Year-1/1b-Math-II-Linear-Algebra/inverse-matrix.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/big-m-method.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html",
+      "Year-1/1a-OR-Modelling/artificial-variable.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/blands-rule.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/cycling.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html",
+      "Year-1/1a-OR-Modelling/entering-variable-rule.html",
+      "Year-1/1a-OR-Modelling/minimum-ratio-test.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/changing-a-technology-coefficient.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/objective-coefficient-ranging.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/cone.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/scalar-multiplication.html",
+      "Year-1/1b-Math-II-Linear-Algebra/zero-vector.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/continuity-of-convex-functions.html": [
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-and-concave-functions-on-rn.html",
+      "Year-1/2a-Math-III-Analysis/interior-of-a-set.html",
+      "Year-1/2a-Math-III-Analysis/continuity-between-metric-spaces.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-combination.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/epigraph.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-combination.html": [
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html",
+      "Year-1/1b-Math-II-Linear-Algebra/linear-combination.html",
+      "Year-1/1b-Math-II-Linear-Algebra/parametric-representation-of-a-line.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-cone.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-combination.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html",
+      "Year-1/1b-Math-II-Linear-Algebra/linear-combination.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull-of-extreme-points.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-point.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html",
+      "Year-1/2a-Math-III-Analysis/compact-set.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-combination.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-optimization-problem.html": [
+      "Year-1/1a-OR-Modelling/optimization-model.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-and-concave-functions-on-rn.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/local-minimum-of-a-convex-function.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/cycling.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html",
+      "Year-1/1a-OR-Modelling/degeneracy.html",
+      "Year-1/1a-OR-Modelling/minimum-ratio-test.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html",
+      "Year-1/1a-OR-Modelling/linear-programming.html",
+      "Year-1/1b-Math-II-Linear-Algebra/linear-combination.html",
+      "Year-1/1b-Math-II-Linear-Algebra/transpose.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-of-the-dual.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-transformation-scheme.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html",
+      "Year-1/1b-Math-II-Linear-Algebra/transpose.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/weak-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nonoptimality-and-reduced-costs.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/epigraph.html": [
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-and-concave-functions-on-rn.html",
+      "Year-1/1a-Math-I-Calculus/graph-of-a-function.html",
+      "Year-1/1a-Math-I-Calculus/infimum.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/extrema-of-convex-functions-on-compact-sets.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/continuity-of-convex-functions.html",
+      "Year-1/2a-Math-III-Analysis/extreme-value-theorem-generalized-version.html",
+      "Year-1/2a-Math-III-Analysis/compact-set.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/global-maximum-and-minimum.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-point.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-combination.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html",
+      "Year-1/2a-Math-III-Analysis/boundary-of-a-set.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-point.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html",
+      "Year-1/1b-Math-II-Linear-Algebra/rank.html",
+      "Year-1/1b-Math-II-Linear-Algebra/system-of-linear-equations.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-on-a-supporting-hyperplane.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-point.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nearest-point-of-a-closed-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html",
+      "Year-1/1b-Math-II-Linear-Algebra/system-of-linear-equations.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-cone.html",
+      "Year-1/1b-Math-II-Linear-Algebra/linear-combination.html",
+      "Year-1/1b-Math-II-Linear-Algebra/linear-independence.html",
+      "Year-1/2a-Math-III-Analysis/open-and-closed-sets-in-a-metric-space.html",
+      "Year-1/2a-Math-III-Analysis/union-and-intersection-of-closed-sets.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html",
+      "Year-1/1b-Math-II-Linear-Algebra/normal-vector.html",
+      "Year-1/2a-Math-III-Analysis/level-set-and-level-curve.html",
+      "Year-1/2a-Math-III-Analysis/open-and-closed-sets-in-a-metric-space.html",
+      "Year-1/2a-Math-III-Analysis/image-and-preimage.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/hypograph.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/epigraph.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-and-concave-functions-on-rn.html",
+      "Year-1/1a-Math-I-Calculus/graph-of-a-function.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/improving-adjacent-corner-point.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adjacent-corner-points.html",
+      "Year-1/1a-OR-Modelling/corner-point-optimality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/interior-and-closure-of-a-convex-set.html": [
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html",
+      "Year-1/2a-Math-III-Analysis/interior-of-a-set.html",
+      "Year-1/2a-Math-III-Analysis/adherent-point-and-closure-of-a-set.html",
+      "Year-1/2a-Math-III-Analysis/compact-set.html",
+      "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html": [
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html",
+      "Year-1/1a-Math-I-Calculus/intersection-of-sets.html",
+      "Year-1/1a-Math-I-Calculus/union-of-sets.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/local-minimum-of-a-convex-function.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strictly-convex-function.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-and-concave-functions-on-rn.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/local-maximum-and-minimum.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/global-maximum-and-minimum.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-complementary-slackness.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/weak-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/binding-and-nonbinding-constraints.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html",
+      "Year-1/1a-OR-Modelling/corner-point.html",
+      "Year-1/1b-Math-II-Linear-Algebra/rank.html",
+      "Year-1/1a-OR-Modelling/infeasible-linear-program.html",
+      "Year-1/1a-OR-Modelling/unbounded-linear-program.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html": [
+      "Year-1/1a-OR-Modelling/linear-programming.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html",
+      "Year-1/1a-OR-Modelling/minimization-to-maximization.html",
+      "Year-1/1a-OR-Modelling/unrestricted-variable-transformation.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-optimization-problem.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/minimum-and-separation.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separating-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-disjoint-convex-sets.html",
+      "Year-1/2a-Math-III-Analysis/level-set-and-level-curve.html",
+      "Year-1/2a-Math-III-Analysis/open-and-closed-sets-in-a-metric-space.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/nearest-point-of-a-closed-convex-set.html": [
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html",
+      "Year-1/1b-Math-II-Linear-Algebra/euclidean-distance.html",
+      "Year-1/2a-Math-III-Analysis/open-and-closed-sets-in-a-metric-space.html",
+      "Year-1/2a-Math-III-Analysis/bolzano-weierstrass-theorem.html",
+      "Year-1/1a-Math-I-Calculus/infimum.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/nonoptimality-and-reduced-costs.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/improving-adjacent-corner-point.html",
+      "Year-1/1a-OR-Modelling/simplex-optimality-test.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/binding-and-nonbinding-constraints.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplanes-from-gradients.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polar-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-cone.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html",
+      "Year-1/2a-Math-III-Analysis/interior-of-a-set.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/objective-coefficient-ranging.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nonoptimality-and-reduced-costs.html",
+      "Year-1/1a-OR-Modelling/sensitivity-analysis.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/one-sided-derivatives-and-convexity.html": [
+      "Year-1/1a-Math-I-Calculus/one-sided-derivative.html",
+      "Year-1/1a-Math-I-Calculus/convexity-and-concavity.html",
+      "Year-1/1a-Math-I-Calculus/monotone-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strictly-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/continuity-of-convex-functions.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/operations-preserving-convexity-of-functions.html": [
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-and-concave-functions-on-rn.html",
+      "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strictly-convex-function.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-point.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull-of-extreme-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-on-a-supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/polar-cone.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html",
+      "Year-1/1b-Math-II-Linear-Algebra/angle-between-vectors.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-cone.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-cone.html",
+      "Year-1/1b-Math-II-Linear-Algebra/homogeneous-system.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html",
+      "Year-1/1b-Math-II-Linear-Algebra/matrix.html",
+      "Year-1/2a-Math-III-Analysis/union-and-intersection-of-closed-sets.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-outcomes.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/weak-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html",
+      "Year-1/1a-OR-Modelling/infeasible-linear-program.html",
+      "Year-1/1a-OR-Modelling/unbounded-linear-program.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-transformation-scheme.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html",
+      "Year-1/1a-OR-Modelling/minimization-to-maximization.html",
+      "Year-1/1a-OR-Modelling/unrestricted-variable-transformation.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-concave-function.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/local-maximum-and-minimum.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-convex-function.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-and-concave-functions-on-rn.html",
+      "Year-1/1a-Math-I-Calculus/monotone-function.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/improving-adjacent-corner-point.html",
+      "Year-1/1a-OR-Modelling/simplex-method.html",
+      "Year-1/1a-OR-Modelling/minimum-ratio-test.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/right-hand-side-ranging.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html",
+      "Year-1/1a-OR-Modelling/sensitivity-analysis.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/separating-hyperplane.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html",
+      "Year-1/1b-Math-II-Linear-Algebra/normal-vector.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separating-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nearest-point-of-a-closed-convex-set.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html",
+      "Year-1/2a-Math-III-Analysis/open-and-closed-sets-in-a-metric-space.html",
+      "Year-1/2a-Math-III-Analysis/boundary-of-a-set.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-disjoint-convex-sets.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separating-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/interior-and-closure-of-a-convex-set.html",
+      "Year-1/1a-Math-I-Calculus/infimum.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/global-maximum-and-minimum.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html",
+      "Year-1/1a-OR-Modelling/simplex-tableau.html",
+      "Year-1/1b-Math-II-Linear-Algebra/gauss-jordan-elimination.html",
+      "Year-1/1b-Math-II-Linear-Algebra/block-matrix.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/strictly-convex-function.html": [
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-and-concave-functions-on-rn.html",
+      "Year-1/1a-Math-I-Calculus/convexity-and-concavity.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/weak-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-of-the-dual.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html": [
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-and-concave-functions-on-rn.html",
+      "Year-1/2a-Math-III-Analysis/level-set-and-level-curve.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html": [
+      "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separating-hyperplane.html",
+      "Year-1/2a-Math-III-Analysis/adherent-point-and-closure-of-a-set.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/global-maximum-and-minimum.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplanes-from-gradients.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-convex-function.html",
+      "Year-1/2a-Math-III-Analysis/gradient.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/weak-duality.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-1/1a-OR-Modelling/feasible-solution.html",
+      "Year-1/1a-OR-Modelling/optimal-solution.html",
+      "Year-1/1b-Math-II-Linear-Algebra/transpose.html"
+    ],
     "Year-2/1b-Stochastic-Operations-Research/index.html": [],
     "Year-2/1b-Stochastic-Operations-Research/arrival-and-departure-rates.html": [
       "Year-2/1b-Stochastic-Operations-Research/counting-process.html",
@@ -11570,6 +12390,8 @@
     "Year-1/1a-Math-I-Calculus/convexity-and-concavity.html": [
       "Year-1/1a-Math-I-Calculus/inflection-point.html",
       "Year-1/2b-Probability-Distributions/jensen-inequality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/one-sided-derivatives-and-convexity.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strictly-convex-function.html",
       "Year-2/2b-Risk-Insurance/convex-order.html",
       "Year-2/2b-Risk-Insurance/expected-utility-and-risk-aversion.html"
     ],
@@ -11770,7 +12592,9 @@
       "Year-1/1a-Math-I-Calculus/horizontal-asymptote.html",
       "Year-1/1a-Math-I-Calculus/inflection-point.html",
       "Year-1/1a-Math-I-Calculus/stationary-point.html",
-      "Year-1/1a-Math-I-Calculus/vertical-asymptote.html"
+      "Year-1/1a-Math-I-Calculus/vertical-asymptote.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/epigraph.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/hypograph.html"
     ],
     "Year-1/1a-Math-I-Calculus/harmonic-series.html": [],
     "Year-1/1a-Math-I-Calculus/higher-order-derivative.html": [
@@ -11821,7 +12645,10 @@
       "Year-1/2b-Probability-Distributions/generalized-markov-inequality.html"
     ],
     "Year-1/1a-Math-I-Calculus/infimum.html": [
-      "Year-1/2a-Math-III-Analysis/limit-superior-and-limit-inferior.html"
+      "Year-1/2a-Math-III-Analysis/limit-superior-and-limit-inferior.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/epigraph.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nearest-point-of-a-closed-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-disjoint-convex-sets.html"
     ],
     "Year-1/1a-Math-I-Calculus/infinite-series.html": [
       "Year-1/1a-Math-I-Calculus/alternating-series.html",
@@ -11862,7 +12689,8 @@
       "Year-1/1b-Probability-Theory-for-EOR/disjoint-events.html",
       "Year-1/1b-Probability-Theory-for-EOR/union-and-intersection-of-events.html",
       "Year-1/2a-Math-III-Analysis/exterior-of-a-set.html",
-      "Year-1/2a-Math-III-Analysis/topology-and-topological-space.html"
+      "Year-1/2a-Math-III-Analysis/topology-and-topological-space.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html"
     ],
     "Year-1/1a-Math-I-Calculus/interval.html": [
       "Year-1/1a-Math-I-Calculus/convexity-and-concavity.html",
@@ -11959,7 +12787,9 @@
     ],
     "Year-1/1a-Math-I-Calculus/monotone-convergence-theorem.html": [],
     "Year-1/1a-Math-I-Calculus/monotone-function.html": [
-      "Year-1/1a-Math-I-Calculus/integral-test-for-convergence.html"
+      "Year-1/1a-Math-I-Calculus/integral-test-for-convergence.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/one-sided-derivatives-and-convexity.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-convex-function.html"
     ],
     "Year-1/1a-Math-I-Calculus/monotone-sequence.html": [
       "Year-1/1a-Math-I-Calculus/alternating-series-test.html",
@@ -11990,7 +12820,9 @@
       "Year-1/1b-Math-II-Linear-Algebra/complex-negation.html"
     ],
     "Year-1/1a-Math-I-Calculus/one-sided-continuity.html": [],
-    "Year-1/1a-Math-I-Calculus/one-sided-derivative.html": [],
+    "Year-1/1a-Math-I-Calculus/one-sided-derivative.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/one-sided-derivatives-and-convexity.html"
+    ],
     "Year-1/1a-Math-I-Calculus/one-sided-limit.html": [
       "Year-1/1a-Math-I-Calculus/one-sided-continuity.html",
       "Year-1/1a-Math-I-Calculus/one-sided-derivative.html",
@@ -12148,7 +12980,8 @@
       "Year-1/2a-Math-III-Analysis/cover.html",
       "Year-1/2a-Math-III-Analysis/topology-and-topological-space.html",
       "Year-1/2a-Math-III-Analysis/union-and-intersection-of-closed-sets.html",
-      "Year-1/2a-Math-III-Analysis/union-and-intersection-of-open-sets.html"
+      "Year-1/2a-Math-III-Analysis/union-and-intersection-of-open-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html"
     ],
     "Year-1/1a-Math-I-Calculus/upper-bound.html": [
       "Year-1/1a-Math-I-Calculus/bounded-function.html",
@@ -12168,7 +13001,8 @@
     ],
     "Year-1/1a-OR-Modelling/ambulance-location-model.html": [],
     "Year-1/1a-OR-Modelling/artificial-variable.html": [
-      "Year-1/1a-OR-Modelling/two-phase-method.html"
+      "Year-1/1a-OR-Modelling/two-phase-method.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/big-m-method.html"
     ],
     "Year-1/1a-OR-Modelling/assignment-cost-transformation.html": [
       "Year-1/1a-OR-Modelling/hungarian-algorithm.html"
@@ -12181,7 +13015,8 @@
     ],
     "Year-1/1a-OR-Modelling/augmented-form.html": [
       "Year-1/1a-OR-Modelling/artificial-variable.html",
-      "Year-1/1a-OR-Modelling/basic-solution.html"
+      "Year-1/1a-OR-Modelling/basic-solution.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html"
     ],
     "Year-1/1a-OR-Modelling/augmenting-path-algorithm.html": [
       "Year-1/1a-OR-Modelling/zero-cost-matching-via-maximum-flow.html"
@@ -12197,7 +13032,8 @@
     "Year-1/1a-OR-Modelling/basic-solution.html": [
       "Year-1/1a-OR-Modelling/basic-feasible-solution.html",
       "Year-1/1a-OR-Modelling/basic-variable.html",
-      "Year-1/1a-OR-Modelling/nonbasic-variable.html"
+      "Year-1/1a-OR-Modelling/nonbasic-variable.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html"
     ],
     "Year-1/1a-OR-Modelling/basic-variable.html": [
       "Year-1/1a-OR-Modelling/degeneracy.html",
@@ -12263,9 +13099,14 @@
       "Year-1/1a-OR-Modelling/weibull-demand-distribution.html"
     ],
     "Year-1/1a-OR-Modelling/convex-combination-of-optimal-solutions.html": [],
-    "Year-1/1a-OR-Modelling/corner-point-optimality.html": [],
+    "Year-1/1a-OR-Modelling/corner-point-optimality.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/improving-adjacent-corner-point.html"
+    ],
     "Year-1/1a-OR-Modelling/corner-point.html": [
-      "Year-1/1a-OR-Modelling/corner-point-optimality.html"
+      "Year-1/1a-OR-Modelling/corner-point-optimality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adjacent-corner-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html"
     ],
     "Year-1/1a-OR-Modelling/critical-ratio.html": [
       "Year-1/1a-OR-Modelling/continuous-newsvendor-rule.html",
@@ -12284,7 +13125,9 @@
       "Year-1/1a-OR-Modelling/nonnegativity-constraint.html",
       "Year-1/1a-OR-Modelling/objective-function.html"
     ],
-    "Year-1/1a-OR-Modelling/degeneracy.html": [],
+    "Year-1/1a-OR-Modelling/degeneracy.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/cycling.html"
+    ],
     "Year-1/1a-OR-Modelling/diet-problem.html": [],
     "Year-1/1a-OR-Modelling/dijkstra-prim-method.html": [],
     "Year-1/1a-OR-Modelling/directed-network.html": [
@@ -12323,7 +13166,8 @@
       "Year-1/1a-OR-Modelling/nonconvex-region-modelling.html"
     ],
     "Year-1/1a-OR-Modelling/entering-variable-rule.html": [
-      "Year-1/1a-OR-Modelling/minimum-ratio-test.html"
+      "Year-1/1a-OR-Modelling/minimum-ratio-test.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/blands-rule.html"
     ],
     "Year-1/1a-OR-Modelling/eoq-with-lead-times.html": [
       "Year-2/1b-Stochastic-Operations-Research/inventory-position.html"
@@ -12361,7 +13205,8 @@
       "Year-1/1a-OR-Modelling/feasible-region.html",
       "Year-1/1a-OR-Modelling/heuristic.html",
       "Year-1/1a-OR-Modelling/incumbent-solution.html",
-      "Year-1/1a-OR-Modelling/optimal-solution.html"
+      "Year-1/1a-OR-Modelling/optimal-solution.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/weak-duality.html"
     ],
     "Year-1/1a-OR-Modelling/finite-value-constraint.html": [],
     "Year-1/1a-OR-Modelling/first-fit-heuristic.html": [],
@@ -12391,7 +13236,10 @@
     "Year-1/1a-OR-Modelling/incumbent-solution.html": [
       "Year-1/1a-OR-Modelling/branch-and-bound-pruning.html"
     ],
-    "Year-1/1a-OR-Modelling/infeasible-linear-program.html": [],
+    "Year-1/1a-OR-Modelling/infeasible-linear-program.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-outcomes.html"
+    ],
     "Year-1/1a-OR-Modelling/integer-linear-programming.html": [
       "Year-1/1a-OR-Modelling/binary-integer-program.html",
       "Year-1/1a-OR-Modelling/graphical-integer-programming.html",
@@ -12433,7 +13281,9 @@
       "Year-1/1a-OR-Modelling/multiple-optimal-solutions.html",
       "Year-1/1a-OR-Modelling/simplex-method.html",
       "Year-1/1a-OR-Modelling/unbounded-linear-program.html",
-      "Year-1/1a-OR-Modelling/unrestricted-variable-transformation.html"
+      "Year-1/1a-OR-Modelling/unrestricted-variable-transformation.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html"
     ],
     "Year-1/1a-OR-Modelling/lot-size-bellman-recursion.html": [
       "Year-1/1a-OR-Modelling/zero-inventory-ordering-property.html"
@@ -12447,11 +13297,17 @@
       "Year-1/1a-OR-Modelling/maximum-flow-linear-program.html",
       "Year-1/1a-OR-Modelling/residual-network.html"
     ],
-    "Year-1/1a-OR-Modelling/minimization-to-maximization.html": [],
+    "Year-1/1a-OR-Modelling/minimization-to-maximization.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-transformation-scheme.html"
+    ],
     "Year-1/1a-OR-Modelling/minimum-ratio-test.html": [
       "Year-1/1a-OR-Modelling/degeneracy.html",
       "Year-1/1a-OR-Modelling/simplex-pivot.html",
-      "Year-1/1a-OR-Modelling/unbounded-linear-program.html"
+      "Year-1/1a-OR-Modelling/unbounded-linear-program.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/blands-rule.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/cycling.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html"
     ],
     "Year-1/1a-OR-Modelling/minimum-spanning-tree.html": [
       "Year-1/1a-OR-Modelling/dijkstra-prim-method.html",
@@ -12521,7 +13377,8 @@
       "Year-1/1a-OR-Modelling/minimization-to-maximization.html",
       "Year-1/1a-OR-Modelling/multiple-optimal-solutions.html",
       "Year-1/1a-OR-Modelling/relaxation.html",
-      "Year-1/1a-OR-Modelling/sensitivity-analysis.html"
+      "Year-1/1a-OR-Modelling/sensitivity-analysis.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/weak-duality.html"
     ],
     "Year-1/1a-OR-Modelling/optimization-bounds.html": [
       "Year-1/1a-OR-Modelling/branch-and-bound.html"
@@ -12533,6 +13390,7 @@
       "Year-1/1a-OR-Modelling/or-study-cycle.html",
       "Year-1/1a-OR-Modelling/relaxation.html",
       "Year-1/1a-OR-Modelling/vehicle-routing-problem.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-optimization-problem.html",
       "Year-2/2b-Game-Theory/game-theory.html",
       "Year-2/2b-Game-Theory/rational-agent.html"
     ],
@@ -12594,7 +13452,9 @@
       "Year-1/1a-OR-Modelling/objective-coefficient-range.html",
       "Year-1/1a-OR-Modelling/reduced-cost.html",
       "Year-1/1a-OR-Modelling/rhs-sensitivity-range.html",
-      "Year-1/1a-OR-Modelling/shadow-price.html"
+      "Year-1/1a-OR-Modelling/shadow-price.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/objective-coefficient-ranging.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/right-hand-side-ranging.html"
     ],
     "Year-1/1a-OR-Modelling/setup-cost.html": [
       "Year-1/1a-OR-Modelling/classical-eoq-model.html",
@@ -12621,9 +13481,12 @@
     ],
     "Year-1/1a-OR-Modelling/silver-meal-heuristic.html": [],
     "Year-1/1a-OR-Modelling/simplex-method.html": [
-      "Year-1/1a-OR-Modelling/two-phase-method.html"
+      "Year-1/1a-OR-Modelling/two-phase-method.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html"
     ],
-    "Year-1/1a-OR-Modelling/simplex-optimality-test.html": [],
+    "Year-1/1a-OR-Modelling/simplex-optimality-test.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nonoptimality-and-reduced-costs.html"
+    ],
     "Year-1/1a-OR-Modelling/simplex-pivot.html": [
       "Year-1/1a-OR-Modelling/degeneracy.html"
     ],
@@ -12633,7 +13496,8 @@
       "Year-1/1a-OR-Modelling/shadow-price.html",
       "Year-1/1a-OR-Modelling/simplex-optimality-test.html",
       "Year-1/1a-OR-Modelling/simplex-pivot.html",
-      "Year-1/1a-OR-Modelling/two-phase-method.html"
+      "Year-1/1a-OR-Modelling/two-phase-method.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html"
     ],
     "Year-1/1a-OR-Modelling/slack-variable.html": [
       "Year-1/1a-OR-Modelling/augmented-form.html",
@@ -12654,7 +13518,10 @@
     "Year-1/1a-OR-Modelling/two-phase-method.html": [
       "Year-1/1a-OR-Modelling/infeasible-linear-program.html"
     ],
-    "Year-1/1a-OR-Modelling/unbounded-linear-program.html": [],
+    "Year-1/1a-OR-Modelling/unbounded-linear-program.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-outcomes.html"
+    ],
     "Year-1/1a-OR-Modelling/underage-cost.html": [
       "Year-1/1a-OR-Modelling/critical-ratio.html"
     ],
@@ -12665,7 +13532,10 @@
       "Year-1/1a-OR-Modelling/vertex-degree.html"
     ],
     "Year-1/1a-OR-Modelling/uniform-demand-distribution.html": [],
-    "Year-1/1a-OR-Modelling/unrestricted-variable-transformation.html": [],
+    "Year-1/1a-OR-Modelling/unrestricted-variable-transformation.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-transformation-scheme.html"
+    ],
     "Year-1/1a-OR-Modelling/vehicle-routing-problem.html": [],
     "Year-1/1a-OR-Modelling/vertex-degree.html": [
       "Year-1/1a-OR-Modelling/chinese-postman-problem.html",
@@ -12692,7 +13562,9 @@
     "Year-1/1b-Math-II-Linear-Algebra/algebraic-multiplicity.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/algebraic-structure.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/algebraically-closed-field.html": [],
-    "Year-1/1b-Math-II-Linear-Algebra/angle-between-vectors.html": [],
+    "Year-1/1b-Math-II-Linear-Algebra/angle-between-vectors.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polar-cone.html"
+    ],
     "Year-1/1b-Math-II-Linear-Algebra/argument-of-a-complex-number.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/associativity.html": [
       "Year-1/1b-Math-II-Linear-Algebra/group.html",
@@ -12718,7 +13590,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/semigroup.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/block-matrix.html": [
-      "Year-2/1a-Math-V-Advanced-Linear-Algebra/kronecker-product.html"
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/kronecker-product.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/cantors-diagonal-argument.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/cantors-theorem.html": [],
@@ -12914,7 +13787,8 @@
     "Year-1/1b-Math-II-Linear-Algebra/equivalence-relation.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/equivalent-systems-of-equations.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/euclidean-distance.html": [
-      "Year-1/1b-Math-II-Linear-Algebra/distance-between-point-and-line.html"
+      "Year-1/1b-Math-II-Linear-Algebra/distance-between-point-and-line.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nearest-point-of-a-closed-convex-set.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/euclidean-space.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/eulers-formula.html": [
@@ -12941,7 +13815,9 @@
     "Year-1/1b-Math-II-Linear-Algebra/fundamental-theorem-of-linear-maps.html": [
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/fundamental-theorem-of-linear-algebra.html"
     ],
-    "Year-1/1b-Math-II-Linear-Algebra/gauss-jordan-elimination.html": [],
+    "Year-1/1b-Math-II-Linear-Algebra/gauss-jordan-elimination.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html"
+    ],
     "Year-1/1b-Math-II-Linear-Algebra/generalized-eigenvector.html": [
       "Year-1/1b-Math-II-Linear-Algebra/jordan-block.html",
       "Year-1/1b-Math-II-Linear-Algebra/jordan-normal-form.html"
@@ -12952,9 +13828,15 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/homogeneous-system.html": [
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html",
-      "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html"
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/particular-solution-linear-ode.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-cone.html"
     ],
-    "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html": [],
+    "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/interior-and-closure-of-a-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separating-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html"
+    ],
     "Year-1/1b-Math-II-Linear-Algebra/idempotent-matrix.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/identity-element.html": [
       "Year-1/1b-Math-II-Linear-Algebra/group.html",
@@ -12990,7 +13872,8 @@
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/change-of-basis.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/generalized-inverse.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-matrix.html",
-      "Year-2/1a-Math-V-Advanced-Linear-Algebra/similarity-transformation.html"
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/similarity-transformation.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/jordan-block.html": [
       "Year-1/1b-Math-II-Linear-Algebra/jordan-normal-form.html"
@@ -13008,7 +13891,11 @@
       "Year-1/1b-Math-II-Linear-Algebra/linear-independence.html",
       "Year-1/1b-Math-II-Linear-Algebra/linear-span.html",
       "Year-1/1b-Math-II-Linear-Algebra/parametric-representation-of-a-line.html",
-      "Year-1/1b-Math-II-Linear-Algebra/plane.html"
+      "Year-1/1b-Math-II-Linear-Algebra/plane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-combination.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/linear-independence.html": [
       "Year-1/1b-Math-II-Linear-Algebra/basis.html",
@@ -13017,7 +13904,9 @@
       "Year-1/1b-Math-II-Linear-Algebra/plane.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/basis-of-solutions-difference-equation.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/general-solution-linear-ode.html",
-      "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html"
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/gram-schmidt-algorithm.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adjacent-corner-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/linear-map.html": [
       "Year-1/1b-Math-II-Linear-Algebra/composition-of-linear-maps.html",
@@ -13099,12 +13988,15 @@
       "Year-1/2b-Math-IV-Multivariate-Calculus/hessian-matrix.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/independent-linear-constraint-system.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/partial-jacobians.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/principal-minors-and-sylvesters-criterion.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/principal-minors-and-sylvesters-criterion.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/monoid.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/normal-vector.html": [
       "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html",
-      "Year-1/1b-Math-II-Linear-Algebra/point-normal-equation-of-a-plane.html"
+      "Year-1/1b-Math-II-Linear-Algebra/point-normal-equation-of-a-plane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separating-hyperplane.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/origin.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/orthogonal-vectors.html": [
@@ -13116,7 +14008,8 @@
     ],
     "Year-1/1b-Math-II-Linear-Algebra/parametric-representation-of-a-line.html": [
       "Year-1/1b-Math-II-Linear-Algebra/distance-between-point-and-line.html",
-      "Year-1/1b-Math-II-Linear-Algebra/skew-lines.html"
+      "Year-1/1b-Math-II-Linear-Algebra/skew-lines.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-combination.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/permutation-matrix.html": [
       "Year-1/1b-Math-II-Linear-Algebra/lu-decomposition.html"
@@ -13162,7 +14055,9 @@
       "Year-1/2b-Math-IV-Multivariate-Calculus/local-injectivity-surjectivity-and-bijectivity.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/nondegenerate-constraint-qualification.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/generalized-inverse.html",
-      "Year-2/1a-Math-V-Advanced-Linear-Algebra/row-space.html"
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/row-space.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/real-coordinate-space.html": [
       "Year-1/2a-Math-III-Analysis/discrete-metric.html",
@@ -13186,7 +14081,8 @@
     "Year-1/1b-Math-II-Linear-Algebra/scalar-multiplication.html": [
       "Year-1/1b-Math-II-Linear-Algebra/linear-combination.html",
       "Year-1/1b-Math-II-Linear-Algebra/parametric-representation-of-a-line.html",
-      "Year-1/1b-Math-II-Linear-Algebra/subspace.html"
+      "Year-1/1b-Math-II-Linear-Algebra/subspace.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/cone.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/semigroup.html": [
       "Year-1/1b-Math-II-Linear-Algebra/monoid.html",
@@ -13230,6 +14126,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/solution-set.html",
       "Year-1/1b-Math-II-Linear-Algebra/standard-form-of-a-linear-system.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/affine-subspace.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html",
       "Year-2/1b-Stochastic-Operations-Research/traffic-equations.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/trace.html": [],
@@ -13239,7 +14137,10 @@
       "Year-1/1b-Math-II-Linear-Algebra/symmetric-matrix.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/least-squares.html",
       "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-matrix.html",
-      "Year-2/1a-Math-V-Advanced-Linear-Algebra/row-space.html"
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/row-space.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-of-the-dual.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/weak-duality.html"
     ],
     "Year-1/1b-Math-II-Linear-Algebra/triangle-inequality-vector-norm.html": [],
     "Year-1/1b-Math-II-Linear-Algebra/upper-triangular-matrix.html": [
@@ -13311,7 +14212,8 @@
       "Year-1/1b-Math-II-Linear-Algebra/kernel.html",
       "Year-1/1b-Math-II-Linear-Algebra/linear-independence.html",
       "Year-1/1b-Math-II-Linear-Algebra/origin.html",
-      "Year-1/1b-Math-II-Linear-Algebra/subspace.html"
+      "Year-1/1b-Math-II-Linear-Algebra/subspace.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/cone.html"
     ],
     "Year-1/1b-Probability-Theory-for-EOR/index.html": [],
     "Year-1/1b-Probability-Theory-for-EOR/absolutely-continuous-distribution.html": [
@@ -13813,12 +14715,21 @@
     "Year-1/2a-Finance-for-EOR/index.html": [],
     "Year-1/2a-Math-III-Analysis/index.html": [],
     "Year-1/2a-Math-III-Analysis/accumulation-point.html": [],
-    "Year-1/2a-Math-III-Analysis/adherent-point-and-closure-of-a-set.html": [],
-    "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html": [],
+    "Year-1/2a-Math-III-Analysis/adherent-point-and-closure-of-a-set.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/interior-and-closure-of-a-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html"
+    ],
+    "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/operations-preserving-convexity-of-functions.html"
+    ],
     "Year-1/2a-Math-III-Analysis/big-o-and-little-o-notations.html": [],
-    "Year-1/2a-Math-III-Analysis/bolzano-weierstrass-theorem.html": [],
+    "Year-1/2a-Math-III-Analysis/bolzano-weierstrass-theorem.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nearest-point-of-a-closed-convex-set.html"
+    ],
     "Year-1/2a-Math-III-Analysis/boundary-of-a-set.html": [
-      "Year-1/2a-Math-III-Analysis/open-and-closed-sets-in-a-metric-space.html"
+      "Year-1/2a-Math-III-Analysis/open-and-closed-sets-in-a-metric-space.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-point.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html"
     ],
     "Year-1/2a-Math-III-Analysis/bounded-set-in-a-metric-space.html": [
       "Year-1/2a-Math-III-Analysis/bolzano-weierstrass-theorem.html",
@@ -13830,7 +14741,10 @@
     "Year-1/2a-Math-III-Analysis/closed-metric-ball.html": [],
     "Year-1/2a-Math-III-Analysis/compact-set.html": [
       "Year-1/2a-Math-III-Analysis/extreme-value-theorem-generalized-version.html",
-      "Year-1/2a-Math-III-Analysis/heine-borel-theorem.html"
+      "Year-1/2a-Math-III-Analysis/heine-borel-theorem.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull-of-extreme-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extrema-of-convex-functions-on-compact-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/interior-and-closure-of-a-convex-set.html"
     ],
     "Year-1/2a-Math-III-Analysis/complete-metric-space.html": [],
     "Year-1/2a-Math-III-Analysis/connected-and-disconnected-sets.html": [
@@ -13841,7 +14755,8 @@
       "Year-1/2a-Math-III-Analysis/extreme-value-theorem-generalized-version.html",
       "Year-1/2a-Math-III-Analysis/intermediate-value-theorem-generalized-version.html",
       "Year-1/2a-Math-III-Analysis/path.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/twice-continuous-differentiability-on-rn.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/twice-continuous-differentiability-on-rn.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/continuity-of-convex-functions.html"
     ],
     "Year-1/2a-Math-III-Analysis/convergence-in-a-metric-space.html": [
       "Year-1/2a-Math-III-Analysis/complete-metric-space.html",
@@ -13868,7 +14783,8 @@
       "Year-1/2a-Math-III-Analysis/boundary-of-a-set.html"
     ],
     "Year-1/2a-Math-III-Analysis/extreme-value-theorem-generalized-version.html": [
-      "Year-1/2b-Math-IV-Multivariate-Calculus/global-maximum-and-minimum.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/global-maximum-and-minimum.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extrema-of-convex-functions-on-compact-sets.html"
     ],
     "Year-1/2a-Math-III-Analysis/function-between-spaces.html": [
       "Year-1/2a-Math-III-Analysis/affine-transformation-and-linearity.html",
@@ -13880,7 +14796,8 @@
       "Year-1/2b-Math-IV-Multivariate-Calculus/independent-linear-constraint-system.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/lagrange-multiplier.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/lagrangian-function.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/steepest-ascent-direction.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/steepest-ascent-direction.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplanes-from-gradients.html"
     ],
     "Year-1/2a-Math-III-Analysis/heine-borel-theorem.html": [],
     "Year-1/2a-Math-III-Analysis/heine-cantor-theorem.html": [],
@@ -13890,7 +14807,8 @@
     "Year-1/2a-Math-III-Analysis/homogeneous-polynomial.html": [],
     "Year-1/2a-Math-III-Analysis/image-and-preimage.html": [
       "Year-1/2a-Math-III-Analysis/equivalent-formulation-of-continuity.html",
-      "Year-1/2a-Math-III-Analysis/level-set-and-level-curve.html"
+      "Year-1/2a-Math-III-Analysis/level-set-and-level-curve.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html"
     ],
     "Year-1/2a-Math-III-Analysis/infinite-series-of-functions.html": [
       "Year-1/2a-Math-III-Analysis/normal-convergence.html",
@@ -13900,7 +14818,10 @@
     ],
     "Year-1/2a-Math-III-Analysis/interior-of-a-set.html": [
       "Year-1/2a-Math-III-Analysis/boundary-of-a-set.html",
-      "Year-1/2a-Math-III-Analysis/directional-derivative.html"
+      "Year-1/2a-Math-III-Analysis/directional-derivative.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/continuity-of-convex-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/interior-and-closure-of-a-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html"
     ],
     "Year-1/2a-Math-III-Analysis/intermediate-value-theorem-generalized-version.html": [],
     "Year-1/2a-Math-III-Analysis/jacobian-matrix.html": [
@@ -13914,7 +14835,10 @@
       "Year-1/2b-Math-IV-Multivariate-Calculus/partial-jacobians.html"
     ],
     "Year-1/2a-Math-III-Analysis/level-set-and-level-curve.html": [
-      "Year-1/2b-Math-IV-Multivariate-Calculus/restriction-of-a-function.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/restriction-of-a-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/minimum-and-separation.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html"
     ],
     "Year-1/2a-Math-III-Analysis/limit-superior-and-limit-inferior.html": [
       "Year-1/2a-Math-III-Analysis/root-test.html"
@@ -13950,7 +14874,12 @@
       "Year-1/2a-Math-III-Analysis/topologically-equivalent-metrics.html",
       "Year-1/2a-Math-III-Analysis/union-and-intersection-of-closed-sets.html",
       "Year-1/2a-Math-III-Analysis/union-and-intersection-of-open-sets.html",
-      "Year-1/2b-Math-IV-Multivariate-Calculus/twice-continuous-differentiability-on-rn.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/twice-continuous-differentiability-on-rn.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/minimum-and-separation.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nearest-point-of-a-closed-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html"
     ],
     "Year-1/2a-Math-III-Analysis/open-metric-ball.html": [
       "Year-1/2a-Math-III-Analysis/accumulation-point.html",
@@ -14023,7 +14952,10 @@
       "Year-1/2a-Math-III-Analysis/weierstrass-approximation-theorem.html",
       "Year-1/2a-Math-III-Analysis/weierstrass-m-test.html"
     ],
-    "Year-1/2a-Math-III-Analysis/union-and-intersection-of-closed-sets.html": [],
+    "Year-1/2a-Math-III-Analysis/union-and-intersection-of-closed-sets.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html"
+    ],
     "Year-1/2a-Math-III-Analysis/union-and-intersection-of-open-sets.html": [],
     "Year-1/2a-Math-III-Analysis/weierstrass-approximation-theorem.html": [],
     "Year-1/2a-Math-III-Analysis/weierstrass-function.html": [],
@@ -14031,7 +14963,10 @@
     "Year-1/2a-Microeconomics-for-EOR/index.html": [],
     "Year-1/2b-Math-IV-Multivariate-Calculus/index.html": [],
     "Year-1/2b-Math-IV-Multivariate-Calculus/binding-and-nonbinding-constraints.html": [
-      "Year-1/2b-Math-IV-Multivariate-Calculus/complementary-slackness.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/complementary-slackness.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adjacent-corner-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-complementary-slackness.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html"
     ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/bordered-hessian-matrix.html": [
       "Year-1/2b-Math-IV-Multivariate-Calculus/envelope-theorem-for-constrained-optimization.html"
@@ -14040,16 +14975,44 @@
     "Year-1/2b-Math-IV-Multivariate-Calculus/chain-rule-on-a-curve.html": [],
     "Year-1/2b-Math-IV-Multivariate-Calculus/complementary-slackness.html": [],
     "Year-1/2b-Math-IV-Multivariate-Calculus/convex-and-concave-functions-on-rn.html": [
-      "Year-1/2b-Math-IV-Multivariate-Calculus/hessian-test-for-convexity-and-concavity.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/hessian-test-for-convexity-and-concavity.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/continuity-of-convex-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-optimization-problem.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/epigraph.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/hypograph.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/local-minimum-of-a-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/operations-preserving-convexity-of-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strictly-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html"
     ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/convex-set-in-rn.html": [
-      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-and-concave-functions-on-rn.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-and-concave-functions-on-rn.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-combination.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/epigraph.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-point.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/interior-and-closure-of-a-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nearest-point-of-a-closed-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strictly-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html"
     ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/envelope-theorem-for-constrained-optimization.html": [],
     "Year-1/2b-Math-IV-Multivariate-Calculus/exogenous-and-endogenous-variables.html": [],
     "Year-1/2b-Math-IV-Multivariate-Calculus/general-method-of-lagrange.html": [],
     "Year-1/2b-Math-IV-Multivariate-Calculus/global-maximum-and-minimum.html": [
-      "Year-1/2b-Math-IV-Multivariate-Calculus/value-function.html"
+      "Year-1/2b-Math-IV-Multivariate-Calculus/value-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extrema-of-convex-functions-on-compact-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/local-minimum-of-a-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html"
     ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/hessian-matrix.html": [
       "Year-1/2b-Math-IV-Multivariate-Calculus/bordered-hessian-matrix.html",
@@ -14098,7 +15061,10 @@
       "Year-1/2b-Math-IV-Multivariate-Calculus/jacobian-rank-local-behavior-theorem.html",
       "Year-1/2b-Math-IV-Multivariate-Calculus/multivariable-inverse-function-theorem.html"
     ],
-    "Year-1/2b-Math-IV-Multivariate-Calculus/local-maximum-and-minimum.html": [],
+    "Year-1/2b-Math-IV-Multivariate-Calculus/local-maximum-and-minimum.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/local-minimum-of-a-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-concave-function.html"
+    ],
     "Year-1/2b-Math-IV-Multivariate-Calculus/method-of-lagrange-for-constrained-minimization.html": [],
     "Year-1/2b-Math-IV-Multivariate-Calculus/method-of-lagrange-for-equality-constraints.html": [
       "Year-1/2b-Math-IV-Multivariate-Calculus/envelope-theorem-for-constrained-optimization.html",
@@ -14446,6 +15412,248 @@
     "Year-2/1a-Statistical-Inference/index.html": [],
     "Year-2/1b-Linear-Models-in-Statistics/index.html": [],
     "Year-2/1b-Math-VI-Convexity-and-Optimization/index.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/adding-or-removing-a-variable.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/adjacent-corner-points.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/improving-adjacent-corner-point.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adding-or-removing-a-variable.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/big-m-method.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/changing-a-technology-coefficient.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/cycling.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nonoptimality-and-reduced-costs.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/right-hand-side-ranging.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/big-m-method.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/blands-rule.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/changing-a-technology-coefficient.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adding-or-removing-a-variable.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/cone.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polar-cone.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/continuity-of-convex-functions.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extrema-of-convex-functions-on-compact-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/one-sided-derivatives-and-convexity.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-combination.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/continuity-of-convex-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-point.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-cone.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polar-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-cone.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull-of-extreme-points.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull-of-extreme-points.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-optimization-problem.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/cycling.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/blands-rule.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-of-the-dual.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-complementary-slackness.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-transformation-scheme.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/weak-duality.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-of-the-dual.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adding-or-removing-a-variable.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/changing-a-technology-coefficient.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/right-hand-side-ranging.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/epigraph.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/continuity-of-convex-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/hypograph.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/extrema-of-convex-functions-on-compact-sets.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-point.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull-of-extreme-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-on-a-supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adjacent-corner-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-on-a-supporting-hyperplane.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polar-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplanes-from-gradients.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polar-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separating-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/hypograph.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/improving-adjacent-corner-point.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nonoptimality-and-reduced-costs.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/interior-and-closure-of-a-convex-set.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-disjoint-convex-sets.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-on-a-supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-disjoint-convex-sets.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/local-minimum-of-a-convex-function.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-optimization-problem.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-complementary-slackness.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-outcomes.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/big-m-method.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-of-the-dual.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-transformation-scheme.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/minimum-and-separation.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/nearest-point-of-a-closed-convex-set.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/nonoptimality-and-reduced-costs.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/objective-coefficient-ranging.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplanes-from-gradients.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/objective-coefficient-ranging.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/changing-a-technology-coefficient.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/one-sided-derivatives-and-convexity.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/operations-preserving-convexity-of-functions.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/improving-adjacent-corner-point.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/polar-cone.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-cone.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-cone.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-outcomes.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-transformation-scheme.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-of-the-dual.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-concave-function.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-convex-function.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/minimum-and-separation.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-concave-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplanes-from-gradients.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adding-or-removing-a-variable.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/blands-rule.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/cycling.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/right-hand-side-ranging.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/separating-hyperplane.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/minimum-and-separation.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-disjoint-convex-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-disjoint-convex-sets.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-disjoint-convex-sets.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/minimum-and-separation.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adding-or-removing-a-variable.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/big-m-method.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/changing-a-technology-coefficient.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nonoptimality-and-reduced-costs.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/objective-coefficient-ranging.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/right-hand-side-ranging.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/strictly-convex-function.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/local-minimum-of-a-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/one-sided-derivatives-and-convexity.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/operations-preserving-convexity-of-functions.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-complementary-slackness.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-outcomes.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-optimization-problem.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-concave-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull-of-extreme-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-on-a-supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplanes-from-gradients.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplanes-from-gradients.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/weak-duality.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-complementary-slackness.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-outcomes.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html"
+    ],
     "Year-2/1b-Stochastic-Operations-Research/index.html": [],
     "Year-2/1b-Stochastic-Operations-Research/arrival-and-departure-rates.html": [
       "Year-2/1b-Stochastic-Operations-Research/batch-formation-time.html",
@@ -19201,6 +20409,536 @@
     "Year-2/1a-Statistical-Inference/index.html": [],
     "Year-2/1b-Linear-Models-in-Statistics/index.html": [],
     "Year-2/1b-Math-VI-Convexity-and-Optimization/index.html": [],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/adding-or-removing-a-variable.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/right-hand-side-ranging.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/objective-coefficient-ranging.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-1/1a-OR-Modelling/reduced-cost.html",
+      "Year-1/1a-OR-Modelling/degeneracy.html",
+      "Year-1/1a-OR-Modelling/multiple-optimal-solutions.html",
+      "Year-1/1a-OR-Modelling/sensitivity-analysis.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/adjacent-corner-points.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/improving-adjacent-corner-point.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html",
+      "Year-1/1a-OR-Modelling/simplex-pivot.html",
+      "Year-1/1a-OR-Modelling/degeneracy.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/cycling.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html",
+      "Year-1/1a-OR-Modelling/basic-feasible-solution.html",
+      "Year-1/1a-OR-Modelling/basic-variable.html",
+      "Year-1/1a-OR-Modelling/degeneracy.html",
+      "Year-1/1b-Math-II-Linear-Algebra/basis.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/big-m-method.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html",
+      "Year-1/1a-OR-Modelling/two-phase-method.html",
+      "Year-1/1a-OR-Modelling/surplus-variable.html",
+      "Year-1/1a-OR-Modelling/infeasible-linear-program.html",
+      "Year-1/1a-OR-Modelling/unbounded-linear-program.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/blands-rule.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nonoptimality-and-reduced-costs.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html",
+      "Year-1/1a-OR-Modelling/degeneracy.html",
+      "Year-1/1a-OR-Modelling/simplex-method.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/changing-a-technology-coefficient.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adding-or-removing-a-variable.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/right-hand-side-ranging.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html",
+      "Year-1/1a-OR-Modelling/reduced-cost.html",
+      "Year-1/1a-OR-Modelling/shadow-price.html",
+      "Year-1/1a-OR-Modelling/sensitivity-analysis.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/cone.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polar-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html",
+      "Year-1/1b-Math-II-Linear-Algebra/subspace.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/continuity-of-convex-functions.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/one-sided-derivatives-and-convexity.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/interior-and-closure-of-a-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strictly-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extrema-of-convex-functions-on-compact-sets.html",
+      "Year-1/1a-Math-I-Calculus/continuity.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-combination.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html",
+      "Year-1/1a-OR-Modelling/convex-combination-of-optimal-solutions.html",
+      "Year-1/2b-Probability-Distributions/jensen-inequality.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/affine-subspace.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/epigraph.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-cone.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polar-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html",
+      "Year-1/1b-Math-II-Linear-Algebra/subspace.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull-of-extreme-points.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-on-a-supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/interior-and-closure-of-a-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html",
+      "Year-1/2a-Math-III-Analysis/heine-borel-theorem.html",
+      "Year-1/1a-OR-Modelling/corner-point-optimality.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/interior-and-closure-of-a-convex-set.html",
+      "Year-1/1a-OR-Modelling/corner-point.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-point.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull-of-extreme-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-optimization-problem.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html",
+      "Year-1/1a-OR-Modelling/linear-programming.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/hessian-test-for-convexity-and-concavity.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/cycling.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/blands-rule.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nonoptimality-and-reduced-costs.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adjacent-corner-points.html",
+      "Year-1/1a-OR-Modelling/simplex-pivot.html",
+      "Year-1/1a-OR-Modelling/unbounded-linear-program.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-transformation-scheme.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-of-the-dual.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/weak-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-complementary-slackness.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html",
+      "Year-1/1a-OR-Modelling/shadow-price.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-of-the-dual.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/weak-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-outcomes.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html",
+      "Year-1/1a-OR-Modelling/minimization-to-maximization.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-of-the-dual.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-complementary-slackness.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/big-m-method.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/right-hand-side-ranging.html",
+      "Year-1/1a-OR-Modelling/shadow-price.html",
+      "Year-1/1a-OR-Modelling/surplus-variable.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/epigraph.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/hypograph.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strictly-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/operations-preserving-convexity-of-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/continuity-of-convex-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/extrema-of-convex-functions-on-compact-sets.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/local-minimum-of-a-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strictly-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html",
+      "Year-1/1a-Math-I-Calculus/extreme-value-theorem.html",
+      "Year-1/2a-Math-III-Analysis/heine-borel-theorem.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-point.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull-of-extreme-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-on-a-supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html",
+      "Year-1/1a-OR-Modelling/corner-point.html",
+      "Year-1/2a-Math-III-Analysis/exterior-of-a-set.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull-of-extreme-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-on-a-supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adjacent-corner-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html",
+      "Year-1/1a-OR-Modelling/corner-point.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/binding-and-nonbinding-constraints.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-on-a-supporting-hyperplane.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull-of-extreme-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html",
+      "Year-1/1a-OR-Modelling/multiple-optimal-solutions.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polar-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separating-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-outcomes.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polar-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html",
+      "Year-1/1b-Math-II-Linear-Algebra/linear-span.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/interior-and-closure-of-a-convex-set.html",
+      "Year-1/1a-OR-Modelling/constraint.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separating-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/hypograph.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-concave-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/operations-preserving-convexity-of-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strictly-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html",
+      "Year-1/1b-Math-II-Linear-Algebra/hyperplane.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/improving-adjacent-corner-point.html": [
+      "Year-1/1a-OR-Modelling/simplex-method.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nonoptimality-and-reduced-costs.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/blands-rule.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/local-minimum-of-a-convex-function.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/interior-and-closure-of-a-convex-set.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull.html",
+      "Year-1/2a-Math-III-Analysis/boundary-of-a-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-disjoint-convex-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/continuity-of-convex-functions.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/interior-and-closure-of-a-convex-set.html",
+      "Year-1/2a-Math-III-Analysis/union-and-intersection-of-closed-sets.html",
+      "Year-1/1a-OR-Modelling/feasible-region.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-disjoint-convex-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-cone.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/local-minimum-of-a-convex-function.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extrema-of-convex-functions-on-compact-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/minimum-and-separation.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-optimization-problem.html",
+      "Year-1/1a-Math-I-Calculus/local-extremum.html",
+      "Year-1/1a-Math-I-Calculus/stationary-point.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/hessian-test-for-convexity-and-concavity.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-complementary-slackness.html": [
+      "Year-1/2b-Math-IV-Multivariate-Calculus/complementary-slackness.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/kuhn-tucker-conditions-with-nonnegativity-constraints.html",
+      "Year-1/1a-OR-Modelling/shadow-price.html",
+      "Year-1/1a-OR-Modelling/slack-variable.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-outcomes.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html": [
+      "Year-1/1a-OR-Modelling/multiple-optimal-solutions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adjacent-corner-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/improving-adjacent-corner-point.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/weak-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-outcomes.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/blands-rule.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html": [
+      "Year-1/1a-OR-Modelling/augmented-form.html",
+      "Year-1/1a-OR-Modelling/negative-rhs-transformation.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-transformation-scheme.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/basis-matrix.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/minimum-and-separation.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/local-minimum-of-a-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/lagrange-multiplier.html",
+      "Year-1/1a-OR-Modelling/graphical-method.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/nearest-point-of-a-closed-convex-set.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separating-hyperplane.html",
+      "Year-2/1a-Math-V-Advanced-Linear-Algebra/orthogonal-projection.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html",
+      "Year-1/2a-Math-III-Analysis/extreme-value-theorem-generalized-version.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/nonoptimality-and-reduced-costs.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/blands-rule.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/cycling.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/objective-coefficient-ranging.html",
+      "Year-1/1a-OR-Modelling/reduced-cost.html",
+      "Year-1/1a-OR-Modelling/degeneracy.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separating-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html",
+      "Year-1/1a-OR-Modelling/corner-point.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplanes-from-gradients.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nearest-point-of-a-closed-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/global-maximum-and-minimum.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/objective-coefficient-ranging.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/right-hand-side-ranging.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/changing-a-technology-coefficient.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adding-or-removing-a-variable.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html",
+      "Year-1/1a-OR-Modelling/objective-coefficient-range.html",
+      "Year-1/1a-OR-Modelling/reduced-cost.html",
+      "Year-1/1a-OR-Modelling/multiple-optimal-solutions.html",
+      "Year-1/1a-OR-Modelling/degeneracy.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/one-sided-derivatives-and-convexity.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/epigraph.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/operations-preserving-convexity-of-functions.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/hessian-test-for-convexity-and-concavity.html",
+      "Year-1/1a-Math-I-Calculus/mean-value-theorem.html",
+      "Year-1/1a-Math-I-Calculus/second-order-condition.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/local-minimum-of-a-convex-function.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/operations-preserving-convexity-of-functions.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/epigraph.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/hypograph.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-concave-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-optimization-problem.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html": [
+      "Year-1/1a-OR-Modelling/corner-point-optimality.html",
+      "Year-1/1a-OR-Modelling/multiple-optimal-solutions.html",
+      "Year-1/1a-OR-Modelling/graphical-method.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extrema-of-convex-functions-on-compact-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adjacent-corner-points.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/improving-adjacent-corner-point.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/polar-cone.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html",
+      "Year-1/1b-Math-II-Linear-Algebra/orthogonal-vectors.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-cone.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/finitely-generated-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polar-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html",
+      "Year-1/1a-OR-Modelling/feasible-region.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html": [
+      "Year-1/1a-OR-Modelling/feasible-region.html",
+      "Year-1/1a-OR-Modelling/linear-programming.html",
+      "Year-1/1a-OR-Modelling/corner-point.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/convex-hull.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-standard-form.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-outcomes.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-linear-program.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-of-the-dual.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-complementary-slackness.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-transformation-scheme.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-transformation-scheme.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-of-the-dual.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/weak-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-outcomes.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-complementary-slackness.html",
+      "Year-1/1a-OR-Modelling/surplus-variable.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-concave-function.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/hypograph.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/operations-preserving-convexity-of-functions.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/convex-and-concave-functions-on-rn.html",
+      "Year-1/1a-Math-I-Calculus/monotone-function.html",
+      "Year-1/2a-Math-III-Analysis/level-set-and-level-curve.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-convex-function.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-concave-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/operations-preserving-convexity-of-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/continuity-of-convex-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/minimum-and-separation.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplanes-from-gradients.html",
+      "Year-1/2a-Math-III-Analysis/level-set-and-level-curve.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/big-m-method.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/blands-rule.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/cycling.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nonoptimality-and-reduced-costs.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html",
+      "Year-1/1a-OR-Modelling/entering-variable-rule.html",
+      "Year-1/1a-OR-Modelling/unbounded-linear-program.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/right-hand-side-ranging.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/objective-coefficient-ranging.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/changing-a-technology-coefficient.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/adding-or-removing-a-variable.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html",
+      "Year-1/1a-OR-Modelling/rhs-sensitivity-range.html",
+      "Year-1/1a-OR-Modelling/shadow-price.html",
+      "Year-1/1a-OR-Modelling/degeneracy.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/shadow-price.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/separating-hyperplane.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-disjoint-convex-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/minimum-and-separation.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-disjoint-convex-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/interior-and-closure-of-a-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-disjoint-convex-sets.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nearest-point-of-a-closed-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/polyhedral-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/minimum-and-separation.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/local-minimum-of-a-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extrema-of-convex-functions-on-compact-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-on-a-supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/minimum-and-separation.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-concave-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/optima-at-extreme-points.html",
+      "Year-1/1a-OR-Modelling/multiple-optimal-solutions.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/simplex-tableau-in-matrix-form.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/revised-simplex-algorithm.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nonoptimality-and-reduced-costs.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/big-m-method.html",
+      "Year-1/1a-OR-Modelling/reduced-cost.html",
+      "Year-1/1a-OR-Modelling/simplex-pivot.html",
+      "Year-1/1a-OR-Modelling/simplex-optimality-test.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/strictly-convex-function.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/operations-preserving-convexity-of-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/one-sided-derivatives-and-convexity.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/epigraph.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/continuity-of-convex-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/local-minimum-of-a-convex-function.html",
+      "Year-1/1b-Math-II-Linear-Algebra/vector-norm.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/hessian-test-for-convexity-and-concavity.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/farkas-lemma.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-outcomes.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-complementary-slackness.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-solution-from-the-simplex-tableau.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/blands-rule.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/right-hand-side-ranging.html",
+      "Year-1/1a-OR-Modelling/shadow-price.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-convex-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/quasi-concave-function.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/epigraph.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/hypograph.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/halfspace.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/intersection-and-sum-of-convex-sets.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/continuity-of-convex-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplane.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separation-of-a-point-and-a-closed-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/nearest-point-of-a-closed-convex-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplanes-from-gradients.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/extreme-points-on-a-supporting-hyperplane.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/set-of-minimizers-of-a-quasi-convex-function.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/supporting-hyperplanes-from-gradients.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/normal-cone-of-a-polyhedral-set.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/sublevel-sets-of-convex-functions.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/separating-hyperplane.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/binding-and-nonbinding-constraints.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/method-of-lagrange-for-inequality-constrained-maximization.html",
+      "Year-1/2b-Math-IV-Multivariate-Calculus/nondegenerate-constraint-qualification.html"
+    ],
+    "Year-2/1b-Math-VI-Convexity-and-Optimization/weak-duality.html": [
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/strong-duality.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/primal-dual-outcomes.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-complementary-slackness.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/dual-of-the-dual.html",
+      "Year-2/1b-Math-VI-Convexity-and-Optimization/lp-solution-cases.html",
+      "Year-1/1a-OR-Modelling/unbounded-linear-program.html",
+      "Year-1/1a-OR-Modelling/infeasible-linear-program.html"
+    ],
     "Year-2/1b-Stochastic-Operations-Research/index.html": [],
     "Year-2/1b-Stochastic-Operations-Research/arrival-and-departure-rates.html": [
       "Year-2/1b-Stochastic-Operations-Research/service-rate.html",

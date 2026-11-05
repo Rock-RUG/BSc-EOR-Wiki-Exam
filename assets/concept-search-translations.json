@@ -15416,38 +15416,29 @@
           "角点",
           "角點",
           "顶点",
-          "頂點",
-          "极点",
-          "極點"
+          "頂點"
         ],
         "nl": [
-          "hoekpunt",
-          "extreem punt"
+          "hoekpunt"
         ],
         "de": [
           "Eckpunkt",
-          "Ecke",
-          "Extrempunkt"
+          "Ecke"
         ],
         "fr": [
-          "sommet",
-          "point extrême"
+          "sommet"
         ],
         "es": [
-          "vértice",
-          "punto extremo"
+          "vértice"
         ],
         "it": [
-          "vertice",
-          "punto estremo"
+          "vertice"
         ],
         "pl": [
-          "wierzchołek",
-          "punkt ekstremalny"
+          "wierzchołek"
         ],
         "ro": [
-          "vârf",
-          "punct extrem"
+          "vârf"
         ]
       }
     },
@@ -32715,6 +32706,1868 @@
         ],
         "ro": [
           "sistemul CONWIP"
+        ]
+      }
+    },
+    {
+      "title": "Convex Combination",
+      "names": {
+        "zh": [
+          "凸组合",
+          "凸組合"
+        ],
+        "nl": [
+          "convexe combinatie"
+        ],
+        "de": [
+          "Konvexkombination"
+        ],
+        "fr": [
+          "combinaison convexe"
+        ],
+        "es": [
+          "combinación convexa"
+        ],
+        "it": [
+          "combinazione convessa"
+        ],
+        "pl": [
+          "kombinacja wypukła"
+        ],
+        "ro": [
+          "combinație convexă"
+        ]
+      }
+    },
+    {
+      "title": "Intersection and Sum of Convex Sets",
+      "names": {
+        "zh": [
+          "凸集的交与和",
+          "凸集的交與和"
+        ],
+        "nl": [
+          "doorsnede en som van convexe verzamelingen"
+        ],
+        "de": [
+          "Durchschnitt und Summe konvexer Mengen"
+        ],
+        "fr": [
+          "intersection et somme d'ensembles convexes"
+        ],
+        "es": [
+          "intersección y suma de conjuntos convexos"
+        ],
+        "it": [
+          "intersezione e somma di insiemi convessi"
+        ],
+        "pl": [
+          "przecięcie i suma zbiorów wypukłych"
+        ],
+        "ro": [
+          "intersecția și suma mulțimilor convexe"
+        ]
+      }
+    },
+    {
+      "title": "Interior and Closure of a Convex Set",
+      "names": {
+        "zh": [
+          "凸集的内部与闭包",
+          "凸集的內部與閉包"
+        ],
+        "nl": [
+          "inwendige en afsluiting van een convexe verzameling"
+        ],
+        "de": [
+          "Inneres und Abschluss einer konvexen Menge"
+        ],
+        "fr": [
+          "intérieur et adhérence d'un ensemble convexe"
+        ],
+        "es": [
+          "interior y clausura de un conjunto convexo"
+        ],
+        "it": [
+          "interno e chiusura di un insieme convesso"
+        ],
+        "pl": [
+          "wnętrze i domknięcie zbioru wypukłego"
+        ],
+        "ro": [
+          "interiorul și închiderea unei mulțimi convexe"
+        ]
+      }
+    },
+    {
+      "title": "Halfspace",
+      "names": {
+        "zh": [
+          "半空间",
+          "半空間"
+        ],
+        "nl": [
+          "halfruimte"
+        ],
+        "de": [
+          "Halbraum"
+        ],
+        "fr": [
+          "demi-espace"
+        ],
+        "es": [
+          "semiespacio"
+        ],
+        "it": [
+          "semispazio"
+        ],
+        "pl": [
+          "półprzestrzeń"
+        ],
+        "ro": [
+          "semispațiu"
+        ]
+      }
+    },
+    {
+      "title": "Polyhedral Convex Set",
+      "names": {
+        "zh": [
+          "多面体凸集",
+          "多面體凸集"
+        ],
+        "nl": [
+          "convexe veelvlakkige verzameling"
+        ],
+        "de": [
+          "konvexes Polyeder"
+        ],
+        "fr": [
+          "ensemble convexe polyédral"
+        ],
+        "es": [
+          "conjunto convexo poliédrico"
+        ],
+        "it": [
+          "insieme convesso poliedrale"
+        ],
+        "pl": [
+          "wypukły zbiór wielościenny"
+        ],
+        "ro": [
+          "mulțime convexă poliedrală"
+        ]
+      }
+    },
+    {
+      "title": "Convex Hull",
+      "names": {
+        "zh": [
+          "凸包"
+        ],
+        "nl": [
+          "convex omhulsel"
+        ],
+        "de": [
+          "konvexe Hülle"
+        ],
+        "fr": [
+          "enveloppe convexe"
+        ],
+        "es": [
+          "envolvente convexa"
+        ],
+        "it": [
+          "inviluppo convesso"
+        ],
+        "pl": [
+          "otoczka wypukła"
+        ],
+        "ro": [
+          "înfășurătoare convexă"
+        ]
+      }
+    },
+    {
+      "title": "Strictly Convex Function",
+      "names": {
+        "zh": [
+          "严格凸函数",
+          "嚴格凸函數"
+        ],
+        "nl": [
+          "strikt convexe functie"
+        ],
+        "de": [
+          "streng konvexe Funktion"
+        ],
+        "fr": [
+          "fonction strictement convexe"
+        ],
+        "es": [
+          "función estrictamente convexa"
+        ],
+        "it": [
+          "funzione strettamente convessa"
+        ],
+        "pl": [
+          "funkcja ściśle wypukła"
+        ],
+        "ro": [
+          "funcție strict convexă"
+        ]
+      }
+    },
+    {
+      "title": "Epigraph",
+      "names": {
+        "zh": [
+          "上图",
+          "上圖",
+          "上境图"
+        ],
+        "nl": [
+          "epigraaf"
+        ],
+        "de": [
+          "Epigraph"
+        ],
+        "fr": [
+          "épigraphe"
+        ],
+        "es": [
+          "epígrafo"
+        ],
+        "it": [
+          "epigrafico"
+        ],
+        "pl": [
+          "nadwykres"
+        ],
+        "ro": [
+          "epigraf"
+        ]
+      }
+    },
+    {
+      "title": "Hypograph",
+      "names": {
+        "zh": [
+          "下图",
+          "下圖",
+          "亚图"
+        ],
+        "nl": [
+          "hypograaf"
+        ],
+        "de": [
+          "Hypograph"
+        ],
+        "fr": [
+          "hypographe"
+        ],
+        "es": [
+          "hipógrafo"
+        ],
+        "it": [
+          "ipografico"
+        ],
+        "pl": [
+          "podwykres"
+        ],
+        "ro": [
+          "hipograf"
+        ]
+      }
+    },
+    {
+      "title": "Operations Preserving Convexity of Functions",
+      "names": {
+        "zh": [
+          "保持函数凸性的运算",
+          "保持函數凸性的運算"
+        ],
+        "nl": [
+          "bewerkingen die convexiteit van functies behouden"
+        ],
+        "de": [
+          "konvexitätserhaltende Operationen"
+        ],
+        "fr": [
+          "opérations préservant la convexité des fonctions"
+        ],
+        "es": [
+          "operaciones que preservan la convexidad de funciones"
+        ],
+        "it": [
+          "operazioni che preservano la convessità delle funzioni"
+        ],
+        "pl": [
+          "operacje zachowujące wypukłość funkcji"
+        ],
+        "ro": [
+          "operații care păstrează convexitatea funcțiilor"
+        ]
+      }
+    },
+    {
+      "title": "Continuity of Convex Functions",
+      "names": {
+        "zh": [
+          "凸函数的连续性",
+          "凸函數的連續性"
+        ],
+        "nl": [
+          "continuïteit van convexe functies"
+        ],
+        "de": [
+          "Stetigkeit konvexer Funktionen"
+        ],
+        "fr": [
+          "continuité des fonctions convexes"
+        ],
+        "es": [
+          "continuidad de funciones convexas"
+        ],
+        "it": [
+          "continuità delle funzioni convesse"
+        ],
+        "pl": [
+          "ciągłość funkcji wypukłych"
+        ],
+        "ro": [
+          "continuitatea funcțiilor convexe"
+        ]
+      }
+    },
+    {
+      "title": "One-Sided Derivatives and Convexity",
+      "names": {
+        "zh": [
+          "单侧导数与凸性",
+          "單側導數與凸性"
+        ],
+        "nl": [
+          "eenzijdige afgeleiden en convexiteit"
+        ],
+        "de": [
+          "einseitige Ableitungen und Konvexität"
+        ],
+        "fr": [
+          "dérivées à gauche et à droite et convexité"
+        ],
+        "es": [
+          "derivadas laterales y convexidad"
+        ],
+        "it": [
+          "derivate unilaterali e convessità"
+        ],
+        "pl": [
+          "pochodne jednostronne a wypukłość"
+        ],
+        "ro": [
+          "derivate laterale și convexitate"
+        ]
+      }
+    },
+    {
+      "title": "Sublevel Sets of Convex Functions",
+      "names": {
+        "zh": [
+          "凸函数的下水平集",
+          "凸函數的下水平集"
+        ],
+        "nl": [
+          "subniveauverzamelingen van convexe functies"
+        ],
+        "de": [
+          "Subniveaumengen konvexer Funktionen"
+        ],
+        "fr": [
+          "ensembles de sous-niveau des fonctions convexes"
+        ],
+        "es": [
+          "conjuntos de subnivel de funciones convexas"
+        ],
+        "it": [
+          "insiemi di sottolivello delle funzioni convesse"
+        ],
+        "pl": [
+          "zbiory podpoziomicowe funkcji wypukłych"
+        ],
+        "ro": [
+          "mulțimi de subnivel ale funcțiilor convexe"
+        ]
+      }
+    },
+    {
+      "title": "Quasi-Convex Function",
+      "names": {
+        "zh": [
+          "拟凸函数",
+          "擬凸函數"
+        ],
+        "nl": [
+          "quasiconvexe functie"
+        ],
+        "de": [
+          "quasikonvexe Funktion"
+        ],
+        "fr": [
+          "fonction quasi-convexe"
+        ],
+        "es": [
+          "función cuasiconvexa"
+        ],
+        "it": [
+          "funzione quasi-convessa"
+        ],
+        "pl": [
+          "funkcja quasi-wypukła"
+        ],
+        "ro": [
+          "funcție cvasiconvexă"
+        ]
+      }
+    },
+    {
+      "title": "Quasi-Concave Function",
+      "names": {
+        "zh": [
+          "拟凹函数",
+          "擬凹函數"
+        ],
+        "nl": [
+          "quasiconcave functie"
+        ],
+        "de": [
+          "quasikonkave Funktion"
+        ],
+        "fr": [
+          "fonction quasi-concave"
+        ],
+        "es": [
+          "función cuasicóncava"
+        ],
+        "it": [
+          "funzione quasi-concava"
+        ],
+        "pl": [
+          "funkcja quasi-wklęsła"
+        ],
+        "ro": [
+          "funcție cvasiconcavă"
+        ]
+      }
+    },
+    {
+      "title": "Separating Hyperplane",
+      "names": {
+        "zh": [
+          "分离超平面",
+          "分離超平面"
+        ],
+        "nl": [
+          "scheidend hypervlak"
+        ],
+        "de": [
+          "trennende Hyperebene"
+        ],
+        "fr": [
+          "hyperplan séparateur"
+        ],
+        "es": [
+          "hiperplano separador"
+        ],
+        "it": [
+          "iperpiano separatore"
+        ],
+        "pl": [
+          "hiperpłaszczyzna rozdzielająca"
+        ],
+        "ro": [
+          "hiperplan separator"
+        ]
+      }
+    },
+    {
+      "title": "Separation of a Point and a Closed Convex Set",
+      "names": {
+        "zh": [
+          "点与闭凸集的分离",
+          "點與閉凸集的分離"
+        ],
+        "nl": [
+          "scheiding van een punt en een gesloten convexe verzameling"
+        ],
+        "de": [
+          "Trennung eines Punktes von einer abgeschlossenen konvexen Menge"
+        ],
+        "fr": [
+          "séparation d'un point et d'un convexe fermé"
+        ],
+        "es": [
+          "separación de un punto y un conjunto convexo cerrado"
+        ],
+        "it": [
+          "separazione di un punto da un insieme convesso chiuso"
+        ],
+        "pl": [
+          "oddzielanie punktu od domkniętego zbioru wypukłego"
+        ],
+        "ro": [
+          "separarea unui punct de o mulțime convexă închisă"
+        ]
+      }
+    },
+    {
+      "title": "Nearest Point of a Closed Convex Set",
+      "names": {
+        "zh": [
+          "闭凸集上的最近点",
+          "閉凸集上的最近點"
+        ],
+        "nl": [
+          "dichtstbijzijnd punt van een gesloten convexe verzameling"
+        ],
+        "de": [
+          "nächster Punkt einer abgeschlossenen konvexen Menge"
+        ],
+        "fr": [
+          "point le plus proche d'un convexe fermé"
+        ],
+        "es": [
+          "punto más cercano de un conjunto convexo cerrado"
+        ],
+        "it": [
+          "punto più vicino di un insieme convesso chiuso"
+        ],
+        "pl": [
+          "najbliższy punkt domkniętego zbioru wypukłego"
+        ],
+        "ro": [
+          "cel mai apropiat punct al unei mulțimi convexe închise"
+        ]
+      }
+    },
+    {
+      "title": "Separation of Disjoint Convex Sets",
+      "names": {
+        "zh": [
+          "不相交凸集的分离",
+          "不相交凸集的分離"
+        ],
+        "nl": [
+          "scheiding van disjuncte convexe verzamelingen"
+        ],
+        "de": [
+          "Trennung disjunkter konvexer Mengen"
+        ],
+        "fr": [
+          "séparation d'ensembles convexes disjoints"
+        ],
+        "es": [
+          "separación de conjuntos convexos disjuntos"
+        ],
+        "it": [
+          "separazione di insiemi convessi disgiunti"
+        ],
+        "pl": [
+          "oddzielanie rozłącznych zbiorów wypukłych"
+        ],
+        "ro": [
+          "separarea mulțimilor convexe disjuncte"
+        ]
+      }
+    },
+    {
+      "title": "Supporting Hyperplane",
+      "names": {
+        "zh": [
+          "支撑超平面",
+          "支撐超平面"
+        ],
+        "nl": [
+          "steunhypervlak"
+        ],
+        "de": [
+          "Stützhyperebene"
+        ],
+        "fr": [
+          "hyperplan d'appui"
+        ],
+        "es": [
+          "hiperplano soporte"
+        ],
+        "it": [
+          "iperpiano di supporto"
+        ],
+        "pl": [
+          "hiperpłaszczyzna podpierająca"
+        ],
+        "ro": [
+          "hiperplan de sprijin"
+        ]
+      }
+    },
+    {
+      "title": "Cone",
+      "names": {
+        "zh": [
+          "锥",
+          "錐"
+        ],
+        "nl": [
+          "kegel"
+        ],
+        "de": [
+          "Kegel"
+        ],
+        "fr": [
+          "cône"
+        ],
+        "es": [
+          "cono"
+        ],
+        "it": [
+          "cono"
+        ],
+        "pl": [
+          "stożek"
+        ],
+        "ro": [
+          "con"
+        ]
+      }
+    },
+    {
+      "title": "Convex Cone",
+      "names": {
+        "zh": [
+          "凸锥",
+          "凸錐"
+        ],
+        "nl": [
+          "convexe kegel"
+        ],
+        "de": [
+          "konvexer Kegel"
+        ],
+        "fr": [
+          "cône convexe"
+        ],
+        "es": [
+          "cono convexo"
+        ],
+        "it": [
+          "cono convesso"
+        ],
+        "pl": [
+          "stożek wypukły"
+        ],
+        "ro": [
+          "con convex"
+        ]
+      }
+    },
+    {
+      "title": "Finitely Generated Convex Cone",
+      "names": {
+        "zh": [
+          "有限生成凸锥",
+          "有限生成凸錐"
+        ],
+        "nl": [
+          "eindig voortgebrachte convexe kegel"
+        ],
+        "de": [
+          "endlich erzeugter konvexer Kegel"
+        ],
+        "fr": [
+          "cône convexe finiment engendré"
+        ],
+        "es": [
+          "cono convexo finitamente generado"
+        ],
+        "it": [
+          "cono convesso finitamente generato"
+        ],
+        "pl": [
+          "skończenie generowany stożek wypukły"
+        ],
+        "ro": [
+          "con convex finit generat"
+        ]
+      }
+    },
+    {
+      "title": "Polyhedral Convex Cone",
+      "names": {
+        "zh": [
+          "多面体凸锥",
+          "多面體凸錐"
+        ],
+        "nl": [
+          "veelvlakkige convexe kegel"
+        ],
+        "de": [
+          "polyedrischer Kegel"
+        ],
+        "fr": [
+          "cône convexe polyédral"
+        ],
+        "es": [
+          "cono convexo poliédrico"
+        ],
+        "it": [
+          "cono convesso poliedrale"
+        ],
+        "pl": [
+          "stożek wielościenny"
+        ],
+        "ro": [
+          "con convex poliedral"
+        ]
+      }
+    },
+    {
+      "title": "Polar Cone",
+      "names": {
+        "zh": [
+          "极锥",
+          "極錐"
+        ],
+        "nl": [
+          "poolkegel"
+        ],
+        "de": [
+          "Polarkegel"
+        ],
+        "fr": [
+          "cône polaire"
+        ],
+        "es": [
+          "cono polar"
+        ],
+        "it": [
+          "cono polare"
+        ],
+        "pl": [
+          "stożek biegunowy"
+        ],
+        "ro": [
+          "con polar"
+        ]
+      }
+    },
+    {
+      "title": "Normal Cone",
+      "names": {
+        "zh": [
+          "法锥",
+          "法錐"
+        ],
+        "nl": [
+          "normaalkegel"
+        ],
+        "de": [
+          "Normalenkegel"
+        ],
+        "fr": [
+          "cône normal"
+        ],
+        "es": [
+          "cono normal"
+        ],
+        "it": [
+          "cono normale"
+        ],
+        "pl": [
+          "stożek normalny"
+        ],
+        "ro": [
+          "con normal"
+        ]
+      }
+    },
+    {
+      "title": "Supporting Hyperplanes from Gradients",
+      "names": {
+        "zh": [
+          "由梯度得到的支撑超平面",
+          "由梯度得到的支撐超平面"
+        ],
+        "nl": [
+          "steunhypervlakken uit gradiënten"
+        ],
+        "de": [
+          "Stützhyperebenen aus Gradienten"
+        ],
+        "fr": [
+          "hyperplans d'appui à partir des gradients"
+        ],
+        "es": [
+          "hiperplanos soporte a partir de gradientes"
+        ],
+        "it": [
+          "iperpiani di supporto dai gradienti"
+        ],
+        "pl": [
+          "hiperpłaszczyzny podpierające z gradientów"
+        ],
+        "ro": [
+          "hiperplane de sprijin din gradienți"
+        ]
+      }
+    },
+    {
+      "title": "Normal Cone of a Polyhedral Set",
+      "names": {
+        "zh": [
+          "多面体集的法锥",
+          "多面體集的法錐"
+        ],
+        "nl": [
+          "normaalkegel van een veelvlakkige verzameling"
+        ],
+        "de": [
+          "Normalenkegel eines Polyeders"
+        ],
+        "fr": [
+          "cône normal d'un polyèdre"
+        ],
+        "es": [
+          "cono normal de un poliedro"
+        ],
+        "it": [
+          "cono normale di un poliedro"
+        ],
+        "pl": [
+          "stożek normalny zbioru wielościennego"
+        ],
+        "ro": [
+          "conul normal al unui poliedru"
+        ]
+      }
+    },
+    {
+      "title": "Extreme Point",
+      "names": {
+        "zh": [
+          "极点",
+          "極點"
+        ],
+        "nl": [
+          "extreem punt"
+        ],
+        "de": [
+          "Extremalpunkt",
+          "Extrempunkt"
+        ],
+        "fr": [
+          "point extrémal",
+          "point extrême"
+        ],
+        "es": [
+          "punto extremo"
+        ],
+        "it": [
+          "punto estremo"
+        ],
+        "pl": [
+          "punkt ekstremalny"
+        ],
+        "ro": [
+          "punct extrem"
+        ]
+      }
+    },
+    {
+      "title": "Convex Hull of Extreme Points",
+      "names": {
+        "zh": [
+          "极点的凸包",
+          "極點的凸包"
+        ],
+        "nl": [
+          "convex omhulsel van extreme punten"
+        ],
+        "de": [
+          "konvexe Hülle der Extremalpunkte"
+        ],
+        "fr": [
+          "enveloppe convexe des points extrémaux"
+        ],
+        "es": [
+          "envolvente convexa de los puntos extremos"
+        ],
+        "it": [
+          "inviluppo convesso dei punti estremi"
+        ],
+        "pl": [
+          "otoczka wypukła punktów ekstremalnych"
+        ],
+        "ro": [
+          "înfășurătoarea convexă a punctelor extreme"
+        ]
+      }
+    },
+    {
+      "title": "Extreme Points on a Supporting Hyperplane",
+      "names": {
+        "zh": [
+          "支撑超平面上的极点",
+          "支撐超平面上的極點"
+        ],
+        "nl": [
+          "extreme punten op een steunhypervlak"
+        ],
+        "de": [
+          "Extremalpunkte auf einer Stützhyperebene"
+        ],
+        "fr": [
+          "points extrémaux sur un hyperplan d'appui"
+        ],
+        "es": [
+          "puntos extremos en un hiperplano soporte"
+        ],
+        "it": [
+          "punti estremi su un iperpiano di supporto"
+        ],
+        "pl": [
+          "punkty ekstremalne na hiperpłaszczyźnie podpierającej"
+        ],
+        "ro": [
+          "puncte extreme pe un hiperplan de sprijin"
+        ]
+      }
+    },
+    {
+      "title": "Extreme Points of a Polyhedral Set",
+      "names": {
+        "zh": [
+          "多面体集的极点",
+          "多面體集的極點"
+        ],
+        "nl": [
+          "extreme punten van een veelvlakkige verzameling"
+        ],
+        "de": [
+          "Ecken eines Polyeders"
+        ],
+        "fr": [
+          "sommets d'un polyèdre"
+        ],
+        "es": [
+          "puntos extremos de un poliedro"
+        ],
+        "it": [
+          "punti estremi di un poliedro"
+        ],
+        "pl": [
+          "wierzchołki zbioru wielościennego"
+        ],
+        "ro": [
+          "punctele extreme ale unui poliedru"
+        ]
+      }
+    },
+    {
+      "title": "Extrema of Convex Functions on Compact Sets",
+      "names": {
+        "zh": [
+          "紧集上凸函数的极值",
+          "緊集上凸函數的極值"
+        ],
+        "nl": [
+          "extrema van convexe functies op compacte verzamelingen"
+        ],
+        "de": [
+          "Extrema konvexer Funktionen auf kompakten Mengen"
+        ],
+        "fr": [
+          "extrema des fonctions convexes sur un compact"
+        ],
+        "es": [
+          "extremos de funciones convexas en conjuntos compactos"
+        ],
+        "it": [
+          "estremi di funzioni convesse su insiemi compatti"
+        ],
+        "pl": [
+          "ekstrema funkcji wypukłych na zbiorach zwartych"
+        ],
+        "ro": [
+          "extremele funcțiilor convexe pe mulțimi compacte"
+        ]
+      }
+    },
+    {
+      "title": "Local Minimum of a Convex Function",
+      "names": {
+        "zh": [
+          "凸函数的局部极小值",
+          "凸函數的局部極小值"
+        ],
+        "nl": [
+          "lokaal minimum van een convexe functie"
+        ],
+        "de": [
+          "lokales Minimum einer konvexen Funktion"
+        ],
+        "fr": [
+          "minimum local d'une fonction convexe"
+        ],
+        "es": [
+          "mínimo local de una función convexa"
+        ],
+        "it": [
+          "minimo locale di una funzione convessa"
+        ],
+        "pl": [
+          "minimum lokalne funkcji wypukłej"
+        ],
+        "ro": [
+          "minim local al unei funcții convexe"
+        ]
+      }
+    },
+    {
+      "title": "Set of Minimizers of a Quasi-Convex Function",
+      "names": {
+        "zh": [
+          "拟凸函数的最小值点集",
+          "擬凸函數的最小值點集"
+        ],
+        "nl": [
+          "verzameling minimalisatoren van een quasiconvexe functie"
+        ],
+        "de": [
+          "Minimalstellenmenge einer quasikonvexen Funktion"
+        ],
+        "fr": [
+          "ensemble des minimiseurs d'une fonction quasi-convexe"
+        ],
+        "es": [
+          "conjunto de minimizadores de una función cuasiconvexa"
+        ],
+        "it": [
+          "insieme dei punti di minimo di una funzione quasi-convessa"
+        ],
+        "pl": [
+          "zbiór punktów minimum funkcji quasi-wypukłej"
+        ],
+        "ro": [
+          "mulțimea punctelor de minim ale unei funcții cvasiconvexe"
+        ]
+      }
+    },
+    {
+      "title": "Minimum Characterized by Separation",
+      "names": {
+        "zh": [
+          "用分离刻画最小值",
+          "用分離刻畫最小值"
+        ],
+        "nl": [
+          "minimum gekarakteriseerd door scheiding"
+        ],
+        "de": [
+          "Charakterisierung des Minimums durch Trennung"
+        ],
+        "fr": [
+          "caractérisation du minimum par séparation"
+        ],
+        "es": [
+          "mínimo caracterizado por separación"
+        ],
+        "it": [
+          "minimo caratterizzato mediante separazione"
+        ],
+        "pl": [
+          "charakteryzacja minimum przez oddzielanie"
+        ],
+        "ro": [
+          "minimul caracterizat prin separare"
+        ]
+      }
+    },
+    {
+      "title": "Convex Optimization Problem",
+      "names": {
+        "zh": [
+          "凸优化问题",
+          "凸優化問題"
+        ],
+        "nl": [
+          "convex optimalisatieprobleem"
+        ],
+        "de": [
+          "konvexes Optimierungsproblem"
+        ],
+        "fr": [
+          "problème d'optimisation convexe"
+        ],
+        "es": [
+          "problema de optimización convexa"
+        ],
+        "it": [
+          "problema di ottimizzazione convessa"
+        ],
+        "pl": [
+          "problem optymalizacji wypukłej"
+        ],
+        "ro": [
+          "problemă de optimizare convexă"
+        ]
+      }
+    },
+    {
+      "title": "Standard Form of a Linear Program",
+      "names": {
+        "zh": [
+          "线性规划的标准形",
+          "線性規劃的標準形"
+        ],
+        "nl": [
+          "standaardvorm van een lineair programma"
+        ],
+        "de": [
+          "Standardform eines linearen Programms"
+        ],
+        "fr": [
+          "forme standard d'un programme linéaire"
+        ],
+        "es": [
+          "forma estándar de un programa lineal"
+        ],
+        "it": [
+          "forma standard di un programma lineare"
+        ],
+        "pl": [
+          "postać standardowa programu liniowego"
+        ],
+        "ro": [
+          "forma standard a unui program liniar"
+        ]
+      }
+    },
+    {
+      "title": "Optima at Extreme Points",
+      "names": {
+        "zh": [
+          "最优值在极点处取得",
+          "最優值在極點處取得"
+        ],
+        "nl": [
+          "optima in extreme punten"
+        ],
+        "de": [
+          "Optima in Ecken"
+        ],
+        "fr": [
+          "optima aux points extrémaux"
+        ],
+        "es": [
+          "óptimos en puntos extremos"
+        ],
+        "it": [
+          "ottimi nei punti estremi"
+        ],
+        "pl": [
+          "optima w punktach ekstremalnych"
+        ],
+        "ro": [
+          "optime în puncte extreme"
+        ]
+      }
+    },
+    {
+      "title": "Adjacent Corner Points",
+      "names": {
+        "zh": [
+          "相邻角点",
+          "相鄰角點"
+        ],
+        "nl": [
+          "aangrenzende hoekpunten"
+        ],
+        "de": [
+          "benachbarte Ecken"
+        ],
+        "fr": [
+          "sommets adjacents"
+        ],
+        "es": [
+          "vértices adyacentes"
+        ],
+        "it": [
+          "vertici adiacenti"
+        ],
+        "pl": [
+          "sąsiednie wierzchołki"
+        ],
+        "ro": [
+          "vârfuri adiacente"
+        ]
+      }
+    },
+    {
+      "title": "Nonoptimal and Optimal Corner Points",
+      "names": {
+        "zh": [
+          "非最优角点与最优角点",
+          "非最優角點與最優角點"
+        ],
+        "nl": [
+          "niet-optimale en optimale hoekpunten"
+        ],
+        "de": [
+          "nicht optimale und optimale Ecken"
+        ],
+        "fr": [
+          "sommets non optimaux et optimaux"
+        ],
+        "es": [
+          "vértices no óptimos y óptimos"
+        ],
+        "it": [
+          "vertici non ottimi e ottimi"
+        ],
+        "pl": [
+          "wierzchołki nieoptymalne i optymalne"
+        ],
+        "ro": [
+          "vârfuri neoptime și optime"
+        ]
+      }
+    },
+    {
+      "title": "Possible Outcomes of a Linear Program",
+      "names": {
+        "zh": [
+          "线性规划的可能结果",
+          "線性規劃的可能結果"
+        ],
+        "nl": [
+          "mogelijke uitkomsten van een lineair programma"
+        ],
+        "de": [
+          "mögliche Ausgänge eines linearen Programms"
+        ],
+        "fr": [
+          "issues possibles d'un programme linéaire"
+        ],
+        "es": [
+          "resultados posibles de un programa lineal"
+        ],
+        "it": [
+          "esiti possibili di un programma lineare"
+        ],
+        "pl": [
+          "możliwe wyniki programu liniowego"
+        ],
+        "ro": [
+          "rezultatele posibile ale unui program liniar"
+        ]
+      }
+    },
+    {
+      "title": "Dual Linear Program",
+      "names": {
+        "zh": [
+          "对偶线性规划",
+          "對偶線性規劃"
+        ],
+        "nl": [
+          "duaal lineair programma"
+        ],
+        "de": [
+          "duales lineares Programm"
+        ],
+        "fr": [
+          "programme linéaire dual"
+        ],
+        "es": [
+          "programa lineal dual"
+        ],
+        "it": [
+          "programma lineare duale"
+        ],
+        "pl": [
+          "program dualny"
+        ],
+        "ro": [
+          "program liniar dual"
+        ]
+      }
+    },
+    {
+      "title": "Primal–Dual Transformation Scheme",
+      "names": {
+        "zh": [
+          "原始-对偶转换规则",
+          "原始-對偶轉換規則"
+        ],
+        "nl": [
+          "primaal-duaal transformatieschema"
+        ],
+        "de": [
+          "Schema zur Bildung des dualen Programms"
+        ],
+        "fr": [
+          "règles de passage primal-dual"
+        ],
+        "es": [
+          "esquema de transformación primal-dual"
+        ],
+        "it": [
+          "schema di trasformazione primale-duale"
+        ],
+        "pl": [
+          "schemat przejścia od programu prymalnego do dualnego"
+        ],
+        "ro": [
+          "schema de transformare primal-dual"
+        ]
+      }
+    },
+    {
+      "title": "Dual of the Dual",
+      "names": {
+        "zh": [
+          "对偶的对偶",
+          "對偶的對偶"
+        ],
+        "nl": [
+          "duaal van het duale"
+        ],
+        "de": [
+          "Dual des Dualen"
+        ],
+        "fr": [
+          "dual du dual"
+        ],
+        "es": [
+          "dual del dual"
+        ],
+        "it": [
+          "duale del duale"
+        ],
+        "pl": [
+          "program dualny do dualnego"
+        ],
+        "ro": [
+          "dualul dualului"
+        ]
+      }
+    },
+    {
+      "title": "Weak Duality",
+      "names": {
+        "zh": [
+          "弱对偶定理",
+          "弱對偶定理"
+        ],
+        "nl": [
+          "zwakke dualiteit"
+        ],
+        "de": [
+          "schwache Dualität"
+        ],
+        "fr": [
+          "dualité faible"
+        ],
+        "es": [
+          "dualidad débil"
+        ],
+        "it": [
+          "dualità debole"
+        ],
+        "pl": [
+          "słaba dualność"
+        ],
+        "ro": [
+          "dualitate slabă"
+        ]
+      }
+    },
+    {
+      "title": "Strong Duality",
+      "names": {
+        "zh": [
+          "强对偶定理",
+          "強對偶定理"
+        ],
+        "nl": [
+          "sterke dualiteit"
+        ],
+        "de": [
+          "starke Dualität"
+        ],
+        "fr": [
+          "dualité forte"
+        ],
+        "es": [
+          "dualidad fuerte"
+        ],
+        "it": [
+          "dualità forte"
+        ],
+        "pl": [
+          "silna dualność"
+        ],
+        "ro": [
+          "dualitate tare"
+        ]
+      }
+    },
+    {
+      "title": "Possible Outcomes of a Primal–Dual Pair",
+      "names": {
+        "zh": [
+          "原始-对偶问题的可能结果",
+          "原始-對偶問題的可能結果"
+        ],
+        "nl": [
+          "mogelijke uitkomsten van een primaal-duaal paar"
+        ],
+        "de": [
+          "mögliche Fälle für primales und duales Programm"
+        ],
+        "fr": [
+          "issues possibles d'un couple primal-dual"
+        ],
+        "es": [
+          "resultados posibles de un par primal-dual"
+        ],
+        "it": [
+          "esiti possibili di una coppia primale-duale"
+        ],
+        "pl": [
+          "możliwe wyniki pary prymalno-dualnej"
+        ],
+        "ro": [
+          "rezultatele posibile ale unei perechi primal-duale"
+        ]
+      }
+    },
+    {
+      "title": "Farkas' Lemma",
+      "names": {
+        "zh": [
+          "Farkas 引理",
+          "法卡斯引理"
+        ],
+        "nl": [
+          "lemma van Farkas"
+        ],
+        "de": [
+          "Lemma von Farkas"
+        ],
+        "fr": [
+          "lemme de Farkas"
+        ],
+        "es": [
+          "lema de Farkas"
+        ],
+        "it": [
+          "lemma di Farkas"
+        ],
+        "pl": [
+          "lemat Farkasa"
+        ],
+        "ro": [
+          "lema lui Farkas"
+        ]
+      }
+    },
+    {
+      "title": "Complementary Slackness (Linear Programming)",
+      "names": {
+        "zh": [
+          "线性规划互补松弛定理",
+          "線性規劃互補鬆弛定理"
+        ],
+        "nl": [
+          "complementaire slackness in lineaire programmering"
+        ],
+        "de": [
+          "komplementärer Schlupf (lineare Optimierung)"
+        ],
+        "fr": [
+          "écarts complémentaires (programmation linéaire)"
+        ],
+        "es": [
+          "holgura complementaria (programación lineal)"
+        ],
+        "it": [
+          "scarti complementari (programmazione lineare)"
+        ],
+        "pl": [
+          "komplementarność warunków (programowanie liniowe)"
+        ],
+        "ro": [
+          "ecarturi complementare (programare liniară)"
+        ]
+      }
+    },
+    {
+      "title": "Basis and Basis Matrix",
+      "names": {
+        "zh": [
+          "基与基矩阵",
+          "基與基矩陣"
+        ],
+        "nl": [
+          "basis en basismatrix"
+        ],
+        "de": [
+          "Basis und Basismatrix"
+        ],
+        "fr": [
+          "base et matrice de base"
+        ],
+        "es": [
+          "base y matriz básica"
+        ],
+        "it": [
+          "base e matrice di base"
+        ],
+        "pl": [
+          "baza i macierz bazowa"
+        ],
+        "ro": [
+          "baza și matricea bazei"
+        ]
+      }
+    },
+    {
+      "title": "Simplex Tableau in Matrix Form",
+      "names": {
+        "zh": [
+          "矩阵形式的单纯形表",
+          "矩陣形式的單純形表"
+        ],
+        "nl": [
+          "simplextableau in matrixvorm"
+        ],
+        "de": [
+          "Simplextableau in Matrixform"
+        ],
+        "fr": [
+          "tableau du simplexe sous forme matricielle"
+        ],
+        "es": [
+          "tabla símplex en forma matricial"
+        ],
+        "it": [
+          "tableau del simplesso in forma matriciale"
+        ],
+        "pl": [
+          "tablica simpleks w postaci macierzowej"
+        ],
+        "ro": [
+          "tabelul simplex în formă matriceală"
+        ]
+      }
+    },
+    {
+      "title": "Revised Simplex Algorithm",
+      "names": {
+        "zh": [
+          "修正单纯形法",
+          "修正單純形法"
+        ],
+        "nl": [
+          "herziene simplexmethode"
+        ],
+        "de": [
+          "revidiertes Simplexverfahren"
+        ],
+        "fr": [
+          "méthode du simplexe révisé"
+        ],
+        "es": [
+          "método símplex revisado"
+        ],
+        "it": [
+          "metodo del simplesso rivisto"
+        ],
+        "pl": [
+          "zrewidowana metoda simpleks"
+        ],
+        "ro": [
+          "metoda simplex revizuită"
+        ]
+      }
+    },
+    {
+      "title": "Big-M Method",
+      "names": {
+        "zh": [
+          "大M法"
+        ],
+        "nl": [
+          "big-M-methode"
+        ],
+        "de": [
+          "Big-M-Methode"
+        ],
+        "fr": [
+          "méthode du grand M"
+        ],
+        "es": [
+          "método de la gran M"
+        ],
+        "it": [
+          "metodo del grande M"
+        ],
+        "pl": [
+          "metoda dużego M"
+        ],
+        "ro": [
+          "metoda M mare"
+        ]
+      }
+    },
+    {
+      "title": "Cycling",
+      "names": {
+        "zh": [
+          "循环（单纯形法）",
+          "循環（單純形法）"
+        ],
+        "nl": [
+          "cycleren"
+        ],
+        "de": [
+          "Kreiseln"
+        ],
+        "fr": [
+          "cyclage"
+        ],
+        "es": [
+          "ciclado"
+        ],
+        "it": [
+          "ciclaggio"
+        ],
+        "pl": [
+          "cyklowanie"
+        ],
+        "ro": [
+          "ciclare"
+        ]
+      }
+    },
+    {
+      "title": "Bland's Rule",
+      "names": {
+        "zh": [
+          "Bland 规则",
+          "布兰德规则"
+        ],
+        "nl": [
+          "regel van Bland"
+        ],
+        "de": [
+          "Regel von Bland"
+        ],
+        "fr": [
+          "règle de Bland"
+        ],
+        "es": [
+          "regla de Bland"
+        ],
+        "it": [
+          "regola di Bland"
+        ],
+        "pl": [
+          "reguła Blanda"
+        ],
+        "ro": [
+          "regula lui Bland"
+        ]
+      }
+    },
+    {
+      "title": "Nonoptimality and Reduced Costs",
+      "names": {
+        "zh": [
+          "非最优性与检验数",
+          "非最優性與檢驗數"
+        ],
+        "nl": [
+          "niet-optimaliteit en gereduceerde kosten"
+        ],
+        "de": [
+          "Nichtoptimalität und reduzierte Kosten"
+        ],
+        "fr": [
+          "non-optimalité et coûts réduits"
+        ],
+        "es": [
+          "no optimalidad y costos reducidos"
+        ],
+        "it": [
+          "non ottimalità e costi ridotti"
+        ],
+        "pl": [
+          "nieoptymalność i koszty zredukowane"
+        ],
+        "ro": [
+          "neoptimalitate și costuri reduse"
+        ]
+      }
+    },
+    {
+      "title": "Dual Solution from the Simplex Tableau",
+      "names": {
+        "zh": [
+          "从单纯形表读出对偶解",
+          "從單純形表讀出對偶解"
+        ],
+        "nl": [
+          "duale oplossing uit het simplextableau"
+        ],
+        "de": [
+          "duale Lösung aus dem Simplextableau"
+        ],
+        "fr": [
+          "solution duale lue dans le tableau du simplexe"
+        ],
+        "es": [
+          "solución dual a partir de la tabla símplex"
+        ],
+        "it": [
+          "soluzione duale dal tableau del simplesso"
+        ],
+        "pl": [
+          "rozwiązanie dualne z tablicy simpleks"
+        ],
+        "ro": [
+          "soluția duală din tabelul simplex"
+        ]
+      }
+    },
+    {
+      "title": "Right-Hand-Side Ranging",
+      "names": {
+        "zh": [
+          "右端项范围分析",
+          "右端項範圍分析"
+        ],
+        "nl": [
+          "bereikanalyse van het rechterlid"
+        ],
+        "de": [
+          "Bereichsanalyse der rechten Seite"
+        ],
+        "fr": [
+          "intervalle de sensibilité du second membre"
+        ],
+        "es": [
+          "análisis de rango del lado derecho"
+        ],
+        "it": [
+          "intervallo di sensibilità dei termini noti"
+        ],
+        "pl": [
+          "zakres wrażliwości prawej strony"
+        ],
+        "ro": [
+          "intervalul de sensibilitate al membrului drept"
+        ]
+      }
+    },
+    {
+      "title": "Objective Coefficient Ranging",
+      "names": {
+        "zh": [
+          "目标函数系数灵敏度范围",
+          "目標函數係數靈敏度範圍"
+        ],
+        "nl": [
+          "gevoeligheidsbereik van een doelfunctiecoëfficiënt"
+        ],
+        "de": [
+          "Bereichsanalyse eines Zielfunktionskoeffizienten"
+        ],
+        "fr": [
+          "intervalle de sensibilité d'un coefficient de l'objectif"
+        ],
+        "es": [
+          "rango de sensibilidad de un coeficiente objetivo"
+        ],
+        "it": [
+          "intervallo di sensibilità di un coefficiente obiettivo"
+        ],
+        "pl": [
+          "zakres wrażliwości współczynnika funkcji celu"
+        ],
+        "ro": [
+          "intervalul de sensibilitate al unui coeficient al obiectivului"
+        ]
+      }
+    },
+    {
+      "title": "Changing a Technology Coefficient",
+      "names": {
+        "zh": [
+          "改变技术系数",
+          "改變技術係數"
+        ],
+        "nl": [
+          "wijziging van een technologiecoëfficiënt"
+        ],
+        "de": [
+          "Änderung eines Technologiekoeffizienten"
+        ],
+        "fr": [
+          "modification d'un coefficient technique"
+        ],
+        "es": [
+          "cambio de un coeficiente tecnológico"
+        ],
+        "it": [
+          "variazione di un coefficiente tecnologico"
+        ],
+        "pl": [
+          "zmiana współczynnika technologicznego"
+        ],
+        "ro": [
+          "modificarea unui coeficient tehnologic"
+        ]
+      }
+    },
+    {
+      "title": "Adding or Removing a Variable",
+      "names": {
+        "zh": [
+          "增加或删除变量",
+          "增加或刪除變量"
+        ],
+        "nl": [
+          "een variabele toevoegen of verwijderen"
+        ],
+        "de": [
+          "Hinzufügen oder Entfernen einer Variablen"
+        ],
+        "fr": [
+          "ajout ou suppression d'une variable"
+        ],
+        "es": [
+          "añadir o eliminar una variable"
+        ],
+        "it": [
+          "aggiunta o rimozione di una variabile"
+        ],
+        "pl": [
+          "dodawanie lub usuwanie zmiennej"
+        ],
+        "ro": [
+          "adăugarea sau eliminarea unei variabile"
         ]
       }
     }
