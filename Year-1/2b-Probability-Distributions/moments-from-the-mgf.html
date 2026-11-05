@@ -5,13 +5,13 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="If the MGF MX is finite on an open interval containing 0, then all moments of X are finite and, for every nonnegative integer n," name="description"/>
+<meta content="If the moment generating function (MGF) MX is finite on an open interval containing 0, then all moments of X are finite and," name="description"/>
 <link href="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/moments-from-the-mgf.html" rel="canonical"/>
 <link href="moment.html" rel="prev"/>
 <link href="multinomial-distribution.html" rel="next"/>
 <link href="../../assets/logo-navbar.svg" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
-<title>Moments from the MGF - BSc EOR Wiki (Exam Mode)</title>
+<title>Moments from the Moment Generating Function - BSc EOR Wiki (Exam Mode)</title>
 <link href="../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link href="../../stylesheets/fonts-vendor.css?h=6f3b200e55fb" rel="stylesheet"/>
@@ -22,7 +22,7 @@
 <link href="../../stylesheets/mastery-widget.css?h=e4fc2ca9c724" rel="stylesheet"/>
 <link href="../../stylesheets/course-status.css?h=c2148ab6b25a" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-surfaces.css?h=49c818fd9fed" rel="stylesheet"/>
-<link href="../../stylesheets/theme-surfaces.css?h=a1428c6fd0b7" rel="stylesheet" media="(forced-colors: active)" data-mk-css-gate="theme"/>
+<link href="../../stylesheets/theme-surfaces.css?h=01945e7ec096" rel="stylesheet" media="(forced-colors: active)" data-mk-css-gate="theme"/>
 <link href="../../stylesheets/wiki-community.css?h=4a806446e116" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-maps.css?h=fb76700163c4" rel="stylesheet" media="not all" data-mk-css-gate="maps"/>
 <link href="../../stylesheets/wiki-mastery-manager.css?h=b3d804f7ca81" rel="stylesheet" media="not all" data-mk-css-gate="manager"/>
@@ -130,14 +130,14 @@
 </script>
 <meta content="website" property="og:type"/>
 <meta content="BSc EOR Wiki (Exam Mode)" property="og:site_name"/>
-<meta content="Moments from the MGF - BSc EOR Wiki (Exam Mode)" property="og:title"/>
-<meta content="If the MGF MX is finite on an open interval containing 0, then all moments of X are finite and, for every nonnegative integer n," property="og:description"/>
+<meta content="Moments from the Moment Generating Function - BSc EOR Wiki (Exam Mode)" property="og:title"/>
+<meta content="If the moment generating function (MGF) MX is finite on an open interval containing 0, then all moments of X are finite and," property="og:description"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/Year-1/2b-Probability-Distributions/moments-from-the-mgf.html" property="og:url"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/assets/logo-navbar.png" property="og:image"/>
 <meta content="BSc EOR Wiki logo" property="og:image:alt"/>
 <meta content="summary" name="twitter:card"/>
-<meta content="Moments from the MGF - BSc EOR Wiki (Exam Mode)" name="twitter:title"/>
-<meta content="If the MGF MX is finite on an open interval containing 0, then all moments of X are finite and, for every nonnegative integer n," name="twitter:description"/>
+<meta content="Moments from the Moment Generating Function - BSc EOR Wiki (Exam Mode)" name="twitter:title"/>
+<meta content="If the moment generating function (MGF) MX is finite on an open interval containing 0, then all moments of X are finite and," name="twitter:description"/>
 <meta content="https://rock-rug.github.io/BSc-EOR-Wiki-Exam/assets/logo-navbar.png" name="twitter:image"/>
 <meta content="BSc EOR Wiki logo" name="twitter:image:alt"/>
 <script id="mk-search-index-network-cache">
@@ -221,9 +221,9 @@
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=c682edb5088f";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=643adc928139";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=c682edb5088f";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=643adc928139";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -505,7 +505,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#moments-from-the-mgf">
+<a class="md-skip" href="#moments-from-the-moment-generating-function">
           Skip to content
         </a>
 </div>
@@ -529,7 +529,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Moments from the MGF
+              Moments from the Moment Generating Function
             
           </span>
 </div>
@@ -1304,7 +1304,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Joint CDF of Continuous Random Variables
+    Joint Cumulative Distribution Function of Continuous Random Variables
   
 
     
@@ -1316,7 +1316,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Joint CDF of Discrete Random Variables
+    Joint Cumulative Distribution Function of Discrete Random Variables
   
 
     
@@ -1364,7 +1364,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Two-Dimensional LOTUS for Continuous Variables
+    Two-Dimensional Law of the Unconscious Statistician for Continuous Variables
   
 
     
@@ -1376,7 +1376,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Two-Dimensional LOTUS for Discrete Variables
+    Two-Dimensional Law of the Unconscious Statistician for Discrete Variables
   
 
     
@@ -1412,7 +1412,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Location and Scale Property of the MGF
+    Location and Scale Property of the Moment Generating Function
   
 
     
@@ -1424,7 +1424,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    MGF of an Independent Sum
+    Moment Generating Function of an Independent Sum
   
 
     
@@ -1473,7 +1473,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Moments from the MGF
+    Moments from the Moment Generating Function
   
 
     
@@ -1484,7 +1484,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Moments from the MGF
+    Moments from the Moment Generating Function
   
 
     
@@ -1639,7 +1639,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Sum of Two IID Uniform Variables
+    Sum of Two Independent Uniform Variables
   
 
     
@@ -1864,9 +1864,9 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-tag">curriculum-current</span>
 <span class="md-tag">pd-week01</span>
 </nav>
-<h1 id="moments-from-the-mgf">Moments from the MGF<a class="headerlink" href="#moments-from-the-mgf" title="Permanent link">¶</a></h1><div aria-hidden="true" class="mw-slot" data-mw-slot=""></div><script>(function(s){try{var r=document.documentElement,p=String(location.pathname||""),k=p.indexOf("Year-"),rel=k<0?"":p.slice(k),c=false;if(!rel||r.classList.contains("mk-startup-mastery-off")){s.setAttribute("data-mw-slot","off");return;}try{var h=localStorage.getItem("mw_widget_hidden_v1"),fo=sessionStorage.getItem("mw_widget_force_open_v1:"+rel)==="1",arr=sessionStorage.getItem("random_arrival_loc_v1")||"",url=new URL(location.href);if(h===null&&!fo&&!window.__mkExamMode&&arr!==rel&&!url.searchParams.has("study-session")&&url.hash.indexOf("daily-concept")<0){s.setAttribute("data-mw-slot","reading");return;}}catch(_){}try{c=localStorage.getItem("mw_widget_hidden_v1")==="1";}catch(_){}if(!c){var f=false;try{f=sessionStorage.getItem("mw_widget_force_open_v1:"+rel)==="1";}catch(_){}if(!f){try{var a=JSON.parse(localStorage.getItem("concept_mastery_v1")||"{}"),x=a&&typeof a==="object"&&!Array.isArray(a)?a[rel]:null,v=x&&x.m,u=!!(x&&(x.unrated===true||String(x.state||"").toLowerCase()==="unrated"));v=typeof v==="number"||(typeof v==="string"&&v.trim()!=="")?Number(v):null;c=!!(x&&!u&&[0,1,2,3].indexOf(v)>=0);}catch(_){}}}s.setAttribute("data-mw-slot",c?"line":"box");}catch(_){}})(document.currentScript&&document.currentScript.previousElementSibling);</script>
+<h1 id="moments-from-the-moment-generating-function">Moments from the Moment Generating Function<a class="headerlink" href="#moments-from-the-moment-generating-function" title="Permanent link">¶</a></h1><div aria-hidden="true" class="mw-slot" data-mw-slot=""></div><script>(function(s){try{var r=document.documentElement,p=String(location.pathname||""),k=p.indexOf("Year-"),rel=k<0?"":p.slice(k),c=false;if(!rel||r.classList.contains("mk-startup-mastery-off")){s.setAttribute("data-mw-slot","off");return;}try{var h=localStorage.getItem("mw_widget_hidden_v1"),fo=sessionStorage.getItem("mw_widget_force_open_v1:"+rel)==="1",arr=sessionStorage.getItem("random_arrival_loc_v1")||"",url=new URL(location.href);if(h===null&&!fo&&!window.__mkExamMode&&arr!==rel&&!url.searchParams.has("study-session")&&url.hash.indexOf("daily-concept")<0){s.setAttribute("data-mw-slot","reading");return;}}catch(_){}try{c=localStorage.getItem("mw_widget_hidden_v1")==="1";}catch(_){}if(!c){var f=false;try{f=sessionStorage.getItem("mw_widget_force_open_v1:"+rel)==="1";}catch(_){}if(!f){try{var a=JSON.parse(localStorage.getItem("concept_mastery_v1")||"{}"),x=a&&typeof a==="object"&&!Array.isArray(a)?a[rel]:null,v=x&&x.m,u=!!(x&&(x.unrated===true||String(x.state||"").toLowerCase()==="unrated"));v=typeof v==="number"||(typeof v==="string"&&v.trim()!=="")?Number(v):null;c=!!(x&&!u&&[0,1,2,3].indexOf(v)>=0);}catch(_){}}}s.setAttribute("data-mw-slot",c?"line":"box");}catch(_){}})(document.currentScript&&document.currentScript.previousElementSibling);</script>
 <h2 id="theorem"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.42 5.29c-1.1-.1-2.07.71-2.17 1.82L10 10h2.82v2h-3l-.44 5.07A4.001 4.001 0 0 1 2 18.83l1.5-1.5c.33 1.05 1.46 1.64 2.5 1.3.78-.24 1.33-.93 1.4-1.74L7.82 12h-3v-2H8l.27-3.07a4.01 4.01 0 0 1 4.33-3.65c1.26.11 2.4.81 3.06 1.89l-1.5 1.5c-.25-.77-.93-1.31-1.74-1.38M22 13.65l-1.41-1.41-2.83 2.83-2.83-2.83-1.43 1.41 2.85 2.85-2.85 2.81 1.43 1.41 2.83-2.83 2.83 2.83L22 19.31l-2.83-2.81z"></path></svg></span> Theorem<a class="headerlink" href="#theorem" title="Permanent link">¶</a></h2>
-<p>If the <a href="moment-generating-function.html">MGF</a> <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>X</mi></msub></mrow><annotation encoding="application/x-tex">M_X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">M</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0785em;">X</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span> is finite on an open <a href="../1a-Math-I-Calculus/interval.html">interval</a> containing <span class="mk-math-glue"><span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></span>,</span> then all <a href="moment.html">moments</a> of <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span></span></span></span></span> are finite and, for every <a href="../1a-Math-I-Calculus/natural-number.html">nonnegative integer</a> <span class="mk-math-glue"><span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span>,</span></p>
+<p>If the <a href="moment-generating-function.html">moment generating function</a> (MGF) <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>X</mi></msub></mrow><annotation encoding="application/x-tex">M_X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">M</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0785em;">X</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span> is finite on an open <a href="../1a-Math-I-Calculus/interval.html">interval</a> containing <span class="mk-math-glue"><span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></span>,</span> then all <a href="moment.html">moments</a> of <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span></span></span></span></span> are finite and, for every <a href="../1a-Math-I-Calculus/natural-number.html">nonnegative integer</a> <span class="mk-math-glue"><span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span>,</span></p>
 <div class="arithmatex arithmatex-prerendered arithmatex-display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnalign="right" columnspacing="" rowspacing="0.25em"><mtr><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mi mathvariant="double-struck">E</mi><mo stretchy="false">[</mo><msup><mi>X</mi><mi>n</mi></msup><mo stretchy="false">]</mo><mo>=</mo><msubsup><mi>M</mi><mi>X</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msubsup><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo separator="true">,</mo></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
 \mathbb{E}[X^n]=M_X^{(n)}(0),
 \end{aligned}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1.4048em;vertical-align:-0.4524em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9524em;"><span style="top:-2.9524em;"><span class="pstrut" style="height:3.0448em;"></span><span class="mord"><span class="mord mathbb">E</span><span class="mopen">[</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7144em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">M</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.4065em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0785em;">X</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathnormal mtight">n</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2935em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">0</span><span class="mclose">)</span><span class="mpunct">,</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4524em;"><span></span></span></span></span></span></span></span></span></span></span></span></div>
@@ -1907,9 +1907,10 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <li>Nicky van Foreest · <a class="mk-source-course" href="index.html">Probability Distributions</a> · Week 1 </li>
 </ul>
 <p><span class="search-aliases" data-nosnippet="">
+Aliases: Moments from the MGF
 Symbols: lambda
 </span></p>
-<p class="mk-last-updated">Last updated: 20 October 2026 03:02</p><meta content="true" name="mk-concept-ai-mcq"/><script id="mk-concept-connections-data" type="application/json">{"kind":"concept-connections-panel-v1","readinessMaxDepth":2,"loc":"Year-1/2b-Probability-Distributions/moments-from-the-mgf.html","nodes":{"Year-1/2b-Probability-Distributions/moments-from-the-mgf.html":{"title":"Moments from the MGF","courseName":"2b-Probability-Distributions","coursePath":"Year-1/2b-Probability-Distributions","curriculumStatus":"current","aiMcq":true},"Year-1/2b-Probability-Distributions/moment-generating-function.html":{"title":"Moment Generating Function","courseName":"2b-Probability-Distributions","coursePath":"Year-1/2b-Probability-Distributions","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/higher-order-derivative.html":{"title":"Higher-Order Derivative","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/2b-Probability-Distributions/moment.html":{"title":"Moment","courseName":"2b-Probability-Distributions","coursePath":"Year-1/2b-Probability-Distributions","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html":{"title":"Variance and Standard Deviation","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/derivative-and-differentiability.html":{"title":"Derivative and Differentiability","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/exponential-function.html":{"title":"Exponential Function","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/expectation.html":{"title":"Expectation","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/lotus.html":{"title":"LOTUS","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/random-variable.html":{"title":"Random Variable","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true}},"titleLocs":["Year-1/2b-Probability-Distributions/moments-from-the-mgf.html","Year-1/2b-Probability-Distributions/moment-generating-function.html","Year-1/1a-Math-I-Calculus/higher-order-derivative.html","Year-1/2b-Probability-Distributions/moment.html","Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html"],"prereqsByLoc":{"Year-1/2b-Probability-Distributions/moments-from-the-mgf.html":["Year-1/2b-Probability-Distributions/moment-generating-function.html","Year-1/1a-Math-I-Calculus/higher-order-derivative.html","Year-1/2b-Probability-Distributions/moment.html"],"Year-1/1a-Math-I-Calculus/higher-order-derivative.html":["Year-1/1a-Math-I-Calculus/derivative-and-differentiability.html"],"Year-1/2b-Probability-Distributions/moment-generating-function.html":["Year-1/1b-Probability-Theory-for-EOR/lotus.html","Year-1/1a-Math-I-Calculus/exponential-function.html"],"Year-1/2b-Probability-Distributions/moment.html":["Year-1/1b-Probability-Theory-for-EOR/expectation.html","Year-1/1b-Probability-Theory-for-EOR/random-variable.html","Year-1/1b-Probability-Theory-for-EOR/lotus.html"]},"dependents":[],"related":["Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html"]}</script><template data-search-exclude="" id="mk-concept-connections-titles"><span data-lp-title-loc="Year-1/2b-Probability-Distributions/moments-from-the-mgf.html">Moments from the MGF</span><span data-lp-title-loc="Year-1/2b-Probability-Distributions/moment-generating-function.html">Moment Generating Function</span><span data-lp-title-loc="Year-1/1a-Math-I-Calculus/higher-order-derivative.html">Higher-Order Derivative</span><span data-lp-title-loc="Year-1/2b-Probability-Distributions/moment.html">Moment</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html">Variance and Standard Deviation</span></template>
+<p class="mk-last-updated">Last updated: 5 November 2026 12:47</p><meta content="true" name="mk-concept-ai-mcq"/><script id="mk-concept-connections-data" type="application/json">{"kind":"concept-connections-panel-v1","readinessMaxDepth":2,"loc":"Year-1/2b-Probability-Distributions/moments-from-the-mgf.html","nodes":{"Year-1/2b-Probability-Distributions/moments-from-the-mgf.html":{"title":"Moments from the Moment Generating Function","courseName":"2b-Probability-Distributions","coursePath":"Year-1/2b-Probability-Distributions","curriculumStatus":"current","aiMcq":true},"Year-1/2b-Probability-Distributions/moment-generating-function.html":{"title":"Moment Generating Function","courseName":"2b-Probability-Distributions","coursePath":"Year-1/2b-Probability-Distributions","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/higher-order-derivative.html":{"title":"Higher-Order Derivative","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/2b-Probability-Distributions/moment.html":{"title":"Moment","courseName":"2b-Probability-Distributions","coursePath":"Year-1/2b-Probability-Distributions","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html":{"title":"Variance and Standard Deviation","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/derivative-and-differentiability.html":{"title":"Derivative and Differentiability","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1a-Math-I-Calculus/exponential-function.html":{"title":"Exponential Function","courseName":"1a-Math-I-Calculus","coursePath":"Year-1/1a-Math-I-Calculus","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/expectation.html":{"title":"Expectation","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/lotus.html":{"title":"Law of the Unconscious Statistician","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true},"Year-1/1b-Probability-Theory-for-EOR/random-variable.html":{"title":"Random Variable","courseName":"1b-Probability-Theory-for-EOR","coursePath":"Year-1/1b-Probability-Theory-for-EOR","curriculumStatus":"current","aiMcq":true}},"titleLocs":["Year-1/2b-Probability-Distributions/moments-from-the-mgf.html","Year-1/2b-Probability-Distributions/moment-generating-function.html","Year-1/1a-Math-I-Calculus/higher-order-derivative.html","Year-1/2b-Probability-Distributions/moment.html","Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html"],"prereqsByLoc":{"Year-1/2b-Probability-Distributions/moments-from-the-mgf.html":["Year-1/2b-Probability-Distributions/moment-generating-function.html","Year-1/1a-Math-I-Calculus/higher-order-derivative.html","Year-1/2b-Probability-Distributions/moment.html"],"Year-1/1a-Math-I-Calculus/higher-order-derivative.html":["Year-1/1a-Math-I-Calculus/derivative-and-differentiability.html"],"Year-1/2b-Probability-Distributions/moment-generating-function.html":["Year-1/1b-Probability-Theory-for-EOR/lotus.html","Year-1/1a-Math-I-Calculus/exponential-function.html"],"Year-1/2b-Probability-Distributions/moment.html":["Year-1/1b-Probability-Theory-for-EOR/expectation.html","Year-1/1b-Probability-Theory-for-EOR/random-variable.html","Year-1/1b-Probability-Theory-for-EOR/lotus.html"]},"dependents":[],"related":["Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html"]}</script><template data-search-exclude="" id="mk-concept-connections-titles"><span data-lp-title-loc="Year-1/2b-Probability-Distributions/moments-from-the-mgf.html">Moments from the Moment Generating Function</span><span data-lp-title-loc="Year-1/2b-Probability-Distributions/moment-generating-function.html">Moment Generating Function</span><span data-lp-title-loc="Year-1/1a-Math-I-Calculus/higher-order-derivative.html">Higher-Order Derivative</span><span data-lp-title-loc="Year-1/2b-Probability-Distributions/moment.html">Moment</span><span data-lp-title-loc="Year-1/1b-Probability-Theory-for-EOR/variance-and-standard-deviation.html">Variance and Standard Deviation</span></template>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -1948,7 +1949,7 @@ Symbols: lambda
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
 <script src="../../javascripts/wiki-explain.js?h=70b31a1e6108"></script>
 <script src="../../javascripts/concept-connections-panel.js?h=e3222c759851"></script>
-<script src="../../javascripts/startup-preferences.js?h=c682edb5088f"></script>
+<script src="../../javascripts/startup-preferences.js?h=643adc928139"></script>
 <script src="../../javascripts/style-shortcuts.js?h=1f1d27bbf857"></script>
 <script src="../../javascripts/ui-guard.js?h=6e5cf15727d0"></script>
 <script src="../../javascripts/concept-title-fit.js?h=8a4406302178"></script>

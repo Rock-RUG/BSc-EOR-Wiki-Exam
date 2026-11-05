@@ -22,7 +22,7 @@
 <link href="../../stylesheets/mastery-widget.css?h=e4fc2ca9c724" rel="stylesheet"/>
 <link href="../../stylesheets/course-status.css?h=c2148ab6b25a" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-surfaces.css?h=49c818fd9fed" rel="stylesheet"/>
-<link href="../../stylesheets/theme-surfaces.css?h=a1428c6fd0b7" rel="stylesheet" media="(forced-colors: active)" data-mk-css-gate="theme"/>
+<link href="../../stylesheets/theme-surfaces.css?h=01945e7ec096" rel="stylesheet" media="(forced-colors: active)" data-mk-css-gate="theme"/>
 <link href="../../stylesheets/wiki-community.css?h=4a806446e116" rel="stylesheet"/>
 <link href="../../stylesheets/wiki-maps.css?h=fb76700163c4" rel="stylesheet" media="not all" data-mk-css-gate="maps"/>
 <link href="../../stylesheets/wiki-mastery-manager.css?h=b3d804f7ca81" rel="stylesheet" media="not all" data-mk-css-gate="manager"/>
@@ -220,9 +220,9 @@
   
   try{var u="../../assets/sidebar/sidebar-meta.json";window.__mkSidebarMetaPromise=fetch(u,{cache:"default",priority:"high"}).then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=c682edb5088f";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar-core.js?h=643adc928139";document.head.appendChild(link);}catch(_){}
   
-  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=c682edb5088f";document.head.appendChild(link);}catch(_){}
+  try{var link=document.createElement('link');link.rel='preload';link.as='script';link.href="../../javascripts/sidebar.js?h=643adc928139";document.head.appendChild(link);}catch(_){}
   
 })();
 </script>
@@ -1043,7 +1043,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Classical EOQ Model
+    Classical Economic Order Quantity Model
   
 
     
@@ -1319,7 +1319,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    EOQ with Lead Times
+    Economic Order Quantity with Lead Times
   
 
     
@@ -1331,7 +1331,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    EOQ with Planned Shortages
+    Economic Order Quantity with Planned Shortages
   
 
     
@@ -1343,7 +1343,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    EOQ with Price Breaks
+    Economic Order Quantity with Price Breaks
   
 
     
@@ -1774,7 +1774,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    LP Relaxation
+    Linear Programming Relaxation
   
 
     
@@ -1918,7 +1918,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    Negative RHS Transformation
+    Negative Right-Hand Side Transformation
   
 
     
@@ -2098,7 +2098,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    OR Study Cycle
+    Operations Research Study Cycle
   
 
     
@@ -2278,7 +2278,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <span class="md-ellipsis">
     
   
-    RHS Sensitivity Range
+    Right-Hand Side Sensitivity Range
   
 
     
@@ -2925,8 +2925,8 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <hr/>
 <h2 id="interpretation"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 3c3.9 0 7 3.1 7 7 0 2.8-1.6 5.2-4 6.3V21H9v-3H8c-1.1 0-2-.9-2-2v-3H4.5c-.4 0-.7-.5-.4-.8L6 9.7C6.2 5.9 9.2 3 13 3m0-2C8.4 1 4.6 4.4 4.1 8.9L2.5 11c-.6.8-.6 1.8-.2 2.6.4.7 1 1.2 1.7 1.3V16c0 1.9 1.3 3.4 3 3.9V23h11v-5.5c2.5-1.7 4-4.4 4-7.5 0-5-4-9-9-9m1 13h-2v-1h2zm1.6-4.5c-.3.4-.6.8-1.1 1.1V12h-3v-1.4c-1.4-.8-1.9-2.7-1.1-4.1s2.7-1.9 4.1-1.1 1.9 2.7 1.1 4.1"></path></svg></span> Interpretation<a class="headerlink" href="#interpretation" title="Permanent link">¶</a></h2>
 <p>An inventory policy answers two questions: when to order, and how much. Ordering often keeps stock low but triggers many <a href="setup-cost.html">setup costs</a>; larger, less frequent orders save setups but keep more stock on hand. Which policy is best depends on these costs and on what is known about demand.</p>
-<p><img alt="Three small panels: an EOQ sawtooth with constant demand, bars of known demand per period for the dynamic lot size model, and a demand density with the newsvendor order quantity." class="mk-fig" src="../../assets/svg/inventory-policy.svg" style="width:clamp(35.67em,100%,39.15em);max-width:100%;height:auto"/></p>
-<p>The three panels show three demand settings. On the left, demand runs at a constant known rate, and the <a href="economic-order-quantity.html">EOQ</a> policy repeats the same order whenever stock reaches zero. In the middle, demand is known but differs per period; orders, marked by arrows, are placed in only two of the four periods, so each order also covers the next period. On the right, demand is uncertain and only one quantity <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">y^*</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8831em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6887em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span></span></span></span></span></span></span></span></span> is chosen before it is observed.</p>
+<p><img alt="Three small panels: an economic order quantity sawtooth with constant demand, bars of known demand per period for the dynamic lot size model, and a demand density with the newsvendor order quantity." class="mk-fig" src="../../assets/svg/inventory-policy.svg" style="width:clamp(35.67em,100%,39.15em);max-width:100%;height:auto"/></p>
+<p>The three panels show three demand settings. On the left, demand runs at a constant known rate, and the <a href="economic-order-quantity.html">economic order quantity</a> (EOQ) policy repeats the same order whenever stock reaches zero. In the middle, demand is known but differs per period; orders, marked by arrows, are placed in only two of the four periods, so each order also covers the next period. On the right, demand is uncertain and only one quantity <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">y^*</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8831em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6887em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span></span></span></span></span></span></span></span></span> is chosen before it is observed.</p>
 <p>Each setting leads to its own <a href="optimization-model.html">optimization model</a>. The model fixes which decisions are allowed and which costs count: <a href="purchasing-cost.html">purchasing</a>, setup, <a href="holding-cost.html">holding</a> and, where unmet demand is allowed, <a href="shortage-cost.html">shortage costs</a>. The policy is the answer the model returns.</p>
 <p>A policy is only complete when both parts are stated. "Order <span class="arithmatex arithmatex-prerendered arithmatex-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>22</mn></mrow><annotation encoding="application/x-tex">22</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">22</span></span></span></span></span> units" is not yet a policy without the trigger, such as "when stock reaches zero" in the <a href="classical-eoq-model.html">classical EOQ model</a> or a reorder level once there is a <a href="eoq-with-lead-times.html">lead time</a>.</p>
 <hr/>
@@ -2951,7 +2951,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 </ul>
 <h2 id="related-concepts"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 17c-.14 0-.26 0-.39.04L17.5 13.8c.45-.45.75-1.09.75-1.8a2.5 2.5 0 0 0-2.5-2.5c-.14 0-.25 0-.4.04L13.74 6.3c.47-.46.76-1.09.76-1.8a2.5 2.5 0 0 0-5 0c0 .7.29 1.34.76 1.79L8.65 9.54c-.15-.04-.26-.04-.4-.04a2.5 2.5 0 0 0-2.5 2.5c0 .71.29 1.34.75 1.79l-1.61 3.25C4.76 17 4.64 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .38-.04l1.63 3.25c-.47.45-.76 1.09-.76 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.8c.45-.45.75-1.09.75-1.8 0-.7-.29-1.33-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21a2.5 2.5 0 0 0 1.75 4.29c.13 0 .25 0 .38-.04l1.63 3.25c-.47.45-.76 1.09-.76 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5m-15 3.5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1m8.5-1c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1M7.25 12c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1M11 4.5c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1m3.75 7.5c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1m4.75 8.5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1"></path></svg></span> Related Concepts<a class="headerlink" href="#related-concepts" title="Permanent link">¶</a></h2>
 <ul>
-<li><a href="classical-eoq-model.html">Classical EOQ Model</a> </li>
+<li><a href="classical-eoq-model.html">Classical Economic Order Quantity Model</a> </li>
 <li><a href="dynamic-lot-size-model.html">Dynamic Lot-Size Model</a> </li>
 <li><a href="newsvendor-model.html">Newsvendor Model</a> </li>
 </ul>
@@ -2962,7 +2962,7 @@ html body article.md-content__inner h1 .katex:not(:first-child),html body articl
 <p><span class="search-aliases" data-nosnippet="">
 Aliases: replenishment policy, ordering policy, inventory control policy
 </span></p>
-<p class="mk-last-updated">Last updated: 20 October 2026 03:02</p><meta content="true" name="mk-concept-ai-mcq"/><script id="mk-concept-connections-data" type="application/json">{"kind":"concept-connections-panel-v1","readinessMaxDepth":2,"loc":"Year-1/1a-OR-Modelling/inventory-policy.html","nodes":{"Year-1/1a-OR-Modelling/inventory-policy.html":{"title":"Inventory Policy","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/dynamic-lot-size-model.html":{"title":"Dynamic Lot-Size Model","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/holding-cost.html":{"title":"Holding Cost","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/newsvendor-model.html":{"title":"Newsvendor Model","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/ordering-cycle.html":{"title":"Ordering Cycle","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/purchasing-cost.html":{"title":"Purchasing Cost","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/setup-cost.html":{"title":"Setup Cost","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/shortage-cost.html":{"title":"Shortage Cost","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-2/1b-Stochastic-Operations-Research/queueing-and-inventory-systems.html":{"title":"Queueing and Inventory Systems","courseName":"1b-Stochastic-Operations-Research","coursePath":"Year-2/1b-Stochastic-Operations-Research","curriculumStatus":"current","aiMcq":true},"Year-2/1b-Stochastic-Operations-Research/single-item-inventory-system.html":{"title":"Single-Item Inventory System","courseName":"1b-Stochastic-Operations-Research","coursePath":"Year-2/1b-Stochastic-Operations-Research","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/optimization-model.html":{"title":"Optimization Model","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/classical-eoq-model.html":{"title":"Classical EOQ Model","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true}},"titleLocs":["Year-1/1a-OR-Modelling/inventory-policy.html","Year-1/1a-OR-Modelling/dynamic-lot-size-model.html","Year-1/1a-OR-Modelling/holding-cost.html","Year-1/1a-OR-Modelling/newsvendor-model.html","Year-1/1a-OR-Modelling/ordering-cycle.html","Year-1/1a-OR-Modelling/purchasing-cost.html","Year-1/1a-OR-Modelling/setup-cost.html","Year-1/1a-OR-Modelling/shortage-cost.html","Year-2/1b-Stochastic-Operations-Research/queueing-and-inventory-systems.html","Year-2/1b-Stochastic-Operations-Research/single-item-inventory-system.html","Year-1/1a-OR-Modelling/optimization-model.html","Year-1/1a-OR-Modelling/classical-eoq-model.html"],"prereqsByLoc":{"Year-1/1a-OR-Modelling/inventory-policy.html":["Year-1/1a-OR-Modelling/optimization-model.html"],"Year-1/1a-OR-Modelling/dynamic-lot-size-model.html":["Year-1/1a-OR-Modelling/inventory-policy.html","Year-1/1a-OR-Modelling/production-inventory-model.html","Year-1/1a-OR-Modelling/setup-cost.html","Year-1/1a-OR-Modelling/holding-cost.html"],"Year-1/1a-OR-Modelling/holding-cost.html":["Year-1/1a-OR-Modelling/inventory-policy.html"],"Year-1/1a-OR-Modelling/newsvendor-model.html":["Year-1/1a-OR-Modelling/inventory-policy.html","Year-1/1a-OR-Modelling/positive-part.html"],"Year-1/1a-OR-Modelling/ordering-cycle.html":["Year-1/1a-OR-Modelling/inventory-policy.html"],"Year-1/1a-OR-Modelling/purchasing-cost.html":["Year-1/1a-OR-Modelling/inventory-policy.html"],"Year-1/1a-OR-Modelling/setup-cost.html":["Year-1/1a-OR-Modelling/inventory-policy.html","Year-1/1a-OR-Modelling/ordering-cycle.html"],"Year-1/1a-OR-Modelling/shortage-cost.html":["Year-1/1a-OR-Modelling/inventory-policy.html","Year-1/1a-OR-Modelling/holding-cost.html"],"Year-2/1b-Stochastic-Operations-Research/queueing-and-inventory-systems.html":["Year-1/1b-Probability-Theory-for-EOR/stochastic-process.html","Year-1/1a-OR-Modelling/inventory-policy.html"],"Year-2/1b-Stochastic-Operations-Research/single-item-inventory-system.html":["Year-2/1b-Stochastic-Operations-Research/queueing-and-inventory-systems.html","Year-2/1b-Stochastic-Operations-Research/discrete-time-queue-recursion.html","Year-1/1a-OR-Modelling/inventory-policy.html","Year-1/1a-OR-Modelling/economic-order-quantity.html"],"Year-1/1a-OR-Modelling/optimization-model.html":[]},"dependents":["Year-1/1a-OR-Modelling/dynamic-lot-size-model.html","Year-1/1a-OR-Modelling/holding-cost.html","Year-1/1a-OR-Modelling/newsvendor-model.html","Year-1/1a-OR-Modelling/ordering-cycle.html","Year-1/1a-OR-Modelling/purchasing-cost.html","Year-1/1a-OR-Modelling/setup-cost.html","Year-1/1a-OR-Modelling/shortage-cost.html","Year-2/1b-Stochastic-Operations-Research/queueing-and-inventory-systems.html","Year-2/1b-Stochastic-Operations-Research/single-item-inventory-system.html"],"related":["Year-1/1a-OR-Modelling/classical-eoq-model.html","Year-1/1a-OR-Modelling/dynamic-lot-size-model.html","Year-1/1a-OR-Modelling/newsvendor-model.html"]}</script><template data-search-exclude="" id="mk-concept-connections-titles"><span data-lp-title-loc="Year-1/1a-OR-Modelling/inventory-policy.html">Inventory Policy</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/dynamic-lot-size-model.html">Dynamic Lot-Size Model</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/holding-cost.html">Holding Cost</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/newsvendor-model.html">Newsvendor Model</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/ordering-cycle.html">Ordering Cycle</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/purchasing-cost.html">Purchasing Cost</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/setup-cost.html">Setup Cost</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/shortage-cost.html">Shortage Cost</span><span data-lp-title-loc="Year-2/1b-Stochastic-Operations-Research/queueing-and-inventory-systems.html">Queueing and Inventory Systems</span><span data-lp-title-loc="Year-2/1b-Stochastic-Operations-Research/single-item-inventory-system.html">Single-Item Inventory System</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/optimization-model.html">Optimization Model</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/classical-eoq-model.html">Classical EOQ Model</span></template>
+<p class="mk-last-updated">Last updated: 5 November 2026 12:47</p><meta content="true" name="mk-concept-ai-mcq"/><script id="mk-concept-connections-data" type="application/json">{"kind":"concept-connections-panel-v1","readinessMaxDepth":2,"loc":"Year-1/1a-OR-Modelling/inventory-policy.html","nodes":{"Year-1/1a-OR-Modelling/inventory-policy.html":{"title":"Inventory Policy","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/dynamic-lot-size-model.html":{"title":"Dynamic Lot-Size Model","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/holding-cost.html":{"title":"Holding Cost","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/newsvendor-model.html":{"title":"Newsvendor Model","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/ordering-cycle.html":{"title":"Ordering Cycle","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/purchasing-cost.html":{"title":"Purchasing Cost","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/setup-cost.html":{"title":"Setup Cost","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/shortage-cost.html":{"title":"Shortage Cost","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-2/1b-Stochastic-Operations-Research/queueing-and-inventory-systems.html":{"title":"Queueing and Inventory Systems","courseName":"1b-Stochastic-Operations-Research","coursePath":"Year-2/1b-Stochastic-Operations-Research","curriculumStatus":"current","aiMcq":true},"Year-2/1b-Stochastic-Operations-Research/single-item-inventory-system.html":{"title":"Single-Item Inventory System","courseName":"1b-Stochastic-Operations-Research","coursePath":"Year-2/1b-Stochastic-Operations-Research","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/optimization-model.html":{"title":"Optimization Model","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true},"Year-1/1a-OR-Modelling/classical-eoq-model.html":{"title":"Classical Economic Order Quantity Model","courseName":"1a-OR-Modelling","coursePath":"Year-1/1a-OR-Modelling","curriculumStatus":"current","aiMcq":true}},"titleLocs":["Year-1/1a-OR-Modelling/inventory-policy.html","Year-1/1a-OR-Modelling/dynamic-lot-size-model.html","Year-1/1a-OR-Modelling/holding-cost.html","Year-1/1a-OR-Modelling/newsvendor-model.html","Year-1/1a-OR-Modelling/ordering-cycle.html","Year-1/1a-OR-Modelling/purchasing-cost.html","Year-1/1a-OR-Modelling/setup-cost.html","Year-1/1a-OR-Modelling/shortage-cost.html","Year-2/1b-Stochastic-Operations-Research/queueing-and-inventory-systems.html","Year-2/1b-Stochastic-Operations-Research/single-item-inventory-system.html","Year-1/1a-OR-Modelling/optimization-model.html","Year-1/1a-OR-Modelling/classical-eoq-model.html"],"prereqsByLoc":{"Year-1/1a-OR-Modelling/inventory-policy.html":["Year-1/1a-OR-Modelling/optimization-model.html"],"Year-1/1a-OR-Modelling/dynamic-lot-size-model.html":["Year-1/1a-OR-Modelling/inventory-policy.html","Year-1/1a-OR-Modelling/production-inventory-model.html","Year-1/1a-OR-Modelling/setup-cost.html","Year-1/1a-OR-Modelling/holding-cost.html"],"Year-1/1a-OR-Modelling/holding-cost.html":["Year-1/1a-OR-Modelling/inventory-policy.html"],"Year-1/1a-OR-Modelling/newsvendor-model.html":["Year-1/1a-OR-Modelling/inventory-policy.html","Year-1/1a-OR-Modelling/positive-part.html"],"Year-1/1a-OR-Modelling/ordering-cycle.html":["Year-1/1a-OR-Modelling/inventory-policy.html"],"Year-1/1a-OR-Modelling/purchasing-cost.html":["Year-1/1a-OR-Modelling/inventory-policy.html"],"Year-1/1a-OR-Modelling/setup-cost.html":["Year-1/1a-OR-Modelling/inventory-policy.html","Year-1/1a-OR-Modelling/ordering-cycle.html"],"Year-1/1a-OR-Modelling/shortage-cost.html":["Year-1/1a-OR-Modelling/inventory-policy.html","Year-1/1a-OR-Modelling/holding-cost.html"],"Year-2/1b-Stochastic-Operations-Research/queueing-and-inventory-systems.html":["Year-1/1b-Probability-Theory-for-EOR/stochastic-process.html","Year-1/1a-OR-Modelling/inventory-policy.html"],"Year-2/1b-Stochastic-Operations-Research/single-item-inventory-system.html":["Year-2/1b-Stochastic-Operations-Research/queueing-and-inventory-systems.html","Year-2/1b-Stochastic-Operations-Research/discrete-time-queue-recursion.html","Year-1/1a-OR-Modelling/inventory-policy.html","Year-1/1a-OR-Modelling/economic-order-quantity.html"],"Year-1/1a-OR-Modelling/optimization-model.html":[]},"dependents":["Year-1/1a-OR-Modelling/dynamic-lot-size-model.html","Year-1/1a-OR-Modelling/holding-cost.html","Year-1/1a-OR-Modelling/newsvendor-model.html","Year-1/1a-OR-Modelling/ordering-cycle.html","Year-1/1a-OR-Modelling/purchasing-cost.html","Year-1/1a-OR-Modelling/setup-cost.html","Year-1/1a-OR-Modelling/shortage-cost.html","Year-2/1b-Stochastic-Operations-Research/queueing-and-inventory-systems.html","Year-2/1b-Stochastic-Operations-Research/single-item-inventory-system.html"],"related":["Year-1/1a-OR-Modelling/classical-eoq-model.html","Year-1/1a-OR-Modelling/dynamic-lot-size-model.html","Year-1/1a-OR-Modelling/newsvendor-model.html"]}</script><template data-search-exclude="" id="mk-concept-connections-titles"><span data-lp-title-loc="Year-1/1a-OR-Modelling/inventory-policy.html">Inventory Policy</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/dynamic-lot-size-model.html">Dynamic Lot-Size Model</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/holding-cost.html">Holding Cost</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/newsvendor-model.html">Newsvendor Model</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/ordering-cycle.html">Ordering Cycle</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/purchasing-cost.html">Purchasing Cost</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/setup-cost.html">Setup Cost</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/shortage-cost.html">Shortage Cost</span><span data-lp-title-loc="Year-2/1b-Stochastic-Operations-Research/queueing-and-inventory-systems.html">Queueing and Inventory Systems</span><span data-lp-title-loc="Year-2/1b-Stochastic-Operations-Research/single-item-inventory-system.html">Single-Item Inventory System</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/optimization-model.html">Optimization Model</span><span data-lp-title-loc="Year-1/1a-OR-Modelling/classical-eoq-model.html">Classical Economic Order Quantity Model</span></template>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -3001,7 +3001,7 @@ Aliases: replenishment policy, ordering policy, inventory control policy
 <script src="../../javascripts/perf-probe.js?h=ea289ef426e5"></script>
 <script src="../../javascripts/wiki-explain.js?h=70b31a1e6108"></script>
 <script src="../../javascripts/concept-connections-panel.js?h=e3222c759851"></script>
-<script src="../../javascripts/startup-preferences.js?h=c682edb5088f"></script>
+<script src="../../javascripts/startup-preferences.js?h=643adc928139"></script>
 <script src="../../javascripts/style-shortcuts.js?h=1f1d27bbf857"></script>
 <script src="../../javascripts/ui-guard.js?h=6e5cf15727d0"></script>
 <script src="../../javascripts/concept-title-fit.js?h=8a4406302178"></script>
